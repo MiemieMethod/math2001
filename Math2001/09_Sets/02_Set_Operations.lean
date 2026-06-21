@@ -129,14 +129,16 @@ example : {x : ℝ | -1 < x} ∪ {x : ℝ | x < 1} = univ := by
 macro "check_equality_of_explicit_sets" : tactic => `(tactic| (ext; dsimp; exhaust))
 
 
-example : {-1, 2, 4, 4} ∪ {3, -2, 2} = sorry := by check_equality_of_explicit_sets
-
-example : {0, 1, 2, 3, 4} ∩ {0, 2, 4, 6, 8} = sorry := by
+example : {-1, 2, 4, 4} ∪ {3, -2, 2} = {-2, -1, 2, 3, 4} := by
   check_equality_of_explicit_sets
 
-example : {1, 2} ∩ {3} = sorry := by check_equality_of_explicit_sets
+example : {0, 1, 2, 3, 4} ∩ {0, 2, 4, 6, 8} = {0, 2, 4} := by
+  check_equality_of_explicit_sets
 
-example : {3, 4, 5}ᶜ ∩ {1, 3, 5, 7, 9} = sorry := by
+example : {1, 2} ∩ {3} = ∅ := by
+  check_equality_of_explicit_sets
+
+example : {3, 4, 5}ᶜ ∩ {1, 3, 5, 7, 9} = {1, 7, 9} := by
   check_equality_of_explicit_sets
 
 example : {r : ℤ | r ≡ 7 [ZMOD 10] }

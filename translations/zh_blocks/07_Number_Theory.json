@@ -1,0 +1,586 @@
+[
+  {
+    "id": "07_Number_Theory:0001",
+    "file": "07_Number_Theory.html",
+    "tag": "h1",
+    "text": "7. Number theory",
+    "html": "<h1><span class=\"section-number\">7. </span>Number theory<a class=\"headerlink\" href=\"#number-theory\" title=\"Permalink to this headline\"></a></h1>",
+    "zh": "7. 数论"
+  },
+  {
+    "id": "07_Number_Theory:0002",
+    "file": "07_Number_Theory.html",
+    "tag": "h2",
+    "text": "7.1. Infinitely many primes",
+    "html": "<h2><span class=\"section-number\">7.1. </span>Infinitely many primes<a class=\"headerlink\" href=\"#infinitely-many-primes\" title=\"Permalink to this headline\"></a></h2>",
+    "zh": "7.1. 素数有无穷多个"
+  },
+  {
+    "id": "07_Number_Theory:0003",
+    "file": "07_Number_Theory.html",
+    "tag": "h2",
+    "text": "7.2. Gauss’ and Euclid’s lemmas",
+    "html": "<h2><span class=\"section-number\">7.2. </span>Gauss’ and Euclid’s lemmas<a class=\"headerlink\" href=\"#gauss-and-euclid-s-lemmas\" title=\"Permalink to this headline\"></a></h2>",
+    "zh": "7.2. 高斯引理与欧几里得引理"
+  },
+  {
+    "id": "07_Number_Theory:0004",
+    "file": "07_Number_Theory.html",
+    "tag": "h2",
+    "text": "7.3. The square root of two",
+    "html": "<h2><span class=\"section-number\">7.3. </span>The square root of two<a class=\"headerlink\" href=\"#the-square-root-of-two\" title=\"Permalink to this headline\"></a></h2>",
+    "zh": "7.3. 二的平方根"
+  },
+  {
+    "id": "07_Number_Theory:0005",
+    "file": "07_Number_Theory.html",
+    "tag": "p",
+    "text": "This chapter is different in style from the other chapters of the book. The facts here are famous theorems, and their proofs require one-off, clever ideas. These particular ideas will not turn up again on homework or exams. Think of this chapter instead as a capstone: we explore what kinds of mathematical statements are in reach with the reasoning tools and theory we have developed so far in the book.",
+    "html": "<p>This chapter is different in style from the other chapters of the book.  The facts here are\nfamous theorems, and their proofs require one-off, clever ideas.  These particular ideas will not\nturn up again on homework or exams.  Think of this chapter instead as a capstone: we explore what\nkinds of mathematical statements are in reach with the reasoning tools and theory we have developed\nso far in the book.</p>",
+    "zh": "本章的风格不同于本书其他章节。这里的事实是著名定理，其证明需要一次性的巧妙想法。这些特定想法不会再次出现在作业或考试中。请把本章看作一个总结性章节：我们探索到目前为止在本书中发展出的推理工具和理论能够达到怎样的数学陈述。"
+  },
+  {
+    "id": "07_Number_Theory:0006",
+    "file": "07_Number_Theory.html",
+    "tag": "p",
+    "text": "Theorem",
+    "html": "<p class=\"admonition-title\">Theorem</p>",
+    "zh": "定理"
+  },
+  {
+    "id": "07_Number_Theory:0007",
+    "file": "07_Number_Theory.html",
+    "tag": "p",
+    "text": "There are infinitely many prime numbers.",
+    "html": "<p>There are infinitely many prime numbers.</p>",
+    "zh": "素数有无穷多个。"
+  },
+  {
+    "id": "07_Number_Theory:0008",
+    "file": "07_Number_Theory.html",
+    "tag": "p",
+    "text": "This is a an extremely old theorem, with the first known proof written in Euclid’s Elements in about 300 BC.",
+    "html": "<p>This is a an <a class=\"reference external\" href=\"https://en.wikipedia.org/wiki/Euclid%27s_theorem\">extremely old</a> theorem, with the\nfirst known proof written in Euclid’s <em>Elements</em> in about 300 BC.</p>",
+    "zh": "这是一个极其古老的定理，最早已知证明写在约公元前 300 年 Euclid 的《几何原本》中。"
+  },
+  {
+    "id": "07_Number_Theory:0009",
+    "file": "07_Number_Theory.html",
+    "tag": "p",
+    "text": "Proof",
+    "html": "<p class=\"admonition-title\">Proof</p>",
+    "zh": "证明"
+  },
+  {
+    "id": "07_Number_Theory:0010",
+    "file": "07_Number_Theory.html",
+    "tag": "p",
+    "text": "We show that for a given natural number \\(N\\) , there exists a prime number \\(p \\geq N\\) .",
+    "html": "<p>We show that for a given natural number <span class=\"math notranslate nohighlight\">\\(N\\)</span>, there exists a prime number <span class=\"math notranslate nohighlight\">\\(p \\geq N\\)</span>.</p>",
+    "zh": "我们证明：给定自然数 \\(N\\)，存在素数 \\(p \\geq N\\)。"
+  },
+  {
+    "id": "07_Number_Theory:0011",
+    "file": "07_Number_Theory.html",
+    "tag": "p",
+    "text": "Consider \\(N!\\) , the factorial of \\(N\\) . By one of the exercises to Section 6.2 , \\(0<N!\\) , so \\(2 \\le N! + 1\\) . Therefore, by Example 6.4.2 , there exists a prime number \\(p\\) which is a factor of \\(N! + 1\\) .",
+    "html": "<p>Consider <span class=\"math notranslate nohighlight\">\\(N!\\)</span>, the factorial of <span class=\"math notranslate nohighlight\">\\(N\\)</span>.  By one of the exercises to\n<a class=\"reference internal\" href=\"06_Induction.html#recurrences\"><span class=\"std std-numref\">Section 6.2</span></a>, <span class=\"math notranslate nohighlight\">\\(0&lt;N!\\)</span>, so <span class=\"math notranslate nohighlight\">\\(2 \\le N! + 1\\)</span>. Therefore, by\n<a class=\"reference internal\" href=\"06_Induction.html#exists-prime-factor\"><span class=\"std std-numref\">Example 6.4.2</span></a>, there exists a prime number <span class=\"math notranslate nohighlight\">\\(p\\)</span> which is a\nfactor of <span class=\"math notranslate nohighlight\">\\(N! + 1\\)</span>.</p>",
+    "zh": "考虑 \\(N!\\)，即 \\(N\\) 的阶乘。由第 6.2 节的一道练习，\\(0<N!\\)，所以 \\(2 \\le N! + 1\\)。因此由例 6.4.2，存在一个素数 \\(p\\) 是 \\(N! + 1\\) 的因子。"
+  },
+  {
+    "id": "07_Number_Theory:0012",
+    "file": "07_Number_Theory.html",
+    "tag": "p",
+    "text": "Let \\(k\\) be a natural number such that \\(N! + 1=pk\\) . This number \\(k\\) cannot be zero, since if it were, we would have",
+    "html": "<p>Let <span class=\"math notranslate nohighlight\">\\(k\\)</span> be a natural number such that <span class=\"math notranslate nohighlight\">\\(N! + 1=pk\\)</span>. This number <span class=\"math notranslate nohighlight\">\\(k\\)</span> cannot be\nzero, since if it were, we would have</p>",
+    "zh": "设 \\(k\\) 为自然数，满足 \\(N! + 1=pk\\)。这个数 \\(k\\) 不可能为零，因为若它为零，则有"
+  },
+  {
+    "id": "07_Number_Theory:0013",
+    "file": "07_Number_Theory.html",
+    "tag": "p",
+    "text": "contradiction. Thus \\(k>0\\) , so \\(k\\) is of the form \\(l+1\\) for some natural number \\(l\\) , and \\(N! + 1=p(l+1)\\) .",
+    "html": "<p>contradiction.  Thus <span class=\"math notranslate nohighlight\">\\(k&gt;0\\)</span>, so <span class=\"math notranslate nohighlight\">\\(k\\)</span> is of the form <span class=\"math notranslate nohighlight\">\\(l+1\\)</span> for some natural number\n<span class=\"math notranslate nohighlight\">\\(l\\)</span>, and <span class=\"math notranslate nohighlight\">\\(N! + 1=p(l+1)\\)</span>.</p>",
+    "zh": "矛盾。因此 \\(k>0\\)，所以 \\(k\\) 形如 \\(l+1\\)，其中 \\(l\\) 为某个自然数，并且 \\(N! + 1=p(l+1)\\)。"
+  },
+  {
+    "id": "07_Number_Theory:0014",
+    "file": "07_Number_Theory.html",
+    "tag": "p",
+    "text": "We now show that \\(p\\) is not a factor of \\(N!\\) , by showing that \\(N!\\) lies between the consecutive multiples \\(pl\\) and \\(p(l+1)\\) of \\(p\\) . (This is the test from Example 4.5.8 .) Indeed,",
+    "html": "<p>We now show that <span class=\"math notranslate nohighlight\">\\(p\\)</span> is not a factor of <span class=\"math notranslate nohighlight\">\\(N!\\)</span>, by showing that <span class=\"math notranslate nohighlight\">\\(N!\\)</span> lies between\nthe consecutive multiples <span class=\"math notranslate nohighlight\">\\(pl\\)</span> and <span class=\"math notranslate nohighlight\">\\(p(l+1)\\)</span> of <span class=\"math notranslate nohighlight\">\\(p\\)</span>.  (This is the test from\n<a class=\"reference internal\" href=\"04_Proofs_with_Structure_II.html#not-divisible-proof\"><span class=\"std std-numref\">Example 4.5.8</span></a>.) Indeed,</p>",
+    "zh": "现在我们证明 \\(p\\) 不是 \\(N!\\) 的因子：只需说明 \\(N!\\) 位于 \\(p\\) 的相邻倍数 \\(pl\\) 与 \\(p(l+1)\\) 之间。（这是例 4.5.8 中的判据。）确实，"
+  },
+  {
+    "id": "07_Number_Theory:0015",
+    "file": "07_Number_Theory.html",
+    "tag": "p",
+    "text": "so \\(pl< N!\\) , and",
+    "html": "<p>so <span class=\"math notranslate nohighlight\">\\(pl&lt; N!\\)</span>, and</p>",
+    "zh": "所以 \\(pl< N!\\)，并且"
+  },
+  {
+    "id": "07_Number_Theory:0016",
+    "file": "07_Number_Theory.html",
+    "tag": "p",
+    "text": "If \\(p\\le N\\) , then by Example 6.2.5 , \\(p\\) would be a factor of \\(N!\\) , which contradicts what we just proved. Therefore \\(p > N\\) . This gives the required prime number greater than or equal to \\(N\\) .",
+    "html": "<p>If <span class=\"math notranslate nohighlight\">\\(p\\le N\\)</span>, then by <a class=\"reference internal\" href=\"06_Induction.html#factorial\"><span class=\"std std-numref\">Example 6.2.5</span></a>, <span class=\"math notranslate nohighlight\">\\(p\\)</span> would be a factor of\n<span class=\"math notranslate nohighlight\">\\(N!\\)</span>, which contradicts what we just proved.  Therefore  <span class=\"math notranslate nohighlight\">\\(p &gt; N\\)</span>. This gives the\nrequired prime number greater than or equal to <span class=\"math notranslate nohighlight\">\\(N\\)</span>.</p>",
+    "zh": "如果 \\(p\\le N\\)，那么由例 6.2.5，\\(p\\) 将是 \\(N!\\) 的因子，这与我们刚才证明的结论矛盾。因此 \\(p > N\\)。这就给出了所需的大于等于 \\(N\\) 的素数。"
+  },
+  {
+    "id": "07_Number_Theory:0017",
+    "file": "07_Number_Theory.html",
+    "tag": "p",
+    "text": "In Lean, the exercise to Section 6.2 has the name factorial_pos , Example 6.4.2 has the name exists_prime_factor , Example 4.5.8 has the name Nat.not_dvd_of_exists_lt_and_lt , and Example 6.2.5 has the name dvd_factorial .",
+    "html": "<p>In Lean, the exercise to <a class=\"reference internal\" href=\"06_Induction.html#recurrences\"><span class=\"std std-numref\">Section 6.2</span></a> has the name <code class=\"docutils literal notranslate\"><span class=\"pre\">factorial_pos</span></code>,\n<a class=\"reference internal\" href=\"06_Induction.html#exists-prime-factor\"><span class=\"std std-numref\">Example 6.4.2</span></a> has the name <code class=\"docutils literal notranslate\"><span class=\"pre\">exists_prime_factor</span></code>,\n<a class=\"reference internal\" href=\"04_Proofs_with_Structure_II.html#not-divisible-proof\"><span class=\"std std-numref\">Example 4.5.8</span></a> has the name <code class=\"docutils literal notranslate\"><span class=\"pre\">Nat.not_dvd_of_exists_lt_and_lt</span></code>, and\n<a class=\"reference internal\" href=\"06_Induction.html#factorial\"><span class=\"std std-numref\">Example 6.2.5</span></a> has the name <code class=\"docutils literal notranslate\"><span class=\"pre\">dvd_factorial</span></code>.</p>",
+    "zh": "在 Lean 中，第 6.2 节的练习名为 <code class=\"docutils literal notranslate\"><span class=\"pre\">factorial_pos</span></code>，例 6.4.2 名为 <code class=\"docutils literal notranslate\"><span class=\"pre\">exists_prime_factor</span></code>，例 4.5.8 名为 <code class=\"docutils literal notranslate\"><span class=\"pre\">Nat.not_dvd_of_exists_lt_and_lt</span></code>，例 6.2.5 名为 <code class=\"docutils literal notranslate\"><span class=\"pre\">dvd_factorial</span></code>。"
+  },
+  {
+    "id": "07_Number_Theory:0018",
+    "file": "07_Number_Theory.html",
+    "tag": "p",
+    "text": "Theorem (Gauss’ lemma)",
+    "html": "<p class=\"admonition-title\">Theorem (Gauss’ lemma)</p>",
+    "zh": "定理（高斯引理）"
+  },
+  {
+    "id": "07_Number_Theory:0019",
+    "file": "07_Number_Theory.html",
+    "tag": "p",
+    "text": "Let \\(a\\) , \\(b\\) and \\(d\\) be integers. Suppose that \\(ab\\) is a multiple of \\(d\\) and \\(\\operatorname{gcd}(a,d)=1\\) . Then \\(b\\) is a multiple of \\(d\\) .",
+    "html": "<p>Let <span class=\"math notranslate nohighlight\">\\(a\\)</span>, <span class=\"math notranslate nohighlight\">\\(b\\)</span> and <span class=\"math notranslate nohighlight\">\\(d\\)</span> be integers.  Suppose that <span class=\"math notranslate nohighlight\">\\(ab\\)</span> is a multiple of\n<span class=\"math notranslate nohighlight\">\\(d\\)</span> and <span class=\"math notranslate nohighlight\">\\(\\operatorname{gcd}(a,d)=1\\)</span>.  Then <span class=\"math notranslate nohighlight\">\\(b\\)</span> is a multiple of <span class=\"math notranslate nohighlight\">\\(d\\)</span>.</p>",
+    "zh": "设 \\(a\\)、\\(b\\) 和 \\(d\\) 为整数。假设 \\(ab\\) 是 \\(d\\) 的倍数，并且 \\(\\operatorname{gcd}(a,d)=1\\)。则 \\(b\\) 是 \\(d\\) 的倍数。"
+  },
+  {
+    "id": "07_Number_Theory:0020",
+    "file": "07_Number_Theory.html",
+    "tag": "p",
+    "text": "This lemma is the “final form” of the argument we have carried out in special cases in Example 3.5.1 , Example 3.5.2 , etc. Like in those special cases, the trick is to find a “Bézout identity” relating \\(a\\) and \\(d\\) : multiples of \\(a\\) and \\(d\\) which differ by 1. In the special cases we could find such multiples explicitly. In the general situation the existence of such multiples is guaranteed by Example 6.7.6 .",
+    "html": "<p>This lemma is the “final form” of the argument we have carried out in special cases in\n<a class=\"reference internal\" href=\"03_Parity_and_Divisibility.html#bezout-prob1\"><span class=\"std std-numref\">Example 3.5.1</span></a>, <a class=\"reference internal\" href=\"03_Parity_and_Divisibility.html#bezout-prob2\"><span class=\"std std-numref\">Example 3.5.2</span></a>, etc.  Like in those\nspecial cases, the trick is to find a “Bézout identity” relating <span class=\"math notranslate nohighlight\">\\(a\\)</span> and <span class=\"math notranslate nohighlight\">\\(d\\)</span>: multiples\nof  <span class=\"math notranslate nohighlight\">\\(a\\)</span> and <span class=\"math notranslate nohighlight\">\\(d\\)</span> which differ by 1.  In the special cases we could find such multiples\nexplicitly.  In the general situation the existence of such multiples is guaranteed by\n<a class=\"reference internal\" href=\"06_Induction.html#bezout-gcd\"><span class=\"std std-numref\">Example 6.7.6</span></a>.</p>",
+    "zh": "这个引理是我们在例 3.5.1、例 3.5.2 等特殊情形中所作论证的“最终形态”。和那些特殊情形一样，技巧是找到一个联系 \\(a\\) 与 \\(d\\) 的“贝祖等式”：即相差 1 的 \\(a\\) 的倍数和 \\(d\\) 的倍数。在特殊情形中，我们可以显式找到这样的倍数；在一般情形中，这种倍数的存在性由例 6.7.6 保证。"
+  },
+  {
+    "id": "07_Number_Theory:0021",
+    "file": "07_Number_Theory.html",
+    "tag": "p",
+    "text": "Proof",
+    "html": "<p class=\"admonition-title\">Proof</p>",
+    "zh": "证明"
+  },
+  {
+    "id": "07_Number_Theory:0022",
+    "file": "07_Number_Theory.html",
+    "tag": "p",
+    "text": "By Example 6.7.6 (Bézout’s identity) there exist integers \\(x\\) and \\(y\\) such that \\(xa + yd = \\operatorname{gcd}(a, d)\\) . Since \\(ab\\) is a multiple of \\(d\\) , there exists an integer \\(z\\) such that \\(ab=dz\\) . We then have that",
+    "html": "<p>By <a class=\"reference internal\" href=\"06_Induction.html#bezout-gcd\"><span class=\"std std-numref\">Example 6.7.6</span></a> (Bézout’s identity) there exist integers <span class=\"math notranslate nohighlight\">\\(x\\)</span> and\n<span class=\"math notranslate nohighlight\">\\(y\\)</span> such that <span class=\"math notranslate nohighlight\">\\(xa + yd = \\operatorname{gcd}(a, d)\\)</span>.  Since <span class=\"math notranslate nohighlight\">\\(ab\\)</span> is a multiple of\n<span class=\"math notranslate nohighlight\">\\(d\\)</span>, there exists an integer <span class=\"math notranslate nohighlight\">\\(z\\)</span> such that <span class=\"math notranslate nohighlight\">\\(ab=dz\\)</span>.  We then have that</p>",
+    "zh": "由例 6.7.6（贝祖等式），存在整数 \\(x\\) 和 \\(y\\)，使得 \\(xa + yd = \\operatorname{gcd}(a, d)\\)。由于 \\(ab\\) 是 \\(d\\) 的倍数，存在整数 \\(z\\)，使得 \\(ab=dz\\)。于是有"
+  },
+  {
+    "id": "07_Number_Theory:0023",
+    "file": "07_Number_Theory.html",
+    "tag": "p",
+    "text": "so \\(b\\) is a multiple of \\(d\\) .",
+    "html": "<p>so <span class=\"math notranslate nohighlight\">\\(b\\)</span> is a multiple of <span class=\"math notranslate nohighlight\">\\(d\\)</span>.</p>",
+    "zh": "所以 \\(b\\) 是 \\(d\\) 的倍数。"
+  },
+  {
+    "id": "07_Number_Theory:0024",
+    "file": "07_Number_Theory.html",
+    "tag": "p",
+    "text": "Theorem (Euclid’s lemma)",
+    "html": "<p class=\"admonition-title\">Theorem (Euclid’s lemma)</p>",
+    "zh": "定理（欧几里得引理）"
+  },
+  {
+    "id": "07_Number_Theory:0025",
+    "file": "07_Number_Theory.html",
+    "tag": "p",
+    "text": "Let \\(a\\) , \\(b\\) and \\(p\\) be natural numbers, with \\(p\\) prime. Suppose that \\(ab\\) is a multiple of \\(p\\) . Then either \\(a\\) or \\(b\\) is a multiple of \\(p\\) .",
+    "html": "<p>Let <span class=\"math notranslate nohighlight\">\\(a\\)</span>, <span class=\"math notranslate nohighlight\">\\(b\\)</span> and <span class=\"math notranslate nohighlight\">\\(p\\)</span> be natural numbers, with <span class=\"math notranslate nohighlight\">\\(p\\)</span> prime.  Suppose that\n<span class=\"math notranslate nohighlight\">\\(ab\\)</span> is a multiple of <span class=\"math notranslate nohighlight\">\\(p\\)</span>.  Then either <span class=\"math notranslate nohighlight\">\\(a\\)</span> or <span class=\"math notranslate nohighlight\">\\(b\\)</span> is a multiple of\n<span class=\"math notranslate nohighlight\">\\(p\\)</span>.</p>",
+    "zh": "设 \\(a\\)、\\(b\\) 和 \\(p\\) 为自然数，其中 \\(p\\) 为素数。假设 \\(ab\\) 是 \\(p\\) 的倍数。则 \\(a\\) 或 \\(b\\) 是 \\(p\\) 的倍数。"
+  },
+  {
+    "id": "07_Number_Theory:0026",
+    "file": "07_Number_Theory.html",
+    "tag": "p",
+    "text": "This lemma also dates back to Euclid’s Elements .",
+    "html": "<p>This lemma <a class=\"reference external\" href=\"https://en.wikipedia.org/wiki/Euclid%27s_lemma\">also dates back</a> to Euclid’s\n<em>Elements</em>.</p>",
+    "zh": "这个引理也可追溯到 Euclid 的《几何原本》。"
+  },
+  {
+    "id": "07_Number_Theory:0027",
+    "file": "07_Number_Theory.html",
+    "tag": "p",
+    "text": "Proof",
+    "html": "<p class=\"admonition-title\">Proof</p>",
+    "zh": "证明"
+  },
+  {
+    "id": "07_Number_Theory:0028",
+    "file": "07_Number_Theory.html",
+    "tag": "p",
+    "text": "By Example 6.7.2 , \\(\\operatorname{gcd}(a,p)\\geq 0\\) , so \\(\\operatorname{gcd}(a,p)\\) (a priori an integer) can be considered as a natural number. Let us call that natural number \\(d\\) . Then",
+    "html": "<p>By <a class=\"reference internal\" href=\"06_Induction.html#gcd-nonneg\"><span class=\"std std-numref\">Example 6.7.2</span></a>, <span class=\"math notranslate nohighlight\">\\(\\operatorname{gcd}(a,p)\\geq 0\\)</span>, so\n<span class=\"math notranslate nohighlight\">\\(\\operatorname{gcd}(a,p)\\)</span> (a priori an integer) can be considered as a natural number.  Let\nus call that natural number <span class=\"math notranslate nohighlight\">\\(d\\)</span>.  Then</p>",
+    "zh": "由例 6.7.2，\\(\\operatorname{gcd}(a,p)\\geq 0\\)，所以 \\(\\operatorname{gcd}(a,p)\\)（先验上是整数）可以看作自然数。把这个自然数称为 \\(d\\)。那么"
+  },
+  {
+    "id": "07_Number_Theory:0029",
+    "file": "07_Number_Theory.html",
+    "tag": "p",
+    "text": "A priori these divisibility statements are all statements about \\(a\\) , \\(b\\) , \\(p\\) and \\(d\\) considered as integers, but these are equivalent to the corresponding divisibility statements about natural numbers.",
+    "html": "<p>A priori these divisibility statements are all statements about\n<span class=\"math notranslate nohighlight\">\\(a\\)</span>, <span class=\"math notranslate nohighlight\">\\(b\\)</span>, <span class=\"math notranslate nohighlight\">\\(p\\)</span> and <span class=\"math notranslate nohighlight\">\\(d\\)</span> considered as integers, but these are equivalent to\nthe corresponding divisibility statements about natural numbers.</p>",
+    "zh": "先验上，这些整除陈述都是把 \\(a\\)、\\(b\\)、\\(p\\) 和 \\(d\\) 看作整数时的陈述；但它们等价于相应的自然数整除陈述。"
+  },
+  {
+    "id": "07_Number_Theory:0030",
+    "file": "07_Number_Theory.html",
+    "tag": "p",
+    "text": "We now begin the proof proper. Since \\(p\\) is prime and \\(d\\mid p\\) , either \\(d=1\\) or \\(d=p\\) .",
+    "html": "<p>We now begin the proof proper.  Since <span class=\"math notranslate nohighlight\">\\(p\\)</span> is prime and <span class=\"math notranslate nohighlight\">\\(d\\mid p\\)</span>, either <span class=\"math notranslate nohighlight\">\\(d=1\\)</span>\nor <span class=\"math notranslate nohighlight\">\\(d=p\\)</span>.</p>",
+    "zh": "现在开始正式证明。因为 \\(p\\) 是素数且 \\(d\\mid p\\)，所以 \\(d=1\\) 或 \\(d=p\\)。"
+  },
+  {
+    "id": "07_Number_Theory:0031",
+    "file": "07_Number_Theory.html",
+    "tag": "p",
+    "text": "Case 1 ( \\(d=1\\) ): Then by ( \\(\\star\\) ), \\(p \\mid b\\) .",
+    "html": "<p><strong>Case 1</strong> (<span class=\"math notranslate nohighlight\">\\(d=1\\)</span>):  Then by (<span class=\"math notranslate nohighlight\">\\(\\star\\)</span>), <span class=\"math notranslate nohighlight\">\\(p \\mid b\\)</span>.</p>",
+    "zh": "情形 1（\\(d=1\\)）：由（\\(\\star\\)），\\(p \\mid b\\)。"
+  },
+  {
+    "id": "07_Number_Theory:0032",
+    "file": "07_Number_Theory.html",
+    "tag": "p",
+    "text": "Case 2 ( \\(d=p\\) ): Then since \\(d\\mid a\\) , \\(p\\mid a\\) .",
+    "html": "<p><strong>Case 2</strong> (<span class=\"math notranslate nohighlight\">\\(d=p\\)</span>):  Then since <span class=\"math notranslate nohighlight\">\\(d\\mid a\\)</span>, <span class=\"math notranslate nohighlight\">\\(p\\mid a\\)</span>.</p>",
+    "zh": "情形 2（\\(d=p\\)）：由于 \\(d\\mid a\\)，有 \\(p\\mid a\\)。"
+  },
+  {
+    "id": "07_Number_Theory:0033",
+    "file": "07_Number_Theory.html",
+    "tag": "p",
+    "text": "To write this proof in Lean, we need some tricks to handle the interaction between integers and natural numbers. These will not be used again and it’s fine not to read them very closely.",
+    "html": "<p>To write this proof in Lean, we need some tricks to handle the interaction between integers and\nnatural numbers.  These will not be used again and it’s fine not to read them very closely.</p>",
+    "zh": "为了把这个证明写成 Lean，我们需要一些技巧来处理整数与自然数之间的相互作用。这些技巧以后不会再使用；不仔细阅读也没关系。"
+  },
+  {
+    "id": "07_Number_Theory:0034",
+    "file": "07_Number_Theory.html",
+    "tag": "p",
+    "text": "Corollary",
+    "html": "<p class=\"admonition-title\">Corollary</p>",
+    "zh": ""
+  },
+  {
+    "id": "07_Number_Theory:0035",
+    "file": "07_Number_Theory.html",
+    "tag": "p",
+    "text": "Let \\(a\\) , \\(p\\) and \\(k\\) be natural numbers, with \\(p\\) prime and \\(k\\geq 1\\) . If \\(a^k\\) is a multiple of \\(p\\) , then \\(a\\) is a multiple of \\(p\\) .",
+    "html": "<p>Let <span class=\"math notranslate nohighlight\">\\(a\\)</span>, <span class=\"math notranslate nohighlight\">\\(p\\)</span> and <span class=\"math notranslate nohighlight\">\\(k\\)</span> be natural numbers, with <span class=\"math notranslate nohighlight\">\\(p\\)</span> prime and\n<span class=\"math notranslate nohighlight\">\\(k\\geq 1\\)</span>. If <span class=\"math notranslate nohighlight\">\\(a^k\\)</span> is a multiple of <span class=\"math notranslate nohighlight\">\\(p\\)</span>, then <span class=\"math notranslate nohighlight\">\\(a\\)</span> is a multiple of\n<span class=\"math notranslate nohighlight\">\\(p\\)</span>.</p>",
+    "zh": "设 \\(a\\)、\\(p\\) 和 \\(k\\) 为自然数，其中 \\(p\\) 为素数且 \\(k\\geq 1\\)。若 \\(a^k\\) 是 \\(p\\) 的倍数，则 \\(a\\) 是 \\(p\\) 的倍数。"
+  },
+  {
+    "id": "07_Number_Theory:0036",
+    "file": "07_Number_Theory.html",
+    "tag": "p",
+    "text": "Proof",
+    "html": "<p class=\"admonition-title\">Proof</p>",
+    "zh": "证明"
+  },
+  {
+    "id": "07_Number_Theory:0037",
+    "file": "07_Number_Theory.html",
+    "tag": "p",
+    "text": "We prove this by induction on \\(k\\) , starting at 1.",
+    "html": "<p>We prove this by induction on <span class=\"math notranslate nohighlight\">\\(k\\)</span>, starting at 1.</p>",
+    "zh": "我们从 1 开始对 \\(k\\) 归纳证明。"
+  },
+  {
+    "id": "07_Number_Theory:0038",
+    "file": "07_Number_Theory.html",
+    "tag": "p",
+    "text": "Base case: If \\(a^1\\) is a multiple of \\(p\\) , then since \\(a^1=a\\) , we conclude that \\(a\\) is a multiple of \\(p\\) .",
+    "html": "<p><strong>Base case:</strong> If <span class=\"math notranslate nohighlight\">\\(a^1\\)</span> is a multiple of <span class=\"math notranslate nohighlight\">\\(p\\)</span>, then since <span class=\"math notranslate nohighlight\">\\(a^1=a\\)</span>, we conclude\nthat <span class=\"math notranslate nohighlight\">\\(a\\)</span> is a multiple of <span class=\"math notranslate nohighlight\">\\(p\\)</span>.</p>",
+    "zh": "基例：若 \\(a^1\\) 是 \\(p\\) 的倍数，则由于 \\(a^1=a\\)，可得 \\(a\\) 是 \\(p\\) 的倍数。"
+  },
+  {
+    "id": "07_Number_Theory:0039",
+    "file": "07_Number_Theory.html",
+    "tag": "p",
+    "text": "Inductive step: Let \\(t\\) be a natural number and suppose that if \\(a^t\\) is a multiple of \\(p\\) then \\(a\\) is. ( \\(\\star\\) )",
+    "html": "<p><strong>Inductive step:</strong> Let <span class=\"math notranslate nohighlight\">\\(t\\)</span> be a natural number and suppose that if <span class=\"math notranslate nohighlight\">\\(a^t\\)</span> is a\nmultiple of <span class=\"math notranslate nohighlight\">\\(p\\)</span> then <span class=\"math notranslate nohighlight\">\\(a\\)</span> is. (<span class=\"math notranslate nohighlight\">\\(\\star\\)</span>)</p>",
+    "zh": "归纳步：设 \\(t\\) 为自然数，并假设若 \\(a^t\\) 是 \\(p\\) 的倍数，则 \\(a\\) 也是 \\(p\\) 的倍数。（\\(\\star\\)）"
+  },
+  {
+    "id": "07_Number_Theory:0040",
+    "file": "07_Number_Theory.html",
+    "tag": "p",
+    "text": "Now suppose that \\(a^{t+1}\\) is a multiple of \\(p\\) . Since \\(a^{t+1}=a\\cdot a^t\\) , this means that \\(a \\cdot a^t\\) is a multiple of \\(p\\) .",
+    "html": "<p>Now suppose that <span class=\"math notranslate nohighlight\">\\(a^{t+1}\\)</span> is a multiple of <span class=\"math notranslate nohighlight\">\\(p\\)</span>.  Since <span class=\"math notranslate nohighlight\">\\(a^{t+1}=a\\cdot a^t\\)</span>,\nthis means that <span class=\"math notranslate nohighlight\">\\(a \\cdot a^t\\)</span> is a multiple of <span class=\"math notranslate nohighlight\">\\(p\\)</span>.</p>",
+    "zh": "现在假设 \\(a^{t+1}\\) 是 \\(p\\) 的倍数。由于 \\(a^{t+1}=a\\cdot a^t\\)，这意味着 \\(a \\cdot a^t\\) 是 \\(p\\) 的倍数。"
+  },
+  {
+    "id": "07_Number_Theory:0041",
+    "file": "07_Number_Theory.html",
+    "tag": "p",
+    "text": "Therefore, by Euclid’s lemma, either \\(a\\) is a multiple of \\(p\\) , in which case we are done, or \\(a^t\\) is a multiple of \\(p\\) , in which case by the inductive hypothesis ( \\(\\star\\) ) we are done.",
+    "html": "<p>Therefore, by Euclid’s lemma, either <span class=\"math notranslate nohighlight\">\\(a\\)</span> is a multiple of <span class=\"math notranslate nohighlight\">\\(p\\)</span>, in which case we are\ndone, or <span class=\"math notranslate nohighlight\">\\(a^t\\)</span> is a multiple of <span class=\"math notranslate nohighlight\">\\(p\\)</span>, in which case by the inductive hypothesis\n(<span class=\"math notranslate nohighlight\">\\(\\star\\)</span>) we are done.</p>",
+    "zh": "因此由欧几里得引理，要么 \\(a\\) 是 \\(p\\) 的倍数，此时证明完成；要么 \\(a^t\\) 是 \\(p\\) 的倍数，此时由归纳假设（\\(\\star\\)）证明完成。"
+  },
+  {
+    "id": "07_Number_Theory:0042",
+    "file": "07_Number_Theory.html",
+    "tag": "p",
+    "text": "Theorem",
+    "html": "<p class=\"admonition-title\">Theorem</p>",
+    "zh": "定理"
+  },
+  {
+    "id": "07_Number_Theory:0043",
+    "file": "07_Number_Theory.html",
+    "tag": "p",
+    "text": "There do not exist natural numbers \\(a\\) and \\(b\\) with \\(b\\ne 0\\) , for which \\(a^2=2b^2\\) .",
+    "html": "<p>There do not exist natural numbers <span class=\"math notranslate nohighlight\">\\(a\\)</span> and <span class=\"math notranslate nohighlight\">\\(b\\)</span> with <span class=\"math notranslate nohighlight\">\\(b\\ne 0\\)</span>, for which\n<span class=\"math notranslate nohighlight\">\\(a^2=2b^2\\)</span>.</p>",
+    "zh": "不存在自然数 \\(a\\) 和 \\(b\\) 满足 \\(b\\ne 0\\) 且 \\(a^2=2b^2\\)。"
+  },
+  {
+    "id": "07_Number_Theory:0044",
+    "file": "07_Number_Theory.html",
+    "tag": "p",
+    "text": "This is another theorem which dates back to the ancient Greeks, in this case to the followers of Pythagoras , c. 450 BC.",
+    "html": "<p>This is another theorem which dates back to the ancient Greeks, in this case to the\n<a class=\"reference external\" href=\"https://en.wikipedia.org/wiki/Square_root_of_2\">followers of Pythagoras</a>, c. 450 BC.</p>",
+    "zh": "这也是一个可追溯到古希腊的定理，在这个情形中可追溯到 Pythagoras 学派，约公元前 450 年。"
+  },
+  {
+    "id": "07_Number_Theory:0045",
+    "file": "07_Number_Theory.html",
+    "tag": "p",
+    "text": "This theorem constitutes most of the work of proving that the square root of two is irrational , that is, not a rational number ( \\(\\mathbb{Q}\\) ). We can’t draw that conclusion here since we haven’t yet defined rational numbers precisely, but we will circle back to it later in the book.",
+    "html": "<p>This theorem constitutes most of the work of proving that the square root of two is <em>irrational</em>,\nthat is, not a rational number (<span class=\"math notranslate nohighlight\">\\(\\mathbb{Q}\\)</span>). We can’t draw that conclusion here since we\nhaven’t yet defined rational numbers precisely, but we will circle back to it later in the book.</p>",
+    "zh": "这个定理构成了证明二的平方根为无理数的大部分工作，即证明它不是有理数（\\(\\mathbb{Q}\\)）。由于我们还没有精确定义有理数，所以这里还不能得出这个结论；但本书稍后会回到这一点。"
+  },
+  {
+    "id": "07_Number_Theory:0046",
+    "file": "07_Number_Theory.html",
+    "tag": "p",
+    "text": "Proof",
+    "html": "<p class=\"admonition-title\">Proof</p>",
+    "zh": "证明"
+  },
+  {
+    "id": "07_Number_Theory:0047",
+    "file": "07_Number_Theory.html",
+    "tag": "p",
+    "text": "We will show a logically equivalent fact: that for all natural numbers \\(a\\) and \\(b\\) with \\(b\\ne 0\\) , it holds that \\(a^2\\ne 2b^2\\) . We prove this by strong induction on \\(b\\) .",
+    "html": "<p>We will show a logically equivalent fact: that for all natural numbers <span class=\"math notranslate nohighlight\">\\(a\\)</span> and <span class=\"math notranslate nohighlight\">\\(b\\)</span>\nwith <span class=\"math notranslate nohighlight\">\\(b\\ne 0\\)</span>, it holds that <span class=\"math notranslate nohighlight\">\\(a^2\\ne 2b^2\\)</span>.  We prove this by strong induction on\n<span class=\"math notranslate nohighlight\">\\(b\\)</span>.</p>",
+    "zh": "我们将证明一个逻辑等价的事实：对所有自然数 \\(a\\) 和 \\(b\\)，若 \\(b\\ne 0\\)，则 \\(a^2\\ne 2b^2\\)。我们对 \\(b\\) 作强归纳证明。"
+  },
+  {
+    "id": "07_Number_Theory:0048",
+    "file": "07_Number_Theory.html",
+    "tag": "p",
+    "text": "Let \\(a\\) and \\(b\\) be natural numbers and suppose that for all natural numbers \\(r\\) , \\(s\\) with \\(s<b\\) and \\(s\\ne 0\\) , it holds that \\(r^2\\ne 2s^2\\) .",
+    "html": "<p>Let <span class=\"math notranslate nohighlight\">\\(a\\)</span> and <span class=\"math notranslate nohighlight\">\\(b\\)</span> be natural numbers and suppose that for all natural numbers\n<span class=\"math notranslate nohighlight\">\\(r\\)</span>, <span class=\"math notranslate nohighlight\">\\(s\\)</span> with <span class=\"math notranslate nohighlight\">\\(s&lt;b\\)</span> and <span class=\"math notranslate nohighlight\">\\(s\\ne 0\\)</span>, it holds that <span class=\"math notranslate nohighlight\">\\(r^2\\ne 2s^2\\)</span>.</p>",
+    "zh": "设 \\(a\\) 和 \\(b\\) 为自然数，并假设对所有自然数 \\(r\\)、\\(s\\)，若 \\(s<b\\) 且 \\(s\\ne 0\\)，则 \\(r^2\\ne 2s^2\\)。"
+  },
+  {
+    "id": "07_Number_Theory:0049",
+    "file": "07_Number_Theory.html",
+    "tag": "p",
+    "text": "Suppose that \\(a^2= 2b^2\\) . Then \\(a^2\\) is even, so by one of the exercises to Section 6.1 , \\(a\\) is even. Let \\(k\\) be a natural number such that \\(a=2k\\) . Then",
+    "html": "<p>Suppose that <span class=\"math notranslate nohighlight\">\\(a^2= 2b^2\\)</span>.  Then <span class=\"math notranslate nohighlight\">\\(a^2\\)</span> is even, so by one of the exercises to\n<a class=\"reference internal\" href=\"06_Induction.html#induction-intro\"><span class=\"std std-numref\">Section 6.1</span></a>, <span class=\"math notranslate nohighlight\">\\(a\\)</span> is even.  Let <span class=\"math notranslate nohighlight\">\\(k\\)</span> be a natural number\nsuch that <span class=\"math notranslate nohighlight\">\\(a=2k\\)</span>.  Then</p>",
+    "zh": "假设 \\(a^2= 2b^2\\)。那么 \\(a^2\\) 为偶数，所以由第 6.1 节的一道练习，\\(a\\) 为偶数。设 \\(k\\) 为自然数，使得 \\(a=2k\\)。于是"
+  },
+  {
+    "id": "07_Number_Theory:0050",
+    "file": "07_Number_Theory.html",
+    "tag": "p",
+    "text": "so \\(b^2=2k^2\\) . Then",
+    "html": "<p>so <span class=\"math notranslate nohighlight\">\\(b^2=2k^2\\)</span>.  Then</p>",
+    "zh": "所以 \\(b^2=2k^2\\)。于是"
+  },
+  {
+    "id": "07_Number_Theory:0051",
+    "file": "07_Number_Theory.html",
+    "tag": "p",
+    "text": "so \\(k>0\\) , so \\(k\\ne 0\\) .",
+    "html": "<p>so <span class=\"math notranslate nohighlight\">\\(k&gt;0\\)</span>, so <span class=\"math notranslate nohighlight\">\\(k\\ne 0\\)</span>.</p>",
+    "zh": "所以 \\(k>0\\)，从而 \\(k\\ne 0\\)。"
+  },
+  {
+    "id": "07_Number_Theory:0052",
+    "file": "07_Number_Theory.html",
+    "tag": "p",
+    "text": "We therefore invoke the inductive hypothesis with \\(r=b\\) , \\(s=k\\) . (Note that",
+    "html": "<p>We therefore invoke the inductive hypothesis with <span class=\"math notranslate nohighlight\">\\(r=b\\)</span>, <span class=\"math notranslate nohighlight\">\\(s=k\\)</span>.  (Note that</p>",
+    "zh": "因此我们以 \\(r=b\\)、\\(s=k\\) 调用归纳假设。（注意"
+  },
+  {
+    "id": "07_Number_Theory:0053",
+    "file": "07_Number_Theory.html",
+    "tag": "p",
+    "text": "so \\(k<b\\) , so the induction is well-founded.) The inductive hypothesis gives that \\(b^2\\ne 2k^2\\) , contradiction. So it cannot be that \\(a^2\\ne 2b^2\\) .",
+    "html": "<p>so <span class=\"math notranslate nohighlight\">\\(k&lt;b\\)</span>, so the induction is well-founded.)  The inductive hypothesis gives that\n<span class=\"math notranslate nohighlight\">\\(b^2\\ne 2k^2\\)</span>, contradiction.  So it cannot be that <span class=\"math notranslate nohighlight\">\\(a^2\\ne 2b^2\\)</span>.</p>",
+    "zh": "所以 \\(k<b\\)，因此归纳是良基的。）归纳假设给出 \\(b^2\\ne 2k^2\\)，矛盾。所以不可能有 \\(a^2=2b^2\\)。"
+  },
+  {
+    "id": "07_Number_Theory:0054",
+    "file": "07_Number_Theory.html",
+    "tag": "p",
+    "text": "In Lean we break this argument into three pieces. The lemma irrat_aux_wf is the justification for the well-foundedness of the strong induction. Like in Example 6.7.1 , we tag the well-foundedness lemma with @[decreasing] to make it available later for the strong induction.",
+    "html": "<p>In Lean we break this argument into three pieces.   The lemma <code class=\"docutils literal notranslate\"><span class=\"pre\">irrat_aux_wf</span></code> is the\njustification for the well-foundedness of the strong induction.  Like in\n<a class=\"reference internal\" href=\"06_Induction.html#euclidean-algorithm-def\"><span class=\"std std-numref\">Example 6.7.1</span></a>, we tag the well-foundedness lemma with\n<code class=\"docutils literal notranslate\"><span class=\"pre\">@[decreasing]</span></code> to make it available later for the strong induction.</p>",
+    "zh": "在 Lean 中，我们把这个论证分成三部分。引理 <code class=\"docutils literal notranslate\"><span class=\"pre\">irrat_aux_wf</span></code> 是强归纳良基性的说明。和例 6.7.1 一样，我们用 <code class=\"docutils literal notranslate\"><span class=\"pre\">@[decreasing]</span></code> 标记这个良基性引理，使它稍后可用于强归纳。"
+  },
+  {
+    "id": "07_Number_Theory:0055",
+    "file": "07_Number_Theory.html",
+    "tag": "p",
+    "text": "The lemma irrat_aux is the claim which is proved by strong induction. It contains the central argument of the proof. In Lean, the exercise to Section 6.1 which is used in this step has the name Nat.even_of_pow_even .",
+    "html": "<p>The lemma <code class=\"docutils literal notranslate\"><span class=\"pre\">irrat_aux</span></code> is the claim which is proved by strong induction.  It contains the central\nargument of the proof.  In Lean, the exercise to <a class=\"reference internal\" href=\"06_Induction.html#induction-intro\"><span class=\"std std-numref\">Section 6.1</span></a> which is used\nin this step has the name <code class=\"docutils literal notranslate\"><span class=\"pre\">Nat.even_of_pow_even</span></code>.</p>",
+    "zh": "引理 <code class=\"docutils literal notranslate\"><span class=\"pre\">irrat_aux</span></code> 是通过强归纳证明的命题。它包含证明的核心论证。在 Lean 中，此步骤使用的第 6.1 节练习名为 <code class=\"docutils literal notranslate\"><span class=\"pre\">Nat.even_of_pow_even</span></code>。"
+  },
+  {
+    "id": "07_Number_Theory:0056",
+    "file": "07_Number_Theory.html",
+    "tag": "p",
+    "text": "Finally, the main theorem is actually logically equivalent to irrat_aux , and its proof consists of establishing this logical equivalence.",
+    "html": "<p>Finally, the main theorem is actually logically equivalent to <code class=\"docutils literal notranslate\"><span class=\"pre\">irrat_aux</span></code>, and its proof consists\nof establishing this logical equivalence.</p>",
+    "zh": "最后，主定理实际上与 <code class=\"docutils literal notranslate\"><span class=\"pre\">irrat_aux</span></code> 逻辑等价，其证明就是建立这种逻辑等价。"
+  },
+  {
+    "id": "07_Number_Theory:0057",
+    "file": "07_Number_Theory.html",
+    "tag": "p",
+    "text": "That was fun … let’s do it again! Here is a different proof of the same theorem. Or, nearly the same theorem – this proof works better for integers. (It would be fiddly but not fundamentally difficult to convert the integer version to the natural number version or vice versa, using the techniques from Section 7.2 .)",
+    "html": "<p>That was fun … let’s do it again!  Here is a different proof of the same theorem.  Or, <em>nearly</em>\nthe same theorem – this proof works better for integers.  (It would be fiddly but not fundamentally\ndifficult to convert the integer version to the natural number version or vice versa, using the\ntechniques from <a class=\"reference internal\" href=\"#euclid-lemma\"><span class=\"std std-numref\">Section 7.2</span></a>.)</p>",
+    "zh": "这很有趣……我们再来一次！下面是同一个定理的另一个证明。或者说，几乎是同一个定理：这个证明更适合整数。（使用第 7.2 节中的技巧，把整数版本转化为自然数版本或反过来，并不本质困难，只是会很繁琐且不太有趣。）"
+  },
+  {
+    "id": "07_Number_Theory:0058",
+    "file": "07_Number_Theory.html",
+    "tag": "p",
+    "text": "Theorem",
+    "html": "<p class=\"admonition-title\">Theorem</p>",
+    "zh": "定理"
+  },
+  {
+    "id": "07_Number_Theory:0059",
+    "file": "07_Number_Theory.html",
+    "tag": "p",
+    "text": "There do not exist integers \\(a\\) and \\(b\\) with \\(b\\ne 0\\) , for which \\(a^2=2b^2\\) .",
+    "html": "<p>There do not exist integers <span class=\"math notranslate nohighlight\">\\(a\\)</span> and <span class=\"math notranslate nohighlight\">\\(b\\)</span> with <span class=\"math notranslate nohighlight\">\\(b\\ne 0\\)</span>, for which\n<span class=\"math notranslate nohighlight\">\\(a^2=2b^2\\)</span>.</p>",
+    "zh": "不存在整数 \\(a\\) 和 \\(b\\) 满足 \\(b\\ne 0\\) 且 \\(a^2=2b^2\\)。"
+  },
+  {
+    "id": "07_Number_Theory:0060",
+    "file": "07_Number_Theory.html",
+    "tag": "p",
+    "text": "Proof",
+    "html": "<p class=\"admonition-title\">Proof</p>",
+    "zh": "证明"
+  },
+  {
+    "id": "07_Number_Theory:0061",
+    "file": "07_Number_Theory.html",
+    "tag": "p",
+    "text": "Suppose that \\(a\\) and \\(b\\) were integers with \\(b\\ne 0\\) and \\(a^2=2b^2\\) .",
+    "html": "<p>Suppose that <span class=\"math notranslate nohighlight\">\\(a\\)</span> and <span class=\"math notranslate nohighlight\">\\(b\\)</span> were integers with <span class=\"math notranslate nohighlight\">\\(b\\ne 0\\)</span> and <span class=\"math notranslate nohighlight\">\\(a^2=2b^2\\)</span>.</p>",
+    "zh": "假设存在整数 \\(a\\) 和 \\(b\\)，满足 \\(b\\ne 0\\) 且 \\(a^2=2b^2\\)。"
+  },
+  {
+    "id": "07_Number_Theory:0062",
+    "file": "07_Number_Theory.html",
+    "tag": "p",
+    "text": "Denote by \\(d\\) the greatest common divisor of \\(a\\) and \\(b\\) . By Example 6.7.3 , \\(d\\mid a\\) and \\(d\\mid b\\) . Let \\(k\\) and \\(l\\) be integers such that \\(a=dk\\) and \\(b=dl\\) .",
+    "html": "<p>Denote by <span class=\"math notranslate nohighlight\">\\(d\\)</span> the greatest common divisor of <span class=\"math notranslate nohighlight\">\\(a\\)</span> and <span class=\"math notranslate nohighlight\">\\(b\\)</span>.\nBy <a class=\"reference internal\" href=\"06_Induction.html#common-divisor\"><span class=\"std std-numref\">Example 6.7.3</span></a>, <span class=\"math notranslate nohighlight\">\\(d\\mid a\\)</span> and\n<span class=\"math notranslate nohighlight\">\\(d\\mid b\\)</span>.  Let <span class=\"math notranslate nohighlight\">\\(k\\)</span> and <span class=\"math notranslate nohighlight\">\\(l\\)</span> be integers such that\n<span class=\"math notranslate nohighlight\">\\(a=dk\\)</span> and <span class=\"math notranslate nohighlight\">\\(b=dl\\)</span>.</p>",
+    "zh": "记 \\(d\\) 为 \\(a\\) 与 \\(b\\) 的最大公因子。由例 6.7.3，\\(d\\mid a\\) 且 \\(d\\mid b\\)。设 \\(k\\) 和 \\(l\\) 为整数，使得 \\(a=dk\\) 且 \\(b=dl\\)。"
+  },
+  {
+    "id": "07_Number_Theory:0063",
+    "file": "07_Number_Theory.html",
+    "tag": "p",
+    "text": "Also by Example 6.7.6 (Bézout’s identity) there exist integers \\(x\\) and \\(y\\) such that \\(xa+yb=d\\) .",
+    "html": "<p>Also by <a class=\"reference internal\" href=\"06_Induction.html#bezout-gcd\"><span class=\"std std-numref\">Example 6.7.6</span></a> (Bézout’s identity) there exist integers <span class=\"math notranslate nohighlight\">\\(x\\)</span> and\n<span class=\"math notranslate nohighlight\">\\(y\\)</span> such that <span class=\"math notranslate nohighlight\">\\(xa+yb=d\\)</span>.</p>",
+    "zh": "又由例 6.7.6（贝祖等式），存在整数 \\(x\\) 和 \\(y\\)，使得 \\(xa+yb=d\\)。"
+  },
+  {
+    "id": "07_Number_Theory:0064",
+    "file": "07_Number_Theory.html",
+    "tag": "p",
+    "text": "The key calculation is the following ( \\(\\dagger\\) ).:",
+    "html": "<p>The key calculation is the following  (<span class=\"math notranslate nohighlight\">\\(\\dagger\\)</span>).:</p>",
+    "zh": "关键计算如下（\\(\\dagger\\)）："
+  },
+  {
+    "id": "07_Number_Theory:0065",
+    "file": "07_Number_Theory.html",
+    "tag": "p",
+    "text": "We have that \\(d\\ne 0\\) , since if not,",
+    "html": "<p>We have that <span class=\"math notranslate nohighlight\">\\(d\\ne 0\\)</span>, since if not,</p>",
+    "zh": "我们有 \\(d\\ne 0\\)，因为若不然，"
+  },
+  {
+    "id": "07_Number_Theory:0066",
+    "file": "07_Number_Theory.html",
+    "tag": "p",
+    "text": "contradiction. Hence by ( \\(\\dagger\\) ),",
+    "html": "<p>contradiction.  Hence by (<span class=\"math notranslate nohighlight\">\\(\\dagger\\)</span>),</p>",
+    "zh": "矛盾。因此由（\\(\\dagger\\)），"
+  },
+  {
+    "id": "07_Number_Theory:0067",
+    "file": "07_Number_Theory.html",
+    "tag": "p",
+    "text": "But by Example 2.3.5 , no integer squares to 2, so this is impossible.",
+    "html": "<p>But by <a class=\"reference internal\" href=\"02_Proofs_with_Structure.html#int-sq-ne-two\"><span class=\"std std-numref\">Example 2.3.5</span></a>, no integer squares to 2, so this is impossible.</p>",
+    "zh": "但由例 2.3.5，不存在平方等于 2 的整数，所以这是不可能的。"
+  },
+  {
+    "id": "07_Number_Theory:0068",
+    "file": "07_Number_Theory.html",
+    "tag": "p",
+    "text": "Note the use of Brahmagupta’s identity ( Example 1.1.3 ) above in the middle of the key calculation.",
+    "html": "<p>Note the use of Brahmagupta’s identity (<a class=\"reference internal\" href=\"01_Proofs_by_Calculation.html#id6\"><span class=\"std std-numref\">Example 1.1.3</span></a>) above in the middle of the key\ncalculation.</p>",
+    "zh": "注意，上面的关键计算中间使用了 Brahmagupta 恒等式（例 1.1.3）。"
+  },
+  {
+    "id": "07_Number_Theory:0069",
+    "file": "07_Number_Theory.html",
+    "tag": "li",
+    "text": "by Example 6.7.3 , \\(d\\mid a\\) and \\(d\\mid p\\) ;",
+    "html": "<li><p>by <a class=\"reference internal\" href=\"06_Induction.html#common-divisor\"><span class=\"std std-numref\">Example 6.7.3</span></a>, <span class=\"math notranslate nohighlight\">\\(d\\mid a\\)</span> and <span class=\"math notranslate nohighlight\">\\(d\\mid p\\)</span>;</p></li>",
+    "zh": "由例 6.7.3，\\(d\\mid a\\) 且 \\(d\\mid p\\)；"
+  },
+  {
+    "id": "07_Number_Theory:0070",
+    "file": "07_Number_Theory.html",
+    "tag": "li",
+    "text": "( \\(\\star\\) ) by Gauss’ lemma, if \\(p\\mid ab\\) and \\(d=1\\) then \\(p \\mid b\\) .",
+    "html": "<li><p>(<span class=\"math notranslate nohighlight\">\\(\\star\\)</span>) by Gauss’ lemma, if <span class=\"math notranslate nohighlight\">\\(p\\mid ab\\)</span> and <span class=\"math notranslate nohighlight\">\\(d=1\\)</span> then <span class=\"math notranslate nohighlight\">\\(p \\mid b\\)</span>.</p></li>",
+    "zh": "（\\(\\star\\)）由高斯引理，若 \\(p\\mid ab\\) 且 \\(d=1\\)，则 \\(p \\mid b\\)。"
+  },
+  {
+    "id": "07_Number_Theory:0071",
+    "file": "07_Number_Theory.html",
+    "tag": "li",
+    "text": "When invoking lemmas about integers ( gcd_dvd_left , gcd_dvd_right , gauss_lemma , gcd_nonneg ) on natural number inputs, we cast the natural number inputs to integers, like (a:ℤ) – this is not always necessary but it avoids ambiguity. (The casts then display in the infoview with arrows, as ↑a , etc.)",
+    "html": "<li><p>When invoking lemmas about integers (<code class=\"docutils literal notranslate\"><span class=\"pre\">gcd_dvd_left</span></code>, <code class=\"docutils literal notranslate\"><span class=\"pre\">gcd_dvd_right</span></code>, <code class=\"docutils literal notranslate\"><span class=\"pre\">gauss_lemma</span></code>,\n<code class=\"docutils literal notranslate\"><span class=\"pre\">gcd_nonneg</span></code>) on natural number inputs, we <em>cast</em> the natural number inputs to integers, like\n<code class=\"docutils literal notranslate\"><span class=\"pre\">(a:ℤ)</span></code> – this is not always necessary but it avoids ambiguity.  (The casts then display in the\ninfoview with arrows, as <code class=\"docutils literal notranslate\"><span class=\"pre\">↑a</span></code>, etc.)</p></li>",
+    "zh": "在对自然数输入调用关于整数的引理（<code class=\"docutils literal notranslate\"><span class=\"pre\">gcd_dvd_left</span></code>、<code class=\"docutils literal notranslate\"><span class=\"pre\">gcd_dvd_right</span></code>、<code class=\"docutils literal notranslate\"><span class=\"pre\">gauss_lemma</span></code>、<code class=\"docutils literal notranslate\"><span class=\"pre\">gcd_nonneg</span></code>）时，我们把自然数输入强制转换为整数，例如 <code class=\"docutils literal notranslate\"><span class=\"pre\">(a:ℤ)</span></code>；这并不总是必要的，但可以避免歧义。（这些强制转换随后会在 infoview 中显示为箭头，如 ↑a 等。）"
+  },
+  {
+    "id": "07_Number_Theory:0072",
+    "file": "07_Number_Theory.html",
+    "tag": "li",
+    "text": "Once we have the hypothesis 0 ≤ gcd (a:ℤ) (p:ℤ) , we can use the Lean tactic lift to introduce a natural number d whose cast to the integers is gcd (a:ℤ) (p:ℤ) .",
+    "html": "<li><p>Once we have the hypothesis <code class=\"docutils literal notranslate\"><span class=\"pre\">0</span> <span class=\"pre\">≤</span> <span class=\"pre\">gcd</span> <span class=\"pre\">(a:ℤ)</span> <span class=\"pre\">(p:ℤ)</span></code>, we can use the Lean tactic <code class=\"docutils literal notranslate\"><span class=\"pre\">lift</span></code> to\nintroduce a natural number <code class=\"docutils literal notranslate\"><span class=\"pre\">d</span></code> whose cast to the integers is <code class=\"docutils literal notranslate\"><span class=\"pre\">gcd</span> <span class=\"pre\">(a:ℤ)</span> <span class=\"pre\">(p:ℤ)</span></code>.</p></li>",
+    "zh": "一旦有了假设 <code class=\"docutils literal notranslate\"><span class=\"pre\">0</span> <span class=\"pre\">≤</span> <span class=\"pre\">gcd</span> <span class=\"pre\">(a:ℤ)</span> <span class=\"pre\">(p:ℤ)</span></code>，我们就可以使用 Lean 策略 <code class=\"docutils literal notranslate\"><span class=\"pre\">lift</span></code> 引入一个自然数 \\(d\\)，它到整数的强制转换等于 <code class=\"docutils literal notranslate\"><span class=\"pre\">gcd</span> <span class=\"pre\">(a:ℤ)</span> <span class=\"pre\">(p:ℤ)</span></code>。"
+  },
+  {
+    "id": "07_Number_Theory:0073",
+    "file": "07_Number_Theory.html",
+    "tag": "li",
+    "text": "Finally, we can run the tactic norm_cast on all our hypotheses, which converts statements about natural-numbers-cast-to-integers into the corresponding statements about natural numbers, if this is mathematically valid. For example, ↑d ∣ ↑a is converted to d ∣ a .",
+    "html": "<li><p>Finally, we can run the tactic <code class=\"docutils literal notranslate\"><span class=\"pre\">norm_cast</span></code> on all our hypotheses, which converts statements\nabout natural-numbers-cast-to-integers into the corresponding statements about natural numbers, if\nthis is mathematically valid.  For example, <code class=\"docutils literal notranslate\"><span class=\"pre\">↑d</span> <span class=\"pre\">∣</span> <span class=\"pre\">↑a</span></code> is converted to <code class=\"docutils literal notranslate\"><span class=\"pre\">d</span> <span class=\"pre\">∣</span> <span class=\"pre\">a</span></code>.</p></li>",
+    "zh": "最后，我们可以在所有假设上运行策略 <code class=\"docutils literal notranslate\"><span class=\"pre\">norm_cast</span></code>；若数学上有效，它会把关于“强制转换成整数的自然数”的陈述转换为相应的自然数陈述。例如，↑d ∣ ↑a 会被转换为 d ∣ a。"
+  }
+]

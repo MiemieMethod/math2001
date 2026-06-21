@@ -1,0 +1,794 @@
+[
+  {
+    "id": "Mainstream_Lean:0001",
+    "file": "Mainstream_Lean.html",
+    "tag": "h1",
+    "text": "Transitioning to mainstream Lean",
+    "html": "<h1>Transitioning to mainstream Lean<a class=\"headerlink\" href=\"#transitioning-to-mainstream-lean\" title=\"Permalink to this headline\"></a></h1>",
+    "zh": ""
+  },
+  {
+    "id": "Mainstream_Lean:0002",
+    "file": "Mainstream_Lean.html",
+    "tag": "p",
+    "text": "If you have enjoyed this book, you may wish to work further with Lean, for example by working through the book Mathematics in Lean or by starting an independent formalization project .",
+    "html": "<p>If you have enjoyed this book, you may wish to work further with Lean, for example by working\nthrough the book\n<a class=\"reference external\" href=\"https://leanprover-community.github.io/mathematics_in_lean/\">Mathematics in Lean</a> or by starting\nan\n<a class=\"reference external\" href=\"https://github.com/leanprover-community/mathlib4/wiki/Using-mathlib4-as-a-dependency\">independent formalization project</a>.</p>",
+    "zh": ""
+  },
+  {
+    "id": "Mainstream_Lean:0003",
+    "file": "Mainstream_Lean.html",
+    "tag": "p",
+    "text": "You will discover that the Lean “dialect” used in this book differs from the mainstream mathematical Lean used in the library mathlib and its associated literature such as Mathematics in Lean . To help you adjust, in this appendix I outline the major differences.",
+    "html": "<p>You will discover that the Lean “dialect” used in this book differs from the mainstream mathematical\nLean used in the library <a class=\"reference external\" href=\"https://github.com/leanprover-community/mathlib4\">mathlib</a> and its\nassociated literature such as <em>Mathematics in Lean</em>.  To help you adjust, in this appendix I outline\nthe major differences.</p>",
+    "zh": ""
+  },
+  {
+    "id": "Mainstream_Lean:0004",
+    "file": "Mainstream_Lean.html",
+    "tag": "p",
+    "text": "Some tactics used in this book are deliberately weakened versions of tactics in mathlib: I have done this to block certain of Lean’s capabilities because prose proofs at the level of this book would typically write out the details in full. These deliberately weakened tactics include:",
+    "html": "<p>Some tactics used in this book are deliberately weakened versions of tactics in mathlib: I have\ndone this to block certain of Lean’s capabilities because prose proofs at the level of this book\nwould typically write out the details in full. These deliberately weakened tactics include:</p>",
+    "zh": ""
+  },
+  {
+    "id": "Mainstream_Lean:0005",
+    "file": "Mainstream_Lean.html",
+    "tag": "p",
+    "text": "mathlib tactic",
+    "html": "<p>mathlib tactic</p>",
+    "zh": ""
+  },
+  {
+    "id": "Mainstream_Lean:0006",
+    "file": "Mainstream_Lean.html",
+    "tag": "p",
+    "text": "weakened",
+    "html": "<p>weakened</p>",
+    "zh": ""
+  },
+  {
+    "id": "Mainstream_Lean:0007",
+    "file": "Mainstream_Lean.html",
+    "tag": "p",
+    "text": "Mechanics of",
+    "html": "<p><em>Mechanics of</em></p>",
+    "zh": ""
+  },
+  {
+    "id": "Mainstream_Lean:0008",
+    "file": "Mainstream_Lean.html",
+    "tag": "p",
+    "text": "Proof version",
+    "html": "<p><em>Proof</em> version</p>",
+    "zh": ""
+  },
+  {
+    "id": "Mainstream_Lean:0009",
+    "file": "Mainstream_Lean.html",
+    "tag": "p",
+    "text": "differences",
+    "html": "<p>differences</p>",
+    "zh": ""
+  },
+  {
+    "id": "Mainstream_Lean:0010",
+    "file": "Mainstream_Lean.html",
+    "tag": "p",
+    "text": "norm_num",
+    "html": "<p><code class=\"docutils literal notranslate\"><span class=\"pre\">norm_num</span></code></p>",
+    "zh": ""
+  },
+  {
+    "id": "Mainstream_Lean:0011",
+    "file": "Mainstream_Lean.html",
+    "tag": "p",
+    "text": "numbers",
+    "html": "<p><code class=\"docutils literal notranslate\"><span class=\"pre\">numbers</span></code></p>",
+    "zh": ""
+  },
+  {
+    "id": "Mainstream_Lean:0012",
+    "file": "Mainstream_Lean.html",
+    "tag": "p",
+    "text": "norm_num can do some calculations which in this book we require",
+    "html": "<p><code class=\"docutils literal notranslate\"><span class=\"pre\">norm_num</span></code> can do some calculations which in this book we require</p>",
+    "zh": ""
+  },
+  {
+    "id": "Mainstream_Lean:0013",
+    "file": "Mainstream_Lean.html",
+    "tag": "p",
+    "text": "the reader to carry out by hand, including reduction mod \\(n\\) ,",
+    "html": "<p>the reader to carry out by hand, including reduction mod <span class=\"math notranslate nohighlight\">\\(n\\)</span>,</p>",
+    "zh": ""
+  },
+  {
+    "id": "Mainstream_Lean:0014",
+    "file": "Mainstream_Lean.html",
+    "tag": "p",
+    "text": "handling logic, and checking divisibility and primality",
+    "html": "<p>handling logic, and checking divisibility and primality</p>",
+    "zh": ""
+  },
+  {
+    "id": "Mainstream_Lean:0015",
+    "file": "Mainstream_Lean.html",
+    "tag": "p",
+    "text": "gcongr",
+    "html": "<p><code class=\"docutils literal notranslate\"><span class=\"pre\">gcongr</span></code></p>",
+    "zh": ""
+  },
+  {
+    "id": "Mainstream_Lean:0016",
+    "file": "Mainstream_Lean.html",
+    "tag": "p",
+    "text": "rel",
+    "html": "<p><code class=\"docutils literal notranslate\"><span class=\"pre\">rel</span></code></p>",
+    "zh": ""
+  },
+  {
+    "id": "Mainstream_Lean:0017",
+    "file": "Mainstream_Lean.html",
+    "tag": "p",
+    "text": "gcongr does not require you to state which hypotheses you are",
+    "html": "<p><code class=\"docutils literal notranslate\"><span class=\"pre\">gcongr</span></code> does not require you to state which hypotheses you are</p>",
+    "zh": ""
+  },
+  {
+    "id": "Mainstream_Lean:0018",
+    "file": "Mainstream_Lean.html",
+    "tag": "p",
+    "text": "substituting",
+    "html": "<p>substituting</p>",
+    "zh": ""
+  },
+  {
+    "id": "Mainstream_Lean:0019",
+    "file": "Mainstream_Lean.html",
+    "tag": "p",
+    "text": "linarith",
+    "html": "<p><code class=\"docutils literal notranslate\"><span class=\"pre\">linarith</span></code></p>",
+    "zh": ""
+  },
+  {
+    "id": "Mainstream_Lean:0020",
+    "file": "Mainstream_Lean.html",
+    "tag": "p",
+    "text": "addarith",
+    "html": "<p><code class=\"docutils literal notranslate\"><span class=\"pre\">addarith</span></code></p>",
+    "zh": ""
+  },
+  {
+    "id": "Mainstream_Lean:0021",
+    "file": "Mainstream_Lean.html",
+    "tag": "p",
+    "text": "linarith can take constant multiples of linear inequalities as well",
+    "html": "<p><code class=\"docutils literal notranslate\"><span class=\"pre\">linarith</span></code> can take constant multiples of linear inequalities as well</p>",
+    "zh": ""
+  },
+  {
+    "id": "Mainstream_Lean:0022",
+    "file": "Mainstream_Lean.html",
+    "tag": "p",
+    "text": "as adding/subtracting constants, it can combine many linear",
+    "html": "<p>as adding/subtracting constants, it can combine many linear</p>",
+    "zh": ""
+  },
+  {
+    "id": "Mainstream_Lean:0023",
+    "file": "Mainstream_Lean.html",
+    "tag": "p",
+    "text": "inequalities, and it does not require you to state which hypotheses",
+    "html": "<p>inequalities, and it does not require you to state which hypotheses</p>",
+    "zh": ""
+  },
+  {
+    "id": "Mainstream_Lean:0024",
+    "file": "Mainstream_Lean.html",
+    "tag": "p",
+    "text": "you are using",
+    "html": "<p>you are using</p>",
+    "zh": ""
+  },
+  {
+    "id": "Mainstream_Lean:0025",
+    "file": "Mainstream_Lean.html",
+    "tag": "p",
+    "text": "duper",
+    "html": "<p><code class=\"docutils literal notranslate\"><span class=\"pre\">duper</span></code></p>",
+    "zh": ""
+  },
+  {
+    "id": "Mainstream_Lean:0026",
+    "file": "Mainstream_Lean.html",
+    "tag": "p",
+    "text": "exhaust",
+    "html": "<p><code class=\"docutils literal notranslate\"><span class=\"pre\">exhaust</span></code></p>",
+    "zh": ""
+  },
+  {
+    "id": "Mainstream_Lean:0027",
+    "file": "Mainstream_Lean.html",
+    "tag": "p",
+    "text": "duper can handle logical tasks involving quantifiers, not just the",
+    "html": "<p><code class=\"docutils literal notranslate\"><span class=\"pre\">duper</span></code> can handle logical tasks involving quantifiers, not just the</p>",
+    "zh": ""
+  },
+  {
+    "id": "Mainstream_Lean:0028",
+    "file": "Mainstream_Lean.html",
+    "tag": "p",
+    "text": "quantifier-free ones",
+    "html": "<p>quantifier-free ones</p>",
+    "zh": ""
+  },
+  {
+    "id": "Mainstream_Lean:0029",
+    "file": "Mainstream_Lean.html",
+    "tag": "p",
+    "text": "Some tactics used in this book have no mathlib analogues. They are typically wrappers for a small collection of lemmas, and in mathlib these lemmas would be invoked by name.",
+    "html": "<p>Some tactics used in this book have no mathlib analogues.  They are typically wrappers for a small\ncollection of lemmas, and in mathlib these lemmas would be invoked by name.</p>",
+    "zh": ""
+  },
+  {
+    "id": "Mainstream_Lean:0030",
+    "file": "Mainstream_Lean.html",
+    "tag": "p",
+    "text": "Mechanics of Proof tactic",
+    "html": "<p><em>Mechanics of Proof</em> tactic</p>",
+    "zh": ""
+  },
+  {
+    "id": "Mainstream_Lean:0031",
+    "file": "Mainstream_Lean.html",
+    "tag": "p",
+    "text": "lemmas wrapped",
+    "html": "<p>lemmas wrapped</p>",
+    "zh": ""
+  },
+  {
+    "id": "Mainstream_Lean:0032",
+    "file": "Mainstream_Lean.html",
+    "tag": "p",
+    "text": "extra",
+    "html": "<p><code class=\"docutils literal notranslate\"><span class=\"pre\">extra</span></code></p>",
+    "zh": ""
+  },
+  {
+    "id": "Mainstream_Lean:0033",
+    "file": "Mainstream_Lean.html",
+    "tag": "p",
+    "text": "Int.modEq_fac_zero , le_add_of_nonneg_right ,",
+    "html": "<p><code class=\"docutils literal notranslate\"><span class=\"pre\">Int.modEq_fac_zero</span></code>, <code class=\"docutils literal notranslate\"><span class=\"pre\">le_add_of_nonneg_right</span></code>,</p>",
+    "zh": ""
+  },
+  {
+    "id": "Mainstream_Lean:0034",
+    "file": "Mainstream_Lean.html",
+    "tag": "p",
+    "text": "lt_add_of_pos_right , etc. together with the tactic",
+    "html": "<p><code class=\"docutils literal notranslate\"><span class=\"pre\">lt_add_of_pos_right</span></code>, etc. together with the tactic</p>",
+    "zh": ""
+  },
+  {
+    "id": "Mainstream_Lean:0035",
+    "file": "Mainstream_Lean.html",
+    "tag": "p",
+    "text": "positivity",
+    "html": "<p><code class=\"docutils literal notranslate\"><span class=\"pre\">positivity</span></code></p>",
+    "zh": ""
+  },
+  {
+    "id": "Mainstream_Lean:0036",
+    "file": "Mainstream_Lean.html",
+    "tag": "p",
+    "text": "cancel",
+    "html": "<p><code class=\"docutils literal notranslate\"><span class=\"pre\">cancel</span></code></p>",
+    "zh": ""
+  },
+  {
+    "id": "Mainstream_Lean:0037",
+    "file": "Mainstream_Lean.html",
+    "tag": "p",
+    "text": "mul_left_cancel₀ , lt_of_pow_lt_pow ,",
+    "html": "<p><code class=\"docutils literal notranslate\"><span class=\"pre\">mul_left_cancel₀</span></code>, <code class=\"docutils literal notranslate\"><span class=\"pre\">lt_of_pow_lt_pow</span></code>,</p>",
+    "zh": ""
+  },
+  {
+    "id": "Mainstream_Lean:0038",
+    "file": "Mainstream_Lean.html",
+    "tag": "p",
+    "text": "pos_of_mul_pos_left , etc. together with the tactic",
+    "html": "<p><code class=\"docutils literal notranslate\"><span class=\"pre\">pos_of_mul_pos_left</span></code>, etc. together with the tactic</p>",
+    "zh": ""
+  },
+  {
+    "id": "Mainstream_Lean:0039",
+    "file": "Mainstream_Lean.html",
+    "tag": "p",
+    "text": "positivity",
+    "html": "<p><code class=\"docutils literal notranslate\"><span class=\"pre\">positivity</span></code></p>",
+    "zh": ""
+  },
+  {
+    "id": "Mainstream_Lean:0040",
+    "file": "Mainstream_Lean.html",
+    "tag": "p",
+    "text": "simple_induction",
+    "html": "<p><code class=\"docutils literal notranslate\"><span class=\"pre\">simple_induction</span></code></p>",
+    "zh": ""
+  },
+  {
+    "id": "Mainstream_Lean:0041",
+    "file": "Mainstream_Lean.html",
+    "tag": "p",
+    "text": "induction_from_starting_point",
+    "html": "<p><code class=\"docutils literal notranslate\"><span class=\"pre\">induction_from_starting_point</span></code></p>",
+    "zh": ""
+  },
+  {
+    "id": "Mainstream_Lean:0042",
+    "file": "Mainstream_Lean.html",
+    "tag": "p",
+    "text": "two_step_induction",
+    "html": "<p><code class=\"docutils literal notranslate\"><span class=\"pre\">two_step_induction</span></code></p>",
+    "zh": ""
+  },
+  {
+    "id": "Mainstream_Lean:0043",
+    "file": "Mainstream_Lean.html",
+    "tag": "p",
+    "text": "two_step_induction_from_starting_point",
+    "html": "<p><code class=\"docutils literal notranslate\"><span class=\"pre\">two_step_induction_from_starting_point</span></code></p>",
+    "zh": ""
+  },
+  {
+    "id": "Mainstream_Lean:0044",
+    "file": "Mainstream_Lean.html",
+    "tag": "p",
+    "text": "Nat.le_induction , Nat.twoStepInduction , etc. together",
+    "html": "<p><code class=\"docutils literal notranslate\"><span class=\"pre\">Nat.le_induction</span></code>, <code class=\"docutils literal notranslate\"><span class=\"pre\">Nat.twoStepInduction</span></code>, etc. together</p>",
+    "zh": ""
+  },
+  {
+    "id": "Mainstream_Lean:0045",
+    "file": "Mainstream_Lean.html",
+    "tag": "p",
+    "text": "with the tactics induction or induction'",
+    "html": "<p>with the tactics <code class=\"docutils literal notranslate\"><span class=\"pre\">induction</span></code> or <code class=\"docutils literal notranslate\"><span class=\"pre\">induction'</span></code></p>",
+    "zh": ""
+  },
+  {
+    "id": "Mainstream_Lean:0046",
+    "file": "Mainstream_Lean.html",
+    "tag": "p",
+    "text": "Many of the problems in this book would be solved much more efficiently in mathlib-style Lean, because there is some sequence of steps which can be carried out as one step by an advanced algorithm which is beyond the mathematical scope of this book. Some tactics of this kind to be aware of:",
+    "html": "<p>Many of the problems in this book would be solved much more efficiently in mathlib-style\nLean, because there is some sequence of steps which can be carried out as one step by an advanced\nalgorithm which is beyond the mathematical scope of this book.  Some tactics of this kind to be\naware of:</p>",
+    "zh": ""
+  },
+  {
+    "id": "Mainstream_Lean:0047",
+    "file": "Mainstream_Lean.html",
+    "tag": "p",
+    "text": "algorithm",
+    "html": "<p>algorithm</p>",
+    "zh": ""
+  },
+  {
+    "id": "Mainstream_Lean:0048",
+    "file": "Mainstream_Lean.html",
+    "tag": "p",
+    "text": "mathlib tactic",
+    "html": "<p>mathlib tactic</p>",
+    "zh": ""
+  },
+  {
+    "id": "Mainstream_Lean:0049",
+    "file": "Mainstream_Lean.html",
+    "tag": "p",
+    "text": "the kinds of steps this tactic can replace",
+    "html": "<p>the kinds of steps this tactic can replace</p>",
+    "zh": ""
+  },
+  {
+    "id": "Mainstream_Lean:0050",
+    "file": "Mainstream_Lean.html",
+    "tag": "p",
+    "text": "Fourier-Motzkin elimination",
+    "html": "<p><a class=\"reference external\" href=\"https://en.wikipedia.org/wiki/Fourier%E2%80%93Motzkin_elimination\">Fourier-Motzkin elimination</a></p>",
+    "zh": ""
+  },
+  {
+    "id": "Mainstream_Lean:0051",
+    "file": "Mainstream_Lean.html",
+    "tag": "p",
+    "text": "linarith",
+    "html": "<p><code class=\"docutils literal notranslate\"><span class=\"pre\">linarith</span></code></p>",
+    "zh": ""
+  },
+  {
+    "id": "Mainstream_Lean:0052",
+    "file": "Mainstream_Lean.html",
+    "tag": "p",
+    "text": "addarith , rel , ring , numbers",
+    "html": "<p><code class=\"docutils literal notranslate\"><span class=\"pre\">addarith</span></code>, <code class=\"docutils literal notranslate\"><span class=\"pre\">rel</span></code>, <code class=\"docutils literal notranslate\"><span class=\"pre\">ring</span></code>, <code class=\"docutils literal notranslate\"><span class=\"pre\">numbers</span></code></p>",
+    "zh": ""
+  },
+  {
+    "id": "Mainstream_Lean:0053",
+    "file": "Mainstream_Lean.html",
+    "tag": "p",
+    "text": "Gröbner bases",
+    "html": "<p><a class=\"reference external\" href=\"https://en.wikipedia.org/wiki/Gr%C3%B6bner_basis\">Gröbner bases</a></p>",
+    "zh": ""
+  },
+  {
+    "id": "Mainstream_Lean:0054",
+    "file": "Mainstream_Lean.html",
+    "tag": "p",
+    "text": "polyrith",
+    "html": "<p><code class=\"docutils literal notranslate\"><span class=\"pre\">polyrith</span></code></p>",
+    "zh": ""
+  },
+  {
+    "id": "Mainstream_Lean:0055",
+    "file": "Mainstream_Lean.html",
+    "tag": "p",
+    "text": "rw , ring",
+    "html": "<p><code class=\"docutils literal notranslate\"><span class=\"pre\">rw</span></code>, <code class=\"docutils literal notranslate\"><span class=\"pre\">ring</span></code></p>",
+    "zh": ""
+  },
+  {
+    "id": "Mainstream_Lean:0056",
+    "file": "Mainstream_Lean.html",
+    "tag": "p",
+    "text": "superposition calculus",
+    "html": "<p><a class=\"reference external\" href=\"https://en.wikipedia.org/wiki/Superposition_calculus\">superposition calculus</a></p>",
+    "zh": ""
+  },
+  {
+    "id": "Mainstream_Lean:0057",
+    "file": "Mainstream_Lean.html",
+    "tag": "p",
+    "text": "duper",
+    "html": "<p><code class=\"docutils literal notranslate\"><span class=\"pre\">duper</span></code></p>",
+    "zh": ""
+  },
+  {
+    "id": "Mainstream_Lean:0058",
+    "file": "Mainstream_Lean.html",
+    "tag": "p",
+    "text": "logic tactics at the end of a proof or sub-proof",
+    "html": "<p>logic tactics at the end of a proof or sub-proof</p>",
+    "zh": ""
+  },
+  {
+    "id": "Mainstream_Lean:0059",
+    "file": "Mainstream_Lean.html",
+    "tag": "p",
+    "text": "Another point not covered in this book is how to interact with the library. Since mathlib contains over a million lines of Lean code, it is not always easy to find out whether a lemma you want exists in the library! In this book, I avoid the issue by telling you in advance the name of any lemma I expect you to use.",
+    "html": "<p>Another point not covered in this book is how to interact with the library.  Since mathlib contains\nover a million lines of Lean code, it is not always easy to find out whether a lemma you want exists\nin the library!  In this book, I avoid the issue by telling you in advance the name of any lemma I\nexpect you to use.</p>",
+    "zh": ""
+  },
+  {
+    "id": "Mainstream_Lean:0060",
+    "file": "Mainstream_Lean.html",
+    "tag": "p",
+    "text": "A few basic points to be aware of in interacting with the library:",
+    "html": "<p>A few basic points to be aware of in interacting with the library:</p>",
+    "zh": ""
+  },
+  {
+    "id": "Mainstream_Lean:0061",
+    "file": "Mainstream_Lean.html",
+    "tag": "p",
+    "text": "All this only scratches the surface: there are many more features of Lean to help you in your mathematical discoveries. Mathematics in Lean , the community website , and the community discussion board offer further pointers for exploration. Have fun!",
+    "html": "<p>All this only scratches the surface: there are many more features of Lean to help you in your\nmathematical discoveries.  <em>Mathematics in Lean</em>, the\n<a class=\"reference external\" href=\"https://leanprover-community.github.io/\">community website</a>, and the\n<a class=\"reference external\" href=\"https://leanprover.zulipchat.com/\">community discussion board</a> offer further pointers for\nexploration.  Have fun!</p>",
+    "zh": ""
+  },
+  {
+    "id": "Mainstream_Lean:0062",
+    "file": "Mainstream_Lean.html",
+    "tag": "li",
+    "text": "The online documentation is generally more readable than the source code: it is searchable and it has internal hyperlinks.",
+    "html": "<li><p>The <a class=\"reference external\" href=\"https://leanprover-community.github.io/mathlib4_docs/\">online documentation</a> is generally\nmore readable than the source code: it is searchable and it has internal hyperlinks.</p></li>",
+    "zh": ""
+  },
+  {
+    "id": "Mainstream_Lean:0063",
+    "file": "Mainstream_Lean.html",
+    "tag": "li",
+    "text": "Lemmas are often stated in extreme generality … \\((a - b) + c = a - (b - c)\\) is stated not for \\(\\mathbb{R}\\) but for a SubtractionCommMonoid . You may have better luck interacting with the library after first courses on abstract algebra and point-set topology.",
+    "html": "<li><p>Lemmas are often stated in extreme generality … <span class=\"math notranslate nohighlight\">\\((a - b) + c = a - (b - c)\\)</span>\n<a class=\"reference external\" href=\"https://leanprover-community.github.io/mathlib4_docs/Mathlib/Algebra/Group/Basic.html#sub_sub\">is stated</a>\nnot for <span class=\"math notranslate nohighlight\">\\(\\mathbb{R}\\)</span> but for a <code class=\"docutils literal notranslate\"><span class=\"pre\">SubtractionCommMonoid</span></code>.  You may have better\nluck interacting with the library after first courses on abstract algebra and point-set topology.</p></li>",
+    "zh": ""
+  },
+  {
+    "id": "Mainstream_Lean:0064",
+    "file": "Mainstream_Lean.html",
+    "tag": "li",
+    "text": "If you can guess the exact statement of a lemma, the tactic exact? will find it in the library.",
+    "html": "<li><p>If you can guess the exact statement of a lemma, the tactic <code class=\"docutils literal notranslate\"><span class=\"pre\">exact?</span></code> will find it in the\nlibrary.</p></li>",
+    "zh": ""
+  },
+  {
+    "id": "Mainstream_Lean:0065",
+    "file": "Mainstream_Lean.html",
+    "tag": "th",
+    "text": "mathlib tactic",
+    "html": "<th class=\"head\"><p>mathlib tactic</p></th>",
+    "zh": ""
+  },
+  {
+    "id": "Mainstream_Lean:0066",
+    "file": "Mainstream_Lean.html",
+    "tag": "th",
+    "text": "weakened Mechanics of Proof version",
+    "html": "<th class=\"head\"><p>weakened</p>\n<p><em>Mechanics of</em></p>\n<p><em>Proof</em> version</p>\n</th>",
+    "zh": ""
+  },
+  {
+    "id": "Mainstream_Lean:0067",
+    "file": "Mainstream_Lean.html",
+    "tag": "th",
+    "text": "differences",
+    "html": "<th class=\"head\"><p>differences</p></th>",
+    "zh": ""
+  },
+  {
+    "id": "Mainstream_Lean:0068",
+    "file": "Mainstream_Lean.html",
+    "tag": "th",
+    "text": "Mechanics of Proof tactic",
+    "html": "<th class=\"head\"><p><em>Mechanics of Proof</em> tactic</p></th>",
+    "zh": ""
+  },
+  {
+    "id": "Mainstream_Lean:0069",
+    "file": "Mainstream_Lean.html",
+    "tag": "th",
+    "text": "lemmas wrapped",
+    "html": "<th class=\"head\"><p>lemmas wrapped</p></th>",
+    "zh": ""
+  },
+  {
+    "id": "Mainstream_Lean:0070",
+    "file": "Mainstream_Lean.html",
+    "tag": "th",
+    "text": "algorithm",
+    "html": "<th class=\"head\"><p>algorithm</p></th>",
+    "zh": ""
+  },
+  {
+    "id": "Mainstream_Lean:0071",
+    "file": "Mainstream_Lean.html",
+    "tag": "th",
+    "text": "mathlib tactic",
+    "html": "<th class=\"head\"><p>mathlib tactic</p></th>",
+    "zh": ""
+  },
+  {
+    "id": "Mainstream_Lean:0072",
+    "file": "Mainstream_Lean.html",
+    "tag": "th",
+    "text": "the kinds of steps this tactic can replace",
+    "html": "<th class=\"head\"><p>the kinds of steps this tactic can replace</p></th>",
+    "zh": ""
+  },
+  {
+    "id": "Mainstream_Lean:0073",
+    "file": "Mainstream_Lean.html",
+    "tag": "td",
+    "text": "norm_num",
+    "html": "<td><p><code class=\"docutils literal notranslate\"><span class=\"pre\">norm_num</span></code></p></td>",
+    "zh": ""
+  },
+  {
+    "id": "Mainstream_Lean:0074",
+    "file": "Mainstream_Lean.html",
+    "tag": "td",
+    "text": "numbers",
+    "html": "<td><p><code class=\"docutils literal notranslate\"><span class=\"pre\">numbers</span></code></p></td>",
+    "zh": ""
+  },
+  {
+    "id": "Mainstream_Lean:0075",
+    "file": "Mainstream_Lean.html",
+    "tag": "td",
+    "text": "norm_num can do some calculations which in this book we require the reader to carry out by hand, including reduction mod \\(n\\) , handling logic, and checking divisibility and primality",
+    "html": "<td><p><code class=\"docutils literal notranslate\"><span class=\"pre\">norm_num</span></code> can do some calculations which in this book we require</p>\n<p>the reader to carry out by hand, including reduction mod <span class=\"math notranslate nohighlight\">\\(n\\)</span>,</p>\n<p>handling logic, and checking divisibility and primality</p>\n</td>",
+    "zh": ""
+  },
+  {
+    "id": "Mainstream_Lean:0076",
+    "file": "Mainstream_Lean.html",
+    "tag": "td",
+    "text": "gcongr",
+    "html": "<td><p><code class=\"docutils literal notranslate\"><span class=\"pre\">gcongr</span></code></p></td>",
+    "zh": ""
+  },
+  {
+    "id": "Mainstream_Lean:0077",
+    "file": "Mainstream_Lean.html",
+    "tag": "td",
+    "text": "rel",
+    "html": "<td><p><code class=\"docutils literal notranslate\"><span class=\"pre\">rel</span></code></p></td>",
+    "zh": ""
+  },
+  {
+    "id": "Mainstream_Lean:0078",
+    "file": "Mainstream_Lean.html",
+    "tag": "td",
+    "text": "gcongr does not require you to state which hypotheses you are substituting",
+    "html": "<td><p><code class=\"docutils literal notranslate\"><span class=\"pre\">gcongr</span></code> does not require you to state which hypotheses you are</p>\n<p>substituting</p>\n</td>",
+    "zh": ""
+  },
+  {
+    "id": "Mainstream_Lean:0079",
+    "file": "Mainstream_Lean.html",
+    "tag": "td",
+    "text": "linarith",
+    "html": "<td><p><code class=\"docutils literal notranslate\"><span class=\"pre\">linarith</span></code></p></td>",
+    "zh": ""
+  },
+  {
+    "id": "Mainstream_Lean:0080",
+    "file": "Mainstream_Lean.html",
+    "tag": "td",
+    "text": "addarith",
+    "html": "<td><p><code class=\"docutils literal notranslate\"><span class=\"pre\">addarith</span></code></p></td>",
+    "zh": ""
+  },
+  {
+    "id": "Mainstream_Lean:0081",
+    "file": "Mainstream_Lean.html",
+    "tag": "td",
+    "text": "linarith can take constant multiples of linear inequalities as well as adding/subtracting constants, it can combine many linear inequalities, and it does not require you to state which hypotheses you are using",
+    "html": "<td><p><code class=\"docutils literal notranslate\"><span class=\"pre\">linarith</span></code> can take constant multiples of linear inequalities as well</p>\n<p>as adding/subtracting constants, it can combine many linear</p>\n<p>inequalities, and it does not require you to state which hypotheses</p>\n<p>you are using</p>\n</td>",
+    "zh": ""
+  },
+  {
+    "id": "Mainstream_Lean:0082",
+    "file": "Mainstream_Lean.html",
+    "tag": "td",
+    "text": "duper",
+    "html": "<td><p><code class=\"docutils literal notranslate\"><span class=\"pre\">duper</span></code></p></td>",
+    "zh": ""
+  },
+  {
+    "id": "Mainstream_Lean:0083",
+    "file": "Mainstream_Lean.html",
+    "tag": "td",
+    "text": "exhaust",
+    "html": "<td><p><code class=\"docutils literal notranslate\"><span class=\"pre\">exhaust</span></code></p></td>",
+    "zh": ""
+  },
+  {
+    "id": "Mainstream_Lean:0084",
+    "file": "Mainstream_Lean.html",
+    "tag": "td",
+    "text": "duper can handle logical tasks involving quantifiers, not just the quantifier-free ones",
+    "html": "<td><p><code class=\"docutils literal notranslate\"><span class=\"pre\">duper</span></code> can handle logical tasks involving quantifiers, not just the</p>\n<p>quantifier-free ones</p>\n</td>",
+    "zh": ""
+  },
+  {
+    "id": "Mainstream_Lean:0085",
+    "file": "Mainstream_Lean.html",
+    "tag": "td",
+    "text": "extra",
+    "html": "<td><p><code class=\"docutils literal notranslate\"><span class=\"pre\">extra</span></code></p></td>",
+    "zh": ""
+  },
+  {
+    "id": "Mainstream_Lean:0086",
+    "file": "Mainstream_Lean.html",
+    "tag": "td",
+    "text": "Int.modEq_fac_zero , le_add_of_nonneg_right , lt_add_of_pos_right , etc. together with the tactic positivity",
+    "html": "<td><p><code class=\"docutils literal notranslate\"><span class=\"pre\">Int.modEq_fac_zero</span></code>, <code class=\"docutils literal notranslate\"><span class=\"pre\">le_add_of_nonneg_right</span></code>,</p>\n<p><code class=\"docutils literal notranslate\"><span class=\"pre\">lt_add_of_pos_right</span></code>, etc. together with the tactic</p>\n<p><code class=\"docutils literal notranslate\"><span class=\"pre\">positivity</span></code></p>\n</td>",
+    "zh": ""
+  },
+  {
+    "id": "Mainstream_Lean:0087",
+    "file": "Mainstream_Lean.html",
+    "tag": "td",
+    "text": "cancel",
+    "html": "<td><p><code class=\"docutils literal notranslate\"><span class=\"pre\">cancel</span></code></p></td>",
+    "zh": ""
+  },
+  {
+    "id": "Mainstream_Lean:0088",
+    "file": "Mainstream_Lean.html",
+    "tag": "td",
+    "text": "mul_left_cancel₀ , lt_of_pow_lt_pow , pos_of_mul_pos_left , etc. together with the tactic positivity",
+    "html": "<td><p><code class=\"docutils literal notranslate\"><span class=\"pre\">mul_left_cancel₀</span></code>, <code class=\"docutils literal notranslate\"><span class=\"pre\">lt_of_pow_lt_pow</span></code>,</p>\n<p><code class=\"docutils literal notranslate\"><span class=\"pre\">pos_of_mul_pos_left</span></code>, etc. together with the tactic</p>\n<p><code class=\"docutils literal notranslate\"><span class=\"pre\">positivity</span></code></p>\n</td>",
+    "zh": ""
+  },
+  {
+    "id": "Mainstream_Lean:0089",
+    "file": "Mainstream_Lean.html",
+    "tag": "td",
+    "text": "simple_induction induction_from_starting_point two_step_induction two_step_induction_from_starting_point",
+    "html": "<td><p><code class=\"docutils literal notranslate\"><span class=\"pre\">simple_induction</span></code></p>\n<p><code class=\"docutils literal notranslate\"><span class=\"pre\">induction_from_starting_point</span></code></p>\n<p><code class=\"docutils literal notranslate\"><span class=\"pre\">two_step_induction</span></code></p>\n<p><code class=\"docutils literal notranslate\"><span class=\"pre\">two_step_induction_from_starting_point</span></code></p>\n</td>",
+    "zh": ""
+  },
+  {
+    "id": "Mainstream_Lean:0090",
+    "file": "Mainstream_Lean.html",
+    "tag": "td",
+    "text": "Nat.le_induction , Nat.twoStepInduction , etc. together with the tactics induction or induction'",
+    "html": "<td><p><code class=\"docutils literal notranslate\"><span class=\"pre\">Nat.le_induction</span></code>, <code class=\"docutils literal notranslate\"><span class=\"pre\">Nat.twoStepInduction</span></code>, etc. together</p>\n<p>with the tactics <code class=\"docutils literal notranslate\"><span class=\"pre\">induction</span></code> or <code class=\"docutils literal notranslate\"><span class=\"pre\">induction'</span></code></p>\n</td>",
+    "zh": ""
+  },
+  {
+    "id": "Mainstream_Lean:0091",
+    "file": "Mainstream_Lean.html",
+    "tag": "td",
+    "text": "Fourier-Motzkin elimination",
+    "html": "<td><p><a class=\"reference external\" href=\"https://en.wikipedia.org/wiki/Fourier%E2%80%93Motzkin_elimination\">Fourier-Motzkin elimination</a></p></td>",
+    "zh": ""
+  },
+  {
+    "id": "Mainstream_Lean:0092",
+    "file": "Mainstream_Lean.html",
+    "tag": "td",
+    "text": "linarith",
+    "html": "<td><p><code class=\"docutils literal notranslate\"><span class=\"pre\">linarith</span></code></p></td>",
+    "zh": ""
+  },
+  {
+    "id": "Mainstream_Lean:0093",
+    "file": "Mainstream_Lean.html",
+    "tag": "td",
+    "text": "addarith , rel , ring , numbers",
+    "html": "<td><p><code class=\"docutils literal notranslate\"><span class=\"pre\">addarith</span></code>, <code class=\"docutils literal notranslate\"><span class=\"pre\">rel</span></code>, <code class=\"docutils literal notranslate\"><span class=\"pre\">ring</span></code>, <code class=\"docutils literal notranslate\"><span class=\"pre\">numbers</span></code></p></td>",
+    "zh": ""
+  },
+  {
+    "id": "Mainstream_Lean:0094",
+    "file": "Mainstream_Lean.html",
+    "tag": "td",
+    "text": "Gröbner bases",
+    "html": "<td><p><a class=\"reference external\" href=\"https://en.wikipedia.org/wiki/Gr%C3%B6bner_basis\">Gröbner bases</a></p></td>",
+    "zh": ""
+  },
+  {
+    "id": "Mainstream_Lean:0095",
+    "file": "Mainstream_Lean.html",
+    "tag": "td",
+    "text": "polyrith",
+    "html": "<td><p><code class=\"docutils literal notranslate\"><span class=\"pre\">polyrith</span></code></p></td>",
+    "zh": ""
+  },
+  {
+    "id": "Mainstream_Lean:0096",
+    "file": "Mainstream_Lean.html",
+    "tag": "td",
+    "text": "rw , ring",
+    "html": "<td><p><code class=\"docutils literal notranslate\"><span class=\"pre\">rw</span></code>, <code class=\"docutils literal notranslate\"><span class=\"pre\">ring</span></code></p></td>",
+    "zh": ""
+  },
+  {
+    "id": "Mainstream_Lean:0097",
+    "file": "Mainstream_Lean.html",
+    "tag": "td",
+    "text": "superposition calculus",
+    "html": "<td><p><a class=\"reference external\" href=\"https://en.wikipedia.org/wiki/Superposition_calculus\">superposition calculus</a></p></td>",
+    "zh": ""
+  },
+  {
+    "id": "Mainstream_Lean:0098",
+    "file": "Mainstream_Lean.html",
+    "tag": "td",
+    "text": "duper",
+    "html": "<td><p><code class=\"docutils literal notranslate\"><span class=\"pre\">duper</span></code></p></td>",
+    "zh": ""
+  },
+  {
+    "id": "Mainstream_Lean:0099",
+    "file": "Mainstream_Lean.html",
+    "tag": "td",
+    "text": "logic tactics at the end of a proof or sub-proof",
+    "html": "<td><p>logic tactics at the end of a proof or sub-proof</p></td>",
+    "zh": ""
+  }
+]

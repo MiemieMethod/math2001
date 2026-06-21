@@ -1,0 +1,1890 @@
+[
+  {
+    "id": "09_Sets:0001",
+    "file": "09_Sets.html",
+    "tag": "h1",
+    "text": "9. Sets",
+    "html": "<h1><span class=\"section-number\">9. </span>Sets<a class=\"headerlink\" href=\"#sets\" title=\"Permalink to this headline\"></a></h1>",
+    "zh": "9. 集合"
+  },
+  {
+    "id": "09_Sets:0002",
+    "file": "09_Sets.html",
+    "tag": "h2",
+    "text": "9.1. Introduction",
+    "html": "<h2><span class=\"section-number\">9.1. </span>Introduction<a class=\"headerlink\" href=\"#introduction\" title=\"Permalink to this headline\"></a></h2>",
+    "zh": "9.1. 引言"
+  },
+  {
+    "id": "09_Sets:0003",
+    "file": "09_Sets.html",
+    "tag": "h2",
+    "text": "9.2. Set operations",
+    "html": "<h2><span class=\"section-number\">9.2. </span>Set operations<a class=\"headerlink\" href=\"#set-operations\" title=\"Permalink to this headline\"></a></h2>",
+    "zh": "9.2. 集合运算"
+  },
+  {
+    "id": "09_Sets:0004",
+    "file": "09_Sets.html",
+    "tag": "h2",
+    "text": "9.3. The type of sets",
+    "html": "<h2><span class=\"section-number\">9.3. </span>The type of sets<a class=\"headerlink\" href=\"#the-type-of-sets\" title=\"Permalink to this headline\"></a></h2>",
+    "zh": "9.3. 集合的类型"
+  },
+  {
+    "id": "09_Sets:0005",
+    "file": "09_Sets.html",
+    "tag": "h3",
+    "text": "9.1.1. Example",
+    "html": "<h3><span class=\"section-number\">9.1.1. </span>Example<a class=\"headerlink\" href=\"#example\" title=\"Permalink to this headline\"></a></h3>",
+    "zh": "9.1.1. 例"
+  },
+  {
+    "id": "09_Sets:0006",
+    "file": "09_Sets.html",
+    "tag": "h3",
+    "text": "9.1.2. Example",
+    "html": "<h3><span class=\"section-number\">9.1.2. </span>Example<a class=\"headerlink\" href=\"#id2\" title=\"Permalink to this headline\"></a></h3>",
+    "zh": "9.1.2. 例"
+  },
+  {
+    "id": "09_Sets:0007",
+    "file": "09_Sets.html",
+    "tag": "h3",
+    "text": "9.1.3. Example",
+    "html": "<h3><span class=\"section-number\">9.1.3. </span>Example<a class=\"headerlink\" href=\"#id3\" title=\"Permalink to this headline\"></a></h3>",
+    "zh": "9.1.3. 例"
+  },
+  {
+    "id": "09_Sets:0008",
+    "file": "09_Sets.html",
+    "tag": "h3",
+    "text": "9.1.4. Example",
+    "html": "<h3><span class=\"section-number\">9.1.4. </span>Example<a class=\"headerlink\" href=\"#id4\" title=\"Permalink to this headline\"></a></h3>",
+    "zh": "9.1.4. 例"
+  },
+  {
+    "id": "09_Sets:0009",
+    "file": "09_Sets.html",
+    "tag": "h3",
+    "text": "9.1.5. Example",
+    "html": "<h3><span class=\"section-number\">9.1.5. </span>Example<a class=\"headerlink\" href=\"#id5\" title=\"Permalink to this headline\"></a></h3>",
+    "zh": "9.1.5. 例"
+  },
+  {
+    "id": "09_Sets:0010",
+    "file": "09_Sets.html",
+    "tag": "h3",
+    "text": "9.1.6. Example",
+    "html": "<h3><span class=\"section-number\">9.1.6. </span>Example<a class=\"headerlink\" href=\"#id6\" title=\"Permalink to this headline\"></a></h3>",
+    "zh": "9.1.6. 例"
+  },
+  {
+    "id": "09_Sets:0011",
+    "file": "09_Sets.html",
+    "tag": "h3",
+    "text": "9.1.7. Example",
+    "html": "<h3><span class=\"section-number\">9.1.7. </span>Example<a class=\"headerlink\" href=\"#id7\" title=\"Permalink to this headline\"></a></h3>",
+    "zh": "9.1.7. 例"
+  },
+  {
+    "id": "09_Sets:0012",
+    "file": "09_Sets.html",
+    "tag": "h3",
+    "text": "9.1.8. Example",
+    "html": "<h3><span class=\"section-number\">9.1.8. </span>Example<a class=\"headerlink\" href=\"#id8\" title=\"Permalink to this headline\"></a></h3>",
+    "zh": "9.1.8. 例"
+  },
+  {
+    "id": "09_Sets:0013",
+    "file": "09_Sets.html",
+    "tag": "h3",
+    "text": "9.1.9. Example",
+    "html": "<h3><span class=\"section-number\">9.1.9. </span>Example<a class=\"headerlink\" href=\"#id9\" title=\"Permalink to this headline\"></a></h3>",
+    "zh": "9.1.9. 例"
+  },
+  {
+    "id": "09_Sets:0014",
+    "file": "09_Sets.html",
+    "tag": "h3",
+    "text": "9.1.10. Exercises",
+    "html": "<h3><span class=\"section-number\">9.1.10. </span>Exercises<a class=\"headerlink\" href=\"#exercises\" title=\"Permalink to this headline\"></a></h3>",
+    "zh": "9.1.10. 练习"
+  },
+  {
+    "id": "09_Sets:0015",
+    "file": "09_Sets.html",
+    "tag": "h3",
+    "text": "9.2.1. Example",
+    "html": "<h3><span class=\"section-number\">9.2.1. </span>Example<a class=\"headerlink\" href=\"#union\" title=\"Permalink to this headline\"></a></h3>",
+    "zh": "9.2.1. 例"
+  },
+  {
+    "id": "09_Sets:0016",
+    "file": "09_Sets.html",
+    "tag": "h3",
+    "text": "9.2.2. Example",
+    "html": "<h3><span class=\"section-number\">9.2.2. </span>Example<a class=\"headerlink\" href=\"#id12\" title=\"Permalink to this headline\"></a></h3>",
+    "zh": "9.2.2. 例"
+  },
+  {
+    "id": "09_Sets:0017",
+    "file": "09_Sets.html",
+    "tag": "h3",
+    "text": "9.2.3. Example",
+    "html": "<h3><span class=\"section-number\">9.2.3. </span>Example<a class=\"headerlink\" href=\"#id13\" title=\"Permalink to this headline\"></a></h3>",
+    "zh": "9.2.3. 例"
+  },
+  {
+    "id": "09_Sets:0018",
+    "file": "09_Sets.html",
+    "tag": "h3",
+    "text": "9.2.4. Example",
+    "html": "<h3><span class=\"section-number\">9.2.4. </span>Example<a class=\"headerlink\" href=\"#id14\" title=\"Permalink to this headline\"></a></h3>",
+    "zh": "9.2.4. 例"
+  },
+  {
+    "id": "09_Sets:0019",
+    "file": "09_Sets.html",
+    "tag": "h3",
+    "text": "9.2.5. Example",
+    "html": "<h3><span class=\"section-number\">9.2.5. </span>Example<a class=\"headerlink\" href=\"#id15\" title=\"Permalink to this headline\"></a></h3>",
+    "zh": "9.2.5. 例"
+  },
+  {
+    "id": "09_Sets:0020",
+    "file": "09_Sets.html",
+    "tag": "h3",
+    "text": "9.2.6. Example",
+    "html": "<h3><span class=\"section-number\">9.2.6. </span>Example<a class=\"headerlink\" href=\"#id16\" title=\"Permalink to this headline\"></a></h3>",
+    "zh": "9.2.6. 例"
+  },
+  {
+    "id": "09_Sets:0021",
+    "file": "09_Sets.html",
+    "tag": "h3",
+    "text": "9.2.7. Example",
+    "html": "<h3><span class=\"section-number\">9.2.7. </span>Example<a class=\"headerlink\" href=\"#id17\" title=\"Permalink to this headline\"></a></h3>",
+    "zh": "9.2.7. 例"
+  },
+  {
+    "id": "09_Sets:0022",
+    "file": "09_Sets.html",
+    "tag": "h3",
+    "text": "9.2.8. Exercises",
+    "html": "<h3><span class=\"section-number\">9.2.8. </span>Exercises<a class=\"headerlink\" href=\"#id18\" title=\"Permalink to this headline\"></a></h3>",
+    "zh": "9.2.8. 练习"
+  },
+  {
+    "id": "09_Sets:0023",
+    "file": "09_Sets.html",
+    "tag": "h3",
+    "text": "9.3.1. Definition",
+    "html": "<h3><span class=\"section-number\">9.3.1. </span>Definition<a class=\"headerlink\" href=\"#definition\" title=\"Permalink to this headline\"></a></h3>",
+    "zh": "9.3.1. 定义"
+  },
+  {
+    "id": "09_Sets:0024",
+    "file": "09_Sets.html",
+    "tag": "h3",
+    "text": "9.3.2. Example",
+    "html": "<h3><span class=\"section-number\">9.3.2. </span>Example<a class=\"headerlink\" href=\"#id20\" title=\"Permalink to this headline\"></a></h3>",
+    "zh": "9.3.2. 例"
+  },
+  {
+    "id": "09_Sets:0025",
+    "file": "09_Sets.html",
+    "tag": "h3",
+    "text": "9.3.3. Example",
+    "html": "<h3><span class=\"section-number\">9.3.3. </span>Example<a class=\"headerlink\" href=\"#id21\" title=\"Permalink to this headline\"></a></h3>",
+    "zh": "9.3.3. 例"
+  },
+  {
+    "id": "09_Sets:0026",
+    "file": "09_Sets.html",
+    "tag": "h3",
+    "text": "9.3.4. Example",
+    "html": "<h3><span class=\"section-number\">9.3.4. </span>Example<a class=\"headerlink\" href=\"#id22\" title=\"Permalink to this headline\"></a></h3>",
+    "zh": "9.3.4. 例"
+  },
+  {
+    "id": "09_Sets:0027",
+    "file": "09_Sets.html",
+    "tag": "h3",
+    "text": "9.3.5. Example",
+    "html": "<h3><span class=\"section-number\">9.3.5. </span>Example<a class=\"headerlink\" href=\"#id23\" title=\"Permalink to this headline\"></a></h3>",
+    "zh": "9.3.5. 例"
+  },
+  {
+    "id": "09_Sets:0028",
+    "file": "09_Sets.html",
+    "tag": "h3",
+    "text": "9.3.6. Exercises",
+    "html": "<h3><span class=\"section-number\">9.3.6. </span>Exercises<a class=\"headerlink\" href=\"#id24\" title=\"Permalink to this headline\"></a></h3>",
+    "zh": "9.3.6. 练习"
+  },
+  {
+    "id": "09_Sets:0029",
+    "file": "09_Sets.html",
+    "tag": "p",
+    "text": "This chapter introduces the language of sets , a convenient way to reason about the objects in a type which have some property. This language includes the concept of membership in a set, the property of a set being a subset of another set, and a whole zoo of set operations, such as intersection , union and complement , each of which is a wrapper for a logical symbol relating the underlying properties.",
+    "html": "<p>This chapter introduces the language of <em>sets</em>, a convenient way to reason about the\nobjects in a type which have some property.  This language includes\nthe concept of <em>membership</em> in a set, the property of a set being a <em>subset</em> of\nanother set, and a whole zoo of set operations, such as <em>intersection</em>, <em>union</em> and\n<em>complement</em>, each of which is a wrapper for a logical symbol relating\nthe underlying properties.</p>",
+    "zh": "本章介绍集合语言。集合语言是一种方便的方式，用来讨论某个类型中具有某种性质的对象。这个语言包括属于某集合的概念、一个集合是另一个集合的子集这一性质，以及一整套集合运算，例如交、并和补；其中每一种运算都可以看作是对底层性质之间某个逻辑符号的封装。"
+  },
+  {
+    "id": "09_Sets:0030",
+    "file": "09_Sets.html",
+    "tag": "p",
+    "text": "In the last section of the chapter, Section 9.3 , we study the collection of sets in a type as a type in its own right.",
+    "html": "<p>In the last section of the chapter, <a class=\"reference internal\" href=\"#powerset\"><span class=\"std std-numref\">Section 9.3</span></a>, we study the\ncollection of sets in a type as a type in its own right.</p>",
+    "zh": "在本章最后一节，即第 9.3 节中，我们把某个类型中的所有集合组成的全体本身也作为一种类型来研究。"
+  },
+  {
+    "id": "09_Sets:0031",
+    "file": "09_Sets.html",
+    "tag": "p",
+    "text": "In type theory, the logical foundation for this book, a set in a type \\(X\\) is specified by a predicate on \\(X\\) . For example, “the set of integers \\(n\\) such that \\(n\\le 3\\) ” is a set in \\(\\mathbb{Z}\\) .",
+    "html": "<p>In type theory, the logical foundation for this book, a <em>set</em> in a type <span class=\"math notranslate nohighlight\">\\(X\\)</span> is specified\nby a predicate on <span class=\"math notranslate nohighlight\">\\(X\\)</span>.  For example, “the set of integers <span class=\"math notranslate nohighlight\">\\(n\\)</span> such that <span class=\"math notranslate nohighlight\">\\(n\\le 3\\)</span>”\nis a set in <span class=\"math notranslate nohighlight\">\\(\\mathbb{Z}\\)</span>.</p>",
+    "zh": "在类型论，即本书采用的逻辑基础中，类型 \\(X\\) 中的一个集合由 \\(X\\) 上的一个谓词指定。例如，“满足 \\(n\\le 3\\) 的整数 \\(n\\) 的集合”就是 \\(\\mathbb{Z}\\) 中的一个集合。"
+  },
+  {
+    "id": "09_Sets:0032",
+    "file": "09_Sets.html",
+    "tag": "p",
+    "text": "There is a standard notation for sets specified by predicates. For example, the set described above is written notationally as \\(\\{n:\\mathbb{Z} \\mid n\\le 3\\}\\) . Here is that set in Lean.",
+    "html": "<p>There is a standard notation for sets specified by predicates.  For example, the set described above\nis written notationally as <span class=\"math notranslate nohighlight\">\\(\\{n:\\mathbb{Z} \\mid n\\le 3\\}\\)</span>. Here is that set in Lean.</p>",
+    "zh": "对于由谓词指定的集合，有一种标准记号。例如，上述集合记为 \\(\\{n:\\mathbb{Z} \\mid n\\le 3\\}\\)。下面是在 Lean 中的这个集合。"
+  },
+  {
+    "id": "09_Sets:0033",
+    "file": "09_Sets.html",
+    "tag": "p",
+    "text": "Note that the infoview confirms that the type of the expression is Set ℤ , a set of integers.",
+    "html": "<p>Note that the infoview confirms that the type of the expression is <code class=\"docutils literal notranslate\"><span class=\"pre\">Set</span> <span class=\"pre\">ℤ</span></code>, a set of integers.</p>",
+    "zh": "注意，infoview 确认该表达式的类型为 <code class=\\\"docutils literal notranslate\\\"><span class=\\\"pre\\\">Set</span> <span class=\\\"pre\\\">ℤ</span></code>，即整数集合。"
+  },
+  {
+    "id": "09_Sets:0034",
+    "file": "09_Sets.html",
+    "tag": "p",
+    "text": "A term of type \\(X\\) belongs to a set in \\(X\\) specified by some predicate, if the predicate holds for that term.",
+    "html": "<p>A term of type <span class=\"math notranslate nohighlight\">\\(X\\)</span> <em>belongs to</em> a set in <span class=\"math notranslate nohighlight\">\\(X\\)</span> specified by some predicate, if the\npredicate holds for that term.</p>",
+    "zh": "类型 \\(X\\) 的一个项属于 \\(X\\) 中由某个谓词指定的集合，当且仅当该谓词对这个项成立。"
+  },
+  {
+    "id": "09_Sets:0035",
+    "file": "09_Sets.html",
+    "tag": "p",
+    "text": "Problem",
+    "html": "<p class=\"admonition-title\">Problem</p>",
+    "zh": "问题"
+  },
+  {
+    "id": "09_Sets:0036",
+    "file": "09_Sets.html",
+    "tag": "p",
+    "text": "Show that the integer 1 belongs to the set of integers \\(\\{n:\\mathbb{Z} \\mid n\\le 3\\}\\) .",
+    "html": "<p>Show that the integer 1 belongs to the set of integers <span class=\"math notranslate nohighlight\">\\(\\{n:\\mathbb{Z} \\mid n\\le 3\\}\\)</span>.</p>",
+    "zh": "证明整数 1 属于整数集合 \\(\\{n:\\mathbb{Z} \\mid n\\le 3\\}\\)。"
+  },
+  {
+    "id": "09_Sets:0037",
+    "file": "09_Sets.html",
+    "tag": "p",
+    "text": "Solution",
+    "html": "<p class=\"admonition-title\">Solution</p>",
+    "zh": "解答"
+  },
+  {
+    "id": "09_Sets:0038",
+    "file": "09_Sets.html",
+    "tag": "p",
+    "text": "\\(1\\le 3\\) .",
+    "html": "<p><span class=\"math notranslate nohighlight\">\\(1\\le 3\\)</span>.</p>",
+    "zh": "\\(1\\le 3\\)。"
+  },
+  {
+    "id": "09_Sets:0039",
+    "file": "09_Sets.html",
+    "tag": "p",
+    "text": "Other phrasings you may see for this concept are that 1 is a member of the set \\(\\{n:\\mathbb{Z} \\mid n\\le 3\\}\\) , or is in \\(\\{n:\\mathbb{Z} \\mid n\\le 3\\}\\) . The notation is \\(1\\in \\{n:\\mathbb{Z} \\mid n\\le 3\\}\\) .",
+    "html": "<p>Other phrasings you may see for this concept are that 1 <em>is a member of</em> the set\n<span class=\"math notranslate nohighlight\">\\(\\{n:\\mathbb{Z} \\mid n\\le 3\\}\\)</span>, or <em>is in</em> <span class=\"math notranslate nohighlight\">\\(\\{n:\\mathbb{Z} \\mid n\\le 3\\}\\)</span>.  The notation is\n<span class=\"math notranslate nohighlight\">\\(1\\in \\{n:\\mathbb{Z} \\mid n\\le 3\\}\\)</span>.</p>",
+    "zh": "关于这个概念，你还可能看到其他说法：1 是集合 \\(\\{n:\\mathbb{Z} \\mid n\\le 3\\}\\) 的元素，或者 1 在 \\(\\{n:\\mathbb{Z} \\mid n\\le 3\\}\\) 中。记号是 \\(1\\in \\{n:\\mathbb{Z} \\mid n\\le 3\\}\\)。"
+  },
+  {
+    "id": "09_Sets:0040",
+    "file": "09_Sets.html",
+    "tag": "p",
+    "text": "Here is this proof in Lean:",
+    "html": "<p>Here is this proof in Lean:</p>",
+    "zh": "下面是在 Lean 中的这个证明："
+  },
+  {
+    "id": "09_Sets:0041",
+    "file": "09_Sets.html",
+    "tag": "p",
+    "text": "The tactic dsimp unfolds the definition of the set and of membership in that set, reducing it to the goal",
+    "html": "<p>The tactic <code class=\"docutils literal notranslate\"><span class=\"pre\">dsimp</span></code> unfolds the definition of the set and of membership in that set, reducing it\nto the goal</p>",
+    "zh": "策略 <code class=\\\"docutils literal notranslate\\\"><span class=\\\"pre\\\">dsimp</span></code> 展开这个集合以及“属于该集合”的定义，把目标化为"
+  },
+  {
+    "id": "09_Sets:0042",
+    "file": "09_Sets.html",
+    "tag": "p",
+    "text": "which is resolved by numbers .",
+    "html": "<p>which is resolved by <code class=\"docutils literal notranslate\"><span class=\"pre\">numbers</span></code>.</p>",
+    "zh": "这可由 <code class=\\\"docutils literal notranslate\\\"><span class=\\\"pre\\\">numbers</span></code> 解决。"
+  },
+  {
+    "id": "09_Sets:0043",
+    "file": "09_Sets.html",
+    "tag": "p",
+    "text": "The symbol \\(\\notin\\) is used for the negation of \\(\\in\\) .",
+    "html": "<p>The symbol <span class=\"math notranslate nohighlight\">\\(\\notin\\)</span> is used for the negation of <span class=\"math notranslate nohighlight\">\\(\\in\\)</span>.</p>",
+    "zh": "符号 \\(\\notin\\) 用来表示 \\(\\in\\) 的否定。"
+  },
+  {
+    "id": "09_Sets:0044",
+    "file": "09_Sets.html",
+    "tag": "p",
+    "text": "Problem",
+    "html": "<p class=\"admonition-title\">Problem</p>",
+    "zh": "问题"
+  },
+  {
+    "id": "09_Sets:0045",
+    "file": "09_Sets.html",
+    "tag": "p",
+    "text": "Prove that \\(10\\notin \\{n:\\mathbb{N} \\mid n\\text{ is odd}\\}\\) .",
+    "html": "<p>Prove that <span class=\"math notranslate nohighlight\">\\(10\\notin \\{n:\\mathbb{N} \\mid n\\text{ is odd}\\}\\)</span>.</p>",
+    "zh": "证明 \\(10\\notin \\{n:\\mathbb{N} \\mid n\\text{ is odd}\\}\\)。"
+  },
+  {
+    "id": "09_Sets:0046",
+    "file": "09_Sets.html",
+    "tag": "p",
+    "text": "Solution",
+    "html": "<p class=\"admonition-title\">Solution</p>",
+    "zh": "解答"
+  },
+  {
+    "id": "09_Sets:0047",
+    "file": "09_Sets.html",
+    "tag": "p",
+    "text": "Since \\(10=2\\cdot 5\\) , we have that 10 is even, so it is not odd.",
+    "html": "<p>Since <span class=\"math notranslate nohighlight\">\\(10=2\\cdot 5\\)</span>, we have that 10 is even, so it is not odd.</p>",
+    "zh": "由于 \\(10=2\\cdot 5\\)，10 为偶数，所以它不是奇数。"
+  },
+  {
+    "id": "09_Sets:0048",
+    "file": "09_Sets.html",
+    "tag": "p",
+    "text": "In the Lean proof below, the tactic dsimp cleans up the goal to",
+    "html": "<p>In the Lean proof below, the tactic <code class=\"docutils literal notranslate\"><span class=\"pre\">dsimp</span></code> cleans up the goal to</p>",
+    "zh": "在下面的 Lean 证明中，策略 <code class=\\\"docutils literal notranslate\\\"><span class=\\\"pre\\\">dsimp</span></code> 把目标整理为"
+  },
+  {
+    "id": "09_Sets:0049",
+    "file": "09_Sets.html",
+    "tag": "p",
+    "text": "which can then be solved by general-purpose methods.",
+    "html": "<p>which can then be solved by general-purpose methods.</p>",
+    "zh": "随后可由通用方法解决。"
+  },
+  {
+    "id": "09_Sets:0050",
+    "file": "09_Sets.html",
+    "tag": "p",
+    "text": "Definition",
+    "html": "<p class=\"admonition-title\">Definition</p>",
+    "zh": "定义"
+  },
+  {
+    "id": "09_Sets:0051",
+    "file": "09_Sets.html",
+    "tag": "p",
+    "text": "Let \\(U\\) and \\(V\\) be sets in the type \\(X\\) . The set \\(U\\) is a subset of the set \\(V\\) , if for all \\(x\\) of type \\(X\\) , if \\(x\\in U\\) , then \\(x\\in V\\) .",
+    "html": "<p>Let <span class=\"math notranslate nohighlight\">\\(U\\)</span> and <span class=\"math notranslate nohighlight\">\\(V\\)</span> be sets in the type <span class=\"math notranslate nohighlight\">\\(X\\)</span>.  The set <span class=\"math notranslate nohighlight\">\\(U\\)</span> <em>is a subset of</em>\nthe set <span class=\"math notranslate nohighlight\">\\(V\\)</span>, if for all <span class=\"math notranslate nohighlight\">\\(x\\)</span> of type <span class=\"math notranslate nohighlight\">\\(X\\)</span>, if <span class=\"math notranslate nohighlight\">\\(x\\in U\\)</span>, then <span class=\"math notranslate nohighlight\">\\(x\\in V\\)</span>.</p>",
+    "zh": "设 \\(U\\) 和 \\(V\\) 为类型 \\(X\\) 中的集合。集合 \\(U\\) 称为集合 \\(V\\) 的子集，如果对类型 \\(X\\) 的所有 \\(x\\)，若 \\(x\\in U\\)，则 \\(x\\in V\\)。"
+  },
+  {
+    "id": "09_Sets:0052",
+    "file": "09_Sets.html",
+    "tag": "p",
+    "text": "The statement “ \\(U\\) is a subset of \\(V\\) ” is expressed in notation as \\(U \\subseteq V\\) .",
+    "html": "<p>The statement “<span class=\"math notranslate nohighlight\">\\(U\\)</span> <em>is a subset of</em> <span class=\"math notranslate nohighlight\">\\(V\\)</span>” is expressed in notation as\n<span class=\"math notranslate nohighlight\">\\(U \\subseteq V\\)</span>.</p>",
+    "zh": "陈述“\\(U\\) 是 \\(V\\) 的子集”用记号 \\(U \\subseteq V\\) 表示。"
+  },
+  {
+    "id": "09_Sets:0053",
+    "file": "09_Sets.html",
+    "tag": "p",
+    "text": "In Lean the definition looks like this:",
+    "html": "<p>In Lean the definition looks like this:</p>",
+    "zh": "在 Lean 中，这个定义如下："
+  },
+  {
+    "id": "09_Sets:0054",
+    "file": "09_Sets.html",
+    "tag": "p",
+    "text": "and the notation is U ⊆ V .",
+    "html": "<p>and the notation is <code class=\"docutils literal notranslate\"><span class=\"pre\">U</span> <span class=\"pre\">⊆</span> <span class=\"pre\">V</span></code>.</p>",
+    "zh": "记号是 <code class=\\\"docutils literal notranslate\\\"><span class=\\\"pre\\\">U</span> <span class=\\\"pre\\\">⊆</span> <span class=\\\"pre\\\">V</span></code>。"
+  },
+  {
+    "id": "09_Sets:0055",
+    "file": "09_Sets.html",
+    "tag": "p",
+    "text": "Problem",
+    "html": "<p class=\"admonition-title\">Problem</p>",
+    "zh": "问题"
+  },
+  {
+    "id": "09_Sets:0056",
+    "file": "09_Sets.html",
+    "tag": "p",
+    "text": "Show that \\(\\{a:\\mathbb{N} \\mid 4\\mid a\\}\\subseteq\\{b:\\mathbb{N} \\mid 2\\mid b\\}\\) .",
+    "html": "<p>Show that <span class=\"math notranslate nohighlight\">\\(\\{a:\\mathbb{N} \\mid 4\\mid a\\}\\subseteq\\{b:\\mathbb{N} \\mid 2\\mid b\\}\\)</span>.</p>",
+    "zh": "证明 \\(\\{a:\\mathbb{N} \\mid 4\\mid a\\}\\subseteq\\{b:\\mathbb{N} \\mid 2\\mid b\\}\\)。"
+  },
+  {
+    "id": "09_Sets:0057",
+    "file": "09_Sets.html",
+    "tag": "p",
+    "text": "Solution",
+    "html": "<p class=\"admonition-title\">Solution</p>",
+    "zh": "解答"
+  },
+  {
+    "id": "09_Sets:0058",
+    "file": "09_Sets.html",
+    "tag": "p",
+    "text": "We will show that for all natural numbers \\(a\\) , if \\(4\\mid a\\) then \\(2\\mid a\\) . Indeed, let \\(a\\) be a natural number and suppose that \\(4\\mid a\\) . Then there exists a natural number \\(k\\) such that \\(a=4k\\) , so",
+    "html": "<p>We will show that for all natural numbers <span class=\"math notranslate nohighlight\">\\(a\\)</span>, if <span class=\"math notranslate nohighlight\">\\(4\\mid a\\)</span> then <span class=\"math notranslate nohighlight\">\\(2\\mid a\\)</span>.\nIndeed, let <span class=\"math notranslate nohighlight\">\\(a\\)</span> be a natural number and suppose that <span class=\"math notranslate nohighlight\">\\(4\\mid a\\)</span>.  Then there exists a\nnatural number <span class=\"math notranslate nohighlight\">\\(k\\)</span> such that <span class=\"math notranslate nohighlight\">\\(a=4k\\)</span>, so</p>",
+    "zh": "我们将证明对所有自然数 \\(a\\)，若 \\(4\\mid a\\)，则 \\(2\\mid a\\)。确实，设 \\(a\\) 为自然数，并假设 \\(4\\mid a\\)。则存在自然数 \\(k\\) 使得 \\(a=4k\\)，所以"
+  },
+  {
+    "id": "09_Sets:0059",
+    "file": "09_Sets.html",
+    "tag": "p",
+    "text": "so \\(2\\mid a\\) .",
+    "html": "<p>so <span class=\"math notranslate nohighlight\">\\(2\\mid a\\)</span>.</p>",
+    "zh": "因此 \\(2\\mid a\\)。"
+  },
+  {
+    "id": "09_Sets:0060",
+    "file": "09_Sets.html",
+    "tag": "p",
+    "text": "Here is that solution in Lean. Note that after unfolding the definition using dsimp the goal state is simplified to",
+    "html": "<p>Here is that solution in Lean.  Note that after unfolding the definition using <code class=\"docutils literal notranslate\"><span class=\"pre\">dsimp</span></code>\nthe goal state is simplified to</p>",
+    "zh": "下面是在 Lean 中的这个解答。注意，用 <code class=\\\"docutils literal notranslate\\\"><span class=\\\"pre\\\">dsimp</span></code> 展开定义后，目标状态化简为"
+  },
+  {
+    "id": "09_Sets:0061",
+    "file": "09_Sets.html",
+    "tag": "p",
+    "text": "You can also check that the proof goes through without the dsimp line.",
+    "html": "<p>You can also check that the proof goes through without the <code class=\"docutils literal notranslate\"><span class=\"pre\">dsimp</span></code> line.</p>",
+    "zh": "你也可以检查：删除 <code class=\\\"docutils literal notranslate\\\"><span class=\\\"pre\\\">dsimp</span></code> 这一行后，证明仍然可以通过。"
+  },
+  {
+    "id": "09_Sets:0062",
+    "file": "09_Sets.html",
+    "tag": "p",
+    "text": "The notation \\(\\not\\subseteq\\) stands for “not a subset of”.",
+    "html": "<p>The notation <span class=\"math notranslate nohighlight\">\\(\\not\\subseteq\\)</span> stands for “not a subset of”.</p>",
+    "zh": "记号 \\(\\not\\subseteq\\) 表示“不是子集”。"
+  },
+  {
+    "id": "09_Sets:0063",
+    "file": "09_Sets.html",
+    "tag": "p",
+    "text": "Problem",
+    "html": "<p class=\"admonition-title\">Problem</p>",
+    "zh": "问题"
+  },
+  {
+    "id": "09_Sets:0064",
+    "file": "09_Sets.html",
+    "tag": "p",
+    "text": "Prove that \\(\\{x:\\mathbb{R} \\mid 0 \\le x^2\\}\\not\\subseteq \\{t:\\mathbb{R} \\mid 0\\le t\\}\\) .",
+    "html": "<p>Prove that <span class=\"math notranslate nohighlight\">\\(\\{x:\\mathbb{R} \\mid 0 \\le x^2\\}\\not\\subseteq \\{t:\\mathbb{R} \\mid 0\\le t\\}\\)</span>.</p>",
+    "zh": "证明 \\(\\{x:\\mathbb{R} \\mid 0 \\le x^2\\}\\not\\subseteq \\{t:\\mathbb{R} \\mid 0\\le t\\}\\)。"
+  },
+  {
+    "id": "09_Sets:0065",
+    "file": "09_Sets.html",
+    "tag": "p",
+    "text": "Solution",
+    "html": "<p class=\"admonition-title\">Solution</p>",
+    "zh": "解答"
+  },
+  {
+    "id": "09_Sets:0066",
+    "file": "09_Sets.html",
+    "tag": "p",
+    "text": "We will show that there exists a real number \\(x\\) , such that \\(0\\le x^2\\) and \\(x<0\\) . Indeed, \\(0\\le (-3)^2\\) and \\(-3<0\\) .",
+    "html": "<p>We will show that there exists a real number <span class=\"math notranslate nohighlight\">\\(x\\)</span>, such that <span class=\"math notranslate nohighlight\">\\(0\\le x^2\\)</span> and\n<span class=\"math notranslate nohighlight\">\\(x&lt;0\\)</span>.  Indeed, <span class=\"math notranslate nohighlight\">\\(0\\le (-3)^2\\)</span> and <span class=\"math notranslate nohighlight\">\\(-3&lt;0\\)</span>.</p>",
+    "zh": "我们将证明存在实数 \\(x\\)，使得 \\(0\\le x^2\\) 且 \\(x<0\\)。确实，\\(0\\le (-3)^2\\) 且 \\(-3<0\\)。"
+  },
+  {
+    "id": "09_Sets:0067",
+    "file": "09_Sets.html",
+    "tag": "p",
+    "text": "In Lean, after unfolding the definitions and negation-normalizing, the goal shows as",
+    "html": "<p>In Lean, after unfolding the definitions and negation-normalizing, the goal shows as</p>",
+    "zh": "在 Lean 中，展开定义并把否定规范化之后，目标显示为"
+  },
+  {
+    "id": "09_Sets:0068",
+    "file": "09_Sets.html",
+    "tag": "p",
+    "text": "This is the reformulation we state in the first sentence of the text proof.",
+    "html": "<p>This is the reformulation we state in the first sentence of the text proof.</p>",
+    "zh": "这正是我们在文字证明第一句中陈述的改写形式。"
+  },
+  {
+    "id": "09_Sets:0069",
+    "file": "09_Sets.html",
+    "tag": "p",
+    "text": "To show that two sets are equal in Lean, we show that something is a member of one if and only if it is a member of the other. This is called the set extensionality property – compare with the functional extensionality property discussed in Example 8.3.2 .",
+    "html": "<p>To show that two sets are equal in Lean, we show that something is a member of one if and only if\nit is a member of the other.  This is called the <em>set extensionality</em> property – compare with the\n<em>functional extensionality</em> property discussed in <a class=\"reference internal\" href=\"08_Functions.html#ext\"><span class=\"std std-numref\">Example 8.3.2</span></a>.</p>",
+    "zh": "在 Lean 中证明两个集合相等时，我们证明一个对象属于其中一个集合当且仅当它属于另一个集合。这称为集合外延性；可与例 8.3.2 中讨论的函数外延性作比较。"
+  },
+  {
+    "id": "09_Sets:0070",
+    "file": "09_Sets.html",
+    "tag": "p",
+    "text": "Problem",
+    "html": "<p class=\"admonition-title\">Problem</p>",
+    "zh": "问题"
+  },
+  {
+    "id": "09_Sets:0071",
+    "file": "09_Sets.html",
+    "tag": "p",
+    "text": "Prove that \\(\\{x:\\mathbb{Z} \\mid x\\text{ is odd}\\}= \\{a:\\mathbb{Z} \\mid \\exists k:\\mathbb{Z}, a = 2k - 1\\}\\) .",
+    "html": "<p>Prove that\n<span class=\"math notranslate nohighlight\">\\(\\{x:\\mathbb{Z} \\mid x\\text{ is odd}\\}= \\{a:\\mathbb{Z} \\mid \\exists k:\\mathbb{Z}, a = 2k - 1\\}\\)</span>.</p>",
+    "zh": "证明 \\(\\{x:\\mathbb{Z} \\mid x\\text{ is odd}\\}= \\{a:\\mathbb{Z} \\mid \\exists k:\\mathbb{Z}, a = 2k - 1\\}\\)。"
+  },
+  {
+    "id": "09_Sets:0072",
+    "file": "09_Sets.html",
+    "tag": "p",
+    "text": "Solution",
+    "html": "<p class=\"admonition-title\">Solution</p>",
+    "zh": "解答"
+  },
+  {
+    "id": "09_Sets:0073",
+    "file": "09_Sets.html",
+    "tag": "p",
+    "text": "Let \\(x\\) be an integer. We must show that \\(x\\) is odd if and only if there exists an integer \\(k\\) such that \\(x=2k-1\\) .",
+    "html": "<p>Let <span class=\"math notranslate nohighlight\">\\(x\\)</span> be an integer. We must show that <span class=\"math notranslate nohighlight\">\\(x\\)</span> is odd if and only if there exists an\ninteger <span class=\"math notranslate nohighlight\">\\(k\\)</span> such that <span class=\"math notranslate nohighlight\">\\(x=2k-1\\)</span>.</p>",
+    "zh": "设 \\(x\\) 为整数。我们必须证明 \\(x\\) 为奇数，当且仅当存在整数 \\(k\\) 使得 \\(x=2k-1\\)。"
+  },
+  {
+    "id": "09_Sets:0074",
+    "file": "09_Sets.html",
+    "tag": "p",
+    "text": "First, suppose that \\(x\\) is odd. Then there exists an integer \\(l\\) such that \\(x=2l+1\\) . So",
+    "html": "<p>First, suppose that <span class=\"math notranslate nohighlight\">\\(x\\)</span> is odd.  Then there exists an integer\n<span class=\"math notranslate nohighlight\">\\(l\\)</span> such that <span class=\"math notranslate nohighlight\">\\(x=2l+1\\)</span>.  So</p>",
+    "zh": "首先，假设 \\(x\\) 为奇数。则存在整数 \\(l\\) 使得 \\(x=2l+1\\)。所以"
+  },
+  {
+    "id": "09_Sets:0075",
+    "file": "09_Sets.html",
+    "tag": "p",
+    "text": "Conversely, suppose that there exists an integer \\(k\\) such that \\(x=2k-1\\) . Then",
+    "html": "<p>Conversely, suppose that there exists an integer <span class=\"math notranslate nohighlight\">\\(k\\)</span> such that <span class=\"math notranslate nohighlight\">\\(x=2k-1\\)</span>.  Then</p>",
+    "zh": "反过来，假设存在整数 \\(k\\) 使得 \\(x=2k-1\\)。则"
+  },
+  {
+    "id": "09_Sets:0076",
+    "file": "09_Sets.html",
+    "tag": "p",
+    "text": "so \\(x\\) is odd.",
+    "html": "<p>so <span class=\"math notranslate nohighlight\">\\(x\\)</span> is odd.</p>",
+    "zh": "因此 \\(x\\) 为奇数。"
+  },
+  {
+    "id": "09_Sets:0077",
+    "file": "09_Sets.html",
+    "tag": "p",
+    "text": "In Lean, as usual, we invoke an extensionality property using the tactic ext . After unfolding the definitions, the goal displays as",
+    "html": "<p>In Lean, as usual, we invoke an extensionality property using the tactic <code class=\"docutils literal notranslate\"><span class=\"pre\">ext</span></code>.  After unfolding\nthe definitions, the goal displays as</p>",
+    "zh": "在 Lean 中，我们照例用策略 <code class=\\\"docutils literal notranslate\\\"><span class=\\\"pre\\\">ext</span></code> 调用外延性性质。展开定义后，目标显示为"
+  },
+  {
+    "id": "09_Sets:0078",
+    "file": "09_Sets.html",
+    "tag": "p",
+    "text": "This is the reformulation of the problem which we had stated in the first paragraph of the text proof.",
+    "html": "<p>This is the reformulation of the problem which we had stated in the first paragraph of the text proof.</p>",
+    "zh": "这正是文字证明第一段中已经陈述的问题改写形式。"
+  },
+  {
+    "id": "09_Sets:0079",
+    "file": "09_Sets.html",
+    "tag": "p",
+    "text": "Here is the full proof in Lean.",
+    "html": "<p>Here is the full proof in Lean.</p>",
+    "zh": "下面是在 Lean 中的完整证明。"
+  },
+  {
+    "id": "09_Sets:0080",
+    "file": "09_Sets.html",
+    "tag": "p",
+    "text": "And to show that two sets are not equal in Lean, we produce an element of one which is not an element of the other.",
+    "html": "<p>And to show that two sets are not equal in Lean, we produce an element of one which is not an\nelement of the other.</p>",
+    "zh": "而要在 Lean 中证明两个集合不相等，我们给出一个属于其中一个集合但不属于另一个集合的元素。"
+  },
+  {
+    "id": "09_Sets:0081",
+    "file": "09_Sets.html",
+    "tag": "p",
+    "text": "Problem",
+    "html": "<p class=\"admonition-title\">Problem</p>",
+    "zh": "问题"
+  },
+  {
+    "id": "09_Sets:0082",
+    "file": "09_Sets.html",
+    "tag": "p",
+    "text": "Show that \\(\\{a:\\mathbb{N} \\mid 4\\mid a\\}\\ne\\{b:\\mathbb{N} \\mid 2\\mid b\\}\\) .",
+    "html": "<p>Show that <span class=\"math notranslate nohighlight\">\\(\\{a:\\mathbb{N} \\mid 4\\mid a\\}\\ne\\{b:\\mathbb{N} \\mid 2\\mid b\\}\\)</span>.</p>",
+    "zh": "证明 \\(\\{a:\\mathbb{N} \\mid 4\\mid a\\}\\ne\\{b:\\mathbb{N} \\mid 2\\mid b\\}\\)。"
+  },
+  {
+    "id": "09_Sets:0083",
+    "file": "09_Sets.html",
+    "tag": "p",
+    "text": "Solution",
+    "html": "<p class=\"admonition-title\">Solution</p>",
+    "zh": "解答"
+  },
+  {
+    "id": "09_Sets:0084",
+    "file": "09_Sets.html",
+    "tag": "p",
+    "text": "We will show that there exists a natural number \\(x\\) such that \\(2\\mid x\\) and \\(4\\not\\mid 6\\) .",
+    "html": "<p>We will show that there exists a natural number <span class=\"math notranslate nohighlight\">\\(x\\)</span> such that <span class=\"math notranslate nohighlight\">\\(2\\mid x\\)</span> and\n<span class=\"math notranslate nohighlight\">\\(4\\not\\mid 6\\)</span>.</p>",
+    "zh": "我们将证明存在自然数 \\(x\\)，使得 \\(2\\mid x\\) 且 \\(4\\not\\mid x\\)。"
+  },
+  {
+    "id": "09_Sets:0085",
+    "file": "09_Sets.html",
+    "tag": "p",
+    "text": "Indeed, let us show that \\(6\\) has this property. We have that \\(6=2\\cdot 3\\) , so \\(2\\mid 6\\) , and \\(4\\cdot 1 < 6 < 4 \\cdot 2\\) , so \\(4\\not\\mid 6\\) .",
+    "html": "<p>Indeed, let us show that <span class=\"math notranslate nohighlight\">\\(6\\)</span> has this property.  We have that <span class=\"math notranslate nohighlight\">\\(6=2\\cdot 3\\)</span>, so\n<span class=\"math notranslate nohighlight\">\\(2\\mid 6\\)</span>, and <span class=\"math notranslate nohighlight\">\\(4\\cdot 1 &lt; 6 &lt; 4 \\cdot 2\\)</span>, so <span class=\"math notranslate nohighlight\">\\(4\\not\\mid 6\\)</span>.</p>",
+    "zh": "确实，我们证明 \\(6\\) 具有这个性质。因为 \\(6=2\\cdot 3\\)，所以 \\(2\\mid 6\\)；并且 \\(4\\cdot 1 < 6 < 4\\cdot 2\\)，所以 \\(4\\not\\mid 6\\)。"
+  },
+  {
+    "id": "09_Sets:0086",
+    "file": "09_Sets.html",
+    "tag": "p",
+    "text": "In Lean, after applying set extensionality, unfolding the definitions and negation-normalizing, the goal state shows as",
+    "html": "<p>In Lean, after applying set extensionality, unfolding the definitions and negation-normalizing, the\ngoal state shows as</p>",
+    "zh": "在 Lean 中，应用集合外延性、展开定义并把否定规范化之后，目标状态显示为"
+  },
+  {
+    "id": "09_Sets:0087",
+    "file": "09_Sets.html",
+    "tag": "p",
+    "text": "At this point we indicate our witness, 6, and specify that we will prove the right alternative, ¬4 ∣ 6 ∧ 2 ∣ 6 .",
+    "html": "<p>At this point we indicate our witness, 6, and specify that we will prove the right alternative,\n<code class=\"docutils literal notranslate\"><span class=\"pre\">¬4</span> <span class=\"pre\">∣</span> <span class=\"pre\">6</span> <span class=\"pre\">∧</span> <span class=\"pre\">2</span> <span class=\"pre\">∣</span> <span class=\"pre\">6</span></code>.</p>",
+    "zh": "此时我们指出见证元 6，并指定我们将证明右侧备选，即 \\(¬4 ∣ 6 ∧ 2 ∣ 6\\)。"
+  },
+  {
+    "id": "09_Sets:0088",
+    "file": "09_Sets.html",
+    "tag": "p",
+    "text": "Problem",
+    "html": "<p class=\"admonition-title\">Problem</p>",
+    "zh": "问题"
+  },
+  {
+    "id": "09_Sets:0089",
+    "file": "09_Sets.html",
+    "tag": "p",
+    "text": "Prove or disprove that \\(\\{k:\\mathbb{Z} \\mid 8\\mid 5k\\}=\\{l:\\mathbb{Z} \\mid 8\\mid l\\}\\) .",
+    "html": "<p>Prove or disprove that <span class=\"math notranslate nohighlight\">\\(\\{k:\\mathbb{Z} \\mid 8\\mid 5k\\}=\\{l:\\mathbb{Z} \\mid 8\\mid l\\}\\)</span>.</p>",
+    "zh": "证明或反驳：\\(\\{k:\\mathbb{Z} \\mid 8\\mid 5k\\}=\\{l:\\mathbb{Z} \\mid 8\\mid l\\}\\)。"
+  },
+  {
+    "id": "09_Sets:0090",
+    "file": "09_Sets.html",
+    "tag": "p",
+    "text": "Solution",
+    "html": "<p class=\"admonition-title\">Solution</p>",
+    "zh": "解答"
+  },
+  {
+    "id": "09_Sets:0091",
+    "file": "09_Sets.html",
+    "tag": "p",
+    "text": "The statement is true.",
+    "html": "<p>The statement is true.</p>",
+    "zh": "该陈述为真。"
+  },
+  {
+    "id": "09_Sets:0092",
+    "file": "09_Sets.html",
+    "tag": "p",
+    "text": "Let \\(n\\) be an integer. We will show that \\(5n\\) is a multiple of 8 if and only if \\(n\\) is.",
+    "html": "<p>Let <span class=\"math notranslate nohighlight\">\\(n\\)</span> be an integer. We will show that <span class=\"math notranslate nohighlight\">\\(5n\\)</span> is a multiple of 8 if and only if\n<span class=\"math notranslate nohighlight\">\\(n\\)</span> is.</p>",
+    "zh": "设 \\(n\\) 为整数。我们将证明 \\(5n\\) 是 8 的倍数，当且仅当 \\(n\\) 是 8 的倍数。"
+  },
+  {
+    "id": "09_Sets:0093",
+    "file": "09_Sets.html",
+    "tag": "p",
+    "text": "First, suppose that \\(8\\mid 5n\\) . Then there exists an integer \\(a\\) such that \\(5n=8a\\) . So",
+    "html": "<p>First, suppose that <span class=\"math notranslate nohighlight\">\\(8\\mid 5n\\)</span>. Then there exists an integer <span class=\"math notranslate nohighlight\">\\(a\\)</span> such that\n<span class=\"math notranslate nohighlight\">\\(5n=8a\\)</span>. So</p>",
+    "zh": "首先，假设 \\(8\\mid 5n\\)。则存在整数 \\(a\\) 使得 \\(5n=8a\\)。所以"
+  },
+  {
+    "id": "09_Sets:0094",
+    "file": "09_Sets.html",
+    "tag": "p",
+    "text": "so \\(8\\mid n\\) .",
+    "html": "<p>so <span class=\"math notranslate nohighlight\">\\(8\\mid n\\)</span>.</p>",
+    "zh": "因此 \\(8\\mid n\\)。"
+  },
+  {
+    "id": "09_Sets:0095",
+    "file": "09_Sets.html",
+    "tag": "p",
+    "text": "Conversely, suppose that \\(8\\mid n\\) . Then there exists an integer \\(a\\) such that \\(n=8a\\) . So",
+    "html": "<p>Conversely, suppose that <span class=\"math notranslate nohighlight\">\\(8\\mid n\\)</span>. Then there exists an integer <span class=\"math notranslate nohighlight\">\\(a\\)</span> such that\n<span class=\"math notranslate nohighlight\">\\(n=8a\\)</span>. So</p>",
+    "zh": "反过来，假设 \\(8\\mid n\\)。则存在整数 \\(a\\) 使得 \\(n=8a\\)。所以"
+  },
+  {
+    "id": "09_Sets:0096",
+    "file": "09_Sets.html",
+    "tag": "p",
+    "text": "so \\(8\\mid 5n\\) .",
+    "html": "<p>so <span class=\"math notranslate nohighlight\">\\(8\\mid 5n\\)</span>.</p>",
+    "zh": "因此 \\(8\\mid 5n\\)。"
+  },
+  {
+    "id": "09_Sets:0097",
+    "file": "09_Sets.html",
+    "tag": "p",
+    "text": "This problem turned out to be a disguised version of Example 4.2.2 !",
+    "html": "<p>This problem turned out to be a disguised version of <a class=\"reference internal\" href=\"04_Proofs_with_Structure_II.html#bezout-iff\"><span class=\"std std-numref\">Example 4.2.2</span></a>!</p>",
+    "zh": "这个问题原来是例 4.2.2 的一个伪装版本！"
+  },
+  {
+    "id": "09_Sets:0098",
+    "file": "09_Sets.html",
+    "tag": "p",
+    "text": "There is a special notation \\(\\{1,2,3\\}\\) to refer to a finite set whose only elements are those listed, here 1, 2 and 3. By definition, \\(\\{1,2,3\\}\\) means \\(\\{x \\mid x = 1 \\lor x = 2 \\lor x = 3\\}\\) . (The type, like \\(\\mathbb{N}\\) or \\(\\mathbb{R}\\) , is usually inferred from context.)",
+    "html": "<p>There is a special notation <span class=\"math notranslate nohighlight\">\\(\\{1,2,3\\}\\)</span> to refer to a finite set whose only elements are those\nlisted, here 1, 2 and 3.  By definition, <span class=\"math notranslate nohighlight\">\\(\\{1,2,3\\}\\)</span> means\n<span class=\"math notranslate nohighlight\">\\(\\{x \\mid x = 1 \\lor x = 2 \\lor x = 3\\}\\)</span>.  (The type, like <span class=\"math notranslate nohighlight\">\\(\\mathbb{N}\\)</span> or\n<span class=\"math notranslate nohighlight\">\\(\\mathbb{R}\\)</span>, is usually inferred from context.)</p>",
+    "zh": "有一个特殊记号 \\(\\{1,2,3\\}\\)，用来表示只含有所列元素的有限集合；这里所列元素是 1、2 和 3。按定义，\\(\\{1,2,3\\}\\) 表示 \\(\\{x \\mid x = 1 \\lor x = 2 \\lor x = 3\\}\\)。（类型，例如 \\(\\mathbb{N}\\) 或 \\(\\mathbb{R}\\)，通常由上下文推断。）"
+  },
+  {
+    "id": "09_Sets:0099",
+    "file": "09_Sets.html",
+    "tag": "p",
+    "text": "Problem",
+    "html": "<p class=\"admonition-title\">Problem</p>",
+    "zh": "问题"
+  },
+  {
+    "id": "09_Sets:0100",
+    "file": "09_Sets.html",
+    "tag": "p",
+    "text": "Prove that \\(\\{x:\\mathbb{R} \\mid x^2-x-2=0\\}=\\{-1, 2\\}\\) .",
+    "html": "<p>Prove  that <span class=\"math notranslate nohighlight\">\\(\\{x:\\mathbb{R} \\mid x^2-x-2=0\\}=\\{-1, 2\\}\\)</span>.</p>",
+    "zh": "证明 \\(\\{x:\\mathbb{R} \\mid x^2-x-2=0\\}=\\{-1,2\\}\\)。"
+  },
+  {
+    "id": "09_Sets:0101",
+    "file": "09_Sets.html",
+    "tag": "p",
+    "text": "Solution",
+    "html": "<p class=\"admonition-title\">Solution</p>",
+    "zh": "解答"
+  },
+  {
+    "id": "09_Sets:0102",
+    "file": "09_Sets.html",
+    "tag": "p",
+    "text": "Let \\(x\\) be a real number. We must show that \\(x ^ 2 - x - 2 = 0\\) if and only if \\(x=-1\\) or \\(x=2\\) .",
+    "html": "<p>Let <span class=\"math notranslate nohighlight\">\\(x\\)</span> be a real number. We must show that <span class=\"math notranslate nohighlight\">\\(x ^ 2 - x - 2 = 0\\)</span> if and only if\n<span class=\"math notranslate nohighlight\">\\(x=-1\\)</span> or <span class=\"math notranslate nohighlight\">\\(x=2\\)</span>.</p>",
+    "zh": "设 \\(x\\) 为实数。我们必须证明 \\(x^2-x-2=0\\) 当且仅当 \\(x=-1\\) 或 \\(x=2\\)。"
+  },
+  {
+    "id": "09_Sets:0103",
+    "file": "09_Sets.html",
+    "tag": "p",
+    "text": "First, suppose that \\(x ^ 2 - x - 2 = 0\\) . Then",
+    "html": "<p>First, suppose that <span class=\"math notranslate nohighlight\">\\(x ^ 2 - x - 2 = 0\\)</span>.  Then</p>",
+    "zh": "首先，假设 \\(x^2-x-2=0\\)。则"
+  },
+  {
+    "id": "09_Sets:0104",
+    "file": "09_Sets.html",
+    "tag": "p",
+    "text": "so either \\(x+1=0\\) or \\(x-2=0\\) . If the former, \\(x=-1\\) . If the latter, \\(x=2\\) .",
+    "html": "<p>so either <span class=\"math notranslate nohighlight\">\\(x+1=0\\)</span> or <span class=\"math notranslate nohighlight\">\\(x-2=0\\)</span>.  If the former, <span class=\"math notranslate nohighlight\">\\(x=-1\\)</span>. If the latter,\n<span class=\"math notranslate nohighlight\">\\(x=2\\)</span>.</p>",
+    "zh": "所以 \\(x+1=0\\) 或 \\(x-2=0\\)。若为前者，则 \\(x=-1\\)；若为后者，则 \\(x=2\\)。"
+  },
+  {
+    "id": "09_Sets:0105",
+    "file": "09_Sets.html",
+    "tag": "p",
+    "text": "Conversely, suppose that \\(x=-1\\) or \\(x=2\\) .",
+    "html": "<p>Conversely, suppose that  <span class=\"math notranslate nohighlight\">\\(x=-1\\)</span> or <span class=\"math notranslate nohighlight\">\\(x=2\\)</span>.</p>",
+    "zh": "反过来，假设 \\(x=-1\\) 或 \\(x=2\\)。"
+  },
+  {
+    "id": "09_Sets:0106",
+    "file": "09_Sets.html",
+    "tag": "p",
+    "text": "Case 1 ( \\(x=-1\\) ): Then",
+    "html": "<p><strong>Case 1</strong> (<span class=\"math notranslate nohighlight\">\\(x=-1\\)</span>): Then</p>",
+    "zh": "情形 1（\\(x=-1\\)）：则"
+  },
+  {
+    "id": "09_Sets:0107",
+    "file": "09_Sets.html",
+    "tag": "p",
+    "text": "Case 1 ( \\(x=2\\) ): Then",
+    "html": "<p><strong>Case 1</strong> (<span class=\"math notranslate nohighlight\">\\(x=2\\)</span>): Then</p>",
+    "zh": "情形 2（\\(x=2\\)）：则"
+  },
+  {
+    "id": "09_Sets:0108",
+    "file": "09_Sets.html",
+    "tag": "p",
+    "text": "In Lean, after applying set extensionality and unfolding the definitions, the goal is",
+    "html": "<p>In Lean, after applying set extensionality and unfolding the definitions, the goal is</p>",
+    "zh": "在 Lean 中，应用集合外延性并展开定义后，目标是"
+  },
+  {
+    "id": "09_Sets:0109",
+    "file": "09_Sets.html",
+    "tag": "p",
+    "text": "and we start the written proof by explaining this.",
+    "html": "<p>and we start the written proof by explaining this.</p>",
+    "zh": "而我们的文字证明正是从解释这个目标开始的。"
+  },
+  {
+    "id": "09_Sets:0110",
+    "file": "09_Sets.html",
+    "tag": "p",
+    "text": "Problem",
+    "html": "<p class=\"admonition-title\">Problem</p>",
+    "zh": "问题"
+  },
+  {
+    "id": "09_Sets:0111",
+    "file": "09_Sets.html",
+    "tag": "p",
+    "text": "Prove that \\(\\{1,3,6\\} \\subseteq\\{x:\\mathbb{Q} \\mid t<10\\}\\) .",
+    "html": "<p>Prove  that <span class=\"math notranslate nohighlight\">\\(\\{1,3,6\\} \\subseteq\\{x:\\mathbb{Q} \\mid t&lt;10\\}\\)</span>.</p>",
+    "zh": "证明 \\(\\{1,3,6\\}\\subseteq\\{x:\\mathbb{Q} \\mid t<10\\}\\)。"
+  },
+  {
+    "id": "09_Sets:0112",
+    "file": "09_Sets.html",
+    "tag": "p",
+    "text": "Solution",
+    "html": "<p class=\"admonition-title\">Solution</p>",
+    "zh": "解答"
+  },
+  {
+    "id": "09_Sets:0113",
+    "file": "09_Sets.html",
+    "tag": "p",
+    "text": "We must show that for all real numbers \\(t\\) , if \\(t=1\\) or \\(t=3\\) or \\(t=6\\) then \\(t<10\\) . Indeed, \\(1<10\\) , \\(3<10\\) and \\(6<10\\) .",
+    "html": "<p>We must show that for all real numbers <span class=\"math notranslate nohighlight\">\\(t\\)</span>, if <span class=\"math notranslate nohighlight\">\\(t=1\\)</span> or <span class=\"math notranslate nohighlight\">\\(t=3\\)</span> or <span class=\"math notranslate nohighlight\">\\(t=6\\)</span>\nthen <span class=\"math notranslate nohighlight\">\\(t&lt;10\\)</span>.  Indeed, <span class=\"math notranslate nohighlight\">\\(1&lt;10\\)</span>, <span class=\"math notranslate nohighlight\">\\(3&lt;10\\)</span> and <span class=\"math notranslate nohighlight\">\\(6&lt;10\\)</span>.</p>",
+    "zh": "我们必须证明对所有实数 \\(t\\)，若 \\(t=1\\) 或 \\(t=3\\) 或 \\(t=6\\)，则 \\(t<10\\)。确实，\\(1<10\\)、\\(3<10\\) 且 \\(6<10\\)。"
+  },
+  {
+    "id": "09_Sets:0114",
+    "file": "09_Sets.html",
+    "tag": "p",
+    "text": "Definition",
+    "html": "<p class=\"admonition-title\">Definition</p>",
+    "zh": "定义"
+  },
+  {
+    "id": "09_Sets:0115",
+    "file": "09_Sets.html",
+    "tag": "p",
+    "text": "The union of two sets \\(U\\) and \\(V\\) in a type \\(X\\) , denoted \\(U \\cup V\\) , is \\(\\{x : X \\mid x \\in U \\lor x \\in V\\}\\) .",
+    "html": "<p>The <em>union</em> of two sets <span class=\"math notranslate nohighlight\">\\(U\\)</span> and <span class=\"math notranslate nohighlight\">\\(V\\)</span> in a type <span class=\"math notranslate nohighlight\">\\(X\\)</span>, denoted <span class=\"math notranslate nohighlight\">\\(U \\cup V\\)</span>,\nis <span class=\"math notranslate nohighlight\">\\(\\{x : X \\mid x \\in U \\lor x \\in V\\}\\)</span>.</p>",
+    "zh": "类型 \\(X\\) 中两个集合 \\(U\\) 和 \\(V\\) 的并，记为 \\(U\\cup V\\)，定义为 \\(\\{x : X \\mid x \\in U \\lor x \\in V\\}\\)。"
+  },
+  {
+    "id": "09_Sets:0116",
+    "file": "09_Sets.html",
+    "tag": "p",
+    "text": "Problem",
+    "html": "<p class=\"admonition-title\">Problem</p>",
+    "zh": "问题"
+  },
+  {
+    "id": "09_Sets:0117",
+    "file": "09_Sets.html",
+    "tag": "p",
+    "text": "Let \\(t\\) be a real number. Show that \\(t∈\\{x:\\mathbb{R}\\mid-1<x\\}\\cup \\{x:\\mathbb{R}\\mid x < 1\\}\\) .",
+    "html": "<p>Let <span class=\"math notranslate nohighlight\">\\(t\\)</span> be a real number.  Show that\n<span class=\"math notranslate nohighlight\">\\(t∈\\{x:\\mathbb{R}\\mid-1&lt;x\\}\\cup \\{x:\\mathbb{R}\\mid x &lt; 1\\}\\)</span>.</p>",
+    "zh": "设 \\(t\\) 为实数。证明 \\(t\\in\\{x:\\mathbb{R}\\mid-1<x\\}\\cup \\{x:\\mathbb{R}\\mid x < 1\\}\\)。"
+  },
+  {
+    "id": "09_Sets:0118",
+    "file": "09_Sets.html",
+    "tag": "p",
+    "text": "Solution",
+    "html": "<p class=\"admonition-title\">Solution</p>",
+    "zh": "解答"
+  },
+  {
+    "id": "09_Sets:0119",
+    "file": "09_Sets.html",
+    "tag": "p",
+    "text": "We must show that either \\(-1<t\\) or \\(t<1\\) .",
+    "html": "<p>We must show that either <span class=\"math notranslate nohighlight\">\\(-1&lt;t\\)</span> or <span class=\"math notranslate nohighlight\">\\(t&lt;1\\)</span>.</p>",
+    "zh": "我们必须证明 \\(-1<t\\) 或 \\(t<1\\)。"
+  },
+  {
+    "id": "09_Sets:0120",
+    "file": "09_Sets.html",
+    "tag": "p",
+    "text": "Case 1 ( \\(t\\le 0\\) ): Then \\(t<1\\) .",
+    "html": "<p><strong>Case 1</strong> (<span class=\"math notranslate nohighlight\">\\(t\\le 0\\)</span>): Then <span class=\"math notranslate nohighlight\">\\(t&lt;1\\)</span>.</p>",
+    "zh": "情形 1（\\(t\\le 0\\)）：则 \\(t<1\\)。"
+  },
+  {
+    "id": "09_Sets:0121",
+    "file": "09_Sets.html",
+    "tag": "p",
+    "text": "Case 2 ( \\(t> 0\\) ): Then \\(-1<t\\) .",
+    "html": "<p><strong>Case 2</strong> (<span class=\"math notranslate nohighlight\">\\(t&gt; 0\\)</span>): Then <span class=\"math notranslate nohighlight\">\\(-1&lt;t\\)</span>.</p>",
+    "zh": "情形 2（\\(t>0\\)）：则 \\(-1<t\\)。"
+  },
+  {
+    "id": "09_Sets:0122",
+    "file": "09_Sets.html",
+    "tag": "p",
+    "text": "After unfolding the definitions in this problem, the goal is to show that",
+    "html": "<p>After unfolding the definitions in this problem, the goal is to show that</p>",
+    "zh": "在本题中展开定义后，目标是证明"
+  },
+  {
+    "id": "09_Sets:0123",
+    "file": "09_Sets.html",
+    "tag": "p",
+    "text": "Here is the full proof in Lean.",
+    "html": "<p>Here is the full proof in Lean.</p>",
+    "zh": "下面是在 Lean 中的完整证明。"
+  },
+  {
+    "id": "09_Sets:0124",
+    "file": "09_Sets.html",
+    "tag": "p",
+    "text": "Problem",
+    "html": "<p class=\"admonition-title\">Problem</p>",
+    "zh": "问题"
+  },
+  {
+    "id": "09_Sets:0125",
+    "file": "09_Sets.html",
+    "tag": "p",
+    "text": "Show that \\(\\{1,2\\}\\cup\\{2,4\\}=\\{1,2,4\\}\\) .",
+    "html": "<p>Show that <span class=\"math notranslate nohighlight\">\\(\\{1,2\\}\\cup\\{2,4\\}=\\{1,2,4\\}\\)</span>.</p>",
+    "zh": "证明 \\(\\{1,2\\}\\cup\\{2,4\\}=\\{1,2,4\\}\\)。"
+  },
+  {
+    "id": "09_Sets:0126",
+    "file": "09_Sets.html",
+    "tag": "p",
+    "text": "After applying set extensionality and unfolding definitions in this problem, the goal state is",
+    "html": "<p>After applying set extensionality and unfolding definitions in this problem, the goal state is</p>",
+    "zh": "在本题中应用集合外延性并展开定义后，目标状态是"
+  },
+  {
+    "id": "09_Sets:0127",
+    "file": "09_Sets.html",
+    "tag": "p",
+    "text": "It’s possible to prove this directly – here’s how the start of such a proof would look.",
+    "html": "<p>It’s possible to prove this directly – here’s how the start of such a proof would look.</p>",
+    "zh": "可以直接证明这一点；下面展示这种证明的开头。"
+  },
+  {
+    "id": "09_Sets:0128",
+    "file": "09_Sets.html",
+    "tag": "p",
+    "text": "But there’s a better way: this is pure propositional logic, the situation the tactic exhaust (see Example 8.1.8 ) was designed for.",
+    "html": "<p>But there’s a better way: this is pure propositional logic, the situation the tactic <code class=\"docutils literal notranslate\"><span class=\"pre\">exhaust</span></code> (see\n<a class=\"reference internal\" href=\"08_Functions.html#musketeer\"><span class=\"std std-numref\">Example 8.1.8</span></a>) was designed for.</p>",
+    "zh": "但有更好的方法：这只是纯命题逻辑，正是策略 <code class=\\\"docutils literal notranslate\\\"><span class=\\\"pre\\\">exhaust</span></code>（见例 8.1.8）所设计处理的情形。"
+  },
+  {
+    "id": "09_Sets:0129",
+    "file": "09_Sets.html",
+    "tag": "p",
+    "text": "Definition",
+    "html": "<p class=\"admonition-title\">Definition</p>",
+    "zh": "定义"
+  },
+  {
+    "id": "09_Sets:0130",
+    "file": "09_Sets.html",
+    "tag": "p",
+    "text": "The intersection of two sets \\(U\\) and \\(V\\) in a type \\(X\\) , denoted \\(U \\cap V\\) , is \\(\\{x : X \\mid x \\in U \\land x \\in V\\}\\) .",
+    "html": "<p>The <em>intersection</em> of two sets <span class=\"math notranslate nohighlight\">\\(U\\)</span> and <span class=\"math notranslate nohighlight\">\\(V\\)</span> in a type <span class=\"math notranslate nohighlight\">\\(X\\)</span>, denoted\n<span class=\"math notranslate nohighlight\">\\(U \\cap V\\)</span>,\nis <span class=\"math notranslate nohighlight\">\\(\\{x : X \\mid x \\in U \\land x \\in V\\}\\)</span>.</p>",
+    "zh": "类型 \\(X\\) 中两个集合 \\(U\\) 和 \\(V\\) 的交，记为 \\(U\\cap V\\)，定义为 \\(\\{x : X \\mid x \\in U \\land x \\in V\\}\\)。"
+  },
+  {
+    "id": "09_Sets:0131",
+    "file": "09_Sets.html",
+    "tag": "p",
+    "text": "Problem",
+    "html": "<p class=\"admonition-title\">Problem</p>",
+    "zh": "问题"
+  },
+  {
+    "id": "09_Sets:0132",
+    "file": "09_Sets.html",
+    "tag": "p",
+    "text": "Show that \\(\\{-2,3\\}\\cap \\{x:\\mathbb{Q}\\mid x^2=9\\}\\subseteq \\{a:\\mathbb{Q}\\mid 0<a\\}\\) .",
+    "html": "<p>Show that\n<span class=\"math notranslate nohighlight\">\\(\\{-2,3\\}\\cap \\{x:\\mathbb{Q}\\mid x^2=9\\}\\subseteq \\{a:\\mathbb{Q}\\mid 0&lt;a\\}\\)</span>.</p>",
+    "zh": "证明 \\(\\{-2,3\\}\\cap \\{x:\\mathbb{Q}\\mid x^2=9\\}\\subseteq \\{a:\\mathbb{Q}\\mid 0<a\\}\\)。"
+  },
+  {
+    "id": "09_Sets:0133",
+    "file": "09_Sets.html",
+    "tag": "p",
+    "text": "Solution",
+    "html": "<p class=\"admonition-title\">Solution</p>",
+    "zh": "解答"
+  },
+  {
+    "id": "09_Sets:0134",
+    "file": "09_Sets.html",
+    "tag": "p",
+    "text": "We will show that for all real numbers \\(t\\) , if \\(t\\) is -2 or 3 and \\(t^2=9\\) then \\(0<t\\) .",
+    "html": "<p>We will show that for all real numbers <span class=\"math notranslate nohighlight\">\\(t\\)</span>, if <span class=\"math notranslate nohighlight\">\\(t\\)</span> is -2 or 3 and <span class=\"math notranslate nohighlight\">\\(t^2=9\\)</span> then\n<span class=\"math notranslate nohighlight\">\\(0&lt;t\\)</span>.</p>",
+    "zh": "我们将证明对所有实数 \\(t\\)，若 \\(t\\) 为 -2 或 3 且 \\(t^2=9\\)，则 \\(0<t\\)。"
+  },
+  {
+    "id": "09_Sets:0135",
+    "file": "09_Sets.html",
+    "tag": "p",
+    "text": "Indeed, let \\(t\\) be a real number and suppose that \\(t\\) is -2 or 3 and \\(t^2=9\\) .",
+    "html": "<p>Indeed, let <span class=\"math notranslate nohighlight\">\\(t\\)</span> be a real number and suppose that <span class=\"math notranslate nohighlight\">\\(t\\)</span> is -2 or 3 and <span class=\"math notranslate nohighlight\">\\(t^2=9\\)</span>.</p>",
+    "zh": "确实，设 \\(t\\) 为实数，并假设 \\(t\\) 为 -2 或 3 且 \\(t^2=9\\)。"
+  },
+  {
+    "id": "09_Sets:0136",
+    "file": "09_Sets.html",
+    "tag": "p",
+    "text": "Case 1 ( \\(t=-2\\) ): We then have that",
+    "html": "<p><strong>Case 1</strong> (<span class=\"math notranslate nohighlight\">\\(t=-2\\)</span>): We then have that</p>",
+    "zh": "情形 1（\\(t=-2\\)）：于是有"
+  },
+  {
+    "id": "09_Sets:0137",
+    "file": "09_Sets.html",
+    "tag": "p",
+    "text": "contradiction.",
+    "html": "<p>contradiction.</p>",
+    "zh": "矛盾。"
+  },
+  {
+    "id": "09_Sets:0138",
+    "file": "09_Sets.html",
+    "tag": "p",
+    "text": "Case 2 ( \\(t=3\\) ): Then \\(0<t\\) as desired.",
+    "html": "<p><strong>Case 2</strong> (<span class=\"math notranslate nohighlight\">\\(t=3\\)</span>): Then <span class=\"math notranslate nohighlight\">\\(0&lt;t\\)</span> as desired.</p>",
+    "zh": "情形 2（\\(t=3\\)）：则如所需，\\(0<t\\)。"
+  },
+  {
+    "id": "09_Sets:0139",
+    "file": "09_Sets.html",
+    "tag": "p",
+    "text": "Problem",
+    "html": "<p class=\"admonition-title\">Problem</p>",
+    "zh": "问题"
+  },
+  {
+    "id": "09_Sets:0140",
+    "file": "09_Sets.html",
+    "tag": "p",
+    "text": "Show that \\(\\{n:\\mathbb{N}\\mid 4\\le n\\}\\cap \\{n:\\mathbb{N}\\mid n<7\\}\\subseteq\\{4,5,6\\}\\) .",
+    "html": "<p>Show that\n<span class=\"math notranslate nohighlight\">\\(\\{n:\\mathbb{N}\\mid 4\\le n\\}\\cap \\{n:\\mathbb{N}\\mid n&lt;7\\}\\subseteq\\{4,5,6\\}\\)</span>.</p>",
+    "zh": "证明 \\(\\{n:\\mathbb{N}\\mid 4\\le n\\}\\cap \\{n:\\mathbb{N}\\mid n<7\\}\\subseteq\\{4,5,6\\}\\)。"
+  },
+  {
+    "id": "09_Sets:0141",
+    "file": "09_Sets.html",
+    "tag": "p",
+    "text": "Definition",
+    "html": "<p class=\"admonition-title\">Definition</p>",
+    "zh": "定义"
+  },
+  {
+    "id": "09_Sets:0142",
+    "file": "09_Sets.html",
+    "tag": "p",
+    "text": "The complement of a set \\(U\\) in a type \\(X\\) , denoted \\(U^{c}\\) , is \\(\\{x : X \\mid x \\notin U\\}\\) .",
+    "html": "<p>The <em>complement</em> of a set <span class=\"math notranslate nohighlight\">\\(U\\)</span>  in a type <span class=\"math notranslate nohighlight\">\\(X\\)</span>, denoted\n<span class=\"math notranslate nohighlight\">\\(U^{c}\\)</span>, is <span class=\"math notranslate nohighlight\">\\(\\{x : X \\mid x \\notin U\\}\\)</span>.</p>",
+    "zh": "类型 \\(X\\) 中集合 \\(U\\) 的补，记为 \\(U^{c}\\)，定义为 \\(\\{x : X \\mid x \\notin U\\}\\)。"
+  },
+  {
+    "id": "09_Sets:0143",
+    "file": "09_Sets.html",
+    "tag": "p",
+    "text": "Problem",
+    "html": "<p class=\"admonition-title\">Problem</p>",
+    "zh": "问题"
+  },
+  {
+    "id": "09_Sets:0144",
+    "file": "09_Sets.html",
+    "tag": "p",
+    "text": "Show that \\(\\{n:\\mathbb{Z}\\mid n\\text{ even}\\}^{c}=\\{n:\\mathbb{N}\\mid n\\text{ odd}\\}\\) .",
+    "html": "<p>Show that\n<span class=\"math notranslate nohighlight\">\\(\\{n:\\mathbb{Z}\\mid n\\text{ even}\\}^{c}=\\{n:\\mathbb{N}\\mid n\\text{ odd}\\}\\)</span>.</p>",
+    "zh": "证明 \\(\\{n:\\mathbb{Z}\\mid n\\text{ even}\\}^{c}=\\{n:\\mathbb{N}\\mid n\\text{ odd}\\}\\)。"
+  },
+  {
+    "id": "09_Sets:0145",
+    "file": "09_Sets.html",
+    "tag": "p",
+    "text": "Solution",
+    "html": "<p class=\"admonition-title\">Solution</p>",
+    "zh": "解答"
+  },
+  {
+    "id": "09_Sets:0146",
+    "file": "09_Sets.html",
+    "tag": "p",
+    "text": "Let \\(n\\) be an integer. We must show that \\(n\\) is odd if and only if it is not even. This is precisely Example 4.5.5 .",
+    "html": "<p>Let <span class=\"math notranslate nohighlight\">\\(n\\)</span> be an integer. We must show that <span class=\"math notranslate nohighlight\">\\(n\\)</span> is odd if and only if it is not even.\nThis is precisely <a class=\"reference internal\" href=\"04_Proofs_with_Structure_II.html#even-iff-not-odd\"><span class=\"std std-numref\">Example 4.5.5</span></a>.</p>",
+    "zh": "设 \\(n\\) 为整数。我们必须证明 \\(n\\) 为奇数，当且仅当它不是偶数。这正是例 4.5.5。"
+  },
+  {
+    "id": "09_Sets:0147",
+    "file": "09_Sets.html",
+    "tag": "p",
+    "text": "The empty set in a type \\(X\\) is the set which has no elements. That’s a slightly informal description: here’s the strict definition.",
+    "html": "<p>The <em>empty set</em> in a type <span class=\"math notranslate nohighlight\">\\(X\\)</span> is the set which has no elements.  That’s a slightly informal\ndescription: here’s the strict definition.</p>",
+    "zh": "类型 \\(X\\) 中的空集是不含任何元素的集合。这是稍微非形式化的描述；下面是严格定义。"
+  },
+  {
+    "id": "09_Sets:0148",
+    "file": "09_Sets.html",
+    "tag": "p",
+    "text": "Definition",
+    "html": "<p class=\"admonition-title\">Definition</p>",
+    "zh": "定义"
+  },
+  {
+    "id": "09_Sets:0149",
+    "file": "09_Sets.html",
+    "tag": "p",
+    "text": "The empty set in a type \\(X\\) , denoted \\(\\emptyset\\) , is \\(\\{x : X \\mid \\operatorname{False}\\}\\) .",
+    "html": "<p>The <em>empty set</em> in a type <span class=\"math notranslate nohighlight\">\\(X\\)</span>, denoted <span class=\"math notranslate nohighlight\">\\(\\emptyset\\)</span>, is <span class=\"math notranslate nohighlight\">\\(\\{x : X \\mid \\operatorname{False}\\}\\)</span>.</p>",
+    "zh": "类型 \\(X\\) 中的空集，记为 \\(\\emptyset\\)，定义为 \\(\\{x : X \\mid \\operatorname{False}\\}\\)。"
+  },
+  {
+    "id": "09_Sets:0150",
+    "file": "09_Sets.html",
+    "tag": "p",
+    "text": "It is true by pure logic that no element of type \\(X\\) belongs to the empty set in \\(X\\) , and that the empty set in \\(X\\) is a subset of every set in \\(X\\) .",
+    "html": "<p>It is true by pure logic that no element of type <span class=\"math notranslate nohighlight\">\\(X\\)</span> belongs to the empty set in <span class=\"math notranslate nohighlight\">\\(X\\)</span>,\nand that the empty set in <span class=\"math notranslate nohighlight\">\\(X\\)</span> is a subset of every set in <span class=\"math notranslate nohighlight\">\\(X\\)</span>.</p>",
+    "zh": "纯逻辑即可说明：类型 \\(X\\) 的任何元素都不属于 \\(X\\) 中的空集，并且 \\(X\\) 中的空集是 \\(X\\) 中每个集合的子集。"
+  },
+  {
+    "id": "09_Sets:0151",
+    "file": "09_Sets.html",
+    "tag": "p",
+    "text": "To show a set \\(U\\) in \\(X\\) is equal to the empty set, you must show that \\(U\\) has no elements.",
+    "html": "<p>To show a set <span class=\"math notranslate nohighlight\">\\(U\\)</span> in <span class=\"math notranslate nohighlight\">\\(X\\)</span> is equal to the empty set, you must show that <span class=\"math notranslate nohighlight\">\\(U\\)</span> has\nno elements.</p>",
+    "zh": "要证明 \\(X\\) 中的集合 \\(U\\) 等于空集，你必须证明 \\(U\\) 没有元素。"
+  },
+  {
+    "id": "09_Sets:0152",
+    "file": "09_Sets.html",
+    "tag": "p",
+    "text": "Problem",
+    "html": "<p class=\"admonition-title\">Problem</p>",
+    "zh": "问题"
+  },
+  {
+    "id": "09_Sets:0153",
+    "file": "09_Sets.html",
+    "tag": "p",
+    "text": "Show that \\(\\{n:\\mathbb{Z}\\mid n\\equiv 1\\mod 5\\}\\cap\\{n:\\mathbb{N}\\mid n\\equiv 1\\mod 5\\}=\\emptyset\\) .",
+    "html": "<p>Show that\n<span class=\"math notranslate nohighlight\">\\(\\{n:\\mathbb{Z}\\mid n\\equiv 1\\mod 5\\}\\cap\\{n:\\mathbb{N}\\mid n\\equiv 1\\mod 5\\}=\\emptyset\\)</span>.</p>",
+    "zh": "证明 \\(\\{n:\\mathbb{Z}\\mid n\\equiv 1\\mod 5\\}\\cap\\{n:\\mathbb{N}\\mid n\\equiv 1\\mod 5\\}=\\emptyset\\)。"
+  },
+  {
+    "id": "09_Sets:0154",
+    "file": "09_Sets.html",
+    "tag": "p",
+    "text": "Let’s consider the Lean proof first. We can write something like this:",
+    "html": "<p>Let’s consider the Lean proof first.  We can write something like this:</p>",
+    "zh": "我们先看 Lean 证明。可以写成类似下面这样："
+  },
+  {
+    "id": "09_Sets:0155",
+    "file": "09_Sets.html",
+    "tag": "p",
+    "text": "But a certain amount of that proof (the constructor , and the intro / contradiction in the second branch of the proof) is just logical messing-around. Now that we are familiar with the full power of the exhaust tactic it is possible to streamline proofs like this. Have a look at the goal state after the dsimp : it is",
+    "html": "<p>But a certain amount of that proof (the <code class=\"docutils literal notranslate\"><span class=\"pre\">constructor</span></code>, and the <code class=\"docutils literal notranslate\"><span class=\"pre\">intro</span></code>/<code class=\"docutils literal notranslate\"><span class=\"pre\">contradiction</span></code> in the\nsecond branch of the proof) is just logical messing-around.  Now that we are familiar with the full\npower of the <code class=\"docutils literal notranslate\"><span class=\"pre\">exhaust</span></code> tactic it is possible to streamline proofs like this.  Have a look at the\ngoal state after the <code class=\"docutils literal notranslate\"><span class=\"pre\">dsimp</span></code>: it is</p>",
+    "zh": "不过，这个证明中有相当一部分（<code class=\\\"docutils literal notranslate\\\"><span class=\\\"pre\\\">constructor</span></code>，以及证明第二个分支中的 <code class=\\\"docutils literal notranslate\\\"><span class=\\\"pre\\\">intro</span></code> / <code class=\\\"docutils literal notranslate\\\"><span class=\\\"pre\\\">contradiction</span></code>）只是逻辑整理。既然我们已经熟悉策略 <code class=\\\"docutils literal notranslate\\\"><span class=\\\"pre\\\">exhaust</span></code> 的全部威力，就可以精简这类证明。查看 <code class=\\\"docutils literal notranslate\\\"><span class=\\\"pre\\\">dsimp</span></code> 之后的目标状态，它是"
+  },
+  {
+    "id": "09_Sets:0156",
+    "file": "09_Sets.html",
+    "tag": "p",
+    "text": "and you might mentally simplify this to the logically equivalent",
+    "html": "<p>and you might mentally simplify this to the logically equivalent</p>",
+    "zh": "你可以在心里把它化简为逻辑等价的"
+  },
+  {
+    "id": "09_Sets:0157",
+    "file": "09_Sets.html",
+    "tag": "p",
+    "text": "This reformulation can be carried out in Lean using the incantation",
+    "html": "<p>This reformulation can be carried out in Lean using the incantation</p>",
+    "zh": "这个改写可以在 Lean 中用如下咒语完成："
+  },
+  {
+    "id": "09_Sets:0158",
+    "file": "09_Sets.html",
+    "tag": "p",
+    "text": "Here is a full proof in Lean using this approach.",
+    "html": "<p>Here is a full proof in Lean using this approach.</p>",
+    "zh": "下面是采用这种做法的完整 Lean 证明。"
+  },
+  {
+    "id": "09_Sets:0159",
+    "file": "09_Sets.html",
+    "tag": "p",
+    "text": "And here is that proof in words. We combine the use of set extensionality, the definition-unfolding, and the logically equivalent reformulation into a single paragraph of setup.",
+    "html": "<p>And here is that proof in words.  We combine the use of set extensionality, the\ndefinition-unfolding, and the logically equivalent reformulation into a single paragraph of setup.</p>",
+    "zh": "下面则用文字写出这个证明。我们把使用集合外延性、展开定义、以及逻辑等价改写合并到一段准备文字中。"
+  },
+  {
+    "id": "09_Sets:0160",
+    "file": "09_Sets.html",
+    "tag": "p",
+    "text": "Solution",
+    "html": "<p class=\"admonition-title\">Solution</p>",
+    "zh": "解答"
+  },
+  {
+    "id": "09_Sets:0161",
+    "file": "09_Sets.html",
+    "tag": "p",
+    "text": "Let \\(x\\) be an integer. We will show that it is not true that both \\(x\\equiv 1\\mod 5\\) and \\(x\\equiv 2\\mod 5\\) .",
+    "html": "<p>Let <span class=\"math notranslate nohighlight\">\\(x\\)</span> be an integer.  We will show that it is not true that both\n<span class=\"math notranslate nohighlight\">\\(x\\equiv 1\\mod 5\\)</span> and <span class=\"math notranslate nohighlight\">\\(x\\equiv 2\\mod 5\\)</span>.</p>",
+    "zh": "设 \\(x\\) 为整数。我们将证明 \\(x\\equiv 1\\mod 5\\) 与 \\(x\\equiv 2\\mod 5\\) 不可能同时成立。"
+  },
+  {
+    "id": "09_Sets:0162",
+    "file": "09_Sets.html",
+    "tag": "p",
+    "text": "Indeed, suppose that \\(x\\equiv 1\\mod 5\\) and \\(x\\equiv 2\\mod 5\\) . Then",
+    "html": "<p>Indeed, suppose that <span class=\"math notranslate nohighlight\">\\(x\\equiv 1\\mod 5\\)</span> and <span class=\"math notranslate nohighlight\">\\(x\\equiv 2\\mod 5\\)</span>.  Then</p>",
+    "zh": "确实，假设 \\(x\\equiv 1\\mod 5\\) 且 \\(x\\equiv 2\\mod 5\\)。则"
+  },
+  {
+    "id": "09_Sets:0163",
+    "file": "09_Sets.html",
+    "tag": "p",
+    "text": "contradiction.",
+    "html": "<p>contradiction.</p>",
+    "zh": "矛盾。"
+  },
+  {
+    "id": "09_Sets:0164",
+    "file": "09_Sets.html",
+    "tag": "p",
+    "text": "The universe set in a type \\(X\\) is the set which contains everything in \\(X\\) . That’s again a slightly informal description: here’s the strict definition.",
+    "html": "<p>The <em>universe set</em> in a type <span class=\"math notranslate nohighlight\">\\(X\\)</span> is the set which contains everything in <span class=\"math notranslate nohighlight\">\\(X\\)</span>.\nThat’s again a slightly informal description: here’s the strict definition.</p>",
+    "zh": "类型 \\(X\\) 中的全集是包含 \\(X\\) 中所有对象的集合。这同样是稍微非形式化的描述；下面是严格定义。"
+  },
+  {
+    "id": "09_Sets:0165",
+    "file": "09_Sets.html",
+    "tag": "p",
+    "text": "Definition",
+    "html": "<p class=\"admonition-title\">Definition</p>",
+    "zh": "定义"
+  },
+  {
+    "id": "09_Sets:0166",
+    "file": "09_Sets.html",
+    "tag": "p",
+    "text": "The universe set in a type \\(X\\) is \\(\\{x : X \\mid \\operatorname{True}\\}\\) .",
+    "html": "<p>The <em>universe set</em> in a type <span class=\"math notranslate nohighlight\">\\(X\\)</span> is <span class=\"math notranslate nohighlight\">\\(\\{x : X \\mid \\operatorname{True}\\}\\)</span>.</p>",
+    "zh": "类型 \\(X\\) 中的全集是 \\(\\{x : X \\mid \\operatorname{True}\\}\\)。"
+  },
+  {
+    "id": "09_Sets:0167",
+    "file": "09_Sets.html",
+    "tag": "p",
+    "text": "It is true by pure logic that all elements of type \\(X\\) belong to the universe set in \\(X\\) , and that every set in \\(X\\) is a subset of the universe set in \\(X\\) .",
+    "html": "<p>It is true by pure logic that all elements of type <span class=\"math notranslate nohighlight\">\\(X\\)</span> belong to the universe set in\n<span class=\"math notranslate nohighlight\">\\(X\\)</span>, and that every set in <span class=\"math notranslate nohighlight\">\\(X\\)</span> is a subset of the universe set in <span class=\"math notranslate nohighlight\">\\(X\\)</span>.</p>",
+    "zh": "纯逻辑即可说明：类型 \\(X\\) 的所有元素都属于 \\(X\\) 中的全集，并且 \\(X\\) 中每个集合都是 \\(X\\) 中全集的子集。"
+  },
+  {
+    "id": "09_Sets:0168",
+    "file": "09_Sets.html",
+    "tag": "p",
+    "text": "Note that in Lean the universe set is denoted univ . On paper we often refer to the universe set of \\(X\\) as \\(X\\) , too (even though this is not strictly correct).",
+    "html": "<p>Note that in Lean the universe set is denoted <code class=\"docutils literal notranslate\"><span class=\"pre\">univ</span></code>.  On paper we often refer to the universe\nset of <span class=\"math notranslate nohighlight\">\\(X\\)</span> as <span class=\"math notranslate nohighlight\">\\(X\\)</span>, too (even though this is not strictly correct).</p>",
+    "zh": "注意，在 Lean 中全集记为 <code class=\\\"docutils literal notranslate\\\"><span class=\\\"pre\\\">univ</span></code>。在纸上，我们也常把 \\(X\\) 的全集称为 \\(X\\) 本身（尽管严格说来这并不正确）。"
+  },
+  {
+    "id": "09_Sets:0169",
+    "file": "09_Sets.html",
+    "tag": "p",
+    "text": "To show a set \\(U\\) in \\(X\\) is equal to the universe set, you must show that \\(U\\) contains all elements of \\(X\\) . Here we adapt Example 9.2.1 to be a problem about the universe set.",
+    "html": "<p>To show a set <span class=\"math notranslate nohighlight\">\\(U\\)</span> in <span class=\"math notranslate nohighlight\">\\(X\\)</span> is equal to the universe set, you must show that <span class=\"math notranslate nohighlight\">\\(U\\)</span>\ncontains all elements of <span class=\"math notranslate nohighlight\">\\(X\\)</span>.  Here we adapt <a class=\"reference internal\" href=\"#union\"><span class=\"std std-numref\">Example 9.2.1</span></a> to be a problem about\nthe universe set.</p>",
+    "zh": "要证明 \\(X\\) 中的集合 \\(U\\) 等于全集，你必须证明 \\(U\\) 包含 \\(X\\) 的所有元素。这里我们把例 9.2.1 改写成一个关于全集的问题。"
+  },
+  {
+    "id": "09_Sets:0170",
+    "file": "09_Sets.html",
+    "tag": "p",
+    "text": "Problem",
+    "html": "<p class=\"admonition-title\">Problem</p>",
+    "zh": "问题"
+  },
+  {
+    "id": "09_Sets:0171",
+    "file": "09_Sets.html",
+    "tag": "p",
+    "text": "Show that \\(\\{x:\\mathbb{R}\\mid-1<x\\}\\cup \\{x:\\mathbb{R}\\mid x < 1\\}=\\mathbb{R}\\) .",
+    "html": "<p>Show that <span class=\"math notranslate nohighlight\">\\(\\{x:\\mathbb{R}\\mid-1&lt;x\\}\\cup \\{x:\\mathbb{R}\\mid x &lt; 1\\}=\\mathbb{R}\\)</span>.</p>",
+    "zh": "证明 \\(\\{x:\\mathbb{R}\\mid-1<x\\}\\cup \\{x:\\mathbb{R}\\mid x < 1\\}=\\mathbb{R}\\)。"
+  },
+  {
+    "id": "09_Sets:0172",
+    "file": "09_Sets.html",
+    "tag": "p",
+    "text": "Solution",
+    "html": "<p class=\"admonition-title\">Solution</p>",
+    "zh": "解答"
+  },
+  {
+    "id": "09_Sets:0173",
+    "file": "09_Sets.html",
+    "tag": "p",
+    "text": "We must show that for all real numbers \\(t\\) , either \\(-1<t\\) or \\(t<1\\) .",
+    "html": "<p>We must show that for all real numbers <span class=\"math notranslate nohighlight\">\\(t\\)</span>, either <span class=\"math notranslate nohighlight\">\\(-1&lt;t\\)</span> or <span class=\"math notranslate nohighlight\">\\(t&lt;1\\)</span>.</p>",
+    "zh": "我们必须证明对所有实数 \\(t\\)，都有 \\(-1<t\\) 或 \\(t<1\\)。"
+  },
+  {
+    "id": "09_Sets:0174",
+    "file": "09_Sets.html",
+    "tag": "p",
+    "text": "Case 1 ( \\(t\\le 0\\) ): Then \\(t<1\\) .",
+    "html": "<p><strong>Case 1</strong> (<span class=\"math notranslate nohighlight\">\\(t\\le 0\\)</span>): Then <span class=\"math notranslate nohighlight\">\\(t&lt;1\\)</span>.</p>",
+    "zh": "情形 1（\\(t\\le 0\\)）：则 \\(t<1\\)。"
+  },
+  {
+    "id": "09_Sets:0175",
+    "file": "09_Sets.html",
+    "tag": "p",
+    "text": "Case 2 ( \\(t> 0\\) ): Then \\(-1<t\\) .",
+    "html": "<p><strong>Case 2</strong> (<span class=\"math notranslate nohighlight\">\\(t&gt; 0\\)</span>): Then <span class=\"math notranslate nohighlight\">\\(-1&lt;t\\)</span>.</p>",
+    "zh": "情形 2（\\(t>0\\)）：则 \\(-1<t\\)。"
+  },
+  {
+    "id": "09_Sets:0176",
+    "file": "09_Sets.html",
+    "tag": "p",
+    "text": "For the first five problems, I provide a tactic check_equality_of_explicit_sets which will prove the statement if you have formulated it correctly. This tactic simply runs ext , then dsimp , then exhaust :",
+    "html": "<p>For the first five problems, I provide a tactic <code class=\"docutils literal notranslate\"><span class=\"pre\">check_equality_of_explicit_sets</span></code> which will prove\nthe statement if you have formulated it correctly.  This tactic simply runs <code class=\"docutils literal notranslate\"><span class=\"pre\">ext</span></code>, then <code class=\"docutils literal notranslate\"><span class=\"pre\">dsimp</span></code>,\nthen <code class=\"docutils literal notranslate\"><span class=\"pre\">exhaust</span></code>:</p>",
+    "zh": "对于前五个问题，我提供了策略 <code class=\\\"docutils literal notranslate\\\"><span class=\\\"pre\\\">check_equality_of_explicit_sets</span></code>；只要你把陈述表述正确，它就会证明该陈述。这个策略只是依次运行 <code class=\\\"docutils literal notranslate\\\"><span class=\\\"pre\\\">ext</span></code>、<code class=\\\"docutils literal notranslate\\\"><span class=\\\"pre\\\">dsimp</span></code>、<code class=\\\"docutils literal notranslate\\\"><span class=\\\"pre\\\">exhaust</span></code>："
+  },
+  {
+    "id": "09_Sets:0177",
+    "file": "09_Sets.html",
+    "tag": "p",
+    "text": "Let \\(X\\) be a type. The collection of all sets in \\(X\\) can itself be considered as a type. This type is sometimes denoted \\(\\mathcal{P}(X)\\) . 1 For example, \\(\\{3,4,5\\}\\) , \\(\\{n:\\mathbb{N}\\mid 8<n\\}\\) , and \\(\\{k:\\mathbb{N}\\mid\\exists \\ a, a^2=k\\}\\) are all sets of natural numbers, which means they are all of type \\(\\mathcal{P}(\\mathbb{N})\\) .",
+    "html": "<p>Let <span class=\"math notranslate nohighlight\">\\(X\\)</span> be a type.  The collection of all sets in <span class=\"math notranslate nohighlight\">\\(X\\)</span> can itself be\nconsidered as a type.  This type is sometimes denoted <span class=\"math notranslate nohighlight\">\\(\\mathcal{P}(X)\\)</span>. <a class=\"footnote-reference brackets\" href=\"#id25\" id=\"id19\">1</a>  For\nexample, <span class=\"math notranslate nohighlight\">\\(\\{3,4,5\\}\\)</span>, <span class=\"math notranslate nohighlight\">\\(\\{n:\\mathbb{N}\\mid 8&lt;n\\}\\)</span>, and\n<span class=\"math notranslate nohighlight\">\\(\\{k:\\mathbb{N}\\mid\\exists \\ a, a^2=k\\}\\)</span> are all sets of natural numbers, which\nmeans they are all of type <span class=\"math notranslate nohighlight\">\\(\\mathcal{P}(\\mathbb{N})\\)</span>.</p>",
+    "zh": "设 \\(X\\) 为一个类型。\\(X\\) 中所有集合组成的全体本身也可以看作一种类型。这个类型有时记为 \\(\\mathcal{P}(X)\\)。例如，\\(\\{3,4,5\\}\\)、\\(\\{n:\\mathbb{N}\\mid 8<n\\}\\) 和 \\(\\{k:\\mathbb{N}\\mid\\exists a, a^2=k\\}\\) 都是自然数集合，这意味着它们都具有类型 \\(\\mathcal{P}(\\mathbb{N})\\)。"
+  },
+  {
+    "id": "09_Sets:0178",
+    "file": "09_Sets.html",
+    "tag": "p",
+    "text": "In Lean, for a type X , the type of sets in X is denoted Set X . Lean will confirm that the three objects described above all have type Set ℕ :",
+    "html": "<p>In Lean, for a type <code class=\"docutils literal notranslate\"><span class=\"pre\">X</span></code>, the type of sets in <code class=\"docutils literal notranslate\"><span class=\"pre\">X</span></code> is denoted <code class=\"docutils literal notranslate\"><span class=\"pre\">Set</span> <span class=\"pre\">X</span></code>.  Lean\nwill confirm that the three objects described above all have type <code class=\"docutils literal notranslate\"><span class=\"pre\">Set</span> <span class=\"pre\">ℕ</span></code>:</p>",
+    "zh": "在 Lean 中，对于类型 \\(X\\)，\\(X\\) 中集合的类型记为 <code class=\\\"docutils literal notranslate\\\"><span class=\\\"pre\\\">Set</span> <span class=\\\"pre\\\">X</span></code>。Lean 会确认上面描述的三个对象都具有类型 <code class=\\\"docutils literal notranslate\\\"><span class=\\\"pre\\\">Set</span> <span class=\\\"pre\\\">ℕ</span></code>："
+  },
+  {
+    "id": "09_Sets:0179",
+    "file": "09_Sets.html",
+    "tag": "p",
+    "text": "This operation can be iterated: you can have sets in the type of sets, and so on.",
+    "html": "<p>This operation can be iterated: you can have sets in the type of sets, and so on.</p>",
+    "zh": "这个操作可以迭代：你可以考虑以集合类型为底层类型的集合，如此继续。"
+  },
+  {
+    "id": "09_Sets:0180",
+    "file": "09_Sets.html",
+    "tag": "p",
+    "text": "Exercise: write down an object of type Set (Set (Set ℕ)) .",
+    "html": "<p>Exercise: write down an object of type <code class=\"docutils literal notranslate\"><span class=\"pre\">Set</span> <span class=\"pre\">(Set</span> <span class=\"pre\">(Set</span> <span class=\"pre\">ℕ))</span></code>.</p>",
+    "zh": "练习：写出一个类型为 <code class=\\\"docutils literal notranslate\\\"><span class=\\\"pre\\\">Set</span> <span class=\\\"pre\\\">(Set</span> <span class=\\\"pre\\\">(Set</span> <span class=\\\"pre\\\">ℕ))</span></code> 的对象。"
+  },
+  {
+    "id": "09_Sets:0181",
+    "file": "09_Sets.html",
+    "tag": "p",
+    "text": "Problem",
+    "html": "<p class=\"admonition-title\">Problem</p>",
+    "zh": "问题"
+  },
+  {
+    "id": "09_Sets:0182",
+    "file": "09_Sets.html",
+    "tag": "p",
+    "text": "Show that \\(\\{n:\\mathbb{N}\\mid n\\text{ is even}\\}\\notin\\{s:\\mathcal{P}(\\mathbb{N})\\mid 3 ∈s\\}\\) .",
+    "html": "<p>Show that\n<span class=\"math notranslate nohighlight\">\\(\\{n:\\mathbb{N}\\mid n\\text{ is even}\\}\\notin\\{s:\\mathcal{P}(\\mathbb{N})\\mid 3 ∈s\\}\\)</span>.</p>",
+    "zh": "证明 \\(\\{n:\\mathbb{N}\\mid n\\text{ is even}\\}\\notin\\{s:\\mathcal{P}(\\mathbb{N})\\mid 3 \\in s\\}\\)。"
+  },
+  {
+    "id": "09_Sets:0183",
+    "file": "09_Sets.html",
+    "tag": "p",
+    "text": "Solution",
+    "html": "<p class=\"admonition-title\">Solution</p>",
+    "zh": "解答"
+  },
+  {
+    "id": "09_Sets:0184",
+    "file": "09_Sets.html",
+    "tag": "p",
+    "text": "We must show 3 is not even. It suffices to show that 3 is odd. Indeed, \\(3=2\\cdot 1+1\\) .",
+    "html": "<p>We must show 3 is not even.  It suffices to show that 3 is odd.  Indeed, <span class=\"math notranslate nohighlight\">\\(3=2\\cdot 1+1\\)</span>.</p>",
+    "zh": "我们必须证明 3 不是偶数。只需证明 3 为奇数。确实，\\(3=2\\cdot 1+1\\)。"
+  },
+  {
+    "id": "09_Sets:0185",
+    "file": "09_Sets.html",
+    "tag": "p",
+    "text": "Since \\(\\mathcal{P}(X)\\) , the type of sets in \\(X\\) , is itself a type, we can consider functions to and from it.",
+    "html": "<p>Since <span class=\"math notranslate nohighlight\">\\(\\mathcal{P}(X)\\)</span>, the type of sets in <span class=\"math notranslate nohighlight\">\\(X\\)</span>, is itself a type, we can consider\nfunctions to and from it.</p>",
+    "zh": "由于 \\(\\mathcal{P}(X)\\)，即 \\(X\\) 中集合的类型，本身也是一个类型，我们可以考虑以它为定义域或陪域的函数。"
+  },
+  {
+    "id": "09_Sets:0186",
+    "file": "09_Sets.html",
+    "tag": "p",
+    "text": "For example, given a set \\(s\\) of natural numbers, we can build a new set \\(\\{n:\\mathbb{N}\\mid n+1 \\in s\\}\\) . Lean confirms that this operation (let us call it \\(p\\) ) is a function from \\(\\mathcal{P}(\\mathbb{N})\\) to \\(\\mathcal{P}(\\mathbb{N})\\) .",
+    "html": "<p>For example, given a set <span class=\"math notranslate nohighlight\">\\(s\\)</span> of natural numbers, we can build a new set\n<span class=\"math notranslate nohighlight\">\\(\\{n:\\mathbb{N}\\mid n+1 \\in s\\}\\)</span>.  Lean confirms that this operation (let us call it\n<span class=\"math notranslate nohighlight\">\\(p\\)</span>) is a function from <span class=\"math notranslate nohighlight\">\\(\\mathcal{P}(\\mathbb{N})\\)</span> to <span class=\"math notranslate nohighlight\">\\(\\mathcal{P}(\\mathbb{N})\\)</span>.</p>",
+    "zh": "例如，给定一个自然数集合 \\(s\\)，可以构造新集合 \\(\\{n:\\mathbb{N}\\mid n+1 \\in s\\}\\)。Lean 确认这一操作（我们称之为 \\(p\\)）是从 \\(\\mathcal{P}(\\mathbb{N})\\) 到 \\(\\mathcal{P}(\\mathbb{N})\\) 的函数。"
+  },
+  {
+    "id": "09_Sets:0187",
+    "file": "09_Sets.html",
+    "tag": "p",
+    "text": "Problem",
+    "html": "<p class=\"admonition-title\">Problem</p>",
+    "zh": "问题"
+  },
+  {
+    "id": "09_Sets:0188",
+    "file": "09_Sets.html",
+    "tag": "p",
+    "text": "Show that the function \\(p\\) is not injective.",
+    "html": "<p>Show that the function <span class=\"math notranslate nohighlight\">\\(p\\)</span> is not injective.</p>",
+    "zh": "证明函数 \\(p\\) 不是单射。"
+  },
+  {
+    "id": "09_Sets:0189",
+    "file": "09_Sets.html",
+    "tag": "p",
+    "text": "Solution",
+    "html": "<p class=\"admonition-title\">Solution</p>",
+    "zh": "解答"
+  },
+  {
+    "id": "09_Sets:0190",
+    "file": "09_Sets.html",
+    "tag": "p",
+    "text": "We must show that there exist sets \\(s\\) and \\(t\\) , such that (i) \\(\\{n:\\mathbb{N}\\mid n+1 \\in s\\} = \\{n:\\mathbb{N}\\mid n+1 \\in t\\}\\) , and (ii) \\(s \\ne t\\) .",
+    "html": "<p>We must show that there exist sets <span class=\"math notranslate nohighlight\">\\(s\\)</span> and <span class=\"math notranslate nohighlight\">\\(t\\)</span>, such that\n(i) <span class=\"math notranslate nohighlight\">\\(\\{n:\\mathbb{N}\\mid n+1 \\in s\\} = \\{n:\\mathbb{N}\\mid n+1 \\in t\\}\\)</span>, and\n(ii) <span class=\"math notranslate nohighlight\">\\(s \\ne t\\)</span>.</p>",
+    "zh": "我们必须证明存在集合 \\(s\\) 和 \\(t\\)，使得 (i) \\(\\{n:\\mathbb{N}\\mid n+1 \\in s\\} = \\{n:\\mathbb{N}\\mid n+1 \\in t\\}\\)，并且 (ii) \\(s\\ne t\\)。"
+  },
+  {
+    "id": "09_Sets:0191",
+    "file": "09_Sets.html",
+    "tag": "p",
+    "text": "Indeed, let us show that the sets \\(\\{0\\}\\) and \\(\\emptyset\\) have this property. We must show, (i) \\(\\{n:\\mathbb{N}\\mid n+1 = 0\\} = \\emptyset\\) , and (ii) \\(\\{0\\} \\ne \\emptyset\\) .",
+    "html": "<p>Indeed, let us show that the sets <span class=\"math notranslate nohighlight\">\\(\\{0\\}\\)</span> and <span class=\"math notranslate nohighlight\">\\(\\emptyset\\)</span> have this property.  We must\nshow,\n(i) <span class=\"math notranslate nohighlight\">\\(\\{n:\\mathbb{N}\\mid n+1 = 0\\} = \\emptyset\\)</span>, and\n(ii) <span class=\"math notranslate nohighlight\">\\(\\{0\\} \\ne \\emptyset\\)</span>.</p>",
+    "zh": "确实，我们证明集合 \\(\\{0\\}\\) 与 \\(\\emptyset\\) 具有这个性质。我们必须证明：(i) \\(\\{n:\\mathbb{N}\\mid n+1 = 0\\} = \\emptyset\\)，以及 (ii) \\(\\{0\\} \\ne \\emptyset\\)。"
+  },
+  {
+    "id": "09_Sets:0192",
+    "file": "09_Sets.html",
+    "tag": "p",
+    "text": "For the first statement, let \\(x\\) be a natural number. We must show that \\(x+1 \\ne 0\\) , which is true since \\(x+1 > 0\\) .",
+    "html": "<p>For the first statement, let <span class=\"math notranslate nohighlight\">\\(x\\)</span> be a natural number.  We must show that <span class=\"math notranslate nohighlight\">\\(x+1 \\ne 0\\)</span>,\nwhich is true since <span class=\"math notranslate nohighlight\">\\(x+1 &gt; 0\\)</span>.</p>",
+    "zh": "对于第一个陈述，设 \\(x\\) 为自然数。我们必须证明 \\(x+1\\ne 0\\)，这是因为 \\(x+1>0\\)。"
+  },
+  {
+    "id": "09_Sets:0193",
+    "file": "09_Sets.html",
+    "tag": "p",
+    "text": "For the second statement, we must show that there exists a natural number \\(k\\) such that \\(k\\in\\{0\\}\\) and \\(k\\notin\\emptyset\\) , or vice versa. Indeed, \\(k=0\\) has this property.",
+    "html": "<p>For the second statement, we must show that there exists a natural number <span class=\"math notranslate nohighlight\">\\(k\\)</span> such that\n<span class=\"math notranslate nohighlight\">\\(k\\in\\{0\\}\\)</span> and <span class=\"math notranslate nohighlight\">\\(k\\notin\\emptyset\\)</span>, or vice versa.  Indeed, <span class=\"math notranslate nohighlight\">\\(k=0\\)</span> has this\nproperty.</p>",
+    "zh": "对于第二个陈述，我们必须证明存在自然数 \\(k\\)，使得 \\(k\\in\\{0\\}\\) 且 \\(k\\notin\\emptyset\\)，或反过来。确实，\\(k=0\\) 具有这个性质。"
+  },
+  {
+    "id": "09_Sets:0194",
+    "file": "09_Sets.html",
+    "tag": "p",
+    "text": "Problem",
+    "html": "<p class=\"admonition-title\">Problem</p>",
+    "zh": "问题"
+  },
+  {
+    "id": "09_Sets:0195",
+    "file": "09_Sets.html",
+    "tag": "p",
+    "text": "Consider the function \\(q : \\mathcal{P}(\\mathbb{Z})\\to \\mathcal{P}(\\mathbb{Z})\\) defined by, \\(q(s)=\\{n:\\mathbb{Z}\\mid n+1\\in s\\}\\) . Show that the function \\(q\\) is injective.",
+    "html": "<p>Consider the function  <span class=\"math notranslate nohighlight\">\\(q : \\mathcal{P}(\\mathbb{Z})\\to \\mathcal{P}(\\mathbb{Z})\\)</span> defined by,\n<span class=\"math notranslate nohighlight\">\\(q(s)=\\{n:\\mathbb{Z}\\mid n+1\\in s\\}\\)</span>. Show that the function <span class=\"math notranslate nohighlight\">\\(q\\)</span> is injective.</p>",
+    "zh": "考虑函数 \\(q : \\mathcal{P}(\\mathbb{Z})\\to \\mathcal{P}(\\mathbb{Z})\\)，定义为 \\(q(s)=\\{n:\\mathbb{Z}\\mid n+1\\in s\\}\\)。证明函数 \\(q\\) 是单射。"
+  },
+  {
+    "id": "09_Sets:0196",
+    "file": "09_Sets.html",
+    "tag": "p",
+    "text": "Solution",
+    "html": "<p class=\"admonition-title\">Solution</p>",
+    "zh": "解答"
+  },
+  {
+    "id": "09_Sets:0197",
+    "file": "09_Sets.html",
+    "tag": "p",
+    "text": "We must show that for all sets \\(s\\) and \\(t\\) , if \\(\\{n:\\mathbb{Z}\\mid n+1 \\in s\\} = \\{n:\\mathbb{Z}\\mid n+1 \\in t\\}\\) , then \\(s = t\\) .",
+    "html": "<p>We must show that for all sets <span class=\"math notranslate nohighlight\">\\(s\\)</span> and <span class=\"math notranslate nohighlight\">\\(t\\)</span>,\nif <span class=\"math notranslate nohighlight\">\\(\\{n:\\mathbb{Z}\\mid n+1 \\in s\\} = \\{n:\\mathbb{Z}\\mid n+1 \\in t\\}\\)</span>,\nthen <span class=\"math notranslate nohighlight\">\\(s = t\\)</span>.</p>",
+    "zh": "我们必须证明对所有集合 \\(s\\) 和 \\(t\\)，若 \\(\\{n:\\mathbb{Z}\\mid n+1 \\in s\\} = \\{n:\\mathbb{Z}\\mid n+1 \\in t\\}\\)，则 \\(s=t\\)。"
+  },
+  {
+    "id": "09_Sets:0198",
+    "file": "09_Sets.html",
+    "tag": "p",
+    "text": "Indeed, let \\(s\\) and \\(t\\) be sets and suppose that \\(\\{n:\\mathbb{Z}\\mid n+1 \\in s\\} = \\{n:\\mathbb{Z}\\mid n+1 \\in t\\}\\) .",
+    "html": "<p>Indeed, let <span class=\"math notranslate nohighlight\">\\(s\\)</span> and <span class=\"math notranslate nohighlight\">\\(t\\)</span> be sets and suppose that\n<span class=\"math notranslate nohighlight\">\\(\\{n:\\mathbb{Z}\\mid n+1 \\in s\\} = \\{n:\\mathbb{Z}\\mid n+1 \\in t\\}\\)</span>.</p>",
+    "zh": "确实，设 \\(s\\) 和 \\(t\\) 为集合，并假设 \\(\\{n:\\mathbb{Z}\\mid n+1 \\in s\\} = \\{n:\\mathbb{Z}\\mid n+1 \\in t\\}\\)。"
+  },
+  {
+    "id": "09_Sets:0199",
+    "file": "09_Sets.html",
+    "tag": "p",
+    "text": "Let \\(k\\) be an integer. We must show that \\(k\\in s\\) if and only if \\(k\\in t\\) . Indeed, by the assumption, \\(k -1\\in\\{n:\\mathbb{Z}\\mid n+1 \\in s\\}\\) if and only if \\(k-1\\in \\{n:\\mathbb{Z}\\mid n+1 \\in t\\}\\) . Simplifying, \\(k -1+1 \\in s\\) if and only if \\(k-1+1\\in t\\) , and so \\(k \\in s\\) if and only if \\(k\\in t\\) .",
+    "html": "<p>Let <span class=\"math notranslate nohighlight\">\\(k\\)</span> be an integer.\nWe must show that <span class=\"math notranslate nohighlight\">\\(k\\in s\\)</span> if and only if <span class=\"math notranslate nohighlight\">\\(k\\in t\\)</span>.\nIndeed, by the assumption,\n<span class=\"math notranslate nohighlight\">\\(k -1\\in\\{n:\\mathbb{Z}\\mid n+1 \\in s\\}\\)</span> if and only if <span class=\"math notranslate nohighlight\">\\(k-1\\in \\{n:\\mathbb{Z}\\mid n+1 \\in t\\}\\)</span>.\nSimplifying,\n<span class=\"math notranslate nohighlight\">\\(k -1+1 \\in s\\)</span> if and only if <span class=\"math notranslate nohighlight\">\\(k-1+1\\in t\\)</span>, and so\n<span class=\"math notranslate nohighlight\">\\(k  \\in s\\)</span> if and only if <span class=\"math notranslate nohighlight\">\\(k\\in t\\)</span>.</p>",
+    "zh": "设 \\(k\\) 为整数。我们必须证明 \\(k\\in s\\) 当且仅当 \\(k\\in t\\)。确实，由假设可知，\\(k-1\\in\\{n:\\mathbb{Z}\\mid n+1\\in s\\}\\) 当且仅当 \\(k-1\\in\\{n:\\mathbb{Z}\\mid n+1\\in t\\}\\)。化简后，\\(k-1+1\\in s\\) 当且仅当 \\(k-1+1\\in t\\)，因此 \\(k\\in s\\) 当且仅当 \\(k\\in t\\)。"
+  },
+  {
+    "id": "09_Sets:0200",
+    "file": "09_Sets.html",
+    "tag": "p",
+    "text": "Problem",
+    "html": "<p class=\"admonition-title\">Problem</p>",
+    "zh": "问题"
+  },
+  {
+    "id": "09_Sets:0201",
+    "file": "09_Sets.html",
+    "tag": "p",
+    "text": "Let \\(X\\) be a type. Prove that there does not exist a surjective function from \\(X\\) to \\(\\mathcal{P}(X)\\) .",
+    "html": "<p>Let <span class=\"math notranslate nohighlight\">\\(X\\)</span> be a type.  Prove that there does not exist a surjective function from  <span class=\"math notranslate nohighlight\">\\(X\\)</span> to\n<span class=\"math notranslate nohighlight\">\\(\\mathcal{P}(X)\\)</span>.</p>",
+    "zh": "设 \\(X\\) 为一个类型。证明不存在从 \\(X\\) 到 \\(\\mathcal{P}(X)\\) 的满射函数。"
+  },
+  {
+    "id": "09_Sets:0202",
+    "file": "09_Sets.html",
+    "tag": "p",
+    "text": "Solution",
+    "html": "<p class=\"admonition-title\">Solution</p>",
+    "zh": "解答"
+  },
+  {
+    "id": "09_Sets:0203",
+    "file": "09_Sets.html",
+    "tag": "p",
+    "text": "Suppose for the sake of contradiction that some function \\(f:X\\to\\mathcal{P}(X)\\) were surjective. We introduce the following set in \\(X\\) :",
+    "html": "<p>Suppose for the sake of contradiction that some function <span class=\"math notranslate nohighlight\">\\(f:X\\to\\mathcal{P}(X)\\)</span> were\nsurjective.  We introduce the\nfollowing set in <span class=\"math notranslate nohighlight\">\\(X\\)</span>:</p>",
+    "zh": "为导出矛盾，假设某个函数 \\(f:X\\to\\mathcal{P}(X)\\) 是满射。我们在 \\(X\\) 中引入如下集合："
+  },
+  {
+    "id": "09_Sets:0204",
+    "file": "09_Sets.html",
+    "tag": "p",
+    "text": "Since \\(f\\) is surjective, there exists some \\(x\\) of type \\(X\\) such that \\(f(x)=s\\) . We consider cases according to whether \\(x\\in s\\) .",
+    "html": "<p>Since <span class=\"math notranslate nohighlight\">\\(f\\)</span> is surjective, there exists some <span class=\"math notranslate nohighlight\">\\(x\\)</span> of type <span class=\"math notranslate nohighlight\">\\(X\\)</span> such that\n<span class=\"math notranslate nohighlight\">\\(f(x)=s\\)</span>. We consider cases according to whether <span class=\"math notranslate nohighlight\">\\(x\\in s\\)</span>.</p>",
+    "zh": "由于 \\(f\\) 是满射，存在类型 \\(X\\) 的某个 \\(x\\)，使得 \\(f(x)=s\\)。我们按照 \\(x\\in s\\) 是否成立分类讨论。"
+  },
+  {
+    "id": "09_Sets:0205",
+    "file": "09_Sets.html",
+    "tag": "p",
+    "text": "Case 1 ( \\(x\\in s\\) ): Then by the definition of \\(s\\) , it is true that \\(x\\notin f(x)\\) , so since \\(f(x)=s\\) , we have \\(x\\notin s\\) , contradiction.",
+    "html": "<p><strong>Case 1</strong> (<span class=\"math notranslate nohighlight\">\\(x\\in s\\)</span>):  Then by the definition of <span class=\"math notranslate nohighlight\">\\(s\\)</span>, it is true that\n<span class=\"math notranslate nohighlight\">\\(x\\notin f(x)\\)</span>, so since <span class=\"math notranslate nohighlight\">\\(f(x)=s\\)</span>, we have <span class=\"math notranslate nohighlight\">\\(x\\notin s\\)</span>, contradiction.</p>",
+    "zh": "情形 1（\\(x\\in s\\)）：由 \\(s\\) 的定义，\\(x\\notin f(x)\\) 成立；又由于 \\(f(x)=s\\)，可得 \\(x\\notin s\\)，矛盾。"
+  },
+  {
+    "id": "09_Sets:0206",
+    "file": "09_Sets.html",
+    "tag": "p",
+    "text": "Case 2 ( \\(x\\notin s\\) ): Then by the definition of \\(s\\) , it is false that \\(x\\notin f(x)\\) , so since \\(f(x)=s\\) , we have that it is false that \\(x\\notin s\\) , contradiction.",
+    "html": "<p><strong>Case 2</strong> (<span class=\"math notranslate nohighlight\">\\(x\\notin s\\)</span>):  Then by the definition of <span class=\"math notranslate nohighlight\">\\(s\\)</span>, it is false that\n<span class=\"math notranslate nohighlight\">\\(x\\notin f(x)\\)</span>, so since <span class=\"math notranslate nohighlight\">\\(f(x)=s\\)</span>, we have that it is false that <span class=\"math notranslate nohighlight\">\\(x\\notin s\\)</span>,\ncontradiction.</p>",
+    "zh": "情形 2（\\(x\\notin s\\)）：由 \\(s\\) 的定义，\\(x\\notin f(x)\\) 为假；又由于 \\(f(x)=s\\)，可得 \\(x\\notin s\\) 为假，矛盾。"
+  },
+  {
+    "id": "09_Sets:0207",
+    "file": "09_Sets.html",
+    "tag": "p",
+    "text": "The idea behind this twisty proof is sometimes called the barber paradox . Here is the version featuring barbers. There is a town with a barber, and in this town, the barber shaves all men who don’t shave themselves. Paradox: does the barber shave himself?",
+    "html": "<p>The idea behind this twisty proof is sometimes called the\n<a class=\"reference external\" href=\"https://en.wikipedia.org/wiki/Barber_paradox\">barber paradox</a>.  Here is the version featuring\nbarbers.  There is a town with a barber, and in this town, the barber shaves all men who don’t shave\nthemselves.  Paradox: does the barber shave himself?</p>",
+    "zh": "这个曲折证明背后的思想有时称为理发师悖论。下面是理发师版本：某镇有一位理发师，在这个镇上，理发师给且只给所有不给自己刮胡子的人刮胡子。悖论是：理发师给自己刮胡子吗？"
+  },
+  {
+    "id": "09_Sets:0208",
+    "file": "09_Sets.html",
+    "tag": "p",
+    "text": "Footnotes",
+    "html": "<p class=\"rubric\">Footnotes</p>",
+    "zh": "脚注"
+  },
+  {
+    "id": "09_Sets:0209",
+    "file": "09_Sets.html",
+    "tag": "p",
+    "text": "In set theory, which we don’t use as the logical foundation of this book, \\(\\mathcal{P}(X)\\) is referred to as the power set of \\(X\\) . Maybe in type theory we should refer to it as the “power type” of \\(X\\) …?",
+    "html": "<p>In set theory, which we <em>don’t</em> use as the logical foundation of this book,\n<span class=\"math notranslate nohighlight\">\\(\\mathcal{P}(X)\\)</span> is referred to as\nthe <em>power set</em> of <span class=\"math notranslate nohighlight\">\\(X\\)</span>.  Maybe in type theory we should refer to it as the “power type” of\n<span class=\"math notranslate nohighlight\">\\(X\\)</span> …?</p>",
+    "zh": "在集合论中（本书不采用它作为逻辑基础），\\(\\mathcal{P}(X)\\) 称为 \\(X\\) 的幂集。也许在类型论中，我们应该把它称为 \\(X\\) 的“幂类型”……？"
+  },
+  {
+    "id": "09_Sets:0210",
+    "file": "09_Sets.html",
+    "tag": "li",
+    "text": "Prove or disprove that \\(4\\in \\{a:\\mathbb{Q} \\mid a<3\\}\\) . example : 4 ∈ { a : ℚ | a < 3 } := by sorry example : 4 ∉ { a : ℚ | a < 3 } := by sorry",
+    "html": "<li><p>Prove or disprove that <span class=\"math notranslate nohighlight\">\\(4\\in \\{a:\\mathbb{Q} \\mid a&lt;3\\}\\)</span>.</p>\n<div class=\"highlight-lean notranslate\"><div class=\"highlight\"><pre><span></span><span class=\"kd\">example</span> <span class=\"o\">:</span> <span class=\"mi\">4</span> <span class=\"bp\">∈</span> <span class=\"o\">{</span><span class=\"n\">a</span> <span class=\"o\">:</span> <span class=\"n\">ℚ</span> <span class=\"bp\">|</span> <span class=\"n\">a</span> <span class=\"bp\">&lt;</span> <span class=\"mi\">3</span><span class=\"o\">}</span> <span class=\"o\">:=</span> <span class=\"kd\">by</span>\n  <span class=\"gr\">sorry</span>\n\n<span class=\"kd\">example</span> <span class=\"o\">:</span> <span class=\"mi\">4</span> <span class=\"bp\">∉</span> <span class=\"o\">{</span><span class=\"n\">a</span> <span class=\"o\">:</span> <span class=\"n\">ℚ</span> <span class=\"bp\">|</span> <span class=\"n\">a</span> <span class=\"bp\">&lt;</span> <span class=\"mi\">3</span><span class=\"o\">}</span> <span class=\"o\">:=</span> <span class=\"kd\">by</span>\n  <span class=\"gr\">sorry</span>\n</pre></div>\n</div>\n</li>",
+    "zh": "证明或反驳：\\(4\\in \\{a:\\mathbb{Q} \\mid a<3\\}\\)。"
+  },
+  {
+    "id": "09_Sets:0211",
+    "file": "09_Sets.html",
+    "tag": "li",
+    "text": "Prove or disprove that \\(6\\in \\{n:\\mathbb{N} \\mid n\\mid 42\\}\\) . example : 6 ∈ { n : ℕ | n ∣ 42 } := by sorry example : 6 ∉ { n : ℕ | n ∣ 42 } := by sorry",
+    "html": "<li><p>Prove or disprove that <span class=\"math notranslate nohighlight\">\\(6\\in \\{n:\\mathbb{N} \\mid n\\mid 42\\}\\)</span>.</p>\n<div class=\"highlight-lean notranslate\"><div class=\"highlight\"><pre><span></span><span class=\"kd\">example</span> <span class=\"o\">:</span> <span class=\"mi\">6</span> <span class=\"bp\">∈</span> <span class=\"o\">{</span><span class=\"n\">n</span> <span class=\"o\">:</span> <span class=\"n\">ℕ</span> <span class=\"bp\">|</span> <span class=\"n\">n</span> <span class=\"bp\">∣</span> <span class=\"mi\">42</span><span class=\"o\">}</span> <span class=\"o\">:=</span> <span class=\"kd\">by</span>\n  <span class=\"gr\">sorry</span>\n\n<span class=\"kd\">example</span> <span class=\"o\">:</span> <span class=\"mi\">6</span> <span class=\"bp\">∉</span> <span class=\"o\">{</span><span class=\"n\">n</span> <span class=\"o\">:</span> <span class=\"n\">ℕ</span> <span class=\"bp\">|</span> <span class=\"n\">n</span> <span class=\"bp\">∣</span> <span class=\"mi\">42</span><span class=\"o\">}</span> <span class=\"o\">:=</span> <span class=\"kd\">by</span>\n  <span class=\"gr\">sorry</span>\n</pre></div>\n</div>\n</li>",
+    "zh": "证明或反驳：\\(6\\in \\{n:\\mathbb{N} \\mid n\\mid 42\\}\\)。"
+  },
+  {
+    "id": "09_Sets:0212",
+    "file": "09_Sets.html",
+    "tag": "li",
+    "text": "Prove or disprove that \\(8\\in \\{k:\\mathbb{Z} \\mid 5\\mid k\\}\\) . example : 8 ∈ { k : ℤ | 5 ∣ k } := by sorry example : 8 ∉ { k : ℤ | 5 ∣ k } := by sorry",
+    "html": "<li><p>Prove or disprove that <span class=\"math notranslate nohighlight\">\\(8\\in \\{k:\\mathbb{Z} \\mid 5\\mid k\\}\\)</span>.</p>\n<div class=\"highlight-lean notranslate\"><div class=\"highlight\"><pre><span></span><span class=\"kd\">example</span> <span class=\"o\">:</span> <span class=\"mi\">8</span> <span class=\"bp\">∈</span> <span class=\"o\">{</span><span class=\"n\">k</span> <span class=\"o\">:</span> <span class=\"n\">ℤ</span> <span class=\"bp\">|</span> <span class=\"mi\">5</span> <span class=\"bp\">∣</span> <span class=\"n\">k</span><span class=\"o\">}</span> <span class=\"o\">:=</span> <span class=\"kd\">by</span>\n  <span class=\"gr\">sorry</span>\n\n<span class=\"kd\">example</span> <span class=\"o\">:</span> <span class=\"mi\">8</span> <span class=\"bp\">∉</span> <span class=\"o\">{</span><span class=\"n\">k</span> <span class=\"o\">:</span> <span class=\"n\">ℤ</span> <span class=\"bp\">|</span> <span class=\"mi\">5</span> <span class=\"bp\">∣</span> <span class=\"n\">k</span><span class=\"o\">}</span> <span class=\"o\">:=</span> <span class=\"kd\">by</span>\n  <span class=\"gr\">sorry</span>\n</pre></div>\n</div>\n</li>",
+    "zh": "证明或反驳：\\(8\\in \\{k:\\mathbb{Z} \\mid 5\\mid k\\}\\)。"
+  },
+  {
+    "id": "09_Sets:0213",
+    "file": "09_Sets.html",
+    "tag": "li",
+    "text": "Prove or disprove that \\(11\\in \\{n:\\mathbb{N} \\mid n\\text{ is odd}\\}\\) . example : 11 ∈ { n : ℕ | Odd n } := by sorry example : 11 ∉ { n : ℕ | Odd n } := by sorry",
+    "html": "<li><p>Prove or disprove that <span class=\"math notranslate nohighlight\">\\(11\\in \\{n:\\mathbb{N} \\mid n\\text{ is odd}\\}\\)</span>.</p>\n<div class=\"highlight-lean notranslate\"><div class=\"highlight\"><pre><span></span><span class=\"kd\">example</span> <span class=\"o\">:</span> <span class=\"mi\">11</span> <span class=\"bp\">∈</span> <span class=\"o\">{</span><span class=\"n\">n</span> <span class=\"o\">:</span> <span class=\"n\">ℕ</span> <span class=\"bp\">|</span> <span class=\"n\">Odd</span> <span class=\"n\">n</span><span class=\"o\">}</span> <span class=\"o\">:=</span> <span class=\"kd\">by</span>\n  <span class=\"gr\">sorry</span>\n\n<span class=\"kd\">example</span> <span class=\"o\">:</span> <span class=\"mi\">11</span> <span class=\"bp\">∉</span> <span class=\"o\">{</span><span class=\"n\">n</span> <span class=\"o\">:</span> <span class=\"n\">ℕ</span> <span class=\"bp\">|</span> <span class=\"n\">Odd</span> <span class=\"n\">n</span><span class=\"o\">}</span> <span class=\"o\">:=</span> <span class=\"kd\">by</span>\n  <span class=\"gr\">sorry</span>\n</pre></div>\n</div>\n</li>",
+    "zh": "证明或反驳：\\(11\\in \\{n:\\mathbb{N} \\mid n\\text{ is odd}\\}\\)。"
+  },
+  {
+    "id": "09_Sets:0214",
+    "file": "09_Sets.html",
+    "tag": "li",
+    "text": "Prove or disprove that \\(-3\\in \\{x:\\mathbb{R} \\mid \\forall y :\\mathbb{R}, x\\le y^2\\}\\) . example : - 3 ∈ { x : ℝ | ∀ y : ℝ , x ≤ y ^ 2 } := by sorry example : - 3 ∉ { x : ℝ | ∀ y : ℝ , x ≤ y ^ 2 } := by sorry",
+    "html": "<li><p>Prove or disprove that <span class=\"math notranslate nohighlight\">\\(-3\\in \\{x:\\mathbb{R} \\mid \\forall y :\\mathbb{R}, x\\le y^2\\}\\)</span>.</p>\n<div class=\"highlight-lean notranslate\"><div class=\"highlight\"><pre><span></span><span class=\"kd\">example</span> <span class=\"o\">:</span> <span class=\"bp\">-</span><span class=\"mi\">3</span> <span class=\"bp\">∈</span> <span class=\"o\">{</span><span class=\"n\">x</span> <span class=\"o\">:</span> <span class=\"n\">ℝ</span> <span class=\"bp\">|</span> <span class=\"bp\">∀</span> <span class=\"n\">y</span> <span class=\"o\">:</span> <span class=\"n\">ℝ</span><span class=\"o\">,</span> <span class=\"n\">x</span> <span class=\"bp\">≤</span> <span class=\"n\">y</span> <span class=\"bp\">^</span> <span class=\"mi\">2</span><span class=\"o\">}</span> <span class=\"o\">:=</span> <span class=\"kd\">by</span>\n  <span class=\"gr\">sorry</span>\n\n<span class=\"kd\">example</span> <span class=\"o\">:</span> <span class=\"bp\">-</span><span class=\"mi\">3</span> <span class=\"bp\">∉</span> <span class=\"o\">{</span><span class=\"n\">x</span> <span class=\"o\">:</span> <span class=\"n\">ℝ</span> <span class=\"bp\">|</span> <span class=\"bp\">∀</span> <span class=\"n\">y</span> <span class=\"o\">:</span> <span class=\"n\">ℝ</span><span class=\"o\">,</span> <span class=\"n\">x</span> <span class=\"bp\">≤</span> <span class=\"n\">y</span> <span class=\"bp\">^</span> <span class=\"mi\">2</span><span class=\"o\">}</span> <span class=\"o\">:=</span> <span class=\"kd\">by</span>\n  <span class=\"gr\">sorry</span>\n</pre></div>\n</div>\n</li>",
+    "zh": "证明或反驳：\\(-3\\in \\{x:\\mathbb{R} \\mid \\forall y :\\mathbb{R}, x\\le y^2\\}\\)。"
+  },
+  {
+    "id": "09_Sets:0215",
+    "file": "09_Sets.html",
+    "tag": "li",
+    "text": "Prove or disprove that \\(\\{a:\\mathbb{N} \\mid 20\\mid a\\}\\subseteq \\{x:\\mathbb{N} \\mid 5 \\mid x\\}\\) . example : { a : ℕ | 20 ∣ a } ⊆ { x : ℕ | 5 ∣ x } := by sorry example : { a : ℕ | 20 ∣ a } ⊈ { x : ℕ | 5 ∣ x } := by sorry",
+    "html": "<li><p>Prove or disprove that\n<span class=\"math notranslate nohighlight\">\\(\\{a:\\mathbb{N} \\mid 20\\mid a\\}\\subseteq \\{x:\\mathbb{N} \\mid 5 \\mid x\\}\\)</span>.</p>\n<div class=\"highlight-lean notranslate\"><div class=\"highlight\"><pre><span></span><span class=\"kd\">example</span> <span class=\"o\">:</span> <span class=\"o\">{</span><span class=\"n\">a</span> <span class=\"o\">:</span> <span class=\"n\">ℕ</span> <span class=\"bp\">|</span> <span class=\"mi\">20</span> <span class=\"bp\">∣</span> <span class=\"n\">a</span><span class=\"o\">}</span> <span class=\"bp\">⊆</span> <span class=\"o\">{</span><span class=\"n\">x</span> <span class=\"o\">:</span> <span class=\"n\">ℕ</span> <span class=\"bp\">|</span> <span class=\"mi\">5</span> <span class=\"bp\">∣</span> <span class=\"n\">x</span><span class=\"o\">}</span> <span class=\"o\">:=</span> <span class=\"kd\">by</span>\n  <span class=\"gr\">sorry</span>\n\n<span class=\"kd\">example</span> <span class=\"o\">:</span> <span class=\"o\">{</span><span class=\"n\">a</span> <span class=\"o\">:</span> <span class=\"n\">ℕ</span> <span class=\"bp\">|</span> <span class=\"mi\">20</span> <span class=\"bp\">∣</span> <span class=\"n\">a</span><span class=\"o\">}</span> <span class=\"bp\">⊈</span> <span class=\"o\">{</span><span class=\"n\">x</span> <span class=\"o\">:</span> <span class=\"n\">ℕ</span> <span class=\"bp\">|</span> <span class=\"mi\">5</span> <span class=\"bp\">∣</span> <span class=\"n\">x</span><span class=\"o\">}</span> <span class=\"o\">:=</span> <span class=\"kd\">by</span>\n  <span class=\"gr\">sorry</span>\n</pre></div>\n</div>\n</li>",
+    "zh": "证明或反驳：\\(\\{a:\\mathbb{N} \\mid 20\\mid a\\}\\subseteq \\{x:\\mathbb{N} \\mid 5 \\mid x\\}\\)。"
+  },
+  {
+    "id": "09_Sets:0216",
+    "file": "09_Sets.html",
+    "tag": "li",
+    "text": "Prove or disprove that \\(\\{a:\\mathbb{N} \\mid 5\\mid a\\}\\subseteq \\{x:\\mathbb{N} \\mid 20 \\mid x\\}\\) . example : { a : ℕ | 5 ∣ a } ⊆ { x : ℕ | 20 ∣ x } := by sorry example : { a : ℕ | 5 ∣ a } ⊈ { x : ℕ | 20 ∣ x } := by sorry",
+    "html": "<li><p>Prove or disprove that\n<span class=\"math notranslate nohighlight\">\\(\\{a:\\mathbb{N} \\mid 5\\mid a\\}\\subseteq \\{x:\\mathbb{N} \\mid 20 \\mid x\\}\\)</span>.</p>\n<div class=\"highlight-lean notranslate\"><div class=\"highlight\"><pre><span></span><span class=\"kd\">example</span> <span class=\"o\">:</span> <span class=\"o\">{</span><span class=\"n\">a</span> <span class=\"o\">:</span> <span class=\"n\">ℕ</span> <span class=\"bp\">|</span> <span class=\"mi\">5</span> <span class=\"bp\">∣</span> <span class=\"n\">a</span><span class=\"o\">}</span> <span class=\"bp\">⊆</span> <span class=\"o\">{</span><span class=\"n\">x</span> <span class=\"o\">:</span> <span class=\"n\">ℕ</span> <span class=\"bp\">|</span> <span class=\"mi\">20</span> <span class=\"bp\">∣</span> <span class=\"n\">x</span><span class=\"o\">}</span> <span class=\"o\">:=</span> <span class=\"kd\">by</span>\n  <span class=\"gr\">sorry</span>\n\n<span class=\"kd\">example</span> <span class=\"o\">:</span> <span class=\"o\">{</span><span class=\"n\">a</span> <span class=\"o\">:</span> <span class=\"n\">ℕ</span> <span class=\"bp\">|</span> <span class=\"mi\">5</span> <span class=\"bp\">∣</span> <span class=\"n\">a</span><span class=\"o\">}</span> <span class=\"bp\">⊈</span> <span class=\"o\">{</span><span class=\"n\">x</span> <span class=\"o\">:</span> <span class=\"n\">ℕ</span> <span class=\"bp\">|</span> <span class=\"mi\">20</span> <span class=\"bp\">∣</span> <span class=\"n\">x</span><span class=\"o\">}</span> <span class=\"o\">:=</span> <span class=\"kd\">by</span>\n  <span class=\"gr\">sorry</span>\n</pre></div>\n</div>\n</li>",
+    "zh": "证明或反驳：\\(\\{a:\\mathbb{N} \\mid 5\\mid a\\}\\subseteq \\{x:\\mathbb{N} \\mid 20 \\mid x\\}\\)。"
+  },
+  {
+    "id": "09_Sets:0217",
+    "file": "09_Sets.html",
+    "tag": "li",
+    "text": "Prove or disprove that \\(\\{r:\\mathbb{Z} \\mid 3\\mid r\\}\\subseteq \\{s:\\mathbb{Z} \\mid 0 \\le s\\}\\) . example : { r : ℤ | 3 ∣ r } ⊆ { s : ℤ | 0 ≤ s } := by sorry example : { r : ℤ | 3 ∣ r } ⊈ { s : ℤ | 0 ≤ s } := by sorry",
+    "html": "<li><p>Prove or disprove that\n<span class=\"math notranslate nohighlight\">\\(\\{r:\\mathbb{Z} \\mid 3\\mid r\\}\\subseteq \\{s:\\mathbb{Z} \\mid 0 \\le s\\}\\)</span>.</p>\n<div class=\"highlight-lean notranslate\"><div class=\"highlight\"><pre><span></span><span class=\"kd\">example</span> <span class=\"o\">:</span> <span class=\"o\">{</span><span class=\"n\">r</span> <span class=\"o\">:</span> <span class=\"n\">ℤ</span> <span class=\"bp\">|</span> <span class=\"mi\">3</span> <span class=\"bp\">∣</span> <span class=\"n\">r</span><span class=\"o\">}</span> <span class=\"bp\">⊆</span> <span class=\"o\">{</span><span class=\"n\">s</span> <span class=\"o\">:</span> <span class=\"n\">ℤ</span> <span class=\"bp\">|</span> <span class=\"mi\">0</span> <span class=\"bp\">≤</span> <span class=\"n\">s</span><span class=\"o\">}</span> <span class=\"o\">:=</span> <span class=\"kd\">by</span>\n  <span class=\"gr\">sorry</span>\n\n<span class=\"kd\">example</span> <span class=\"o\">:</span> <span class=\"o\">{</span><span class=\"n\">r</span> <span class=\"o\">:</span> <span class=\"n\">ℤ</span> <span class=\"bp\">|</span> <span class=\"mi\">3</span> <span class=\"bp\">∣</span> <span class=\"n\">r</span><span class=\"o\">}</span> <span class=\"bp\">⊈</span> <span class=\"o\">{</span><span class=\"n\">s</span> <span class=\"o\">:</span> <span class=\"n\">ℤ</span> <span class=\"bp\">|</span> <span class=\"mi\">0</span> <span class=\"bp\">≤</span> <span class=\"n\">s</span><span class=\"o\">}</span> <span class=\"o\">:=</span> <span class=\"kd\">by</span>\n  <span class=\"gr\">sorry</span>\n</pre></div>\n</div>\n</li>",
+    "zh": "证明或反驳：\\(\\{r:\\mathbb{Z} \\mid 3\\mid r\\}\\subseteq \\{s:\\mathbb{Z} \\mid 0 \\le s\\}\\)。"
+  },
+  {
+    "id": "09_Sets:0218",
+    "file": "09_Sets.html",
+    "tag": "li",
+    "text": "Prove or disprove that \\(\\{m:\\mathbb{Z} \\mid m\\ge 10\\}\\subseteq \\{n:\\mathbb{Z} \\mid n^3-7n^2\\geq 4n\\}\\) . example : { m : ℤ | m ≥ 10 } ⊆ { n : ℤ | n ^ 3 - 7 * n ^ 2 ≥ 4 * n } := by sorry example : { m : ℤ | m ≥ 10 } ⊈ { n : ℤ | n ^ 3 - 7 * n ^ 2 ≥ 4 * n } := by sorry",
+    "html": "<li><p>Prove or disprove that\n<span class=\"math notranslate nohighlight\">\\(\\{m:\\mathbb{Z} \\mid m\\ge 10\\}\\subseteq \\{n:\\mathbb{Z} \\mid n^3-7n^2\\geq 4n\\}\\)</span>.</p>\n<div class=\"highlight-lean notranslate\"><div class=\"highlight\"><pre><span></span><span class=\"kd\">example</span> <span class=\"o\">:</span> <span class=\"o\">{</span><span class=\"n\">m</span> <span class=\"o\">:</span> <span class=\"n\">ℤ</span> <span class=\"bp\">|</span> <span class=\"n\">m</span> <span class=\"bp\">≥</span> <span class=\"mi\">10</span><span class=\"o\">}</span> <span class=\"bp\">⊆</span> <span class=\"o\">{</span><span class=\"n\">n</span> <span class=\"o\">:</span> <span class=\"n\">ℤ</span> <span class=\"bp\">|</span> <span class=\"n\">n</span> <span class=\"bp\">^</span> <span class=\"mi\">3</span> <span class=\"bp\">-</span> <span class=\"mi\">7</span> <span class=\"bp\">*</span> <span class=\"n\">n</span> <span class=\"bp\">^</span> <span class=\"mi\">2</span> <span class=\"bp\">≥</span> <span class=\"mi\">4</span> <span class=\"bp\">*</span> <span class=\"n\">n</span><span class=\"o\">}</span> <span class=\"o\">:=</span> <span class=\"kd\">by</span>\n  <span class=\"gr\">sorry</span>\n\n<span class=\"kd\">example</span> <span class=\"o\">:</span> <span class=\"o\">{</span><span class=\"n\">m</span> <span class=\"o\">:</span> <span class=\"n\">ℤ</span> <span class=\"bp\">|</span> <span class=\"n\">m</span> <span class=\"bp\">≥</span> <span class=\"mi\">10</span><span class=\"o\">}</span> <span class=\"bp\">⊈</span> <span class=\"o\">{</span><span class=\"n\">n</span> <span class=\"o\">:</span> <span class=\"n\">ℤ</span> <span class=\"bp\">|</span> <span class=\"n\">n</span> <span class=\"bp\">^</span> <span class=\"mi\">3</span> <span class=\"bp\">-</span> <span class=\"mi\">7</span> <span class=\"bp\">*</span> <span class=\"n\">n</span> <span class=\"bp\">^</span> <span class=\"mi\">2</span> <span class=\"bp\">≥</span> <span class=\"mi\">4</span> <span class=\"bp\">*</span> <span class=\"n\">n</span><span class=\"o\">}</span> <span class=\"o\">:=</span> <span class=\"kd\">by</span>\n  <span class=\"gr\">sorry</span>\n</pre></div>\n</div>\n</li>",
+    "zh": "证明或反驳：\\(\\{m:\\mathbb{Z} \\mid m\\ge 10\\}\\subseteq \\{n:\\mathbb{Z} \\mid n^3-7n^2\\geq 4n\\}\\)。"
+  },
+  {
+    "id": "09_Sets:0219",
+    "file": "09_Sets.html",
+    "tag": "li",
+    "text": "Prove or disprove that \\(\\{n:\\mathbb{Z} n\\mid\\text{ is even}\\}=\\{a:\\mathbb{Z} \\mid a\\equiv 6\\mod 2\\}\\) . example : { n : ℤ | Even n } = { a : ℤ | a ≡ 6 [ ZMOD 2 ]} := by sorry example : { n : ℤ | Even n } ≠ { a : ℤ | a ≡ 6 [ ZMOD 2 ]} := by sorry",
+    "html": "<li><p>Prove or disprove that\n<span class=\"math notranslate nohighlight\">\\(\\{n:\\mathbb{Z} n\\mid\\text{ is even}\\}=\\{a:\\mathbb{Z} \\mid a\\equiv 6\\mod 2\\}\\)</span>.</p>\n<div class=\"highlight-lean notranslate\"><div class=\"highlight\"><pre><span></span><span class=\"kd\">example</span> <span class=\"o\">:</span> <span class=\"o\">{</span><span class=\"n\">n</span> <span class=\"o\">:</span> <span class=\"n\">ℤ</span> <span class=\"bp\">|</span> <span class=\"n\">Even</span> <span class=\"n\">n</span><span class=\"o\">}</span> <span class=\"bp\">=</span> <span class=\"o\">{</span><span class=\"n\">a</span> <span class=\"o\">:</span> <span class=\"n\">ℤ</span> <span class=\"bp\">|</span> <span class=\"n\">a</span> <span class=\"bp\">≡</span> <span class=\"mi\">6</span> <span class=\"o\">[</span><span class=\"n\">ZMOD</span> <span class=\"mi\">2</span><span class=\"o\">]}</span> <span class=\"o\">:=</span> <span class=\"kd\">by</span>\n  <span class=\"gr\">sorry</span>\n\n<span class=\"kd\">example</span> <span class=\"o\">:</span> <span class=\"o\">{</span><span class=\"n\">n</span> <span class=\"o\">:</span> <span class=\"n\">ℤ</span> <span class=\"bp\">|</span> <span class=\"n\">Even</span> <span class=\"n\">n</span><span class=\"o\">}</span> <span class=\"bp\">≠</span> <span class=\"o\">{</span><span class=\"n\">a</span> <span class=\"o\">:</span> <span class=\"n\">ℤ</span> <span class=\"bp\">|</span> <span class=\"n\">a</span> <span class=\"bp\">≡</span> <span class=\"mi\">6</span> <span class=\"o\">[</span><span class=\"n\">ZMOD</span> <span class=\"mi\">2</span><span class=\"o\">]}</span> <span class=\"o\">:=</span> <span class=\"kd\">by</span>\n  <span class=\"gr\">sorry</span>\n</pre></div>\n</div>\n</li>",
+    "zh": "证明或反驳：\\(\\{n:\\mathbb{Z} \\mid n\\text{ is even}\\}=\\{a:\\mathbb{Z} \\mid a\\equiv 6\\mod 2\\}\\)。"
+  },
+  {
+    "id": "09_Sets:0220",
+    "file": "09_Sets.html",
+    "tag": "li",
+    "text": "Prove or disprove that \\(\\{t:\\mathbb{R} \\mid t^2-5t+4=0\\}=\\{4\\}\\) . example : { t : ℝ | t ^ 2 - 5 * t + 4 = 0 } = { 4 } := by sorry example : { t : ℝ | t ^ 2 - 5 * t + 4 = 0 } ≠ { 4 } := by sorry",
+    "html": "<li><p>Prove or disprove that\n<span class=\"math notranslate nohighlight\">\\(\\{t:\\mathbb{R} \\mid t^2-5t+4=0\\}=\\{4\\}\\)</span>.</p>\n<div class=\"highlight-lean notranslate\"><div class=\"highlight\"><pre><span></span><span class=\"kd\">example</span> <span class=\"o\">:</span> <span class=\"o\">{</span><span class=\"n\">t</span> <span class=\"o\">:</span> <span class=\"n\">ℝ</span> <span class=\"bp\">|</span> <span class=\"n\">t</span> <span class=\"bp\">^</span> <span class=\"mi\">2</span> <span class=\"bp\">-</span> <span class=\"mi\">5</span> <span class=\"bp\">*</span> <span class=\"n\">t</span> <span class=\"bp\">+</span> <span class=\"mi\">4</span> <span class=\"bp\">=</span> <span class=\"mi\">0</span><span class=\"o\">}</span> <span class=\"bp\">=</span> <span class=\"o\">{</span><span class=\"mi\">4</span><span class=\"o\">}</span> <span class=\"o\">:=</span> <span class=\"kd\">by</span>\n  <span class=\"gr\">sorry</span>\n\n<span class=\"kd\">example</span> <span class=\"o\">:</span> <span class=\"o\">{</span><span class=\"n\">t</span> <span class=\"o\">:</span> <span class=\"n\">ℝ</span> <span class=\"bp\">|</span> <span class=\"n\">t</span> <span class=\"bp\">^</span> <span class=\"mi\">2</span> <span class=\"bp\">-</span> <span class=\"mi\">5</span> <span class=\"bp\">*</span> <span class=\"n\">t</span> <span class=\"bp\">+</span> <span class=\"mi\">4</span> <span class=\"bp\">=</span> <span class=\"mi\">0</span><span class=\"o\">}</span> <span class=\"bp\">≠</span> <span class=\"o\">{</span><span class=\"mi\">4</span><span class=\"o\">}</span> <span class=\"o\">:=</span> <span class=\"kd\">by</span>\n  <span class=\"gr\">sorry</span>\n</pre></div>\n</div>\n</li>",
+    "zh": "证明或反驳：\\(\\{t:\\mathbb{R} \\mid t^2-5t+4=0\\}=\\{4\\}\\)。"
+  },
+  {
+    "id": "09_Sets:0221",
+    "file": "09_Sets.html",
+    "tag": "li",
+    "text": "Prove or disprove that \\(\\{k:\\mathbb{Z} \\mid 8\\mid 6k\\}=\\{l:\\mathbb{Z} \\mid 8\\mid l\\}\\) . example : { k : ℤ | 8 ∣ 6 * k } = { l : ℤ | 8 ∣ l } := by sorry example : { k : ℤ | 8 ∣ 6 * k } ≠ { l : ℤ | 8 ∣ l } := by sorry",
+    "html": "<li><p>Prove or disprove that <span class=\"math notranslate nohighlight\">\\(\\{k:\\mathbb{Z} \\mid 8\\mid 6k\\}=\\{l:\\mathbb{Z} \\mid 8\\mid l\\}\\)</span>.</p>\n<div class=\"highlight-lean notranslate\"><div class=\"highlight\"><pre><span></span><span class=\"kd\">example</span> <span class=\"o\">:</span> <span class=\"o\">{</span><span class=\"n\">k</span> <span class=\"o\">:</span> <span class=\"n\">ℤ</span> <span class=\"bp\">|</span> <span class=\"mi\">8</span> <span class=\"bp\">∣</span> <span class=\"mi\">6</span> <span class=\"bp\">*</span> <span class=\"n\">k</span><span class=\"o\">}</span> <span class=\"bp\">=</span> <span class=\"o\">{</span><span class=\"n\">l</span> <span class=\"o\">:</span> <span class=\"n\">ℤ</span> <span class=\"bp\">|</span> <span class=\"mi\">8</span> <span class=\"bp\">∣</span> <span class=\"n\">l</span><span class=\"o\">}</span> <span class=\"o\">:=</span> <span class=\"kd\">by</span>\n  <span class=\"gr\">sorry</span>\n\n<span class=\"kd\">example</span> <span class=\"o\">:</span> <span class=\"o\">{</span><span class=\"n\">k</span> <span class=\"o\">:</span> <span class=\"n\">ℤ</span> <span class=\"bp\">|</span> <span class=\"mi\">8</span> <span class=\"bp\">∣</span> <span class=\"mi\">6</span> <span class=\"bp\">*</span> <span class=\"n\">k</span><span class=\"o\">}</span> <span class=\"bp\">≠</span> <span class=\"o\">{</span><span class=\"n\">l</span> <span class=\"o\">:</span> <span class=\"n\">ℤ</span> <span class=\"bp\">|</span> <span class=\"mi\">8</span> <span class=\"bp\">∣</span> <span class=\"n\">l</span><span class=\"o\">}</span> <span class=\"o\">:=</span> <span class=\"kd\">by</span>\n  <span class=\"gr\">sorry</span>\n</pre></div>\n</div>\n</li>",
+    "zh": "证明或反驳：\\(\\{k:\\mathbb{Z} \\mid 8\\mid 6k\\}=\\{l:\\mathbb{Z} \\mid 8\\mid l\\}\\)。"
+  },
+  {
+    "id": "09_Sets:0222",
+    "file": "09_Sets.html",
+    "tag": "li",
+    "text": "Prove or disprove that \\(\\{k:\\mathbb{Z} \\mid 7\\mid 9k\\}=\\{l:\\mathbb{Z} \\mid 7\\mid l\\}\\) . example : { k : ℤ | 7 ∣ 9 * k } = { l : ℤ | 7 ∣ l } := by sorry example : { k : ℤ | 7 ∣ 9 * k } ≠ { l : ℤ | 7 ∣ l } := by sorry",
+    "html": "<li><p>Prove or disprove that <span class=\"math notranslate nohighlight\">\\(\\{k:\\mathbb{Z} \\mid 7\\mid 9k\\}=\\{l:\\mathbb{Z} \\mid 7\\mid l\\}\\)</span>.</p>\n<div class=\"highlight-lean notranslate\"><div class=\"highlight\"><pre><span></span><span class=\"kd\">example</span> <span class=\"o\">:</span> <span class=\"o\">{</span><span class=\"n\">k</span> <span class=\"o\">:</span> <span class=\"n\">ℤ</span> <span class=\"bp\">|</span> <span class=\"mi\">7</span> <span class=\"bp\">∣</span> <span class=\"mi\">9</span> <span class=\"bp\">*</span> <span class=\"n\">k</span><span class=\"o\">}</span> <span class=\"bp\">=</span> <span class=\"o\">{</span><span class=\"n\">l</span> <span class=\"o\">:</span> <span class=\"n\">ℤ</span> <span class=\"bp\">|</span> <span class=\"mi\">7</span> <span class=\"bp\">∣</span> <span class=\"n\">l</span><span class=\"o\">}</span> <span class=\"o\">:=</span> <span class=\"kd\">by</span>\n  <span class=\"gr\">sorry</span>\n\n<span class=\"kd\">example</span> <span class=\"o\">:</span> <span class=\"o\">{</span><span class=\"n\">k</span> <span class=\"o\">:</span> <span class=\"n\">ℤ</span> <span class=\"bp\">|</span> <span class=\"mi\">7</span> <span class=\"bp\">∣</span> <span class=\"mi\">9</span> <span class=\"bp\">*</span> <span class=\"n\">k</span><span class=\"o\">}</span> <span class=\"bp\">≠</span> <span class=\"o\">{</span><span class=\"n\">l</span> <span class=\"o\">:</span> <span class=\"n\">ℤ</span> <span class=\"bp\">|</span> <span class=\"mi\">7</span> <span class=\"bp\">∣</span> <span class=\"n\">l</span><span class=\"o\">}</span> <span class=\"o\">:=</span> <span class=\"kd\">by</span>\n  <span class=\"gr\">sorry</span>\n</pre></div>\n</div>\n</li>",
+    "zh": "证明或反驳：\\(\\{k:\\mathbb{Z} \\mid 7\\mid 9k\\}=\\{l:\\mathbb{Z} \\mid 7\\mid l\\}\\)。"
+  },
+  {
+    "id": "09_Sets:0223",
+    "file": "09_Sets.html",
+    "tag": "li",
+    "text": "Prove or disprove that \\(\\{1,2,3\\}=\\{1,2\\}\\) . example : { 1 , 2 , 3 } = { 1 , 2 } := by sorry example : { 1 , 2 , 3 } ≠ { 1 , 2 } := by sorry",
+    "html": "<li><p>Prove or disprove that <span class=\"math notranslate nohighlight\">\\(\\{1,2,3\\}=\\{1,2\\}\\)</span>.</p>\n<div class=\"highlight-lean notranslate\"><div class=\"highlight\"><pre><span></span><span class=\"kd\">example</span> <span class=\"o\">:</span> <span class=\"o\">{</span><span class=\"mi\">1</span><span class=\"o\">,</span> <span class=\"mi\">2</span><span class=\"o\">,</span> <span class=\"mi\">3</span><span class=\"o\">}</span> <span class=\"bp\">=</span> <span class=\"o\">{</span><span class=\"mi\">1</span><span class=\"o\">,</span> <span class=\"mi\">2</span><span class=\"o\">}</span> <span class=\"o\">:=</span> <span class=\"kd\">by</span>\n  <span class=\"gr\">sorry</span>\n\n<span class=\"kd\">example</span> <span class=\"o\">:</span> <span class=\"o\">{</span><span class=\"mi\">1</span><span class=\"o\">,</span> <span class=\"mi\">2</span><span class=\"o\">,</span> <span class=\"mi\">3</span><span class=\"o\">}</span> <span class=\"bp\">≠</span> <span class=\"o\">{</span><span class=\"mi\">1</span><span class=\"o\">,</span> <span class=\"mi\">2</span><span class=\"o\">}</span> <span class=\"o\">:=</span> <span class=\"kd\">by</span>\n  <span class=\"gr\">sorry</span>\n</pre></div>\n</div>\n</li>",
+    "zh": "证明或反驳：\\(\\{1,2,3\\}=\\{1,2\\}\\)。"
+  },
+  {
+    "id": "09_Sets:0224",
+    "file": "09_Sets.html",
+    "tag": "li",
+    "text": "Prove that \\(\\{x:\\mathbb{R} \\mid x^2+3x+2=0\\}=\\{-1, -2\\}\\) . example : { x : ℝ | x ^ 2 + 3 * x + 2 = 0 } = { - 1 , - 2 } := by sorry",
+    "html": "<li><p>Prove  that <span class=\"math notranslate nohighlight\">\\(\\{x:\\mathbb{R} \\mid x^2+3x+2=0\\}=\\{-1, -2\\}\\)</span>.</p>\n<div class=\"highlight-lean notranslate\"><div class=\"highlight\"><pre><span></span><span class=\"kd\">example</span> <span class=\"o\">:</span> <span class=\"o\">{</span><span class=\"n\">x</span> <span class=\"o\">:</span> <span class=\"n\">ℝ</span> <span class=\"bp\">|</span> <span class=\"n\">x</span> <span class=\"bp\">^</span> <span class=\"mi\">2</span> <span class=\"bp\">+</span> <span class=\"mi\">3</span> <span class=\"bp\">*</span> <span class=\"n\">x</span> <span class=\"bp\">+</span> <span class=\"mi\">2</span> <span class=\"bp\">=</span> <span class=\"mi\">0</span><span class=\"o\">}</span> <span class=\"bp\">=</span> <span class=\"o\">{</span><span class=\"bp\">-</span><span class=\"mi\">1</span><span class=\"o\">,</span> <span class=\"bp\">-</span><span class=\"mi\">2</span><span class=\"o\">}</span> <span class=\"o\">:=</span> <span class=\"kd\">by</span>\n  <span class=\"gr\">sorry</span>\n</pre></div>\n</div>\n</li>",
+    "zh": "证明 \\(\\{x:\\mathbb{R} \\mid x^2+3x+2=0\\}=\\{-1,-2\\}\\)。"
+  },
+  {
+    "id": "09_Sets:0225",
+    "file": "09_Sets.html",
+    "tag": "li",
+    "text": "Write in an explicitly-listed finite set without repeats, or \\(\\emptyset\\) , which is equal to \\(\\{-1,2,4,4\\}\\cup\\{3,-2,2\\}\\) . When you have the correct answer, the given Lean proof will work. example : { - 1 , 2 , 4 , 4 } ∪ { 3 , - 2 , 2 } = sorry := by check_equality_of_explicit_sets",
+    "html": "<li><p>Write in an explicitly-listed finite set without repeats, or <span class=\"math notranslate nohighlight\">\\(\\emptyset\\)</span>, which is equal\nto <span class=\"math notranslate nohighlight\">\\(\\{-1,2,4,4\\}\\cup\\{3,-2,2\\}\\)</span>.  When you have the correct answer, the given Lean proof\nwill work.</p>\n<div class=\"highlight-lean notranslate\"><div class=\"highlight\"><pre><span></span><span class=\"kd\">example</span> <span class=\"o\">:</span> <span class=\"o\">{</span><span class=\"bp\">-</span><span class=\"mi\">1</span><span class=\"o\">,</span> <span class=\"mi\">2</span><span class=\"o\">,</span> <span class=\"mi\">4</span><span class=\"o\">,</span> <span class=\"mi\">4</span><span class=\"o\">}</span> <span class=\"bp\">∪</span> <span class=\"o\">{</span><span class=\"mi\">3</span><span class=\"o\">,</span> <span class=\"bp\">-</span><span class=\"mi\">2</span><span class=\"o\">,</span> <span class=\"mi\">2</span><span class=\"o\">}</span> <span class=\"bp\">=</span> <span class=\"gr\">sorry</span> <span class=\"o\">:=</span> <span class=\"kd\">by</span> <span class=\"n\">check_equality_of_explicit_sets</span>\n</pre></div>\n</div>\n</li>",
+    "zh": "写出一个不含重复元素的显式列举有限集合，或写出 \\(\\emptyset\\)，使它等于 \\(\\{-1,2,4,4\\}\\cup\\{3,-2,2\\}\\)。当你的答案正确时，给出的 Lean 证明会通过。"
+  },
+  {
+    "id": "09_Sets:0226",
+    "file": "09_Sets.html",
+    "tag": "li",
+    "text": "Write in an explicitly-listed finite set without repeats, or \\(\\emptyset\\) , which is equal to \\(\\{-1,2,4,4\\}\\cup\\{3,-2,2\\}\\) . When you have the correct answer, the given Lean proof will work. example : { 0 , 1 , 2 , 3 , 4 } ∩ { 0 , 2 , 4 , 6 , 8 } = sorry := by check_equality_of_explicit_sets",
+    "html": "<li><p>Write in an explicitly-listed finite set without repeats, or <span class=\"math notranslate nohighlight\">\\(\\emptyset\\)</span>, which is equal\nto <span class=\"math notranslate nohighlight\">\\(\\{-1,2,4,4\\}\\cup\\{3,-2,2\\}\\)</span>.  When you have the correct answer, the given Lean proof\nwill work.</p>\n<div class=\"highlight-lean notranslate\"><div class=\"highlight\"><pre><span></span><span class=\"kd\">example</span> <span class=\"o\">:</span> <span class=\"o\">{</span><span class=\"mi\">0</span><span class=\"o\">,</span> <span class=\"mi\">1</span><span class=\"o\">,</span> <span class=\"mi\">2</span><span class=\"o\">,</span> <span class=\"mi\">3</span><span class=\"o\">,</span> <span class=\"mi\">4</span><span class=\"o\">}</span> <span class=\"bp\">∩</span> <span class=\"o\">{</span><span class=\"mi\">0</span><span class=\"o\">,</span> <span class=\"mi\">2</span><span class=\"o\">,</span> <span class=\"mi\">4</span><span class=\"o\">,</span> <span class=\"mi\">6</span><span class=\"o\">,</span> <span class=\"mi\">8</span><span class=\"o\">}</span> <span class=\"bp\">=</span> <span class=\"gr\">sorry</span> <span class=\"o\">:=</span> <span class=\"kd\">by</span>\n  <span class=\"n\">check_equality_of_explicit_sets</span>\n</pre></div>\n</div>\n</li>",
+    "zh": "写出一个不含重复元素的显式列举有限集合，或写出 \\(\\emptyset\\)，使它等于 \\(\\{0,1,2,3,4\\}\\cap\\{0,2,4,6,8\\}\\)。当你的答案正确时，给出的 Lean 证明会通过。"
+  },
+  {
+    "id": "09_Sets:0227",
+    "file": "09_Sets.html",
+    "tag": "li",
+    "text": "Write in an explicitly-listed finite set without repeats, or \\(\\emptyset\\) , which is equal to \\(\\{1,2\\}\\cap\\{3\\}\\) . When you have the correct answer, the given Lean proof will work. example : { 1 , 2 } ∩ { 3 } = sorry := by check_equality_of_explicit_sets",
+    "html": "<li><p>Write in an explicitly-listed finite set without repeats, or <span class=\"math notranslate nohighlight\">\\(\\emptyset\\)</span>, which is equal\nto <span class=\"math notranslate nohighlight\">\\(\\{1,2\\}\\cap\\{3\\}\\)</span>.  When you have the correct answer, the given Lean proof\nwill work.</p>\n<div class=\"highlight-lean notranslate\"><div class=\"highlight\"><pre><span></span><span class=\"kd\">example</span> <span class=\"o\">:</span> <span class=\"o\">{</span><span class=\"mi\">1</span><span class=\"o\">,</span> <span class=\"mi\">2</span><span class=\"o\">}</span> <span class=\"bp\">∩</span> <span class=\"o\">{</span><span class=\"mi\">3</span><span class=\"o\">}</span> <span class=\"bp\">=</span> <span class=\"gr\">sorry</span> <span class=\"o\">:=</span> <span class=\"kd\">by</span> <span class=\"n\">check_equality_of_explicit_sets</span>\n</pre></div>\n</div>\n</li>",
+    "zh": "写出一个不含重复元素的显式列举有限集合，或写出 \\(\\emptyset\\)，使它等于 \\(\\{1,2\\}\\cap\\{3\\}\\)。当你的答案正确时，给出的 Lean 证明会通过。"
+  },
+  {
+    "id": "09_Sets:0228",
+    "file": "09_Sets.html",
+    "tag": "li",
+    "text": "Write in an explicitly-listed finite set without repeats, or \\(\\emptyset\\) , which is equal to \\(\\{3,4,5\\}^c\\cap\\{1,3,5,7,9\\}\\) . When you have the correct answer, the given Lean proof will work. example : { 3 , 4 , 5 } ᶜ ∩ { 1 , 3 , 5 , 7 , 9 } = sorry := by check_equality_of_explicit_sets",
+    "html": "<li><p>Write in an explicitly-listed finite set without repeats, or <span class=\"math notranslate nohighlight\">\\(\\emptyset\\)</span>, which is equal\nto <span class=\"math notranslate nohighlight\">\\(\\{3,4,5\\}^c\\cap\\{1,3,5,7,9\\}\\)</span>.  When you have the correct answer, the given Lean proof\nwill work.</p>\n<div class=\"highlight-lean notranslate\"><div class=\"highlight\"><pre><span></span><span class=\"kd\">example</span> <span class=\"o\">:</span> <span class=\"o\">{</span><span class=\"mi\">3</span><span class=\"o\">,</span> <span class=\"mi\">4</span><span class=\"o\">,</span> <span class=\"mi\">5</span><span class=\"o\">}</span><span class=\"bp\">ᶜ</span> <span class=\"bp\">∩</span> <span class=\"o\">{</span><span class=\"mi\">1</span><span class=\"o\">,</span> <span class=\"mi\">3</span><span class=\"o\">,</span> <span class=\"mi\">5</span><span class=\"o\">,</span> <span class=\"mi\">7</span><span class=\"o\">,</span> <span class=\"mi\">9</span><span class=\"o\">}</span> <span class=\"bp\">=</span> <span class=\"gr\">sorry</span> <span class=\"o\">:=</span> <span class=\"kd\">by</span>\n  <span class=\"n\">check_equality_of_explicit_sets</span>\n</pre></div>\n</div>\n</li>",
+    "zh": "写出一个不含重复元素的显式列举有限集合，或写出 \\(\\emptyset\\)，使它等于 \\(\\{3,4,5\\}^c\\cap\\{1,3,5,7,9\\}\\)。当你的答案正确时，给出的 Lean 证明会通过。"
+  },
+  {
+    "id": "09_Sets:0229",
+    "file": "09_Sets.html",
+    "tag": "li",
+    "text": "Prove that \\(\\{r:\\mathbb{Z}\\mid r\\equiv 7\\mod 10\\}\\subseteq \\{s:\\mathbb{Z}\\mid s\\equiv 1\\mod 2\\}\\cap\\{t:\\mathbb{Z}\\mid t\\equiv 2\\mod 5\\}\\) . example : { r : ℤ | r ≡ 7 [ ZMOD 10 ] } ⊆ { s : ℤ | s ≡ 1 [ ZMOD 2 ]} ∩ { t : ℤ | t ≡ 2 [ ZMOD 5 ]} := by sorry",
+    "html": "<li><p>Prove that\n<span class=\"math notranslate nohighlight\">\\(\\{r:\\mathbb{Z}\\mid r\\equiv 7\\mod 10\\}\\subseteq \\{s:\\mathbb{Z}\\mid s\\equiv 1\\mod 2\\}\\cap\\{t:\\mathbb{Z}\\mid t\\equiv 2\\mod 5\\}\\)</span>.</p>\n<div class=\"highlight-lean notranslate\"><div class=\"highlight\"><pre><span></span><span class=\"kd\">example</span> <span class=\"o\">:</span> <span class=\"o\">{</span><span class=\"n\">r</span> <span class=\"o\">:</span> <span class=\"n\">ℤ</span> <span class=\"bp\">|</span> <span class=\"n\">r</span> <span class=\"bp\">≡</span> <span class=\"mi\">7</span> <span class=\"o\">[</span><span class=\"n\">ZMOD</span> <span class=\"mi\">10</span><span class=\"o\">]</span> <span class=\"o\">}</span>\n    <span class=\"bp\">⊆</span> <span class=\"o\">{</span><span class=\"n\">s</span> <span class=\"o\">:</span> <span class=\"n\">ℤ</span> <span class=\"bp\">|</span> <span class=\"n\">s</span> <span class=\"bp\">≡</span> <span class=\"mi\">1</span> <span class=\"o\">[</span><span class=\"n\">ZMOD</span> <span class=\"mi\">2</span><span class=\"o\">]}</span> <span class=\"bp\">∩</span> <span class=\"o\">{</span><span class=\"n\">t</span> <span class=\"o\">:</span> <span class=\"n\">ℤ</span> <span class=\"bp\">|</span> <span class=\"n\">t</span> <span class=\"bp\">≡</span> <span class=\"mi\">2</span> <span class=\"o\">[</span><span class=\"n\">ZMOD</span> <span class=\"mi\">5</span><span class=\"o\">]}</span> <span class=\"o\">:=</span> <span class=\"kd\">by</span>\n  <span class=\"gr\">sorry</span>\n</pre></div>\n</div>\n</li>",
+    "zh": "证明 \\(\\{r:\\mathbb{Z}\\mid r\\equiv 7\\mod 10\\}\\subseteq \\{s:\\mathbb{Z}\\mid s\\equiv 1\\mod 2\\}\\cap\\{t:\\mathbb{Z}\\mid t\\equiv 2\\mod 5\\}\\)。"
+  },
+  {
+    "id": "09_Sets:0230",
+    "file": "09_Sets.html",
+    "tag": "li",
+    "text": "Prove that \\(\\{n:\\mathbb{Z}\\mid 5\\mid n\\}\\cap \\{n:\\mathbb{Z}\\mid 8\\mid n\\}⊆\\{n:\\mathbb{Z}\\mid 40\\mid n\\}\\) . example : { n : ℤ | 5 ∣ n } ∩ { n : ℤ | 8 ∣ n } ⊆ { n : ℤ | 40 ∣ n } := by sorry",
+    "html": "<li><p>Prove that\n<span class=\"math notranslate nohighlight\">\\(\\{n:\\mathbb{Z}\\mid 5\\mid n\\}\\cap \\{n:\\mathbb{Z}\\mid 8\\mid n\\}⊆\\{n:\\mathbb{Z}\\mid 40\\mid n\\}\\)</span>.</p>\n<div class=\"highlight-lean notranslate\"><div class=\"highlight\"><pre><span></span><span class=\"kd\">example</span> <span class=\"o\">:</span> <span class=\"o\">{</span><span class=\"n\">n</span> <span class=\"o\">:</span> <span class=\"n\">ℤ</span> <span class=\"bp\">|</span> <span class=\"mi\">5</span> <span class=\"bp\">∣</span> <span class=\"n\">n</span><span class=\"o\">}</span> <span class=\"bp\">∩</span> <span class=\"o\">{</span><span class=\"n\">n</span> <span class=\"o\">:</span> <span class=\"n\">ℤ</span> <span class=\"bp\">|</span> <span class=\"mi\">8</span> <span class=\"bp\">∣</span> <span class=\"n\">n</span><span class=\"o\">}</span> <span class=\"bp\">⊆</span> <span class=\"o\">{</span><span class=\"n\">n</span> <span class=\"o\">:</span> <span class=\"n\">ℤ</span> <span class=\"bp\">|</span> <span class=\"mi\">40</span> <span class=\"bp\">∣</span> <span class=\"n\">n</span><span class=\"o\">}</span> <span class=\"o\">:=</span> <span class=\"kd\">by</span>\n  <span class=\"gr\">sorry</span>\n</pre></div>\n</div>\n</li>",
+    "zh": "证明 \\(\\{n:\\mathbb{Z}\\mid 5\\mid n\\}\\cap \\{n:\\mathbb{Z}\\mid 8\\mid n\\}\\subseteq\\{n:\\mathbb{Z}\\mid 40\\mid n\\}\\)。"
+  },
+  {
+    "id": "09_Sets:0231",
+    "file": "09_Sets.html",
+    "tag": "li",
+    "text": "Prove that \\(\\{n:\\mathbb{Z}\\mid 3\\mid n\\}\\cup \\{n:\\mathbb{Z}\\mid 2\\mid n\\}⊆\\{n:\\mathbb{Z}\\mid n^2\\equiv 1\\mod 6\\}^{c}\\) . example : { n : ℤ | 3 ∣ n } ∪ { n : ℤ | 2 ∣ n } ⊆ { n : ℤ | n ^ 2 ≡ 1 [ ZMOD 6 ]} ᶜ := by sorry",
+    "html": "<li><p>Prove that <span class=\"math notranslate nohighlight\">\\(\\{n:\\mathbb{Z}\\mid 3\\mid n\\}\\cup \\{n:\\mathbb{Z}\\mid 2\\mid n\\}⊆\\{n:\\mathbb{Z}\\mid n^2\\equiv 1\\mod 6\\}^{c}\\)</span>.</p>\n<div class=\"highlight-lean notranslate\"><div class=\"highlight\"><pre><span></span><span class=\"kd\">example</span> <span class=\"o\">:</span>\n    <span class=\"o\">{</span><span class=\"n\">n</span> <span class=\"o\">:</span> <span class=\"n\">ℤ</span> <span class=\"bp\">|</span> <span class=\"mi\">3</span> <span class=\"bp\">∣</span> <span class=\"n\">n</span><span class=\"o\">}</span> <span class=\"bp\">∪</span> <span class=\"o\">{</span><span class=\"n\">n</span> <span class=\"o\">:</span> <span class=\"n\">ℤ</span> <span class=\"bp\">|</span> <span class=\"mi\">2</span> <span class=\"bp\">∣</span> <span class=\"n\">n</span><span class=\"o\">}</span> <span class=\"bp\">⊆</span> <span class=\"o\">{</span><span class=\"n\">n</span> <span class=\"o\">:</span> <span class=\"n\">ℤ</span> <span class=\"bp\">|</span> <span class=\"n\">n</span> <span class=\"bp\">^</span> <span class=\"mi\">2</span> <span class=\"bp\">≡</span> <span class=\"mi\">1</span> <span class=\"o\">[</span><span class=\"n\">ZMOD</span> <span class=\"mi\">6</span><span class=\"o\">]}</span><span class=\"bp\">ᶜ</span> <span class=\"o\">:=</span> <span class=\"kd\">by</span>\n  <span class=\"gr\">sorry</span>\n</pre></div>\n</div>\n</li>",
+    "zh": "证明 \\(\\{n:\\mathbb{Z}\\mid 3\\mid n\\}\\cup \\{n:\\mathbb{Z}\\mid 2\\mid n\\}\\subseteq\\{n:\\mathbb{Z}\\mid n^2\\equiv 1\\mod 6\\}^{c}\\)。"
+  },
+  {
+    "id": "09_Sets:0232",
+    "file": "09_Sets.html",
+    "tag": "li",
+    "text": "Let us define that a set \\(s\\) in a type \\(X\\) has size at least two , if there exist \\(x_1\\) and \\(x_2\\) in \\(s\\) which are different, and has size at least three , if there exist \\(x_1\\) , \\(x_2\\) and \\(x_3\\) in \\(s\\) which are all different. Let \\(s\\) and \\(t\\) be sets of size at least two in some type \\(X\\) , and suppose that \\(s \\cap t\\) does not have size at least two. Show that \\(s\\cup t\\) has size at least three. This problem features a ton of different cases. Use exhaust liberally to knock off sub-cases. def SizeAtLeastTwo ( s : Set X ) : Prop := ∃ x1 x2 : X , x1 ≠ x2 ∧ x1 ∈ s ∧ x2 ∈ s def SizeAtLeastThree ( s : Set X ) : Prop := ∃ x1 x2 x3 : X , x1 ≠ x2 ∧ x1 ≠ x3 ∧ x2 ≠ x3 ∧ x1 ∈ s ∧ x2 ∈ s ∧ x3 ∈ s example { s t : Set X } ( hs : SizeAtLeastTwo s ) ( ht : SizeAtLeastTwo t ) ( hst : ¬ SizeAtLeastTwo ( s ∩ t )) : SizeAtLeastThree ( s ∪ t ) := by sorry",
+    "html": "<li><p>Let us define that a set <span class=\"math notranslate nohighlight\">\\(s\\)</span> in a type <span class=\"math notranslate nohighlight\">\\(X\\)</span> has <em>size at least two</em>, if there exist\n<span class=\"math notranslate nohighlight\">\\(x_1\\)</span> and <span class=\"math notranslate nohighlight\">\\(x_2\\)</span> in <span class=\"math notranslate nohighlight\">\\(s\\)</span> which are different, and has <em>size at least\nthree</em>, if there exist <span class=\"math notranslate nohighlight\">\\(x_1\\)</span>, <span class=\"math notranslate nohighlight\">\\(x_2\\)</span> and <span class=\"math notranslate nohighlight\">\\(x_3\\)</span> in <span class=\"math notranslate nohighlight\">\\(s\\)</span> which are all\ndifferent.</p>\n<p>Let <span class=\"math notranslate nohighlight\">\\(s\\)</span> and <span class=\"math notranslate nohighlight\">\\(t\\)</span> be sets of size at least two in some type <span class=\"math notranslate nohighlight\">\\(X\\)</span>, and suppose\nthat <span class=\"math notranslate nohighlight\">\\(s \\cap t\\)</span> does not have size at least two.  Show that <span class=\"math notranslate nohighlight\">\\(s\\cup t\\)</span> has size at\nleast three.</p>\n<p>This problem features a ton of different cases.  Use <code class=\"docutils literal notranslate\"><span class=\"pre\">exhaust</span></code> liberally to knock off sub-cases.</p>\n<div class=\"highlight-lean notranslate\"><div class=\"highlight\"><pre><span></span><span class=\"kd\">def</span> <span class=\"n\">SizeAtLeastTwo</span> <span class=\"o\">(</span><span class=\"n\">s</span> <span class=\"o\">:</span> <span class=\"n\">Set</span> <span class=\"n\">X</span><span class=\"o\">)</span> <span class=\"o\">:</span> <span class=\"kt\">Prop</span> <span class=\"o\">:=</span> <span class=\"bp\">∃</span> <span class=\"n\">x1</span> <span class=\"n\">x2</span> <span class=\"o\">:</span> <span class=\"n\">X</span><span class=\"o\">,</span> <span class=\"n\">x1</span> <span class=\"bp\">≠</span> <span class=\"n\">x2</span> <span class=\"bp\">∧</span> <span class=\"n\">x1</span> <span class=\"bp\">∈</span> <span class=\"n\">s</span> <span class=\"bp\">∧</span> <span class=\"n\">x2</span> <span class=\"bp\">∈</span> <span class=\"n\">s</span>\n<span class=\"kd\">def</span> <span class=\"n\">SizeAtLeastThree</span> <span class=\"o\">(</span><span class=\"n\">s</span> <span class=\"o\">:</span> <span class=\"n\">Set</span> <span class=\"n\">X</span><span class=\"o\">)</span> <span class=\"o\">:</span> <span class=\"kt\">Prop</span> <span class=\"o\">:=</span>\n  <span class=\"bp\">∃</span> <span class=\"n\">x1</span> <span class=\"n\">x2</span> <span class=\"n\">x3</span> <span class=\"o\">:</span> <span class=\"n\">X</span><span class=\"o\">,</span> <span class=\"n\">x1</span> <span class=\"bp\">≠</span> <span class=\"n\">x2</span> <span class=\"bp\">∧</span> <span class=\"n\">x1</span> <span class=\"bp\">≠</span> <span class=\"n\">x3</span> <span class=\"bp\">∧</span> <span class=\"n\">x2</span> <span class=\"bp\">≠</span> <span class=\"n\">x3</span> <span class=\"bp\">∧</span> <span class=\"n\">x1</span> <span class=\"bp\">∈</span> <span class=\"n\">s</span> <span class=\"bp\">∧</span> <span class=\"n\">x2</span> <span class=\"bp\">∈</span> <span class=\"n\">s</span> <span class=\"bp\">∧</span> <span class=\"n\">x3</span> <span class=\"bp\">∈</span> <span class=\"n\">s</span>\n\n<span class=\"kd\">example</span> <span class=\"o\">{</span><span class=\"n\">s</span> <span class=\"n\">t</span> <span class=\"o\">:</span> <span class=\"n\">Set</span> <span class=\"n\">X</span><span class=\"o\">}</span> <span class=\"o\">(</span><span class=\"n\">hs</span> <span class=\"o\">:</span> <span class=\"n\">SizeAtLeastTwo</span> <span class=\"n\">s</span><span class=\"o\">)</span> <span class=\"o\">(</span><span class=\"n\">ht</span> <span class=\"o\">:</span> <span class=\"n\">SizeAtLeastTwo</span> <span class=\"n\">t</span><span class=\"o\">)</span>\n    <span class=\"o\">(</span><span class=\"n\">hst</span> <span class=\"o\">:</span> <span class=\"bp\">¬</span> <span class=\"n\">SizeAtLeastTwo</span> <span class=\"o\">(</span><span class=\"n\">s</span> <span class=\"bp\">∩</span> <span class=\"n\">t</span><span class=\"o\">))</span> <span class=\"o\">:</span>\n    <span class=\"n\">SizeAtLeastThree</span> <span class=\"o\">(</span><span class=\"n\">s</span> <span class=\"bp\">∪</span> <span class=\"n\">t</span><span class=\"o\">)</span> <span class=\"o\">:=</span> <span class=\"kd\">by</span>\n  <span class=\"gr\">sorry</span>\n</pre></div>\n</div>\n</li>",
+    "zh": "我们定义：类型 \\(X\\) 中的集合 \\(s\\) 的大小至少为二，若存在 \\(s\\) 中两个不同元素 \\(x_1\\) 和 \\(x_2\\)；大小至少为三，若存在 \\(s\\) 中三个两两不同的元素 \\(x_1,x_2,x_3\\)。设 \\(s\\) 和 \\(t\\) 是某个类型 \\(X\\) 中大小至少为二的集合，并假设 \\(s\\cap t\\) 的大小并非至少为二。证明 \\(s\\cup t\\) 的大小至少为三。本题有大量不同情形；请大量使用 <code class=\\\"docutils literal notranslate\\\"><span class=\\\"pre\\\">exhaust</span></code> 来清除子情形。"
+  },
+  {
+    "id": "09_Sets:0233",
+    "file": "09_Sets.html",
+    "tag": "li",
+    "text": "Consider the function \\(r : \\mathcal{P}(\\mathbb{N})\\to \\mathcal{P}(\\mathbb{N})\\) defined by, \\(r(s)=s\\cup \\{3\\}\\) . Show that \\(r\\) is not injective. def r ( s : Set ℕ ) : Set ℕ := s ∪ { 3 } example : ¬ Injective r := by sorry",
+    "html": "<li><p>Consider the function <span class=\"math notranslate nohighlight\">\\(r : \\mathcal{P}(\\mathbb{N})\\to \\mathcal{P}(\\mathbb{N})\\)</span> defined by,\n<span class=\"math notranslate nohighlight\">\\(r(s)=s\\cup \\{3\\}\\)</span>.  Show that <span class=\"math notranslate nohighlight\">\\(r\\)</span> is not injective.</p>\n<div class=\"highlight-lean notranslate\"><div class=\"highlight\"><pre><span></span><span class=\"kd\">def</span> <span class=\"n\">r</span> <span class=\"o\">(</span><span class=\"n\">s</span> <span class=\"o\">:</span> <span class=\"n\">Set</span> <span class=\"n\">ℕ</span><span class=\"o\">)</span> <span class=\"o\">:</span> <span class=\"n\">Set</span> <span class=\"n\">ℕ</span> <span class=\"o\">:=</span> <span class=\"n\">s</span> <span class=\"bp\">∪</span> <span class=\"o\">{</span><span class=\"mi\">3</span><span class=\"o\">}</span>\n\n<span class=\"kd\">example</span> <span class=\"o\">:</span> <span class=\"bp\">¬</span> <span class=\"n\">Injective</span> <span class=\"n\">r</span> <span class=\"o\">:=</span> <span class=\"kd\">by</span>\n  <span class=\"gr\">sorry</span>\n</pre></div>\n</div>\n</li>",
+    "zh": "考虑函数 \\(r : \\mathcal{P}(\\mathbb{N})\\to \\mathcal{P}(\\mathbb{N})\\)，定义为 \\(r(s)=s\\cup \\{3\\}\\)。证明 \\(r\\) 不是单射。"
+  },
+  {
+    "id": "09_Sets:0234",
+    "file": "09_Sets.html",
+    "tag": "li",
+    "text": "Consider the sequence \\(U_n\\) of sets of integers defined recursively by, \\[\\begin{split}U_0&=\\mathbb{Z} \\\\ \\text{for }n:\\mathbb{N},\\quad U_{n+1} &=\\{x:\\mathbb{Z}\\mid \\exists \\ y\\in U_n, x = 2y \\}\\end{split}\\] Show that for all natural numbers \\(n\\) , \\(U_n=\\{x:\\mathbb{Z}\\mid 2^n\\mid x\\}\\) . def U : ℕ → Set ℤ | 0 => univ | n + 1 => { x : ℤ | ∃ y ∈ U n , x = 2 * y } example ( n : ℕ ) : U n = { x : ℤ | ( 2 : ℤ ) ^ n ∣ x } := by simple_induction n with k hk · rw [ U ] sorry · rw [ U ] ext x dsimp sorry",
+    "html": "<li><p>Consider the sequence <span class=\"math notranslate nohighlight\">\\(U_n\\)</span> of sets of integers defined recursively by,</p>\n<div class=\"math notranslate nohighlight\">\n\\[\\begin{split}U_0&amp;=\\mathbb{Z} \\\\\n\\text{for }n:\\mathbb{N},\\quad U_{n+1} &amp;=\\{x:\\mathbb{Z}\\mid \\exists \\ y\\in U_n, x = 2y \\}\\end{split}\\]</div>\n<p>Show that for all natural numbers <span class=\"math notranslate nohighlight\">\\(n\\)</span>, <span class=\"math notranslate nohighlight\">\\(U_n=\\{x:\\mathbb{Z}\\mid 2^n\\mid x\\}\\)</span>.</p>\n<div class=\"highlight-lean notranslate\"><div class=\"highlight\"><pre><span></span><span class=\"kd\">def</span> <span class=\"n\">U</span> <span class=\"o\">:</span> <span class=\"n\">ℕ</span> <span class=\"bp\">→</span> <span class=\"n\">Set</span> <span class=\"n\">ℤ</span>\n  <span class=\"bp\">|</span> <span class=\"mi\">0</span> <span class=\"bp\">=&gt;</span> <span class=\"n\">univ</span>\n  <span class=\"bp\">|</span> <span class=\"n\">n</span> <span class=\"bp\">+</span> <span class=\"mi\">1</span> <span class=\"bp\">=&gt;</span> <span class=\"o\">{</span><span class=\"n\">x</span> <span class=\"o\">:</span> <span class=\"n\">ℤ</span> <span class=\"bp\">|</span> <span class=\"bp\">∃</span> <span class=\"n\">y</span> <span class=\"bp\">∈</span> <span class=\"n\">U</span> <span class=\"n\">n</span><span class=\"o\">,</span> <span class=\"n\">x</span> <span class=\"bp\">=</span> <span class=\"mi\">2</span> <span class=\"bp\">*</span> <span class=\"n\">y</span><span class=\"o\">}</span>\n\n<span class=\"kd\">example</span> <span class=\"o\">(</span><span class=\"n\">n</span> <span class=\"o\">:</span> <span class=\"n\">ℕ</span><span class=\"o\">)</span> <span class=\"o\">:</span> <span class=\"n\">U</span> <span class=\"n\">n</span> <span class=\"bp\">=</span> <span class=\"o\">{</span><span class=\"n\">x</span> <span class=\"o\">:</span> <span class=\"n\">ℤ</span> <span class=\"bp\">|</span> <span class=\"o\">(</span><span class=\"mi\">2</span><span class=\"o\">:</span><span class=\"n\">ℤ</span><span class=\"o\">)</span> <span class=\"bp\">^</span> <span class=\"n\">n</span> <span class=\"bp\">∣</span> <span class=\"n\">x</span><span class=\"o\">}</span> <span class=\"o\">:=</span> <span class=\"kd\">by</span>\n  <span class=\"n\">simple_induction</span> <span class=\"n\">n</span> <span class=\"k\">with</span> <span class=\"n\">k</span> <span class=\"n\">hk</span>\n  <span class=\"bp\">·</span> <span class=\"n\">rw</span> <span class=\"o\">[</span><span class=\"n\">U</span><span class=\"o\">]</span>\n    <span class=\"gr\">sorry</span>\n  <span class=\"bp\">·</span> <span class=\"n\">rw</span> <span class=\"o\">[</span><span class=\"n\">U</span><span class=\"o\">]</span>\n    <span class=\"n\">ext</span> <span class=\"n\">x</span>\n    <span class=\"n\">dsimp</span>\n    <span class=\"gr\">sorry</span>\n</pre></div>\n</div>\n</li>",
+    "zh": "考虑按如下递归定义的整数集合序列 \\(U_n\\)：\\[\\begin{split}U_0&=\\mathbb{Z} \\\\ \\text{for }n:\\mathbb{N},\\quad U_{n+1} &=\\{x:\\mathbb{Z}\\mid \\exists y\\in U_n, x = 2y \\}\\end{split}\\]证明对所有自然数 \\(n\\)，都有 \\(U_n=\\{x:\\mathbb{Z}\\mid 2^n\\mid x\\}\\)。"
+  },
+  {
+    "id": "09_Sets:0235",
+    "file": "09_Sets.html",
+    "tag": "dt",
+    "text": "1",
+    "html": "<dt class=\"label\" id=\"id25\"><span class=\"brackets\"><a class=\"fn-backref\" href=\"#id19\">1</a></span></dt>",
+    "zh": ""
+  },
+  {
+    "id": "09_Sets:0236",
+    "file": "09_Sets.html",
+    "tag": "dd",
+    "text": "In set theory, which we don’t use as the logical foundation of this book, \\(\\mathcal{P}(X)\\) is referred to as the power set of \\(X\\) . Maybe in type theory we should refer to it as the “power type” of \\(X\\) …?",
+    "html": "<dd><p>In set theory, which we <em>don’t</em> use as the logical foundation of this book,\n<span class=\"math notranslate nohighlight\">\\(\\mathcal{P}(X)\\)</span> is referred to as\nthe <em>power set</em> of <span class=\"math notranslate nohighlight\">\\(X\\)</span>.  Maybe in type theory we should refer to it as the “power type” of\n<span class=\"math notranslate nohighlight\">\\(X\\)</span> …?</p>\n</dd>",
+    "zh": "在集合论中（本书不采用它作为逻辑基础），\\(\\mathcal{P}(X)\\) 称为 \\(X\\) 的幂集。也许在类型论中，我们应该把它称为 \\(X\\) 的“幂类型”……？"
+  }
+]

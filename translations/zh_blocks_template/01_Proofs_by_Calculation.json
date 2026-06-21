@@ -1,0 +1,2314 @@
+[
+  {
+    "id": "01_Proofs_by_Calculation:0001",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "h1",
+    "text": "1. Proofs by calculation",
+    "html": "<h1><span class=\"section-number\">1. </span>Proofs by calculation<a class=\"headerlink\" href=\"#proofs-by-calculation\" title=\"Permalink to this headline\"></a></h1>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0002",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "h2",
+    "text": "1.1. Proving equalities",
+    "html": "<h2><span class=\"section-number\">1.1. </span>Proving equalities<a class=\"headerlink\" href=\"#proving-equalities\" title=\"Permalink to this headline\"></a></h2>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0003",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "h2",
+    "text": "1.2. Proving equalities in Lean",
+    "html": "<h2><span class=\"section-number\">1.2. </span>Proving equalities in Lean<a class=\"headerlink\" href=\"#proving-equalities-in-lean\" title=\"Permalink to this headline\"></a></h2>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0004",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "h2",
+    "text": "1.3. Tips and tricks",
+    "html": "<h2><span class=\"section-number\">1.3. </span>Tips and tricks<a class=\"headerlink\" href=\"#tips-and-tricks\" title=\"Permalink to this headline\"></a></h2>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0005",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "h2",
+    "text": "1.4. Proving inequalities",
+    "html": "<h2><span class=\"section-number\">1.4. </span>Proving inequalities<a class=\"headerlink\" href=\"#proving-inequalities\" title=\"Permalink to this headline\"></a></h2>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0006",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "h2",
+    "text": "1.5. A shortcut",
+    "html": "<h2><span class=\"section-number\">1.5. </span>A shortcut<a class=\"headerlink\" href=\"#a-shortcut\" title=\"Permalink to this headline\"></a></h2>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0007",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "h3",
+    "text": "1.1.1. Example",
+    "html": "<h3><span class=\"section-number\">1.1.1. </span>Example<a class=\"headerlink\" href=\"#example\" title=\"Permalink to this headline\"></a></h3>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0008",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "h3",
+    "text": "1.1.2. Example",
+    "html": "<h3><span class=\"section-number\">1.1.2. </span>Example<a class=\"headerlink\" href=\"#id4\" title=\"Permalink to this headline\"></a></h3>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0009",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "h3",
+    "text": "1.1.3. Example",
+    "html": "<h3><span class=\"section-number\">1.1.3. </span>Example<a class=\"headerlink\" href=\"#id6\" title=\"Permalink to this headline\"></a></h3>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0010",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "h3",
+    "text": "1.1.4. Example",
+    "html": "<h3><span class=\"section-number\">1.1.4. </span>Example<a class=\"headerlink\" href=\"#id8\" title=\"Permalink to this headline\"></a></h3>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0011",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "h3",
+    "text": "1.2.1. Example",
+    "html": "<h3><span class=\"section-number\">1.2.1. </span>Example<a class=\"headerlink\" href=\"#id11\" title=\"Permalink to this headline\"></a></h3>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0012",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "h3",
+    "text": "1.2.2. Example",
+    "html": "<h3><span class=\"section-number\">1.2.2. </span>Example<a class=\"headerlink\" href=\"#id12\" title=\"Permalink to this headline\"></a></h3>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0013",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "h3",
+    "text": "1.2.3. Example",
+    "html": "<h3><span class=\"section-number\">1.2.3. </span>Example<a class=\"headerlink\" href=\"#id14\" title=\"Permalink to this headline\"></a></h3>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0014",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "h3",
+    "text": "1.2.4. Example",
+    "html": "<h3><span class=\"section-number\">1.2.4. </span>Example<a class=\"headerlink\" href=\"#id15\" title=\"Permalink to this headline\"></a></h3>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0015",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "h3",
+    "text": "1.2.5. Exercises",
+    "html": "<h3><span class=\"section-number\">1.2.5. </span>Exercises<a class=\"headerlink\" href=\"#exercises\" title=\"Permalink to this headline\"></a></h3>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0016",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "h3",
+    "text": "1.3.1. Example",
+    "html": "<h3><span class=\"section-number\">1.3.1. </span>Example<a class=\"headerlink\" href=\"#id20\" title=\"Permalink to this headline\"></a></h3>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0017",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "h3",
+    "text": "1.3.2. Example",
+    "html": "<h3><span class=\"section-number\">1.3.2. </span>Example<a class=\"headerlink\" href=\"#easy-eq\" title=\"Permalink to this headline\"></a></h3>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0018",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "h3",
+    "text": "1.3.3. Example",
+    "html": "<h3><span class=\"section-number\">1.3.3. </span>Example<a class=\"headerlink\" href=\"#id22\" title=\"Permalink to this headline\"></a></h3>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0019",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "h3",
+    "text": "1.3.4. Example",
+    "html": "<h3><span class=\"section-number\">1.3.4. </span>Example<a class=\"headerlink\" href=\"#eq-with-div\" title=\"Permalink to this headline\"></a></h3>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0020",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "h3",
+    "text": "1.3.5. Example",
+    "html": "<h3><span class=\"section-number\">1.3.5. </span>Example<a class=\"headerlink\" href=\"#id25\" title=\"Permalink to this headline\"></a></h3>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0021",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "h3",
+    "text": "1.3.6. Example",
+    "html": "<h3><span class=\"section-number\">1.3.6. </span>Example<a class=\"headerlink\" href=\"#simultaneous\" title=\"Permalink to this headline\"></a></h3>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0022",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "h3",
+    "text": "1.3.7. Example",
+    "html": "<h3><span class=\"section-number\">1.3.7. </span>Example<a class=\"headerlink\" href=\"#id27\" title=\"Permalink to this headline\"></a></h3>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0023",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "h3",
+    "text": "1.3.8. Example",
+    "html": "<h3><span class=\"section-number\">1.3.8. </span>Example<a class=\"headerlink\" href=\"#id28\" title=\"Permalink to this headline\"></a></h3>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0024",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "h3",
+    "text": "1.3.9. Example",
+    "html": "<h3><span class=\"section-number\">1.3.9. </span>Example<a class=\"headerlink\" href=\"#id29\" title=\"Permalink to this headline\"></a></h3>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0025",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "h3",
+    "text": "1.3.10. Example",
+    "html": "<h3><span class=\"section-number\">1.3.10. </span>Example<a class=\"headerlink\" href=\"#id30\" title=\"Permalink to this headline\"></a></h3>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0026",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "h3",
+    "text": "1.3.11. Exercises",
+    "html": "<h3><span class=\"section-number\">1.3.11. </span>Exercises<a class=\"headerlink\" href=\"#id31\" title=\"Permalink to this headline\"></a></h3>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0027",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "h3",
+    "text": "1.4.1. Example",
+    "html": "<h3><span class=\"section-number\">1.4.1. </span>Example<a class=\"headerlink\" href=\"#id33\" title=\"Permalink to this headline\"></a></h3>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0028",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "h3",
+    "text": "1.4.2. Example",
+    "html": "<h3><span class=\"section-number\">1.4.2. </span>Example<a class=\"headerlink\" href=\"#id35\" title=\"Permalink to this headline\"></a></h3>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0029",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "h3",
+    "text": "1.4.3. Example",
+    "html": "<h3><span class=\"section-number\">1.4.3. </span>Example<a class=\"headerlink\" href=\"#id37\" title=\"Permalink to this headline\"></a></h3>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0030",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "h3",
+    "text": "1.4.4. Example",
+    "html": "<h3><span class=\"section-number\">1.4.4. </span>Example<a class=\"headerlink\" href=\"#shorthand\" title=\"Permalink to this headline\"></a></h3>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0031",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "h3",
+    "text": "1.4.5. Example",
+    "html": "<h3><span class=\"section-number\">1.4.5. </span>Example<a class=\"headerlink\" href=\"#id41\" title=\"Permalink to this headline\"></a></h3>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0032",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "h3",
+    "text": "1.4.6. Example",
+    "html": "<h3><span class=\"section-number\">1.4.6. </span>Example<a class=\"headerlink\" href=\"#id42\" title=\"Permalink to this headline\"></a></h3>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0033",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "h3",
+    "text": "1.4.7. Example",
+    "html": "<h3><span class=\"section-number\">1.4.7. </span>Example<a class=\"headerlink\" href=\"#sq-nonneg\" title=\"Permalink to this headline\"></a></h3>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0034",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "h3",
+    "text": "1.4.8. Example",
+    "html": "<h3><span class=\"section-number\">1.4.8. </span>Example<a class=\"headerlink\" href=\"#id44\" title=\"Permalink to this headline\"></a></h3>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0035",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "h3",
+    "text": "1.4.9. Example",
+    "html": "<h3><span class=\"section-number\">1.4.9. </span>Example<a class=\"headerlink\" href=\"#id46\" title=\"Permalink to this headline\"></a></h3>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0036",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "h3",
+    "text": "1.4.10. Example",
+    "html": "<h3><span class=\"section-number\">1.4.10. </span>Example<a class=\"headerlink\" href=\"#id48\" title=\"Permalink to this headline\"></a></h3>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0037",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "h3",
+    "text": "1.4.11. Exercises",
+    "html": "<h3><span class=\"section-number\">1.4.11. </span>Exercises<a class=\"headerlink\" href=\"#id50\" title=\"Permalink to this headline\"></a></h3>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0038",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "p",
+    "text": "This book begins in the familiar world of numbers: \\(\\mathbb{N}\\) , the natural numbers (which in this book include 0); \\(\\mathbb{Z}\\) , the integers; \\(\\mathbb{Q}\\) , the rational numbers; and \\(\\mathbb{R}\\) , the real numbers. We solve problems which feel pretty close to high school algebra – deducing equalities/inequalities from other equalities/inequalities – using a technique which is not usually taught in high school algebra: building a single chain of expressions connecting the left-hand side with the right.",
+    "html": "<p>This book begins in the familiar world of numbers: <span class=\"math notranslate nohighlight\">\\(\\mathbb{N}\\)</span>, the natural\nnumbers (which in this book include 0);\n<span class=\"math notranslate nohighlight\">\\(\\mathbb{Z}\\)</span>, the integers; <span class=\"math notranslate nohighlight\">\\(\\mathbb{Q}\\)</span>, the rational numbers;\nand <span class=\"math notranslate nohighlight\">\\(\\mathbb{R}\\)</span>, the real numbers.  We solve problems which feel pretty close\nto high school algebra – deducing equalities/inequalities from other\nequalities/inequalities – using a technique which is not usually taught in high\nschool algebra: building a single chain of expressions connecting the left-hand\nside with the right.</p>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0039",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "p",
+    "text": "We start with proofs of equalities. Here is a typical example of the technique mentioned.",
+    "html": "<p>We start with proofs of equalities.  Here is a typical example of the technique mentioned.</p>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0040",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "p",
+    "text": "Problem",
+    "html": "<p class=\"admonition-title\">Problem</p>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0041",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "p",
+    "text": "Let \\(a\\) and \\(b\\) be rational numbers and suppose that \\(a - b = 4\\) and \\(ab=1\\) . Show that \\((a+b)^2=20\\) .",
+    "html": "<p>Let <span class=\"math notranslate nohighlight\">\\(a\\)</span> and <span class=\"math notranslate nohighlight\">\\(b\\)</span> be rational numbers and suppose that\n<span class=\"math notranslate nohighlight\">\\(a - b = 4\\)</span> and <span class=\"math notranslate nohighlight\">\\(ab=1\\)</span>.  Show that <span class=\"math notranslate nohighlight\">\\((a+b)^2=20\\)</span>.</p>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0042",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "p",
+    "text": "Solution",
+    "html": "<p class=\"admonition-title\">Solution</p>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0043",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "p",
+    "text": "We call the above proof a proof by calculation . The goal was to show that \\((a+b)^2=20\\) , and we established this by writing down a chain of equalities, which starts with the expression \\((a+b)^2\\) (top left) and ends with \\(20\\) (bottom right). The proof, implicitly, has three steps:",
+    "html": "<p>We call the above proof a <em>proof by calculation</em>.  The goal was to show that <span class=\"math notranslate nohighlight\">\\((a+b)^2=20\\)</span>,\nand we established this by writing down a chain of equalities,\nwhich starts with the expression <span class=\"math notranslate nohighlight\">\\((a+b)^2\\)</span> (top left) and ends with\n<span class=\"math notranslate nohighlight\">\\(20\\)</span> (bottom right).  The proof, implicitly, has three steps:</p>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0044",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "p",
+    "text": "1. \\(\\underline{\\text{Proof that }(a+b)^2=(a-b)^2+4ab}\\) : this is a purely algebraic rearrangement – after expanding out and simplifying, both sides are the same quantity, \\(a^2+2ab+b^2\\) .",
+    "html": "<p>1.\n<span class=\"math notranslate nohighlight\">\\(\\underline{\\text{Proof that }(a+b)^2=(a-b)^2+4ab}\\)</span>: this is a purely algebraic\nrearrangement – after expanding out and simplifying, both sides are\nthe same quantity, <span class=\"math notranslate nohighlight\">\\(a^2+2ab+b^2\\)</span>.</p>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0045",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "p",
+    "text": "2. \\(\\underline{\\text{Proof that }(a-b)^2+4ab=4^2+4\\cdot 1}\\) : this is a pure substitution step, using the known facts that \\(a-b=4\\) and \\(ab=1\\) .",
+    "html": "<p>2.\n<span class=\"math notranslate nohighlight\">\\(\\underline{\\text{Proof that }(a-b)^2+4ab=4^2+4\\cdot 1}\\)</span>: this is a pure substitution\nstep, using the known facts that <span class=\"math notranslate nohighlight\">\\(a-b=4\\)</span> and <span class=\"math notranslate nohighlight\">\\(ab=1\\)</span>.</p>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0046",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "p",
+    "text": "3. \\(\\underline{\\text{Proof that }4^2+4\\cdot 1=20}\\) : this is another purely algebraic step.",
+    "html": "<p>3.\n<span class=\"math notranslate nohighlight\">\\(\\underline{\\text{Proof that }4^2+4\\cdot 1=20}\\)</span>: this is another purely algebraic step.</p>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0047",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "p",
+    "text": "This is the most common style of presenting an equality proof in advanced mathematics textbooks and in research mathematics. There is a trade-off: it usually takes more work for you, the writer, of the proof, to organize a proof in this style, but the resulting proof is short and easy to check, which is courteous to your readers.",
+    "html": "<p>This is the most common style of presenting an equality proof in advanced\nmathematics textbooks and in research mathematics.  There is a trade-off:  it usually takes\nmore work for you, the writer, of the proof, to organize a proof in this\nstyle, but the resulting proof is short and easy to check, which is courteous\nto your readers.</p>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0048",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "p",
+    "text": "In Section 1.3 we will discuss the question of how to come up with a proof in this style. For now, let’s focus on how to understand them.",
+    "html": "<p>In <a class=\"reference internal\" href=\"#tips-and-tricks\"><span class=\"std std-numref\">Section 1.3</span></a> we will discuss the question of how to come up with a proof\nin this style.  For now, let’s focus on how to understand them.</p>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0049",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "p",
+    "text": "Problem",
+    "html": "<p class=\"admonition-title\">Problem</p>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0050",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "p",
+    "text": "Let \\(r\\) and \\(s\\) be real numbers, and suppose that \\(r + 2 s = -1\\) and \\(s = 3\\) . Prove that \\(r = -7\\) .",
+    "html": "<p>Let <span class=\"math notranslate nohighlight\">\\(r\\)</span> and <span class=\"math notranslate nohighlight\">\\(s\\)</span> be real numbers, and suppose that\n<span class=\"math notranslate nohighlight\">\\(r + 2 s = -1\\)</span> and <span class=\"math notranslate nohighlight\">\\(s = 3\\)</span>.\nProve that <span class=\"math notranslate nohighlight\">\\(r = -7\\)</span>.</p>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0051",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "p",
+    "text": "Solution",
+    "html": "<p class=\"admonition-title\">Solution</p>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0052",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "p",
+    "text": "This proof implicitly has four steps, which successively transform the left-hand side, \\(r\\) , to the right-hand side, \\(-7\\) :",
+    "html": "<p>This proof implicitly has four steps,\nwhich successively transform the left-hand side, <span class=\"math notranslate nohighlight\">\\(r\\)</span>, to the right-hand side,\n<span class=\"math notranslate nohighlight\">\\(-7\\)</span>:</p>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0053",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "p",
+    "text": "1. \\(\\underline{\\text{Proof that }r=(r+2s)-2s}\\) : a purely algebraic rearrangement.",
+    "html": "<p>1.\n<span class=\"math notranslate nohighlight\">\\(\\underline{\\text{Proof that }r=(r+2s)-2s}\\)</span>: a purely algebraic rearrangement.</p>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0054",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "p",
+    "text": "2. \\(\\underline{\\text{Proof that }(r+2s)-2s=-1 - 2s}\\) : this is a pure substitution step, using the known fact that \\(r + 2 s = -1\\) .",
+    "html": "<p>2.\n<span class=\"math notranslate nohighlight\">\\(\\underline{\\text{Proof that }(r+2s)-2s=-1 - 2s}\\)</span>: this is a pure substitution step,\nusing the known fact that <span class=\"math notranslate nohighlight\">\\(r + 2 s = -1\\)</span>.</p>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0055",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "p",
+    "text": "2. \\(\\underline{\\text{Proof that }-1-2s=-1 - 2 \\cdot 3}\\) : this is a pure substitution step, using the known fact that \\(s = 3\\) .",
+    "html": "<p>2.\n<span class=\"math notranslate nohighlight\">\\(\\underline{\\text{Proof that }-1-2s=-1 - 2 \\cdot 3}\\)</span>: this is a pure substitution step,\nusing the known fact that <span class=\"math notranslate nohighlight\">\\(s = 3\\)</span>.</p>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0056",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "p",
+    "text": "4. \\(\\underline{\\text{Proof that }-1 - 2 \\cdot 3=-7}\\) : this is another purely algebraic step.",
+    "html": "<p>4.\n<span class=\"math notranslate nohighlight\">\\(\\underline{\\text{Proof that }-1 - 2 \\cdot 3=-7}\\)</span>: this is another purely algebraic step.</p>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0057",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "p",
+    "text": "You might wonder what flexibility there is in presenting a proof in this style. It is common to put each expression of the proof on its own line, so that the first expression isn’t all alone on the left. This is certainly acceptable, and is useful if the expressions involved are very long, so the extra space is needed.",
+    "html": "<p>You might wonder what flexibility there is in presenting a proof in this style.\nIt is common to put each expression of the proof on its own line, so that the\nfirst expression isn’t all alone on the left.  This is certainly acceptable,\nand is useful if the expressions involved are very long, so the extra space\nis needed.</p>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0058",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "p",
+    "text": "Solution",
+    "html": "<p class=\"admonition-title\">Solution</p>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0059",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "p",
+    "text": "Sometimes students are tempted to omit the equals signs, or to put the equals signs at the right. This is very unconventional; don’t do this!",
+    "html": "<p>Sometimes students are tempted to omit the equals signs, or to put the\nequals signs at the right.  This is very unconventional; don’t do this!</p>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0060",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "p",
+    "text": "Finally, notice that the calculations end with a period. The whole calculation is considered to be a single sentence, and the period ends it.",
+    "html": "<p>Finally, notice that the calculations end with a period.\nThe whole calculation is considered to be a single sentence, and the period ends it.</p>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0061",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "p",
+    "text": "The next example again follows a pattern of algebra, substitution, algebra. Check each step in your head.",
+    "html": "<p>The next example again follows a pattern of algebra, substitution, algebra.\nCheck each step in your head.</p>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0062",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "p",
+    "text": "Problem",
+    "html": "<p class=\"admonition-title\">Problem</p>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0063",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "p",
+    "text": "Let \\(a\\) , \\(b\\) , \\(m\\) and \\(n\\) be integers, and suppose that \\(b^2=2a^2\\) and \\(am+bn=1\\) . Show that \\((2an+bm)^2=2\\) .",
+    "html": "<p>Let <span class=\"math notranslate nohighlight\">\\(a\\)</span>, <span class=\"math notranslate nohighlight\">\\(b\\)</span>, <span class=\"math notranslate nohighlight\">\\(m\\)</span> and <span class=\"math notranslate nohighlight\">\\(n\\)</span> be integers,\nand suppose that <span class=\"math notranslate nohighlight\">\\(b^2=2a^2\\)</span> and <span class=\"math notranslate nohighlight\">\\(am+bn=1\\)</span>.  Show that\n<span class=\"math notranslate nohighlight\">\\((2an+bm)^2=2\\)</span>.</p>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0064",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "p",
+    "text": "Solution",
+    "html": "<p class=\"admonition-title\">Solution</p>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0065",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "p",
+    "text": "In this case, the algebra required in the first step,",
+    "html": "<p>In this case, the algebra required in the first step,</p>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0066",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "p",
+    "text": "is very extensive. (This fact is known as Brahmagupta’s identity , named for the Indian mathematician who discovered it in c. 628 CE.) You might optionally choose to help your reader by providing several intermediate steps, each one of which can be checked by a simpler algebraic calculation.",
+    "html": "<p>is very extensive.  (This fact is known as\n<a class=\"reference external\" href=\"https://en.wikipedia.org/wiki/Brahmagupta%27s_identity\">Brahmagupta’s identity</a>, named for\nthe Indian mathematician who discovered it in c. 628 CE.) You might\noptionally choose to help your reader by providing several intermediate steps,\neach one of which can be checked by a simpler algebraic calculation.</p>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0067",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "p",
+    "text": "Solution",
+    "html": "<p class=\"admonition-title\">Solution</p>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0068",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "p",
+    "text": "Here is one more example. Again, check each step in your head. Notice that you might be tempted to start on this problem by “solving for” \\(a\\) and \\(f\\) , with \\(a=bc/d\\) and \\(f = de/c\\) . But this actually would make the solution more complicated, by introducing unnecessary case splits depending on whether or not \\(d=0\\) and \\(c=0\\) . The proof by direct calculation avoids these case splits.",
+    "html": "<p>Here is one more example.  Again, check each step in your head. Notice that\nyou might be tempted to start on this problem by “solving for” <span class=\"math notranslate nohighlight\">\\(a\\)</span> and\n<span class=\"math notranslate nohighlight\">\\(f\\)</span>, with <span class=\"math notranslate nohighlight\">\\(a=bc/d\\)</span> and <span class=\"math notranslate nohighlight\">\\(f = de/c\\)</span>.  But this actually would\nmake the solution more complicated, by introducing unnecessary case splits\ndepending on whether or not <span class=\"math notranslate nohighlight\">\\(d=0\\)</span> and <span class=\"math notranslate nohighlight\">\\(c=0\\)</span>.  The proof by direct\ncalculation avoids these case splits.</p>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0069",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "p",
+    "text": "Problem",
+    "html": "<p class=\"admonition-title\">Problem</p>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0070",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "p",
+    "text": "Let \\(a\\) , \\(b\\) , \\(c\\) , \\(d\\) , \\(e\\) and \\(f\\) be integers, and suppose that \\(ad = bc\\) and \\(cf=de\\) . Show that \\(d(af - be) = 0\\) .",
+    "html": "<p>Let <span class=\"math notranslate nohighlight\">\\(a\\)</span>, <span class=\"math notranslate nohighlight\">\\(b\\)</span>, <span class=\"math notranslate nohighlight\">\\(c\\)</span>, <span class=\"math notranslate nohighlight\">\\(d\\)</span>, <span class=\"math notranslate nohighlight\">\\(e\\)</span> and <span class=\"math notranslate nohighlight\">\\(f\\)</span> be\nintegers, and suppose that\n<span class=\"math notranslate nohighlight\">\\(ad = bc\\)</span> and <span class=\"math notranslate nohighlight\">\\(cf=de\\)</span>.  Show that <span class=\"math notranslate nohighlight\">\\(d(af - be) = 0\\)</span>.</p>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0071",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "p",
+    "text": "Solution",
+    "html": "<p class=\"admonition-title\">Solution</p>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0072",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "p",
+    "text": "In this book, we will learn to write every proof in two ways: in words, as humans have done for thousands of years, and in a computer system called a proof assistant , an approach which was first experimented with in the 1960s and is still quite unusual. We will be using the proof assistant Lean 4 , developed since 2014 at Microsoft Research and elsewhere by a team led by Leonardo de Moura, and its standard mathematical library Mathlib .",
+    "html": "<p>In this book, we will learn to write every proof in two ways: in words, as humans have\ndone for thousands of years, and in a computer system called a <em>proof assistant</em>, an approach which\nwas <a class=\"reference external\" href=\"https://en.wikipedia.org/wiki/Automath\">first experimented with in the 1960s</a> and is still\nquite unusual.  We will be using the proof assistant\n<a class=\"reference external\" href=\"https://leanprover.github.io/\">Lean 4</a>, developed since 2014 at Microsoft Research and elsewhere\nby a team led by Leonardo de Moura, and its standard mathematical library\n<a class=\"reference external\" href=\"https://github.com/leanprover-community/mathlib4\">Mathlib</a>.</p>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0073",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "p",
+    "text": "In this and all following sections of the book, there is an associated Lean file, which you should have open to experiment with at the same time as you are reading. Head over now to the GitHub repository, https://github.com/hrmacbeth/math2001 , to get instructions for downloading this code to your own computer or opening it in the cloud on Gitpod. The Gitpod option is recommended for beginners – just make an account and you will be ready to start work, no Lean installation necessary.",
+    "html": "<p>In this and all following sections of the book, there is an associated Lean file, which you\nshould have open to experiment with at the same time as you are reading.  Head over now to the\nGitHub repository, <a class=\"reference external\" href=\"https://github.com/hrmacbeth/math2001\">https://github.com/hrmacbeth/math2001</a>, to get instructions for downloading this\ncode to your own computer or opening it in the cloud on Gitpod.  The Gitpod option is recommended\nfor beginners – just make an account and you will be ready to start work, no Lean installation\nnecessary.</p>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0074",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "p",
+    "text": "Lean code is designed to be written in an interactive development environment (IDE) so that you get live feedback as you work. In this book I assume that you are running the IDE Visual Studio Code – this will open automatically when you start Gitpod.",
+    "html": "<p>Lean code is designed to be written in an <em>interactive development environment</em> (IDE) so that you\nget live feedback as you work.  In this book I assume that you are running the IDE <em>Visual Studio\nCode</em> – this will open automatically when you start Gitpod.</p>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0075",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "p",
+    "text": "To get started, navigate in Visual Studio Code to the file which corresponds to this section, Math2001/01_Proofs_by_Calculation/02_Proving_Equalities_in_Lean . When you open this file, you may see a second panel pop up called the “Lean Infoview”. You can ignore this for now, or even close it. We will start using the Lean Infoview in Chapter 2 .",
+    "html": "<p>To get started, navigate in Visual Studio Code to the file which corresponds to this section,\n<code class=\"docutils literal notranslate\"><span class=\"pre\">Math2001/01_Proofs_by_Calculation/02_Proving_Equalities_in_Lean</span></code>.  When you open this file, you may\nsee a second panel pop up called the “Lean Infoview”.  You can ignore this for now, or even close\nit.  We will start using the Lean Infoview in <a class=\"reference internal\" href=\"02_Proofs_with_Structure.html#proofs-with-structure\"><span class=\"std std-numref\">Chapter 2</span></a>.</p>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0076",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "p",
+    "text": "The first two important lines in the file look like this:",
+    "html": "<p>The first two important lines in the file look like this:</p>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0077",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "p",
+    "text": "This is a Lean representation of Example 1.1.1 :",
+    "html": "<p>This is a Lean representation of <a class=\"reference internal\" href=\"#id3\"><span class=\"std std-numref\">Example 1.1.1</span></a>:</p>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0078",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "p",
+    "text": "Problem",
+    "html": "<p class=\"admonition-title\">Problem</p>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0079",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "p",
+    "text": "Let \\(a\\) and \\(b\\) be rational numbers and suppose that \\(a - b = 4\\) and \\(ab=1\\) . Show that \\((a+b)^2=20\\) .",
+    "html": "<p>Let <span class=\"math notranslate nohighlight\">\\(a\\)</span> and <span class=\"math notranslate nohighlight\">\\(b\\)</span> be rational numbers and suppose that\n<span class=\"math notranslate nohighlight\">\\(a - b = 4\\)</span> and <span class=\"math notranslate nohighlight\">\\(ab=1\\)</span>.  Show that <span class=\"math notranslate nohighlight\">\\((a+b)^2=20\\)</span>.</p>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0080",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "p",
+    "text": "The code {a b : ℚ} sets up two variables a and b whose type is ℚ , which is the standard mathematical notation for the rational numbers (mnemonic: “quotients”).",
+    "html": "<p>The code <code class=\"docutils literal notranslate\"><span class=\"pre\">{a</span> <span class=\"pre\">b</span> <span class=\"pre\">:</span> <span class=\"pre\">ℚ}</span></code> sets up two variables <code class=\"docutils literal notranslate\"><span class=\"pre\">a</span></code> and <code class=\"docutils literal notranslate\"><span class=\"pre\">b</span></code> whose type is <code class=\"docutils literal notranslate\"><span class=\"pre\">ℚ</span></code>, which is the\nstandard mathematical notation for the rational numbers (mnemonic: “quotients”).</p>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0081",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "p",
+    "text": "The code (h1 : a - b = 4) (h2 : a * b = 1) sets up two hypotheses , for the two facts given to us in the problem statement, \\(a - b = 4\\) and \\(ab=1\\) . Hypotheses in Lean have names, here h1 and h2 , so that we can refer back to them later. Notice that multiplication must be written explicitly, using the symbol * , whereas on paper multiplication is inferred by writing two variables next to each other like \\(ab\\) .",
+    "html": "<p>The code <code class=\"docutils literal notranslate\"><span class=\"pre\">(h1</span> <span class=\"pre\">:</span> <span class=\"pre\">a</span> <span class=\"pre\">-</span> <span class=\"pre\">b</span> <span class=\"pre\">=</span> <span class=\"pre\">4)</span> <span class=\"pre\">(h2</span> <span class=\"pre\">:</span> <span class=\"pre\">a</span> <span class=\"pre\">*</span> <span class=\"pre\">b</span> <span class=\"pre\">=</span> <span class=\"pre\">1)</span></code> sets up two <em>hypotheses</em>, for the two facts given\nto us in the problem statement, <span class=\"math notranslate nohighlight\">\\(a - b = 4\\)</span> and <span class=\"math notranslate nohighlight\">\\(ab=1\\)</span>.  Hypotheses in Lean have names,\nhere <code class=\"docutils literal notranslate\"><span class=\"pre\">h1</span></code> and <code class=\"docutils literal notranslate\"><span class=\"pre\">h2</span></code>, so that we can refer back to them later.  Notice that multiplication must\nbe written explicitly, using the symbol <code class=\"docutils literal notranslate\"><span class=\"pre\">*</span></code>, whereas on paper multiplication is inferred by\nwriting two variables next to each other like <span class=\"math notranslate nohighlight\">\\(ab\\)</span>.</p>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0082",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "p",
+    "text": "After the colon, : , comes the goal , the statement we have been asked to prove: (a + b) ^ 2 = 20 , i.e. \\((a+b)^2=20\\) . The symbol ^ is used in Lean for raising to a power.",
+    "html": "<p>After the colon, <code class=\"docutils literal notranslate\"><span class=\"pre\">:</span></code>, comes the <em>goal</em>, the statement we have been asked to prove:\n<code class=\"docutils literal notranslate\"><span class=\"pre\">(a</span> <span class=\"pre\">+</span> <span class=\"pre\">b)</span> <span class=\"pre\">^</span> <span class=\"pre\">2</span> <span class=\"pre\">=</span> <span class=\"pre\">20</span></code>, i.e.  <span class=\"math notranslate nohighlight\">\\((a+b)^2=20\\)</span>.  The symbol <code class=\"docutils literal notranslate\"><span class=\"pre\">^</span></code> is used in Lean for raising to a\npower.</p>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0083",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "p",
+    "text": "Lean’s key feature is that it checks your proofs as you write them, giving you instant feedback about whether they are correct. The solution to this problem, as we wrote it in the previous section, was a single calculation:",
+    "html": "<p>Lean’s key feature is that it checks your proofs as you write them, giving you instant feedback\nabout whether they are correct.  The solution to this problem, as we wrote it in the previous\nsection, was a single calculation:</p>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0084",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "p",
+    "text": "This can be expressed in Lean as a “calculation block” using the keyword calc . The steps of the calculation are typed out, similarly to how they were written on paper. At the end of each line comes a justification for why the deduction in that line is valid. We discussed in the previous section why each of the three deductions was valid:",
+    "html": "<p>This can be expressed in Lean as a “calculation block” using the keyword <code class=\"docutils literal notranslate\"><span class=\"pre\">calc</span></code>.  The steps of\nthe calculation are typed out, similarly to how they were written on paper.  At the end of each\nline comes a justification for why the deduction in that line is valid.  We discussed in the\nprevious section why each of the three deductions was valid:</p>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0085",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "p",
+    "text": "1. \\(\\underline{\\text{Proof that }(a+b)^2=(a-b)^2+4ab}\\) : algebraic rearrangement",
+    "html": "<p>1.\n<span class=\"math notranslate nohighlight\">\\(\\underline{\\text{Proof that }(a+b)^2=(a-b)^2+4ab}\\)</span>: algebraic rearrangement</p>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0086",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "p",
+    "text": "2. \\(\\underline{\\text{Proof that }(a-b)^2+4ab=4^2+4\\cdot 1}\\) : substitution, using the known facts that \\(a-b=4\\) and \\(ab=1\\) .",
+    "html": "<p>2.\n<span class=\"math notranslate nohighlight\">\\(\\underline{\\text{Proof that }(a-b)^2+4ab=4^2+4\\cdot 1}\\)</span>: substitution, using the known facts that <span class=\"math notranslate nohighlight\">\\(a-b=4\\)</span> and <span class=\"math notranslate nohighlight\">\\(ab=1\\)</span>.</p>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0087",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "p",
+    "text": "3. \\(\\underline{\\text{Proof that }4^2+4\\cdot 1=20}\\) : algebraic rearrangement",
+    "html": "<p>3.\n<span class=\"math notranslate nohighlight\">\\(\\underline{\\text{Proof that }4^2+4\\cdot 1=20}\\)</span>: algebraic rearrangement</p>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0088",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "p",
+    "text": "In Lean, an algebraic rearrangement is indicated by the tactic ring , and a substitution by the tactic rw (stands for “rewrite”). When making a substitution, you must indicate by name the hypotheses which you are substituting.",
+    "html": "<p>In Lean, an algebraic rearrangement is indicated by the <em>tactic</em> <code class=\"docutils literal notranslate\"><span class=\"pre\">ring</span></code>, and a substitution by the\ntactic <code class=\"docutils literal notranslate\"><span class=\"pre\">rw</span></code> (stands for “rewrite”).  When making a substitution, you must indicate by name the\nhypotheses which you are substituting.</p>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0089",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "p",
+    "text": "Here is a Lean representation of Example 1.1.2 , and its proof, which on paper looked like this:",
+    "html": "<p>Here is a Lean representation of <a class=\"reference internal\" href=\"#id4\"><span class=\"std std-numref\">Example 1.1.2</span></a>, and its proof,\nwhich on paper looked like this:</p>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0090",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "p",
+    "text": "In each of the four places marked with Lean’s standard placeholder sorry , 1 fill in the appropriate Lean justification (either ring or rw with some hypotheses).",
+    "html": "<p>In each of the four places marked with  Lean’s standard placeholder <code class=\"docutils literal notranslate\"><span class=\"pre\">sorry</span></code>, <a class=\"footnote-reference brackets\" href=\"#id17\" id=\"id13\">1</a> fill in the appropriate Lean\njustification (either <code class=\"docutils literal notranslate\"><span class=\"pre\">ring</span></code> or <code class=\"docutils literal notranslate\"><span class=\"pre\">rw</span></code> with some hypotheses).</p>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0091",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "p",
+    "text": "While filling in the justifications here, you probably discovered what happens in Lean when you make a mistake: a red underline appears somewhere. For example, all of the following will cause a red underline to appear somewhere. Try them!",
+    "html": "<p>While filling in the justifications here, you probably discovered what happens in Lean when you\nmake a mistake: a red underline appears somewhere.  For example, all of the following will cause\na red underline to appear somewhere.  Try them!</p>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0092",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "p",
+    "text": "If there are no red underlines anywhere then your proof is correct. Sometimes the red underlines are very small, so look closely. You can double check by consulting the horizontal blue status line at the bottom of the screen in VS Code. Next to the symbol “⊗” is a number indicating how many mistakes are in the file, and if there are no mistakes, there will also be a check mark.",
+    "html": "<p>If there are no red underlines anywhere then your proof is correct.  Sometimes the red underlines\nare very small, so look closely. You can double check by consulting the horizontal blue status line\nat the bottom of the screen in VS Code.  Next to the symbol “⊗” is a number indicating how many\nmistakes are in the file, and if there are no mistakes, there will also be a check mark.</p>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0093",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "p",
+    "text": "Here is a Lean representation of Example 1.1.3 , and its proof, which on paper looked like this:",
+    "html": "<p>Here is a Lean representation of <a class=\"reference internal\" href=\"#id6\"><span class=\"std std-numref\">Example 1.1.3</span></a>, and its proof,\nwhich on paper looked like this:</p>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0094",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "p",
+    "text": "As before, in each of the three places marked with the placeholder sorry , fill in the appropriate Lean justification.",
+    "html": "<p>As before, in each of the three places marked with the placeholder <code class=\"docutils literal notranslate\"><span class=\"pre\">sorry</span></code>, fill in the\nappropriate Lean justification.</p>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0095",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "p",
+    "text": "Finally, here is a Lean representation of Example 1.1.4 . On paper its proof looked like this:",
+    "html": "<p>Finally, here is a Lean representation of <a class=\"reference internal\" href=\"#id8\"><span class=\"std std-numref\">Example 1.1.4</span></a>.  On\npaper its proof looked like this:</p>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0096",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "p",
+    "text": "Type out the whole proof in Lean and fill out the justification of each step. Be warned that Lean is very sensitive about order of operations. For example, (x * y) * z , x * (y * z) , and (y * x) * z all mean different things in Lean. 2 So look closely at each step in the paper proof and make sure, when you are rewriting, that the parentheses exactly surround the small part of the expression in which you want to make the substitution.",
+    "html": "<p>Type out the whole proof in Lean and fill out the justification of each step.  Be warned that Lean\nis very sensitive about order of operations.  For example, <code class=\"docutils literal notranslate\"><span class=\"pre\">(x</span> <span class=\"pre\">*</span> <span class=\"pre\">y)</span> <span class=\"pre\">*</span> <span class=\"pre\">z</span></code>, <code class=\"docutils literal notranslate\"><span class=\"pre\">x</span> <span class=\"pre\">*</span> <span class=\"pre\">(y</span> <span class=\"pre\">*</span> <span class=\"pre\">z)</span></code>, and\n<code class=\"docutils literal notranslate\"><span class=\"pre\">(y</span> <span class=\"pre\">*</span> <span class=\"pre\">x)</span> <span class=\"pre\">*</span> <span class=\"pre\">z</span></code> all mean different things in Lean. <a class=\"footnote-reference brackets\" href=\"#id18\" id=\"id16\">2</a>  So look closely at each step in the paper proof\nand make sure, when you are rewriting, that the parentheses exactly surround the small part of the\nexpression in which you want to make the substitution.</p>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0097",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "p",
+    "text": "The next section, Section 1.3 , contains many examples of calculational proofs. Without yet reading the mathematics of the section closely, type up in Lean some of the examples from that section, following the paper proofs given. The Lean file for the next section is Math2001/01_Proofs_by_Calculation/03_Tips_and_Tricks .",
+    "html": "<p>The next section, <a class=\"reference internal\" href=\"#tips-and-tricks\"><span class=\"std std-numref\">Section 1.3</span></a>, contains many examples of calculational proofs.  Without yet reading the\nmathematics of the section closely, type up in Lean some of the examples from that section,\nfollowing the paper proofs given. The Lean file for the next section is\n<code class=\"docutils literal notranslate\"><span class=\"pre\">Math2001/01_Proofs_by_Calculation/03_Tips_and_Tricks</span></code>.</p>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0098",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "p",
+    "text": "Footnotes",
+    "html": "<p class=\"rubric\">Footnotes</p>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0099",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "p",
+    "text": "You are apologizing to Lean for not having provided a proof of this assertion yet!",
+    "html": "<p>You are apologizing to Lean for not having provided a proof of this assertion yet!</p>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0100",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "p",
+    "text": "If there are no parentheses, like x * y * z , then Lean interprets the expression as being parenthesized greedily towards the front: (x * y) * z .",
+    "html": "<p>If there are no parentheses, like <code class=\"docutils literal notranslate\"><span class=\"pre\">x</span> <span class=\"pre\">*</span> <span class=\"pre\">y</span> <span class=\"pre\">*</span> <span class=\"pre\">z</span></code>, then Lean interprets the expression as\nbeing parenthesized greedily towards the front: <code class=\"docutils literal notranslate\"><span class=\"pre\">(x</span> <span class=\"pre\">*</span> <span class=\"pre\">y)</span> <span class=\"pre\">*</span> <span class=\"pre\">z</span></code>.</p>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0101",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "p",
+    "text": "In this section we will cover some tips and tricks for actually coming up with a proof by calculation.",
+    "html": "<p>In this section we will cover some tips and tricks for actually coming up with\na proof by calculation.</p>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0102",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "p",
+    "text": "Problem",
+    "html": "<p class=\"admonition-title\">Problem</p>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0103",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "p",
+    "text": "Let \\(a\\) and \\(b\\) be integers and suppose that \\(a = 2b + 5\\) and \\(b = 3\\) . Show that \\(a = 11\\) .",
+    "html": "<p>Let <span class=\"math notranslate nohighlight\">\\(a\\)</span> and <span class=\"math notranslate nohighlight\">\\(b\\)</span> be integers and suppose that <span class=\"math notranslate nohighlight\">\\(a = 2b + 5\\)</span>\nand <span class=\"math notranslate nohighlight\">\\(b = 3\\)</span>.  Show that <span class=\"math notranslate nohighlight\">\\(a = 11\\)</span>.</p>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0104",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "p",
+    "text": "Since the goal in this problem is to show that \\(a=11\\) , we already know that the solution will look something like this:",
+    "html": "<p>Since the goal in this problem is to show that <span class=\"math notranslate nohighlight\">\\(a=11\\)</span>, we already know that\nthe solution will look something like this:</p>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0105",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "p",
+    "text": "Casting around for ideas, we see that one of the hypotheses, \\(a = 2b + 5\\) , has \\(a\\) on the left-hand side. So we put that as the first step of the calculation, and the rest of the steps write themselves.",
+    "html": "<p>Casting around for ideas, we see that one of the hypotheses, <span class=\"math notranslate nohighlight\">\\(a = 2b + 5\\)</span>,\nhas <span class=\"math notranslate nohighlight\">\\(a\\)</span> on the left-hand side.  So we put that as the first step of the\ncalculation, and the rest of the steps write themselves.</p>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0106",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "p",
+    "text": "Solution",
+    "html": "<p class=\"admonition-title\">Solution</p>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0107",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "p",
+    "text": "More commonly, none of the hypotheses have a left- or right-hand side which exactly appears in the goal. Here is an example.",
+    "html": "<p>More commonly, none of the hypotheses have a left- or right-hand side which\nexactly appears in the goal.  Here is an example.</p>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0108",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "p",
+    "text": "Problem",
+    "html": "<p class=\"admonition-title\">Problem</p>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0109",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "p",
+    "text": "Let \\(x\\) be an integer and suppose that \\(x+4=2\\) . Show that \\(x=-2\\) .",
+    "html": "<p>Let <span class=\"math notranslate nohighlight\">\\(x\\)</span> be an integer and suppose that <span class=\"math notranslate nohighlight\">\\(x+4=2\\)</span>.  Show that\n<span class=\"math notranslate nohighlight\">\\(x=-2\\)</span>.</p>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0110",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "p",
+    "text": "Since the goal in this problem is to show that \\(x=-2\\) , we already know that the solution will look something like this:",
+    "html": "<p>Since the goal in this problem is to show that <span class=\"math notranslate nohighlight\">\\(x=-2\\)</span>, we already know that\nthe solution will look something like this:</p>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0111",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "p",
+    "text": "Our only hypothesis has an \\(x+4\\) on the left-hand side, so we create an \\(x+4\\) in our goal by adding and subtracting \\(4\\) from \\(x\\) , like this: \\(x=(x+4)-4\\) . Then the rest of the proof works out easily.",
+    "html": "<p>Our only hypothesis has an <span class=\"math notranslate nohighlight\">\\(x+4\\)</span> on the left-hand side, so we create an\n<span class=\"math notranslate nohighlight\">\\(x+4\\)</span> in our goal by adding and subtracting <span class=\"math notranslate nohighlight\">\\(4\\)</span> from <span class=\"math notranslate nohighlight\">\\(x\\)</span>,\nlike this: <span class=\"math notranslate nohighlight\">\\(x=(x+4)-4\\)</span>.  Then the rest of the proof works out easily.</p>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0112",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "p",
+    "text": "Solution",
+    "html": "<p class=\"admonition-title\">Solution</p>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0113",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "p",
+    "text": "Sometimes we need to perform this process, of “creating” one side of a hypothesis inside the goal, more than once.",
+    "html": "<p>Sometimes we need to perform this process, of “creating” one side of a\nhypothesis inside the goal, more than once.</p>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0114",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "p",
+    "text": "Problem",
+    "html": "<p class=\"admonition-title\">Problem</p>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0115",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "p",
+    "text": "Let \\(a\\) and \\(b\\) be real numbers and suppose that \\(a-5b=4\\) and \\(b+2=3\\) . Show that \\(a=9\\) .",
+    "html": "<p>Let <span class=\"math notranslate nohighlight\">\\(a\\)</span> and <span class=\"math notranslate nohighlight\">\\(b\\)</span> be real numbers and suppose that <span class=\"math notranslate nohighlight\">\\(a-5b=4\\)</span>\nand <span class=\"math notranslate nohighlight\">\\(b+2=3\\)</span>.  Show that <span class=\"math notranslate nohighlight\">\\(a=9\\)</span>.</p>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0116",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "p",
+    "text": "In the first step of the solution we “create” an \\(a-5b\\) ; later in the third step we “create” a \\(b+2\\) .",
+    "html": "<p>In the first step of the solution we “create” an <span class=\"math notranslate nohighlight\">\\(a-5b\\)</span>; later in the third\nstep we “create” a <span class=\"math notranslate nohighlight\">\\(b+2\\)</span>.</p>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0117",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "p",
+    "text": "Solution",
+    "html": "<p class=\"admonition-title\">Solution</p>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0118",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "p",
+    "text": "We might need to use both addition/subtraction and multiplication/division to “create” one side of the hypothesis.",
+    "html": "<p>We might need to use both addition/subtraction and multiplication/division to\n“create” one side of the hypothesis.</p>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0119",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "p",
+    "text": "Problem",
+    "html": "<p class=\"admonition-title\">Problem</p>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0120",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "p",
+    "text": "Let \\(w\\) be a rational number and suppose that \\(3w+1=4\\) . Show that \\(w=1\\) .",
+    "html": "<p>Let <span class=\"math notranslate nohighlight\">\\(w\\)</span> be a rational number and suppose that <span class=\"math notranslate nohighlight\">\\(3w+1=4\\)</span>.\nShow that <span class=\"math notranslate nohighlight\">\\(w=1\\)</span>.</p>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0121",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "p",
+    "text": "Solution",
+    "html": "<p class=\"admonition-title\">Solution</p>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0122",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "p",
+    "text": "This technique also works for the classic, Algebra I-style equations. Consider the following problem:",
+    "html": "<p>This technique also works for the classic, Algebra I-style equations.\nConsider the following problem:</p>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0123",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "p",
+    "text": "Problem",
+    "html": "<p class=\"admonition-title\">Problem</p>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0124",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "p",
+    "text": "Let \\(x\\) be an integer and suppose that \\(2x + 3 = x\\) . Show that \\(x=-3\\) .",
+    "html": "<p>Let <span class=\"math notranslate nohighlight\">\\(x\\)</span> be an integer and suppose that <span class=\"math notranslate nohighlight\">\\(2x + 3 = x\\)</span>.\nShow that <span class=\"math notranslate nohighlight\">\\(x=-3\\)</span>.</p>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0125",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "p",
+    "text": "You might have been taught to solve this kind of equation by subtracting and rearranging, something like this:",
+    "html": "<p>You might have been taught to solve this kind of equation by subtracting and\nrearranging, something like this:</p>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0126",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "p",
+    "text": "But the solution can also be presented as a proof by calculation, by “creating” a \\(2x+3\\) .",
+    "html": "<p>But the solution can also be presented as a proof by calculation, by\n“creating” a <span class=\"math notranslate nohighlight\">\\(2x+3\\)</span>.</p>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0127",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "p",
+    "text": "Solution",
+    "html": "<p class=\"admonition-title\">Solution</p>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0128",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "p",
+    "text": "Likewise, you have probably seen before systems of simultaneous equations like the following:",
+    "html": "<p>Likewise, you have probably seen before systems of simultaneous equations like\nthe following:</p>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0129",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "p",
+    "text": "Problem",
+    "html": "<p class=\"admonition-title\">Problem</p>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0130",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "p",
+    "text": "Let \\(x\\) and \\(y\\) be integers and suppose that \\(2x-y=4\\) and \\(y-x+1=2\\) . Prove that \\(x=5\\) .",
+    "html": "<p>Let <span class=\"math notranslate nohighlight\">\\(x\\)</span> and <span class=\"math notranslate nohighlight\">\\(y\\)</span> be integers and suppose that <span class=\"math notranslate nohighlight\">\\(2x-y=4\\)</span>\nand <span class=\"math notranslate nohighlight\">\\(y-x+1=2\\)</span>.  Prove that <span class=\"math notranslate nohighlight\">\\(x=5\\)</span>.</p>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0131",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "p",
+    "text": "You might have been taught to solve systems like these by adding or subtracting equations to eliminate the variable not of interest, then solving the remaining one-variable equation.",
+    "html": "<p>You  might have been taught to solve systems like these by adding or subtracting\nequations to eliminate the variable not of interest, then solving the remaining\none-variable equation.</p>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0132",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "p",
+    "text": "But this argument can also be presented as a proof by calculation, which has the advantage that there is no magic “add (1) and (2)” line requiring an annotation for the reader to follow.",
+    "html": "<p>But this argument can also be presented as a proof by calculation, which has the\nadvantage that there is no magic “add (1) and (2)” line requiring an annotation\nfor the reader to follow.</p>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0133",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "p",
+    "text": "Solution",
+    "html": "<p class=\"admonition-title\">Solution</p>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0134",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "p",
+    "text": "Here is another example of a system of simultaneous equations solved by forming a clever combination of the hypotheses.",
+    "html": "<p>Here is another example of a system of simultaneous equations solved by forming\na clever combination of the hypotheses.</p>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0135",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "p",
+    "text": "Problem",
+    "html": "<p class=\"admonition-title\">Problem</p>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0136",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "p",
+    "text": "Let \\(u\\) and \\(v\\) be rational numbers, and suppose that \\(u+2v=4\\) and \\(u-2v=6\\) . Show that \\(u=5\\) .",
+    "html": "<p>Let <span class=\"math notranslate nohighlight\">\\(u\\)</span> and <span class=\"math notranslate nohighlight\">\\(v\\)</span> be rational numbers, and suppose that\n<span class=\"math notranslate nohighlight\">\\(u+2v=4\\)</span> and <span class=\"math notranslate nohighlight\">\\(u-2v=6\\)</span>. Show that <span class=\"math notranslate nohighlight\">\\(u=5\\)</span>.</p>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0137",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "p",
+    "text": "Solution",
+    "html": "<p class=\"admonition-title\">Solution</p>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0138",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "p",
+    "text": "And another – in this case we have to combine the tricks of the last two examples, taking varying multiples of the hypotheses to cancel the \\(y\\) and then dividing through by the multiple of \\(x\\) that is left.",
+    "html": "<p>And another – in this case we have to combine the tricks of the last two examples, taking varying\nmultiples of the hypotheses to cancel the <span class=\"math notranslate nohighlight\">\\(y\\)</span> and then dividing through by the multiple of\n<span class=\"math notranslate nohighlight\">\\(x\\)</span> that is left.</p>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0139",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "p",
+    "text": "Problem",
+    "html": "<p class=\"admonition-title\">Problem</p>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0140",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "p",
+    "text": "Let \\(x\\) and \\(y\\) be real numbers, and suppose that \\(x + y = 4\\) and \\(5x-3y=4\\) . Show that \\(x=2\\) .",
+    "html": "<p>Let <span class=\"math notranslate nohighlight\">\\(x\\)</span> and <span class=\"math notranslate nohighlight\">\\(y\\)</span> be real numbers, and suppose that\n<span class=\"math notranslate nohighlight\">\\(x + y = 4\\)</span> and <span class=\"math notranslate nohighlight\">\\(5x-3y=4\\)</span>. Show that <span class=\"math notranslate nohighlight\">\\(x=2\\)</span>.</p>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0141",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "p",
+    "text": "Solution",
+    "html": "<p class=\"admonition-title\">Solution</p>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0142",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "p",
+    "text": "Finally, let’s do a few examples involving equations of degree greater than one.",
+    "html": "<p>Finally, let’s do a few examples involving equations of degree greater than one.</p>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0143",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "p",
+    "text": "Problem",
+    "html": "<p class=\"admonition-title\">Problem</p>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0144",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "p",
+    "text": "Let \\(a\\) and \\(b\\) be rational numbers and suppose that \\(a-3=2b\\) . Show that \\(a ^ 2 - a + 3 = 4 b ^ 2 + 10 b + 9\\) .",
+    "html": "<p>Let <span class=\"math notranslate nohighlight\">\\(a\\)</span> and <span class=\"math notranslate nohighlight\">\\(b\\)</span> be rational numbers and suppose that\n<span class=\"math notranslate nohighlight\">\\(a-3=2b\\)</span>. Show that <span class=\"math notranslate nohighlight\">\\(a ^ 2 - a + 3 = 4 b ^ 2 + 10  b + 9\\)</span>.</p>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0145",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "p",
+    "text": "Solution",
+    "html": "<p class=\"admonition-title\">Solution</p>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0146",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "p",
+    "text": "The proof above has a few more steps than necessary, to explain how you might come up with this proof: first you deal with the \\(a^2\\) term by introducing an \\((a-3)^2\\) and adding/subtracting off the extra terms; then simplify; then deal with the \\(a\\) term; then simplify; then substitute and simplify again. It could be shortened to a proof in which successive purely-algebra steps are combined, leaving something as short as possible: one step consisting of a big algebraic calculation, one substitution step, then one more algebra step.",
+    "html": "<p>The proof above has a few more steps than necessary, to explain how you might come up\nwith this proof:  first you deal with the <span class=\"math notranslate nohighlight\">\\(a^2\\)</span> term by introducing an\n<span class=\"math notranslate nohighlight\">\\((a-3)^2\\)</span> and adding/subtracting off the extra terms; then simplify; then\ndeal with the <span class=\"math notranslate nohighlight\">\\(a\\)</span> term; then simplify; then substitute and simplify again.\nIt could be shortened to a proof in which successive purely-algebra steps are\ncombined, leaving something as short as possible: one step consisting of a\nbig algebraic calculation, one substitution step, then one more algebra step.</p>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0147",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "p",
+    "text": "Solution",
+    "html": "<p class=\"admonition-title\">Solution</p>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0148",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "p",
+    "text": "Here’s another example with terms of degree greater than one.",
+    "html": "<p>Here’s another example with terms of degree greater than one.</p>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0149",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "p",
+    "text": "Problem",
+    "html": "<p class=\"admonition-title\">Problem</p>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0150",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "p",
+    "text": "Let \\(z\\) be a real number and suppose that \\(z^2-2=0\\) . Show that \\(z ^ 4 - z ^ 3 - z ^ 2 + 2 z + 1=3\\) .",
+    "html": "<p>Let <span class=\"math notranslate nohighlight\">\\(z\\)</span> be a real number and suppose that <span class=\"math notranslate nohighlight\">\\(z^2-2=0\\)</span>.\nShow that <span class=\"math notranslate nohighlight\">\\(z ^ 4 - z ^ 3 - z ^ 2 + 2 z + 1=3\\)</span>.</p>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0151",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "p",
+    "text": "Solution",
+    "html": "<p class=\"admonition-title\">Solution</p>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0152",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "p",
+    "text": "That seems almost too slick, right? In my scratch work, I came up with this solution using the method of polynomial long division , which you may have been taught before: when \\(z ^ 4 - z ^ 3 - z ^ 2 + 2 z + 1\\) is divided by \\(z^2-2\\) it gives a quotient of \\(z ^ 2 - z + 1\\) and remainder of \\(3\\) . But in the proof, it doesn’t matter what method was used to discover the fact that",
+    "html": "<p>That seems almost too slick, right?  In my scratch work, I came up with this solution\nusing the method of <a class=\"reference external\" href=\"https://en.wikipedia.org/wiki/Polynomial_long_division\">polynomial long division</a>,\nwhich you may have been taught before:\nwhen <span class=\"math notranslate nohighlight\">\\(z ^ 4 - z ^ 3 - z ^ 2 + 2 z + 1\\)</span> is divided by <span class=\"math notranslate nohighlight\">\\(z^2-2\\)</span> it gives a quotient of\n<span class=\"math notranslate nohighlight\">\\(z ^ 2 - z + 1\\)</span> and remainder of <span class=\"math notranslate nohighlight\">\\(3\\)</span>.\nBut in the proof, it doesn’t matter what method was used to discover the fact that</p>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0153",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "p",
+    "text": "This is a purely algebraic identity which can be easily checked by expanding and simplifying, so you can state the result without writing out the method.",
+    "html": "<p>This is a purely algebraic identity which can be easily checked by expanding\nand simplifying, so you can state the result without writing out the method.</p>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0154",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "p",
+    "text": "Give proofs by calculation for each of the following problems.",
+    "html": "<p>Give proofs by calculation for each of the following problems.</p>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0155",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "p",
+    "text": "Proofs by calculation are also well-suited to proving inequalities: that is, facts featuring an \\(<\\) , \\(\\le\\) , \\(>\\) or \\(\\ge\\) . Consider the following worked example:",
+    "html": "<p>Proofs by calculation are also well-suited to proving inequalities: that is, facts featuring an\n<span class=\"math notranslate nohighlight\">\\(&lt;\\)</span>, <span class=\"math notranslate nohighlight\">\\(\\le\\)</span>, <span class=\"math notranslate nohighlight\">\\(&gt;\\)</span> or <span class=\"math notranslate nohighlight\">\\(\\ge\\)</span>.  Consider the following worked example:</p>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0156",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "p",
+    "text": "Problem",
+    "html": "<p class=\"admonition-title\">Problem</p>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0157",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "p",
+    "text": "Let \\(x\\) and \\(y\\) be integers, and suppose that \\(x + 3 \\le 2\\) and \\(y + 2x\\geq 3\\) . Show that \\(y>3\\) .",
+    "html": "<p>Let <span class=\"math notranslate nohighlight\">\\(x\\)</span> and <span class=\"math notranslate nohighlight\">\\(y\\)</span> be integers, and suppose that\n<span class=\"math notranslate nohighlight\">\\(x + 3 \\le 2\\)</span> and <span class=\"math notranslate nohighlight\">\\(y + 2x\\geq 3\\)</span>.  Show that <span class=\"math notranslate nohighlight\">\\(y&gt;3\\)</span>.</p>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0158",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "p",
+    "text": "Solution",
+    "html": "<p class=\"admonition-title\">Solution</p>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0159",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "p",
+    "text": "The goal was to show that \\(y>3\\) , and we established this by writing down a chain of inequalities, which starts with the expression \\(y\\) (top left) and ends with \\(3\\) (bottom right). The proof, implicitly, has five steps:",
+    "html": "<p>The goal was to show that <span class=\"math notranslate nohighlight\">\\(y&gt;3\\)</span>,\nand we established this by writing down a chain of inequalities,\nwhich starts with the expression <span class=\"math notranslate nohighlight\">\\(y\\)</span> (top left) and ends with\n<span class=\"math notranslate nohighlight\">\\(3\\)</span> (bottom right).  The proof, implicitly, has five steps:</p>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0160",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "p",
+    "text": "1. \\(\\underline{\\text{Proof that }y=(y+2x)-2x}\\) : algebraic rearrangement.",
+    "html": "<p>1.\n<span class=\"math notranslate nohighlight\">\\(\\underline{\\text{Proof that }y=(y+2x)-2x}\\)</span>: algebraic rearrangement.</p>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0161",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "p",
+    "text": "2. \\(\\underline{\\text{Proof that }(y+2x)-2x\\geq 3-2x}\\) : this uses the given fact that \\(y + 2x\\geq 3\\) together with the general rule that an inequality is preserved under subtraction ( \\(A\\geq B\\) implies \\(A-C\\geq B-C\\) ).",
+    "html": "<p>2.\n<span class=\"math notranslate nohighlight\">\\(\\underline{\\text{Proof that }(y+2x)-2x\\geq 3-2x}\\)</span>: this uses the given fact that\n<span class=\"math notranslate nohighlight\">\\(y + 2x\\geq 3\\)</span> together with the general rule that an inequality is preserved under\nsubtraction (<span class=\"math notranslate nohighlight\">\\(A\\geq B\\)</span> implies <span class=\"math notranslate nohighlight\">\\(A-C\\geq B-C\\)</span>).</p>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0162",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "p",
+    "text": "3. \\(\\underline{\\text{Proof that }3-2x=9-2(x+3)}\\) : algebraic rearrangement",
+    "html": "<p>3.\n<span class=\"math notranslate nohighlight\">\\(\\underline{\\text{Proof that }3-2x=9-2(x+3)}\\)</span>: algebraic rearrangement</p>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0163",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "p",
+    "text": "4. \\(\\underline{\\text{Proof that }9-2(x+3)\\geq 9-2\\cdot 2}\\) : this uses the given fact that \\(x + 3 \\le 2\\) together with the general rules that an inequality is preserved under multiplication by a positive number (if \\(C\\geq 0\\) then \\(A\\geq B\\) implies \\(CA\\geq CB\\) ) and that an inequality is reversed when it is subtracted ( \\(A\\geq B\\) implies \\(C-B\\geq C-A\\) ).",
+    "html": "<p>4.\n<span class=\"math notranslate nohighlight\">\\(\\underline{\\text{Proof that }9-2(x+3)\\geq 9-2\\cdot 2}\\)</span>: this uses the given fact that\n<span class=\"math notranslate nohighlight\">\\(x + 3 \\le 2\\)</span> together with the general rules that an inequality is preserved under\nmultiplication by a positive number (if <span class=\"math notranslate nohighlight\">\\(C\\geq 0\\)</span> then <span class=\"math notranslate nohighlight\">\\(A\\geq B\\)</span> implies\n<span class=\"math notranslate nohighlight\">\\(CA\\geq CB\\)</span>) and that an inequality is reversed when it is subtracted (<span class=\"math notranslate nohighlight\">\\(A\\geq B\\)</span> implies\n<span class=\"math notranslate nohighlight\">\\(C-B\\geq C-A\\)</span>).</p>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0164",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "p",
+    "text": "5. \\(\\underline{\\text{Proof that }9-2\\cdot 2>3}\\) : this is a numeric fact which can be proved by direct calculation and comparison.",
+    "html": "<p>5.\n<span class=\"math notranslate nohighlight\">\\(\\underline{\\text{Proof that }9-2\\cdot 2&gt;3}\\)</span>: this is a numeric fact which can be proved by\ndirect calculation and comparison.</p>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0165",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "p",
+    "text": "Think carefully about steps 2 and 4. They look very similar to the steps which, in proofs-by-calculation of equalities, we have called “substitution steps” (in Lean, rw ). For example,",
+    "html": "<p>Think carefully about steps 2 and 4.  They look very similar to the steps which, in\nproofs-by-calculation of equalities, we have called “substitution steps” (in Lean, <code class=\"docutils literal notranslate\"><span class=\"pre\">rw</span></code>).  For\nexample,</p>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0166",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "p",
+    "text": "But they are not just straight substitutions; instead they are using all the rules mentioned about the preservation or reversal of inequalities under subtraction, multiplication, etc. There will be some situations when there is no relevant rule. For example, from \\(x \\le y\\) you can in general conclude neither that \\(\\sin x \\le \\sin y\\) nor that \\(\\sin x \\ge \\sin y\\) .",
+    "html": "<p>But they are not just straight substitutions; instead they are\nusing all the rules mentioned about  the preservation or reversal of inequalities under\nsubtraction, multiplication, etc.  There will be some situations when there is no relevant rule.\nFor example, from <span class=\"math notranslate nohighlight\">\\(x \\le y\\)</span> you can in general conclude neither that\n<span class=\"math notranslate nohighlight\">\\(\\sin x \\le \\sin y\\)</span> nor that <span class=\"math notranslate nohighlight\">\\(\\sin x \\ge \\sin y\\)</span>.</p>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0167",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "p",
+    "text": "Also look closely at the relation indicated in each step. The first step features an \\(=\\) , the second a \\(\\geq\\) , the third a \\(=\\) , the fourth a \\(\\geq\\) , and the last a \\(>\\) . In each case this reflects the particular reasoning used to establish that step. The final result is a \\(>\\) , since \\(>\\) takes precedence, so to speak, over \\(\\geq\\) and \\(=\\) (and furthermore \\(\\geq\\) takes precedence over \\(=\\) ). That is, if you know that \\(A\\geq B\\) and \\(B>C\\) , then they combine transitively to a \\(>\\) relation: \\(A>C\\) .",
+    "html": "<p>Also look closely at the <em>relation</em> indicated in each step. The first step features an <span class=\"math notranslate nohighlight\">\\(=\\)</span>,\nthe second a <span class=\"math notranslate nohighlight\">\\(\\geq\\)</span>, the third a <span class=\"math notranslate nohighlight\">\\(=\\)</span>, the fourth a <span class=\"math notranslate nohighlight\">\\(\\geq\\)</span>, and the last a\n<span class=\"math notranslate nohighlight\">\\(&gt;\\)</span>.  In each case this reflects the particular reasoning used to establish that step.  The\nfinal result is a <span class=\"math notranslate nohighlight\">\\(&gt;\\)</span>, since <span class=\"math notranslate nohighlight\">\\(&gt;\\)</span> takes precedence, so to speak, over <span class=\"math notranslate nohighlight\">\\(\\geq\\)</span> and\n<span class=\"math notranslate nohighlight\">\\(=\\)</span> (and furthermore <span class=\"math notranslate nohighlight\">\\(\\geq\\)</span> takes precedence over <span class=\"math notranslate nohighlight\">\\(=\\)</span>).  That is, if you know\nthat <span class=\"math notranslate nohighlight\">\\(A\\geq B\\)</span> and <span class=\"math notranslate nohighlight\">\\(B&gt;C\\)</span>, then they combine transitively to a <span class=\"math notranslate nohighlight\">\\(&gt;\\)</span> relation:\n<span class=\"math notranslate nohighlight\">\\(A&gt;C\\)</span>.</p>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0168",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "p",
+    "text": "Let’s now solve the same problem in Lean.",
+    "html": "<p>Let’s now solve the same problem in Lean.</p>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0169",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "p",
+    "text": "Here’s another worked example of a proof by calculation of an inequality.",
+    "html": "<p>Here’s another worked example of a proof by calculation of an inequality.</p>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0170",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "p",
+    "text": "Problem",
+    "html": "<p class=\"admonition-title\">Problem</p>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0171",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "p",
+    "text": "Let \\(r\\) and \\(s\\) be rational numbers, and suppose that \\(s+3\\geq r\\) and \\(s+r \\leq 3\\) . Show that \\(r\\leq 3\\) .",
+    "html": "<p>Let <span class=\"math notranslate nohighlight\">\\(r\\)</span> and <span class=\"math notranslate nohighlight\">\\(s\\)</span> be rational numbers, and suppose that\n<span class=\"math notranslate nohighlight\">\\(s+3\\geq r\\)</span> and <span class=\"math notranslate nohighlight\">\\(s+r \\leq 3\\)</span>.  Show that <span class=\"math notranslate nohighlight\">\\(r\\leq 3\\)</span>.</p>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0172",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "p",
+    "text": "Solution",
+    "html": "<p class=\"admonition-title\">Solution</p>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0173",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "p",
+    "text": "The goal was to show that \\(r\\leq 3\\) , and the proof, implicitly, has three steps:",
+    "html": "<p>The goal was to show that <span class=\"math notranslate nohighlight\">\\(r\\leq 3\\)</span>, and the proof, implicitly, has three steps:</p>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0174",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "p",
+    "text": "1. \\(\\underline{\\text{Proof that }r=\\frac{(s+r)+r-s}{2}}\\) : algebraic rearrangement.",
+    "html": "<p>1.\n<span class=\"math notranslate nohighlight\">\\(\\underline{\\text{Proof that }r=\\frac{(s+r)+r-s}{2}}\\)</span>: algebraic rearrangement.</p>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0175",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "p",
+    "text": "2. \\(\\underline{\\text{Proof that }\\frac{(s+r)+r-s}{2}\\leq \\frac{3+(s+3)-s}{2}}\\) : we are “substituting” the given facts \\(s+3\\geq r\\) and \\(s+r \\leq 3\\) , using rules about the preservation of inequalities under addition, and under division by positive numbers (and also, implicitly, the fact that 2 is positive).",
+    "html": "<p>2.\n<span class=\"math notranslate nohighlight\">\\(\\underline{\\text{Proof that }\\frac{(s+r)+r-s}{2}\\leq \\frac{3+(s+3)-s}{2}}\\)</span>: we are\n“substituting” the given facts <span class=\"math notranslate nohighlight\">\\(s+3\\geq r\\)</span> and <span class=\"math notranslate nohighlight\">\\(s+r \\leq 3\\)</span>, using rules about the\npreservation of inequalities under addition, and under division by positive numbers (and also,\nimplicitly, the fact that 2 is positive).</p>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0176",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "p",
+    "text": "3. \\(\\underline{\\text{Proof that }\\frac{3+(s+3)-s}{2}=3}\\) : algebraic rearrangement.",
+    "html": "<p>3.\n<span class=\"math notranslate nohighlight\">\\(\\underline{\\text{Proof that }\\frac{3+(s+3)-s}{2}=3}\\)</span>: algebraic rearrangement.</p>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0177",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "p",
+    "text": "This time the first step features the relation \\(=\\) , the second a \\(\\leq\\) , and the third a \\(=\\) , and the “net result” is the relation \\(\\leq\\) .",
+    "html": "<p>This time the first step features the relation <span class=\"math notranslate nohighlight\">\\(=\\)</span>, the second a <span class=\"math notranslate nohighlight\">\\(\\leq\\)</span>, and the third\na <span class=\"math notranslate nohighlight\">\\(=\\)</span>, and the “net result” is the relation <span class=\"math notranslate nohighlight\">\\(\\leq\\)</span>.</p>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0178",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "p",
+    "text": "Exercise: Fill in the sorries in the following Lean solution to this problem.",
+    "html": "<p>Exercise: Fill in the sorries in the following Lean solution to this problem.</p>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0179",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "p",
+    "text": "One more similar problem:",
+    "html": "<p id=\"id38\">One more similar problem:</p>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0180",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "p",
+    "text": "Problem",
+    "html": "<p class=\"admonition-title\">Problem</p>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0181",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "p",
+    "text": "Let \\(x\\) and \\(y\\) be real numbers and suppose that \\(y\\leq x+5\\) and \\(x\\leq -2\\) . Show that \\(x+y<2\\) .",
+    "html": "<p>Let <span class=\"math notranslate nohighlight\">\\(x\\)</span> and <span class=\"math notranslate nohighlight\">\\(y\\)</span> be real numbers and suppose that\n<span class=\"math notranslate nohighlight\">\\(y\\leq x+5\\)</span> and <span class=\"math notranslate nohighlight\">\\(x\\leq -2\\)</span>. Show that <span class=\"math notranslate nohighlight\">\\(x+y&lt;2\\)</span>.</p>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0182",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "p",
+    "text": "Solution",
+    "html": "<p class=\"admonition-title\">Solution</p>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0183",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "p",
+    "text": "Exercise: Express the solution to this problem in Lean.",
+    "html": "<p>Exercise: Express the solution to this problem in Lean.</p>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0184",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "p",
+    "text": "In the following problem, note the use of shorthands such as \\(0<A\\leq 1\\) and \\(x,y\\leq B\\) to express several related inequalities concisely. You can look at the Lean statement which follows to see what these shorthands mean more explicitly.",
+    "html": "<p>In the following problem, note the use of shorthands such as <span class=\"math notranslate nohighlight\">\\(0&lt;A\\leq 1\\)</span>\nand <span class=\"math notranslate nohighlight\">\\(x,y\\leq B\\)</span> to express several related inequalities concisely.\nYou can look at the Lean statement which follows to see what these shorthands\nmean more explicitly.</p>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0185",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "p",
+    "text": "Problem",
+    "html": "<p class=\"admonition-title\">Problem</p>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0186",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "p",
+    "text": "Let \\(u, v, x, y, A\\) and \\(B\\) be real numbers. Suppose we know that \\(0<A\\leq 1, B\\geq 1, x,y\\leq B, 0\\leq u<A\\) and \\(0\\leq v<A\\) . Show that \\(uy+vx+uv<3AB\\) .",
+    "html": "<p>Let <span class=\"math notranslate nohighlight\">\\(u, v, x, y, A\\)</span> and <span class=\"math notranslate nohighlight\">\\(B\\)</span> be real numbers.\nSuppose we know that <span class=\"math notranslate nohighlight\">\\(0&lt;A\\leq 1, B\\geq 1, x,y\\leq B, 0\\leq u&lt;A\\)</span>\nand <span class=\"math notranslate nohighlight\">\\(0\\leq v&lt;A\\)</span>. Show that <span class=\"math notranslate nohighlight\">\\(uy+vx+uv&lt;3AB\\)</span>.</p>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0187",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "p",
+    "text": "Solution",
+    "html": "<p class=\"admonition-title\">Solution</p>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0188",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "p",
+    "text": "In this calculation, the rules for preservation of inequalities under multiplication are used repeatedly. For example, in the first step, \\(uy+vx+uv\\leq uB+vB+uv\\) , the given facts that \\(x\\leq B\\) and \\(y\\leq B\\) are used, together with the rule that inequalities \\(≤\\) are preserved under multiplication with a nonnegative constant (here that constant is \\(u\\) ). In the second step, \\(uB+vB+uv\\leq AB+AB+Av\\) , the given facts \\(u< A\\) and \\(v< A\\) are multiplied by nonnegative constants \\(B\\) and \\(v\\) .",
+    "html": "<p>In this calculation, the rules for preservation of inequalities under multiplication are used\nrepeatedly. For example, in the first step, <span class=\"math notranslate nohighlight\">\\(uy+vx+uv\\leq uB+vB+uv\\)</span>, the given facts that\n<span class=\"math notranslate nohighlight\">\\(x\\leq B\\)</span> and <span class=\"math notranslate nohighlight\">\\(y\\leq B\\)</span> are used, together with the rule that inequalities <span class=\"math notranslate nohighlight\">\\(≤\\)</span>\nare preserved under multiplication with a nonnegative constant (here that constant is <span class=\"math notranslate nohighlight\">\\(u\\)</span>).\nIn the second step, <span class=\"math notranslate nohighlight\">\\(uB+vB+uv\\leq AB+AB+Av\\)</span>, the given facts\n<span class=\"math notranslate nohighlight\">\\(u&lt; A\\)</span> and <span class=\"math notranslate nohighlight\">\\(v&lt; A\\)</span> are multiplied by nonnegative constants <span class=\"math notranslate nohighlight\">\\(B\\)</span> and <span class=\"math notranslate nohighlight\">\\(v\\)</span>.</p>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0189",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "p",
+    "text": "Importantly, it is generally acceptable to omit a formal proof of the nonnegativity of the constants which you are multiplying by, if that proof is “obvious”. For example, in this case the nonnegativity of \\(B\\) comes from the given hypothesis that \\(B\\geq 1\\) . The Lean tactic rel is also set up to infer these “obvious” proofs of positivity and nonnegativity.",
+    "html": "<p>Importantly, it is generally acceptable to omit a formal proof of the nonnegativity of the\nconstants which you are multiplying by, if that proof is “obvious”.  For example, in this case the\nnonnegativity of <span class=\"math notranslate nohighlight\">\\(B\\)</span> comes from the given hypothesis that <span class=\"math notranslate nohighlight\">\\(B\\geq 1\\)</span>.  The Lean tactic\n<code class=\"docutils literal notranslate\"><span class=\"pre\">rel</span></code> is also set up to infer these “obvious” proofs of positivity and nonnegativity.</p>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0190",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "p",
+    "text": "Exercise: Fill in the sorries in the following Lean solution to this problem. You will need to determine which of the nine hypotheses is being used at each step.",
+    "html": "<p>Exercise: Fill in the sorries in the following Lean solution to this problem.  You will need to\ndetermine which of the nine hypotheses is being used at each step.</p>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0191",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "p",
+    "text": "Here is an example with a small subtlety.",
+    "html": "<p>Here is an example with a small subtlety.</p>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0192",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "p",
+    "text": "Problem",
+    "html": "<p class=\"admonition-title\">Problem</p>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0193",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "p",
+    "text": "Show that if \\(t\\) is a real number and \\(t\\geq 10\\) then \\(t^2-3t+17\\geq 5\\) .",
+    "html": "<p>Show that if <span class=\"math notranslate nohighlight\">\\(t\\)</span> is a real number and <span class=\"math notranslate nohighlight\">\\(t\\geq 10\\)</span> then\n<span class=\"math notranslate nohighlight\">\\(t^2-3t+17\\geq 5\\)</span>.</p>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0194",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "p",
+    "text": "On seeing the hypothesis \\(t\\geq 10\\) , you might be tempted to “substitute” it directly into the expression \\(t^2-3t+17\\) .",
+    "html": "<p>On seeing the hypothesis <span class=\"math notranslate nohighlight\">\\(t\\geq 10\\)</span>, you might be tempted to “substitute” it directly into\nthe expression <span class=\"math notranslate nohighlight\">\\(t^2-3t+17\\)</span>.</p>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0195",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "p",
+    "text": "This isn’t a valid solution! From \\(t\\geq 10\\) we can deduce \\(t^2\\geq 10^2\\) (there is a general rule that squaring preserves an inequality of nonnegative numbers), and that \\(3t\\geq 3\\cdot 10\\) (by multiplying the inequality by a nonnegative constant). But the second inequality would be reversed under negation, \\(-3t\\leq -3\\cdot 10\\) , so we are not able to make a determination about the relative sizes of \\(t^2-3t+17\\) and \\(10^2-3\\cdot 10+17\\) .",
+    "html": "<p>This isn’t a valid solution!  From <span class=\"math notranslate nohighlight\">\\(t\\geq 10\\)</span> we can deduce <span class=\"math notranslate nohighlight\">\\(t^2\\geq 10^2\\)</span> (there is a\ngeneral rule that squaring preserves an inequality of nonnegative numbers), and that\n<span class=\"math notranslate nohighlight\">\\(3t\\geq 3\\cdot 10\\)</span> (by multiplying the inequality by a nonnegative constant).  But the second\ninequality would be reversed under negation, <span class=\"math notranslate nohighlight\">\\(-3t\\leq -3\\cdot 10\\)</span>, so we are not able to make\na determination about the relative sizes of <span class=\"math notranslate nohighlight\">\\(t^2-3t+17\\)</span> and <span class=\"math notranslate nohighlight\">\\(10^2-3\\cdot 10+17\\)</span>.</p>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0196",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "p",
+    "text": "Here is a valid solution to this problem. Instead of dropping down immediately from \\(t^2\\) to \\(10^2\\) , we go down “halfway”, to \\(10t\\) . This can then counteract the \\(-3t\\) term, combining with it to give \\(7t\\) , which has a positive rather than negative coefficient, allowing for a valid further substitution of the given fact \\(t\\geq 10\\) .",
+    "html": "<p>Here is a valid solution to this problem.  Instead of dropping down immediately from <span class=\"math notranslate nohighlight\">\\(t^2\\)</span> to\n<span class=\"math notranslate nohighlight\">\\(10^2\\)</span>, we go down “halfway”, to <span class=\"math notranslate nohighlight\">\\(10t\\)</span>. This can then counteract the <span class=\"math notranslate nohighlight\">\\(-3t\\)</span> term,\ncombining with it to give <span class=\"math notranslate nohighlight\">\\(7t\\)</span>, which has a positive rather than negative coefficient,\nallowing for a valid further substitution of the given fact <span class=\"math notranslate nohighlight\">\\(t\\geq 10\\)</span>.</p>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0197",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "p",
+    "text": "Solution",
+    "html": "<p class=\"admonition-title\">Solution</p>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0198",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "p",
+    "text": "Exercise: Fill in the sorries in the following Lean solution to this problem. Also try writing out the incorrect solution in Lean, and check that Lean complains.",
+    "html": "<p>Exercise: Fill in the sorries in the following Lean solution to this problem.  Also try writing out\nthe incorrect solution in Lean, and check that Lean complains.</p>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0199",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "p",
+    "text": "Here’s another problem where it would be easy to go wrong.",
+    "html": "<p>Here’s another problem where it would be easy to go wrong.</p>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0200",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "p",
+    "text": "Problem",
+    "html": "<p class=\"admonition-title\">Problem</p>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0201",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "p",
+    "text": "Let \\(n\\geq 5\\) be an integer. Show that \\(n ^ 2 > 2n + 11\\) .",
+    "html": "<p>Let <span class=\"math notranslate nohighlight\">\\(n\\geq 5\\)</span> be an integer.  Show that <span class=\"math notranslate nohighlight\">\\(n ^ 2 &gt; 2n + 11\\)</span>.</p>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0202",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "p",
+    "text": "Note that “let \\(n\\geq 5\\) be an integer” (as used in the problem above) is a common shorthand for “let \\(n\\) be an integer and suppose \\(n\\geq 5\\) .”",
+    "html": "<p>Note that “let <span class=\"math notranslate nohighlight\">\\(n\\geq 5\\)</span> be an integer” (as used in the problem above)\nis a common shorthand for “let <span class=\"math notranslate nohighlight\">\\(n\\)</span> be an integer and suppose <span class=\"math notranslate nohighlight\">\\(n\\geq 5\\)</span>.”</p>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0203",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "p",
+    "text": "Here’s an incorrect “solution” to this problem by “substitution”:",
+    "html": "<p>Here’s an incorrect “solution” to this problem by “substitution”:</p>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0204",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "p",
+    "text": "What’s wrong? Each individual deduction is valid:",
+    "html": "<p>What’s wrong?  Each individual deduction is valid:</p>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0205",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "p",
+    "text": "but the sequence of signs \\(\\geq\\) , \\(>\\) , \\(\\leq\\) cannot be combined transitively. (If \\(A>B\\) and \\(B\\leq C\\) , we can draw no conclusion about the relative sizes of \\(A\\) and \\(C\\) .)",
+    "html": "<p>but the sequence of signs <span class=\"math notranslate nohighlight\">\\(\\geq\\)</span>, <span class=\"math notranslate nohighlight\">\\(&gt;\\)</span>, <span class=\"math notranslate nohighlight\">\\(\\leq\\)</span> cannot be combined transitively.\n(If <span class=\"math notranslate nohighlight\">\\(A&gt;B\\)</span> and <span class=\"math notranslate nohighlight\">\\(B\\leq C\\)</span>, we can draw no conclusion about the relative sizes of\n<span class=\"math notranslate nohighlight\">\\(A\\)</span> and <span class=\"math notranslate nohighlight\">\\(C\\)</span>.)</p>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0206",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "p",
+    "text": "Here is a correct solution to the problem. Again the trick is to be more delicate at the first step, dropping down initially from \\(n^2\\) only to \\(5n\\) , rather than to \\(5^2\\) .",
+    "html": "<p>Here is a correct solution to the problem.  Again the trick is to be more delicate at the first\nstep, dropping down initially from <span class=\"math notranslate nohighlight\">\\(n^2\\)</span> only to <span class=\"math notranslate nohighlight\">\\(5n\\)</span>, rather than to <span class=\"math notranslate nohighlight\">\\(5^2\\)</span>.</p>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0207",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "p",
+    "text": "Solution",
+    "html": "<p class=\"admonition-title\">Solution</p>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0208",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "p",
+    "text": "Exercise: Express the solution to this problem in Lean. Also try writing out the incorrect solution in Lean, and check that Lean complains.",
+    "html": "<p>Exercise: Express the solution to this problem in Lean.  Also try writing out\nthe incorrect solution in Lean, and check that Lean complains.</p>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0209",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "p",
+    "text": "In fact, while writing up the correct solution, you probably had difficulty justifying the last step. Come back to that step after you have studied the next example.",
+    "html": "<p>In fact, while writing up the correct solution, you probably had difficulty justifying the last\nstep.  Come back to that step after you have studied the next example.</p>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0210",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "p",
+    "text": "The next example features a new trick.",
+    "html": "<p>The next example features a new trick.</p>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0211",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "p",
+    "text": "Problem",
+    "html": "<p class=\"admonition-title\">Problem</p>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0212",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "p",
+    "text": "Let \\(m\\) and \\(n\\) be integers, and suppose that \\(m ^ 2 + n \\le 2\\) . Show that \\(n \\le 2\\) .",
+    "html": "<p>Let <span class=\"math notranslate nohighlight\">\\(m\\)</span> and <span class=\"math notranslate nohighlight\">\\(n\\)</span> be integers, and suppose that <span class=\"math notranslate nohighlight\">\\(m ^ 2 + n \\le 2\\)</span>.\nShow that <span class=\"math notranslate nohighlight\">\\(n \\le 2\\)</span>.</p>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0213",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "p",
+    "text": "We solve this problem by seeing that squares are positive, so \\(n\\) must be smaller than \\(m ^ 2 + n\\) . (Pedantically, “smaller than or equal to”.) So since we have an upper bound, 2, for \\(m ^ 2 + n\\) , this upper bound must also apply to the smaller number, \\(n\\) .",
+    "html": "<p>We solve this problem by seeing that squares are positive, so <span class=\"math notranslate nohighlight\">\\(n\\)</span> must be smaller than\n<span class=\"math notranslate nohighlight\">\\(m ^ 2 + n\\)</span>. (Pedantically, “smaller than or equal to”.)   So since we have an upper bound, 2,\nfor <span class=\"math notranslate nohighlight\">\\(m ^ 2 + n\\)</span>, this upper bound must also apply to the smaller number, <span class=\"math notranslate nohighlight\">\\(n\\)</span>.</p>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0214",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "p",
+    "text": "Solution",
+    "html": "<p class=\"admonition-title\">Solution</p>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0215",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "p",
+    "text": "Lean knows that squares are positive and can deal with this kind of argument silently.",
+    "html": "<p>Lean knows that squares are positive and can deal with this kind of argument silently.</p>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0216",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "p",
+    "text": "Exploiting that squares are nonnegative is a very common method for proving inequalities. Here’s another example, where it requires some cleverness to come up with just the right square to add: \\((x-y)^2\\) .",
+    "html": "<p>Exploiting that squares are nonnegative is a very common method for proving inequalities.  Here’s\nanother example, where it requires some cleverness to come up with just the right square to add:\n<span class=\"math notranslate nohighlight\">\\((x-y)^2\\)</span>.</p>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0217",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "p",
+    "text": "Problem",
+    "html": "<p class=\"admonition-title\">Problem</p>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0218",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "p",
+    "text": "Let \\(x\\) and \\(y\\) be real numbers, and suppose that \\(x ^ 2 + y ^ 2 \\le 1\\) . Show that \\((x + y) ^ 2 < 3\\) .",
+    "html": "<p>Let <span class=\"math notranslate nohighlight\">\\(x\\)</span> and <span class=\"math notranslate nohighlight\">\\(y\\)</span> be real numbers, and suppose that <span class=\"math notranslate nohighlight\">\\(x ^ 2 + y ^ 2 \\le 1\\)</span>.\nShow that <span class=\"math notranslate nohighlight\">\\((x + y) ^ 2 &lt; 3\\)</span>.</p>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0219",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "p",
+    "text": "Solution",
+    "html": "<p class=\"admonition-title\">Solution</p>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0220",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "p",
+    "text": "Exercise: Fill in the sorries in the following Lean solution to this problem.",
+    "html": "<p>Exercise: Fill in the sorries in the following Lean solution to this problem.</p>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0221",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "p",
+    "text": "And the same trick again ….",
+    "html": "<p>And the same trick again ….</p>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0222",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "p",
+    "text": "Problem",
+    "html": "<p class=\"admonition-title\">Problem</p>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0223",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "p",
+    "text": "Let \\(a\\) and \\(b\\) be nonnegative rational numbers, and suppose that \\(a+b\\leq 8\\) . Show that \\(3ab+a \\leq 7b+72\\) .",
+    "html": "<p>Let <span class=\"math notranslate nohighlight\">\\(a\\)</span> and <span class=\"math notranslate nohighlight\">\\(b\\)</span> be nonnegative rational numbers, and suppose that\n<span class=\"math notranslate nohighlight\">\\(a+b\\leq 8\\)</span>.  Show that <span class=\"math notranslate nohighlight\">\\(3ab+a \\leq 7b+72\\)</span>.</p>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0224",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "p",
+    "text": "Solution",
+    "html": "<p class=\"admonition-title\">Solution</p>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0225",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "p",
+    "text": "Exercise: Fill in the sorries in the following Lean solution to this problem.",
+    "html": "<p>Exercise: Fill in the sorries in the following Lean solution to this problem.</p>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0226",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "p",
+    "text": "Finally, here’s a particularly wild example 3 of the technique, invoking the nonnegativity of three separate squares: \\((a ^ 2 (b ^ 2 - c ^ 2)) ^ 2\\) , \\((b ^ 4 - c ^ 4) ^ 2\\) , and \\((a ^ 2 b c - b ^ 2 c ^ 2) ^ 2\\) .",
+    "html": "<p>Finally, here’s a particularly wild example <a class=\"footnote-reference brackets\" href=\"#id51\" id=\"id49\">3</a> of the technique,  invoking the nonnegativity of\nthree separate squares: <span class=\"math notranslate nohighlight\">\\((a ^ 2 (b ^ 2 - c ^ 2)) ^ 2\\)</span>, <span class=\"math notranslate nohighlight\">\\((b ^ 4 - c ^ 4) ^ 2\\)</span>, and\n<span class=\"math notranslate nohighlight\">\\((a ^ 2 b c - b ^ 2 c ^ 2) ^ 2\\)</span>.</p>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0227",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "p",
+    "text": "Problem",
+    "html": "<p class=\"admonition-title\">Problem</p>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0228",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "p",
+    "text": "Let \\(a\\) , \\(b\\) and \\(c\\) be real numbers. Show that \\(a ^ 2 (a ^ 6 + 8 b ^ 3 c ^ 3) ≤ (a ^ 4 + b ^ 4 + c ^ 4) ^ 2\\) .",
+    "html": "<p>Let <span class=\"math notranslate nohighlight\">\\(a\\)</span>, <span class=\"math notranslate nohighlight\">\\(b\\)</span> and <span class=\"math notranslate nohighlight\">\\(c\\)</span> be real numbers.  Show that\n<span class=\"math notranslate nohighlight\">\\(a ^ 2 (a ^ 6 + 8 b ^ 3 c ^ 3) ≤ (a ^ 4 + b ^ 4 + c ^ 4) ^ 2\\)</span>.</p>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0229",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "p",
+    "text": "Solution",
+    "html": "<p class=\"admonition-title\">Solution</p>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0230",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "p",
+    "text": "Footnotes",
+    "html": "<p class=\"rubric\">Footnotes</p>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0231",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "p",
+    "text": "Adapted from IMO 2001 , problem 2.",
+    "html": "<p>Adapted from <a class=\"reference external\" href=\"https://www.imo-official.org/year_info.aspx?year=2001\">IMO 2001</a>, problem 2.</p>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0232",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "p",
+    "text": "A few of the problems we’ve solved so far would have been easy to solve by eye. Like Example 1.3.2 , for example:",
+    "html": "<p>A few of the problems we’ve solved so far would have been easy to solve by eye.  Like\n<a class=\"reference internal\" href=\"#easy-eq\"><span class=\"std std-numref\">Example 1.3.2</span></a>, for example:</p>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0233",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "p",
+    "text": "Problem",
+    "html": "<p class=\"admonition-title\">Problem</p>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0234",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "p",
+    "text": "Let \\(x\\) be an integer and suppose that \\(x+4=2\\) . Show that \\(x=-2\\) .",
+    "html": "<p>Let <span class=\"math notranslate nohighlight\">\\(x\\)</span> be an integer and suppose that <span class=\"math notranslate nohighlight\">\\(x+4=2\\)</span>.  Show that\n<span class=\"math notranslate nohighlight\">\\(x=-2\\)</span>.</p>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0235",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "p",
+    "text": "We solved it with the calculation",
+    "html": "<p>We solved it with the calculation</p>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0236",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "p",
+    "text": "but honestly this seems kind of overkill.",
+    "html": "<p>but honestly this seems kind of overkill.</p>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0237",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "p",
+    "text": "For the purposes of this book, let’s draw the line as follows: if a fact can be deduced from another fact simply by adding/subtracting terms from both sides (no multiplication/division/etc), then there is no need to write out a full proof by calculation.",
+    "html": "<p>For the purposes of this book, let’s draw the line as follows: if a fact can be deduced from\nanother fact simply by adding/subtracting terms from both sides (no multiplication/division/etc),\nthen there is no need to write out a full proof by calculation.</p>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0238",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "p",
+    "text": "For use in Lean, I’ve provided a tactic addarith which carries out simple deductions like this. Here’s how to use it in the example above:",
+    "html": "<p>For use in Lean, I’ve provided a tactic <code class=\"docutils literal notranslate\"><span class=\"pre\">addarith</span></code> which carries out simple deductions like this.\nHere’s how to use it in the example above:</p>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0239",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "p",
+    "text": "And here are a few more deductions which just involve adding/subtracting terms, and for which therefore we will not require an explicit proof by calculation:",
+    "html": "<p>And here are a few more deductions which just involve adding/subtracting terms, and for which\ntherefore we will not require an explicit proof by calculation:</p>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0240",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "p",
+    "text": "It is also fine to do this for inequalities, if all that’s involved in the inequality deduction is adding/subtracting terms. For example,",
+    "html": "<p>It is also fine to do this for inequalities, if all that’s involved in the inequality deduction is\nadding/subtracting terms.  For example,</p>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0241",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "p",
+    "text": "But in Example 1.3.4 there was a deduction which required a division, not just addition and subtraction: if \\(3w+1=4\\) , then \\(w=1\\) .",
+    "html": "<p>But in <a class=\"reference internal\" href=\"#eq-with-div\"><span class=\"std std-numref\">Example 1.3.4</span></a> there was a deduction which required a division, not just\naddition and subtraction: if <span class=\"math notranslate nohighlight\">\\(3w+1=4\\)</span>, then <span class=\"math notranslate nohighlight\">\\(w=1\\)</span>.</p>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0242",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "p",
+    "text": "We’ll still require that this kind of proof be written out in full.",
+    "html": "<p>We’ll still require that this kind of proof be written out in full.</p>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0243",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "p",
+    "text": "Check that addarith can’t verify this deduction.",
+    "html": "<p>Check that <code class=\"docutils literal notranslate\"><span class=\"pre\">addarith</span></code> can’t verify this deduction.</p>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0244",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "li",
+    "text": "misspellings, like rin instead of ring",
+    "html": "<li><p>misspellings, like <code class=\"docutils literal notranslate\"><span class=\"pre\">rin</span></code> instead of <code class=\"docutils literal notranslate\"><span class=\"pre\">ring</span></code></p></li>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0245",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "li",
+    "text": "punctuation errors, like rw [h2 instead of rw [h2]",
+    "html": "<li><p>punctuation errors, like <code class=\"docutils literal notranslate\"><span class=\"pre\">rw</span> <span class=\"pre\">[h2</span></code> instead of <code class=\"docutils literal notranslate\"><span class=\"pre\">rw</span> <span class=\"pre\">[h2]</span></code></p></li>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0246",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "li",
+    "text": "erroneous tactic for the justification, like putting ring where the justification should have been a rw",
+    "html": "<li><p>erroneous tactic for the justification, like putting <code class=\"docutils literal notranslate\"><span class=\"pre\">ring</span></code> where the justification should have been a <code class=\"docutils literal notranslate\"><span class=\"pre\">rw</span></code></p></li>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0247",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "li",
+    "text": "erroneous information provided to the tactic for the justification, like putting rw [h2] when in fact what’s being substituted is h1",
+    "html": "<li><p>erroneous information provided to the tactic for the justification, like putting <code class=\"docutils literal notranslate\"><span class=\"pre\">rw</span> <span class=\"pre\">[h2]</span></code> when in fact what’s being substituted is <code class=\"docutils literal notranslate\"><span class=\"pre\">h1</span></code></p></li>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0248",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "li",
+    "text": "erroneous mathematics in the calculation, like 1 - 2 * s instead of -1 - 2 * s",
+    "html": "<li><p>erroneous mathematics in the calculation, like <code class=\"docutils literal notranslate\"><span class=\"pre\">1</span> <span class=\"pre\">-</span> <span class=\"pre\">2</span> <span class=\"pre\">*</span> <span class=\"pre\">s</span></code> instead of <code class=\"docutils literal notranslate\"><span class=\"pre\">-1</span> <span class=\"pre\">-</span> <span class=\"pre\">2</span> <span class=\"pre\">*</span> <span class=\"pre\">s</span></code></p></li>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0249",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "li",
+    "text": "Let \\(x\\) and \\(y\\) be real numbers and suppose that \\(x = 3\\) and \\(y = 4x - 3\\) . Show that \\(y = 9\\) . example { x y : ℝ } ( h1 : x = 3 ) ( h2 : y = 4 * x - 3 ) : y = 9 := sorry",
+    "html": "<li><p>Let <span class=\"math notranslate nohighlight\">\\(x\\)</span> and <span class=\"math notranslate nohighlight\">\\(y\\)</span> be real numbers and suppose that <span class=\"math notranslate nohighlight\">\\(x = 3\\)</span>\nand <span class=\"math notranslate nohighlight\">\\(y = 4x - 3\\)</span>.  Show that <span class=\"math notranslate nohighlight\">\\(y = 9\\)</span>.</p>\n<div class=\"highlight-lean notranslate\"><div class=\"highlight\"><pre><span></span><span class=\"kd\">example</span> <span class=\"o\">{</span><span class=\"n\">x</span> <span class=\"n\">y</span> <span class=\"o\">:</span> <span class=\"n\">ℝ</span><span class=\"o\">}</span> <span class=\"o\">(</span><span class=\"n\">h1</span> <span class=\"o\">:</span> <span class=\"n\">x</span> <span class=\"bp\">=</span> <span class=\"mi\">3</span><span class=\"o\">)</span> <span class=\"o\">(</span><span class=\"n\">h2</span> <span class=\"o\">:</span> <span class=\"n\">y</span> <span class=\"bp\">=</span> <span class=\"mi\">4</span> <span class=\"bp\">*</span> <span class=\"n\">x</span> <span class=\"bp\">-</span> <span class=\"mi\">3</span><span class=\"o\">)</span> <span class=\"o\">:</span> <span class=\"n\">y</span> <span class=\"bp\">=</span> <span class=\"mi\">9</span> <span class=\"o\">:=</span>\n  <span class=\"gr\">sorry</span>\n</pre></div>\n</div>\n</li>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0250",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "li",
+    "text": "Let \\(a\\) and \\(b\\) be integers and suppose that \\(a-b=0\\) . Show that \\(a=b\\) . example { a b : ℤ } ( h : a - b = 0 ) : a = b := sorry",
+    "html": "<li><p>Let <span class=\"math notranslate nohighlight\">\\(a\\)</span> and <span class=\"math notranslate nohighlight\">\\(b\\)</span> be integers and suppose that <span class=\"math notranslate nohighlight\">\\(a-b=0\\)</span>.\nShow that <span class=\"math notranslate nohighlight\">\\(a=b\\)</span>.</p>\n<div class=\"highlight-lean notranslate\"><div class=\"highlight\"><pre><span></span><span class=\"kd\">example</span> <span class=\"o\">{</span><span class=\"n\">a</span> <span class=\"n\">b</span> <span class=\"o\">:</span> <span class=\"n\">ℤ</span><span class=\"o\">}</span> <span class=\"o\">(</span><span class=\"n\">h</span> <span class=\"o\">:</span> <span class=\"n\">a</span> <span class=\"bp\">-</span> <span class=\"n\">b</span> <span class=\"bp\">=</span> <span class=\"mi\">0</span><span class=\"o\">)</span> <span class=\"o\">:</span> <span class=\"n\">a</span> <span class=\"bp\">=</span> <span class=\"n\">b</span> <span class=\"o\">:=</span>\n  <span class=\"gr\">sorry</span>\n</pre></div>\n</div>\n</li>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0251",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "li",
+    "text": "Let \\(x\\) and \\(y\\) be integers and suppose that \\(x-3y=5\\) and \\(y=3\\) . Show that \\(x=14\\) . example { x y : ℤ } ( h1 : x - 3 * y = 5 ) ( h2 : y = 3 ) : x = 14 := sorry",
+    "html": "<li><p>Let <span class=\"math notranslate nohighlight\">\\(x\\)</span> and <span class=\"math notranslate nohighlight\">\\(y\\)</span> be integers and suppose that <span class=\"math notranslate nohighlight\">\\(x-3y=5\\)</span>\nand <span class=\"math notranslate nohighlight\">\\(y=3\\)</span>. Show that <span class=\"math notranslate nohighlight\">\\(x=14\\)</span>.</p>\n<div class=\"highlight-lean notranslate\"><div class=\"highlight\"><pre><span></span><span class=\"kd\">example</span> <span class=\"o\">{</span><span class=\"n\">x</span> <span class=\"n\">y</span> <span class=\"o\">:</span> <span class=\"n\">ℤ</span><span class=\"o\">}</span> <span class=\"o\">(</span><span class=\"n\">h1</span> <span class=\"o\">:</span> <span class=\"n\">x</span> <span class=\"bp\">-</span> <span class=\"mi\">3</span> <span class=\"bp\">*</span> <span class=\"n\">y</span> <span class=\"bp\">=</span> <span class=\"mi\">5</span><span class=\"o\">)</span> <span class=\"o\">(</span><span class=\"n\">h2</span> <span class=\"o\">:</span> <span class=\"n\">y</span> <span class=\"bp\">=</span> <span class=\"mi\">3</span><span class=\"o\">)</span> <span class=\"o\">:</span> <span class=\"n\">x</span> <span class=\"bp\">=</span> <span class=\"mi\">14</span> <span class=\"o\">:=</span>\n  <span class=\"gr\">sorry</span>\n</pre></div>\n</div>\n</li>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0252",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "li",
+    "text": "Let \\(p\\) and \\(q\\) be rational numbers and suppose that \\(p-2q=1\\) and \\(q=-1\\) . Show that \\(p=-1\\) . example { p q : ℚ } ( h1 : p - 2 * q = 1 ) ( h2 : q = - 1 ) : p = - 1 := sorry",
+    "html": "<li><p>Let <span class=\"math notranslate nohighlight\">\\(p\\)</span> and <span class=\"math notranslate nohighlight\">\\(q\\)</span> be rational numbers and suppose that <span class=\"math notranslate nohighlight\">\\(p-2q=1\\)</span>\nand <span class=\"math notranslate nohighlight\">\\(q=-1\\)</span>.  Show that <span class=\"math notranslate nohighlight\">\\(p=-1\\)</span>.</p>\n<div class=\"highlight-lean notranslate\"><div class=\"highlight\"><pre><span></span><span class=\"kd\">example</span> <span class=\"o\">{</span><span class=\"n\">p</span> <span class=\"n\">q</span> <span class=\"o\">:</span> <span class=\"n\">ℚ</span><span class=\"o\">}</span> <span class=\"o\">(</span><span class=\"n\">h1</span> <span class=\"o\">:</span> <span class=\"n\">p</span> <span class=\"bp\">-</span> <span class=\"mi\">2</span> <span class=\"bp\">*</span> <span class=\"n\">q</span> <span class=\"bp\">=</span> <span class=\"mi\">1</span><span class=\"o\">)</span> <span class=\"o\">(</span><span class=\"n\">h2</span> <span class=\"o\">:</span> <span class=\"n\">q</span> <span class=\"bp\">=</span> <span class=\"bp\">-</span><span class=\"mi\">1</span><span class=\"o\">)</span> <span class=\"o\">:</span> <span class=\"n\">p</span> <span class=\"bp\">=</span> <span class=\"bp\">-</span><span class=\"mi\">1</span> <span class=\"o\">:=</span>\n  <span class=\"gr\">sorry</span>\n</pre></div>\n</div>\n</li>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0253",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "li",
+    "text": "Let \\(x\\) and \\(y\\) be rational numbers and suppose that \\(y+1=3\\) and \\(x+2y=3\\) . Show that \\(x=-1\\) . example { x y : ℚ } ( h1 : y + 1 = 3 ) ( h2 : x + 2 * y = 3 ) : x = - 1 := sorry",
+    "html": "<li><p>Let <span class=\"math notranslate nohighlight\">\\(x\\)</span> and <span class=\"math notranslate nohighlight\">\\(y\\)</span> be rational numbers and suppose that <span class=\"math notranslate nohighlight\">\\(y+1=3\\)</span>\nand <span class=\"math notranslate nohighlight\">\\(x+2y=3\\)</span>.  Show that <span class=\"math notranslate nohighlight\">\\(x=-1\\)</span>.</p>\n<div class=\"highlight-lean notranslate\"><div class=\"highlight\"><pre><span></span><span class=\"kd\">example</span> <span class=\"o\">{</span><span class=\"n\">x</span> <span class=\"n\">y</span> <span class=\"o\">:</span> <span class=\"n\">ℚ</span><span class=\"o\">}</span> <span class=\"o\">(</span><span class=\"n\">h1</span> <span class=\"o\">:</span> <span class=\"n\">y</span> <span class=\"bp\">+</span> <span class=\"mi\">1</span> <span class=\"bp\">=</span> <span class=\"mi\">3</span><span class=\"o\">)</span> <span class=\"o\">(</span><span class=\"n\">h2</span> <span class=\"o\">:</span> <span class=\"n\">x</span> <span class=\"bp\">+</span> <span class=\"mi\">2</span> <span class=\"bp\">*</span> <span class=\"n\">y</span> <span class=\"bp\">=</span> <span class=\"mi\">3</span><span class=\"o\">)</span> <span class=\"o\">:</span> <span class=\"n\">x</span> <span class=\"bp\">=</span> <span class=\"bp\">-</span><span class=\"mi\">1</span> <span class=\"o\">:=</span>\n  <span class=\"gr\">sorry</span>\n</pre></div>\n</div>\n</li>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0254",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "li",
+    "text": "Let \\(p\\) and \\(q\\) be integers and suppose that \\(p+4q=1\\) and \\(q-1=2\\) . Show that \\(p=-11\\) . example { p q : ℤ } ( h1 : p + 4 * q = 1 ) ( h2 : q - 1 = 2 ) : p = - 11 := sorry",
+    "html": "<li><p>Let <span class=\"math notranslate nohighlight\">\\(p\\)</span> and <span class=\"math notranslate nohighlight\">\\(q\\)</span> be integers and suppose that <span class=\"math notranslate nohighlight\">\\(p+4q=1\\)</span> and\n<span class=\"math notranslate nohighlight\">\\(q-1=2\\)</span>.  Show that <span class=\"math notranslate nohighlight\">\\(p=-11\\)</span>.</p>\n<div class=\"highlight-lean notranslate\"><div class=\"highlight\"><pre><span></span><span class=\"kd\">example</span> <span class=\"o\">{</span><span class=\"n\">p</span> <span class=\"n\">q</span> <span class=\"o\">:</span> <span class=\"n\">ℤ</span><span class=\"o\">}</span> <span class=\"o\">(</span><span class=\"n\">h1</span> <span class=\"o\">:</span> <span class=\"n\">p</span> <span class=\"bp\">+</span> <span class=\"mi\">4</span> <span class=\"bp\">*</span> <span class=\"n\">q</span> <span class=\"bp\">=</span> <span class=\"mi\">1</span><span class=\"o\">)</span> <span class=\"o\">(</span><span class=\"n\">h2</span> <span class=\"o\">:</span> <span class=\"n\">q</span> <span class=\"bp\">-</span> <span class=\"mi\">1</span> <span class=\"bp\">=</span> <span class=\"mi\">2</span><span class=\"o\">)</span> <span class=\"o\">:</span> <span class=\"n\">p</span> <span class=\"bp\">=</span> <span class=\"bp\">-</span><span class=\"mi\">11</span> <span class=\"o\">:=</span>\n  <span class=\"gr\">sorry</span>\n</pre></div>\n</div>\n</li>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0255",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "li",
+    "text": "Let \\(a\\) , \\(b\\) and \\(c\\) be real numbers and suppose that \\(a+2b+3c=7\\) , \\(b+2c=3\\) and \\(c=1\\) . Show that \\(a=2\\) . example { a b c : ℝ } ( h1 : a + 2 * b + 3 * c = 7 ) ( h2 : b + 2 * c = 3 ) ( h3 : c = 1 ) : a = 2 := sorry",
+    "html": "<li><p>Let <span class=\"math notranslate nohighlight\">\\(a\\)</span>, <span class=\"math notranslate nohighlight\">\\(b\\)</span> and <span class=\"math notranslate nohighlight\">\\(c\\)</span> be real numbers and suppose that\n<span class=\"math notranslate nohighlight\">\\(a+2b+3c=7\\)</span>, <span class=\"math notranslate nohighlight\">\\(b+2c=3\\)</span> and <span class=\"math notranslate nohighlight\">\\(c=1\\)</span>.  Show that <span class=\"math notranslate nohighlight\">\\(a=2\\)</span>.</p>\n<div class=\"highlight-lean notranslate\"><div class=\"highlight\"><pre><span></span><span class=\"kd\">example</span> <span class=\"o\">{</span><span class=\"n\">a</span> <span class=\"n\">b</span> <span class=\"n\">c</span> <span class=\"o\">:</span> <span class=\"n\">ℝ</span><span class=\"o\">}</span> <span class=\"o\">(</span><span class=\"n\">h1</span> <span class=\"o\">:</span> <span class=\"n\">a</span> <span class=\"bp\">+</span> <span class=\"mi\">2</span> <span class=\"bp\">*</span> <span class=\"n\">b</span> <span class=\"bp\">+</span> <span class=\"mi\">3</span> <span class=\"bp\">*</span> <span class=\"n\">c</span> <span class=\"bp\">=</span> <span class=\"mi\">7</span><span class=\"o\">)</span> <span class=\"o\">(</span><span class=\"n\">h2</span> <span class=\"o\">:</span> <span class=\"n\">b</span> <span class=\"bp\">+</span> <span class=\"mi\">2</span> <span class=\"bp\">*</span> <span class=\"n\">c</span> <span class=\"bp\">=</span> <span class=\"mi\">3</span><span class=\"o\">)</span>\n    <span class=\"o\">(</span><span class=\"n\">h3</span> <span class=\"o\">:</span> <span class=\"n\">c</span> <span class=\"bp\">=</span> <span class=\"mi\">1</span><span class=\"o\">)</span> <span class=\"o\">:</span> <span class=\"n\">a</span> <span class=\"bp\">=</span> <span class=\"mi\">2</span> <span class=\"o\">:=</span>\n  <span class=\"gr\">sorry</span>\n</pre></div>\n</div>\n</li>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0256",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "li",
+    "text": "Let \\(u\\) and \\(v\\) be rational numbers and suppose that \\(4u+v=3\\) and \\(v=2\\) . Show that \\(u=1/4\\) . example { u v : ℚ } ( h1 : 4 * u + v = 3 ) ( h2 : v = 2 ) : u = 1 / 4 := sorry",
+    "html": "<li><p>Let <span class=\"math notranslate nohighlight\">\\(u\\)</span> and <span class=\"math notranslate nohighlight\">\\(v\\)</span> be rational numbers and suppose that\n<span class=\"math notranslate nohighlight\">\\(4u+v=3\\)</span> and <span class=\"math notranslate nohighlight\">\\(v=2\\)</span>.  Show that <span class=\"math notranslate nohighlight\">\\(u=1/4\\)</span>.</p>\n<div class=\"highlight-lean notranslate\"><div class=\"highlight\"><pre><span></span><span class=\"kd\">example</span> <span class=\"o\">{</span><span class=\"n\">u</span> <span class=\"n\">v</span> <span class=\"o\">:</span> <span class=\"n\">ℚ</span><span class=\"o\">}</span> <span class=\"o\">(</span><span class=\"n\">h1</span> <span class=\"o\">:</span> <span class=\"mi\">4</span> <span class=\"bp\">*</span> <span class=\"n\">u</span> <span class=\"bp\">+</span> <span class=\"n\">v</span> <span class=\"bp\">=</span> <span class=\"mi\">3</span><span class=\"o\">)</span> <span class=\"o\">(</span><span class=\"n\">h2</span> <span class=\"o\">:</span> <span class=\"n\">v</span> <span class=\"bp\">=</span> <span class=\"mi\">2</span><span class=\"o\">)</span> <span class=\"o\">:</span> <span class=\"n\">u</span> <span class=\"bp\">=</span> <span class=\"mi\">1</span> <span class=\"bp\">/</span> <span class=\"mi\">4</span> <span class=\"o\">:=</span>\n  <span class=\"gr\">sorry</span>\n</pre></div>\n</div>\n</li>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0257",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "li",
+    "text": "Let \\(c\\) be a rational number and suppose that \\(4 c + 1 = 3 c - 2\\) . Show that \\(c = -3\\) . example { c : ℚ } ( h1 : 4 * c + 1 = 3 * c - 2 ) : c = - 3 := sorry",
+    "html": "<li><p>Let <span class=\"math notranslate nohighlight\">\\(c\\)</span> be a rational number and suppose that <span class=\"math notranslate nohighlight\">\\(4 c + 1 = 3 c - 2\\)</span>.\nShow that <span class=\"math notranslate nohighlight\">\\(c = -3\\)</span>.</p>\n<div class=\"highlight-lean notranslate\"><div class=\"highlight\"><pre><span></span><span class=\"kd\">example</span> <span class=\"o\">{</span><span class=\"n\">c</span> <span class=\"o\">:</span> <span class=\"n\">ℚ</span><span class=\"o\">}</span> <span class=\"o\">(</span><span class=\"n\">h1</span> <span class=\"o\">:</span> <span class=\"mi\">4</span> <span class=\"bp\">*</span> <span class=\"n\">c</span> <span class=\"bp\">+</span> <span class=\"mi\">1</span> <span class=\"bp\">=</span> <span class=\"mi\">3</span> <span class=\"bp\">*</span> <span class=\"n\">c</span> <span class=\"bp\">-</span> <span class=\"mi\">2</span><span class=\"o\">)</span> <span class=\"o\">:</span> <span class=\"n\">c</span> <span class=\"bp\">=</span> <span class=\"bp\">-</span><span class=\"mi\">3</span> <span class=\"o\">:=</span>\n  <span class=\"gr\">sorry</span>\n</pre></div>\n</div>\n</li>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0258",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "li",
+    "text": "Let \\(p\\) be a real number and suppose that \\(5 p - 3 = 3 p + 1\\) . Show that \\(p = 2\\) . example { p : ℝ } ( h1 : 5 * p - 3 = 3 * p + 1 ) : p = 2 := sorry",
+    "html": "<li><p>Let <span class=\"math notranslate nohighlight\">\\(p\\)</span> be a real number and suppose that <span class=\"math notranslate nohighlight\">\\(5 p - 3 = 3 p + 1\\)</span>.\nShow that <span class=\"math notranslate nohighlight\">\\(p = 2\\)</span>.</p>\n<div class=\"highlight-lean notranslate\"><div class=\"highlight\"><pre><span></span><span class=\"kd\">example</span> <span class=\"o\">{</span><span class=\"n\">p</span> <span class=\"o\">:</span> <span class=\"n\">ℝ</span><span class=\"o\">}</span> <span class=\"o\">(</span><span class=\"n\">h1</span> <span class=\"o\">:</span> <span class=\"mi\">5</span> <span class=\"bp\">*</span> <span class=\"n\">p</span> <span class=\"bp\">-</span> <span class=\"mi\">3</span> <span class=\"bp\">=</span> <span class=\"mi\">3</span> <span class=\"bp\">*</span> <span class=\"n\">p</span> <span class=\"bp\">+</span> <span class=\"mi\">1</span><span class=\"o\">)</span> <span class=\"o\">:</span> <span class=\"n\">p</span> <span class=\"bp\">=</span> <span class=\"mi\">2</span> <span class=\"o\">:=</span>\n  <span class=\"gr\">sorry</span>\n</pre></div>\n</div>\n</li>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0259",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "li",
+    "text": "Let \\(x\\) and \\(y\\) be integers and suppose that \\(2x+y=4\\) and \\(x+y=1\\) . Show that \\(x=3\\) . example { x y : ℤ } ( h1 : 2 * x + y = 4 ) ( h2 : x + y = 1 ) : x = 3 := sorry",
+    "html": "<li><p>Let <span class=\"math notranslate nohighlight\">\\(x\\)</span> and <span class=\"math notranslate nohighlight\">\\(y\\)</span> be integers and suppose that <span class=\"math notranslate nohighlight\">\\(2x+y=4\\)</span> and\n<span class=\"math notranslate nohighlight\">\\(x+y=1\\)</span>. Show that <span class=\"math notranslate nohighlight\">\\(x=3\\)</span>.</p>\n<div class=\"highlight-lean notranslate\"><div class=\"highlight\"><pre><span></span><span class=\"kd\">example</span> <span class=\"o\">{</span><span class=\"n\">x</span> <span class=\"n\">y</span> <span class=\"o\">:</span> <span class=\"n\">ℤ</span><span class=\"o\">}</span> <span class=\"o\">(</span><span class=\"n\">h1</span> <span class=\"o\">:</span> <span class=\"mi\">2</span> <span class=\"bp\">*</span> <span class=\"n\">x</span> <span class=\"bp\">+</span> <span class=\"n\">y</span> <span class=\"bp\">=</span> <span class=\"mi\">4</span><span class=\"o\">)</span> <span class=\"o\">(</span><span class=\"n\">h2</span> <span class=\"o\">:</span> <span class=\"n\">x</span> <span class=\"bp\">+</span> <span class=\"n\">y</span> <span class=\"bp\">=</span> <span class=\"mi\">1</span><span class=\"o\">)</span> <span class=\"o\">:</span> <span class=\"n\">x</span> <span class=\"bp\">=</span> <span class=\"mi\">3</span> <span class=\"o\">:=</span>\n  <span class=\"gr\">sorry</span>\n</pre></div>\n</div>\n</li>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0260",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "li",
+    "text": "Let \\(a\\) and \\(b\\) be real numbers and suppose that \\(a + 2 b = 4\\) and \\(a - b = 1\\) . Show that \\(a = 2\\) . example { a b : ℝ } ( h1 : a + 2 * b = 4 ) ( h2 : a - b = 1 ) : a = 2 := sorry",
+    "html": "<li><p>Let <span class=\"math notranslate nohighlight\">\\(a\\)</span> and <span class=\"math notranslate nohighlight\">\\(b\\)</span> be real numbers and suppose that\n<span class=\"math notranslate nohighlight\">\\(a + 2  b = 4\\)</span> and <span class=\"math notranslate nohighlight\">\\(a - b = 1\\)</span>. Show that <span class=\"math notranslate nohighlight\">\\(a = 2\\)</span>.</p>\n<div class=\"highlight-lean notranslate\"><div class=\"highlight\"><pre><span></span><span class=\"kd\">example</span> <span class=\"o\">{</span><span class=\"n\">a</span> <span class=\"n\">b</span> <span class=\"o\">:</span> <span class=\"n\">ℝ</span><span class=\"o\">}</span> <span class=\"o\">(</span><span class=\"n\">h1</span> <span class=\"o\">:</span> <span class=\"n\">a</span> <span class=\"bp\">+</span> <span class=\"mi\">2</span> <span class=\"bp\">*</span> <span class=\"n\">b</span> <span class=\"bp\">=</span> <span class=\"mi\">4</span><span class=\"o\">)</span> <span class=\"o\">(</span><span class=\"n\">h2</span> <span class=\"o\">:</span> <span class=\"n\">a</span> <span class=\"bp\">-</span> <span class=\"n\">b</span> <span class=\"bp\">=</span> <span class=\"mi\">1</span><span class=\"o\">)</span> <span class=\"o\">:</span> <span class=\"n\">a</span> <span class=\"bp\">=</span> <span class=\"mi\">2</span> <span class=\"o\">:=</span>\n  <span class=\"gr\">sorry</span>\n</pre></div>\n</div>\n</li>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0261",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "li",
+    "text": "Let \\(u\\) and \\(v\\) be real numbers and suppose that \\(u+1=v\\) . Show that \\(u^2+3u+1=v^2+v-1\\) . example { u v : ℝ } ( h1 : u + 1 = v ) : u ^ 2 + 3 * u + 1 = v ^ 2 + v - 1 := sorry",
+    "html": "<li><p>Let <span class=\"math notranslate nohighlight\">\\(u\\)</span> and <span class=\"math notranslate nohighlight\">\\(v\\)</span> be real numbers and suppose that <span class=\"math notranslate nohighlight\">\\(u+1=v\\)</span>.\nShow that <span class=\"math notranslate nohighlight\">\\(u^2+3u+1=v^2+v-1\\)</span>.</p>\n<div class=\"highlight-lean notranslate\"><div class=\"highlight\"><pre><span></span><span class=\"kd\">example</span> <span class=\"o\">{</span><span class=\"n\">u</span> <span class=\"n\">v</span> <span class=\"o\">:</span> <span class=\"n\">ℝ</span><span class=\"o\">}</span> <span class=\"o\">(</span><span class=\"n\">h1</span> <span class=\"o\">:</span> <span class=\"n\">u</span> <span class=\"bp\">+</span> <span class=\"mi\">1</span> <span class=\"bp\">=</span> <span class=\"n\">v</span><span class=\"o\">)</span> <span class=\"o\">:</span> <span class=\"n\">u</span> <span class=\"bp\">^</span> <span class=\"mi\">2</span> <span class=\"bp\">+</span> <span class=\"mi\">3</span> <span class=\"bp\">*</span> <span class=\"n\">u</span> <span class=\"bp\">+</span> <span class=\"mi\">1</span> <span class=\"bp\">=</span> <span class=\"n\">v</span> <span class=\"bp\">^</span> <span class=\"mi\">2</span> <span class=\"bp\">+</span> <span class=\"n\">v</span> <span class=\"bp\">-</span> <span class=\"mi\">1</span> <span class=\"o\">:=</span>\n  <span class=\"gr\">sorry</span>\n</pre></div>\n</div>\n</li>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0262",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "li",
+    "text": "Let \\(t\\) be a rational number and suppose that \\(t^2-4=0\\) . Show that \\(t^4 + 3t^3 - 3t^2 - 2 t - 2 = 10t+2\\) . example { t : ℚ } ( ht : t ^ 2 - 4 = 0 ) : t ^ 4 + 3 * t ^ 3 - 3 * t ^ 2 - 2 * t - 2 = 10 * t + 2 := sorry",
+    "html": "<li><p>Let <span class=\"math notranslate nohighlight\">\\(t\\)</span> be a rational number and suppose that <span class=\"math notranslate nohighlight\">\\(t^2-4=0\\)</span>.\nShow that <span class=\"math notranslate nohighlight\">\\(t^4 + 3t^3 - 3t^2 - 2 t - 2 = 10t+2\\)</span>.</p>\n<div class=\"highlight-lean notranslate\"><div class=\"highlight\"><pre><span></span><span class=\"kd\">example</span> <span class=\"o\">{</span><span class=\"n\">t</span> <span class=\"o\">:</span> <span class=\"n\">ℚ</span><span class=\"o\">}</span> <span class=\"o\">(</span><span class=\"n\">ht</span> <span class=\"o\">:</span> <span class=\"n\">t</span> <span class=\"bp\">^</span> <span class=\"mi\">2</span> <span class=\"bp\">-</span> <span class=\"mi\">4</span> <span class=\"bp\">=</span> <span class=\"mi\">0</span><span class=\"o\">)</span> <span class=\"o\">:</span>\n    <span class=\"n\">t</span> <span class=\"bp\">^</span> <span class=\"mi\">4</span> <span class=\"bp\">+</span> <span class=\"mi\">3</span> <span class=\"bp\">*</span> <span class=\"n\">t</span> <span class=\"bp\">^</span> <span class=\"mi\">3</span> <span class=\"bp\">-</span> <span class=\"mi\">3</span> <span class=\"bp\">*</span> <span class=\"n\">t</span> <span class=\"bp\">^</span> <span class=\"mi\">2</span> <span class=\"bp\">-</span> <span class=\"mi\">2</span> <span class=\"bp\">*</span> <span class=\"n\">t</span> <span class=\"bp\">-</span> <span class=\"mi\">2</span> <span class=\"bp\">=</span> <span class=\"mi\">10</span> <span class=\"bp\">*</span> <span class=\"n\">t</span> <span class=\"bp\">+</span> <span class=\"mi\">2</span> <span class=\"o\">:=</span>\n  <span class=\"gr\">sorry</span>\n</pre></div>\n</div>\n</li>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0263",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "li",
+    "text": "\\(\\!\\!\\!\\!{^*}\\) Let \\(x\\) and \\(y\\) be real numbers and suppose that \\(x + 3 = 5\\) and \\(2x - yx = 0\\) . Show that \\(y = 2\\) . example { x y : ℝ } ( h1 : x + 3 = 5 ) ( h2 : 2 * x - y * x = 0 ) : y = 2 := sorry",
+    "html": "<li><p><span class=\"math notranslate nohighlight\">\\(\\!\\!\\!\\!{^*}\\)</span> Let <span class=\"math notranslate nohighlight\">\\(x\\)</span> and <span class=\"math notranslate nohighlight\">\\(y\\)</span> be real numbers and suppose\nthat <span class=\"math notranslate nohighlight\">\\(x + 3 = 5\\)</span> and <span class=\"math notranslate nohighlight\">\\(2x - yx = 0\\)</span>.  Show that <span class=\"math notranslate nohighlight\">\\(y = 2\\)</span>.</p>\n<div class=\"highlight-lean notranslate\"><div class=\"highlight\"><pre><span></span><span class=\"kd\">example</span> <span class=\"o\">{</span><span class=\"n\">x</span> <span class=\"n\">y</span> <span class=\"o\">:</span> <span class=\"n\">ℝ</span><span class=\"o\">}</span> <span class=\"o\">(</span><span class=\"n\">h1</span> <span class=\"o\">:</span> <span class=\"n\">x</span> <span class=\"bp\">+</span> <span class=\"mi\">3</span> <span class=\"bp\">=</span> <span class=\"mi\">5</span><span class=\"o\">)</span> <span class=\"o\">(</span><span class=\"n\">h2</span> <span class=\"o\">:</span> <span class=\"mi\">2</span> <span class=\"bp\">*</span> <span class=\"n\">x</span> <span class=\"bp\">-</span> <span class=\"n\">y</span> <span class=\"bp\">*</span> <span class=\"n\">x</span> <span class=\"bp\">=</span> <span class=\"mi\">0</span><span class=\"o\">)</span> <span class=\"o\">:</span> <span class=\"n\">y</span> <span class=\"bp\">=</span> <span class=\"mi\">2</span> <span class=\"o\">:=</span>\n  <span class=\"gr\">sorry</span>\n</pre></div>\n</div>\n</li>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0264",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "li",
+    "text": "\\(\\!\\!\\!\\!{^*}\\) Let \\(p\\) , \\(q\\) and \\(r\\) be rational numbers and suppose that \\(p + q + r = 0\\) and \\(pq + pr + qr = 2\\) . Show that \\(p ^ 2 + q ^ 2 + r ^ 2 = -4\\) . example { p q r : ℚ } ( h1 : p + q + r = 0 ) ( h2 : p * q + p * r + q * r = 2 ) : p ^ 2 + q ^ 2 + r ^ 2 = - 4 := sorry",
+    "html": "<li><p><span class=\"math notranslate nohighlight\">\\(\\!\\!\\!\\!{^*}\\)</span> Let <span class=\"math notranslate nohighlight\">\\(p\\)</span>, <span class=\"math notranslate nohighlight\">\\(q\\)</span> and <span class=\"math notranslate nohighlight\">\\(r\\)</span> be rational numbers and\nsuppose that <span class=\"math notranslate nohighlight\">\\(p + q + r = 0\\)</span> and <span class=\"math notranslate nohighlight\">\\(pq + pr + qr = 2\\)</span>. Show that\n<span class=\"math notranslate nohighlight\">\\(p ^ 2 + q ^ 2 + r ^ 2 = -4\\)</span>.</p>\n<div class=\"highlight-lean notranslate\"><div class=\"highlight\"><pre><span></span><span class=\"kd\">example</span> <span class=\"o\">{</span><span class=\"n\">p</span> <span class=\"n\">q</span> <span class=\"n\">r</span> <span class=\"o\">:</span> <span class=\"n\">ℚ</span><span class=\"o\">}</span> <span class=\"o\">(</span><span class=\"n\">h1</span> <span class=\"o\">:</span> <span class=\"n\">p</span> <span class=\"bp\">+</span> <span class=\"n\">q</span> <span class=\"bp\">+</span> <span class=\"n\">r</span> <span class=\"bp\">=</span> <span class=\"mi\">0</span><span class=\"o\">)</span> <span class=\"o\">(</span><span class=\"n\">h2</span> <span class=\"o\">:</span> <span class=\"n\">p</span> <span class=\"bp\">*</span> <span class=\"n\">q</span> <span class=\"bp\">+</span> <span class=\"n\">p</span> <span class=\"bp\">*</span> <span class=\"n\">r</span> <span class=\"bp\">+</span> <span class=\"n\">q</span> <span class=\"bp\">*</span> <span class=\"n\">r</span> <span class=\"bp\">=</span> <span class=\"mi\">2</span><span class=\"o\">)</span> <span class=\"o\">:</span>\n    <span class=\"n\">p</span> <span class=\"bp\">^</span> <span class=\"mi\">2</span> <span class=\"bp\">+</span> <span class=\"n\">q</span> <span class=\"bp\">^</span> <span class=\"mi\">2</span> <span class=\"bp\">+</span> <span class=\"n\">r</span> <span class=\"bp\">^</span> <span class=\"mi\">2</span> <span class=\"bp\">=</span> <span class=\"bp\">-</span><span class=\"mi\">4</span> <span class=\"o\">:=</span>\n  <span class=\"gr\">sorry</span>\n</pre></div>\n</div>\n</li>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0265",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "li",
+    "text": "step 2 looks like we are “substituting” the inequality \\(y + 2x\\geq 3\\) into the expression \\((y+2x)-2x\\) to get \\((y+2x)-2x\\geq 3-2x\\) ;",
+    "html": "<li><p>step 2 looks like we are “substituting” the inequality <span class=\"math notranslate nohighlight\">\\(y + 2x\\geq 3\\)</span> into the expression\n<span class=\"math notranslate nohighlight\">\\((y+2x)-2x\\)</span> to get <span class=\"math notranslate nohighlight\">\\((y+2x)-2x\\geq 3-2x\\)</span>;</p></li>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0266",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "li",
+    "text": "step 4 looks like we are “substituting” the inequality \\(x + 3 \\le 2\\) into the expression \\(9-2(x+3)\\) to get \\(9-2(x+3)\\geq 9-2\\cdot 2\\) .",
+    "html": "<li><p>step 4 looks like we are “substituting” the inequality <span class=\"math notranslate nohighlight\">\\(x + 3 \\le 2\\)</span> into the expression\n<span class=\"math notranslate nohighlight\">\\(9-2(x+3)\\)</span> to get <span class=\"math notranslate nohighlight\">\\(9-2(x+3)\\geq 9-2\\cdot 2\\)</span>.</p></li>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0267",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "li",
+    "text": "Algebraic rearrangement steps are justified with ring , as before.",
+    "html": "<li><p>Algebraic rearrangement steps are justified with <code class=\"docutils literal notranslate\"><span class=\"pre\">ring</span></code>, as before.</p></li>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0268",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "li",
+    "text": "“Substitution”-like steps are justified with a tactic rel indicating the inequality being “substituted” – but note that if you try to use this in a situation when there is no rule about preservation/reversal of inequalities under the relevant operations, then it will fail.",
+    "html": "<li><p>“Substitution”-like steps are justified with a tactic <code class=\"docutils literal notranslate\"><span class=\"pre\">rel</span></code> indicating the\ninequality being “substituted” – but note that if you try to use this in a situation when there\nis no rule about preservation/reversal of inequalities under the relevant operations,\nthen it will fail.</p></li>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0269",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "li",
+    "text": "“Numeric facts” are justified with the tactic numbers . (This tactic can also justify “numeric facts” about equalities, like \\(4^2+4\\cdot 1=20\\) , for which we have previously used the ring tactic.)",
+    "html": "<li><p>“Numeric facts” are justified with the tactic <code class=\"docutils literal notranslate\"><span class=\"pre\">numbers</span></code>.  (This tactic can also justify\n“numeric facts” about equalities, like <span class=\"math notranslate nohighlight\">\\(4^2+4\\cdot 1=20\\)</span>, for which we have previously\nused the <code class=\"docutils literal notranslate\"><span class=\"pre\">ring</span></code> tactic.)</p></li>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0270",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "li",
+    "text": "\\(n^2\\geq 5^2\\)",
+    "html": "<li><p><span class=\"math notranslate nohighlight\">\\(n^2\\geq 5^2\\)</span></p></li>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0271",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "li",
+    "text": "\\(5^2> 2 \\cdot 5+11\\)",
+    "html": "<li><p><span class=\"math notranslate nohighlight\">\\(5^2&gt; 2 \\cdot 5+11\\)</span></p></li>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0272",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "li",
+    "text": "\\(2 \\cdot 5+11\\leq 2n+11\\)",
+    "html": "<li><p><span class=\"math notranslate nohighlight\">\\(2 \\cdot 5+11\\leq 2n+11\\)</span></p></li>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0273",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "li",
+    "text": "Let \\(x\\) and \\(y\\) be integers and suppose that \\(x+3 \\geq 2y\\) and \\(1 \\le y\\) . Show that \\(x \\geq -1\\) . example { x y : ℤ } ( h1 : x + 3 ≥ 2 * y ) ( h2 : 1 ≤ y ) : x ≥ - 1 := sorry",
+    "html": "<li><p>Let <span class=\"math notranslate nohighlight\">\\(x\\)</span> and <span class=\"math notranslate nohighlight\">\\(y\\)</span> be integers and suppose that\n<span class=\"math notranslate nohighlight\">\\(x+3 \\geq 2y\\)</span> and <span class=\"math notranslate nohighlight\">\\(1 \\le y\\)</span>.  Show that <span class=\"math notranslate nohighlight\">\\(x \\geq -1\\)</span>.</p>\n<div class=\"highlight-lean notranslate\"><div class=\"highlight\"><pre><span></span><span class=\"kd\">example</span> <span class=\"o\">{</span><span class=\"n\">x</span> <span class=\"n\">y</span> <span class=\"o\">:</span> <span class=\"n\">ℤ</span><span class=\"o\">}</span> <span class=\"o\">(</span><span class=\"n\">h1</span> <span class=\"o\">:</span> <span class=\"n\">x</span> <span class=\"bp\">+</span> <span class=\"mi\">3</span> <span class=\"bp\">≥</span> <span class=\"mi\">2</span> <span class=\"bp\">*</span> <span class=\"n\">y</span><span class=\"o\">)</span> <span class=\"o\">(</span><span class=\"n\">h2</span> <span class=\"o\">:</span> <span class=\"mi\">1</span> <span class=\"bp\">≤</span> <span class=\"n\">y</span><span class=\"o\">)</span> <span class=\"o\">:</span> <span class=\"n\">x</span> <span class=\"bp\">≥</span> <span class=\"bp\">-</span><span class=\"mi\">1</span> <span class=\"o\">:=</span>\n  <span class=\"gr\">sorry</span>\n</pre></div>\n</div>\n</li>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0274",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "li",
+    "text": "Let \\(a\\) and \\(b\\) be rational numbers and suppose that \\(3 \\leq a\\) and \\(a+2b\\geq 4\\) . Show that \\(a+b\\geq 3\\) . example { a b : ℚ } ( h1 : 3 ≤ a ) ( h2 : a + 2 * b ≥ 4 ) : a + b ≥ 3 := sorry",
+    "html": "<li><p>Let <span class=\"math notranslate nohighlight\">\\(a\\)</span> and <span class=\"math notranslate nohighlight\">\\(b\\)</span> be rational numbers and suppose that\n<span class=\"math notranslate nohighlight\">\\(3 \\leq a\\)</span> and <span class=\"math notranslate nohighlight\">\\(a+2b\\geq 4\\)</span>. Show that <span class=\"math notranslate nohighlight\">\\(a+b\\geq 3\\)</span>.</p>\n<div class=\"highlight-lean notranslate\"><div class=\"highlight\"><pre><span></span><span class=\"kd\">example</span> <span class=\"o\">{</span><span class=\"n\">a</span> <span class=\"n\">b</span> <span class=\"o\">:</span> <span class=\"n\">ℚ</span><span class=\"o\">}</span> <span class=\"o\">(</span><span class=\"n\">h1</span> <span class=\"o\">:</span> <span class=\"mi\">3</span> <span class=\"bp\">≤</span> <span class=\"n\">a</span><span class=\"o\">)</span> <span class=\"o\">(</span><span class=\"n\">h2</span> <span class=\"o\">:</span> <span class=\"n\">a</span> <span class=\"bp\">+</span> <span class=\"mi\">2</span> <span class=\"bp\">*</span> <span class=\"n\">b</span> <span class=\"bp\">≥</span> <span class=\"mi\">4</span><span class=\"o\">)</span> <span class=\"o\">:</span> <span class=\"n\">a</span> <span class=\"bp\">+</span> <span class=\"n\">b</span> <span class=\"bp\">≥</span> <span class=\"mi\">3</span> <span class=\"o\">:=</span>\n  <span class=\"gr\">sorry</span>\n</pre></div>\n</div>\n</li>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0275",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "li",
+    "text": "Let \\(x\\) be an integer, with \\(x\\geq 9\\) . Show that \\(x ^ 3 - 8x ^ 2 + 2x \\geq 3\\) . example { x : ℤ } ( hx : x ≥ 9 ) : x ^ 3 - 8 * x ^ 2 + 2 * x ≥ 3 := sorry",
+    "html": "<li><p>Let <span class=\"math notranslate nohighlight\">\\(x\\)</span> be an integer, with <span class=\"math notranslate nohighlight\">\\(x\\geq 9\\)</span>.  Show that\n<span class=\"math notranslate nohighlight\">\\(x ^ 3 - 8x ^ 2 + 2x \\geq 3\\)</span>.</p>\n<div class=\"highlight-lean notranslate\"><div class=\"highlight\"><pre><span></span><span class=\"kd\">example</span> <span class=\"o\">{</span><span class=\"n\">x</span> <span class=\"o\">:</span> <span class=\"n\">ℤ</span><span class=\"o\">}</span> <span class=\"o\">(</span><span class=\"n\">hx</span> <span class=\"o\">:</span> <span class=\"n\">x</span> <span class=\"bp\">≥</span> <span class=\"mi\">9</span><span class=\"o\">)</span> <span class=\"o\">:</span> <span class=\"n\">x</span> <span class=\"bp\">^</span> <span class=\"mi\">3</span> <span class=\"bp\">-</span> <span class=\"mi\">8</span> <span class=\"bp\">*</span> <span class=\"n\">x</span> <span class=\"bp\">^</span> <span class=\"mi\">2</span> <span class=\"bp\">+</span> <span class=\"mi\">2</span> <span class=\"bp\">*</span> <span class=\"n\">x</span> <span class=\"bp\">≥</span> <span class=\"mi\">3</span> <span class=\"o\">:=</span>\n  <span class=\"gr\">sorry</span>\n</pre></div>\n</div>\n</li>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0276",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "li",
+    "text": "Let \\(n\\geq 10\\) be an integer. Show that \\(n ^ 4 - 2 n ^ 2 > 3 n ^ 3\\) . example { n : ℤ } ( hn : n ≥ 10 ) : n ^ 4 - 2 * n ^ 2 > 3 * n ^ 3 := sorry",
+    "html": "<li><p>Let <span class=\"math notranslate nohighlight\">\\(n\\geq 10\\)</span> be an integer. Show that\n<span class=\"math notranslate nohighlight\">\\(n ^ 4 - 2 n ^ 2 &gt; 3 n ^ 3\\)</span>.</p>\n<div class=\"highlight-lean notranslate\"><div class=\"highlight\"><pre><span></span><span class=\"kd\">example</span> <span class=\"o\">{</span><span class=\"n\">n</span> <span class=\"o\">:</span> <span class=\"n\">ℤ</span><span class=\"o\">}</span> <span class=\"o\">(</span><span class=\"n\">hn</span> <span class=\"o\">:</span> <span class=\"n\">n</span> <span class=\"bp\">≥</span> <span class=\"mi\">10</span><span class=\"o\">)</span> <span class=\"o\">:</span> <span class=\"n\">n</span> <span class=\"bp\">^</span> <span class=\"mi\">4</span> <span class=\"bp\">-</span> <span class=\"mi\">2</span> <span class=\"bp\">*</span> <span class=\"n\">n</span> <span class=\"bp\">^</span> <span class=\"mi\">2</span> <span class=\"bp\">&gt;</span> <span class=\"mi\">3</span> <span class=\"bp\">*</span> <span class=\"n\">n</span> <span class=\"bp\">^</span> <span class=\"mi\">3</span> <span class=\"o\">:=</span>\n  <span class=\"gr\">sorry</span>\n</pre></div>\n</div>\n</li>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0277",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "li",
+    "text": "Let \\(n\\geq 5\\) be an integer. Show that \\(n ^ 2 - 2 n + 3 > 14\\) . example { n : ℤ } ( h1 : n ≥ 5 ) : n ^ 2 - 2 * n + 3 > 14 := sorry",
+    "html": "<li><p>Let <span class=\"math notranslate nohighlight\">\\(n\\geq 5\\)</span> be an integer. Show that\n<span class=\"math notranslate nohighlight\">\\(n ^ 2 - 2  n + 3 &gt; 14\\)</span>.</p>\n<div class=\"highlight-lean notranslate\"><div class=\"highlight\"><pre><span></span><span class=\"kd\">example</span> <span class=\"o\">{</span><span class=\"n\">n</span> <span class=\"o\">:</span> <span class=\"n\">ℤ</span><span class=\"o\">}</span> <span class=\"o\">(</span><span class=\"n\">h1</span> <span class=\"o\">:</span> <span class=\"n\">n</span> <span class=\"bp\">≥</span> <span class=\"mi\">5</span><span class=\"o\">)</span> <span class=\"o\">:</span> <span class=\"n\">n</span> <span class=\"bp\">^</span> <span class=\"mi\">2</span> <span class=\"bp\">-</span> <span class=\"mi\">2</span> <span class=\"bp\">*</span> <span class=\"n\">n</span> <span class=\"bp\">+</span> <span class=\"mi\">3</span> <span class=\"bp\">&gt;</span> <span class=\"mi\">14</span> <span class=\"o\">:=</span>\n  <span class=\"gr\">sorry</span>\n</pre></div>\n</div>\n</li>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0278",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "li",
+    "text": "Let \\(x\\) be a rational number. Show that \\(x ^ 2 - 2 x \\ge -1\\) . example { x : ℚ } : x ^ 2 - 2 * x ≥ - 1 := sorry",
+    "html": "<li><p>Let <span class=\"math notranslate nohighlight\">\\(x\\)</span> be a rational number. Show that\n<span class=\"math notranslate nohighlight\">\\(x ^ 2 - 2  x \\ge -1\\)</span>.</p>\n<div class=\"highlight-lean notranslate\"><div class=\"highlight\"><pre><span></span><span class=\"kd\">example</span> <span class=\"o\">{</span><span class=\"n\">x</span> <span class=\"o\">:</span> <span class=\"n\">ℚ</span><span class=\"o\">}</span> <span class=\"o\">:</span> <span class=\"n\">x</span> <span class=\"bp\">^</span> <span class=\"mi\">2</span> <span class=\"bp\">-</span> <span class=\"mi\">2</span> <span class=\"bp\">*</span> <span class=\"n\">x</span> <span class=\"bp\">≥</span> <span class=\"bp\">-</span><span class=\"mi\">1</span> <span class=\"o\">:=</span>\n  <span class=\"gr\">sorry</span>\n</pre></div>\n</div>\n</li>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0279",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "li",
+    "text": "Let \\(a\\) and \\(b\\) be real numbers. Show that \\(a ^ 2 + b ^ 2 \\ge 2ab\\) . example ( a b : ℝ ) : a ^ 2 + b ^ 2 ≥ 2 * a * b := sorry",
+    "html": "<li><p>Let <span class=\"math notranslate nohighlight\">\\(a\\)</span> and <span class=\"math notranslate nohighlight\">\\(b\\)</span> be real numbers.  Show that <span class=\"math notranslate nohighlight\">\\(a ^ 2 + b ^ 2 \\ge 2ab\\)</span>.</p>\n<div class=\"highlight-lean notranslate\"><div class=\"highlight\"><pre><span></span><span class=\"kd\">example</span> <span class=\"o\">(</span><span class=\"n\">a</span> <span class=\"n\">b</span> <span class=\"o\">:</span> <span class=\"n\">ℝ</span><span class=\"o\">)</span> <span class=\"o\">:</span> <span class=\"n\">a</span> <span class=\"bp\">^</span> <span class=\"mi\">2</span> <span class=\"bp\">+</span> <span class=\"n\">b</span> <span class=\"bp\">^</span> <span class=\"mi\">2</span> <span class=\"bp\">≥</span> <span class=\"mi\">2</span> <span class=\"bp\">*</span> <span class=\"n\">a</span> <span class=\"bp\">*</span> <span class=\"n\">b</span> <span class=\"o\">:=</span>\n  <span class=\"gr\">sorry</span>\n</pre></div>\n</div>\n</li>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0280",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "li",
+    "text": "If \\(a-2b=1\\) , then \\(a=2b+1\\) . example { a b : ℤ } ( ha : a - 2 * b = 1 ) : a = 2 * b + 1 := by addarith [ ha ]",
+    "html": "<li><p>If <span class=\"math notranslate nohighlight\">\\(a-2b=1\\)</span>, then <span class=\"math notranslate nohighlight\">\\(a=2b+1\\)</span>.</p>\n<div class=\"highlight-lean notranslate\"><div class=\"highlight\"><pre><span></span><span class=\"kd\">example</span> <span class=\"o\">{</span><span class=\"n\">a</span> <span class=\"n\">b</span> <span class=\"o\">:</span> <span class=\"n\">ℤ</span><span class=\"o\">}</span> <span class=\"o\">(</span><span class=\"n\">ha</span> <span class=\"o\">:</span> <span class=\"n\">a</span> <span class=\"bp\">-</span> <span class=\"mi\">2</span> <span class=\"bp\">*</span> <span class=\"n\">b</span> <span class=\"bp\">=</span> <span class=\"mi\">1</span><span class=\"o\">)</span> <span class=\"o\">:</span> <span class=\"n\">a</span> <span class=\"bp\">=</span> <span class=\"mi\">2</span> <span class=\"bp\">*</span> <span class=\"n\">b</span> <span class=\"bp\">+</span> <span class=\"mi\">1</span> <span class=\"o\">:=</span> <span class=\"kd\">by</span> <span class=\"n\">addarith</span> <span class=\"o\">[</span><span class=\"n\">ha</span><span class=\"o\">]</span>\n</pre></div>\n</div>\n</li>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0281",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "li",
+    "text": "If \\(x=2\\) and \\(y ^ 2 = -7\\) , then \\(x+y^2=-5\\) . example { x y : ℚ } ( hx : x = 2 ) ( hy : y ^ 2 = - 7 ) : x + y ^ 2 = - 5 := calc x + y ^ 2 = x - 7 := by addarith [ hy ] _ = - 5 := by addarith [ hx ]",
+    "html": "<li><p>If <span class=\"math notranslate nohighlight\">\\(x=2\\)</span> and <span class=\"math notranslate nohighlight\">\\(y ^ 2 = -7\\)</span>, then <span class=\"math notranslate nohighlight\">\\(x+y^2=-5\\)</span>.</p>\n<div class=\"highlight-lean notranslate\"><div class=\"highlight\"><pre><span></span><span class=\"kd\">example</span> <span class=\"o\">{</span><span class=\"n\">x</span> <span class=\"n\">y</span> <span class=\"o\">:</span> <span class=\"n\">ℚ</span><span class=\"o\">}</span> <span class=\"o\">(</span><span class=\"n\">hx</span> <span class=\"o\">:</span> <span class=\"n\">x</span> <span class=\"bp\">=</span> <span class=\"mi\">2</span><span class=\"o\">)</span> <span class=\"o\">(</span><span class=\"n\">hy</span> <span class=\"o\">:</span> <span class=\"n\">y</span> <span class=\"bp\">^</span> <span class=\"mi\">2</span> <span class=\"bp\">=</span> <span class=\"bp\">-</span><span class=\"mi\">7</span><span class=\"o\">)</span> <span class=\"o\">:</span> <span class=\"n\">x</span> <span class=\"bp\">+</span> <span class=\"n\">y</span> <span class=\"bp\">^</span> <span class=\"mi\">2</span> <span class=\"bp\">=</span> <span class=\"bp\">-</span><span class=\"mi\">5</span> <span class=\"o\">:=</span>\n  <span class=\"k\">calc</span>\n    <span class=\"n\">x</span> <span class=\"bp\">+</span> <span class=\"n\">y</span> <span class=\"bp\">^</span> <span class=\"mi\">2</span> <span class=\"bp\">=</span> <span class=\"n\">x</span> <span class=\"bp\">-</span> <span class=\"mi\">7</span> <span class=\"o\">:=</span> <span class=\"kd\">by</span> <span class=\"n\">addarith</span> <span class=\"o\">[</span><span class=\"n\">hy</span><span class=\"o\">]</span>\n    <span class=\"n\">_</span> <span class=\"bp\">=</span> <span class=\"bp\">-</span><span class=\"mi\">5</span> <span class=\"o\">:=</span> <span class=\"kd\">by</span> <span class=\"n\">addarith</span> <span class=\"o\">[</span><span class=\"n\">hx</span><span class=\"o\">]</span>\n</pre></div>\n</div>\n</li>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0282",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "li",
+    "text": "if \\(t=4-st\\) , then \\(t+st>0\\) . example { s t : ℝ } ( h : t = 4 - s * t ) : t + s * t > 0 := by addarith [ h ]",
+    "html": "<li><p>if <span class=\"math notranslate nohighlight\">\\(t=4-st\\)</span>, then <span class=\"math notranslate nohighlight\">\\(t+st&gt;0\\)</span>.</p>\n<div class=\"highlight-lean notranslate\"><div class=\"highlight\"><pre><span></span><span class=\"kd\">example</span> <span class=\"o\">{</span><span class=\"n\">s</span> <span class=\"n\">t</span> <span class=\"o\">:</span> <span class=\"n\">ℝ</span><span class=\"o\">}</span> <span class=\"o\">(</span><span class=\"n\">h</span> <span class=\"o\">:</span> <span class=\"n\">t</span> <span class=\"bp\">=</span> <span class=\"mi\">4</span> <span class=\"bp\">-</span> <span class=\"n\">s</span> <span class=\"bp\">*</span> <span class=\"n\">t</span><span class=\"o\">)</span> <span class=\"o\">:</span> <span class=\"n\">t</span> <span class=\"bp\">+</span> <span class=\"n\">s</span> <span class=\"bp\">*</span> <span class=\"n\">t</span> <span class=\"bp\">&gt;</span> <span class=\"mi\">0</span> <span class=\"o\">:=</span> <span class=\"kd\">by</span> <span class=\"n\">addarith</span> <span class=\"o\">[</span><span class=\"n\">h</span><span class=\"o\">]</span>\n</pre></div>\n</div>\n</li>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0283",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "li",
+    "text": "if \\(m \\le 8 - n\\) , then \\(10>m+n\\) . example { m n : ℝ } ( h1 : m ≤ 8 - n ) : 10 > m + n := by addarith [ h1 ]",
+    "html": "<li><p>if <span class=\"math notranslate nohighlight\">\\(m \\le 8 - n\\)</span>, then <span class=\"math notranslate nohighlight\">\\(10&gt;m+n\\)</span>.</p>\n<div class=\"highlight-lean notranslate\"><div class=\"highlight\"><pre><span></span><span class=\"kd\">example</span> <span class=\"o\">{</span><span class=\"n\">m</span> <span class=\"n\">n</span> <span class=\"o\">:</span> <span class=\"n\">ℝ</span><span class=\"o\">}</span> <span class=\"o\">(</span><span class=\"n\">h1</span> <span class=\"o\">:</span> <span class=\"n\">m</span> <span class=\"bp\">≤</span> <span class=\"mi\">8</span> <span class=\"bp\">-</span> <span class=\"n\">n</span><span class=\"o\">)</span> <span class=\"o\">:</span> <span class=\"mi\">10</span> <span class=\"bp\">&gt;</span> <span class=\"n\">m</span> <span class=\"bp\">+</span> <span class=\"n\">n</span> <span class=\"o\">:=</span> <span class=\"kd\">by</span> <span class=\"n\">addarith</span> <span class=\"o\">[</span><span class=\"n\">h1</span><span class=\"o\">]</span>\n</pre></div>\n</div>\n</li>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0284",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "dt",
+    "text": "1",
+    "html": "<dt class=\"label\" id=\"id17\"><span class=\"brackets\"><a class=\"fn-backref\" href=\"#id13\">1</a></span></dt>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0285",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "dt",
+    "text": "2",
+    "html": "<dt class=\"label\" id=\"id18\"><span class=\"brackets\"><a class=\"fn-backref\" href=\"#id16\">2</a></span></dt>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0286",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "dt",
+    "text": "3",
+    "html": "<dt class=\"label\" id=\"id51\"><span class=\"brackets\"><a class=\"fn-backref\" href=\"#id49\">3</a></span></dt>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0287",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "dd",
+    "text": "You are apologizing to Lean for not having provided a proof of this assertion yet!",
+    "html": "<dd><p>You are apologizing to Lean for not having provided a proof of this assertion yet!</p>\n</dd>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0288",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "dd",
+    "text": "If there are no parentheses, like x * y * z , then Lean interprets the expression as being parenthesized greedily towards the front: (x * y) * z .",
+    "html": "<dd><p>If there are no parentheses, like <code class=\"docutils literal notranslate\"><span class=\"pre\">x</span> <span class=\"pre\">*</span> <span class=\"pre\">y</span> <span class=\"pre\">*</span> <span class=\"pre\">z</span></code>, then Lean interprets the expression as\nbeing parenthesized greedily towards the front: <code class=\"docutils literal notranslate\"><span class=\"pre\">(x</span> <span class=\"pre\">*</span> <span class=\"pre\">y)</span> <span class=\"pre\">*</span> <span class=\"pre\">z</span></code>.</p>\n</dd>",
+    "zh": ""
+  },
+  {
+    "id": "01_Proofs_by_Calculation:0289",
+    "file": "01_Proofs_by_Calculation.html",
+    "tag": "dd",
+    "text": "Adapted from IMO 2001 , problem 2.",
+    "html": "<dd><p>Adapted from <a class=\"reference external\" href=\"https://www.imo-official.org/year_info.aspx?year=2001\">IMO 2001</a>, problem 2.</p>\n</dd>",
+    "zh": ""
+  }
+]

@@ -1,21 +1,13 @@
 .. _proofs_with_structure:
-    
-Proofs with structure
-=====================
 
-The proofs by calculation of :numref:`Chapter %s <proofs_by_calculation>` were all,
-from a certain point of view, one-step proofs.  In this chapter we gradually
-introduce the ingredients for multi-step proofs.  These include establishing
-"intermediate" facts which get referred back to later, invoking named lemmas
-previously proved by yourself or other people, and taking apart complicated
-mathematical statements which have been built up from simpler ones using the
-logical symbols :math:`\lor`, :math:`\land` and :math:`\exists`.
+有结构的证明
+============
 
-This chapter also introduces the key interactivity feature of the Lean language:
-the live-updating *infoview* keeping track of your current hypotheses and goals.
+从某种角度看，:numref:`第 %s 章 <proofs_by_calculation>`中的计算式证明全都是一步证明。在本章中，我们逐渐引入多步证明的组成部分。这些组成部分包括：建立之后会再次引用的“中间”事实；调用由你自己或他人先前证明过的具名引理；以及拆解由较简单陈述通过逻辑符号 :math:`\lor`、:math:`\land` 和 :math:`\exists` 组合而成的复杂数学陈述。
 
-The work of this chapter continues (after a break) in
-:numref:`Chapter %s <proofs_with_structure_ii>`.
+本章还介绍 Lean 语言的关键交互功能：实时更新的 *infoview*，它会跟踪你当前的假设和目标。
+
+本章的工作会在中间插入一章之后，于 :numref:`第 %s 章 <proofs_with_structure_ii>`继续。
 
 .. include:: ch02_Proofs_with_Structure/01_Intermediate_Steps.inc
 .. include:: ch02_Proofs_with_Structure/02_Invoking_Lemmas.inc

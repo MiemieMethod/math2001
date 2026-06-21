@@ -1,18 +1,11 @@
 .. _parity_and_divisibility:
 
-Parity and divisibility
-=======================
+奇偶性与整除性
+==============
 
-The problems in this chapter concern some elementary properties of natural numbers
-and integers: *parity* (whether a number is *even* or *odd*), *divisibility*, and
-*congruence modulo* :math:`n`.
+本章的问题涉及自然数和整数的一些初等性质：*奇偶性*（一个数是*偶数*还是*奇数*）、*整除性*，以及*模* :math:`n` *同余*。
 
-There are no new logical symbols like :math:`\lor` or :math:`\exists` in this
-chapter, and no major additions (such as the use of intermediate steps or lemmas)
-to our reasoning toolkit.  Thus this chapter functions as a breather between the
-hard work of :numref:`Chapter %s <proofs_with_structure>` and  
-:numref:`Chapter %s <proofs_with_structure_ii>`, a chance to consolidate what you
-have learned.
+本章没有像 :math:`\lor` 或 :math:`\exists` 这样的新逻辑符号，也不会对我们的推理工具箱作重大补充（例如使用中间步骤或引理）。因此，本章在 :numref:`第 %s 章 <proofs_with_structure>`和 :numref:`第 %s 章 <proofs_with_structure_ii>`的艰苦工作之间起到喘息作用，让你有机会巩固已经学到的内容。
 
 .. include:: ch03_Parity_and_Divisibility/01_Parity.inc
 .. include:: ch03_Parity_and_Divisibility/02_Divisibility.inc

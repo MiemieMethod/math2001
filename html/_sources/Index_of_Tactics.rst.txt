@@ -3,113 +3,94 @@
     \appendix
 
 .. _tactic_index:
-    
-Index of Lean tactics
-=====================
 
-Tactics marked \* are specific to this book, so you will not be able to get help with them by
-googling/consulting internet forums/etc.  Reread the indicated part of the book or ask
-your instructor!
+Lean 策略索引
+=============
 
-.. rubric:: \* ``addarith`` (first use: :numref:`Section %s <shortcut>`)
+标有 \* 的策略是本书专用的策略，因此你无法通过搜索引擎、网络论坛等渠道获得关于它们的帮助。请重读书中指出的相关部分，或询问你的教师。
 
-Attempts to solve an equality or inequality by moving terms from the left-hand side to the
-right-hand side, or vice versa.
+.. rubric:: \* ``addarith``（首次使用：:numref:`第 %s 节 <shortcut>`）
 
-.. rubric:: ``apply`` (first use: :numref:`Section %s <lemmas>`; for :math:`\forall` and :math:`\to` hypotheses, :numref:`Section %s <forall_implies>`)
+试图通过把项从等式或不等式的一边移到另一边来证明该等式或不等式。
 
-Invokes a specified lemma or hypothesis to modify the goal.
+.. rubric:: ``apply``（首次使用：:numref:`第 %s 节 <lemmas>`；用于 :math:`\forall` 和 :math:`\to` 假设：:numref:`第 %s 节 <forall_implies>`）
 
-.. rubric:: ``by_cases`` (first use: :numref:`Section %s <lem>`)
+调用指定的引理或假设来改变目标。
 
-Case-splits on whether a given statement is true or false.
+.. rubric:: ``by_cases``（首次使用：:numref:`第 %s 节 <lem>`）
 
-.. rubric:: \* ``cancel`` (first use: :numref:`Section %s <tactic_mode>`)
-    
-Cancels a common factor from LHS/RHS of equality/inequality, cancels an exponentiation common to both sides, etc.
+按给定命题为真或为假进行分类讨论。
 
-.. rubric:: ``constructor`` (first use: :numref:`Section %s <and>`; for ``↔`` goals: :numref:`Section %s <iff>`)
+.. rubric:: \* ``cancel``（首次使用：:numref:`第 %s 节 <tactic_mode>`）
 
-Splits an "and" goal (:math:`\land`) into sub-goals for its left and right parts.
+消去等式或不等式两边的公因子，消去两边共同出现的幂，等等。
 
-.. rubric:: ``contradiction`` (first use: :numref:`Section %s <contradiction_hyp>`)
+.. rubric:: ``constructor``（首次使用：:numref:`第 %s 节 <and>`；用于 ``↔`` 目标：:numref:`第 %s 节 <iff>`）
 
-If there are two contradictory hypotheses available, this concludes the proof.
+把一个“且”目标（:math:`\land`）拆成分别对应左右两部分的子目标。
 
-.. rubric:: ``dsimp`` (first use: :numref:`Section %s <parity>`)
+.. rubric:: ``contradiction``（首次使用：:numref:`第 %s 节 <contradiction_hyp>`）
 
-Unfolds a definition.  Typically used while working on a proof rather than in the final version; it
-is useful for inspecting a goal or hypothesis more carefully, but in most cases the proof will still
-work after a ``dsimp`` line is deleted.
+若当前已有两个相互矛盾的假设，则结束证明。
 
-.. rubric:: \* ``extra`` (first use: :numref:`Section %s <proving_inequalities>`; for congruences: :numref:`Section %s <using_modular>`)
+.. rubric:: ``dsimp``（首次使用：:numref:`第 %s 节 <parity>`）
 
-A comparison tactic for inequalities, or other relations such as congruences: checks an inequality
-whose two sides differ by the addition of a positive quantity, a congruence mod 3 whose two sides
-differ by a multiple of 3, etc.
+展开一个定义。它通常用于证明探索阶段，而不是用于最终版本；它有助于更仔细地查看目标或假设，但在多数情况下，删除一行 ``dsimp`` 后证明仍能成立。
 
-.. rubric:: ``interval_cases`` (first use: :numref:`Section %s <forall_implies>`)
+.. rubric:: \* ``extra``（首次使用：:numref:`第 %s 节 <proving_inequalities>`；用于同余：:numref:`第 %s 节 <using_modular>`）
 
-Given a natural-number or integer variable :math:`n` for which numeric upper and lower bounds are
-available, produce cases for each of the numeric possibilities for :math:`n`.
+用于不等式或同余等其他关系的比较策略：它可以检查两边相差一个正量的不等式、两边相差 3 的倍数的模 3 同余，等等。
 
-.. rubric:: ``intro`` (first use: :numref:`Section %s <forall_implies>`; for :math:`\lnot` goals: :numref:`Section %s <contradiction>`)
+.. rubric:: ``interval_cases``（首次使用：:numref:`第 %s 节 <forall_implies>`）
 
-Introduces a universally quantified variable (:math:`\forall`) or the antecedent of an implication
-(:math:`\to`) from the goal, or assumes (for the sake of contradiction) the positive version of a
-negation (:math:`\lnot`) goal.
+给定一个自然数变量或整数变量 :math:`n`，并且已有关于 :math:`n` 的数值上下界时，对 :math:`n` 的每一种可能数值分别产生一个情形。
 
-.. rubric:: ``left`` (first use: :numref:`Section %s <or>`)
+.. rubric:: ``intro``（首次使用：:numref:`第 %s 节 <forall_implies>`；用于 :math:`\lnot` 目标：:numref:`第 %s 节 <contradiction>`）
 
-Selects the left alternative of an "or" goal (:math:`\lor`).
+从目标中引入一个全称量化变量（:math:`\forall`）或一个蕴含（:math:`\to`）的前件；或者在证明否定（:math:`\lnot`）目标时，为了导出矛盾而假设其正向版本。
 
-.. rubric:: ``have`` (first use: :numref:`Section %s <tactic_mode>`; with a lemma: :numref:`Section %s <or>`; introducing a new goal: :numref:`Section %s <and>`)
+.. rubric:: ``left``（首次使用：:numref:`第 %s 节 <or>`）
 
-Records a fact (followed by the proof of that fact), which then becomes available as an
-extra hypothesis.
+选择“或”目标（:math:`\lor`）的左侧选项。
 
-.. rubric:: ``mod_cases`` (first use: :numref:`Section %s <using_modular>`)
+.. rubric:: ``have``（首次使用：:numref:`第 %s 节 <tactic_mode>`；配合引理使用：:numref:`第 %s 节 <or>`；引入新目标：:numref:`第 %s 节 <and>`）
 
-Introduces cases for a variable according to its residue modulo a specified number.
+记录一个事实（随后给出该事实的证明），然后这个事实会作为额外假设可供使用。
 
-.. rubric:: \* ``numbers`` (first use: :numref:`Section %s <proving_inequalities>`; with ``at`` for contradictions: :numref:`Section %s <contradiction_hyp>`)
+.. rubric:: ``mod_cases``（首次使用：:numref:`第 %s 节 <using_modular>`）
 
-Proves numeric facts, like :math:`3\cdot 12 < 13 + 25` or :math:`3\cdot 5+1=4\cdot 4`.
+按照变量模指定数的余数来引入分类讨论。
 
-.. rubric:: ``obtain`` (first use for :math:`\lor`: :numref:`Section %s <or>`; for :math:`\land`: :numref:`Section %s <and>`; for :math:`\exists`: :numref:`Section %s <exists>`)
+.. rubric:: \* ``numbers``（首次使用：:numref:`第 %s 节 <proving_inequalities>`；配合 ``at`` 处理矛盾：:numref:`第 %s 节 <contradiction_hyp>`）
 
-Takes apart a hypothesis of the form "or" (:math:`\lor`), "and" (:math:`\land`) or "there exists"
-(:math:`\exists`).
+证明数值事实，例如 :math:`3\cdot 12 < 13 + 25` 或 :math:`3\cdot 5+1=4\cdot 4`。
 
-.. rubric:: ``push_neg`` (first use: :numref:`Section %s <negation_normalize>`)
+.. rubric:: ``obtain``（首次用于 :math:`\lor`：:numref:`第 %s 节 <or>`；用于 :math:`\land`：:numref:`第 %s 节 <and>`；用于 :math:`\exists`：:numref:`第 %s 节 <exists>`）
 
-Converts a hypothesis or goal to a logically equivalent form with negations pushed inwards as far
-as possible.
+拆解形如“或”（:math:`\lor`）、“且”（:math:`\land`）或“存在”（:math:`\exists`）的假设。
 
-.. rubric:: ``rel`` (first use: :numref:`Section %s <proving_inequalities>`; for congruences: :numref:`Section %s <using_modular>`; for logical equivalences: :numref:`Section %s <negation_normalize>`)
+.. rubric:: ``push_neg``（首次使用：:numref:`第 %s 节 <negation_normalize>`）
 
-A "substitution-like" tactic for inequalities, or other relations such as congruences: looks for
-the left-hand side of a specified inequality (or congruence, ...) fact in the goal, and replaces it
-with the right-hand side of that fact, if that replacement is "obviously" a valid inequality
-(or modular arithmetic, ...) deduction.  Compare with ``rw``.
+把一个假设或目标转换为逻辑等价的形式，其中否定号被尽可能向内推进。
 
-.. rubric:: ``right`` (first use: :numref:`Section %s <or>`)
+.. rubric:: ``rel``（首次使用：:numref:`第 %s 节 <proving_inequalities>`；用于同余：:numref:`第 %s 节 <using_modular>`；用于逻辑等价：:numref:`第 %s 节 <negation_normalize>`）
 
-Selects the right alternative of an "or" goal (:math:`\lor`).
+一个用于不等式或同余等其他关系的“类似代换”的策略：它会在目标中寻找某个指定不等式（或同余等）事实的左边，并在这种替换“显然”给出一个有效的不等式（或模算术等）推理时，把它替换为该事实的右边。可与 ``rw`` 比较。
 
-.. rubric:: ``ring`` (first use: :numref:`Section %s <proving_equalities_in_lean>`)
+.. rubric:: ``right``（首次使用：:numref:`第 %s 节 <or>`）
 
-Solves algebraic equality goals such as :math:`(x + y) ^ 2 = x ^ 2 + 2xy + y ^ 2`, when the proof
-is effectively "expand out both sides and rearrange".
+选择“或”目标（:math:`\lor`）的右侧选项。
 
-.. rubric:: ``rw`` (first use: :numref:`Section %s <proving_equalities_in_lean>`; for ``↔`` hypotheses/lemmas: :numref:`Section %s <iff>`)
+.. rubric:: ``ring``（首次使用：:numref:`第 %s 节 <proving_equalities_in_lean>`）
 
-Substitution: looks for the left-hand side of a specified equality fact in the goal, and replaces it with
-the right-hand side of that fact.
+解决代数等式目标，例如 :math:`(x + y) ^ 2 = x ^ 2 + 2xy + y ^ 2`，前提是证明实质上只是“展开两边并重新整理”。
 
-With ``↔`` hypotheses/lemmas, replaces the left-hand side of the specified ``↔`` fact with
-the right-hand side of that fact.
+.. rubric:: ``rw``（首次使用：:numref:`第 %s 节 <proving_equalities_in_lean>`；用于 ``↔`` 假设或引理：:numref:`第 %s 节 <iff>`）
 
-.. rubric:: ``use`` (first use: :numref:`Section %s <exists>`)
+代换：在目标中寻找某个指定等式事实的左边，并把它替换为该事实的右边。
 
-Provides a witness to an existential goal (:math:`\exists`).
+对于 ``↔`` 假设或引理，把指定 ``↔`` 事实的左边替换为其右边。
+
+.. rubric:: ``use``（首次使用：:numref:`第 %s 节 <exists>`）
+
+为存在性目标（:math:`\exists`）提供一个见证。

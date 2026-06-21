@@ -1,13 +1,28 @@
-# The Mechanics of Proof
+# 证明的技艺
 
-This repository contains the Lean code for the book [The Mechanics of Proof](https://hrmacbeth.github.io/math2001), by [Heather Macbeth](https://faculty.fordham.edu/hmacbeth1), developed for the course Math 2001 at Fordham University.
+本仓库是 Heather Macbeth 的教材 [The Mechanics of Proof](https://hrmacbeth.github.io/math2001) 的中文本地化版本，并保留配套 Lean 代码。中文网页位于 `html/`，中文 PDF 为仓库根目录下的 `the_mechanics_of_proof_zh.pdf`。
 
-The Lean files corresponding to each chapter of the book are in the folder [`Math2001`](https://github.com/hrmacbeth/math2001/tree/main/Math2001).
+Lean 源文件位于 `Math2001/` 与 `Library/`。本地验证 Lean 代码：
 
-You can run the code on the web using Gitpod, by clicking this link:
+```powershell
+lake exe cache get
+lake build
+```
 
-[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/hrmacbeth/math2001)
+中文文档由 `scripts/write_manual_translations.py` 中的人工译文映射生成。重新生成 HTML 与 `_sources`：
 
-(You will be prompted to make an account, if you do not yet have one -- the free tier offers 50 hours of use per month.) This is the easiest way to get started if you have never used Lean before.  You can accept the default "New Workspace" options and hit the "continue" button, then it will take about five minutes to load up a new workspace and auto-install the Lean mathematical library (wait for all the "cloning", "building", "compiling", "downloading" and "decompressing" steps to finish).  The workspace you just created will be accessible later from your [Gitpod user page](https://gitpod.io/workspaces).
+```powershell
+python scripts\write_manual_translations.py
+python scripts\translate_html_blocks.py apply
+python scripts\normalize_chinese_html.py
+python scripts\write_translated_sources.py
+python scripts\check_chinese_translation.py
+```
 
-You can also [install Lean](https://leanprover-community.github.io/get_started.html) to your own computer, then clone this repository to your computer by typing `git clone https://github.com/hrmacbeth/math2001.git` at the command line.  This will let you run the code on your computer.
+重新导出 PDF：
+
+```powershell
+node scripts\export_pdf.js
+```
+
+GitHub Actions 会在 `main` 分支上构建 Lean 项目、重新应用中文文档脚本、检查残留英文，并把 `html/` 部署到 `gh-pages` 分支，便于配置 GitHub Pages。

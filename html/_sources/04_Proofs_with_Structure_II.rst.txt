@@ -1,20 +1,11 @@
 .. _proofs_with_structure_ii:
 
-Proofs with structure, II
-=========================
+有结构的证明（二）
+==================
 
-In the course of :numref:`Chapter %s <proofs_with_structure>`, we studied the
-logical symbols :math:`\lor`, :math:`\land` and :math:`\exists`, which allow
-complicated mathematical statements to be built up from simpler ones.  For each
-such symbol, we learned its "grammar": the rule for using it when it appears in a
-hypothesis and the rule for using it when it appears in the goal.  This grammar is
-called `natural deduction <https://en.wikipedia.org/wiki/Natural_deduction>`_.
+在 :numref:`第 %s 章 <proofs_with_structure>`中，我们学习了逻辑符号 :math:`\lor`、:math:`\land` 和 :math:`\exists`。这些符号允许我们由较简单的陈述构造复杂的数学陈述。对于每个这样的符号，我们都学习了它的“语法”：当它出现在假设中时如何使用，以及当它出现在目标中时如何使用。这套语法称为 `自然演绎 <https://en.wikipedia.org/wiki/Natural_deduction>`_。
 
-This chapter finishes the work started in :numref:`Chapter %s <proofs_with_structure>`.
-We learn the grammar of the remaining logical symbols: :math:`\forall`,
-:math:`\to`, and :math:`\lnot`.  We also learn the grammar of two other logical
-symbols, :math:`\leftrightarrow` and :math:`\exists!`, which are less fundamental
-because they can be defined in terms of the other ones.
+本章完成 :numref:`第 %s 章 <proofs_with_structure>`中开始的工作。我们学习剩余逻辑符号 :math:`\forall`、:math:`\to` 和 :math:`\lnot` 的语法。我们还学习另外两个逻辑符号 :math:`\leftrightarrow` 和 :math:`\exists!` 的语法；它们不那么基本，因为可以用其他符号来定义。
 
 .. include:: ch04_Proofs_with_Structure_II/01_Forall_Implies.inc
 .. include:: ch04_Proofs_with_Structure_II/02_Iff.inc

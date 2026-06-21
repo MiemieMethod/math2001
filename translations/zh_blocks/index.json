@@ -1,0 +1,514 @@
+[
+  {
+    "id": "index:0001",
+    "file": "index.html",
+    "tag": "h1",
+    "text": "The Mechanics of Proof",
+    "html": "<h1>The Mechanics of Proof<a class=\"headerlink\" href=\"#the-mechanics-of-proof\" title=\"Permalink to this headline\"></a></h1>",
+    "zh": "证明的技艺"
+  },
+  {
+    "id": "index:0002",
+    "file": "index.html",
+    "tag": "p",
+    "text": "This is a book dealing with how to write careful, rigorous mathematical proofs. The book is paired with code in the computer formalization language Lean . Head over to the associated GitHub repository, https://github.com/hrmacbeth/math2001 , to download this code to your own computer or to open it in the cloud on Gitpod.",
+    "html": "<p>This is a book dealing with how to write careful, rigorous mathematical proofs.\nThe book is paired with code in the computer formalization language\n<a class=\"reference external\" href=\"https://leanprover.github.io/about/\">Lean</a>. Head over to the associated GitHub repository,\n<a class=\"reference external\" href=\"https://github.com/hrmacbeth/math2001\">https://github.com/hrmacbeth/math2001</a>, to download this code to your own computer or to open it in\nthe cloud on Gitpod.</p>",
+    "zh": "本书讨论如何书写细致而严谨的数学证明。本书配有以计算机形式化语言 <a class=\"reference external\" href=\"https://leanprover.github.io/about/\">Lean</a> 写成的代码。请前往配套的 GitHub 仓库 <a class=\"reference external\" href=\"https://github.com/hrmacbeth/math2001\">https://github.com/hrmacbeth/math2001</a>，将这些代码下载到自己的计算机，或在 Gitpod 云端打开。"
+  },
+  {
+    "id": "index:0003",
+    "file": "index.html",
+    "tag": "p",
+    "text": "This book is aimed at the early university level and has been written for the course Math 2001, at Fordham University. Please reach out to the author, Heather Macbeth , with comments and corrections.",
+    "html": "<p>This book is aimed at the early university level and has been written for the course\nMath 2001, at Fordham University.  Please reach out to the author,\n<a class=\"reference external\" href=\"https://faculty.fordham.edu/hmacbeth1/\">Heather Macbeth</a>, with comments and corrections.</p>",
+    "zh": "本书面向大学低年级学生，并为 Fordham University 的 Math 2001 课程而写。若有意见或修正，欢迎联系作者 <a class=\"reference external\" href=\"https://faculty.fordham.edu/hmacbeth1/\">Heather Macbeth</a>。"
+  },
+  {
+    "id": "index:0004",
+    "file": "index.html",
+    "tag": "p",
+    "text": "Appendices",
+    "html": "<p><strong>Appendices</strong></p>",
+    "zh": "<strong>附录</strong>"
+  },
+  {
+    "id": "index:0005",
+    "file": "index.html",
+    "tag": "li",
+    "text": "Preface About this book Why Lean? Contents and prerequisites Note for instructors Acknowledgements",
+    "html": "<li class=\"toctree-l1\"><a class=\"reference internal\" href=\"00_Introduction.html\">Preface</a><ul>\n<li class=\"toctree-l2\"><a class=\"reference internal\" href=\"00_Introduction.html#about-this-book\">About this book</a></li>\n<li class=\"toctree-l2\"><a class=\"reference internal\" href=\"00_Introduction.html#why-lean\">Why Lean?</a></li>\n<li class=\"toctree-l2\"><a class=\"reference internal\" href=\"00_Introduction.html#contents-and-prerequisites\">Contents and prerequisites</a></li>\n<li class=\"toctree-l2\"><a class=\"reference internal\" href=\"00_Introduction.html#note-for-instructors\">Note for instructors</a></li>\n<li class=\"toctree-l2\"><a class=\"reference internal\" href=\"00_Introduction.html#acknowledgements\">Acknowledgements</a></li>\n</ul>\n</li>",
+    "zh": ""
+  },
+  {
+    "id": "index:0006",
+    "file": "index.html",
+    "tag": "li",
+    "text": "About this book",
+    "html": "<li class=\"toctree-l2\"><a class=\"reference internal\" href=\"00_Introduction.html#about-this-book\">About this book</a></li>",
+    "zh": "关于本书"
+  },
+  {
+    "id": "index:0007",
+    "file": "index.html",
+    "tag": "li",
+    "text": "Why Lean?",
+    "html": "<li class=\"toctree-l2\"><a class=\"reference internal\" href=\"00_Introduction.html#why-lean\">Why Lean?</a></li>",
+    "zh": "为什么使用 Lean？"
+  },
+  {
+    "id": "index:0008",
+    "file": "index.html",
+    "tag": "li",
+    "text": "Contents and prerequisites",
+    "html": "<li class=\"toctree-l2\"><a class=\"reference internal\" href=\"00_Introduction.html#contents-and-prerequisites\">Contents and prerequisites</a></li>",
+    "zh": "内容与预备知识"
+  },
+  {
+    "id": "index:0009",
+    "file": "index.html",
+    "tag": "li",
+    "text": "Note for instructors",
+    "html": "<li class=\"toctree-l2\"><a class=\"reference internal\" href=\"00_Introduction.html#note-for-instructors\">Note for instructors</a></li>",
+    "zh": "教师说明"
+  },
+  {
+    "id": "index:0010",
+    "file": "index.html",
+    "tag": "li",
+    "text": "Acknowledgements",
+    "html": "<li class=\"toctree-l2\"><a class=\"reference internal\" href=\"00_Introduction.html#acknowledgements\">Acknowledgements</a></li>",
+    "zh": "致谢"
+  },
+  {
+    "id": "index:0011",
+    "file": "index.html",
+    "tag": "li",
+    "text": "1. Proofs by calculation 1.1. Proving equalities 1.2. Proving equalities in Lean 1.3. Tips and tricks 1.4. Proving inequalities 1.5. A shortcut",
+    "html": "<li class=\"toctree-l1\"><a class=\"reference internal\" href=\"01_Proofs_by_Calculation.html\">1. Proofs by calculation</a><ul>\n<li class=\"toctree-l2\"><a class=\"reference internal\" href=\"01_Proofs_by_Calculation.html#proving-equalities\">1.1. Proving equalities</a></li>\n<li class=\"toctree-l2\"><a class=\"reference internal\" href=\"01_Proofs_by_Calculation.html#proving-equalities-in-lean\">1.2. Proving equalities in Lean</a></li>\n<li class=\"toctree-l2\"><a class=\"reference internal\" href=\"01_Proofs_by_Calculation.html#tips-and-tricks\">1.3. Tips and tricks</a></li>\n<li class=\"toctree-l2\"><a class=\"reference internal\" href=\"01_Proofs_by_Calculation.html#proving-inequalities\">1.4. Proving inequalities</a></li>\n<li class=\"toctree-l2\"><a class=\"reference internal\" href=\"01_Proofs_by_Calculation.html#a-shortcut\">1.5. A shortcut</a></li>\n</ul>\n</li>",
+    "zh": ""
+  },
+  {
+    "id": "index:0012",
+    "file": "index.html",
+    "tag": "li",
+    "text": "1.1. Proving equalities",
+    "html": "<li class=\"toctree-l2\"><a class=\"reference internal\" href=\"01_Proofs_by_Calculation.html#proving-equalities\">1.1. Proving equalities</a></li>",
+    "zh": "1.1. 证明等式"
+  },
+  {
+    "id": "index:0013",
+    "file": "index.html",
+    "tag": "li",
+    "text": "1.2. Proving equalities in Lean",
+    "html": "<li class=\"toctree-l2\"><a class=\"reference internal\" href=\"01_Proofs_by_Calculation.html#proving-equalities-in-lean\">1.2. Proving equalities in Lean</a></li>",
+    "zh": "1.2. 在 Lean 中证明等式"
+  },
+  {
+    "id": "index:0014",
+    "file": "index.html",
+    "tag": "li",
+    "text": "1.3. Tips and tricks",
+    "html": "<li class=\"toctree-l2\"><a class=\"reference internal\" href=\"01_Proofs_by_Calculation.html#tips-and-tricks\">1.3. Tips and tricks</a></li>",
+    "zh": "1.3. 提示与技巧"
+  },
+  {
+    "id": "index:0015",
+    "file": "index.html",
+    "tag": "li",
+    "text": "1.4. Proving inequalities",
+    "html": "<li class=\"toctree-l2\"><a class=\"reference internal\" href=\"01_Proofs_by_Calculation.html#proving-inequalities\">1.4. Proving inequalities</a></li>",
+    "zh": "1.4. 证明不等式"
+  },
+  {
+    "id": "index:0016",
+    "file": "index.html",
+    "tag": "li",
+    "text": "1.5. A shortcut",
+    "html": "<li class=\"toctree-l2\"><a class=\"reference internal\" href=\"01_Proofs_by_Calculation.html#a-shortcut\">1.5. A shortcut</a></li>",
+    "zh": "1.5. 一种简便写法"
+  },
+  {
+    "id": "index:0017",
+    "file": "index.html",
+    "tag": "li",
+    "text": "2. Proofs with structure 2.1. Intermediate steps 2.2. Invoking lemmas 2.3. “Or” and proof by cases 2.4. “And” 2.5. Existence proofs",
+    "html": "<li class=\"toctree-l1\"><a class=\"reference internal\" href=\"02_Proofs_with_Structure.html\">2. Proofs with structure</a><ul>\n<li class=\"toctree-l2\"><a class=\"reference internal\" href=\"02_Proofs_with_Structure.html#intermediate-steps\">2.1. Intermediate steps</a></li>\n<li class=\"toctree-l2\"><a class=\"reference internal\" href=\"02_Proofs_with_Structure.html#invoking-lemmas\">2.2. Invoking lemmas</a></li>\n<li class=\"toctree-l2\"><a class=\"reference internal\" href=\"02_Proofs_with_Structure.html#or-and-proof-by-cases\">2.3. “Or” and proof by cases</a></li>\n<li class=\"toctree-l2\"><a class=\"reference internal\" href=\"02_Proofs_with_Structure.html#and\">2.4. “And”</a></li>\n<li class=\"toctree-l2\"><a class=\"reference internal\" href=\"02_Proofs_with_Structure.html#existence-proofs\">2.5. Existence proofs</a></li>\n</ul>\n</li>",
+    "zh": ""
+  },
+  {
+    "id": "index:0018",
+    "file": "index.html",
+    "tag": "li",
+    "text": "2.1. Intermediate steps",
+    "html": "<li class=\"toctree-l2\"><a class=\"reference internal\" href=\"02_Proofs_with_Structure.html#intermediate-steps\">2.1. Intermediate steps</a></li>",
+    "zh": "2.1. 中间步骤"
+  },
+  {
+    "id": "index:0019",
+    "file": "index.html",
+    "tag": "li",
+    "text": "2.2. Invoking lemmas",
+    "html": "<li class=\"toctree-l2\"><a class=\"reference internal\" href=\"02_Proofs_with_Structure.html#invoking-lemmas\">2.2. Invoking lemmas</a></li>",
+    "zh": "2.2. 调用引理"
+  },
+  {
+    "id": "index:0020",
+    "file": "index.html",
+    "tag": "li",
+    "text": "2.3. “Or” and proof by cases",
+    "html": "<li class=\"toctree-l2\"><a class=\"reference internal\" href=\"02_Proofs_with_Structure.html#or-and-proof-by-cases\">2.3. “Or” and proof by cases</a></li>",
+    "zh": "2.3. “或”与分类证明"
+  },
+  {
+    "id": "index:0021",
+    "file": "index.html",
+    "tag": "li",
+    "text": "2.4. “And”",
+    "html": "<li class=\"toctree-l2\"><a class=\"reference internal\" href=\"02_Proofs_with_Structure.html#and\">2.4. “And”</a></li>",
+    "zh": "2.4. “且”"
+  },
+  {
+    "id": "index:0022",
+    "file": "index.html",
+    "tag": "li",
+    "text": "2.5. Existence proofs",
+    "html": "<li class=\"toctree-l2\"><a class=\"reference internal\" href=\"02_Proofs_with_Structure.html#existence-proofs\">2.5. Existence proofs</a></li>",
+    "zh": "2.5. 存在性证明"
+  },
+  {
+    "id": "index:0023",
+    "file": "index.html",
+    "tag": "li",
+    "text": "3. Parity and divisibility 3.1. Definitions; parity 3.2. Divisibility 3.3. Modular arithmetic: theory 3.4. Modular arithmetic: calculations 3.5. Bézout’s identity",
+    "html": "<li class=\"toctree-l1\"><a class=\"reference internal\" href=\"03_Parity_and_Divisibility.html\">3. Parity and divisibility</a><ul>\n<li class=\"toctree-l2\"><a class=\"reference internal\" href=\"03_Parity_and_Divisibility.html#definitions-parity\">3.1. Definitions; parity</a></li>\n<li class=\"toctree-l2\"><a class=\"reference internal\" href=\"03_Parity_and_Divisibility.html#divisibility\">3.2. Divisibility</a></li>\n<li class=\"toctree-l2\"><a class=\"reference internal\" href=\"03_Parity_and_Divisibility.html#modular-arithmetic-theory\">3.3. Modular arithmetic: theory</a></li>\n<li class=\"toctree-l2\"><a class=\"reference internal\" href=\"03_Parity_and_Divisibility.html#modular-arithmetic-calculations\">3.4. Modular arithmetic: calculations</a></li>\n<li class=\"toctree-l2\"><a class=\"reference internal\" href=\"03_Parity_and_Divisibility.html#bezout-s-identity\">3.5. Bézout’s identity</a></li>\n</ul>\n</li>",
+    "zh": ""
+  },
+  {
+    "id": "index:0024",
+    "file": "index.html",
+    "tag": "li",
+    "text": "3.1. Definitions; parity",
+    "html": "<li class=\"toctree-l2\"><a class=\"reference internal\" href=\"03_Parity_and_Divisibility.html#definitions-parity\">3.1. Definitions; parity</a></li>",
+    "zh": "3.1. 定义；奇偶性"
+  },
+  {
+    "id": "index:0025",
+    "file": "index.html",
+    "tag": "li",
+    "text": "3.2. Divisibility",
+    "html": "<li class=\"toctree-l2\"><a class=\"reference internal\" href=\"03_Parity_and_Divisibility.html#divisibility\">3.2. Divisibility</a></li>",
+    "zh": "3.2. 整除性"
+  },
+  {
+    "id": "index:0026",
+    "file": "index.html",
+    "tag": "li",
+    "text": "3.3. Modular arithmetic: theory",
+    "html": "<li class=\"toctree-l2\"><a class=\"reference internal\" href=\"03_Parity_and_Divisibility.html#modular-arithmetic-theory\">3.3. Modular arithmetic: theory</a></li>",
+    "zh": "3.3. 模算术：理论"
+  },
+  {
+    "id": "index:0027",
+    "file": "index.html",
+    "tag": "li",
+    "text": "3.4. Modular arithmetic: calculations",
+    "html": "<li class=\"toctree-l2\"><a class=\"reference internal\" href=\"03_Parity_and_Divisibility.html#modular-arithmetic-calculations\">3.4. Modular arithmetic: calculations</a></li>",
+    "zh": "3.4. 模算术：计算"
+  },
+  {
+    "id": "index:0028",
+    "file": "index.html",
+    "tag": "li",
+    "text": "3.5. Bézout’s identity",
+    "html": "<li class=\"toctree-l2\"><a class=\"reference internal\" href=\"03_Parity_and_Divisibility.html#bezout-s-identity\">3.5. Bézout’s identity</a></li>",
+    "zh": "3.5. 贝祖等式"
+  },
+  {
+    "id": "index:0029",
+    "file": "index.html",
+    "tag": "li",
+    "text": "4. Proofs with structure, II 4.1. “For all” and implication 4.2. “If and only if” 4.3. “There exists a unique” 4.4. Contradictory hypotheses 4.5. Proof by contradiction",
+    "html": "<li class=\"toctree-l1\"><a class=\"reference internal\" href=\"04_Proofs_with_Structure_II.html\">4. Proofs with structure, II</a><ul>\n<li class=\"toctree-l2\"><a class=\"reference internal\" href=\"04_Proofs_with_Structure_II.html#for-all-and-implication\">4.1. “For all” and implication</a></li>\n<li class=\"toctree-l2\"><a class=\"reference internal\" href=\"04_Proofs_with_Structure_II.html#if-and-only-if\">4.2. “If and only if”</a></li>\n<li class=\"toctree-l2\"><a class=\"reference internal\" href=\"04_Proofs_with_Structure_II.html#there-exists-a-unique\">4.3. “There exists a unique”</a></li>\n<li class=\"toctree-l2\"><a class=\"reference internal\" href=\"04_Proofs_with_Structure_II.html#contradictory-hypotheses\">4.4. Contradictory hypotheses</a></li>\n<li class=\"toctree-l2\"><a class=\"reference internal\" href=\"04_Proofs_with_Structure_II.html#proof-by-contradiction\">4.5. Proof by contradiction</a></li>\n</ul>\n</li>",
+    "zh": ""
+  },
+  {
+    "id": "index:0030",
+    "file": "index.html",
+    "tag": "li",
+    "text": "4.1. “For all” and implication",
+    "html": "<li class=\"toctree-l2\"><a class=\"reference internal\" href=\"04_Proofs_with_Structure_II.html#for-all-and-implication\">4.1. “For all” and implication</a></li>",
+    "zh": ""
+  },
+  {
+    "id": "index:0031",
+    "file": "index.html",
+    "tag": "li",
+    "text": "4.2. “If and only if”",
+    "html": "<li class=\"toctree-l2\"><a class=\"reference internal\" href=\"04_Proofs_with_Structure_II.html#if-and-only-if\">4.2. “If and only if”</a></li>",
+    "zh": ""
+  },
+  {
+    "id": "index:0032",
+    "file": "index.html",
+    "tag": "li",
+    "text": "4.3. “There exists a unique”",
+    "html": "<li class=\"toctree-l2\"><a class=\"reference internal\" href=\"04_Proofs_with_Structure_II.html#there-exists-a-unique\">4.3. “There exists a unique”</a></li>",
+    "zh": ""
+  },
+  {
+    "id": "index:0033",
+    "file": "index.html",
+    "tag": "li",
+    "text": "4.4. Contradictory hypotheses",
+    "html": "<li class=\"toctree-l2\"><a class=\"reference internal\" href=\"04_Proofs_with_Structure_II.html#contradictory-hypotheses\">4.4. Contradictory hypotheses</a></li>",
+    "zh": "4.4. 矛盾的假设"
+  },
+  {
+    "id": "index:0034",
+    "file": "index.html",
+    "tag": "li",
+    "text": "4.5. Proof by contradiction",
+    "html": "<li class=\"toctree-l2\"><a class=\"reference internal\" href=\"04_Proofs_with_Structure_II.html#proof-by-contradiction\">4.5. Proof by contradiction</a></li>",
+    "zh": "4.5. 反证法"
+  },
+  {
+    "id": "index:0035",
+    "file": "index.html",
+    "tag": "li",
+    "text": "5. Logic 5.1. Logical equivalence 5.2. The law of the excluded middle 5.3. Normal form for negations",
+    "html": "<li class=\"toctree-l1\"><a class=\"reference internal\" href=\"05_Logic.html\">5. Logic</a><ul>\n<li class=\"toctree-l2\"><a class=\"reference internal\" href=\"05_Logic.html#logical-equivalence\">5.1. Logical equivalence</a></li>\n<li class=\"toctree-l2\"><a class=\"reference internal\" href=\"05_Logic.html#the-law-of-the-excluded-middle\">5.2. The law of the excluded middle</a></li>\n<li class=\"toctree-l2\"><a class=\"reference internal\" href=\"05_Logic.html#normal-form-for-negations\">5.3. Normal form for negations</a></li>\n</ul>\n</li>",
+    "zh": ""
+  },
+  {
+    "id": "index:0036",
+    "file": "index.html",
+    "tag": "li",
+    "text": "5.1. Logical equivalence",
+    "html": "<li class=\"toctree-l2\"><a class=\"reference internal\" href=\"05_Logic.html#logical-equivalence\">5.1. Logical equivalence</a></li>",
+    "zh": "5.1. 逻辑等价"
+  },
+  {
+    "id": "index:0037",
+    "file": "index.html",
+    "tag": "li",
+    "text": "5.2. The law of the excluded middle",
+    "html": "<li class=\"toctree-l2\"><a class=\"reference internal\" href=\"05_Logic.html#the-law-of-the-excluded-middle\">5.2. The law of the excluded middle</a></li>",
+    "zh": "5.2. 排中律"
+  },
+  {
+    "id": "index:0038",
+    "file": "index.html",
+    "tag": "li",
+    "text": "5.3. Normal form for negations",
+    "html": "<li class=\"toctree-l2\"><a class=\"reference internal\" href=\"05_Logic.html#normal-form-for-negations\">5.3. Normal form for negations</a></li>",
+    "zh": "5.3. 否定的范式"
+  },
+  {
+    "id": "index:0039",
+    "file": "index.html",
+    "tag": "li",
+    "text": "6. Induction 6.1. Introduction 6.2. Recurrence relations 6.3. Two-step induction 6.4. Strong induction 6.5. Pascal’s triangle 6.6. The Division Algorithm 6.7. The Euclidean algorithm",
+    "html": "<li class=\"toctree-l1\"><a class=\"reference internal\" href=\"06_Induction.html\">6. Induction</a><ul>\n<li class=\"toctree-l2\"><a class=\"reference internal\" href=\"06_Induction.html#introduction\">6.1. Introduction</a></li>\n<li class=\"toctree-l2\"><a class=\"reference internal\" href=\"06_Induction.html#recurrence-relations\">6.2. Recurrence relations</a></li>\n<li class=\"toctree-l2\"><a class=\"reference internal\" href=\"06_Induction.html#two-step-induction\">6.3. Two-step induction</a></li>\n<li class=\"toctree-l2\"><a class=\"reference internal\" href=\"06_Induction.html#strong-induction\">6.4. Strong induction</a></li>\n<li class=\"toctree-l2\"><a class=\"reference internal\" href=\"06_Induction.html#pascal-s-triangle\">6.5. Pascal’s triangle</a></li>\n<li class=\"toctree-l2\"><a class=\"reference internal\" href=\"06_Induction.html#the-division-algorithm\">6.6. The Division Algorithm</a></li>\n<li class=\"toctree-l2\"><a class=\"reference internal\" href=\"06_Induction.html#the-euclidean-algorithm\">6.7. The Euclidean algorithm</a></li>\n</ul>\n</li>",
+    "zh": ""
+  },
+  {
+    "id": "index:0040",
+    "file": "index.html",
+    "tag": "li",
+    "text": "6.1. Introduction",
+    "html": "<li class=\"toctree-l2\"><a class=\"reference internal\" href=\"06_Induction.html#introduction\">6.1. Introduction</a></li>",
+    "zh": "6.1. 引言"
+  },
+  {
+    "id": "index:0041",
+    "file": "index.html",
+    "tag": "li",
+    "text": "6.2. Recurrence relations",
+    "html": "<li class=\"toctree-l2\"><a class=\"reference internal\" href=\"06_Induction.html#recurrence-relations\">6.2. Recurrence relations</a></li>",
+    "zh": "6.2. 递推关系"
+  },
+  {
+    "id": "index:0042",
+    "file": "index.html",
+    "tag": "li",
+    "text": "6.3. Two-step induction",
+    "html": "<li class=\"toctree-l2\"><a class=\"reference internal\" href=\"06_Induction.html#two-step-induction\">6.3. Two-step induction</a></li>",
+    "zh": "6.3. 两步归纳法"
+  },
+  {
+    "id": "index:0043",
+    "file": "index.html",
+    "tag": "li",
+    "text": "6.4. Strong induction",
+    "html": "<li class=\"toctree-l2\"><a class=\"reference internal\" href=\"06_Induction.html#strong-induction\">6.4. Strong induction</a></li>",
+    "zh": "6.4. 强归纳法"
+  },
+  {
+    "id": "index:0044",
+    "file": "index.html",
+    "tag": "li",
+    "text": "6.5. Pascal’s triangle",
+    "html": "<li class=\"toctree-l2\"><a class=\"reference internal\" href=\"06_Induction.html#pascal-s-triangle\">6.5. Pascal’s triangle</a></li>",
+    "zh": "6.5. 帕斯卡三角形"
+  },
+  {
+    "id": "index:0045",
+    "file": "index.html",
+    "tag": "li",
+    "text": "6.6. The Division Algorithm",
+    "html": "<li class=\"toctree-l2\"><a class=\"reference internal\" href=\"06_Induction.html#the-division-algorithm\">6.6. The Division Algorithm</a></li>",
+    "zh": "6.6. 带余除法定理"
+  },
+  {
+    "id": "index:0046",
+    "file": "index.html",
+    "tag": "li",
+    "text": "6.7. The Euclidean algorithm",
+    "html": "<li class=\"toctree-l2\"><a class=\"reference internal\" href=\"06_Induction.html#the-euclidean-algorithm\">6.7. The Euclidean algorithm</a></li>",
+    "zh": "6.7. 欧几里得算法"
+  },
+  {
+    "id": "index:0047",
+    "file": "index.html",
+    "tag": "li",
+    "text": "7. Number theory 7.1. Infinitely many primes 7.2. Gauss’ and Euclid’s lemmas 7.3. The square root of two",
+    "html": "<li class=\"toctree-l1\"><a class=\"reference internal\" href=\"07_Number_Theory.html\">7. Number theory</a><ul>\n<li class=\"toctree-l2\"><a class=\"reference internal\" href=\"07_Number_Theory.html#infinitely-many-primes\">7.1. Infinitely many primes</a></li>\n<li class=\"toctree-l2\"><a class=\"reference internal\" href=\"07_Number_Theory.html#gauss-and-euclid-s-lemmas\">7.2. Gauss’ and Euclid’s lemmas</a></li>\n<li class=\"toctree-l2\"><a class=\"reference internal\" href=\"07_Number_Theory.html#the-square-root-of-two\">7.3. The square root of two</a></li>\n</ul>\n</li>",
+    "zh": ""
+  },
+  {
+    "id": "index:0048",
+    "file": "index.html",
+    "tag": "li",
+    "text": "7.1. Infinitely many primes",
+    "html": "<li class=\"toctree-l2\"><a class=\"reference internal\" href=\"07_Number_Theory.html#infinitely-many-primes\">7.1. Infinitely many primes</a></li>",
+    "zh": "7.1. 素数有无穷多个"
+  },
+  {
+    "id": "index:0049",
+    "file": "index.html",
+    "tag": "li",
+    "text": "7.2. Gauss’ and Euclid’s lemmas",
+    "html": "<li class=\"toctree-l2\"><a class=\"reference internal\" href=\"07_Number_Theory.html#gauss-and-euclid-s-lemmas\">7.2. Gauss’ and Euclid’s lemmas</a></li>",
+    "zh": "7.2. 高斯引理与欧几里得引理"
+  },
+  {
+    "id": "index:0050",
+    "file": "index.html",
+    "tag": "li",
+    "text": "7.3. The square root of two",
+    "html": "<li class=\"toctree-l2\"><a class=\"reference internal\" href=\"07_Number_Theory.html#the-square-root-of-two\">7.3. The square root of two</a></li>",
+    "zh": "7.3. 二的平方根"
+  },
+  {
+    "id": "index:0051",
+    "file": "index.html",
+    "tag": "li",
+    "text": "8. Functions 8.1. Injectivity and surjectivity 8.2. Bijectivity 8.3. Composition of functions 8.4. Product types",
+    "html": "<li class=\"toctree-l1\"><a class=\"reference internal\" href=\"08_Functions.html\">8. Functions</a><ul>\n<li class=\"toctree-l2\"><a class=\"reference internal\" href=\"08_Functions.html#injectivity-and-surjectivity\">8.1. Injectivity and surjectivity</a></li>\n<li class=\"toctree-l2\"><a class=\"reference internal\" href=\"08_Functions.html#bijectivity\">8.2. Bijectivity</a></li>\n<li class=\"toctree-l2\"><a class=\"reference internal\" href=\"08_Functions.html#composition-of-functions\">8.3. Composition of functions</a></li>\n<li class=\"toctree-l2\"><a class=\"reference internal\" href=\"08_Functions.html#product-types\">8.4. Product types</a></li>\n</ul>\n</li>",
+    "zh": ""
+  },
+  {
+    "id": "index:0052",
+    "file": "index.html",
+    "tag": "li",
+    "text": "8.1. Injectivity and surjectivity",
+    "html": "<li class=\"toctree-l2\"><a class=\"reference internal\" href=\"08_Functions.html#injectivity-and-surjectivity\">8.1. Injectivity and surjectivity</a></li>",
+    "zh": "8.1. 单射性与满射性"
+  },
+  {
+    "id": "index:0053",
+    "file": "index.html",
+    "tag": "li",
+    "text": "8.2. Bijectivity",
+    "html": "<li class=\"toctree-l2\"><a class=\"reference internal\" href=\"08_Functions.html#bijectivity\">8.2. Bijectivity</a></li>",
+    "zh": "8.2. 双射性"
+  },
+  {
+    "id": "index:0054",
+    "file": "index.html",
+    "tag": "li",
+    "text": "8.3. Composition of functions",
+    "html": "<li class=\"toctree-l2\"><a class=\"reference internal\" href=\"08_Functions.html#composition-of-functions\">8.3. Composition of functions</a></li>",
+    "zh": "8.3. 函数复合"
+  },
+  {
+    "id": "index:0055",
+    "file": "index.html",
+    "tag": "li",
+    "text": "8.4. Product types",
+    "html": "<li class=\"toctree-l2\"><a class=\"reference internal\" href=\"08_Functions.html#product-types\">8.4. Product types</a></li>",
+    "zh": "8.4. 积类型"
+  },
+  {
+    "id": "index:0056",
+    "file": "index.html",
+    "tag": "li",
+    "text": "9. Sets 9.1. Introduction 9.2. Set operations 9.3. The type of sets",
+    "html": "<li class=\"toctree-l1\"><a class=\"reference internal\" href=\"09_Sets.html\">9. Sets</a><ul>\n<li class=\"toctree-l2\"><a class=\"reference internal\" href=\"09_Sets.html#introduction\">9.1. Introduction</a></li>\n<li class=\"toctree-l2\"><a class=\"reference internal\" href=\"09_Sets.html#set-operations\">9.2. Set operations</a></li>\n<li class=\"toctree-l2\"><a class=\"reference internal\" href=\"09_Sets.html#the-type-of-sets\">9.3. The type of sets</a></li>\n</ul>\n</li>",
+    "zh": ""
+  },
+  {
+    "id": "index:0057",
+    "file": "index.html",
+    "tag": "li",
+    "text": "9.1. Introduction",
+    "html": "<li class=\"toctree-l2\"><a class=\"reference internal\" href=\"09_Sets.html#introduction\">9.1. Introduction</a></li>",
+    "zh": "9.1. 引言"
+  },
+  {
+    "id": "index:0058",
+    "file": "index.html",
+    "tag": "li",
+    "text": "9.2. Set operations",
+    "html": "<li class=\"toctree-l2\"><a class=\"reference internal\" href=\"09_Sets.html#set-operations\">9.2. Set operations</a></li>",
+    "zh": "9.2. 集合运算"
+  },
+  {
+    "id": "index:0059",
+    "file": "index.html",
+    "tag": "li",
+    "text": "9.3. The type of sets",
+    "html": "<li class=\"toctree-l2\"><a class=\"reference internal\" href=\"09_Sets.html#the-type-of-sets\">9.3. The type of sets</a></li>",
+    "zh": "9.3. 集合的类型"
+  },
+  {
+    "id": "index:0060",
+    "file": "index.html",
+    "tag": "li",
+    "text": "10. Relations 10.1. Reflexive, symmetric, antisymmetric, transitive 10.2. Equivalence relations",
+    "html": "<li class=\"toctree-l1\"><a class=\"reference internal\" href=\"10_Relations.html\">10. Relations</a><ul>\n<li class=\"toctree-l2\"><a class=\"reference internal\" href=\"10_Relations.html#reflexive-symmetric-antisymmetric-transitive\">10.1. Reflexive, symmetric, antisymmetric, transitive</a></li>\n<li class=\"toctree-l2\"><a class=\"reference internal\" href=\"10_Relations.html#equivalence-relations\">10.2. Equivalence relations</a></li>\n</ul>\n</li>",
+    "zh": ""
+  },
+  {
+    "id": "index:0061",
+    "file": "index.html",
+    "tag": "li",
+    "text": "10.1. Reflexive, symmetric, antisymmetric, transitive",
+    "html": "<li class=\"toctree-l2\"><a class=\"reference internal\" href=\"10_Relations.html#reflexive-symmetric-antisymmetric-transitive\">10.1. Reflexive, symmetric, antisymmetric, transitive</a></li>",
+    "zh": "10.1. 自反、对称、反对称、传递"
+  },
+  {
+    "id": "index:0062",
+    "file": "index.html",
+    "tag": "li",
+    "text": "10.2. Equivalence relations",
+    "html": "<li class=\"toctree-l2\"><a class=\"reference internal\" href=\"10_Relations.html#equivalence-relations\">10.2. Equivalence relations</a></li>",
+    "zh": "10.2. 等价关系"
+  },
+  {
+    "id": "index:0063",
+    "file": "index.html",
+    "tag": "li",
+    "text": "Index of Lean tactics",
+    "html": "<li class=\"toctree-l1\"><a class=\"reference internal\" href=\"Index_of_Tactics.html\">Index of Lean tactics</a></li>",
+    "zh": "Lean 策略索引"
+  },
+  {
+    "id": "index:0064",
+    "file": "index.html",
+    "tag": "li",
+    "text": "Transitioning to mainstream Lean",
+    "html": "<li class=\"toctree-l1\"><a class=\"reference internal\" href=\"Mainstream_Lean.html\">Transitioning to mainstream Lean</a></li>",
+    "zh": "过渡到主流 Lean"
+  }
+]

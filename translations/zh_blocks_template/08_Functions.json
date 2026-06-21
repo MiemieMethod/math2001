@@ -1,0 +1,2498 @@
+[
+  {
+    "id": "08_Functions:0001",
+    "file": "08_Functions.html",
+    "tag": "h1",
+    "text": "8. Functions",
+    "html": "<h1><span class=\"section-number\">8. </span>Functions<a class=\"headerlink\" href=\"#functions\" title=\"Permalink to this headline\"></a></h1>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0002",
+    "file": "08_Functions.html",
+    "tag": "h2",
+    "text": "8.1. Injectivity and surjectivity",
+    "html": "<h2><span class=\"section-number\">8.1. </span>Injectivity and surjectivity<a class=\"headerlink\" href=\"#injectivity-and-surjectivity\" title=\"Permalink to this headline\"></a></h2>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0003",
+    "file": "08_Functions.html",
+    "tag": "h2",
+    "text": "8.2. Bijectivity",
+    "html": "<h2><span class=\"section-number\">8.2. </span>Bijectivity<a class=\"headerlink\" href=\"#bijectivity\" title=\"Permalink to this headline\"></a></h2>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0004",
+    "file": "08_Functions.html",
+    "tag": "h2",
+    "text": "8.3. Composition of functions",
+    "html": "<h2><span class=\"section-number\">8.3. </span>Composition of functions<a class=\"headerlink\" href=\"#composition-of-functions\" title=\"Permalink to this headline\"></a></h2>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0005",
+    "file": "08_Functions.html",
+    "tag": "h2",
+    "text": "8.4. Product types",
+    "html": "<h2><span class=\"section-number\">8.4. </span>Product types<a class=\"headerlink\" href=\"#product-types\" title=\"Permalink to this headline\"></a></h2>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0006",
+    "file": "08_Functions.html",
+    "tag": "h3",
+    "text": "8.1.1. Example",
+    "html": "<h3><span class=\"section-number\">8.1.1. </span>Example<a class=\"headerlink\" href=\"#example\" title=\"Permalink to this headline\"></a></h3>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0007",
+    "file": "08_Functions.html",
+    "tag": "h3",
+    "text": "8.1.2. Definition",
+    "html": "<h3><span class=\"section-number\">8.1.2. </span>Definition<a class=\"headerlink\" href=\"#definition\" title=\"Permalink to this headline\"></a></h3>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0008",
+    "file": "08_Functions.html",
+    "tag": "h3",
+    "text": "8.1.3. Example",
+    "html": "<h3><span class=\"section-number\">8.1.3. </span>Example<a class=\"headerlink\" href=\"#id2\" title=\"Permalink to this headline\"></a></h3>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0009",
+    "file": "08_Functions.html",
+    "tag": "h3",
+    "text": "8.1.4. Example",
+    "html": "<h3><span class=\"section-number\">8.1.4. </span>Example<a class=\"headerlink\" href=\"#not-injective-example\" title=\"Permalink to this headline\"></a></h3>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0010",
+    "file": "08_Functions.html",
+    "tag": "h3",
+    "text": "8.1.5. Definition",
+    "html": "<h3><span class=\"section-number\">8.1.5. </span>Definition<a class=\"headerlink\" href=\"#surjective-def\" title=\"Permalink to this headline\"></a></h3>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0011",
+    "file": "08_Functions.html",
+    "tag": "h3",
+    "text": "8.1.6. Example",
+    "html": "<h3><span class=\"section-number\">8.1.6. </span>Example<a class=\"headerlink\" href=\"#id5\" title=\"Permalink to this headline\"></a></h3>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0012",
+    "file": "08_Functions.html",
+    "tag": "h3",
+    "text": "8.1.7. Example",
+    "html": "<h3><span class=\"section-number\">8.1.7. </span>Example<a class=\"headerlink\" href=\"#not-surjective\" title=\"Permalink to this headline\"></a></h3>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0013",
+    "file": "08_Functions.html",
+    "tag": "h3",
+    "text": "8.1.8. Example",
+    "html": "<h3><span class=\"section-number\">8.1.8. </span>Example<a class=\"headerlink\" href=\"#musketeer\" title=\"Permalink to this headline\"></a></h3>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0014",
+    "file": "08_Functions.html",
+    "tag": "h3",
+    "text": "8.1.9. Example",
+    "html": "<h3><span class=\"section-number\">8.1.9. </span>Example<a class=\"headerlink\" href=\"#id8\" title=\"Permalink to this headline\"></a></h3>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0015",
+    "file": "08_Functions.html",
+    "tag": "h3",
+    "text": "8.1.10. Example",
+    "html": "<h3><span class=\"section-number\">8.1.10. </span>Example<a class=\"headerlink\" href=\"#musketeer2\" title=\"Permalink to this headline\"></a></h3>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0016",
+    "file": "08_Functions.html",
+    "tag": "h3",
+    "text": "8.1.11. Example",
+    "html": "<h3><span class=\"section-number\">8.1.11. </span>Example<a class=\"headerlink\" href=\"#id10\" title=\"Permalink to this headline\"></a></h3>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0017",
+    "file": "08_Functions.html",
+    "tag": "h3",
+    "text": "8.1.12. Example",
+    "html": "<h3><span class=\"section-number\">8.1.12. </span>Example<a class=\"headerlink\" href=\"#id11\" title=\"Permalink to this headline\"></a></h3>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0018",
+    "file": "08_Functions.html",
+    "tag": "h3",
+    "text": "8.1.13. Exercises",
+    "html": "<h3><span class=\"section-number\">8.1.13. </span>Exercises<a class=\"headerlink\" href=\"#exercises\" title=\"Permalink to this headline\"></a></h3>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0019",
+    "file": "08_Functions.html",
+    "tag": "h3",
+    "text": "8.2.1. Definition",
+    "html": "<h3><span class=\"section-number\">8.2.1. </span>Definition<a class=\"headerlink\" href=\"#id12\" title=\"Permalink to this headline\"></a></h3>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0020",
+    "file": "08_Functions.html",
+    "tag": "h3",
+    "text": "8.2.2. Example",
+    "html": "<h3><span class=\"section-number\">8.2.2. </span>Example<a class=\"headerlink\" href=\"#id13\" title=\"Permalink to this headline\"></a></h3>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0021",
+    "file": "08_Functions.html",
+    "tag": "h3",
+    "text": "8.2.3. Example",
+    "html": "<h3><span class=\"section-number\">8.2.3. </span>Example<a class=\"headerlink\" href=\"#id14\" title=\"Permalink to this headline\"></a></h3>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0022",
+    "file": "08_Functions.html",
+    "tag": "h3",
+    "text": "8.2.4. Example",
+    "html": "<h3><span class=\"section-number\">8.2.4. </span>Example<a class=\"headerlink\" href=\"#celestial-subatomic\" title=\"Permalink to this headline\"></a></h3>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0023",
+    "file": "08_Functions.html",
+    "tag": "h3",
+    "text": "8.2.5. Example",
+    "html": "<h3><span class=\"section-number\">8.2.5. </span>Example<a class=\"headerlink\" href=\"#id16\" title=\"Permalink to this headline\"></a></h3>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0024",
+    "file": "08_Functions.html",
+    "tag": "h3",
+    "text": "8.2.6. Example",
+    "html": "<h3><span class=\"section-number\">8.2.6. </span>Example<a class=\"headerlink\" href=\"#bij-card2\" title=\"Permalink to this headline\"></a></h3>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0025",
+    "file": "08_Functions.html",
+    "tag": "h3",
+    "text": "8.2.7. Example",
+    "html": "<h3><span class=\"section-number\">8.2.7. </span>Example<a class=\"headerlink\" href=\"#id18\" title=\"Permalink to this headline\"></a></h3>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0026",
+    "file": "08_Functions.html",
+    "tag": "h3",
+    "text": "8.2.8. Exercises",
+    "html": "<h3><span class=\"section-number\">8.2.8. </span>Exercises<a class=\"headerlink\" href=\"#id19\" title=\"Permalink to this headline\"></a></h3>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0027",
+    "file": "08_Functions.html",
+    "tag": "h3",
+    "text": "8.3.1. Definition",
+    "html": "<h3><span class=\"section-number\">8.3.1. </span>Definition<a class=\"headerlink\" href=\"#id20\" title=\"Permalink to this headline\"></a></h3>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0028",
+    "file": "08_Functions.html",
+    "tag": "h3",
+    "text": "8.3.2. Example",
+    "html": "<h3><span class=\"section-number\">8.3.2. </span>Example<a class=\"headerlink\" href=\"#ext\" title=\"Permalink to this headline\"></a></h3>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0029",
+    "file": "08_Functions.html",
+    "tag": "h3",
+    "text": "8.3.3. Definition",
+    "html": "<h3><span class=\"section-number\">8.3.3. </span>Definition<a class=\"headerlink\" href=\"#id22\" title=\"Permalink to this headline\"></a></h3>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0030",
+    "file": "08_Functions.html",
+    "tag": "h3",
+    "text": "8.3.4. Example",
+    "html": "<h3><span class=\"section-number\">8.3.4. </span>Example<a class=\"headerlink\" href=\"#id23\" title=\"Permalink to this headline\"></a></h3>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0031",
+    "file": "08_Functions.html",
+    "tag": "h3",
+    "text": "8.3.5. Definition",
+    "html": "<h3><span class=\"section-number\">8.3.5. </span>Definition<a class=\"headerlink\" href=\"#id24\" title=\"Permalink to this headline\"></a></h3>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0032",
+    "file": "08_Functions.html",
+    "tag": "h3",
+    "text": "8.3.6. Example",
+    "html": "<h3><span class=\"section-number\">8.3.6. </span>Example<a class=\"headerlink\" href=\"#humour\" title=\"Permalink to this headline\"></a></h3>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0033",
+    "file": "08_Functions.html",
+    "tag": "h3",
+    "text": "8.3.7. Example",
+    "html": "<h3><span class=\"section-number\">8.3.7. </span>Example<a class=\"headerlink\" href=\"#bijective-to-inverse\" title=\"Permalink to this headline\"></a></h3>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0034",
+    "file": "08_Functions.html",
+    "tag": "h3",
+    "text": "8.3.8. Example",
+    "html": "<h3><span class=\"section-number\">8.3.8. </span>Example<a class=\"headerlink\" href=\"#inverse-to-bijection\" title=\"Permalink to this headline\"></a></h3>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0035",
+    "file": "08_Functions.html",
+    "tag": "h3",
+    "text": "8.3.9. Example",
+    "html": "<h3><span class=\"section-number\">8.3.9. </span>Example<a class=\"headerlink\" href=\"#bijective-iff-inverse\" title=\"Permalink to this headline\"></a></h3>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0036",
+    "file": "08_Functions.html",
+    "tag": "h3",
+    "text": "8.3.10. Exercises",
+    "html": "<h3><span class=\"section-number\">8.3.10. </span>Exercises<a class=\"headerlink\" href=\"#id30\" title=\"Permalink to this headline\"></a></h3>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0037",
+    "file": "08_Functions.html",
+    "tag": "h3",
+    "text": "8.4.1. Example",
+    "html": "<h3><span class=\"section-number\">8.4.1. </span>Example<a class=\"headerlink\" href=\"#obtain-product\" title=\"Permalink to this headline\"></a></h3>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0038",
+    "file": "08_Functions.html",
+    "tag": "h3",
+    "text": "8.4.2. Example",
+    "html": "<h3><span class=\"section-number\">8.4.2. </span>Example<a class=\"headerlink\" href=\"#standard-plane-bij\" title=\"Permalink to this headline\"></a></h3>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0039",
+    "file": "08_Functions.html",
+    "tag": "h3",
+    "text": "8.4.3. Example",
+    "html": "<h3><span class=\"section-number\">8.4.3. </span>Example<a class=\"headerlink\" href=\"#id34\" title=\"Permalink to this headline\"></a></h3>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0040",
+    "file": "08_Functions.html",
+    "tag": "h3",
+    "text": "8.4.4. Example",
+    "html": "<h3><span class=\"section-number\">8.4.4. </span>Example<a class=\"headerlink\" href=\"#injective-r2-r3\" title=\"Permalink to this headline\"></a></h3>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0041",
+    "file": "08_Functions.html",
+    "tag": "h3",
+    "text": "8.4.5. Example",
+    "html": "<h3><span class=\"section-number\">8.4.5. </span>Example<a class=\"headerlink\" href=\"#id36\" title=\"Permalink to this headline\"></a></h3>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0042",
+    "file": "08_Functions.html",
+    "tag": "h3",
+    "text": "8.4.6. Example",
+    "html": "<h3><span class=\"section-number\">8.4.6. </span>Example<a class=\"headerlink\" href=\"#id37\" title=\"Permalink to this headline\"></a></h3>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0043",
+    "file": "08_Functions.html",
+    "tag": "h3",
+    "text": "8.4.7. Example",
+    "html": "<h3><span class=\"section-number\">8.4.7. </span>Example<a class=\"headerlink\" href=\"#id38\" title=\"Permalink to this headline\"></a></h3>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0044",
+    "file": "08_Functions.html",
+    "tag": "h3",
+    "text": "8.4.8. Example",
+    "html": "<h3><span class=\"section-number\">8.4.8. </span>Example<a class=\"headerlink\" href=\"#id39\" title=\"Permalink to this headline\"></a></h3>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0045",
+    "file": "08_Functions.html",
+    "tag": "h3",
+    "text": "8.4.9. Example",
+    "html": "<h3><span class=\"section-number\">8.4.9. </span>Example<a class=\"headerlink\" href=\"#id40\" title=\"Permalink to this headline\"></a></h3>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0046",
+    "file": "08_Functions.html",
+    "tag": "h3",
+    "text": "8.4.10. Exercises",
+    "html": "<h3><span class=\"section-number\">8.4.10. </span>Exercises<a class=\"headerlink\" href=\"#id41\" title=\"Permalink to this headline\"></a></h3>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0047",
+    "file": "08_Functions.html",
+    "tag": "p",
+    "text": "So far in the book, we have studied properties of numbers (whether a number is odd, positive, prime; whether one number is divisible by another) and operations on numbers (addition, greatest common divisor).",
+    "html": "<p>So far in the book, we have studied properties of numbers (whether a number is odd,\npositive, prime; whether one number is divisible by another) and operations on\nnumbers (addition, greatest common divisor).</p>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0048",
+    "file": "08_Functions.html",
+    "tag": "p",
+    "text": "In this chapter we go up a level of abstraction, and study properties of and operations on functions. These new properties include: whether a function is injective , surjective , bijective ; whether one function is inverse to another; and the operation of composition .",
+    "html": "<p>In this chapter we go up a level of abstraction, and study properties of and\noperations on functions.  These new properties include: whether a function is\n<em>injective</em>, <em>surjective</em>, <em>bijective</em>; whether one function is <em>inverse</em> to\nanother; and the operation of <em>composition</em>.</p>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0049",
+    "file": "08_Functions.html",
+    "tag": "p",
+    "text": "We also expand our horizon beyond the numeric types ( \\(\\mathbb{N}\\) , \\(\\mathbb{Z}\\) , \\(\\mathbb{Q}\\) , \\(\\mathbb{R}\\) ) which have formed the setting of the early part of the book. We now start to work with a broader range of types, including function types, finite inductive types, and product types.",
+    "html": "<p>We also expand our horizon beyond the numeric types (<span class=\"math notranslate nohighlight\">\\(\\mathbb{N}\\)</span>,\n<span class=\"math notranslate nohighlight\">\\(\\mathbb{Z}\\)</span>, <span class=\"math notranslate nohighlight\">\\(\\mathbb{Q}\\)</span>, <span class=\"math notranslate nohighlight\">\\(\\mathbb{R}\\)</span>) which have formed the\nsetting of the early part of the book.  We now start to work with a broader range\nof types, including function types, finite inductive types, and product types.</p>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0050",
+    "file": "08_Functions.html",
+    "tag": "p",
+    "text": "We have studied particular functions before. For example, the Fibonacci sequence from Example 6.3.3 is a function from \\(\\mathbb{N}\\) to \\(\\mathbb{Z}\\) : it takes in a natural number, for example 5, and gives out an integer, in this case 8 (the index-5 term of the sequence).",
+    "html": "<p>We have studied particular functions before.  For example, the Fibonacci sequence from\n<a class=\"reference internal\" href=\"06_Induction.html#fibonacci\"><span class=\"std std-numref\">Example 6.3.3</span></a> is a function from <span class=\"math notranslate nohighlight\">\\(\\mathbb{N}\\)</span> to <span class=\"math notranslate nohighlight\">\\(\\mathbb{Z}\\)</span>: it\ntakes in a natural number, for example 5, and gives out an integer, in this case 8 (the index-5\nterm of the sequence).</p>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0051",
+    "file": "08_Functions.html",
+    "tag": "p",
+    "text": "The domain of a function is the type where it takes its input values, and the codomain of a function is the type where it takes its output values. For example, the domain of the Fibonacci sequence is \\(\\mathbb{N}\\) and its codomain is \\(\\mathbb{Z}\\) . The type of functions with domain \\(\\mathbb{N}\\) and codomain \\(\\mathbb{Z}\\) is denoted \\(\\mathbb{N}\\to \\mathbb{Z}\\) . Lean will confirm for us that the Fibonacci sequence F has this type:",
+    "html": "<p>The <em>domain</em> of a function is the type where it takes its input values, and the <em>codomain</em> of a\nfunction is the type where it takes its output values.  For example, the domain of the Fibonacci\nsequence is <span class=\"math notranslate nohighlight\">\\(\\mathbb{N}\\)</span> and its codomain is <span class=\"math notranslate nohighlight\">\\(\\mathbb{Z}\\)</span>.  The type of functions with\ndomain <span class=\"math notranslate nohighlight\">\\(\\mathbb{N}\\)</span> and codomain <span class=\"math notranslate nohighlight\">\\(\\mathbb{Z}\\)</span> is denoted\n<span class=\"math notranslate nohighlight\">\\(\\mathbb{N}\\to \\mathbb{Z}\\)</span>.  Lean will confirm for us that the Fibonacci sequence <code class=\"docutils literal notranslate\"><span class=\"pre\">F</span></code> has\nthis type:</p>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0052",
+    "file": "08_Functions.html",
+    "tag": "p",
+    "text": "Another way to define a function is by a closed formula. For example, “let \\(q:\\mathbb{R}\\to \\mathbb{R}\\) be the function defined by, \\(q(x)=x+3\\) .” In Lean we can write this as",
+    "html": "<p>Another way to define a function is by a closed formula.  For example,\n“let <span class=\"math notranslate nohighlight\">\\(q:\\mathbb{R}\\to \\mathbb{R}\\)</span> be the function defined by, <span class=\"math notranslate nohighlight\">\\(q(x)=x+3\\)</span>.”  In Lean we\ncan write this as</p>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0053",
+    "file": "08_Functions.html",
+    "tag": "p",
+    "text": "This function has domain \\(\\mathbb{R}\\) and codomain \\(\\mathbb{R}\\) – I even said when I was defining it that I was making \\(q\\) to have type \\(\\mathbb{R}\\to \\mathbb{R}\\) . Let’s check that this is indeed the type of the Lean object:",
+    "html": "<p>This function has domain <span class=\"math notranslate nohighlight\">\\(\\mathbb{R}\\)</span> and codomain <span class=\"math notranslate nohighlight\">\\(\\mathbb{R}\\)</span> – I even said when I\nwas defining it that I was making <span class=\"math notranslate nohighlight\">\\(q\\)</span> to have type <span class=\"math notranslate nohighlight\">\\(\\mathbb{R}\\to \\mathbb{R}\\)</span>.  Let’s\ncheck that this is indeed the type of the Lean object:</p>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0054",
+    "file": "08_Functions.html",
+    "tag": "p",
+    "text": "A third way to define a function, if we expect to use it just once and don’t want to waste a name on it, is by using the notation \\(\\mapsto\\) : we can refer to “the function \\(x \\mapsto x ^ 2\\) from \\(\\mathbb{R}\\) to \\(\\mathbb{R}\\) ”. Here is the same notation in Lean:",
+    "html": "<p>A third way to define a function, if we expect to use it just once and don’t want to waste a name on\nit, is by using the notation <span class=\"math notranslate nohighlight\">\\(\\mapsto\\)</span>: we can refer to “the function <span class=\"math notranslate nohighlight\">\\(x \\mapsto x ^ 2\\)</span>\nfrom <span class=\"math notranslate nohighlight\">\\(\\mathbb{R}\\)</span> to <span class=\"math notranslate nohighlight\">\\(\\mathbb{R}\\)</span>”. Here is the same notation in Lean:</p>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0055",
+    "file": "08_Functions.html",
+    "tag": "p",
+    "text": "Now that we have the notation \\(X\\to Y\\) for “the type of functions from \\(X\\) to \\(Y\\) ”, we can introduce properties of functions, in the same way that we have previously introduced properties (like “odd” and “prime”) of numbers. Here is our first one.",
+    "html": "<p>Now that we have the notation <span class=\"math notranslate nohighlight\">\\(X\\to Y\\)</span> for “the type of functions from <span class=\"math notranslate nohighlight\">\\(X\\)</span> to\n<span class=\"math notranslate nohighlight\">\\(Y\\)</span>”, we can introduce properties of functions, in the same way that we have previously\nintroduced properties (like “odd” and “prime”) of numbers.  Here is our first one.</p>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0056",
+    "file": "08_Functions.html",
+    "tag": "p",
+    "text": "Definition",
+    "html": "<p class=\"admonition-title\">Definition</p>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0057",
+    "file": "08_Functions.html",
+    "tag": "p",
+    "text": "A function \\(f : X \\to Y\\) is injective , if for all \\(x_1\\) and \\(x_2\\) of type \\(X\\) , if \\(f(x_1)=f(x_2)\\) , then \\(x_1=x_2\\) .",
+    "html": "<p>A function <span class=\"math notranslate nohighlight\">\\(f : X \\to Y\\)</span> is <em>injective</em>, if for all <span class=\"math notranslate nohighlight\">\\(x_1\\)</span> and <span class=\"math notranslate nohighlight\">\\(x_2\\)</span> of type\n<span class=\"math notranslate nohighlight\">\\(X\\)</span>, if <span class=\"math notranslate nohighlight\">\\(f(x_1)=f(x_2)\\)</span>, then <span class=\"math notranslate nohighlight\">\\(x_1=x_2\\)</span>.</p>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0058",
+    "file": "08_Functions.html",
+    "tag": "p",
+    "text": "Problem",
+    "html": "<p class=\"admonition-title\">Problem</p>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0059",
+    "file": "08_Functions.html",
+    "tag": "p",
+    "text": "Show that the function \\(q:\\mathbb{R}\\to\\mathbb{R}\\) from Example 8.1.1 is injective.",
+    "html": "<p>Show that the function <span class=\"math notranslate nohighlight\">\\(q:\\mathbb{R}\\to\\mathbb{R}\\)</span> from\n<a class=\"reference internal\" href=\"#functions-intro\"><span class=\"std std-numref\">Example 8.1.1</span></a> is injective.</p>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0060",
+    "file": "08_Functions.html",
+    "tag": "p",
+    "text": "Solution",
+    "html": "<p class=\"admonition-title\">Solution</p>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0061",
+    "file": "08_Functions.html",
+    "tag": "p",
+    "text": "Let \\(x_1\\) and \\(x_2\\) be real numbers and suppose that \\(q(x_1)=q(x_2)\\) . Then \\(x_1+1=x_2+1\\) , so \\(x_1=x_2\\) .",
+    "html": "<p>Let <span class=\"math notranslate nohighlight\">\\(x_1\\)</span> and <span class=\"math notranslate nohighlight\">\\(x_2\\)</span> be real numbers and suppose that <span class=\"math notranslate nohighlight\">\\(q(x_1)=q(x_2)\\)</span>.  Then\n<span class=\"math notranslate nohighlight\">\\(x_1+1=x_2+1\\)</span>, so <span class=\"math notranslate nohighlight\">\\(x_1=x_2\\)</span>.</p>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0062",
+    "file": "08_Functions.html",
+    "tag": "p",
+    "text": "Here is this solution in Lean. Note that after unfolding the definition “injective” using the command dsimp [Injective] , the goal state displays",
+    "html": "<p>Here is this solution in Lean.  Note that after unfolding the definition “injective” using the\ncommand <code class=\"docutils literal notranslate\"><span class=\"pre\">dsimp</span> <span class=\"pre\">[Injective]</span></code>, the goal state displays</p>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0063",
+    "file": "08_Functions.html",
+    "tag": "p",
+    "text": "This is the “injective” definition specialized to the problem at hand.",
+    "html": "<p>This is the “injective” definition specialized to the problem at hand.</p>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0064",
+    "file": "08_Functions.html",
+    "tag": "p",
+    "text": "Problem",
+    "html": "<p class=\"admonition-title\">Problem</p>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0065",
+    "file": "08_Functions.html",
+    "tag": "p",
+    "text": "Show that the function \\(x \\mapsto x ^ 2\\) from \\(\\mathbb{R}\\) to \\(\\mathbb{R}\\) is not injective.",
+    "html": "<p>Show that the function <span class=\"math notranslate nohighlight\">\\(x \\mapsto x ^ 2\\)</span> from <span class=\"math notranslate nohighlight\">\\(\\mathbb{R}\\)</span> to <span class=\"math notranslate nohighlight\">\\(\\mathbb{R}\\)</span>\nis not injective.</p>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0066",
+    "file": "08_Functions.html",
+    "tag": "p",
+    "text": "Solution",
+    "html": "<p class=\"admonition-title\">Solution</p>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0067",
+    "file": "08_Functions.html",
+    "tag": "p",
+    "text": "We must show that there exist real numbers \\(x_1\\) and \\(x_2\\) , such that \\(x_1{}^2=x_2{}^2\\) and \\(x_1\\ne x_2\\) . Indeed, -1 and 1 have these properties.",
+    "html": "<p>We must show that there exist real numbers <span class=\"math notranslate nohighlight\">\\(x_1\\)</span> and <span class=\"math notranslate nohighlight\">\\(x_2\\)</span>, such that\n<span class=\"math notranslate nohighlight\">\\(x_1{}^2=x_2{}^2\\)</span> and <span class=\"math notranslate nohighlight\">\\(x_1\\ne x_2\\)</span>.  Indeed, -1 and 1 have these properties.</p>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0068",
+    "file": "08_Functions.html",
+    "tag": "p",
+    "text": "The first sentence of that proof was a negation-normalization: I unfolded the “injective” definition and restated its negation in a logically equivalent but more convenient form. Recall that in Lean we do this using the tactic push_neg . Here is the goal state after the tactic push_neg has been used:",
+    "html": "<p>The first sentence of that proof was a negation-normalization: I unfolded the “injective” definition\nand restated its negation in a logically equivalent but more convenient form.  Recall that in Lean\nwe do this using the tactic <code class=\"docutils literal notranslate\"><span class=\"pre\">push_neg</span></code>.  Here is the goal state after the tactic <code class=\"docutils literal notranslate\"><span class=\"pre\">push_neg</span></code> has\nbeen used:</p>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0069",
+    "file": "08_Functions.html",
+    "tag": "p",
+    "text": "And here is the full Lean proof.",
+    "html": "<p>And here is the full Lean proof.</p>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0070",
+    "file": "08_Functions.html",
+    "tag": "p",
+    "text": "Definition",
+    "html": "<p class=\"admonition-title\">Definition</p>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0071",
+    "file": "08_Functions.html",
+    "tag": "p",
+    "text": "A function \\(f : X \\to Y\\) is surjective , if for all \\(y\\) of type \\(Y\\) , there exists \\(x\\) of type \\(X\\) , such that \\(f(x)=y\\) .",
+    "html": "<p>A function <span class=\"math notranslate nohighlight\">\\(f : X \\to Y\\)</span> is <em>surjective</em>, if for all <span class=\"math notranslate nohighlight\">\\(y\\)</span> of type <span class=\"math notranslate nohighlight\">\\(Y\\)</span>, there\nexists <span class=\"math notranslate nohighlight\">\\(x\\)</span> of type <span class=\"math notranslate nohighlight\">\\(X\\)</span>, such that <span class=\"math notranslate nohighlight\">\\(f(x)=y\\)</span>.</p>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0072",
+    "file": "08_Functions.html",
+    "tag": "p",
+    "text": "Problem",
+    "html": "<p class=\"admonition-title\">Problem</p>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0073",
+    "file": "08_Functions.html",
+    "tag": "p",
+    "text": "Consider the function \\(s:\\mathbb{Q}\\to\\mathbb{Q}\\) defined by, \\(s(a)=3a+2\\) . Show that \\(s\\) is surjective.",
+    "html": "<p>Consider the function <span class=\"math notranslate nohighlight\">\\(s:\\mathbb{Q}\\to\\mathbb{Q}\\)</span> defined by, <span class=\"math notranslate nohighlight\">\\(s(a)=3a+2\\)</span>. Show that\n<span class=\"math notranslate nohighlight\">\\(s\\)</span> is surjective.</p>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0074",
+    "file": "08_Functions.html",
+    "tag": "p",
+    "text": "Solution",
+    "html": "<p class=\"admonition-title\">Solution</p>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0075",
+    "file": "08_Functions.html",
+    "tag": "p",
+    "text": "Let \\(y\\) be a rational number. Then",
+    "html": "<p>Let <span class=\"math notranslate nohighlight\">\\(y\\)</span> be a rational number.  Then</p>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0076",
+    "file": "08_Functions.html",
+    "tag": "p",
+    "text": "Here is the solution in Lean. The goal state after unfolding the definition of “surjective” is",
+    "html": "<p>Here is the solution in Lean.  The goal state after unfolding the definition of “surjective” is</p>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0077",
+    "file": "08_Functions.html",
+    "tag": "p",
+    "text": "which confirms what we need to prove and why what we wrote in the text proof above is sufficient.",
+    "html": "<p>which confirms what we need to prove and why what we wrote in the text proof above is sufficient.</p>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0078",
+    "file": "08_Functions.html",
+    "tag": "p",
+    "text": "Problem",
+    "html": "<p class=\"admonition-title\">Problem</p>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0079",
+    "file": "08_Functions.html",
+    "tag": "p",
+    "text": "Show that the function \\(x \\mapsto x ^ 2\\) from \\(\\mathbb{R}\\) to \\(\\mathbb{R}\\) is not surjective.",
+    "html": "<p>Show that the function <span class=\"math notranslate nohighlight\">\\(x \\mapsto x ^ 2\\)</span> from <span class=\"math notranslate nohighlight\">\\(\\mathbb{R}\\)</span> to <span class=\"math notranslate nohighlight\">\\(\\mathbb{R}\\)</span>\nis not surjective.</p>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0080",
+    "file": "08_Functions.html",
+    "tag": "p",
+    "text": "Solution",
+    "html": "<p class=\"admonition-title\">Solution</p>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0081",
+    "file": "08_Functions.html",
+    "tag": "p",
+    "text": "We will show that there exists a real number \\(y\\) , such that for all real numbers \\(x\\) , \\(x^2\\ne y\\) .",
+    "html": "<p>We will show that there exists a real number <span class=\"math notranslate nohighlight\">\\(y\\)</span>, such that for all real numbers <span class=\"math notranslate nohighlight\">\\(x\\)</span>,\n<span class=\"math notranslate nohighlight\">\\(x^2\\ne y\\)</span>.</p>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0082",
+    "file": "08_Functions.html",
+    "tag": "p",
+    "text": "Indeed, let us show that -1 has this property. Let \\(x\\) be a real number. Then",
+    "html": "<p>Indeed, let us show that -1 has this property.  Let <span class=\"math notranslate nohighlight\">\\(x\\)</span> be a real number.  Then</p>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0083",
+    "file": "08_Functions.html",
+    "tag": "p",
+    "text": "so \\(x^2\\ne -1\\) .",
+    "html": "<p>so <span class=\"math notranslate nohighlight\">\\(x^2\\ne -1\\)</span>.</p>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0084",
+    "file": "08_Functions.html",
+    "tag": "p",
+    "text": "As in Example 8.1.4 , the first sentence constitutes a negation-normalization of the definition of “surjective” in this context. Effectively we are stating what would be the goal state in the Lean proof after push_neg .",
+    "html": "<p>As in <a class=\"reference internal\" href=\"#not-injective-example\"><span class=\"std std-numref\">Example 8.1.4</span></a>, the first sentence constitutes a\nnegation-normalization of the definition of “surjective” in this context.  Effectively we are stating\nwhat would be the goal state in the Lean proof after <code class=\"docutils literal notranslate\"><span class=\"pre\">push_neg</span></code>.</p>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0085",
+    "file": "08_Functions.html",
+    "tag": "p",
+    "text": "And here is the full Lean proof.",
+    "html": "<p>And here is the full Lean proof.</p>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0086",
+    "file": "08_Functions.html",
+    "tag": "p",
+    "text": "We have so far seen numeric types, like the integers \\(\\mathbb{Z}\\) and the real numbers \\(\\mathbb{R}\\) , and function types, like \\(\\mathbb{Z}\\to \\mathbb{R}\\) (the functions from \\(\\mathbb{Z}\\) to \\(\\mathbb{R}\\) ).",
+    "html": "<p>We have so far seen numeric types, like the integers <span class=\"math notranslate nohighlight\">\\(\\mathbb{Z}\\)</span> and the real numbers\n<span class=\"math notranslate nohighlight\">\\(\\mathbb{R}\\)</span>, and function types, like <span class=\"math notranslate nohighlight\">\\(\\mathbb{Z}\\to \\mathbb{R}\\)</span> (the functions from\n<span class=\"math notranslate nohighlight\">\\(\\mathbb{Z}\\)</span> to <span class=\"math notranslate nohighlight\">\\(\\mathbb{R}\\)</span>).</p>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0087",
+    "file": "08_Functions.html",
+    "tag": "p",
+    "text": "Another way to make a type is as a finite set of options. Finite types are useful for conceptual examples, because everything is explicit and checkable.",
+    "html": "<p>Another way to make a type is as a finite set of options.  Finite types are useful for conceptual\nexamples, because everything is explicit and checkable.</p>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0088",
+    "file": "08_Functions.html",
+    "tag": "p",
+    "text": "Here is how to define a function whose domain is a given finite inductive type.",
+    "html": "<p>Here is how to define a function whose domain is a given finite inductive type.</p>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0089",
+    "file": "08_Functions.html",
+    "tag": "p",
+    "text": "Problem",
+    "html": "<p class=\"admonition-title\">Problem</p>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0090",
+    "file": "08_Functions.html",
+    "tag": "p",
+    "text": "Show that the function \\(f\\) is not injective.",
+    "html": "<p>Show that the function <span class=\"math notranslate nohighlight\">\\(f\\)</span> is not injective.</p>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0091",
+    "file": "08_Functions.html",
+    "tag": "p",
+    "text": "The tactic exhaust is new here. At the place where it is used, the goal state is",
+    "html": "<p>The tactic <code class=\"docutils literal notranslate\"><span class=\"pre\">exhaust</span></code> is new here.  At the place where it is used, the goal state is</p>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0092",
+    "file": "08_Functions.html",
+    "tag": "p",
+    "text": "that is,",
+    "html": "<p>that is,</p>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0093",
+    "file": "08_Functions.html",
+    "tag": "p",
+    "text": "which is logically equivalent to True . The tactic exhaust can do this kind of propositional logic reasoning, up to arbitrary complexity.",
+    "html": "<p>which is logically equivalent to <code class=\"docutils literal notranslate\"><span class=\"pre\">True</span></code>.  The tactic <code class=\"docutils literal notranslate\"><span class=\"pre\">exhaust</span></code> can do this kind of propositional\nlogic reasoning, up to arbitrary complexity.</p>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0094",
+    "file": "08_Functions.html",
+    "tag": "p",
+    "text": "In particular, exhaust can prove any (true) variable-free statement in an inductive type, and that’s how we’ll use it in this chapter. We start making more serious use of exhaust in Chapter 9 .",
+    "html": "<p>In particular, <code class=\"docutils literal notranslate\"><span class=\"pre\">exhaust</span></code> can prove any (true) variable-free statement in an inductive type, and\nthat’s how we’ll use it in this chapter.  We start making more serious use of <code class=\"docutils literal notranslate\"><span class=\"pre\">exhaust</span></code> in\n<a class=\"reference internal\" href=\"09_Sets.html#sets\"><span class=\"std std-numref\">Chapter 9</span></a>.</p>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0095",
+    "file": "08_Functions.html",
+    "tag": "p",
+    "text": "Problem",
+    "html": "<p class=\"admonition-title\">Problem</p>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0096",
+    "file": "08_Functions.html",
+    "tag": "p",
+    "text": "Show that the function \\(f\\) defined in Example 8.1.8 is not surjective.",
+    "html": "<p>Show that the function <span class=\"math notranslate nohighlight\">\\(f\\)</span> defined in <a class=\"reference internal\" href=\"#musketeer\"><span class=\"std std-numref\">Example 8.1.8</span></a> is not surjective.</p>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0097",
+    "file": "08_Functions.html",
+    "tag": "p",
+    "text": "We can case-check on a variable a in a finite inductive type using the tactic cases .",
+    "html": "<p>We can case-check on a variable <code class=\"docutils literal notranslate\"><span class=\"pre\">a</span></code> in a finite inductive type using the tactic <code class=\"docutils literal notranslate\"><span class=\"pre\">cases</span></code>.</p>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0098",
+    "file": "08_Functions.html",
+    "tag": "p",
+    "text": "Such proofs can become repetitive, and you may wish to use a trick we have seen before (for example Example 4.4.4 , Example 4.5.9 , Example 6.6.2 , Example 6.7.2 ): when a tactic such as cases generates many goals which can all be proved by the same tactic, you can write <;> to apply the tactic to all those goals.",
+    "html": "<p>Such proofs can become repetitive, and you may wish to use a trick we have seen before (for example\n<a class=\"reference internal\" href=\"04_Proofs_with_Structure_II.html#prime-test\"><span class=\"std std-numref\">Example 4.4.4</span></a>, <a class=\"reference internal\" href=\"04_Proofs_with_Structure_II.html#better-prime-test\"><span class=\"std std-numref\">Example 4.5.9</span></a>,\n<a class=\"reference internal\" href=\"06_Induction.html#mod-add-div\"><span class=\"std std-numref\">Example 6.6.2</span></a>, <a class=\"reference internal\" href=\"06_Induction.html#gcd-nonneg\"><span class=\"std std-numref\">Example 6.7.2</span></a>): when a tactic such as\n<code class=\"docutils literal notranslate\"><span class=\"pre\">cases</span></code> generates many goals which can all be proved by the same tactic, you can write\n<code class=\"docutils literal notranslate\"><span class=\"pre\">&lt;;&gt;</span></code> to apply the tactic to all those goals.</p>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0099",
+    "file": "08_Functions.html",
+    "tag": "p",
+    "text": "You might also like to check that the cases a <;> exhaust line is necessary; exhaust can’t close the goal on its own. As discussed in Example 8.1.8 , exhaust can prove any (true) variable-free statement in an inductive type, but before the cases a <;> exhaust line the goal state is",
+    "html": "<p>You might also like to check that the <code class=\"docutils literal notranslate\"><span class=\"pre\">cases</span> <span class=\"pre\">a</span> <span class=\"pre\">&lt;;&gt;</span> <span class=\"pre\">exhaust</span></code> line is necessary; <code class=\"docutils literal notranslate\"><span class=\"pre\">exhaust</span></code> can’t close\nthe goal on its own.  As discussed in <a class=\"reference internal\" href=\"#musketeer\"><span class=\"std std-numref\">Example 8.1.8</span></a>, <code class=\"docutils literal notranslate\"><span class=\"pre\">exhaust</span></code> can prove any\n(true) <em>variable-free</em> statement in an inductive type, but before the <code class=\"docutils literal notranslate\"><span class=\"pre\">cases</span> <span class=\"pre\">a</span> <span class=\"pre\">&lt;;&gt;</span> <span class=\"pre\">exhaust</span></code> line the\ngoal state is</p>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0100",
+    "file": "08_Functions.html",
+    "tag": "p",
+    "text": "which contains a variable, a .",
+    "html": "<p>which contains a variable, <code class=\"docutils literal notranslate\"><span class=\"pre\">a</span></code>.</p>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0101",
+    "file": "08_Functions.html",
+    "tag": "p",
+    "text": "Let \\(g\\) be the following function from the Musketeer type to itself:",
+    "html": "<p>Let <span class=\"math notranslate nohighlight\">\\(g\\)</span> be the following function from the Musketeer type to itself:</p>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0102",
+    "file": "08_Functions.html",
+    "tag": "p",
+    "text": "Problem",
+    "html": "<p class=\"admonition-title\">Problem</p>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0103",
+    "file": "08_Functions.html",
+    "tag": "p",
+    "text": "Show that the function \\(g\\) is injective.",
+    "html": "<p>Show that the function <span class=\"math notranslate nohighlight\">\\(g\\)</span> is injective.</p>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0104",
+    "file": "08_Functions.html",
+    "tag": "p",
+    "text": "There are a lot of cases in this proof – \\(3 \\times 3 = 9\\) , to be precise. Fortunately exhaust can prove all of them!",
+    "html": "<p>There are a lot of cases in this proof – <span class=\"math notranslate nohighlight\">\\(3 \\times 3 = 9\\)</span>, to be precise.  Fortunately\n<code class=\"docutils literal notranslate\"><span class=\"pre\">exhaust</span></code> can prove all of them!</p>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0105",
+    "file": "08_Functions.html",
+    "tag": "p",
+    "text": "Problem",
+    "html": "<p class=\"admonition-title\">Problem</p>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0106",
+    "file": "08_Functions.html",
+    "tag": "p",
+    "text": "Show that the function \\(g\\) defined in Example 8.1.10 is surjective.",
+    "html": "<p>Show that the function <span class=\"math notranslate nohighlight\">\\(g\\)</span> defined in <a class=\"reference internal\" href=\"#musketeer2\"><span class=\"std std-numref\">Example 8.1.10</span></a> is surjective.</p>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0107",
+    "file": "08_Functions.html",
+    "tag": "p",
+    "text": "We finish with a relatively hard example. The proof here is efficient and self-contained but not particularly well-motivated. For an alternative (perhaps more intuitive) approach, combine the last exercise in this section (the one about strictly monotone functions) with the idea from Example 2.1.8 .",
+    "html": "<p>We finish with a relatively hard example.  The proof here is efficient and self-contained but not\nparticularly well-motivated.  For an alternative (perhaps more intuitive) approach, combine the last\nexercise in this section (the one about <em>strictly monotone</em> functions) with the idea from\n<a class=\"reference internal\" href=\"02_Proofs_with_Structure.html#cube-inequality\"><span class=\"std std-numref\">Example 2.1.8</span></a>.</p>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0108",
+    "file": "08_Functions.html",
+    "tag": "p",
+    "text": "Problem",
+    "html": "<p class=\"admonition-title\">Problem</p>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0109",
+    "file": "08_Functions.html",
+    "tag": "p",
+    "text": "Show that the function \\(x \\mapsto x ^ 3\\) from \\(\\mathbb{R}\\) to \\(\\mathbb{R}\\) is injective.",
+    "html": "<p>Show that the function <span class=\"math notranslate nohighlight\">\\(x \\mapsto x ^ 3\\)</span> from <span class=\"math notranslate nohighlight\">\\(\\mathbb{R}\\)</span> to <span class=\"math notranslate nohighlight\">\\(\\mathbb{R}\\)</span> is\ninjective.</p>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0110",
+    "file": "08_Functions.html",
+    "tag": "p",
+    "text": "Solution",
+    "html": "<p class=\"admonition-title\">Solution</p>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0111",
+    "file": "08_Functions.html",
+    "tag": "p",
+    "text": "Let \\(x_1\\) and \\(x_2\\) be real numbers and suppose that \\(x_1{}^3=x_2{}^3\\) . Then",
+    "html": "<p>Let <span class=\"math notranslate nohighlight\">\\(x_1\\)</span> and <span class=\"math notranslate nohighlight\">\\(x_2\\)</span> be real numbers and suppose that <span class=\"math notranslate nohighlight\">\\(x_1{}^3=x_2{}^3\\)</span>.  Then</p>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0112",
+    "file": "08_Functions.html",
+    "tag": "p",
+    "text": "so either \\(x_1-x_2=0\\) , in which case we are done, or \\(x_1{}^2+x_1x_2+x_2{}^2=0\\) , which we henceforth assume.",
+    "html": "<p>so either <span class=\"math notranslate nohighlight\">\\(x_1-x_2=0\\)</span>, in which case we are done, or <span class=\"math notranslate nohighlight\">\\(x_1{}^2+x_1x_2+x_2{}^2=0\\)</span>, which\nwe henceforth assume.</p>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0113",
+    "file": "08_Functions.html",
+    "tag": "p",
+    "text": "We now consider a further case split according to whether \\(x_1=0\\) .",
+    "html": "<p>We now consider a further case split according to whether <span class=\"math notranslate nohighlight\">\\(x_1=0\\)</span>.</p>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0114",
+    "file": "08_Functions.html",
+    "tag": "p",
+    "text": "Case 1 ( \\(x_1=0\\) ): Then",
+    "html": "<p><strong>Case 1</strong> (<span class=\"math notranslate nohighlight\">\\(x_1=0\\)</span>): Then</p>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0115",
+    "file": "08_Functions.html",
+    "tag": "p",
+    "text": "so \\(x_2=0\\) also. Thus \\(x_1=0=x_2\\) as required.",
+    "html": "<p>so <span class=\"math notranslate nohighlight\">\\(x_2=0\\)</span> also.  Thus <span class=\"math notranslate nohighlight\">\\(x_1=0=x_2\\)</span> as required.</p>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0116",
+    "file": "08_Functions.html",
+    "tag": "p",
+    "text": "Case 2 ( \\(x_1\\ne 0\\) ): Then",
+    "html": "<p><strong>Case 2</strong> (<span class=\"math notranslate nohighlight\">\\(x_1\\ne 0\\)</span>): Then</p>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0117",
+    "file": "08_Functions.html",
+    "tag": "p",
+    "text": "contradiction.",
+    "html": "<p>contradiction.</p>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0118",
+    "file": "08_Functions.html",
+    "tag": "p",
+    "text": "Definition",
+    "html": "<p class=\"admonition-title\">Definition</p>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0119",
+    "file": "08_Functions.html",
+    "tag": "p",
+    "text": "A function is bijective , if it is both injective and surjective.",
+    "html": "<p>A function is <em>bijective</em>, if it is both injective and surjective.</p>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0120",
+    "file": "08_Functions.html",
+    "tag": "p",
+    "text": "Problem",
+    "html": "<p class=\"admonition-title\">Problem</p>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0121",
+    "file": "08_Functions.html",
+    "tag": "p",
+    "text": "Let \\(p:\\mathbb{R}\\to\\mathbb{R}\\) be the function defined by, \\(p(x)=2x-5\\) . Show that \\(p\\) is bijective.",
+    "html": "<p>Let <span class=\"math notranslate nohighlight\">\\(p:\\mathbb{R}\\to\\mathbb{R}\\)</span> be the function defined by, <span class=\"math notranslate nohighlight\">\\(p(x)=2x-5\\)</span>.\nShow that <span class=\"math notranslate nohighlight\">\\(p\\)</span> is bijective.</p>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0122",
+    "file": "08_Functions.html",
+    "tag": "p",
+    "text": "Solution",
+    "html": "<p class=\"admonition-title\">Solution</p>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0123",
+    "file": "08_Functions.html",
+    "tag": "p",
+    "text": "We must show that \\(p\\) is injective and surjective.",
+    "html": "<p>We must show that <span class=\"math notranslate nohighlight\">\\(p\\)</span> is injective and surjective.</p>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0124",
+    "file": "08_Functions.html",
+    "tag": "p",
+    "text": "For the injectivity, let \\(x_1\\) and \\(x_2\\) be real numbers and suppose that \\(p(x_1)=p(x_2)\\) . This means that \\(2x_1-5=2x_2-5\\) . So",
+    "html": "<p>For the injectivity, let <span class=\"math notranslate nohighlight\">\\(x_1\\)</span> and <span class=\"math notranslate nohighlight\">\\(x_2\\)</span> be real numbers and suppose that\n<span class=\"math notranslate nohighlight\">\\(p(x_1)=p(x_2)\\)</span>.  This means that <span class=\"math notranslate nohighlight\">\\(2x_1-5=2x_2-5\\)</span>.  So</p>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0125",
+    "file": "08_Functions.html",
+    "tag": "p",
+    "text": "For the surjectivity, let \\(y\\) be a real number. Then",
+    "html": "<p>For the surjectivity, let <span class=\"math notranslate nohighlight\">\\(y\\)</span> be a real number.  Then</p>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0126",
+    "file": "08_Functions.html",
+    "tag": "p",
+    "text": "Problem",
+    "html": "<p class=\"admonition-title\">Problem</p>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0127",
+    "file": "08_Functions.html",
+    "tag": "p",
+    "text": "Let \\(a:\\mathbb{R}\\to\\mathbb{R}\\) be the function defined by, \\(a(t)=t^3-t\\) . Show that \\(a\\) is not bijective.",
+    "html": "<p>Let <span class=\"math notranslate nohighlight\">\\(a:\\mathbb{R}\\to\\mathbb{R}\\)</span> be the function defined by, <span class=\"math notranslate nohighlight\">\\(a(t)=t^3-t\\)</span>.\nShow that <span class=\"math notranslate nohighlight\">\\(a\\)</span> is not bijective.</p>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0128",
+    "file": "08_Functions.html",
+    "tag": "p",
+    "text": "Solution",
+    "html": "<p class=\"admonition-title\">Solution</p>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0129",
+    "file": "08_Functions.html",
+    "tag": "p",
+    "text": "We will show that \\(a\\) is not injective. Indeed, note that \\(0\\ne 1\\) but",
+    "html": "<p>We will show that <span class=\"math notranslate nohighlight\">\\(a\\)</span> is not injective.  Indeed, note that <span class=\"math notranslate nohighlight\">\\(0\\ne 1\\)</span> but</p>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0130",
+    "file": "08_Functions.html",
+    "tag": "p",
+    "text": "Consider the following finite inductive types Celestial and Subatomic:",
+    "html": "<p>Consider the following finite inductive types Celestial and Subatomic:</p>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0131",
+    "file": "08_Functions.html",
+    "tag": "p",
+    "text": "Consider the following function \\(f\\) from the Celestial type to the Subatomic type.",
+    "html": "<p>Consider the following function <span class=\"math notranslate nohighlight\">\\(f\\)</span> from the Celestial type to the Subatomic type.</p>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0132",
+    "file": "08_Functions.html",
+    "tag": "p",
+    "text": "Problem",
+    "html": "<p class=\"admonition-title\">Problem</p>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0133",
+    "file": "08_Functions.html",
+    "tag": "p",
+    "text": "Prove that the function \\(f\\) is not bijective.",
+    "html": "<p>Prove that the function <span class=\"math notranslate nohighlight\">\\(f\\)</span> is not bijective.</p>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0134",
+    "file": "08_Functions.html",
+    "tag": "p",
+    "text": "Theorem",
+    "html": "<p class=\"admonition-title\">Theorem</p>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0135",
+    "file": "08_Functions.html",
+    "tag": "p",
+    "text": "A function \\(f:X\\to Y\\) is bijective, if and only if for all \\(y\\) of type \\(Y\\) , there exists a unique \\(x\\) of type \\(X\\) , such that \\(f(x)=y\\) .",
+    "html": "<p>A function <span class=\"math notranslate nohighlight\">\\(f:X\\to Y\\)</span> is bijective, if and only if for all <span class=\"math notranslate nohighlight\">\\(y\\)</span> of type <span class=\"math notranslate nohighlight\">\\(Y\\)</span>,\nthere exists a unique <span class=\"math notranslate nohighlight\">\\(x\\)</span> of type <span class=\"math notranslate nohighlight\">\\(X\\)</span>, such that <span class=\"math notranslate nohighlight\">\\(f(x)=y\\)</span>.</p>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0136",
+    "file": "08_Functions.html",
+    "tag": "p",
+    "text": "Proof",
+    "html": "<p class=\"admonition-title\">Proof</p>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0137",
+    "file": "08_Functions.html",
+    "tag": "p",
+    "text": "First, suppose that \\(f\\) is bijective. Let \\(y\\) be of type \\(Y\\) . Since \\(f\\) is surjective, there exists \\(x\\) of type \\(X\\) , such that \\(f(x)=y\\) . We will show that this \\(x\\) is unique. Indeed, for any other \\(x'\\) with \\(f(x')=y\\) , we have that",
+    "html": "<p>First, suppose that <span class=\"math notranslate nohighlight\">\\(f\\)</span> is bijective. Let <span class=\"math notranslate nohighlight\">\\(y\\)</span> be of type <span class=\"math notranslate nohighlight\">\\(Y\\)</span>.  Since <span class=\"math notranslate nohighlight\">\\(f\\)</span>\nis surjective, there exists <span class=\"math notranslate nohighlight\">\\(x\\)</span> of type <span class=\"math notranslate nohighlight\">\\(X\\)</span>, such that <span class=\"math notranslate nohighlight\">\\(f(x)=y\\)</span>. We will show\nthat this <span class=\"math notranslate nohighlight\">\\(x\\)</span> is unique.  Indeed, for any other <span class=\"math notranslate nohighlight\">\\(x'\\)</span> with <span class=\"math notranslate nohighlight\">\\(f(x')=y\\)</span>, we have\nthat</p>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0138",
+    "file": "08_Functions.html",
+    "tag": "p",
+    "text": "and so by the injectivity of \\(f\\) , \\(x'=x\\) .",
+    "html": "<p>and so by the injectivity of <span class=\"math notranslate nohighlight\">\\(f\\)</span>, <span class=\"math notranslate nohighlight\">\\(x'=x\\)</span>.</p>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0139",
+    "file": "08_Functions.html",
+    "tag": "p",
+    "text": "Conversely, suppose that for all \\(y\\) of type \\(Y\\) , there exists a unique \\(x\\) of type \\(X\\) , such that \\(f(x)=y\\) . ( \\(\\star\\) ) We must show that \\(f\\) is injective and surjective.",
+    "html": "<p>Conversely, suppose that  for all <span class=\"math notranslate nohighlight\">\\(y\\)</span> of type <span class=\"math notranslate nohighlight\">\\(Y\\)</span>, there exists a unique <span class=\"math notranslate nohighlight\">\\(x\\)</span> of\ntype <span class=\"math notranslate nohighlight\">\\(X\\)</span>, such that <span class=\"math notranslate nohighlight\">\\(f(x)=y\\)</span>.  (<span class=\"math notranslate nohighlight\">\\(\\star\\)</span>) We must show that <span class=\"math notranslate nohighlight\">\\(f\\)</span> is\ninjective and surjective.</p>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0140",
+    "file": "08_Functions.html",
+    "tag": "p",
+    "text": "For the injectivity, let \\(x_1\\) and \\(x_2\\) be of type \\(X\\) , and suppose that \\(f(x_1)=f(x_2)\\) . By ( \\(\\star\\) ) applied with \\(y=f(x_1)\\) , there exists a unique \\(x\\) of type \\(X\\) for which \\(f(x)=f(x_1)\\) . So, by the uniqueness, \\(x_1=x\\) , and also, since \\(f(x_2)=f(x_1)=f(x)\\) , \\(x_2=x\\) . Combining these, \\(x_1=x_2\\) .",
+    "html": "<p>For the injectivity, let <span class=\"math notranslate nohighlight\">\\(x_1\\)</span> and <span class=\"math notranslate nohighlight\">\\(x_2\\)</span> be of type <span class=\"math notranslate nohighlight\">\\(X\\)</span>, and suppose that\n<span class=\"math notranslate nohighlight\">\\(f(x_1)=f(x_2)\\)</span>.   By  (<span class=\"math notranslate nohighlight\">\\(\\star\\)</span>) applied with <span class=\"math notranslate nohighlight\">\\(y=f(x_1)\\)</span>, there exists a unique\n<span class=\"math notranslate nohighlight\">\\(x\\)</span> of type <span class=\"math notranslate nohighlight\">\\(X\\)</span> for which <span class=\"math notranslate nohighlight\">\\(f(x)=f(x_1)\\)</span>.  So, by the uniqueness, <span class=\"math notranslate nohighlight\">\\(x_1=x\\)</span>,\nand also, since <span class=\"math notranslate nohighlight\">\\(f(x_2)=f(x_1)=f(x)\\)</span>, <span class=\"math notranslate nohighlight\">\\(x_2=x\\)</span>.  Combining these, <span class=\"math notranslate nohighlight\">\\(x_1=x_2\\)</span>.</p>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0141",
+    "file": "08_Functions.html",
+    "tag": "p",
+    "text": "For the surjectivity, let \\(y\\) be of type \\(Y\\) . By ( \\(\\star\\) ), there exists (a unique) \\(x\\) of type \\(X\\) for which \\(f(x)=y\\) .",
+    "html": "<p>For the surjectivity, let <span class=\"math notranslate nohighlight\">\\(y\\)</span> be of type <span class=\"math notranslate nohighlight\">\\(Y\\)</span>.  By  (<span class=\"math notranslate nohighlight\">\\(\\star\\)</span>), there exists (a\nunique) <span class=\"math notranslate nohighlight\">\\(x\\)</span> of type <span class=\"math notranslate nohighlight\">\\(X\\)</span> for which <span class=\"math notranslate nohighlight\">\\(f(x)=y\\)</span>.</p>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0142",
+    "file": "08_Functions.html",
+    "tag": "p",
+    "text": "Problem",
+    "html": "<p class=\"admonition-title\">Problem</p>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0143",
+    "file": "08_Functions.html",
+    "tag": "p",
+    "text": "Show that for all functions \\(f\\) from the Celestial type ( Example 8.2.4 ) to itself, if \\(f\\) is injective then it is bijective.",
+    "html": "<p>Show that for all functions <span class=\"math notranslate nohighlight\">\\(f\\)</span> from the Celestial type\n(<a class=\"reference internal\" href=\"#celestial-subatomic\"><span class=\"std std-numref\">Example 8.2.4</span></a>) to itself, if <span class=\"math notranslate nohighlight\">\\(f\\)</span> is injective then it is\nbijective.</p>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0144",
+    "file": "08_Functions.html",
+    "tag": "p",
+    "text": "We prove this by an exhaustive analysis of all functions \\(f\\) from the Celestial type to itself. There are four such functions. I dealt with the first two cases below; fill in the second two cases yourself.",
+    "html": "<p>We prove this by an exhaustive analysis of all functions <span class=\"math notranslate nohighlight\">\\(f\\)</span> from the Celestial type to\nitself.  There are four such functions.  I dealt with the first two cases below; fill in the second\ntwo cases yourself.</p>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0145",
+    "file": "08_Functions.html",
+    "tag": "p",
+    "text": "Problem",
+    "html": "<p class=\"admonition-title\">Problem</p>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0146",
+    "file": "08_Functions.html",
+    "tag": "p",
+    "text": "Show that it is not true that for all functions \\(f:\\mathbb{N}\\to \\mathbb{N}\\) , if \\(f\\) is injective then it is bijective.",
+    "html": "<p>Show that it is not true that for all functions <span class=\"math notranslate nohighlight\">\\(f:\\mathbb{N}\\to \\mathbb{N}\\)</span>, if <span class=\"math notranslate nohighlight\">\\(f\\)</span>\nis injective then it is bijective.</p>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0147",
+    "file": "08_Functions.html",
+    "tag": "p",
+    "text": "Solution",
+    "html": "<p class=\"admonition-title\">Solution</p>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0148",
+    "file": "08_Functions.html",
+    "tag": "p",
+    "text": "We must show that there exists a function \\(f:\\mathbb{N}\\to \\mathbb{N}\\) , which is injective but not bijective.",
+    "html": "<p>We must show that there exists a function <span class=\"math notranslate nohighlight\">\\(f:\\mathbb{N}\\to \\mathbb{N}\\)</span>, which is injective\nbut not bijective.</p>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0149",
+    "file": "08_Functions.html",
+    "tag": "p",
+    "text": "Indeed, consider the function \\(f(n)=n+1\\) . This function is injective, since for all natural numbers \\(n_1\\) and \\(n_2\\) , if \\(n_1+1=n_2+1\\) then \\(n_1=n_2\\) .",
+    "html": "<p>Indeed, consider the function <span class=\"math notranslate nohighlight\">\\(f(n)=n+1\\)</span>.  This function is injective, since for all\nnatural numbers <span class=\"math notranslate nohighlight\">\\(n_1\\)</span> and <span class=\"math notranslate nohighlight\">\\(n_2\\)</span>, if <span class=\"math notranslate nohighlight\">\\(n_1+1=n_2+1\\)</span> then <span class=\"math notranslate nohighlight\">\\(n_1=n_2\\)</span>.</p>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0150",
+    "file": "08_Functions.html",
+    "tag": "p",
+    "text": "However, this function is not surjective, and therefore not bijective. To see this, observe that for all natural numbers \\(n\\) , we have \\(f(n)=n+1>0\\) and therefore \\(f(n)\\ne 0\\) .",
+    "html": "<p>However, this function is not surjective, and therefore not bijective.  To see this, observe that\nfor all natural numbers <span class=\"math notranslate nohighlight\">\\(n\\)</span>, we have <span class=\"math notranslate nohighlight\">\\(f(n)=n+1&gt;0\\)</span> and therefore <span class=\"math notranslate nohighlight\">\\(f(n)\\ne 0\\)</span>.</p>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0151",
+    "file": "08_Functions.html",
+    "tag": "p",
+    "text": "Definition",
+    "html": "<p class=\"admonition-title\">Definition</p>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0152",
+    "file": "08_Functions.html",
+    "tag": "p",
+    "text": "The composition of the function \\(g : Y \\to Z\\) with the function \\(f : X \\to Y\\) is the function from \\(X\\) to \\(Z\\) which sends \\(x\\) to \\(g(f(x))\\) .",
+    "html": "<p>The <em>composition</em> of the function <span class=\"math notranslate nohighlight\">\\(g : Y \\to Z\\)</span> with the function <span class=\"math notranslate nohighlight\">\\(f : X \\to Y\\)</span> is the\nfunction from <span class=\"math notranslate nohighlight\">\\(X\\)</span> to <span class=\"math notranslate nohighlight\">\\(Z\\)</span> which sends <span class=\"math notranslate nohighlight\">\\(x\\)</span> to <span class=\"math notranslate nohighlight\">\\(g(f(x))\\)</span>.</p>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0153",
+    "file": "08_Functions.html",
+    "tag": "p",
+    "text": "The composition of \\(g : Y \\to Z\\) with \\(f : X \\to Y\\) is denoted \\(g \\circ f\\) (in Lean, g ∘ f ).",
+    "html": "<p>The composition of <span class=\"math notranslate nohighlight\">\\(g : Y \\to Z\\)</span> with <span class=\"math notranslate nohighlight\">\\(f : X \\to Y\\)</span> is denoted <span class=\"math notranslate nohighlight\">\\(g \\circ f\\)</span> (in\nLean, <code class=\"docutils literal notranslate\"><span class=\"pre\">g</span> <span class=\"pre\">∘</span> <span class=\"pre\">f</span></code>).</p>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0154",
+    "file": "08_Functions.html",
+    "tag": "p",
+    "text": "Problem",
+    "html": "<p class=\"admonition-title\">Problem</p>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0155",
+    "file": "08_Functions.html",
+    "tag": "p",
+    "text": "Let \\(f:\\mathbb{R}\\to\\mathbb{R}\\) be the function defined by, \\(f(a)=a+3\\) . Let \\(g:\\mathbb{R}\\to\\mathbb{R}\\) be the function defined by, \\(g(b)=2b\\) . Let \\(h:\\mathbb{R}\\to\\mathbb{R}\\) be the function defined by, \\(h(c)=2c+6\\) .",
+    "html": "<p>Let <span class=\"math notranslate nohighlight\">\\(f:\\mathbb{R}\\to\\mathbb{R}\\)</span> be the function defined by, <span class=\"math notranslate nohighlight\">\\(f(a)=a+3\\)</span>.\nLet <span class=\"math notranslate nohighlight\">\\(g:\\mathbb{R}\\to\\mathbb{R}\\)</span> be the function defined by, <span class=\"math notranslate nohighlight\">\\(g(b)=2b\\)</span>.\nLet <span class=\"math notranslate nohighlight\">\\(h:\\mathbb{R}\\to\\mathbb{R}\\)</span> be the function defined by, <span class=\"math notranslate nohighlight\">\\(h(c)=2c+6\\)</span>.</p>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0156",
+    "file": "08_Functions.html",
+    "tag": "p",
+    "text": "Show that \\(g \\circ f = h\\) .",
+    "html": "<p>Show that <span class=\"math notranslate nohighlight\">\\(g \\circ f = h\\)</span>.</p>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0157",
+    "file": "08_Functions.html",
+    "tag": "p",
+    "text": "Solution",
+    "html": "<p class=\"admonition-title\">Solution</p>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0158",
+    "file": "08_Functions.html",
+    "tag": "p",
+    "text": "Let \\(x\\) be a real number. Then",
+    "html": "<p>Let <span class=\"math notranslate nohighlight\">\\(x\\)</span> be a real number.  Then</p>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0159",
+    "file": "08_Functions.html",
+    "tag": "p",
+    "text": "In the Lean proof, note the new tactic ext . To prove two functions are equal, we have to show that they are equal on every input. This is what the tactic ext does. (The name stands for “extensionality”.) Before we use it, the goal state is",
+    "html": "<p>In the Lean proof, note the new tactic <code class=\"docutils literal notranslate\"><span class=\"pre\">ext</span></code>.  To prove two functions are equal, we have to\nshow that they are equal on every input.  This is what the tactic <code class=\"docutils literal notranslate\"><span class=\"pre\">ext</span></code> does.  (The name stands\nfor “extensionality”.) Before we use it, the goal state is</p>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0160",
+    "file": "08_Functions.html",
+    "tag": "p",
+    "text": "After we use it, the goal state is",
+    "html": "<p>After we use it, the goal state is</p>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0161",
+    "file": "08_Functions.html",
+    "tag": "p",
+    "text": "Here is the full Lean proof.",
+    "html": "<p>Here is the full Lean proof.</p>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0162",
+    "file": "08_Functions.html",
+    "tag": "p",
+    "text": "Definition",
+    "html": "<p class=\"admonition-title\">Definition</p>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0163",
+    "file": "08_Functions.html",
+    "tag": "p",
+    "text": "The identity function \\(\\operatorname{Id}_X:X\\to X\\) is the function which sends each \\(x\\) of type \\(X\\) to itself.",
+    "html": "<p>The <em>identity function</em> <span class=\"math notranslate nohighlight\">\\(\\operatorname{Id}_X:X\\to X\\)</span> is the function which sends each\n<span class=\"math notranslate nohighlight\">\\(x\\)</span> of type <span class=\"math notranslate nohighlight\">\\(X\\)</span> to itself.</p>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0164",
+    "file": "08_Functions.html",
+    "tag": "p",
+    "text": "Problem",
+    "html": "<p class=\"admonition-title\">Problem</p>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0165",
+    "file": "08_Functions.html",
+    "tag": "p",
+    "text": "Let \\(s:\\mathbb{R}\\to\\mathbb{R}\\) be the function defined by, \\(s(x)=5-x\\) .",
+    "html": "<p>Let <span class=\"math notranslate nohighlight\">\\(s:\\mathbb{R}\\to\\mathbb{R}\\)</span> be the function defined by, <span class=\"math notranslate nohighlight\">\\(s(x)=5-x\\)</span>.</p>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0166",
+    "file": "08_Functions.html",
+    "tag": "p",
+    "text": "Show that \\(s \\circ s = \\operatorname{Id}_\\mathbb{R}\\) .",
+    "html": "<p>Show that <span class=\"math notranslate nohighlight\">\\(s \\circ s = \\operatorname{Id}_\\mathbb{R}\\)</span>.</p>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0167",
+    "file": "08_Functions.html",
+    "tag": "p",
+    "text": "Solution",
+    "html": "<p class=\"admonition-title\">Solution</p>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0168",
+    "file": "08_Functions.html",
+    "tag": "p",
+    "text": "Let \\(x\\) be a real number. We must show that \\(5 - (5 - x) = x\\) , which is true.",
+    "html": "<p>Let <span class=\"math notranslate nohighlight\">\\(x\\)</span> be a real number.  We must show that <span class=\"math notranslate nohighlight\">\\(5 - (5 - x) = x\\)</span>, which is true.</p>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0169",
+    "file": "08_Functions.html",
+    "tag": "p",
+    "text": "Definition",
+    "html": "<p class=\"admonition-title\">Definition</p>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0170",
+    "file": "08_Functions.html",
+    "tag": "p",
+    "text": "A function \\(g : Y \\to X\\) is an inverse of \\(f : X \\to Y\\) , if \\(g \\circ f=\\operatorname{Id}_X\\) and \\(f \\circ g=\\operatorname{Id}_Y\\) .",
+    "html": "<p>A function <span class=\"math notranslate nohighlight\">\\(g : Y \\to X\\)</span> is an <em>inverse</em> of <span class=\"math notranslate nohighlight\">\\(f : X \\to Y\\)</span>, if\n<span class=\"math notranslate nohighlight\">\\(g \\circ f=\\operatorname{Id}_X\\)</span> and <span class=\"math notranslate nohighlight\">\\(f \\circ g=\\operatorname{Id}_Y\\)</span>.</p>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0171",
+    "file": "08_Functions.html",
+    "tag": "p",
+    "text": "Consider the following finite inductive type Humour:",
+    "html": "<p>Consider the following finite inductive type Humour:</p>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0172",
+    "file": "08_Functions.html",
+    "tag": "p",
+    "text": "Consider the following function \\(p\\) from the Humour type to itself.",
+    "html": "<p>Consider the following function <span class=\"math notranslate nohighlight\">\\(p\\)</span> from the Humour type to itself.</p>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0173",
+    "file": "08_Functions.html",
+    "tag": "p",
+    "text": "Problem",
+    "html": "<p class=\"admonition-title\">Problem</p>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0174",
+    "file": "08_Functions.html",
+    "tag": "p",
+    "text": "Define a function \\(q\\) from the Humour type to itself which is inverse to \\(p\\) , and prove this.",
+    "html": "<p>Define a function <span class=\"math notranslate nohighlight\">\\(q\\)</span> from the Humour type to itself which is inverse to <span class=\"math notranslate nohighlight\">\\(p\\)</span>, and\nprove this.</p>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0175",
+    "file": "08_Functions.html",
+    "tag": "p",
+    "text": "Proposition",
+    "html": "<p class=\"admonition-title\">Proposition</p>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0176",
+    "file": "08_Functions.html",
+    "tag": "p",
+    "text": "Let \\(f : X \\to Y\\) be a bijective function. Then there exists a function \\(g : Y \\to X\\) which is inverse to \\(f\\) .",
+    "html": "<p>Let <span class=\"math notranslate nohighlight\">\\(f : X \\to Y\\)</span> be a bijective function.  Then there exists a function\n<span class=\"math notranslate nohighlight\">\\(g : Y \\to X\\)</span> which is inverse to <span class=\"math notranslate nohighlight\">\\(f\\)</span>.</p>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0177",
+    "file": "08_Functions.html",
+    "tag": "p",
+    "text": "Proof",
+    "html": "<p class=\"admonition-title\">Proof</p>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0178",
+    "file": "08_Functions.html",
+    "tag": "p",
+    "text": "Define a function \\(g : Y \\to X\\) as follows: given \\(y\\) of type \\(Y\\) , by the surjectivity of \\(f\\) there exists an \\(x\\) of type \\(X\\) such that \\(f(x)=y\\) , and we set \\(g(y)\\) to be this \\(x\\) . Thus, for all \\(y\\) , it is true that \\(f(g(y))=y\\) . ( \\(\\star\\) )",
+    "html": "<p>Define a function <span class=\"math notranslate nohighlight\">\\(g : Y \\to X\\)</span> as follows: given <span class=\"math notranslate nohighlight\">\\(y\\)</span> of type <span class=\"math notranslate nohighlight\">\\(Y\\)</span>, by the\nsurjectivity of <span class=\"math notranslate nohighlight\">\\(f\\)</span> there exists an <span class=\"math notranslate nohighlight\">\\(x\\)</span> of type <span class=\"math notranslate nohighlight\">\\(X\\)</span> such that <span class=\"math notranslate nohighlight\">\\(f(x)=y\\)</span>,\nand we set <span class=\"math notranslate nohighlight\">\\(g(y)\\)</span> to be this <span class=\"math notranslate nohighlight\">\\(x\\)</span>.  Thus, for all <span class=\"math notranslate nohighlight\">\\(y\\)</span>, it is true that\n<span class=\"math notranslate nohighlight\">\\(f(g(y))=y\\)</span>. (<span class=\"math notranslate nohighlight\">\\(\\star\\)</span>)</p>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0179",
+    "file": "08_Functions.html",
+    "tag": "p",
+    "text": "This immediately shows that \\(f \\circ g = \\operatorname{Id}_Y\\) . To show that \\(g \\circ f = \\operatorname{Id}_X\\) , let \\(x\\) be of type \\(X\\) . We have, by ( \\(\\star\\) ), that",
+    "html": "<p>This immediately shows that <span class=\"math notranslate nohighlight\">\\(f \\circ g = \\operatorname{Id}_Y\\)</span>.  To show that\n<span class=\"math notranslate nohighlight\">\\(g \\circ f = \\operatorname{Id}_X\\)</span>, let <span class=\"math notranslate nohighlight\">\\(x\\)</span> be of type <span class=\"math notranslate nohighlight\">\\(X\\)</span>.  We have, by\n(<span class=\"math notranslate nohighlight\">\\(\\star\\)</span>), that</p>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0180",
+    "file": "08_Functions.html",
+    "tag": "p",
+    "text": "so by the injectivity of \\(f\\) , it follows that \\((g \\circ f)(x) = \\operatorname{Id}_X(x)\\) .",
+    "html": "<p>so by the injectivity of <span class=\"math notranslate nohighlight\">\\(f\\)</span>, it follows that\n<span class=\"math notranslate nohighlight\">\\((g \\circ f)(x) = \\operatorname{Id}_X(x)\\)</span>.</p>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0181",
+    "file": "08_Functions.html",
+    "tag": "p",
+    "text": "To write this proof in Lean, we need a tactic, choose , 1 which is not used elsewhere in the book. This tactic constructs the function \\(g : Y \\to X\\) as described in the first paragraph of the text proof. More precisely, given the hypothesis",
+    "html": "<p>To write this proof in Lean, we need a tactic, <code class=\"docutils literal notranslate\"><span class=\"pre\">choose</span></code>, <a class=\"footnote-reference brackets\" href=\"#id31\" id=\"id27\">1</a> which is not used elsewhere in the\nbook. This tactic constructs the function <span class=\"math notranslate nohighlight\">\\(g : Y \\to X\\)</span>\nas described in the first paragraph of the text proof.  More precisely, given the hypothesis</p>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0182",
+    "file": "08_Functions.html",
+    "tag": "p",
+    "text": "the tactic invocation choose g hg using h_surj creates a function consisting of a “choice” of the a for each b :",
+    "html": "<p>the tactic invocation <code class=\"docutils literal notranslate\"><span class=\"pre\">choose</span> <span class=\"pre\">g</span> <span class=\"pre\">hg</span> <span class=\"pre\">using</span> <span class=\"pre\">h_surj</span></code> creates a function consisting of a “choice” of\nthe <code class=\"docutils literal notranslate\"><span class=\"pre\">a</span></code> for each <code class=\"docutils literal notranslate\"><span class=\"pre\">b</span></code>:</p>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0183",
+    "file": "08_Functions.html",
+    "tag": "p",
+    "text": "Here is the full proof in Lean.",
+    "html": "<p>Here is the full proof in Lean.</p>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0184",
+    "file": "08_Functions.html",
+    "tag": "p",
+    "text": "Proposition",
+    "html": "<p class=\"admonition-title\">Proposition</p>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0185",
+    "file": "08_Functions.html",
+    "tag": "p",
+    "text": "Let \\(f : X \\to Y\\) and \\(g : Y \\to X\\) be functions, with \\(g : Y \\to X\\) inverse to \\(f : X \\to Y\\) . Then \\(f : X \\to Y\\) is bijective.",
+    "html": "<p>Let <span class=\"math notranslate nohighlight\">\\(f : X \\to Y\\)</span> and <span class=\"math notranslate nohighlight\">\\(g : Y \\to X\\)</span> be functions, with <span class=\"math notranslate nohighlight\">\\(g : Y \\to X\\)</span> inverse\nto <span class=\"math notranslate nohighlight\">\\(f : X \\to Y\\)</span>.  Then <span class=\"math notranslate nohighlight\">\\(f : X \\to Y\\)</span> is bijective.</p>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0186",
+    "file": "08_Functions.html",
+    "tag": "p",
+    "text": "Proof",
+    "html": "<p class=\"admonition-title\">Proof</p>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0187",
+    "file": "08_Functions.html",
+    "tag": "p",
+    "text": "We first show \\(f\\) is injective. Indeed, let \\(x_1\\) and \\(x_2\\) be of type \\(X\\) , and suppose that \\(f(x_1)=f(x_2)\\) . Then",
+    "html": "<p>We first show <span class=\"math notranslate nohighlight\">\\(f\\)</span> is injective.  Indeed, let <span class=\"math notranslate nohighlight\">\\(x_1\\)</span> and <span class=\"math notranslate nohighlight\">\\(x_2\\)</span> be of type\n<span class=\"math notranslate nohighlight\">\\(X\\)</span>, and suppose that  <span class=\"math notranslate nohighlight\">\\(f(x_1)=f(x_2)\\)</span>.  Then</p>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0188",
+    "file": "08_Functions.html",
+    "tag": "p",
+    "text": "We now show that \\(f\\) is surjective. Indeed, let \\(y\\) be of type \\(Y\\) . Then",
+    "html": "<p>We now show that <span class=\"math notranslate nohighlight\">\\(f\\)</span> is surjective.  Indeed, let <span class=\"math notranslate nohighlight\">\\(y\\)</span> be of type <span class=\"math notranslate nohighlight\">\\(Y\\)</span>.  Then</p>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0189",
+    "file": "08_Functions.html",
+    "tag": "p",
+    "text": "Theorem",
+    "html": "<p class=\"admonition-title\">Theorem</p>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0190",
+    "file": "08_Functions.html",
+    "tag": "p",
+    "text": "Let \\(f : X \\to Y\\) be a function. Then \\(f\\) is bijective, if and only if there exists a function \\(g : Y \\to X\\) which is inverse to \\(f\\) .",
+    "html": "<p>Let <span class=\"math notranslate nohighlight\">\\(f : X \\to Y\\)</span> be a function.  Then <span class=\"math notranslate nohighlight\">\\(f\\)</span> is bijective, if and only if there\nexists a function <span class=\"math notranslate nohighlight\">\\(g : Y \\to X\\)</span> which is inverse to <span class=\"math notranslate nohighlight\">\\(f\\)</span>.</p>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0191",
+    "file": "08_Functions.html",
+    "tag": "p",
+    "text": "Proof",
+    "html": "<p class=\"admonition-title\">Proof</p>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0192",
+    "file": "08_Functions.html",
+    "tag": "p",
+    "text": "The first direction is given by Example 8.3.7 , and the second direction by Example 8.3.8 .",
+    "html": "<p>The first direction is given by <a class=\"reference internal\" href=\"#bijective-to-inverse\"><span class=\"std std-numref\">Example 8.3.7</span></a>, and the second\ndirection by <a class=\"reference internal\" href=\"#inverse-to-bijection\"><span class=\"std std-numref\">Example 8.3.8</span></a>.</p>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0193",
+    "file": "08_Functions.html",
+    "tag": "p",
+    "text": "Footnotes",
+    "html": "<p class=\"rubric\">Footnotes</p>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0194",
+    "file": "08_Functions.html",
+    "tag": "p",
+    "text": "Experts will recognize this as the axiom of choice .",
+    "html": "<p>Experts will recognize this as the\n<a class=\"reference external\" href=\"https://en.wikipedia.org/wiki/Axiom_of_choice\">axiom of choice</a>.</p>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0195",
+    "file": "08_Functions.html",
+    "tag": "p",
+    "text": "Problem",
+    "html": "<p class=\"admonition-title\">Problem</p>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0196",
+    "file": "08_Functions.html",
+    "tag": "p",
+    "text": "Consider the function \\(q:\\mathbb{Z}\\to\\mathbb{Z}^2\\) defined by, \\(q(m)=(m + 1, 2 - m)\\) . Show that \\(q\\) is",
+    "html": "<p>Consider the function <span class=\"math notranslate nohighlight\">\\(q:\\mathbb{Z}\\to\\mathbb{Z}^2\\)</span> defined by, <span class=\"math notranslate nohighlight\">\\(q(m)=(m + 1, 2 - m)\\)</span>.\nShow that <span class=\"math notranslate nohighlight\">\\(q\\)</span> is</p>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0197",
+    "file": "08_Functions.html",
+    "tag": "p",
+    "text": "Solution",
+    "html": "<p class=\"admonition-title\">Solution</p>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0198",
+    "file": "08_Functions.html",
+    "tag": "p",
+    "text": "To write these proofs in Lean, notice the use of the tactic obtain in the injectivity problem to convert the hypothesis of a equality in a product type,",
+    "html": "<p>To write these proofs in Lean, notice the use of the tactic <code class=\"docutils literal notranslate\"><span class=\"pre\">obtain</span></code> in the injectivity problem to\nconvert the hypothesis of a equality in a product type,</p>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0199",
+    "file": "08_Functions.html",
+    "tag": "p",
+    "text": "to two hypotheses of equality in the two components of the product:",
+    "html": "<p>to two hypotheses of equality in the two components of the product:</p>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0200",
+    "file": "08_Functions.html",
+    "tag": "p",
+    "text": "This is consistent with how you should think about equality in a product type: two ordered pairs are equal if the two left parts are equal and the two right parts are equal. So we use the same tactic, with the same syntax, as for the logical operator “and”.",
+    "html": "<p>This is consistent with how you should think about equality in a product type: two ordered pairs are\nequal if the two left parts are equal <em>and</em> the two right parts are equal.  So we use the same\ntactic, with the same syntax, as for the logical operator “and”.</p>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0201",
+    "file": "08_Functions.html",
+    "tag": "p",
+    "text": "The tactic obtain is used similarly in the non-surjectivity problem to break down the hypothesis of equality in a product type",
+    "html": "<p>The tactic <code class=\"docutils literal notranslate\"><span class=\"pre\">obtain</span></code> is used similarly in the non-surjectivity problem to break down the hypothesis\nof equality in a product type</p>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0202",
+    "file": "08_Functions.html",
+    "tag": "p",
+    "text": "which arises in that problem.",
+    "html": "<p>which arises in that problem.</p>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0203",
+    "file": "08_Functions.html",
+    "tag": "p",
+    "text": "Problem",
+    "html": "<p class=\"admonition-title\">Problem</p>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0204",
+    "file": "08_Functions.html",
+    "tag": "p",
+    "text": "Consider the function \\((m,n)\\mapsto (m + n, m + 2n)\\) from \\(\\mathbb{Z}^2\\) to \\(\\mathbb{Z}^2\\) . Show that this function is bijective.",
+    "html": "<p>Consider the function <span class=\"math notranslate nohighlight\">\\((m,n)\\mapsto (m + n, m + 2n)\\)</span> from <span class=\"math notranslate nohighlight\">\\(\\mathbb{Z}^2\\)</span> to\n<span class=\"math notranslate nohighlight\">\\(\\mathbb{Z}^2\\)</span>.\nShow that this function is bijective.</p>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0205",
+    "file": "08_Functions.html",
+    "tag": "p",
+    "text": "Usually, the most efficient way to prove a function is bijective is to produce an inverse for it. This is enough because of the theorem we proved in Example 8.3.9 . Coming up with this inverse is something you should do in rough work, probably on paper rather than in Lean. For example, in this problem, you can set up an equation in \\((a,b)\\) which the inverse has to satisfy:",
+    "html": "<p>Usually, the most efficient way to prove a function is bijective is to produce an inverse for it.\nThis is enough because of the theorem we proved in <a class=\"reference internal\" href=\"#bijective-iff-inverse\"><span class=\"std std-numref\">Example 8.3.9</span></a>.\nComing up with this inverse is something you should do in rough work, probably on paper rather than\nin Lean.  For example, in this problem, you can set up an equation in <span class=\"math notranslate nohighlight\">\\((a,b)\\)</span> which the\ninverse has to satisfy:</p>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0206",
+    "file": "08_Functions.html",
+    "tag": "p",
+    "text": "and simplify to a system of integer equations, and then solve for \\(m\\) and \\(n\\) :",
+    "html": "<p>and simplify to a system of integer equations, and then solve for <span class=\"math notranslate nohighlight\">\\(m\\)</span> and <span class=\"math notranslate nohighlight\">\\(n\\)</span>:</p>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0207",
+    "file": "08_Functions.html",
+    "tag": "p",
+    "text": "to conclude that a good candidate for the inverse is the function \\((a,b)\\mapsto (2a-b, b-a)\\) from \\(\\mathbb{Z}^2\\) to \\(\\mathbb{Z}^2\\) . But this rough work does not get included in the write-up, either on paper or in Lean. Instead, just produce the inverse out of a hat, and check that it works.",
+    "html": "<p>to conclude that a good candidate for the inverse is the function\n<span class=\"math notranslate nohighlight\">\\((a,b)\\mapsto (2a-b, b-a)\\)</span> from <span class=\"math notranslate nohighlight\">\\(\\mathbb{Z}^2\\)</span> to <span class=\"math notranslate nohighlight\">\\(\\mathbb{Z}^2\\)</span>.  But this rough\nwork does not get included in the write-up, either on paper or in Lean.  Instead, just produce the\ninverse out of a hat, and check that it works.</p>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0208",
+    "file": "08_Functions.html",
+    "tag": "p",
+    "text": "Solution",
+    "html": "<p class=\"admonition-title\">Solution</p>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0209",
+    "file": "08_Functions.html",
+    "tag": "p",
+    "text": "By Example 8.3.9 it suffices to show that this function has an inverse. We will show that the function \\((a,b)\\mapsto (2a-b, b-a)\\) is inverse to this function.",
+    "html": "<p>By <a class=\"reference internal\" href=\"#bijective-iff-inverse\"><span class=\"std std-numref\">Example 8.3.9</span></a> it suffices to show that this function has an\ninverse.  We will show that the function <span class=\"math notranslate nohighlight\">\\((a,b)\\mapsto (2a-b, b-a)\\)</span> is inverse to this\nfunction.</p>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0210",
+    "file": "08_Functions.html",
+    "tag": "p",
+    "text": "Firstly, for any \\((m,n)\\) in \\(\\mathbb{Z}^2\\) , we have that",
+    "html": "<p>Firstly, for any <span class=\"math notranslate nohighlight\">\\((m,n)\\)</span> in <span class=\"math notranslate nohighlight\">\\(\\mathbb{Z}^2\\)</span>, we have that</p>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0211",
+    "file": "08_Functions.html",
+    "tag": "p",
+    "text": "Secondly, for any \\((a,b)\\) in \\(\\mathbb{Z}^2\\) , we have that",
+    "html": "<p>Secondly, for any <span class=\"math notranslate nohighlight\">\\((a,b)\\)</span> in <span class=\"math notranslate nohighlight\">\\(\\mathbb{Z}^2\\)</span>, we have that</p>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0212",
+    "file": "08_Functions.html",
+    "tag": "p",
+    "text": "In Lean, note",
+    "html": "<p>In Lean, note</p>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0213",
+    "file": "08_Functions.html",
+    "tag": "p",
+    "text": "The ideas of Example 8.4.2 can be adapted fairly flexibly, particularly over the rationals and over the reals. Try this one yourself.",
+    "html": "<p>The ideas of <a class=\"reference internal\" href=\"#standard-plane-bij\"><span class=\"std std-numref\">Example 8.4.2</span></a> can be adapted fairly flexibly, particularly\nover the rationals and over the reals.  Try this one yourself.</p>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0214",
+    "file": "08_Functions.html",
+    "tag": "p",
+    "text": "Problem",
+    "html": "<p class=\"admonition-title\">Problem</p>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0215",
+    "file": "08_Functions.html",
+    "tag": "p",
+    "text": "Consider the function \\((m,n)\\mapsto (m + n, m - n)\\) from \\(\\mathbb{R}^2\\) to \\(\\mathbb{R}^2\\) . Show that this function is bijective.",
+    "html": "<p>Consider the function <span class=\"math notranslate nohighlight\">\\((m,n)\\mapsto (m + n, m - n)\\)</span> from <span class=\"math notranslate nohighlight\">\\(\\mathbb{R}^2\\)</span> to\n<span class=\"math notranslate nohighlight\">\\(\\mathbb{R}^2\\)</span>.\nShow that this function is bijective.</p>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0216",
+    "file": "08_Functions.html",
+    "tag": "p",
+    "text": "But over the integers, complications can ensue. You’ll find that the inverse you come up with for the previous example involves a division, which works fine over \\(\\mathbb{R}\\) but doesn’t work over \\(\\mathbb{Z}\\) . And in fact in this case the function is not bijective as a map from \\(\\mathbb{Z}^2\\) to \\(\\mathbb{Z}^2\\) .",
+    "html": "<p>But over the integers, complications can ensue.  You’ll find that the inverse you come up with for\nthe previous example involves a division, which works fine over <span class=\"math notranslate nohighlight\">\\(\\mathbb{R}\\)</span> but doesn’t work\nover <span class=\"math notranslate nohighlight\">\\(\\mathbb{Z}\\)</span>.  And in fact in this case the function is <em>not</em> bijective as a map from\n<span class=\"math notranslate nohighlight\">\\(\\mathbb{Z}^2\\)</span> to <span class=\"math notranslate nohighlight\">\\(\\mathbb{Z}^2\\)</span>.</p>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0217",
+    "file": "08_Functions.html",
+    "tag": "p",
+    "text": "Problem",
+    "html": "<p class=\"admonition-title\">Problem</p>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0218",
+    "file": "08_Functions.html",
+    "tag": "p",
+    "text": "Consider the function \\((m,n)\\mapsto (m + n, m - n)\\) from \\(\\mathbb{Z}^2\\) to \\(\\mathbb{Z}^2\\) . Show that this function is not bijective.",
+    "html": "<p>Consider the function <span class=\"math notranslate nohighlight\">\\((m,n)\\mapsto (m + n, m - n)\\)</span> from <span class=\"math notranslate nohighlight\">\\(\\mathbb{Z}^2\\)</span> to\n<span class=\"math notranslate nohighlight\">\\(\\mathbb{Z}^2\\)</span>.\nShow that this function is not bijective.</p>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0219",
+    "file": "08_Functions.html",
+    "tag": "p",
+    "text": "Solution",
+    "html": "<p class=\"admonition-title\">Solution</p>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0220",
+    "file": "08_Functions.html",
+    "tag": "p",
+    "text": "We will show that the function is not surjective. In fact, we will show that for all \\((m,n)\\) in \\(\\mathbb{Z}^2\\) , it is not true that \\((m + n, m - n)=(0,1)\\) . So let \\((m,n)\\) be in \\(\\mathbb{Z}^2\\) and suppose that \\((m + n, m - n)=(0,1)\\) . Then \\(m+n=0\\) and \\(m-n=1\\) , so",
+    "html": "<p>We will show that the function is not surjective.  In fact, we will show that for all\n<span class=\"math notranslate nohighlight\">\\((m,n)\\)</span> in <span class=\"math notranslate nohighlight\">\\(\\mathbb{Z}^2\\)</span>, it is not true that <span class=\"math notranslate nohighlight\">\\((m + n, m - n)=(0,1)\\)</span>.  So let\n<span class=\"math notranslate nohighlight\">\\((m,n)\\)</span> be in <span class=\"math notranslate nohighlight\">\\(\\mathbb{Z}^2\\)</span> and suppose that <span class=\"math notranslate nohighlight\">\\((m + n, m - n)=(0,1)\\)</span>.  Then\n<span class=\"math notranslate nohighlight\">\\(m+n=0\\)</span> and <span class=\"math notranslate nohighlight\">\\(m-n=1\\)</span>, so</p>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0221",
+    "file": "08_Functions.html",
+    "tag": "p",
+    "text": "contradiction.",
+    "html": "<p>contradiction.</p>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0222",
+    "file": "08_Functions.html",
+    "tag": "p",
+    "text": "The last part of the problem could play out in several different ways. The hypotheses \\(m+n=0\\) and \\(m-n=1\\) are pretty clearly contradictory (for integers), so there are several variant ways you could produce the contradiction instead of the numeric contradiction \\(0\\equiv 1\\mod 2\\) which I produced here.",
+    "html": "<p>The last part of the problem could play out in several different ways.  The hypotheses <span class=\"math notranslate nohighlight\">\\(m+n=0\\)</span>\nand <span class=\"math notranslate nohighlight\">\\(m-n=1\\)</span> are pretty clearly contradictory (for integers), so there are several variant ways\nyou could produce the contradiction instead of the numeric contradiction <span class=\"math notranslate nohighlight\">\\(0\\equiv 1\\mod 2\\)</span>\nwhich I produced here.</p>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0223",
+    "file": "08_Functions.html",
+    "tag": "p",
+    "text": "Problem",
+    "html": "<p class=\"admonition-title\">Problem</p>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0224",
+    "file": "08_Functions.html",
+    "tag": "p",
+    "text": "Consider the function \\((x,y)\\mapsto (x+y,x-y, y)\\) from \\(\\mathbb{R}^2\\) to \\(\\mathbb{R}^3\\) . Show that this function is injective.",
+    "html": "<p>Consider the function <span class=\"math notranslate nohighlight\">\\((x,y)\\mapsto (x+y,x-y, y)\\)</span> from  <span class=\"math notranslate nohighlight\">\\(\\mathbb{R}^2\\)</span> to\n<span class=\"math notranslate nohighlight\">\\(\\mathbb{R}^3\\)</span>. Show that this function is injective.</p>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0225",
+    "file": "08_Functions.html",
+    "tag": "p",
+    "text": "Solution",
+    "html": "<p class=\"admonition-title\">Solution</p>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0226",
+    "file": "08_Functions.html",
+    "tag": "p",
+    "text": "Let \\((x_1,y_1)\\) and \\((x_2,y_2)\\) be points in \\(\\mathbb{R}^2\\) and suppose that",
+    "html": "<p>Let <span class=\"math notranslate nohighlight\">\\((x_1,y_1)\\)</span> and <span class=\"math notranslate nohighlight\">\\((x_2,y_2)\\)</span> be points in <span class=\"math notranslate nohighlight\">\\(\\mathbb{R}^2\\)</span> and suppose that</p>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0227",
+    "file": "08_Functions.html",
+    "tag": "p",
+    "text": "Then, inspecting co-ordinate by co-ordinate, we have that",
+    "html": "<p>Then, inspecting co-ordinate by co-ordinate, we have that</p>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0228",
+    "file": "08_Functions.html",
+    "tag": "p",
+    "text": "Subtracting the third equation from the first, we also have that \\(x_1=x_2\\) . So \\((x_1,y_1)=(x_2,y_2)\\) .",
+    "html": "<p>Subtracting the third equation from the first, we also have that <span class=\"math notranslate nohighlight\">\\(x_1=x_2\\)</span>.  So\n<span class=\"math notranslate nohighlight\">\\((x_1,y_1)=(x_2,y_2)\\)</span>.</p>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0229",
+    "file": "08_Functions.html",
+    "tag": "p",
+    "text": "In Lean, note the use of the tactic constructor to reduce a goal of equality in a product type,",
+    "html": "<p>In Lean, note the use of the tactic <code class=\"docutils literal notranslate\"><span class=\"pre\">constructor</span></code> to reduce a goal of equality in a product type,</p>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0230",
+    "file": "08_Functions.html",
+    "tag": "p",
+    "text": "to two simpler goals, one for each co-ordinate:",
+    "html": "<p>to two simpler goals, one for each co-ordinate:</p>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0231",
+    "file": "08_Functions.html",
+    "tag": "p",
+    "text": "As with the use of obtain for hypotheses of equality in a product type (recall Example 8.4.1 ), the point is that an equality in a product type is effectively an “and” statement about equality in the first and the second co-ordinates.",
+    "html": "<p>As with the use of <code class=\"docutils literal notranslate\"><span class=\"pre\">obtain</span></code> for hypotheses of equality in a product type  (recall\n<a class=\"reference internal\" href=\"#obtain-product\"><span class=\"std std-numref\">Example 8.4.1</span></a>), the point is that an equality in a product type is\neffectively an “and” statement about equality in the first and the second co-ordinates.</p>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0232",
+    "file": "08_Functions.html",
+    "tag": "p",
+    "text": "Problem",
+    "html": "<p class=\"admonition-title\">Problem</p>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0233",
+    "file": "08_Functions.html",
+    "tag": "p",
+    "text": "Consider the function \\((x,y)\\mapsto x + y\\) from \\(\\mathbb{R}^2\\) to \\(\\mathbb{R}\\) . Show that this function is",
+    "html": "<p>Consider the function <span class=\"math notranslate nohighlight\">\\((x,y)\\mapsto x + y\\)</span> from <span class=\"math notranslate nohighlight\">\\(\\mathbb{R}^2\\)</span> to <span class=\"math notranslate nohighlight\">\\(\\mathbb{R}\\)</span>.\nShow that this function is</p>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0234",
+    "file": "08_Functions.html",
+    "tag": "p",
+    "text": "Solution",
+    "html": "<p class=\"admonition-title\">Solution</p>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0235",
+    "file": "08_Functions.html",
+    "tag": "p",
+    "text": "1. We will show that there exist points \\((x_1,y_1)\\) and \\((x_2,y_2)\\) in \\(\\mathbb{R}^2\\) such that \\(x_1+y_1=x_2+y_2\\) and \\((x_1,y_1)\\ne (x_2,y_2)\\) . Indeed, consider the points \\((0,0)\\) and \\((1,-1)\\) . We have that \\(0+0=1+-1\\) and \\((0,0)\\ne (1,-1)\\) .",
+    "html": "<p>1. We will show that there exist points <span class=\"math notranslate nohighlight\">\\((x_1,y_1)\\)</span> and <span class=\"math notranslate nohighlight\">\\((x_2,y_2)\\)</span> in\n<span class=\"math notranslate nohighlight\">\\(\\mathbb{R}^2\\)</span> such that <span class=\"math notranslate nohighlight\">\\(x_1+y_1=x_2+y_2\\)</span> and <span class=\"math notranslate nohighlight\">\\((x_1,y_1)\\ne (x_2,y_2)\\)</span>.\nIndeed, consider the points <span class=\"math notranslate nohighlight\">\\((0,0)\\)</span> and <span class=\"math notranslate nohighlight\">\\((1,-1)\\)</span>.  We have that <span class=\"math notranslate nohighlight\">\\(0+0=1+-1\\)</span> and\n<span class=\"math notranslate nohighlight\">\\((0,0)\\ne (1,-1)\\)</span>.</p>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0236",
+    "file": "08_Functions.html",
+    "tag": "p",
+    "text": "2. Let \\(a\\) be a real number. We must show that there exists a point \\((x,y)\\) in \\(\\mathbb{R}^2\\) such that \\(x+y=a\\) . Indeed, \\(a+0=a\\) , so \\((a,0)\\) has this property.",
+    "html": "<p>2. Let <span class=\"math notranslate nohighlight\">\\(a\\)</span> be a real number.  We must show that there exists a point <span class=\"math notranslate nohighlight\">\\((x,y)\\)</span> in\n<span class=\"math notranslate nohighlight\">\\(\\mathbb{R}^2\\)</span> such that <span class=\"math notranslate nohighlight\">\\(x+y=a\\)</span>. Indeed, <span class=\"math notranslate nohighlight\">\\(a+0=a\\)</span>, so <span class=\"math notranslate nohighlight\">\\((a,0)\\)</span> has this\nproperty.</p>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0237",
+    "file": "08_Functions.html",
+    "tag": "p",
+    "text": "Problem",
+    "html": "<p class=\"admonition-title\">Problem</p>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0238",
+    "file": "08_Functions.html",
+    "tag": "p",
+    "text": "Consider the function \\((m,n)\\mapsto 5m+8n\\) from \\(\\mathbb{Z}^2\\) to \\(\\mathbb{Z}\\) . Show that this function is",
+    "html": "<p>Consider the function <span class=\"math notranslate nohighlight\">\\((m,n)\\mapsto 5m+8n\\)</span> from <span class=\"math notranslate nohighlight\">\\(\\mathbb{Z}^2\\)</span> to <span class=\"math notranslate nohighlight\">\\(\\mathbb{Z}\\)</span>.\nShow that this function is</p>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0239",
+    "file": "08_Functions.html",
+    "tag": "p",
+    "text": "Solution",
+    "html": "<p class=\"admonition-title\">Solution</p>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0240",
+    "file": "08_Functions.html",
+    "tag": "p",
+    "text": "1. We will show that there exist pairs \\((m_1,n_1)\\) and \\((m_2,n_2)\\) in \\(\\mathbb{Z}^2\\) such that \\(5m_1+8n_1=5m_2+8n_2\\) and \\((m_1,n_1)\\ne (m_2,n_2)\\) . Indeed, consider the pairs \\((0,0)\\) and \\((8,-5)\\) . We have that \\(5\\cdot 0+8\\cdot 0=5\\cdot 8+8\\cdot -5\\) and \\((0,0)\\ne (8,-5)\\) .",
+    "html": "<p>1. We will show that there exist pairs <span class=\"math notranslate nohighlight\">\\((m_1,n_1)\\)</span> and <span class=\"math notranslate nohighlight\">\\((m_2,n_2)\\)</span> in\n<span class=\"math notranslate nohighlight\">\\(\\mathbb{Z}^2\\)</span> such that <span class=\"math notranslate nohighlight\">\\(5m_1+8n_1=5m_2+8n_2\\)</span> and <span class=\"math notranslate nohighlight\">\\((m_1,n_1)\\ne (m_2,n_2)\\)</span>.\nIndeed, consider the pairs <span class=\"math notranslate nohighlight\">\\((0,0)\\)</span> and <span class=\"math notranslate nohighlight\">\\((8,-5)\\)</span>.  We have that\n<span class=\"math notranslate nohighlight\">\\(5\\cdot 0+8\\cdot 0=5\\cdot 8+8\\cdot -5\\)</span> and\n<span class=\"math notranslate nohighlight\">\\((0,0)\\ne (8,-5)\\)</span>.</p>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0241",
+    "file": "08_Functions.html",
+    "tag": "p",
+    "text": "2. Let \\(a\\) be an integer. We must show that there exists a pair \\((m,n)\\) in \\(\\mathbb{Z}^2\\) such that \\(5m+8n=a\\) . Indeed, \\(5(-3a)+8(2a)=a\\) , so \\((-3a,2a)\\) has this property.",
+    "html": "<p>2. Let <span class=\"math notranslate nohighlight\">\\(a\\)</span> be an integer.  We must show that there exists a pair <span class=\"math notranslate nohighlight\">\\((m,n)\\)</span> in\n<span class=\"math notranslate nohighlight\">\\(\\mathbb{Z}^2\\)</span> such that <span class=\"math notranslate nohighlight\">\\(5m+8n=a\\)</span>. Indeed, <span class=\"math notranslate nohighlight\">\\(5(-3a)+8(2a)=a\\)</span>, so\n<span class=\"math notranslate nohighlight\">\\((-3a,2a)\\)</span> has this property.</p>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0242",
+    "file": "08_Functions.html",
+    "tag": "p",
+    "text": "(Where did the idea for the -3 and the 2 come from in the second part of this proof? Compare with Example 3.5.1 and Example 3.5.3 .)",
+    "html": "<p>(Where did the idea for the -3 and the 2 come from in the second part of this proof?  Compare with\n<a class=\"reference internal\" href=\"03_Parity_and_Divisibility.html#bezout-prob1\"><span class=\"std std-numref\">Example 3.5.1</span></a> and <a class=\"reference internal\" href=\"03_Parity_and_Divisibility.html#bezout-prob3\"><span class=\"std std-numref\">Example 3.5.3</span></a>.)</p>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0243",
+    "file": "08_Functions.html",
+    "tag": "p",
+    "text": "Problem",
+    "html": "<p class=\"admonition-title\">Problem</p>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0244",
+    "file": "08_Functions.html",
+    "tag": "p",
+    "text": "Consider the function \\((m,n)\\mapsto 5m+10n\\) from \\(\\mathbb{Z}^2\\) to \\(\\mathbb{Z}\\) . Show that this function is",
+    "html": "<p>Consider the function <span class=\"math notranslate nohighlight\">\\((m,n)\\mapsto 5m+10n\\)</span> from <span class=\"math notranslate nohighlight\">\\(\\mathbb{Z}^2\\)</span> to <span class=\"math notranslate nohighlight\">\\(\\mathbb{Z}\\)</span>.\nShow that this function is</p>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0245",
+    "file": "08_Functions.html",
+    "tag": "p",
+    "text": "We leave the non-injectivity proof as an exercise; it is similar to that in the previous two problems.",
+    "html": "<p>We leave the non-injectivity proof as an exercise; it is similar to that in the previous two problems.</p>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0246",
+    "file": "08_Functions.html",
+    "tag": "p",
+    "text": "Solution",
+    "html": "<p class=\"admonition-title\">Solution</p>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0247",
+    "file": "08_Functions.html",
+    "tag": "p",
+    "text": "(Non-surjectivity) We will show that there exists an integer \\(x\\) such that for all pairs \\((m,n)\\) of integers, \\(5m+10n\\ne x\\) . Indeed, let us show that 1 has this property. Let \\((m,n)\\) be a pair of integers and suppose that \\(5m+10n=1\\) . Then",
+    "html": "<p>(Non-surjectivity) We will show that there exists an integer <span class=\"math notranslate nohighlight\">\\(x\\)</span> such that for all pairs <span class=\"math notranslate nohighlight\">\\((m,n)\\)</span>\nof integers, <span class=\"math notranslate nohighlight\">\\(5m+10n\\ne x\\)</span>.  Indeed, let us show that 1 has this property.  Let\n<span class=\"math notranslate nohighlight\">\\((m,n)\\)</span> be a pair of integers and suppose that <span class=\"math notranslate nohighlight\">\\(5m+10n=1\\)</span>.  Then</p>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0248",
+    "file": "08_Functions.html",
+    "tag": "p",
+    "text": "contradiction.",
+    "html": "<p>contradiction.</p>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0249",
+    "file": "08_Functions.html",
+    "tag": "p",
+    "text": "Problem",
+    "html": "<p class=\"admonition-title\">Problem</p>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0250",
+    "file": "08_Functions.html",
+    "tag": "p",
+    "text": "Consider the function \\(g:\\mathbb{R}^2\\to \\mathbb{R}^2\\) defined by, \\(g(x,y)=(y,x)\\) . Show that \\(g\\circ g=\\operatorname{Id}_\\mathbb{R}\\) .",
+    "html": "<p>Consider the function <span class=\"math notranslate nohighlight\">\\(g:\\mathbb{R}^2\\to \\mathbb{R}^2\\)</span> defined by,\n<span class=\"math notranslate nohighlight\">\\(g(x,y)=(y,x)\\)</span>.  Show that <span class=\"math notranslate nohighlight\">\\(g\\circ g=\\operatorname{Id}_\\mathbb{R}\\)</span>.</p>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0251",
+    "file": "08_Functions.html",
+    "tag": "p",
+    "text": "Solution",
+    "html": "<p class=\"admonition-title\">Solution</p>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0252",
+    "file": "08_Functions.html",
+    "tag": "p",
+    "text": "Let \\((x,y)\\) be a point in \\(\\mathbb{R}^2\\) . Then",
+    "html": "<p>Let <span class=\"math notranslate nohighlight\">\\((x,y)\\)</span> be a point in <span class=\"math notranslate nohighlight\">\\(\\mathbb{R}^2\\)</span>.  Then</p>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0253",
+    "file": "08_Functions.html",
+    "tag": "p",
+    "text": "Theorem",
+    "html": "<p class=\"admonition-title\">Theorem</p>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0254",
+    "file": "08_Functions.html",
+    "tag": "p",
+    "text": "There exists a bijection from \\(\\mathbb{N}^2\\) to \\(\\mathbb{N}\\) .",
+    "html": "<p>There exists a bijection from <span class=\"math notranslate nohighlight\">\\(\\mathbb{N}^2\\)</span> to <span class=\"math notranslate nohighlight\">\\(\\mathbb{N}\\)</span>.</p>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0255",
+    "file": "08_Functions.html",
+    "tag": "p",
+    "text": "First recall the sequence \\(A_n\\) from Example 6.2.4 ; we prove a lemma about it.",
+    "html": "<p>First recall the sequence <span class=\"math notranslate nohighlight\">\\(A_n\\)</span> from <a class=\"reference internal\" href=\"06_Induction.html#triangle\"><span class=\"std std-numref\">Example 6.2.4</span></a>; we prove a lemma about\nit.</p>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0256",
+    "file": "08_Functions.html",
+    "tag": "p",
+    "text": "And a corollary, more difficult.",
+    "html": "<p>And a corollary, more difficult.</p>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0257",
+    "file": "08_Functions.html",
+    "tag": "p",
+    "text": "We use the sequence \\(A_n\\) to define the function \\(p:\\mathbb{N}^2\\to \\mathbb{N}\\) which will be the bijection we seek: \\(p(a,b)=A_{a+b}+b\\) .",
+    "html": "<p>We use the sequence <span class=\"math notranslate nohighlight\">\\(A_n\\)</span> to define the function <span class=\"math notranslate nohighlight\">\\(p:\\mathbb{N}^2\\to \\mathbb{N}\\)</span> which\nwill be the bijection we seek:  <span class=\"math notranslate nohighlight\">\\(p(a,b)=A_{a+b}+b\\)</span>.</p>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0258",
+    "file": "08_Functions.html",
+    "tag": "p",
+    "text": "Finally we prove that this function \\(p\\) is indeed bijective. We set up an “intertwining” map \\(i\\) for \\(p\\) , and invoke the lemma surjective_of_intertwining proved in the exercises to Section 8.1 .",
+    "html": "<p>Finally we prove that this function <span class=\"math notranslate nohighlight\">\\(p\\)</span> is indeed bijective.  We set up an “intertwining”\nmap <span class=\"math notranslate nohighlight\">\\(i\\)</span> for <span class=\"math notranslate nohighlight\">\\(p\\)</span>, and invoke the lemma <code class=\"docutils literal notranslate\"><span class=\"pre\">surjective_of_intertwining</span></code> proved in the exercises\nto <a class=\"reference internal\" href=\"#inj-surj\"><span class=\"std std-numref\">Section 8.1</span></a>.</p>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0259",
+    "file": "08_Functions.html",
+    "tag": "li",
+    "text": "Prove or disprove that the function \\(x \\mapsto x-12\\) from \\(\\mathbb{Q}\\) to \\(\\mathbb{Q}\\) is injective. (If you think it’s true, prove it, by solving the first version below. If you think it’s false, solve the second version.) example : Injective ( fun ( x : ℚ ) ↦ x - 12 ) := by sorry example : ¬ Injective ( fun ( x : ℚ ) ↦ x - 12 ) := by sorry",
+    "html": "<li><p>Prove or disprove that the function <span class=\"math notranslate nohighlight\">\\(x \\mapsto x-12\\)</span> from <span class=\"math notranslate nohighlight\">\\(\\mathbb{Q}\\)</span> to\n<span class=\"math notranslate nohighlight\">\\(\\mathbb{Q}\\)</span> is injective.</p>\n<p>(If you think it’s true, prove it, by solving the first version below.  If you think it’s false,\nsolve the second version.)</p>\n<div class=\"highlight-lean notranslate\"><div class=\"highlight\"><pre><span></span><span class=\"kd\">example</span> <span class=\"o\">:</span> <span class=\"n\">Injective</span> <span class=\"o\">(</span><span class=\"k\">fun</span> <span class=\"o\">(</span><span class=\"n\">x</span> <span class=\"o\">:</span> <span class=\"n\">ℚ</span><span class=\"o\">)</span> <span class=\"bp\">↦</span> <span class=\"n\">x</span> <span class=\"bp\">-</span> <span class=\"mi\">12</span><span class=\"o\">)</span> <span class=\"o\">:=</span> <span class=\"kd\">by</span>\n  <span class=\"gr\">sorry</span>\n\n<span class=\"kd\">example</span> <span class=\"o\">:</span> <span class=\"bp\">¬</span> <span class=\"n\">Injective</span> <span class=\"o\">(</span><span class=\"k\">fun</span> <span class=\"o\">(</span><span class=\"n\">x</span> <span class=\"o\">:</span> <span class=\"n\">ℚ</span><span class=\"o\">)</span> <span class=\"bp\">↦</span> <span class=\"n\">x</span> <span class=\"bp\">-</span> <span class=\"mi\">12</span><span class=\"o\">)</span> <span class=\"o\">:=</span> <span class=\"kd\">by</span>\n  <span class=\"gr\">sorry</span>\n</pre></div>\n</div>\n</li>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0260",
+    "file": "08_Functions.html",
+    "tag": "li",
+    "text": "Prove or disprove that the function \\(x \\mapsto 3\\) from \\(\\mathbb{R}\\) to \\(\\mathbb{R}\\) is injective. (If you think it’s true, prove it, by solving the first version below. If you think it’s false, solve the second version.) example : Injective ( fun ( x : ℝ ) ↦ 3 ) := by sorry example : ¬ Injective ( fun ( x : ℝ ) ↦ 3 ) := by sorry",
+    "html": "<li><p>Prove or disprove that the function <span class=\"math notranslate nohighlight\">\\(x \\mapsto 3\\)</span> from <span class=\"math notranslate nohighlight\">\\(\\mathbb{R}\\)</span> to\n<span class=\"math notranslate nohighlight\">\\(\\mathbb{R}\\)</span> is injective.</p>\n<p>(If you think it’s true, prove it, by solving the first version below.  If you think it’s false,\nsolve the second version.)</p>\n<div class=\"highlight-lean notranslate\"><div class=\"highlight\"><pre><span></span><span class=\"kd\">example</span> <span class=\"o\">:</span> <span class=\"n\">Injective</span> <span class=\"o\">(</span><span class=\"k\">fun</span> <span class=\"o\">(</span><span class=\"n\">x</span> <span class=\"o\">:</span> <span class=\"n\">ℝ</span><span class=\"o\">)</span> <span class=\"bp\">↦</span> <span class=\"mi\">3</span><span class=\"o\">)</span> <span class=\"o\">:=</span> <span class=\"kd\">by</span>\n  <span class=\"gr\">sorry</span>\n\n<span class=\"kd\">example</span> <span class=\"o\">:</span> <span class=\"bp\">¬</span> <span class=\"n\">Injective</span> <span class=\"o\">(</span><span class=\"k\">fun</span> <span class=\"o\">(</span><span class=\"n\">x</span> <span class=\"o\">:</span> <span class=\"n\">ℝ</span><span class=\"o\">)</span> <span class=\"bp\">↦</span> <span class=\"mi\">3</span><span class=\"o\">)</span> <span class=\"o\">:=</span> <span class=\"kd\">by</span>\n  <span class=\"gr\">sorry</span>\n</pre></div>\n</div>\n</li>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0261",
+    "file": "08_Functions.html",
+    "tag": "li",
+    "text": "Prove or disprove that the function \\(x \\mapsto 3x-1\\) from \\(\\mathbb{ℚ}\\) to \\(\\mathbb{ℚ}\\) is injective. (If you think it’s true, prove it, by solving the first version below. If you think it’s false, solve the second version.) example : Injective ( fun ( x : ℚ ) ↦ 3 * x - 1 ) := by sorry example : ¬ Injective ( fun ( x : ℚ ) ↦ 3 * x - 1 ) := by sorry",
+    "html": "<li><p>Prove or disprove that the function <span class=\"math notranslate nohighlight\">\\(x \\mapsto 3x-1\\)</span> from <span class=\"math notranslate nohighlight\">\\(\\mathbb{ℚ}\\)</span> to\n<span class=\"math notranslate nohighlight\">\\(\\mathbb{ℚ}\\)</span> is injective.</p>\n<p>(If you think it’s true, prove it, by solving the first version below.  If you think it’s false,\nsolve the second version.)</p>\n<div class=\"highlight-lean notranslate\"><div class=\"highlight\"><pre><span></span><span class=\"kd\">example</span> <span class=\"o\">:</span> <span class=\"n\">Injective</span> <span class=\"o\">(</span><span class=\"k\">fun</span> <span class=\"o\">(</span><span class=\"n\">x</span> <span class=\"o\">:</span> <span class=\"n\">ℚ</span><span class=\"o\">)</span> <span class=\"bp\">↦</span> <span class=\"mi\">3</span> <span class=\"bp\">*</span> <span class=\"n\">x</span> <span class=\"bp\">-</span> <span class=\"mi\">1</span><span class=\"o\">)</span> <span class=\"o\">:=</span> <span class=\"kd\">by</span>\n  <span class=\"gr\">sorry</span>\n\n<span class=\"kd\">example</span> <span class=\"o\">:</span> <span class=\"bp\">¬</span> <span class=\"n\">Injective</span> <span class=\"o\">(</span><span class=\"k\">fun</span> <span class=\"o\">(</span><span class=\"n\">x</span> <span class=\"o\">:</span> <span class=\"n\">ℚ</span><span class=\"o\">)</span> <span class=\"bp\">↦</span> <span class=\"mi\">3</span> <span class=\"bp\">*</span> <span class=\"n\">x</span> <span class=\"bp\">-</span> <span class=\"mi\">1</span><span class=\"o\">)</span> <span class=\"o\">:=</span> <span class=\"kd\">by</span>\n  <span class=\"gr\">sorry</span>\n</pre></div>\n</div>\n</li>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0262",
+    "file": "08_Functions.html",
+    "tag": "li",
+    "text": "Prove or disprove that the function \\(x \\mapsto 3x-1\\) from \\(\\mathbb{Z}\\) to \\(\\mathbb{Z}\\) is injective. (If you think it’s true, prove it, by solving the first version below. If you think it’s false, solve the second version.) example : Injective ( fun ( x : ℤ ) ↦ 3 * x - 1 ) := by sorry example : ¬ Injective ( fun ( x : ℤ ) ↦ 3 * x - 1 ) := by sorry",
+    "html": "<li><p>Prove or disprove that the function <span class=\"math notranslate nohighlight\">\\(x \\mapsto 3x-1\\)</span> from <span class=\"math notranslate nohighlight\">\\(\\mathbb{Z}\\)</span> to\n<span class=\"math notranslate nohighlight\">\\(\\mathbb{Z}\\)</span> is injective.</p>\n<p>(If you think it’s true, prove it, by solving the first version below.  If you think it’s false,\nsolve the second version.)</p>\n<div class=\"highlight-lean notranslate\"><div class=\"highlight\"><pre><span></span><span class=\"kd\">example</span> <span class=\"o\">:</span> <span class=\"n\">Injective</span> <span class=\"o\">(</span><span class=\"k\">fun</span> <span class=\"o\">(</span><span class=\"n\">x</span> <span class=\"o\">:</span> <span class=\"n\">ℤ</span><span class=\"o\">)</span> <span class=\"bp\">↦</span> <span class=\"mi\">3</span> <span class=\"bp\">*</span> <span class=\"n\">x</span> <span class=\"bp\">-</span> <span class=\"mi\">1</span><span class=\"o\">)</span> <span class=\"o\">:=</span> <span class=\"kd\">by</span>\n  <span class=\"gr\">sorry</span>\n\n<span class=\"kd\">example</span> <span class=\"o\">:</span> <span class=\"bp\">¬</span> <span class=\"n\">Injective</span> <span class=\"o\">(</span><span class=\"k\">fun</span> <span class=\"o\">(</span><span class=\"n\">x</span> <span class=\"o\">:</span> <span class=\"n\">ℤ</span><span class=\"o\">)</span> <span class=\"bp\">↦</span> <span class=\"mi\">3</span> <span class=\"bp\">*</span> <span class=\"n\">x</span> <span class=\"bp\">-</span> <span class=\"mi\">1</span><span class=\"o\">)</span> <span class=\"o\">:=</span> <span class=\"kd\">by</span>\n  <span class=\"gr\">sorry</span>\n</pre></div>\n</div>\n</li>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0263",
+    "file": "08_Functions.html",
+    "tag": "li",
+    "text": "Prove or disprove that the function \\(x \\mapsto 2x\\) from \\(\\mathbb{R}\\) to \\(\\mathbb{R}\\) is surjective. (If you think it’s true, prove it, by solving the first version below. If you think it’s false, solve the second version.) example : Surjective ( fun ( x : ℝ ) ↦ 2 * x ) := by sorry example : ¬ Surjective ( fun ( x : ℝ ) ↦ 2 * x ) := by sorry",
+    "html": "<li><p>Prove or disprove that the function <span class=\"math notranslate nohighlight\">\\(x \\mapsto 2x\\)</span> from <span class=\"math notranslate nohighlight\">\\(\\mathbb{R}\\)</span> to\n<span class=\"math notranslate nohighlight\">\\(\\mathbb{R}\\)</span> is surjective.</p>\n<p>(If you think it’s true, prove it, by solving the first version below.  If you think it’s false,\nsolve the second version.)</p>\n<div class=\"highlight-lean notranslate\"><div class=\"highlight\"><pre><span></span><span class=\"kd\">example</span> <span class=\"o\">:</span> <span class=\"n\">Surjective</span> <span class=\"o\">(</span><span class=\"k\">fun</span> <span class=\"o\">(</span><span class=\"n\">x</span> <span class=\"o\">:</span> <span class=\"n\">ℝ</span><span class=\"o\">)</span> <span class=\"bp\">↦</span> <span class=\"mi\">2</span> <span class=\"bp\">*</span> <span class=\"n\">x</span><span class=\"o\">)</span> <span class=\"o\">:=</span> <span class=\"kd\">by</span>\n  <span class=\"gr\">sorry</span>\n\n<span class=\"kd\">example</span> <span class=\"o\">:</span> <span class=\"bp\">¬</span> <span class=\"n\">Surjective</span> <span class=\"o\">(</span><span class=\"k\">fun</span> <span class=\"o\">(</span><span class=\"n\">x</span> <span class=\"o\">:</span> <span class=\"n\">ℝ</span><span class=\"o\">)</span> <span class=\"bp\">↦</span> <span class=\"mi\">2</span> <span class=\"bp\">*</span> <span class=\"n\">x</span><span class=\"o\">)</span> <span class=\"o\">:=</span> <span class=\"kd\">by</span>\n  <span class=\"gr\">sorry</span>\n</pre></div>\n</div>\n</li>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0264",
+    "file": "08_Functions.html",
+    "tag": "li",
+    "text": "Prove or disprove that the function \\(x \\mapsto 2x\\) from \\(\\mathbb{Z}\\) to \\(\\mathbb{Z}\\) is surjective. (If you think it’s true, prove it, by solving the first version below. If you think it’s false, solve the second version.) example : Surjective ( fun ( x : ℤ ) ↦ 2 * x ) := by sorry example : ¬ Surjective ( fun ( x : ℤ ) ↦ 2 * x ) := by sorry",
+    "html": "<li><p>Prove or disprove that the function <span class=\"math notranslate nohighlight\">\\(x \\mapsto 2x\\)</span> from <span class=\"math notranslate nohighlight\">\\(\\mathbb{Z}\\)</span> to\n<span class=\"math notranslate nohighlight\">\\(\\mathbb{Z}\\)</span> is surjective.</p>\n<p>(If you think it’s true, prove it, by solving the first version below.  If you think it’s false,\nsolve the second version.)</p>\n<div class=\"highlight-lean notranslate\"><div class=\"highlight\"><pre><span></span><span class=\"kd\">example</span> <span class=\"o\">:</span> <span class=\"n\">Surjective</span> <span class=\"o\">(</span><span class=\"k\">fun</span> <span class=\"o\">(</span><span class=\"n\">x</span> <span class=\"o\">:</span> <span class=\"n\">ℤ</span><span class=\"o\">)</span> <span class=\"bp\">↦</span> <span class=\"mi\">2</span> <span class=\"bp\">*</span> <span class=\"n\">x</span><span class=\"o\">)</span> <span class=\"o\">:=</span> <span class=\"kd\">by</span>\n  <span class=\"gr\">sorry</span>\n\n<span class=\"kd\">example</span> <span class=\"o\">:</span> <span class=\"bp\">¬</span> <span class=\"n\">Surjective</span> <span class=\"o\">(</span><span class=\"k\">fun</span> <span class=\"o\">(</span><span class=\"n\">x</span> <span class=\"o\">:</span> <span class=\"n\">ℤ</span><span class=\"o\">)</span> <span class=\"bp\">↦</span> <span class=\"mi\">2</span> <span class=\"bp\">*</span> <span class=\"n\">x</span><span class=\"o\">)</span> <span class=\"o\">:=</span> <span class=\"kd\">by</span>\n  <span class=\"gr\">sorry</span>\n</pre></div>\n</div>\n</li>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0265",
+    "file": "08_Functions.html",
+    "tag": "li",
+    "text": "Prove or disprove that the function \\(n \\mapsto n^2\\) from \\(\\mathbb{N}\\) to \\(\\mathbb{N}\\) is surjective. (If you think it’s true, prove it, by solving the first version below. If you think it’s false, solve the second version.) example : Surjective ( fun ( n : ℕ ) ↦ n ^ 2 ) := by sorry example : ¬ Surjective ( fun ( n : ℕ ) ↦ n ^ 2 ) := by sorry",
+    "html": "<li><p>Prove or disprove that the function <span class=\"math notranslate nohighlight\">\\(n \\mapsto n^2\\)</span> from <span class=\"math notranslate nohighlight\">\\(\\mathbb{N}\\)</span> to\n<span class=\"math notranslate nohighlight\">\\(\\mathbb{N}\\)</span> is surjective.</p>\n<p>(If you think it’s true, prove it, by solving the first version below.  If you think it’s false,\nsolve the second version.)</p>\n<div class=\"highlight-lean notranslate\"><div class=\"highlight\"><pre><span></span><span class=\"kd\">example</span> <span class=\"o\">:</span> <span class=\"n\">Surjective</span> <span class=\"o\">(</span><span class=\"k\">fun</span> <span class=\"o\">(</span><span class=\"n\">n</span> <span class=\"o\">:</span> <span class=\"n\">ℕ</span><span class=\"o\">)</span> <span class=\"bp\">↦</span> <span class=\"n\">n</span> <span class=\"bp\">^</span> <span class=\"mi\">2</span><span class=\"o\">)</span> <span class=\"o\">:=</span> <span class=\"kd\">by</span>\n  <span class=\"gr\">sorry</span>\n\n<span class=\"kd\">example</span> <span class=\"o\">:</span> <span class=\"bp\">¬</span> <span class=\"n\">Surjective</span> <span class=\"o\">(</span><span class=\"k\">fun</span> <span class=\"o\">(</span><span class=\"n\">n</span> <span class=\"o\">:</span> <span class=\"n\">ℕ</span><span class=\"o\">)</span> <span class=\"bp\">↦</span> <span class=\"n\">n</span> <span class=\"bp\">^</span> <span class=\"mi\">2</span><span class=\"o\">)</span> <span class=\"o\">:=</span> <span class=\"kd\">by</span>\n  <span class=\"gr\">sorry</span>\n</pre></div>\n</div>\n</li>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0266",
+    "file": "08_Functions.html",
+    "tag": "li",
+    "text": "Consider the following finite inductive type White, and the following function \\(h\\) from the Musketeer type (see Example 8.1.8 ) to the White type. Prove or disprove that the function \\(h\\) is injective. (If you think it’s true, prove it, by solving the first version below. If you think it’s false, solve the second version.) inductive White | meg | jack deriving DecidableEq open White def h : Musketeer → White | athos => jack | porthos => meg | aramis => jack example : Injective h := by sorry example : ¬ Injective h := by sorry",
+    "html": "<li><p>Consider the following finite inductive type White, and the following function <span class=\"math notranslate nohighlight\">\\(h\\)</span> from\nthe Musketeer type (see <a class=\"reference internal\" href=\"#musketeer\"><span class=\"std std-numref\">Example 8.1.8</span></a>) to the White type. Prove or disprove\nthat the function <span class=\"math notranslate nohighlight\">\\(h\\)</span> is injective.</p>\n<p>(If you think it’s true, prove it, by solving the first version below.  If you think it’s false,\nsolve the second version.)</p>\n<div class=\"highlight-lean notranslate\"><div class=\"highlight\"><pre><span></span><span class=\"kd\">inductive</span> <span class=\"n\">White</span>\n  <span class=\"bp\">|</span> <span class=\"n\">meg</span>\n  <span class=\"bp\">|</span> <span class=\"n\">jack</span>\n  <span class=\"n\">deriving</span> <span class=\"n\">DecidableEq</span>\n\n<span class=\"kn\">open</span> <span class=\"n\">White</span>\n\n<span class=\"kd\">def</span> <span class=\"n\">h</span> <span class=\"o\">:</span> <span class=\"n\">Musketeer</span> <span class=\"bp\">→</span> <span class=\"n\">White</span>\n  <span class=\"bp\">|</span> <span class=\"n\">athos</span> <span class=\"bp\">=&gt;</span> <span class=\"n\">jack</span>\n  <span class=\"bp\">|</span> <span class=\"n\">porthos</span> <span class=\"bp\">=&gt;</span> <span class=\"n\">meg</span>\n  <span class=\"bp\">|</span> <span class=\"n\">aramis</span> <span class=\"bp\">=&gt;</span> <span class=\"n\">jack</span>\n\n<span class=\"kd\">example</span> <span class=\"o\">:</span> <span class=\"n\">Injective</span> <span class=\"n\">h</span> <span class=\"o\">:=</span> <span class=\"kd\">by</span>\n  <span class=\"gr\">sorry</span>\n\n<span class=\"kd\">example</span> <span class=\"o\">:</span> <span class=\"bp\">¬</span> <span class=\"n\">Injective</span> <span class=\"n\">h</span> <span class=\"o\">:=</span> <span class=\"kd\">by</span>\n  <span class=\"gr\">sorry</span>\n</pre></div>\n</div>\n</li>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0267",
+    "file": "08_Functions.html",
+    "tag": "li",
+    "text": "Prove or disprove that the function \\(h\\) from the previous example is surjective. (If you think it’s true, prove it, by solving the first version below. If you think it’s false, solve the second version.) example : Surjective h := by sorry example : ¬ Surjective h := by sorry",
+    "html": "<li><p>Prove or disprove that the function <span class=\"math notranslate nohighlight\">\\(h\\)</span> from the previous example is surjective.</p>\n<p>(If you think it’s true, prove it, by solving the first version below.  If you think it’s false,\nsolve the second version.)</p>\n<div class=\"highlight-lean notranslate\"><div class=\"highlight\"><pre><span></span><span class=\"kd\">example</span> <span class=\"o\">:</span> <span class=\"n\">Surjective</span> <span class=\"n\">h</span> <span class=\"o\">:=</span> <span class=\"kd\">by</span>\n  <span class=\"gr\">sorry</span>\n\n<span class=\"kd\">example</span> <span class=\"o\">:</span> <span class=\"bp\">¬</span> <span class=\"n\">Surjective</span> <span class=\"n\">h</span> <span class=\"o\">:=</span> <span class=\"kd\">by</span>\n  <span class=\"gr\">sorry</span>\n</pre></div>\n</div>\n</li>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0268",
+    "file": "08_Functions.html",
+    "tag": "li",
+    "text": "Consider the following function \\(l\\) from the White type (see the previous two problems) to the Musketeer type (see Example 8.1.8 ). Prove or disprove that the function \\(l\\) is injective. (If you think it’s true, prove it, by solving the first version below. If you think it’s false, solve the second version.) def l : White → Musketeer | meg => aramis | jack => porthos example : Injective l := by sorry example : ¬ Injective l := by sorry",
+    "html": "<li><p>Consider the following function <span class=\"math notranslate nohighlight\">\\(l\\)</span> from the White type (see the previous two problems)\nto the Musketeer type (see <a class=\"reference internal\" href=\"#musketeer\"><span class=\"std std-numref\">Example 8.1.8</span></a>). Prove or\ndisprove that the function <span class=\"math notranslate nohighlight\">\\(l\\)</span> is injective.</p>\n<p>(If you think it’s true, prove it, by solving the first version below.  If you think it’s false,\nsolve the second version.)</p>\n<div class=\"highlight-lean notranslate\"><div class=\"highlight\"><pre><span></span><span class=\"kd\">def</span> <span class=\"n\">l</span> <span class=\"o\">:</span> <span class=\"n\">White</span> <span class=\"bp\">→</span> <span class=\"n\">Musketeer</span>\n  <span class=\"bp\">|</span> <span class=\"n\">meg</span> <span class=\"bp\">=&gt;</span> <span class=\"n\">aramis</span>\n  <span class=\"bp\">|</span> <span class=\"n\">jack</span> <span class=\"bp\">=&gt;</span> <span class=\"n\">porthos</span>\n\n<span class=\"kd\">example</span> <span class=\"o\">:</span> <span class=\"n\">Injective</span> <span class=\"n\">l</span> <span class=\"o\">:=</span> <span class=\"kd\">by</span>\n  <span class=\"gr\">sorry</span>\n\n<span class=\"kd\">example</span> <span class=\"o\">:</span> <span class=\"bp\">¬</span> <span class=\"n\">Injective</span> <span class=\"n\">l</span> <span class=\"o\">:=</span> <span class=\"kd\">by</span>\n  <span class=\"gr\">sorry</span>\n</pre></div>\n</div>\n</li>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0269",
+    "file": "08_Functions.html",
+    "tag": "li",
+    "text": "Prove or disprove that the function \\(l\\) from the previous example is surjective. (If you think it’s true, prove it, by solving the first version below. If you think it’s false, solve the second version.) example : Surjective l := by sorry example : ¬ Surjective l := by sorry",
+    "html": "<li><p>Prove or disprove that the function <span class=\"math notranslate nohighlight\">\\(l\\)</span> from the previous example is surjective.</p>\n<p>(If you think it’s true, prove it, by solving the first version below.  If you think it’s false,\nsolve the second version.)</p>\n<div class=\"highlight-lean notranslate\"><div class=\"highlight\"><pre><span></span><span class=\"kd\">example</span> <span class=\"o\">:</span> <span class=\"n\">Surjective</span> <span class=\"n\">l</span> <span class=\"o\">:=</span> <span class=\"kd\">by</span>\n  <span class=\"gr\">sorry</span>\n\n<span class=\"kd\">example</span> <span class=\"o\">:</span> <span class=\"bp\">¬</span> <span class=\"n\">Surjective</span> <span class=\"n\">l</span> <span class=\"o\">:=</span> <span class=\"kd\">by</span>\n  <span class=\"gr\">sorry</span>\n</pre></div>\n</div>\n</li>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0270",
+    "file": "08_Functions.html",
+    "tag": "li",
+    "text": "Let \\(f : X \\to Y\\) be a function. Show that \\(f\\) is injective if and only if for all \\(x_1\\) and \\(x_2\\) of type \\(X\\) , if \\(x_1\\ne x_2\\) then \\(f(x_1)\\ne f(x_2)\\) . You will need to use a tactic (such as push_neg or by_cases ) which is capable of handling the subtler negations. example ( f : X → Y ) : Injective f ↔ ∀ x1 x2 : X , x1 ≠ x2 → f x1 ≠ f x2 := by sorry",
+    "html": "<li><p>Let <span class=\"math notranslate nohighlight\">\\(f : X \\to Y\\)</span> be a function.  Show that <span class=\"math notranslate nohighlight\">\\(f\\)</span> is injective if and only if for all\n<span class=\"math notranslate nohighlight\">\\(x_1\\)</span> and <span class=\"math notranslate nohighlight\">\\(x_2\\)</span> of type <span class=\"math notranslate nohighlight\">\\(X\\)</span>, if <span class=\"math notranslate nohighlight\">\\(x_1\\ne x_2\\)</span>  then\n<span class=\"math notranslate nohighlight\">\\(f(x_1)\\ne f(x_2)\\)</span>.</p>\n<p>You will need to use a tactic (such as <code class=\"docutils literal notranslate\"><span class=\"pre\">push_neg</span></code> or <code class=\"docutils literal notranslate\"><span class=\"pre\">by_cases</span></code>) which is capable of\nhandling the subtler negations.</p>\n<div class=\"highlight-lean notranslate\"><div class=\"highlight\"><pre><span></span><span class=\"kd\">example</span> <span class=\"o\">(</span><span class=\"n\">f</span> <span class=\"o\">:</span> <span class=\"n\">X</span> <span class=\"bp\">→</span> <span class=\"n\">Y</span><span class=\"o\">)</span> <span class=\"o\">:</span> <span class=\"n\">Injective</span> <span class=\"n\">f</span> <span class=\"bp\">↔</span> <span class=\"bp\">∀</span> <span class=\"n\">x1</span> <span class=\"n\">x2</span> <span class=\"o\">:</span> <span class=\"n\">X</span><span class=\"o\">,</span> <span class=\"n\">x1</span> <span class=\"bp\">≠</span> <span class=\"n\">x2</span> <span class=\"bp\">→</span> <span class=\"n\">f</span> <span class=\"n\">x1</span> <span class=\"bp\">≠</span> <span class=\"n\">f</span> <span class=\"n\">x2</span> <span class=\"o\">:=</span> <span class=\"kd\">by</span>\n  <span class=\"gr\">sorry</span>\n</pre></div>\n</div>\n</li>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0271",
+    "file": "08_Functions.html",
+    "tag": "li",
+    "text": "Prove or disprove that for all functions \\(f:\\mathbb{Q}\\to \\mathbb{Q}\\) , if \\(f\\) is injective, then the function \\(x \\mapsto f(x)+1\\) from \\(\\mathbb{Q}\\) to \\(\\mathbb{Q}\\) is also injective. example : ∀ ( f : ℚ → ℚ ), Injective f → Injective ( fun x ↦ f x + 1 ) := by sorry example : ¬ ∀ ( f : ℚ → ℚ ), Injective f → Injective ( fun x ↦ f x + 1 ) := by sorry",
+    "html": "<li><p>Prove or disprove that for all functions <span class=\"math notranslate nohighlight\">\\(f:\\mathbb{Q}\\to \\mathbb{Q}\\)</span>, if <span class=\"math notranslate nohighlight\">\\(f\\)</span> is\ninjective, then the function <span class=\"math notranslate nohighlight\">\\(x \\mapsto f(x)+1\\)</span> from <span class=\"math notranslate nohighlight\">\\(\\mathbb{Q}\\)</span> to\n<span class=\"math notranslate nohighlight\">\\(\\mathbb{Q}\\)</span> is also injective.</p>\n<div class=\"highlight-lean notranslate\"><div class=\"highlight\"><pre><span></span><span class=\"kd\">example</span> <span class=\"o\">:</span> <span class=\"bp\">∀</span> <span class=\"o\">(</span><span class=\"n\">f</span> <span class=\"o\">:</span> <span class=\"n\">ℚ</span> <span class=\"bp\">→</span> <span class=\"n\">ℚ</span><span class=\"o\">),</span> <span class=\"n\">Injective</span> <span class=\"n\">f</span> <span class=\"bp\">→</span> <span class=\"n\">Injective</span> <span class=\"o\">(</span><span class=\"k\">fun</span> <span class=\"n\">x</span> <span class=\"bp\">↦</span> <span class=\"n\">f</span> <span class=\"n\">x</span> <span class=\"bp\">+</span> <span class=\"mi\">1</span><span class=\"o\">)</span> <span class=\"o\">:=</span> <span class=\"kd\">by</span>\n  <span class=\"gr\">sorry</span>\n\n<span class=\"kd\">example</span> <span class=\"o\">:</span> <span class=\"bp\">¬</span> <span class=\"bp\">∀</span> <span class=\"o\">(</span><span class=\"n\">f</span> <span class=\"o\">:</span> <span class=\"n\">ℚ</span> <span class=\"bp\">→</span> <span class=\"n\">ℚ</span><span class=\"o\">),</span> <span class=\"n\">Injective</span> <span class=\"n\">f</span> <span class=\"bp\">→</span> <span class=\"n\">Injective</span> <span class=\"o\">(</span><span class=\"k\">fun</span> <span class=\"n\">x</span> <span class=\"bp\">↦</span> <span class=\"n\">f</span> <span class=\"n\">x</span> <span class=\"bp\">+</span> <span class=\"mi\">1</span><span class=\"o\">)</span> <span class=\"o\">:=</span> <span class=\"kd\">by</span>\n  <span class=\"gr\">sorry</span>\n</pre></div>\n</div>\n</li>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0272",
+    "file": "08_Functions.html",
+    "tag": "li",
+    "text": "Prove or disprove that for all functions \\(f:\\mathbb{Q}\\to \\mathbb{Q}\\) , if \\(f\\) is injective, then the function \\(x \\mapsto f(x)+x\\) from \\(\\mathbb{Q}\\) to \\(\\mathbb{Q}\\) is also injective. example : ∀ ( f : ℚ → ℚ ), Injective f → Injective ( fun x ↦ f x + x ) := by sorry example : ¬ ∀ ( f : ℚ → ℚ ), Injective f → Injective ( fun x ↦ f x + x ) := by sorry",
+    "html": "<li><p>Prove or disprove that for all functions <span class=\"math notranslate nohighlight\">\\(f:\\mathbb{Q}\\to \\mathbb{Q}\\)</span>, if <span class=\"math notranslate nohighlight\">\\(f\\)</span> is\ninjective, then the function <span class=\"math notranslate nohighlight\">\\(x \\mapsto f(x)+x\\)</span> from <span class=\"math notranslate nohighlight\">\\(\\mathbb{Q}\\)</span> to\n<span class=\"math notranslate nohighlight\">\\(\\mathbb{Q}\\)</span> is also injective.</p>\n<div class=\"highlight-lean notranslate\"><div class=\"highlight\"><pre><span></span><span class=\"kd\">example</span> <span class=\"o\">:</span> <span class=\"bp\">∀</span> <span class=\"o\">(</span><span class=\"n\">f</span> <span class=\"o\">:</span> <span class=\"n\">ℚ</span> <span class=\"bp\">→</span> <span class=\"n\">ℚ</span><span class=\"o\">),</span> <span class=\"n\">Injective</span> <span class=\"n\">f</span> <span class=\"bp\">→</span> <span class=\"n\">Injective</span> <span class=\"o\">(</span><span class=\"k\">fun</span> <span class=\"n\">x</span> <span class=\"bp\">↦</span> <span class=\"n\">f</span> <span class=\"n\">x</span> <span class=\"bp\">+</span> <span class=\"n\">x</span><span class=\"o\">)</span> <span class=\"o\">:=</span> <span class=\"kd\">by</span>\n  <span class=\"gr\">sorry</span>\n\n<span class=\"kd\">example</span> <span class=\"o\">:</span> <span class=\"bp\">¬</span> <span class=\"bp\">∀</span> <span class=\"o\">(</span><span class=\"n\">f</span> <span class=\"o\">:</span> <span class=\"n\">ℚ</span> <span class=\"bp\">→</span> <span class=\"n\">ℚ</span><span class=\"o\">),</span> <span class=\"n\">Injective</span> <span class=\"n\">f</span> <span class=\"bp\">→</span> <span class=\"n\">Injective</span> <span class=\"o\">(</span><span class=\"k\">fun</span> <span class=\"n\">x</span> <span class=\"bp\">↦</span> <span class=\"n\">f</span> <span class=\"n\">x</span> <span class=\"bp\">+</span> <span class=\"n\">x</span><span class=\"o\">)</span> <span class=\"o\">:=</span> <span class=\"kd\">by</span>\n  <span class=\"gr\">sorry</span>\n</pre></div>\n</div>\n</li>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0273",
+    "file": "08_Functions.html",
+    "tag": "li",
+    "text": "Prove or disprove that for all functions \\(f:\\mathbb{Z}\\to \\mathbb{Z}\\) , if \\(f\\) is surjective, then the function \\(x \\mapsto 2f(x)\\) from \\(\\mathbb{Z}\\) to \\(\\mathbb{Z}\\) is also surjective. example : ∀ ( f : ℤ → ℤ ), Surjective f → Surjective ( fun x ↦ 2 * f x ) := by sorry example : ¬ ∀ ( f : ℤ → ℤ ), Surjective f → Surjective ( fun x ↦ 2 * f x ) := by sorry",
+    "html": "<li><p>Prove or disprove that for all functions <span class=\"math notranslate nohighlight\">\\(f:\\mathbb{Z}\\to \\mathbb{Z}\\)</span>, if <span class=\"math notranslate nohighlight\">\\(f\\)</span> is\nsurjective, then the function <span class=\"math notranslate nohighlight\">\\(x \\mapsto 2f(x)\\)</span> from <span class=\"math notranslate nohighlight\">\\(\\mathbb{Z}\\)</span> to\n<span class=\"math notranslate nohighlight\">\\(\\mathbb{Z}\\)</span> is also surjective.</p>\n<div class=\"highlight-lean notranslate\"><div class=\"highlight\"><pre><span></span><span class=\"kd\">example</span> <span class=\"o\">:</span> <span class=\"bp\">∀</span> <span class=\"o\">(</span><span class=\"n\">f</span> <span class=\"o\">:</span> <span class=\"n\">ℤ</span> <span class=\"bp\">→</span> <span class=\"n\">ℤ</span><span class=\"o\">),</span> <span class=\"n\">Surjective</span> <span class=\"n\">f</span> <span class=\"bp\">→</span> <span class=\"n\">Surjective</span> <span class=\"o\">(</span><span class=\"k\">fun</span> <span class=\"n\">x</span> <span class=\"bp\">↦</span> <span class=\"mi\">2</span> <span class=\"bp\">*</span> <span class=\"n\">f</span> <span class=\"n\">x</span><span class=\"o\">)</span> <span class=\"o\">:=</span> <span class=\"kd\">by</span>\n  <span class=\"gr\">sorry</span>\n\n<span class=\"kd\">example</span> <span class=\"o\">:</span> <span class=\"bp\">¬</span> <span class=\"bp\">∀</span> <span class=\"o\">(</span><span class=\"n\">f</span> <span class=\"o\">:</span> <span class=\"n\">ℤ</span> <span class=\"bp\">→</span> <span class=\"n\">ℤ</span><span class=\"o\">),</span> <span class=\"n\">Surjective</span> <span class=\"n\">f</span> <span class=\"bp\">→</span> <span class=\"n\">Surjective</span> <span class=\"o\">(</span><span class=\"k\">fun</span> <span class=\"n\">x</span> <span class=\"bp\">↦</span> <span class=\"mi\">2</span> <span class=\"bp\">*</span> <span class=\"n\">f</span> <span class=\"n\">x</span><span class=\"o\">)</span> <span class=\"o\">:=</span> <span class=\"kd\">by</span>\n  <span class=\"gr\">sorry</span>\n</pre></div>\n</div>\n</li>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0274",
+    "file": "08_Functions.html",
+    "tag": "li",
+    "text": "Prove or disprove that for all real numbers \\(c\\) , the function \\(x\\mapsto cx\\) from \\(\\mathbb{R}\\) to \\(\\mathbb{R}\\) is surjective. example : ∀ c : ℝ , Surjective ( fun x ↦ c * x ) := by sorry example : ¬ ∀ c : ℝ , Surjective ( fun x ↦ c * x ) := by sorry",
+    "html": "<li><p>Prove or disprove that for all real numbers <span class=\"math notranslate nohighlight\">\\(c\\)</span>, the function <span class=\"math notranslate nohighlight\">\\(x\\mapsto cx\\)</span> from\n<span class=\"math notranslate nohighlight\">\\(\\mathbb{R}\\)</span> to <span class=\"math notranslate nohighlight\">\\(\\mathbb{R}\\)</span> is surjective.</p>\n<div class=\"highlight-lean notranslate\"><div class=\"highlight\"><pre><span></span><span class=\"kd\">example</span> <span class=\"o\">:</span> <span class=\"bp\">∀</span> <span class=\"n\">c</span> <span class=\"o\">:</span> <span class=\"n\">ℝ</span><span class=\"o\">,</span> <span class=\"n\">Surjective</span> <span class=\"o\">(</span><span class=\"k\">fun</span> <span class=\"n\">x</span> <span class=\"bp\">↦</span> <span class=\"n\">c</span> <span class=\"bp\">*</span> <span class=\"n\">x</span><span class=\"o\">)</span> <span class=\"o\">:=</span> <span class=\"kd\">by</span>\n  <span class=\"gr\">sorry</span>\n\n<span class=\"kd\">example</span> <span class=\"o\">:</span> <span class=\"bp\">¬</span> <span class=\"bp\">∀</span> <span class=\"n\">c</span> <span class=\"o\">:</span> <span class=\"n\">ℝ</span><span class=\"o\">,</span> <span class=\"n\">Surjective</span> <span class=\"o\">(</span><span class=\"k\">fun</span> <span class=\"n\">x</span> <span class=\"bp\">↦</span> <span class=\"n\">c</span> <span class=\"bp\">*</span> <span class=\"n\">x</span><span class=\"o\">)</span> <span class=\"o\">:=</span> <span class=\"kd\">by</span>\n  <span class=\"gr\">sorry</span>\n</pre></div>\n</div>\n</li>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0275",
+    "file": "08_Functions.html",
+    "tag": "li",
+    "text": "Let \\(f:\\mathbb{Q}\\to\\mathbb{Q}\\) be a function which is strictly monotone ; that is, for all real numbers \\(x\\) and \\(y\\) with \\(x<y\\) , it is true that \\(f(x)<f(y)\\) . Prove that \\(f\\) is injective. You may wish to use the lemma lt_trichotomy lemma lt_trichotomy ( x y : ℚ ) : x < y ∨ x = y ∨ x < y := which gives a case division on the relative sizes of two real numbers. example { f : ℚ → ℚ } ( hf : ∀ x y , x < y → f x < f y ) : Injective f := by sorry",
+    "html": "<li><p>Let <span class=\"math notranslate nohighlight\">\\(f:\\mathbb{Q}\\to\\mathbb{Q}\\)</span> be a function which is <em>strictly monotone</em>; that is, for\nall real numbers <span class=\"math notranslate nohighlight\">\\(x\\)</span> and <span class=\"math notranslate nohighlight\">\\(y\\)</span> with <span class=\"math notranslate nohighlight\">\\(x&lt;y\\)</span>, it is true that <span class=\"math notranslate nohighlight\">\\(f(x)&lt;f(y)\\)</span>.\nProve that <span class=\"math notranslate nohighlight\">\\(f\\)</span> is injective.</p>\n<p>You may wish to use the lemma <code class=\"docutils literal notranslate\"><span class=\"pre\">lt_trichotomy</span></code></p>\n<div class=\"highlight-lean notranslate\"><div class=\"highlight\"><pre><span></span><span class=\"kd\">lemma</span> <span class=\"n\">lt_trichotomy</span> <span class=\"o\">(</span><span class=\"n\">x</span> <span class=\"n\">y</span> <span class=\"o\">:</span> <span class=\"n\">ℚ</span><span class=\"o\">)</span> <span class=\"o\">:</span> <span class=\"n\">x</span> <span class=\"bp\">&lt;</span> <span class=\"n\">y</span> <span class=\"bp\">∨</span> <span class=\"n\">x</span> <span class=\"bp\">=</span> <span class=\"n\">y</span> <span class=\"bp\">∨</span> <span class=\"n\">x</span> <span class=\"bp\">&lt;</span> <span class=\"n\">y</span> <span class=\"o\">:=</span>\n</pre></div>\n</div>\n<p>which gives a case division on the relative sizes of two real numbers.</p>\n<div class=\"highlight-lean notranslate\"><div class=\"highlight\"><pre><span></span><span class=\"kd\">example</span> <span class=\"o\">{</span><span class=\"n\">f</span> <span class=\"o\">:</span> <span class=\"n\">ℚ</span> <span class=\"bp\">→</span> <span class=\"n\">ℚ</span><span class=\"o\">}</span> <span class=\"o\">(</span><span class=\"n\">hf</span> <span class=\"o\">:</span> <span class=\"bp\">∀</span> <span class=\"n\">x</span> <span class=\"n\">y</span><span class=\"o\">,</span> <span class=\"n\">x</span> <span class=\"bp\">&lt;</span> <span class=\"n\">y</span> <span class=\"bp\">→</span> <span class=\"n\">f</span> <span class=\"n\">x</span> <span class=\"bp\">&lt;</span> <span class=\"n\">f</span> <span class=\"n\">y</span><span class=\"o\">)</span> <span class=\"o\">:</span> <span class=\"n\">Injective</span> <span class=\"n\">f</span> <span class=\"o\">:=</span> <span class=\"kd\">by</span>\n  <span class=\"gr\">sorry</span>\n</pre></div>\n</div>\n</li>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0276",
+    "file": "08_Functions.html",
+    "tag": "li",
+    "text": "Let \\(f:X\\to\\mathbb{N}\\) be a function, let \\(x_0\\) be of type \\(X\\) with \\(f(x_0)=0\\) , and let \\(i:X\\to X\\) be a function such that, for all \\(x\\) , \\(f(i(x))=f(x)+1\\) . Show that \\(f\\) is surjective. I recommend induction. We record this theorem for future use under the name surjective_of_intertwining . example { f : X → ℕ } { x0 : X } ( h0 : f x0 = 0 ) { i : X → X } ( hi : ∀ x , f ( i x ) = f x + 1 ) : Surjective f := by sorry",
+    "html": "<li><p>Let <span class=\"math notranslate nohighlight\">\\(f:X\\to\\mathbb{N}\\)</span> be a function, let <span class=\"math notranslate nohighlight\">\\(x_0\\)</span> be of type <span class=\"math notranslate nohighlight\">\\(X\\)</span> with\n<span class=\"math notranslate nohighlight\">\\(f(x_0)=0\\)</span>, and let <span class=\"math notranslate nohighlight\">\\(i:X\\to X\\)</span> be a function such that, for all <span class=\"math notranslate nohighlight\">\\(x\\)</span>,\n<span class=\"math notranslate nohighlight\">\\(f(i(x))=f(x)+1\\)</span>.  Show that <span class=\"math notranslate nohighlight\">\\(f\\)</span> is surjective.  I recommend induction.</p>\n<p>We record this theorem for future use under the name <code class=\"docutils literal notranslate\"><span class=\"pre\">surjective_of_intertwining</span></code>.</p>\n<div class=\"highlight-lean notranslate\"><div class=\"highlight\"><pre><span></span><span class=\"kd\">example</span> <span class=\"o\">{</span><span class=\"n\">f</span> <span class=\"o\">:</span> <span class=\"n\">X</span> <span class=\"bp\">→</span> <span class=\"n\">ℕ</span><span class=\"o\">}</span> <span class=\"o\">{</span><span class=\"n\">x0</span> <span class=\"o\">:</span> <span class=\"n\">X</span><span class=\"o\">}</span> <span class=\"o\">(</span><span class=\"n\">h0</span> <span class=\"o\">:</span> <span class=\"n\">f</span> <span class=\"n\">x0</span> <span class=\"bp\">=</span> <span class=\"mi\">0</span><span class=\"o\">)</span> <span class=\"o\">{</span><span class=\"n\">i</span> <span class=\"o\">:</span> <span class=\"n\">X</span> <span class=\"bp\">→</span> <span class=\"n\">X</span><span class=\"o\">}</span>\n    <span class=\"o\">(</span><span class=\"n\">hi</span> <span class=\"o\">:</span> <span class=\"bp\">∀</span> <span class=\"n\">x</span><span class=\"o\">,</span> <span class=\"n\">f</span> <span class=\"o\">(</span><span class=\"n\">i</span> <span class=\"n\">x</span><span class=\"o\">)</span> <span class=\"bp\">=</span> <span class=\"n\">f</span> <span class=\"n\">x</span> <span class=\"bp\">+</span> <span class=\"mi\">1</span><span class=\"o\">)</span> <span class=\"o\">:</span> <span class=\"n\">Surjective</span> <span class=\"n\">f</span> <span class=\"o\">:=</span> <span class=\"kd\">by</span>\n  <span class=\"gr\">sorry</span>\n</pre></div>\n</div>\n</li>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0277",
+    "file": "08_Functions.html",
+    "tag": "li",
+    "text": "Prove or disprove that the function \\(x \\mapsto 4-3x\\) from \\(\\mathbb{R}\\) to \\(\\mathbb{R}\\) is bijective. (If you think it’s true, prove it, by solving the first version below. If you think it’s false, solve the second version.) example : Bijective ( fun ( x : ℝ ) ↦ 4 - 3 * x ) := by sorry example : ¬ Bijective ( fun ( x : ℝ ) ↦ 4 - 3 * x ) := by sorry",
+    "html": "<li><p>Prove or disprove that the function <span class=\"math notranslate nohighlight\">\\(x \\mapsto 4-3x\\)</span> from <span class=\"math notranslate nohighlight\">\\(\\mathbb{R}\\)</span> to\n<span class=\"math notranslate nohighlight\">\\(\\mathbb{R}\\)</span> is bijective.</p>\n<p>(If you think it’s true, prove it, by solving the first version below.  If you think it’s false,\nsolve the second version.)</p>\n<div class=\"highlight-lean notranslate\"><div class=\"highlight\"><pre><span></span><span class=\"kd\">example</span> <span class=\"o\">:</span> <span class=\"n\">Bijective</span> <span class=\"o\">(</span><span class=\"k\">fun</span> <span class=\"o\">(</span><span class=\"n\">x</span> <span class=\"o\">:</span> <span class=\"n\">ℝ</span><span class=\"o\">)</span> <span class=\"bp\">↦</span> <span class=\"mi\">4</span> <span class=\"bp\">-</span> <span class=\"mi\">3</span> <span class=\"bp\">*</span> <span class=\"n\">x</span><span class=\"o\">)</span> <span class=\"o\">:=</span> <span class=\"kd\">by</span>\n  <span class=\"gr\">sorry</span>\n\n<span class=\"kd\">example</span> <span class=\"o\">:</span> <span class=\"bp\">¬</span> <span class=\"n\">Bijective</span> <span class=\"o\">(</span><span class=\"k\">fun</span> <span class=\"o\">(</span><span class=\"n\">x</span> <span class=\"o\">:</span> <span class=\"n\">ℝ</span><span class=\"o\">)</span> <span class=\"bp\">↦</span> <span class=\"mi\">4</span> <span class=\"bp\">-</span> <span class=\"mi\">3</span> <span class=\"bp\">*</span> <span class=\"n\">x</span><span class=\"o\">)</span> <span class=\"o\">:=</span> <span class=\"kd\">by</span>\n  <span class=\"gr\">sorry</span>\n</pre></div>\n</div>\n</li>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0278",
+    "file": "08_Functions.html",
+    "tag": "li",
+    "text": "Prove or disprove that the function \\(x \\mapsto x^2+2x\\) from \\(\\mathbb{R}\\) to \\(\\mathbb{R}\\) is bijective. (If you think it’s true, prove it, by solving the first version below. If you think it’s false, solve the second version.) example : Bijective ( fun ( x : ℝ ) ↦ x ^ 2 + 2 * x ) := by sorry example : ¬ Bijective ( fun ( x : ℝ ) ↦ x ^ 2 + 2 * x ) := by sorry",
+    "html": "<li><p>Prove or disprove that the function <span class=\"math notranslate nohighlight\">\\(x \\mapsto x^2+2x\\)</span> from <span class=\"math notranslate nohighlight\">\\(\\mathbb{R}\\)</span> to\n<span class=\"math notranslate nohighlight\">\\(\\mathbb{R}\\)</span> is bijective.</p>\n<p>(If you think it’s true, prove it, by solving the first version below.  If you think it’s false,\nsolve the second version.)</p>\n<div class=\"highlight-lean notranslate\"><div class=\"highlight\"><pre><span></span><span class=\"kd\">example</span> <span class=\"o\">:</span> <span class=\"n\">Bijective</span> <span class=\"o\">(</span><span class=\"k\">fun</span> <span class=\"o\">(</span><span class=\"n\">x</span> <span class=\"o\">:</span> <span class=\"n\">ℝ</span><span class=\"o\">)</span> <span class=\"bp\">↦</span> <span class=\"n\">x</span> <span class=\"bp\">^</span> <span class=\"mi\">2</span> <span class=\"bp\">+</span> <span class=\"mi\">2</span> <span class=\"bp\">*</span> <span class=\"n\">x</span><span class=\"o\">)</span> <span class=\"o\">:=</span> <span class=\"kd\">by</span>\n  <span class=\"gr\">sorry</span>\n\n<span class=\"kd\">example</span> <span class=\"o\">:</span> <span class=\"bp\">¬</span> <span class=\"n\">Bijective</span> <span class=\"o\">(</span><span class=\"k\">fun</span> <span class=\"o\">(</span><span class=\"n\">x</span> <span class=\"o\">:</span> <span class=\"n\">ℝ</span><span class=\"o\">)</span> <span class=\"bp\">↦</span> <span class=\"n\">x</span> <span class=\"bp\">^</span> <span class=\"mi\">2</span> <span class=\"bp\">+</span> <span class=\"mi\">2</span> <span class=\"bp\">*</span> <span class=\"n\">x</span><span class=\"o\">)</span> <span class=\"o\">:=</span> <span class=\"kd\">by</span>\n  <span class=\"gr\">sorry</span>\n</pre></div>\n</div>\n</li>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0279",
+    "file": "08_Functions.html",
+    "tag": "li",
+    "text": "Consider the following finite inductive type Element, and the following function \\(e\\) from the Element type to itself. Prove or disprove that the function \\(e\\) is bijective. (If you think it’s true, prove it, by solving the first version below. If you think it’s false, solve the second version.) inductive Element | fire | water | earth | air deriving DecidableEq open Element def e : Element → Element | fire => earth | water => air | earth => fire | air => water example : Bijective e := by sorry example : ¬ Bijective e := by sorry",
+    "html": "<li><p>Consider the following finite inductive type Element, and the following function <span class=\"math notranslate nohighlight\">\\(e\\)</span> from\nthe Element type to itself. Prove or disprove that the function <span class=\"math notranslate nohighlight\">\\(e\\)</span> is bijective.</p>\n<p>(If you think it’s true, prove it, by solving the first version below.  If you think it’s false,\nsolve the second version.)</p>\n<div class=\"highlight-lean notranslate\"><div class=\"highlight\"><pre><span></span><span class=\"kd\">inductive</span> <span class=\"n\">Element</span>\n  <span class=\"bp\">|</span> <span class=\"n\">fire</span>\n  <span class=\"bp\">|</span> <span class=\"n\">water</span>\n  <span class=\"bp\">|</span> <span class=\"n\">earth</span>\n  <span class=\"bp\">|</span> <span class=\"n\">air</span>\n  <span class=\"n\">deriving</span> <span class=\"n\">DecidableEq</span>\n\n<span class=\"kn\">open</span> <span class=\"n\">Element</span>\n\n<span class=\"kd\">def</span> <span class=\"n\">e</span> <span class=\"o\">:</span> <span class=\"n\">Element</span> <span class=\"bp\">→</span> <span class=\"n\">Element</span>\n  <span class=\"bp\">|</span> <span class=\"n\">fire</span> <span class=\"bp\">=&gt;</span> <span class=\"n\">earth</span>\n  <span class=\"bp\">|</span> <span class=\"n\">water</span> <span class=\"bp\">=&gt;</span> <span class=\"n\">air</span>\n  <span class=\"bp\">|</span> <span class=\"n\">earth</span> <span class=\"bp\">=&gt;</span> <span class=\"n\">fire</span>\n  <span class=\"bp\">|</span> <span class=\"n\">air</span> <span class=\"bp\">=&gt;</span> <span class=\"n\">water</span>\n\n<span class=\"kd\">example</span> <span class=\"o\">:</span> <span class=\"n\">Bijective</span> <span class=\"n\">e</span> <span class=\"o\">:=</span> <span class=\"kd\">by</span>\n  <span class=\"gr\">sorry</span>\n\n<span class=\"kd\">example</span> <span class=\"o\">:</span> <span class=\"bp\">¬</span> <span class=\"n\">Bijective</span> <span class=\"n\">e</span> <span class=\"o\">:=</span> <span class=\"kd\">by</span>\n  <span class=\"gr\">sorry</span>\n</pre></div>\n</div>\n</li>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0280",
+    "file": "08_Functions.html",
+    "tag": "li",
+    "text": "Show that for all functions \\(f\\) from the Subatomic type ( Example 8.2.4 ) to itself, if \\(f\\) is injective then it is bijective. This is like Example 8.2.6 , but with more cases to check. example : ∀ f : Subatomic → Subatomic , Injective f → Bijective f := by sorry",
+    "html": "<li><p>Show that for all functions <span class=\"math notranslate nohighlight\">\\(f\\)</span> from the Subatomic type\n(<a class=\"reference internal\" href=\"#celestial-subatomic\"><span class=\"std std-numref\">Example 8.2.4</span></a>) to itself, if <span class=\"math notranslate nohighlight\">\\(f\\)</span> is injective then it is\nbijective.</p>\n<p>This is like <a class=\"reference internal\" href=\"#bij-card2\"><span class=\"std std-numref\">Example 8.2.6</span></a>, but with more cases to check.</p>\n<div class=\"highlight-lean notranslate\"><div class=\"highlight\"><pre><span></span><span class=\"kd\">example</span> <span class=\"o\">:</span> <span class=\"bp\">∀</span> <span class=\"n\">f</span> <span class=\"o\">:</span> <span class=\"n\">Subatomic</span> <span class=\"bp\">→</span> <span class=\"n\">Subatomic</span><span class=\"o\">,</span> <span class=\"n\">Injective</span> <span class=\"n\">f</span> <span class=\"bp\">→</span> <span class=\"n\">Bijective</span> <span class=\"n\">f</span> <span class=\"o\">:=</span> <span class=\"kd\">by</span>\n  <span class=\"gr\">sorry</span>\n</pre></div>\n</div>\n</li>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0281",
+    "file": "08_Functions.html",
+    "tag": "li",
+    "text": "Consider the finite inductive type Element from a previous exercise. Show that for all functions \\(f\\) from the Element type to itself, if \\(f\\) is injective then it is bijective. This is like Example 8.2.6 and the previous exercise, but with even more (frankly, way too many ….) cases to check. example : ∀ f : Element → Element , Injective f → Bijective f := by sorry",
+    "html": "<li><p>Consider the finite inductive type Element from a previous exercise.  Show that for all\nfunctions <span class=\"math notranslate nohighlight\">\\(f\\)</span> from the Element type to itself, if <span class=\"math notranslate nohighlight\">\\(f\\)</span> is injective then it is\nbijective.</p>\n<p>This is like <a class=\"reference internal\" href=\"#bij-card2\"><span class=\"std std-numref\">Example 8.2.6</span></a> and the previous exercise, but with even more\n(frankly, way too many ….) cases to check.</p>\n<div class=\"highlight-lean notranslate\"><div class=\"highlight\"><pre><span></span><span class=\"kd\">example</span> <span class=\"o\">:</span> <span class=\"bp\">∀</span> <span class=\"n\">f</span> <span class=\"o\">:</span> <span class=\"n\">Element</span> <span class=\"bp\">→</span> <span class=\"n\">Element</span><span class=\"o\">,</span> <span class=\"n\">Injective</span> <span class=\"n\">f</span> <span class=\"bp\">→</span> <span class=\"n\">Bijective</span> <span class=\"n\">f</span> <span class=\"o\">:=</span> <span class=\"kd\">by</span>\n  <span class=\"gr\">sorry</span>\n</pre></div>\n</div>\n</li>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0282",
+    "file": "08_Functions.html",
+    "tag": "li",
+    "text": "Consider the following functions \\(a\\) and \\(b\\) from the Humour type (see Example 8.3.6 ) to itself. Write down a function \\(c\\) from the Humour type to itself, so that \\(b \\circ a=c\\) . When you have the right function written down, the included proof will work. def a : Humour → Humour | melancholic => sanguine | choleric => choleric | phlegmatic => phlegmatic | sanguine => melancholic def b : Humour → Humour | melancholic => phlegmatic | choleric => phlegmatic | phlegmatic => melancholic | sanguine => sanguine def c : Humour → Humour | melancholic => sorry | choleric => sorry | phlegmatic => sorry | sanguine => sorry example : b ∘ a = c := by ext x cases x <;> exhaust",
+    "html": "<li><p>Consider the following functions <span class=\"math notranslate nohighlight\">\\(a\\)</span> and <span class=\"math notranslate nohighlight\">\\(b\\)</span> from the Humour type (see\n<a class=\"reference internal\" href=\"#humour\"><span class=\"std std-numref\">Example 8.3.6</span></a>) to itself. Write down a function <span class=\"math notranslate nohighlight\">\\(c\\)</span> from the Humour type\nto itself, so that <span class=\"math notranslate nohighlight\">\\(b \\circ a=c\\)</span>.</p>\n<p>When you have the right function written down, the included proof will work.</p>\n<div class=\"highlight-lean notranslate\"><div class=\"highlight\"><pre><span></span><span class=\"kd\">def</span> <span class=\"n\">a</span> <span class=\"o\">:</span> <span class=\"n\">Humour</span> <span class=\"bp\">→</span> <span class=\"n\">Humour</span>\n  <span class=\"bp\">|</span> <span class=\"n\">melancholic</span> <span class=\"bp\">=&gt;</span> <span class=\"n\">sanguine</span>\n  <span class=\"bp\">|</span> <span class=\"n\">choleric</span> <span class=\"bp\">=&gt;</span> <span class=\"n\">choleric</span>\n  <span class=\"bp\">|</span> <span class=\"n\">phlegmatic</span> <span class=\"bp\">=&gt;</span> <span class=\"n\">phlegmatic</span>\n  <span class=\"bp\">|</span> <span class=\"n\">sanguine</span> <span class=\"bp\">=&gt;</span> <span class=\"n\">melancholic</span>\n\n<span class=\"kd\">def</span> <span class=\"n\">b</span> <span class=\"o\">:</span> <span class=\"n\">Humour</span> <span class=\"bp\">→</span> <span class=\"n\">Humour</span>\n  <span class=\"bp\">|</span> <span class=\"n\">melancholic</span> <span class=\"bp\">=&gt;</span> <span class=\"n\">phlegmatic</span>\n  <span class=\"bp\">|</span> <span class=\"n\">choleric</span> <span class=\"bp\">=&gt;</span> <span class=\"n\">phlegmatic</span>\n  <span class=\"bp\">|</span> <span class=\"n\">phlegmatic</span> <span class=\"bp\">=&gt;</span> <span class=\"n\">melancholic</span>\n  <span class=\"bp\">|</span> <span class=\"n\">sanguine</span> <span class=\"bp\">=&gt;</span> <span class=\"n\">sanguine</span>\n\n<span class=\"kd\">def</span> <span class=\"n\">c</span> <span class=\"o\">:</span> <span class=\"n\">Humour</span> <span class=\"bp\">→</span> <span class=\"n\">Humour</span>\n  <span class=\"bp\">|</span> <span class=\"n\">melancholic</span> <span class=\"bp\">=&gt;</span> <span class=\"gr\">sorry</span>\n  <span class=\"bp\">|</span> <span class=\"n\">choleric</span> <span class=\"bp\">=&gt;</span> <span class=\"gr\">sorry</span>\n  <span class=\"bp\">|</span> <span class=\"n\">phlegmatic</span> <span class=\"bp\">=&gt;</span> <span class=\"gr\">sorry</span>\n  <span class=\"bp\">|</span> <span class=\"n\">sanguine</span> <span class=\"bp\">=&gt;</span> <span class=\"gr\">sorry</span>\n\n<span class=\"kd\">example</span> <span class=\"o\">:</span> <span class=\"n\">b</span> <span class=\"bp\">∘</span> <span class=\"n\">a</span> <span class=\"bp\">=</span> <span class=\"n\">c</span> <span class=\"o\">:=</span> <span class=\"kd\">by</span>\n  <span class=\"n\">ext</span> <span class=\"n\">x</span>\n  <span class=\"n\">cases</span> <span class=\"n\">x</span> <span class=\"bp\">&lt;;&gt;</span> <span class=\"n\">exhaust</span>\n</pre></div>\n</div>\n</li>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0283",
+    "file": "08_Functions.html",
+    "tag": "li",
+    "text": "Consider the function \\(u:\\mathbb{R}\\to\\mathbb{R}\\) defined by, \\(u(x)=5x+1\\) . Write down a function \\(v:\\mathbb{R}\\to\\mathbb{R}\\) which is inverse to \\(u\\) , and prove it. def u ( x : ℝ ) : ℝ := 5 * x + 1 noncomputable def v ( x : ℝ ) : ℝ := sorry example : Inverse u v := by sorry",
+    "html": "<li><p>Consider the function <span class=\"math notranslate nohighlight\">\\(u:\\mathbb{R}\\to\\mathbb{R}\\)</span> defined by, <span class=\"math notranslate nohighlight\">\\(u(x)=5x+1\\)</span>. Write\ndown a function <span class=\"math notranslate nohighlight\">\\(v:\\mathbb{R}\\to\\mathbb{R}\\)</span> which is inverse to <span class=\"math notranslate nohighlight\">\\(u\\)</span>, and prove it.</p>\n<div class=\"highlight-lean notranslate\"><div class=\"highlight\"><pre><span></span><span class=\"kd\">def</span> <span class=\"n\">u</span> <span class=\"o\">(</span><span class=\"n\">x</span> <span class=\"o\">:</span> <span class=\"n\">ℝ</span><span class=\"o\">)</span> <span class=\"o\">:</span> <span class=\"n\">ℝ</span> <span class=\"o\">:=</span> <span class=\"mi\">5</span> <span class=\"bp\">*</span> <span class=\"n\">x</span> <span class=\"bp\">+</span> <span class=\"mi\">1</span>\n\n<span class=\"kd\">noncomputable</span> <span class=\"kd\">def</span> <span class=\"n\">v</span> <span class=\"o\">(</span><span class=\"n\">x</span> <span class=\"o\">:</span> <span class=\"n\">ℝ</span><span class=\"o\">)</span> <span class=\"o\">:</span> <span class=\"n\">ℝ</span> <span class=\"o\">:=</span> <span class=\"gr\">sorry</span>\n\n<span class=\"kd\">example</span> <span class=\"o\">:</span> <span class=\"n\">Inverse</span> <span class=\"n\">u</span> <span class=\"n\">v</span> <span class=\"o\">:=</span> <span class=\"kd\">by</span>\n  <span class=\"gr\">sorry</span>\n</pre></div>\n</div>\n</li>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0284",
+    "file": "08_Functions.html",
+    "tag": "li",
+    "text": "Let \\(f : X \\to Y\\) and \\(g : Y \\to Z\\) be injective functions. Show that \\(g \\circ f\\) is also injective. example { f : X → Y } ( hf : Injective f ) { g : Y → Z } ( hg : Injective g ) : Injective ( g ∘ f ) := by sorry",
+    "html": "<li><p>Let <span class=\"math notranslate nohighlight\">\\(f : X \\to Y\\)</span> and <span class=\"math notranslate nohighlight\">\\(g : Y \\to Z\\)</span> be injective functions.  Show that\n<span class=\"math notranslate nohighlight\">\\(g \\circ f\\)</span> is also injective.</p>\n<div class=\"highlight-lean notranslate\"><div class=\"highlight\"><pre><span></span><span class=\"kd\">example</span> <span class=\"o\">{</span><span class=\"n\">f</span> <span class=\"o\">:</span> <span class=\"n\">X</span> <span class=\"bp\">→</span> <span class=\"n\">Y</span><span class=\"o\">}</span> <span class=\"o\">(</span><span class=\"n\">hf</span> <span class=\"o\">:</span> <span class=\"n\">Injective</span> <span class=\"n\">f</span><span class=\"o\">)</span> <span class=\"o\">{</span><span class=\"n\">g</span> <span class=\"o\">:</span> <span class=\"n\">Y</span> <span class=\"bp\">→</span> <span class=\"n\">Z</span><span class=\"o\">}</span> <span class=\"o\">(</span><span class=\"n\">hg</span> <span class=\"o\">:</span> <span class=\"n\">Injective</span> <span class=\"n\">g</span><span class=\"o\">)</span> <span class=\"o\">:</span>\n    <span class=\"n\">Injective</span> <span class=\"o\">(</span><span class=\"n\">g</span> <span class=\"bp\">∘</span> <span class=\"n\">f</span><span class=\"o\">)</span> <span class=\"o\">:=</span> <span class=\"kd\">by</span>\n  <span class=\"gr\">sorry</span>\n</pre></div>\n</div>\n</li>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0285",
+    "file": "08_Functions.html",
+    "tag": "li",
+    "text": "Let \\(f : X \\to Y\\) and \\(g : Y \\to Z\\) be surjective functions. Show that \\(g \\circ f\\) is also surjective. example { f : X → Y } ( hf : Surjective f ) { g : Y → Z } ( hg : Surjective g ) : Surjective ( g ∘ f ) := by sorry",
+    "html": "<li><p>Let <span class=\"math notranslate nohighlight\">\\(f : X \\to Y\\)</span> and <span class=\"math notranslate nohighlight\">\\(g : Y \\to Z\\)</span> be surjective functions.  Show that\n<span class=\"math notranslate nohighlight\">\\(g \\circ f\\)</span> is also surjective.</p>\n<div class=\"highlight-lean notranslate\"><div class=\"highlight\"><pre><span></span><span class=\"kd\">example</span> <span class=\"o\">{</span><span class=\"n\">f</span> <span class=\"o\">:</span> <span class=\"n\">X</span> <span class=\"bp\">→</span> <span class=\"n\">Y</span><span class=\"o\">}</span> <span class=\"o\">(</span><span class=\"n\">hf</span> <span class=\"o\">:</span> <span class=\"n\">Surjective</span> <span class=\"n\">f</span><span class=\"o\">)</span> <span class=\"o\">{</span><span class=\"n\">g</span> <span class=\"o\">:</span> <span class=\"n\">Y</span> <span class=\"bp\">→</span> <span class=\"n\">Z</span><span class=\"o\">}</span> <span class=\"o\">(</span><span class=\"n\">hg</span> <span class=\"o\">:</span> <span class=\"n\">Surjective</span> <span class=\"n\">g</span><span class=\"o\">)</span> <span class=\"o\">:</span>\n    <span class=\"n\">Surjective</span> <span class=\"o\">(</span><span class=\"n\">g</span> <span class=\"bp\">∘</span> <span class=\"n\">f</span><span class=\"o\">)</span> <span class=\"o\">:=</span> <span class=\"kd\">by</span>\n  <span class=\"gr\">sorry</span>\n</pre></div>\n</div>\n</li>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0286",
+    "file": "08_Functions.html",
+    "tag": "li",
+    "text": "Let \\(f : X \\to Y\\) be a surjective function. Show that there exists a function \\(g : Y \\to Z\\) , such that \\(f \\circ g=\\operatorname{Id}_Y\\) . example { f : X → Y } ( hf : Surjective f ) : ∃ g : Y → X , f ∘ g = id := by sorry",
+    "html": "<li><p>Let <span class=\"math notranslate nohighlight\">\\(f : X \\to Y\\)</span> be a surjective function.  Show that there exists a function\n<span class=\"math notranslate nohighlight\">\\(g : Y \\to Z\\)</span>, such that <span class=\"math notranslate nohighlight\">\\(f \\circ g=\\operatorname{Id}_Y\\)</span>.</p>\n<div class=\"highlight-lean notranslate\"><div class=\"highlight\"><pre><span></span><span class=\"kd\">example</span> <span class=\"o\">{</span><span class=\"n\">f</span> <span class=\"o\">:</span> <span class=\"n\">X</span> <span class=\"bp\">→</span> <span class=\"n\">Y</span><span class=\"o\">}</span> <span class=\"o\">(</span><span class=\"n\">hf</span> <span class=\"o\">:</span> <span class=\"n\">Surjective</span> <span class=\"n\">f</span><span class=\"o\">)</span> <span class=\"o\">:</span> <span class=\"bp\">∃</span> <span class=\"n\">g</span> <span class=\"o\">:</span> <span class=\"n\">Y</span> <span class=\"bp\">→</span> <span class=\"n\">X</span><span class=\"o\">,</span> <span class=\"n\">f</span> <span class=\"bp\">∘</span> <span class=\"n\">g</span> <span class=\"bp\">=</span> <span class=\"n\">id</span> <span class=\"o\">:=</span> <span class=\"kd\">by</span>\n  <span class=\"gr\">sorry</span>\n</pre></div>\n</div>\n</li>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0287",
+    "file": "08_Functions.html",
+    "tag": "li",
+    "text": "Let \\(f : X \\to Y\\) and \\(g : Y \\to X\\) be functions, with \\(g\\) inverse to \\(f\\) . Show that \\(f\\) is inverse to \\(g\\) . example { f : X → Y } { g : Y → X } ( h : Inverse f g ) : Inverse g f := by sorry",
+    "html": "<li><p>Let <span class=\"math notranslate nohighlight\">\\(f : X \\to Y\\)</span> and <span class=\"math notranslate nohighlight\">\\(g : Y \\to X\\)</span> be functions, with <span class=\"math notranslate nohighlight\">\\(g\\)</span> inverse\nto <span class=\"math notranslate nohighlight\">\\(f\\)</span>.  Show that <span class=\"math notranslate nohighlight\">\\(f\\)</span> is inverse to <span class=\"math notranslate nohighlight\">\\(g\\)</span>.</p>\n<div class=\"highlight-lean notranslate\"><div class=\"highlight\"><pre><span></span><span class=\"kd\">example</span> <span class=\"o\">{</span><span class=\"n\">f</span> <span class=\"o\">:</span> <span class=\"n\">X</span> <span class=\"bp\">→</span> <span class=\"n\">Y</span><span class=\"o\">}</span> <span class=\"o\">{</span><span class=\"n\">g</span> <span class=\"o\">:</span> <span class=\"n\">Y</span> <span class=\"bp\">→</span> <span class=\"n\">X</span><span class=\"o\">}</span> <span class=\"o\">(</span><span class=\"n\">h</span> <span class=\"o\">:</span> <span class=\"n\">Inverse</span> <span class=\"n\">f</span> <span class=\"n\">g</span><span class=\"o\">)</span> <span class=\"o\">:</span> <span class=\"n\">Inverse</span> <span class=\"n\">g</span> <span class=\"n\">f</span> <span class=\"o\">:=</span> <span class=\"kd\">by</span>\n  <span class=\"gr\">sorry</span>\n</pre></div>\n</div>\n</li>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0288",
+    "file": "08_Functions.html",
+    "tag": "li",
+    "text": "Let \\(f : X \\to Y\\) and \\(g_1, g_2 : Y \\to X\\) be functions, with both \\(g_1\\) and \\(g_1\\) inverse to \\(f\\) . Show that \\(g_1=g_2\\) . This problem says that if a function \\(f\\) has an inverse, then that inverse is unique. example { f : X → Y } { g1 g2 : Y → X } ( h1 : Inverse f g1 ) ( h2 : Inverse f g2 ) : g1 = g2 := by sorry",
+    "html": "<li><p>Let <span class=\"math notranslate nohighlight\">\\(f : X \\to Y\\)</span> and <span class=\"math notranslate nohighlight\">\\(g_1, g_2 : Y \\to X\\)</span> be functions, with both <span class=\"math notranslate nohighlight\">\\(g_1\\)</span> and\n<span class=\"math notranslate nohighlight\">\\(g_1\\)</span> inverse to <span class=\"math notranslate nohighlight\">\\(f\\)</span>.  Show that <span class=\"math notranslate nohighlight\">\\(g_1=g_2\\)</span>.</p>\n<p>This problem says that if a function <span class=\"math notranslate nohighlight\">\\(f\\)</span> has an inverse, then that inverse is unique.</p>\n<div class=\"highlight-lean notranslate\"><div class=\"highlight\"><pre><span></span><span class=\"kd\">example</span> <span class=\"o\">{</span><span class=\"n\">f</span> <span class=\"o\">:</span> <span class=\"n\">X</span> <span class=\"bp\">→</span> <span class=\"n\">Y</span><span class=\"o\">}</span> <span class=\"o\">{</span><span class=\"n\">g1</span> <span class=\"n\">g2</span> <span class=\"o\">:</span> <span class=\"n\">Y</span> <span class=\"bp\">→</span> <span class=\"n\">X</span><span class=\"o\">}</span> <span class=\"o\">(</span><span class=\"n\">h1</span> <span class=\"o\">:</span> <span class=\"n\">Inverse</span> <span class=\"n\">f</span> <span class=\"n\">g1</span><span class=\"o\">)</span> <span class=\"o\">(</span><span class=\"n\">h2</span> <span class=\"o\">:</span> <span class=\"n\">Inverse</span> <span class=\"n\">f</span> <span class=\"n\">g2</span><span class=\"o\">)</span> <span class=\"o\">:</span>\n    <span class=\"n\">g1</span> <span class=\"bp\">=</span> <span class=\"n\">g2</span> <span class=\"o\">:=</span> <span class=\"kd\">by</span>\n  <span class=\"gr\">sorry</span>\n</pre></div>\n</div>\n</li>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0289",
+    "file": "08_Functions.html",
+    "tag": "li",
+    "text": "injective;",
+    "html": "<li><p>injective;</p></li>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0290",
+    "file": "08_Functions.html",
+    "tag": "li",
+    "text": "not surjective.",
+    "html": "<li><p>not surjective.</p></li>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0291",
+    "file": "08_Functions.html",
+    "tag": "li",
+    "text": "Let \\(m_1\\) and \\(m_2\\) be integers and suppose that \\(q(m_1)=q(m_2)\\) . Then by definition \\[(m_1+1,2-m_1)=(m_2+1,2-m_2),\\] so \\(m_1+1=m_2+1\\) and \\(2-m_1=2-m_2\\) , so \\(m_1=m_2\\) .",
+    "html": "<li><p>Let <span class=\"math notranslate nohighlight\">\\(m_1\\)</span> and <span class=\"math notranslate nohighlight\">\\(m_2\\)</span> be integers and suppose that <span class=\"math notranslate nohighlight\">\\(q(m_1)=q(m_2)\\)</span>.  Then\nby definition</p>\n<div class=\"math notranslate nohighlight\">\n\\[(m_1+1,2-m_1)=(m_2+1,2-m_2),\\]</div>\n<p>so <span class=\"math notranslate nohighlight\">\\(m_1+1=m_2+1\\)</span> and <span class=\"math notranslate nohighlight\">\\(2-m_1=2-m_2\\)</span>, so <span class=\"math notranslate nohighlight\">\\(m_1=m_2\\)</span>.</p>\n</li>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0292",
+    "file": "08_Functions.html",
+    "tag": "li",
+    "text": "We will show that there exists \\((a,b)\\) in \\(\\mathbb{Z}^2\\) such that for all integers \\(m\\) , \\(q(m)\\ne(a,b)\\) . Indeed, we will show that \\((0,1)\\) has this property. Suppose that \\(m\\) were an integer with \\(q(m)=(0,1)\\) . Then by definition \\[(m+1,2-m)=(0,1),\\] so \\(m+1=0\\) and \\(2-m=1\\) , hence \\[\\begin{split}1&=(m+1)+(2-m)-2\\\\ &=0+1-2\\\\ &=-1,\\end{split}\\] contradiction.",
+    "html": "<li><p>We will show that there exists <span class=\"math notranslate nohighlight\">\\((a,b)\\)</span> in <span class=\"math notranslate nohighlight\">\\(\\mathbb{Z}^2\\)</span> such that for all\nintegers <span class=\"math notranslate nohighlight\">\\(m\\)</span>, <span class=\"math notranslate nohighlight\">\\(q(m)\\ne(a,b)\\)</span>.  Indeed, we will show that <span class=\"math notranslate nohighlight\">\\((0,1)\\)</span> has this\nproperty.  Suppose that <span class=\"math notranslate nohighlight\">\\(m\\)</span> were an integer with <span class=\"math notranslate nohighlight\">\\(q(m)=(0,1)\\)</span>.  Then by definition</p>\n<div class=\"math notranslate nohighlight\">\n\\[(m+1,2-m)=(0,1),\\]</div>\n<p>so <span class=\"math notranslate nohighlight\">\\(m+1=0\\)</span> and <span class=\"math notranslate nohighlight\">\\(2-m=1\\)</span>, hence</p>\n<div class=\"math notranslate nohighlight\">\n\\[\\begin{split}1&amp;=(m+1)+(2-m)-2\\\\\n&amp;=0+1-2\\\\\n&amp;=-1,\\end{split}\\]</div>\n<p>contradiction.</p>\n</li>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0293",
+    "file": "08_Functions.html",
+    "tag": "li",
+    "text": "the lemma bijective_iff_exists_inverse , which is the Lean name for the theorem from Example 8.3.9 ;",
+    "html": "<li><p>the lemma <code class=\"docutils literal notranslate\"><span class=\"pre\">bijective_iff_exists_inverse</span></code>, which is the Lean name for the theorem from\n<a class=\"reference internal\" href=\"#bijective-iff-inverse\"><span class=\"std std-numref\">Example 8.3.9</span></a>;</p></li>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0294",
+    "file": "08_Functions.html",
+    "tag": "li",
+    "text": "the use of the tactic ext (recall Example 8.3.2 ) to show that two functions are equal by showing that they are equal on arbitrary input.",
+    "html": "<li><p>the use of the tactic <code class=\"docutils literal notranslate\"><span class=\"pre\">ext</span></code> (recall <a class=\"reference internal\" href=\"#ext\"><span class=\"std std-numref\">Example 8.3.2</span></a>) to show that two functions\nare equal by showing that they are equal on arbitrary input.</p></li>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0295",
+    "file": "08_Functions.html",
+    "tag": "li",
+    "text": "not injective;",
+    "html": "<li><p>not injective;</p></li>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0296",
+    "file": "08_Functions.html",
+    "tag": "li",
+    "text": "surjective.",
+    "html": "<li><p>surjective.</p></li>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0297",
+    "file": "08_Functions.html",
+    "tag": "li",
+    "text": "not injective;",
+    "html": "<li><p>not injective;</p></li>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0298",
+    "file": "08_Functions.html",
+    "tag": "li",
+    "text": "surjective.",
+    "html": "<li><p>surjective.</p></li>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0299",
+    "file": "08_Functions.html",
+    "tag": "li",
+    "text": "not injective;",
+    "html": "<li><p>not injective;</p></li>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0300",
+    "file": "08_Functions.html",
+    "tag": "li",
+    "text": "not surjective.",
+    "html": "<li><p>not surjective.</p></li>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0301",
+    "file": "08_Functions.html",
+    "tag": "li",
+    "text": "Consider the function \\((r,s)\\mapsto (s, r-s)\\) from \\(\\mathbb{Q}^2\\) to \\(\\mathbb{Q}^2\\) . Show that this function is bijective. example : Bijective ( fun (( r , s ) : ℚ × ℚ ) ↦ ( s , r - s )) := by rw [ bijective_iff_exists_inverse ] sorry",
+    "html": "<li><p>Consider the function <span class=\"math notranslate nohighlight\">\\((r,s)\\mapsto (s, r-s)\\)</span> from <span class=\"math notranslate nohighlight\">\\(\\mathbb{Q}^2\\)</span> to\n<span class=\"math notranslate nohighlight\">\\(\\mathbb{Q}^2\\)</span>.\nShow that this function is bijective.</p>\n<div class=\"highlight-lean notranslate\"><div class=\"highlight\"><pre><span></span><span class=\"kd\">example</span> <span class=\"o\">:</span> <span class=\"n\">Bijective</span> <span class=\"o\">(</span><span class=\"k\">fun</span> <span class=\"o\">((</span><span class=\"n\">r</span><span class=\"o\">,</span> <span class=\"n\">s</span><span class=\"o\">)</span> <span class=\"o\">:</span> <span class=\"n\">ℚ</span> <span class=\"bp\">×</span> <span class=\"n\">ℚ</span><span class=\"o\">)</span> <span class=\"bp\">↦</span> <span class=\"o\">(</span><span class=\"n\">s</span><span class=\"o\">,</span> <span class=\"n\">r</span> <span class=\"bp\">-</span> <span class=\"n\">s</span><span class=\"o\">))</span> <span class=\"o\">:=</span> <span class=\"kd\">by</span>\n  <span class=\"n\">rw</span> <span class=\"o\">[</span><span class=\"n\">bijective_iff_exists_inverse</span><span class=\"o\">]</span>\n  <span class=\"gr\">sorry</span>\n</pre></div>\n</div>\n</li>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0302",
+    "file": "08_Functions.html",
+    "tag": "li",
+    "text": "Consider the function \\((x,y)\\mapsto x-2y-1\\) from \\(\\mathbb{Z}^2\\) to \\(\\mathbb{Z}\\) . Show that this function is not injective; surjective. example : ¬ Injective ( fun (( x , y ) : ℤ × ℤ ) ↦ x - 2 * y - 1 ) := by sorry example : Surjective ( fun (( x , y ) : ℤ × ℤ ) ↦ x - 2 * y - 1 ) := by sorry",
+    "html": "<li><p>Consider the function <span class=\"math notranslate nohighlight\">\\((x,y)\\mapsto x-2y-1\\)</span> from <span class=\"math notranslate nohighlight\">\\(\\mathbb{Z}^2\\)</span> to\n<span class=\"math notranslate nohighlight\">\\(\\mathbb{Z}\\)</span>.\nShow that this function is</p>\n<ol class=\"arabic simple\">\n<li><p>not injective;</p></li>\n<li><p>surjective.</p></li>\n</ol>\n<div class=\"highlight-lean notranslate\"><div class=\"highlight\"><pre><span></span><span class=\"kd\">example</span> <span class=\"o\">:</span> <span class=\"bp\">¬</span> <span class=\"n\">Injective</span> <span class=\"o\">(</span><span class=\"k\">fun</span> <span class=\"o\">((</span><span class=\"n\">x</span><span class=\"o\">,</span> <span class=\"n\">y</span><span class=\"o\">)</span> <span class=\"o\">:</span> <span class=\"n\">ℤ</span> <span class=\"bp\">×</span> <span class=\"n\">ℤ</span><span class=\"o\">)</span> <span class=\"bp\">↦</span> <span class=\"n\">x</span> <span class=\"bp\">-</span> <span class=\"mi\">2</span> <span class=\"bp\">*</span> <span class=\"n\">y</span> <span class=\"bp\">-</span> <span class=\"mi\">1</span><span class=\"o\">)</span> <span class=\"o\">:=</span> <span class=\"kd\">by</span>\n  <span class=\"gr\">sorry</span>\n</pre></div>\n</div>\n<div class=\"highlight-lean notranslate\"><div class=\"highlight\"><pre><span></span><span class=\"kd\">example</span> <span class=\"o\">:</span> <span class=\"n\">Surjective</span> <span class=\"o\">(</span><span class=\"k\">fun</span> <span class=\"o\">((</span><span class=\"n\">x</span><span class=\"o\">,</span> <span class=\"n\">y</span><span class=\"o\">)</span> <span class=\"o\">:</span> <span class=\"n\">ℤ</span> <span class=\"bp\">×</span> <span class=\"n\">ℤ</span><span class=\"o\">)</span> <span class=\"bp\">↦</span> <span class=\"n\">x</span> <span class=\"bp\">-</span> <span class=\"mi\">2</span> <span class=\"bp\">*</span> <span class=\"n\">y</span> <span class=\"bp\">-</span> <span class=\"mi\">1</span><span class=\"o\">)</span> <span class=\"o\">:=</span> <span class=\"kd\">by</span>\n  <span class=\"gr\">sorry</span>\n</pre></div>\n</div>\n</li>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0303",
+    "file": "08_Functions.html",
+    "tag": "li",
+    "text": "not injective;",
+    "html": "<li><p>not injective;</p></li>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0304",
+    "file": "08_Functions.html",
+    "tag": "li",
+    "text": "surjective.",
+    "html": "<li><p>surjective.</p></li>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0305",
+    "file": "08_Functions.html",
+    "tag": "li",
+    "text": "Consider the function \\((x,y)\\mapsto x^2+y^2\\) from \\(\\mathbb{Q}^2\\) to \\(\\mathbb{Q}\\) . Show that this function is not surjective. example : ¬ Surjective ( fun (( x , y ) : ℚ × ℚ ) ↦ x ^ 2 + y ^ 2 ) := by sorry",
+    "html": "<li><p>Consider the function <span class=\"math notranslate nohighlight\">\\((x,y)\\mapsto x^2+y^2\\)</span> from <span class=\"math notranslate nohighlight\">\\(\\mathbb{Q}^2\\)</span> to\n<span class=\"math notranslate nohighlight\">\\(\\mathbb{Q}\\)</span>.\nShow that this function is not surjective.</p>\n<div class=\"highlight-lean notranslate\"><div class=\"highlight\"><pre><span></span><span class=\"kd\">example</span> <span class=\"o\">:</span> <span class=\"bp\">¬</span> <span class=\"n\">Surjective</span> <span class=\"o\">(</span><span class=\"k\">fun</span> <span class=\"o\">((</span><span class=\"n\">x</span><span class=\"o\">,</span> <span class=\"n\">y</span><span class=\"o\">)</span> <span class=\"o\">:</span> <span class=\"n\">ℚ</span> <span class=\"bp\">×</span> <span class=\"n\">ℚ</span><span class=\"o\">)</span> <span class=\"bp\">↦</span> <span class=\"n\">x</span> <span class=\"bp\">^</span> <span class=\"mi\">2</span> <span class=\"bp\">+</span> <span class=\"n\">y</span> <span class=\"bp\">^</span> <span class=\"mi\">2</span><span class=\"o\">)</span> <span class=\"o\">:=</span> <span class=\"kd\">by</span>\n  <span class=\"gr\">sorry</span>\n</pre></div>\n</div>\n</li>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0306",
+    "file": "08_Functions.html",
+    "tag": "li",
+    "text": "Consider the function \\((x,y)\\mapsto x^2-y^2\\) from \\(\\mathbb{Q}^2\\) to \\(\\mathbb{Q}\\) . Show that this function is surjective. example : Surjective ( fun (( x , y ) : ℚ × ℚ ) ↦ x ^ 2 - y ^ 2 ) := by sorry",
+    "html": "<li><p>Consider the function <span class=\"math notranslate nohighlight\">\\((x,y)\\mapsto x^2-y^2\\)</span> from <span class=\"math notranslate nohighlight\">\\(\\mathbb{Q}^2\\)</span> to\n<span class=\"math notranslate nohighlight\">\\(\\mathbb{Q}\\)</span>.\nShow that this function is surjective.</p>\n<div class=\"highlight-lean notranslate\"><div class=\"highlight\"><pre><span></span><span class=\"kd\">example</span> <span class=\"o\">:</span> <span class=\"n\">Surjective</span> <span class=\"o\">(</span><span class=\"k\">fun</span> <span class=\"o\">((</span><span class=\"n\">x</span><span class=\"o\">,</span> <span class=\"n\">y</span><span class=\"o\">)</span> <span class=\"o\">:</span> <span class=\"n\">ℚ</span> <span class=\"bp\">×</span> <span class=\"n\">ℚ</span><span class=\"o\">)</span> <span class=\"bp\">↦</span> <span class=\"n\">x</span> <span class=\"bp\">^</span> <span class=\"mi\">2</span> <span class=\"bp\">-</span> <span class=\"n\">y</span> <span class=\"bp\">^</span> <span class=\"mi\">2</span><span class=\"o\">)</span> <span class=\"o\">:=</span> <span class=\"kd\">by</span>\n  <span class=\"gr\">sorry</span>\n</pre></div>\n</div>\n</li>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0307",
+    "file": "08_Functions.html",
+    "tag": "li",
+    "text": "Consider the function \\((a,b)\\mapsto a^b\\) from \\(\\mathbb{Q}× \\mathbb{N}\\) to \\(\\mathbb{Q}\\) . Show that this function is surjective. example : Surjective ( fun (( a , b ) : ℚ × ℕ ) ↦ a ^ b ) := by sorry",
+    "html": "<li><p>Consider the function <span class=\"math notranslate nohighlight\">\\((a,b)\\mapsto a^b\\)</span> from <span class=\"math notranslate nohighlight\">\\(\\mathbb{Q}× \\mathbb{N}\\)</span> to\n<span class=\"math notranslate nohighlight\">\\(\\mathbb{Q}\\)</span>. Show that this function is surjective.</p>\n<div class=\"highlight-lean notranslate\"><div class=\"highlight\"><pre><span></span><span class=\"kd\">example</span> <span class=\"o\">:</span> <span class=\"n\">Surjective</span> <span class=\"o\">(</span><span class=\"k\">fun</span> <span class=\"o\">((</span><span class=\"n\">a</span><span class=\"o\">,</span> <span class=\"n\">b</span><span class=\"o\">)</span> <span class=\"o\">:</span> <span class=\"n\">ℚ</span> <span class=\"bp\">×</span> <span class=\"n\">ℕ</span><span class=\"o\">)</span> <span class=\"bp\">↦</span> <span class=\"n\">a</span> <span class=\"bp\">^</span> <span class=\"n\">b</span><span class=\"o\">)</span> <span class=\"o\">:=</span> <span class=\"kd\">by</span>\n  <span class=\"gr\">sorry</span>\n</pre></div>\n</div>\n</li>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0308",
+    "file": "08_Functions.html",
+    "tag": "li",
+    "text": "Consider the function \\((x,y,z)\\mapsto (x+y+z,x+2y+3z)\\) from \\(\\mathbb{R}^3\\) to \\(\\mathbb{R}^2\\) . Show that this function is not injective. example : ¬ Injective ( fun (( x , y , z ) : ℝ × ℝ × ℝ ) ↦ ( x + y + z , x + 2 * y + 3 * z )) := by sorry",
+    "html": "<li><p>Consider the function <span class=\"math notranslate nohighlight\">\\((x,y,z)\\mapsto (x+y+z,x+2y+3z)\\)</span> from  <span class=\"math notranslate nohighlight\">\\(\\mathbb{R}^3\\)</span> to\n<span class=\"math notranslate nohighlight\">\\(\\mathbb{R}^2\\)</span>. Show that this function is not injective.</p>\n<div class=\"highlight-lean notranslate\"><div class=\"highlight\"><pre><span></span><span class=\"kd\">example</span> <span class=\"o\">:</span> <span class=\"bp\">¬</span> <span class=\"n\">Injective</span>\n    <span class=\"o\">(</span><span class=\"k\">fun</span> <span class=\"o\">((</span><span class=\"n\">x</span><span class=\"o\">,</span> <span class=\"n\">y</span><span class=\"o\">,</span> <span class=\"n\">z</span><span class=\"o\">)</span> <span class=\"o\">:</span> <span class=\"n\">ℝ</span> <span class=\"bp\">×</span> <span class=\"n\">ℝ</span> <span class=\"bp\">×</span> <span class=\"n\">ℝ</span><span class=\"o\">)</span> <span class=\"bp\">↦</span> <span class=\"o\">(</span><span class=\"n\">x</span> <span class=\"bp\">+</span> <span class=\"n\">y</span> <span class=\"bp\">+</span> <span class=\"n\">z</span><span class=\"o\">,</span> <span class=\"n\">x</span> <span class=\"bp\">+</span> <span class=\"mi\">2</span> <span class=\"bp\">*</span> <span class=\"n\">y</span> <span class=\"bp\">+</span> <span class=\"mi\">3</span> <span class=\"bp\">*</span> <span class=\"n\">z</span><span class=\"o\">))</span> <span class=\"o\">:=</span> <span class=\"kd\">by</span>\n  <span class=\"gr\">sorry</span>\n</pre></div>\n</div>\n</li>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0309",
+    "file": "08_Functions.html",
+    "tag": "li",
+    "text": "Consider the function \\((x,y)\\mapsto (x+y,x+2y, x+3y)\\) from \\(\\mathbb{R}^2\\) to \\(\\mathbb{R}^3\\) . Show that this function is injective. example : Injective ( fun (( x , y ) : ℝ × ℝ ) ↦ ( x + y , x + 2 * y , x + 3 * y )) := by sorry",
+    "html": "<li><p>Consider the function <span class=\"math notranslate nohighlight\">\\((x,y)\\mapsto (x+y,x+2y, x+3y)\\)</span> from  <span class=\"math notranslate nohighlight\">\\(\\mathbb{R}^2\\)</span> to\n<span class=\"math notranslate nohighlight\">\\(\\mathbb{R}^3\\)</span>. Show that this function is injective.</p>\n<div class=\"highlight-lean notranslate\"><div class=\"highlight\"><pre><span></span><span class=\"kd\">example</span> <span class=\"o\">:</span> <span class=\"n\">Injective</span> <span class=\"o\">(</span><span class=\"k\">fun</span> <span class=\"o\">((</span><span class=\"n\">x</span><span class=\"o\">,</span> <span class=\"n\">y</span><span class=\"o\">)</span> <span class=\"o\">:</span> <span class=\"n\">ℝ</span> <span class=\"bp\">×</span> <span class=\"n\">ℝ</span><span class=\"o\">)</span> <span class=\"bp\">↦</span> <span class=\"o\">(</span><span class=\"n\">x</span> <span class=\"bp\">+</span> <span class=\"n\">y</span><span class=\"o\">,</span> <span class=\"n\">x</span> <span class=\"bp\">+</span> <span class=\"mi\">2</span> <span class=\"bp\">*</span> <span class=\"n\">y</span><span class=\"o\">,</span> <span class=\"n\">x</span> <span class=\"bp\">+</span> <span class=\"mi\">3</span> <span class=\"bp\">*</span> <span class=\"n\">y</span><span class=\"o\">))</span> <span class=\"o\">:=</span> <span class=\"kd\">by</span>\n  <span class=\"gr\">sorry</span>\n</pre></div>\n</div>\n</li>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0310",
+    "file": "08_Functions.html",
+    "tag": "li",
+    "text": "Consider the function \\(h:\\mathbb{R}^3\\to \\mathbb{R}^3\\) defined by, \\(h(x,y,z)=(y,z,x)\\) . Show that \\(h\\circ h\\circ h=\\operatorname{Id}_\\mathbb{R}\\) . def h : ℝ × ℝ × ℝ → ℝ × ℝ × ℝ | ( x , y , z ) => ( y , z , x ) example : h ∘ h ∘ h = id := by sorry",
+    "html": "<li><p>Consider the function <span class=\"math notranslate nohighlight\">\\(h:\\mathbb{R}^3\\to \\mathbb{R}^3\\)</span> defined by,\n<span class=\"math notranslate nohighlight\">\\(h(x,y,z)=(y,z,x)\\)</span>.  Show that <span class=\"math notranslate nohighlight\">\\(h\\circ h\\circ h=\\operatorname{Id}_\\mathbb{R}\\)</span>.</p>\n<div class=\"highlight-lean notranslate\"><div class=\"highlight\"><pre><span></span><span class=\"kd\">def</span> <span class=\"n\">h</span> <span class=\"o\">:</span> <span class=\"n\">ℝ</span> <span class=\"bp\">×</span> <span class=\"n\">ℝ</span> <span class=\"bp\">×</span> <span class=\"n\">ℝ</span> <span class=\"bp\">→</span> <span class=\"n\">ℝ</span> <span class=\"bp\">×</span> <span class=\"n\">ℝ</span> <span class=\"bp\">×</span> <span class=\"n\">ℝ</span>\n  <span class=\"bp\">|</span> <span class=\"o\">(</span><span class=\"n\">x</span><span class=\"o\">,</span> <span class=\"n\">y</span><span class=\"o\">,</span> <span class=\"n\">z</span><span class=\"o\">)</span> <span class=\"bp\">=&gt;</span> <span class=\"o\">(</span><span class=\"n\">y</span><span class=\"o\">,</span> <span class=\"n\">z</span><span class=\"o\">,</span> <span class=\"n\">x</span><span class=\"o\">)</span>\n\n<span class=\"kd\">example</span> <span class=\"o\">:</span> <span class=\"n\">h</span> <span class=\"bp\">∘</span> <span class=\"n\">h</span> <span class=\"bp\">∘</span> <span class=\"n\">h</span> <span class=\"bp\">=</span> <span class=\"n\">id</span> <span class=\"o\">:=</span> <span class=\"kd\">by</span>\n  <span class=\"gr\">sorry</span>\n</pre></div>\n</div>\n</li>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0311",
+    "file": "08_Functions.html",
+    "tag": "dt",
+    "text": "1",
+    "html": "<dt class=\"label\" id=\"id31\"><span class=\"brackets\"><a class=\"fn-backref\" href=\"#id27\">1</a></span></dt>",
+    "zh": ""
+  },
+  {
+    "id": "08_Functions:0312",
+    "file": "08_Functions.html",
+    "tag": "dd",
+    "text": "Experts will recognize this as the axiom of choice .",
+    "html": "<dd><p>Experts will recognize this as the\n<a class=\"reference external\" href=\"https://en.wikipedia.org/wiki/Axiom_of_choice\">axiom of choice</a>.</p>\n</dd>",
+    "zh": ""
+  }
+]

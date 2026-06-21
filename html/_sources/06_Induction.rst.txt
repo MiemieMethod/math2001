@@ -1,20 +1,11 @@
 .. _induction:
 
-Induction
-=========
+归纳法
+======
 
-This chapter introduces *induction*, a proof method which applies to the natural numbers
-and to other discrete types such as integers or pairs of natural numbers.
-We also introduce *recursion*, a method for defining sequences (and, more generally,
-functions from discrete types); induction is the canonical method for proving results about
-recursively-defined objects.
+本章介绍*归纳法*，这是一种适用于自然数以及整数、自然数对等其他离散类型的证明方法。我们还介绍*递归*，即定义序列（更一般地说，定义从离散类型出发的函数）的方法；对于递归定义的对象，归纳法是证明相关结论的典范方法。
 
-In :numref:`Section %s <induction_intro>` - :numref:`Section %s <two_step_induction>`,
-we use only the most traditional form of induction, proving a result for a natural number by
-relating it to the result for the previous natural number, and small variants on this form
-of induction.  In :numref:`Section %s <strong_induction>` -
-:numref:`Section %s <euclidean_algorithm>`, we introduce *strong induction*, and, even more
-generally, *well-founded induction*. These induction principles are more flexible.
+在 :numref:`第 %s 节 <induction_intro>` 到 :numref:`第 %s 节 <two_step_induction>` 中，我们只使用最传统的归纳形式：通过把自然数处的结论与前一个自然数处的结论联系起来，来证明关于自然数的结果，并讨论这种归纳形式的一些小变体。在 :numref:`第 %s 节 <strong_induction>` 到 :numref:`第 %s 节 <euclidean_algorithm>` 中，我们介绍*强归纳法*，以及更一般的*良基归纳法*。这些归纳原理更加灵活。
 
 .. include:: ch06_Induction/01_Induction.inc
 .. include:: ch06_Induction/02_Recurrence_Relations.inc

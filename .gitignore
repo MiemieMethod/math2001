@@ -5,3 +5,6 @@
 /build
 /.lake/
 /.cache
+/tmp/
+/node_modules/
+__pycache__/

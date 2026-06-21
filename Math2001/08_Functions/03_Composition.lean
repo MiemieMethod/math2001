@@ -131,10 +131,10 @@ def b : Humour → Humour
   | sanguine => sanguine
 
 def c : Humour → Humour
-  | melancholic => sorry
-  | choleric => sorry
-  | phlegmatic => sorry
-  | sanguine => sorry
+  | melancholic => sanguine
+  | choleric => phlegmatic
+  | phlegmatic => melancholic
+  | sanguine => phlegmatic
 
 example : b ∘ a = c := by
   ext x

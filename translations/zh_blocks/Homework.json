@@ -1,0 +1,34 @@
+[
+  {
+    "id": "Homework:0001",
+    "file": "Homework.html",
+    "tag": "h1",
+    "text": "Homework",
+    "html": "<h1>Homework<a class=\"headerlink\" href=\"#homework\" title=\"Permalink to this headline\"></a></h1>",
+    "zh": "作业"
+  },
+  {
+    "id": "Homework:0002",
+    "file": "Homework.html",
+    "tag": "h2",
+    "text": "Homework 0",
+    "html": "<h2>Homework 0<a class=\"headerlink\" href=\"#homework-0\" title=\"Permalink to this headline\"></a></h2>",
+    "zh": "作业 0"
+  },
+  {
+    "id": "Homework:0003",
+    "file": "Homework.html",
+    "tag": "p",
+    "text": "This homework is not for credit. It is just to get you used to the Gradescope system.",
+    "html": "<p>This homework is not for credit.  It is just to get you used to the Gradescope system.</p>",
+    "zh": "本次作业不计分，只是为了让你熟悉 Gradescope 系统。"
+  },
+  {
+    "id": "Homework:0004",
+    "file": "Homework.html",
+    "tag": "li",
+    "text": "Let \\(n\\geq 5\\) be an integer. Show that \\(n ^ 2 > 2n + 11\\) . @[autograded 5] theorem problem1 { n : ℤ } ( hn : n ≥ 5 ) : n ^ 2 > 2 * n + 11 := sorry",
+    "html": "<li><p>Let <span class=\"math notranslate nohighlight\">\\(n\\geq 5\\)</span> be an integer.  Show that <span class=\"math notranslate nohighlight\">\\(n ^ 2 &gt; 2n + 11\\)</span>.</p>\n<div class=\"highlight-lean notranslate\"><div class=\"highlight\"><pre><span></span><span class=\"kd\">@[autograded 5]</span>\n<span class=\"kd\">theorem</span> <span class=\"n\">problem1</span> <span class=\"o\">{</span><span class=\"n\">n</span> <span class=\"o\">:</span> <span class=\"n\">ℤ</span><span class=\"o\">}</span> <span class=\"o\">(</span><span class=\"n\">hn</span> <span class=\"o\">:</span> <span class=\"n\">n</span> <span class=\"bp\">≥</span> <span class=\"mi\">5</span><span class=\"o\">)</span> <span class=\"o\">:</span> <span class=\"n\">n</span> <span class=\"bp\">^</span> <span class=\"mi\">2</span> <span class=\"bp\">&gt;</span> <span class=\"mi\">2</span> <span class=\"bp\">*</span> <span class=\"n\">n</span> <span class=\"bp\">+</span> <span class=\"mi\">11</span> <span class=\"o\">:=</span>\n  <span class=\"gr\">sorry</span>\n</pre></div>\n</div>\n</li>",
+    "zh": "设整数 \\(n\\geq 5\\)。证明 \\(n ^ 2 > 2n + 11\\)。@[autograded 5] theorem problem1 { n : ℤ } ( hn : n ≥ 5 ) : n ^ 2 > 2 * n + 11 := sorry"
+  }
+]

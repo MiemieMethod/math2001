@@ -1,0 +1,1154 @@
+[
+  {
+    "id": "10_Relations:0001",
+    "file": "10_Relations.html",
+    "tag": "h1",
+    "text": "10. Relations",
+    "html": "<h1><span class=\"section-number\">10. </span>Relations<a class=\"headerlink\" href=\"#relations\" title=\"Permalink to this headline\"></a></h1>",
+    "zh": "10. 关系"
+  },
+  {
+    "id": "10_Relations:0002",
+    "file": "10_Relations.html",
+    "tag": "h2",
+    "text": "10.1. Reflexive, symmetric, antisymmetric, transitive",
+    "html": "<h2><span class=\"section-number\">10.1. </span>Reflexive, symmetric, antisymmetric, transitive<a class=\"headerlink\" href=\"#reflexive-symmetric-antisymmetric-transitive\" title=\"Permalink to this headline\"></a></h2>",
+    "zh": "10.1. 自反、对称、反对称、传递"
+  },
+  {
+    "id": "10_Relations:0003",
+    "file": "10_Relations.html",
+    "tag": "h2",
+    "text": "10.2. Equivalence relations",
+    "html": "<h2><span class=\"section-number\">10.2. </span>Equivalence relations<a class=\"headerlink\" href=\"#equivalence-relations\" title=\"Permalink to this headline\"></a></h2>",
+    "zh": "10.2. 等价关系"
+  },
+  {
+    "id": "10_Relations:0004",
+    "file": "10_Relations.html",
+    "tag": "h3",
+    "text": "10.1.1. Example",
+    "html": "<h3><span class=\"section-number\">10.1.1. </span>Example<a class=\"headerlink\" href=\"#example\" title=\"Permalink to this headline\"></a></h3>",
+    "zh": "10.1.1. 例"
+  },
+  {
+    "id": "10_Relations:0005",
+    "file": "10_Relations.html",
+    "tag": "h3",
+    "text": "10.1.2. Example",
+    "html": "<h3><span class=\"section-number\">10.1.2. </span>Example<a class=\"headerlink\" href=\"#equals-relation\" title=\"Permalink to this headline\"></a></h3>",
+    "zh": "10.1.2. 例"
+  },
+  {
+    "id": "10_Relations:0006",
+    "file": "10_Relations.html",
+    "tag": "h3",
+    "text": "10.1.3. Example",
+    "html": "<h3><span class=\"section-number\">10.1.3. </span>Example<a class=\"headerlink\" href=\"#id3\" title=\"Permalink to this headline\"></a></h3>",
+    "zh": "10.1.3. 例"
+  },
+  {
+    "id": "10_Relations:0007",
+    "file": "10_Relations.html",
+    "tag": "h3",
+    "text": "10.1.4. Example",
+    "html": "<h3><span class=\"section-number\">10.1.4. </span>Example<a class=\"headerlink\" href=\"#id4\" title=\"Permalink to this headline\"></a></h3>",
+    "zh": "10.1.4. 例"
+  },
+  {
+    "id": "10_Relations:0008",
+    "file": "10_Relations.html",
+    "tag": "h3",
+    "text": "10.1.5. Exercises",
+    "html": "<h3><span class=\"section-number\">10.1.5. </span>Exercises<a class=\"headerlink\" href=\"#exercises\" title=\"Permalink to this headline\"></a></h3>",
+    "zh": "10.1.5. 练习"
+  },
+  {
+    "id": "10_Relations:0009",
+    "file": "10_Relations.html",
+    "tag": "h3",
+    "text": "10.2.1. Example",
+    "html": "<h3><span class=\"section-number\">10.2.1. </span>Example<a class=\"headerlink\" href=\"#id6\" title=\"Permalink to this headline\"></a></h3>",
+    "zh": "10.2.1. 例"
+  },
+  {
+    "id": "10_Relations:0010",
+    "file": "10_Relations.html",
+    "tag": "h3",
+    "text": "10.2.2. Example",
+    "html": "<h3><span class=\"section-number\">10.2.2. </span>Example<a class=\"headerlink\" href=\"#id7\" title=\"Permalink to this headline\"></a></h3>",
+    "zh": "10.2.2. 例"
+  },
+  {
+    "id": "10_Relations:0011",
+    "file": "10_Relations.html",
+    "tag": "h3",
+    "text": "10.2.3. Example",
+    "html": "<h3><span class=\"section-number\">10.2.3. </span>Example<a class=\"headerlink\" href=\"#id8\" title=\"Permalink to this headline\"></a></h3>",
+    "zh": "10.2.3. 例"
+  },
+  {
+    "id": "10_Relations:0012",
+    "file": "10_Relations.html",
+    "tag": "h3",
+    "text": "10.2.4. Example",
+    "html": "<h3><span class=\"section-number\">10.2.4. </span>Example<a class=\"headerlink\" href=\"#id9\" title=\"Permalink to this headline\"></a></h3>",
+    "zh": "10.2.4. 例"
+  },
+  {
+    "id": "10_Relations:0013",
+    "file": "10_Relations.html",
+    "tag": "h3",
+    "text": "10.2.5. Example",
+    "html": "<h3><span class=\"section-number\">10.2.5. </span>Example<a class=\"headerlink\" href=\"#id10\" title=\"Permalink to this headline\"></a></h3>",
+    "zh": "10.2.5. 例"
+  },
+  {
+    "id": "10_Relations:0014",
+    "file": "10_Relations.html",
+    "tag": "h3",
+    "text": "10.2.6. Example",
+    "html": "<h3><span class=\"section-number\">10.2.6. </span>Example<a class=\"headerlink\" href=\"#id11\" title=\"Permalink to this headline\"></a></h3>",
+    "zh": "10.2.6. 例"
+  },
+  {
+    "id": "10_Relations:0015",
+    "file": "10_Relations.html",
+    "tag": "h3",
+    "text": "10.2.7. Exercises",
+    "html": "<h3><span class=\"section-number\">10.2.7. </span>Exercises<a class=\"headerlink\" href=\"#id12\" title=\"Permalink to this headline\"></a></h3>",
+    "zh": "10.2.7. 练习"
+  },
+  {
+    "id": "10_Relations:0016",
+    "file": "10_Relations.html",
+    "tag": "p",
+    "text": "Just as sets provide a convenient language for properties of the objects in a type, relations provide a convenient language for the properties of the pairs of objects in a type. This might sound dry and abstract, but such properties turn up all over mathematics: the property of one real number being less than another; the property of one integer being congruent to another modulo 5; the property of one set being a subset of another; the property of one function being inverse to another.",
+    "html": "<p>Just as sets provide a convenient language for properties of the objects in a type,\n<em>relations</em> provide a convenient language for the properties of the pairs of objects\nin a type.  This might sound dry and abstract, but such properties turn up all over\nmathematics: the property of one real\nnumber being less than another; the property of one integer being congruent to\nanother modulo 5; the property of one set being a subset of another; the property\nof one function being inverse to another.</p>",
+    "zh": "正如集合为描述一个类型中对象的性质提供了便利语言，关系也为描述一个类型中对象对的性质提供了便利语言。这听起来也许枯燥而抽象，但这类性质在数学中处处出现：一个实数小于另一个实数；一个整数与另一个整数模 5 同余；一个集合是另一个集合的子集；一个函数是另一个函数的逆。"
+  },
+  {
+    "id": "10_Relations:0017",
+    "file": "10_Relations.html",
+    "tag": "p",
+    "text": "In this chapter we introduce some of the important properties which relations themselves can have: they can be reflexive , symmetric , antisymmetric or transitive , or any combination of these.",
+    "html": "<p>In this chapter we introduce some of the important properties which relations\nthemselves can have: they can be <em>reflexive</em>, <em>symmetric</em>, <em>antisymmetric</em> or\n<em>transitive</em>, or any combination of these.</p>",
+    "zh": "本章介绍关系本身可以具有的一些重要性质：它们可以是自反的、对称的、反对称的或传递的，也可以同时具有这些性质中的若干个。"
+  },
+  {
+    "id": "10_Relations:0018",
+    "file": "10_Relations.html",
+    "tag": "p",
+    "text": "Definition",
+    "html": "<p class=\"admonition-title\">Definition</p>",
+    "zh": "定义"
+  },
+  {
+    "id": "10_Relations:0019",
+    "file": "10_Relations.html",
+    "tag": "p",
+    "text": "A relation \\(\\sim\\) on a type \\(X\\) is reflexive , if for all \\(x\\) of type \\(X\\) , it is true that \\(x\\sim x\\) .",
+    "html": "<p>A relation <span class=\"math notranslate nohighlight\">\\(\\sim\\)</span> on a type <span class=\"math notranslate nohighlight\">\\(X\\)</span> is <em>reflexive</em>, if for all <span class=\"math notranslate nohighlight\">\\(x\\)</span> of type\n<span class=\"math notranslate nohighlight\">\\(X\\)</span>, it is true that <span class=\"math notranslate nohighlight\">\\(x\\sim x\\)</span>.</p>",
+    "zh": "类型 \\(X\\) 上的关系 \\(\\sim\\) 称为自反的，如果对类型 \\(X\\) 的所有 \\(x\\)，都有 \\(x\\sim x\\)。"
+  },
+  {
+    "id": "10_Relations:0020",
+    "file": "10_Relations.html",
+    "tag": "p",
+    "text": "Problem",
+    "html": "<p class=\"admonition-title\">Problem</p>",
+    "zh": "问题"
+  },
+  {
+    "id": "10_Relations:0021",
+    "file": "10_Relations.html",
+    "tag": "p",
+    "text": "Prove that the relation \\(|\\) on \\(\\mathbb{N}\\) is reflexive.",
+    "html": "<p>Prove that the relation <span class=\"math notranslate nohighlight\">\\(|\\)</span> on <span class=\"math notranslate nohighlight\">\\(\\mathbb{N}\\)</span> is reflexive.</p>",
+    "zh": "证明 \\(\\mathbb{N}\\) 上的关系 \\(|\\) 是自反的。"
+  },
+  {
+    "id": "10_Relations:0022",
+    "file": "10_Relations.html",
+    "tag": "p",
+    "text": "Solution",
+    "html": "<p class=\"admonition-title\">Solution</p>",
+    "zh": "解答"
+  },
+  {
+    "id": "10_Relations:0023",
+    "file": "10_Relations.html",
+    "tag": "p",
+    "text": "We must show that for all natural numbers \\(x\\) , \\(x\\mid x\\) . Indeed, let \\(x\\) be a natural number; then \\(x=x\\cdot 1\\) .",
+    "html": "<p>We must show that for all natural numbers <span class=\"math notranslate nohighlight\">\\(x\\)</span>, <span class=\"math notranslate nohighlight\">\\(x\\mid x\\)</span>.  Indeed, let <span class=\"math notranslate nohighlight\">\\(x\\)</span> be a\nnatural number; then <span class=\"math notranslate nohighlight\">\\(x=x\\cdot 1\\)</span>.</p>",
+    "zh": "我们必须证明对所有自然数 \\(x\\)，都有 \\(x\\mid x\\)。确实，设 \\(x\\) 为自然数，则 \\(x=x\\cdot 1\\)。"
+  },
+  {
+    "id": "10_Relations:0024",
+    "file": "10_Relations.html",
+    "tag": "p",
+    "text": "Definition",
+    "html": "<p class=\"admonition-title\">Definition</p>",
+    "zh": "定义"
+  },
+  {
+    "id": "10_Relations:0025",
+    "file": "10_Relations.html",
+    "tag": "p",
+    "text": "A relation \\(\\sim\\) on a type \\(X\\) is symmetric , if for all \\(x\\) and \\(y\\) of type \\(X\\) , if \\(x\\sim y\\) , then \\(y\\sim x\\) .",
+    "html": "<p>A relation <span class=\"math notranslate nohighlight\">\\(\\sim\\)</span> on a type <span class=\"math notranslate nohighlight\">\\(X\\)</span> is <em>symmetric</em>, if for all <span class=\"math notranslate nohighlight\">\\(x\\)</span> and <span class=\"math notranslate nohighlight\">\\(y\\)</span> of\ntype <span class=\"math notranslate nohighlight\">\\(X\\)</span>, if <span class=\"math notranslate nohighlight\">\\(x\\sim y\\)</span>, then <span class=\"math notranslate nohighlight\">\\(y\\sim x\\)</span>.</p>",
+    "zh": "类型 \\(X\\) 上的关系 \\(\\sim\\) 称为对称的，如果对类型 \\(X\\) 的所有 \\(x\\) 和 \\(y\\)，若 \\(x\\sim y\\)，则 \\(y\\sim x\\)。"
+  },
+  {
+    "id": "10_Relations:0026",
+    "file": "10_Relations.html",
+    "tag": "p",
+    "text": "Problem",
+    "html": "<p class=\"admonition-title\">Problem</p>",
+    "zh": "问题"
+  },
+  {
+    "id": "10_Relations:0027",
+    "file": "10_Relations.html",
+    "tag": "p",
+    "text": "Prove that the relation \\(|\\) on \\(\\mathbb{N}\\) is not symmetric.",
+    "html": "<p>Prove that the relation <span class=\"math notranslate nohighlight\">\\(|\\)</span> on <span class=\"math notranslate nohighlight\">\\(\\mathbb{N}\\)</span> is not symmetric.</p>",
+    "zh": "证明 \\(\\mathbb{N}\\) 上的关系 \\(|\\) 不是对称的。"
+  },
+  {
+    "id": "10_Relations:0028",
+    "file": "10_Relations.html",
+    "tag": "p",
+    "text": "Solution",
+    "html": "<p class=\"admonition-title\">Solution</p>",
+    "zh": "解答"
+  },
+  {
+    "id": "10_Relations:0029",
+    "file": "10_Relations.html",
+    "tag": "p",
+    "text": "We must show that there exist natural numbers \\(x\\) and \\(y\\) such that, \\(x\\mid y\\) and \\(y\\mid x\\) . Indeed, we have \\(2=1\\cdot 2\\) , so \\(1\\mid 2\\) , and \\(2\\cdot 0<1<2\\cdot 1\\) , so \\(2\\not \\mid 1\\) .",
+    "html": "<p>We must show that there exist natural numbers <span class=\"math notranslate nohighlight\">\\(x\\)</span> and <span class=\"math notranslate nohighlight\">\\(y\\)</span> such that, <span class=\"math notranslate nohighlight\">\\(x\\mid y\\)</span>\nand <span class=\"math notranslate nohighlight\">\\(y\\mid x\\)</span>.  Indeed, we have <span class=\"math notranslate nohighlight\">\\(2=1\\cdot 2\\)</span>, so <span class=\"math notranslate nohighlight\">\\(1\\mid 2\\)</span>, and\n<span class=\"math notranslate nohighlight\">\\(2\\cdot 0&lt;1&lt;2\\cdot 1\\)</span>, so <span class=\"math notranslate nohighlight\">\\(2\\not \\mid 1\\)</span>.</p>",
+    "zh": "我们必须证明存在自然数 \\(x\\) 和 \\(y\\)，使得 \\(x\\mid y\\) 且 \\(y\\not\\mid x\\)。确实，\\(2=1\\cdot 2\\)，所以 \\(1\\mid 2\\)；并且 \\(2\\cdot 0<1<2\\cdot 1\\)，所以 \\(2\\not\\mid 1\\)。"
+  },
+  {
+    "id": "10_Relations:0030",
+    "file": "10_Relations.html",
+    "tag": "p",
+    "text": "Definition",
+    "html": "<p class=\"admonition-title\">Definition</p>",
+    "zh": "定义"
+  },
+  {
+    "id": "10_Relations:0031",
+    "file": "10_Relations.html",
+    "tag": "p",
+    "text": "A relation \\(\\sim\\) on a type \\(X\\) is antisymmetric , if for all \\(x\\) and \\(y\\) of type \\(X\\) , if \\(x\\sim y\\) and \\(y\\sim x\\) , then \\(x=y\\) .",
+    "html": "<p>A relation <span class=\"math notranslate nohighlight\">\\(\\sim\\)</span> on a type <span class=\"math notranslate nohighlight\">\\(X\\)</span> is <em>antisymmetric</em>, if for all <span class=\"math notranslate nohighlight\">\\(x\\)</span> and\n<span class=\"math notranslate nohighlight\">\\(y\\)</span> of type <span class=\"math notranslate nohighlight\">\\(X\\)</span>, if <span class=\"math notranslate nohighlight\">\\(x\\sim y\\)</span> and <span class=\"math notranslate nohighlight\">\\(y\\sim x\\)</span>, then <span class=\"math notranslate nohighlight\">\\(x=y\\)</span>.</p>",
+    "zh": "类型 \\(X\\) 上的关系 \\(\\sim\\) 称为反对称的，如果对类型 \\(X\\) 的所有 \\(x\\) 和 \\(y\\)，若 \\(x\\sim y\\) 且 \\(y\\sim x\\)，则 \\(x=y\\)。"
+  },
+  {
+    "id": "10_Relations:0032",
+    "file": "10_Relations.html",
+    "tag": "p",
+    "text": "Problem",
+    "html": "<p class=\"admonition-title\">Problem</p>",
+    "zh": "问题"
+  },
+  {
+    "id": "10_Relations:0033",
+    "file": "10_Relations.html",
+    "tag": "p",
+    "text": "Prove that the relation \\(|\\) on \\(\\mathbb{N}\\) is antisymmetric.",
+    "html": "<p>Prove that the relation <span class=\"math notranslate nohighlight\">\\(|\\)</span> on <span class=\"math notranslate nohighlight\">\\(\\mathbb{N}\\)</span> is antisymmetric.</p>",
+    "zh": "证明 \\(\\mathbb{N}\\) 上的关系 \\(|\\) 是反对称的。"
+  },
+  {
+    "id": "10_Relations:0034",
+    "file": "10_Relations.html",
+    "tag": "p",
+    "text": "Solution",
+    "html": "<p class=\"admonition-title\">Solution</p>",
+    "zh": "解答"
+  },
+  {
+    "id": "10_Relations:0035",
+    "file": "10_Relations.html",
+    "tag": "p",
+    "text": "We first note the following fact ( \\(\\star\\) ): if \\(m\\) and \\(n\\) are natural numbers with \\(m=0\\) and \\(m\\mid n\\) , then \\(m=n\\) . Indeed, since \\(m\\mid n\\) there exists a natural number \\(k\\) such that \\(n=mk\\) , and then",
+    "html": "<p>We first note the following fact (<span class=\"math notranslate nohighlight\">\\(\\star\\)</span>): if <span class=\"math notranslate nohighlight\">\\(m\\)</span> and <span class=\"math notranslate nohighlight\">\\(n\\)</span> are natural numbers with <span class=\"math notranslate nohighlight\">\\(m=0\\)</span>\nand <span class=\"math notranslate nohighlight\">\\(m\\mid n\\)</span>, then <span class=\"math notranslate nohighlight\">\\(m=n\\)</span>.  Indeed, since <span class=\"math notranslate nohighlight\">\\(m\\mid n\\)</span> there exists a natural\nnumber <span class=\"math notranslate nohighlight\">\\(k\\)</span> such that <span class=\"math notranslate nohighlight\">\\(n=mk\\)</span>, and then</p>",
+    "zh": "我们先注意如下事实（\\(\\star\\)）：若 \\(m\\) 和 \\(n\\) 是自然数，且 \\(m=0\\) 并且 \\(m\\mid n\\)，则 \\(m=n\\)。确实，由 \\(m\\mid n\\)，存在自然数 \\(k\\) 使得 \\(n=mk\\)，于是"
+  },
+  {
+    "id": "10_Relations:0036",
+    "file": "10_Relations.html",
+    "tag": "p",
+    "text": "We now return to the original problem. We must show that for all natural numbers \\(x\\) and \\(y\\) , if \\(x\\mid y\\) and \\(y\\mid x\\) , then \\(x=y\\) . Indeed, let \\(x\\) and \\(y\\) be natural numbers and suppose \\(x\\mid y\\) and \\(y\\mid x\\) . If \\(x=0\\) then by ( \\(\\star\\) ) we are done; likewise if \\(y=0\\) . Otherwise, \\(x>0\\) , so since \\(y\\mid x\\) we have \\(y\\le x\\) , and \\(y>0\\) , so since \\(x\\mid y\\) we have \\(x\\le y\\) , Putting these together, \\(x=y\\) .",
+    "html": "<p>We now return to the original problem.  We must show that for all natural numbers <span class=\"math notranslate nohighlight\">\\(x\\)</span> and <span class=\"math notranslate nohighlight\">\\(y\\)</span>, if <span class=\"math notranslate nohighlight\">\\(x\\mid y\\)</span> and <span class=\"math notranslate nohighlight\">\\(y\\mid x\\)</span>, then <span class=\"math notranslate nohighlight\">\\(x=y\\)</span>.  Indeed, let <span class=\"math notranslate nohighlight\">\\(x\\)</span> and <span class=\"math notranslate nohighlight\">\\(y\\)</span> be natural numbers and suppose <span class=\"math notranslate nohighlight\">\\(x\\mid y\\)</span> and <span class=\"math notranslate nohighlight\">\\(y\\mid x\\)</span>. If\n<span class=\"math notranslate nohighlight\">\\(x=0\\)</span> then by (<span class=\"math notranslate nohighlight\">\\(\\star\\)</span>) we are done; likewise if <span class=\"math notranslate nohighlight\">\\(y=0\\)</span>.  Otherwise, <span class=\"math notranslate nohighlight\">\\(x&gt;0\\)</span>,\nso since <span class=\"math notranslate nohighlight\">\\(y\\mid x\\)</span> we have <span class=\"math notranslate nohighlight\">\\(y\\le x\\)</span>, and <span class=\"math notranslate nohighlight\">\\(y&gt;0\\)</span>,\nso since <span class=\"math notranslate nohighlight\">\\(x\\mid y\\)</span> we have <span class=\"math notranslate nohighlight\">\\(x\\le y\\)</span>,  Putting these together, <span class=\"math notranslate nohighlight\">\\(x=y\\)</span>.</p>",
+    "zh": "现在回到原问题。我们必须证明：对所有自然数 \\(x\\) 和 \\(y\\)，若 \\(x\\mid y\\) 且 \\(y\\mid x\\)，则 \\(x=y\\)。确实，设 \\(x\\) 和 \\(y\\) 为自然数，并假设 \\(x\\mid y\\) 且 \\(y\\mid x\\)。若 \\(x=0\\)，则由（\\(\\star\\)）完成；若 \\(y=0\\)，同理完成。否则，\\(x>0\\)，所以由 \\(y\\mid x\\) 可得 \\(y\\le x\\)；并且 \\(y>0\\)，所以由 \\(x\\mid y\\) 可得 \\(x\\le y\\)。合并两者，得 \\(x=y\\)。"
+  },
+  {
+    "id": "10_Relations:0037",
+    "file": "10_Relations.html",
+    "tag": "p",
+    "text": "Definition",
+    "html": "<p class=\"admonition-title\">Definition</p>",
+    "zh": "定义"
+  },
+  {
+    "id": "10_Relations:0038",
+    "file": "10_Relations.html",
+    "tag": "p",
+    "text": "A relation \\(\\sim\\) on a type \\(X\\) is transitive , if for all \\(x\\) , \\(y\\) and \\(z\\) of type \\(X\\) , if \\(x\\sim y\\) and \\(y\\sim z\\) , then \\(x\\sim z\\) .",
+    "html": "<p>A relation <span class=\"math notranslate nohighlight\">\\(\\sim\\)</span> on a type <span class=\"math notranslate nohighlight\">\\(X\\)</span> is <em>transitive</em>, if for all <span class=\"math notranslate nohighlight\">\\(x\\)</span>, <span class=\"math notranslate nohighlight\">\\(y\\)</span> and\n<span class=\"math notranslate nohighlight\">\\(z\\)</span> of type <span class=\"math notranslate nohighlight\">\\(X\\)</span>, if <span class=\"math notranslate nohighlight\">\\(x\\sim y\\)</span> and <span class=\"math notranslate nohighlight\">\\(y\\sim z\\)</span>, then <span class=\"math notranslate nohighlight\">\\(x\\sim z\\)</span>.</p>",
+    "zh": "类型 \\(X\\) 上的关系 \\(\\sim\\) 称为传递的，如果对类型 \\(X\\) 的所有 \\(x\\)、\\(y\\)、\\(z\\)，若 \\(x\\sim y\\) 且 \\(y\\sim z\\)，则 \\(x\\sim z\\)。"
+  },
+  {
+    "id": "10_Relations:0039",
+    "file": "10_Relations.html",
+    "tag": "p",
+    "text": "Problem",
+    "html": "<p class=\"admonition-title\">Problem</p>",
+    "zh": "问题"
+  },
+  {
+    "id": "10_Relations:0040",
+    "file": "10_Relations.html",
+    "tag": "p",
+    "text": "Prove that the relation \\(|\\) on \\(\\mathbb{N}\\) is transitive.",
+    "html": "<p>Prove that the relation <span class=\"math notranslate nohighlight\">\\(|\\)</span> on <span class=\"math notranslate nohighlight\">\\(\\mathbb{N}\\)</span> is transitive.</p>",
+    "zh": "证明 \\(\\mathbb{N}\\) 上的关系 \\(|\\) 是传递的。"
+  },
+  {
+    "id": "10_Relations:0041",
+    "file": "10_Relations.html",
+    "tag": "p",
+    "text": "Solution",
+    "html": "<p class=\"admonition-title\">Solution</p>",
+    "zh": "解答"
+  },
+  {
+    "id": "10_Relations:0042",
+    "file": "10_Relations.html",
+    "tag": "p",
+    "text": "We must show that for all natural numbers \\(a\\) , \\(b\\) and \\(c\\) , if \\(a\\mid b\\) and \\(b\\mid c\\) then \\(a\\mid c\\) .",
+    "html": "<p>We must show that for all natural numbers <span class=\"math notranslate nohighlight\">\\(a\\)</span>, <span class=\"math notranslate nohighlight\">\\(b\\)</span> and <span class=\"math notranslate nohighlight\">\\(c\\)</span>, if <span class=\"math notranslate nohighlight\">\\(a\\mid b\\)</span>\nand <span class=\"math notranslate nohighlight\">\\(b\\mid c\\)</span> then <span class=\"math notranslate nohighlight\">\\(a\\mid c\\)</span>.</p>",
+    "zh": "我们必须证明对所有自然数 \\(a\\)、\\(b\\)、\\(c\\)，若 \\(a\\mid b\\) 且 \\(b\\mid c\\)，则 \\(a\\mid c\\)。"
+  },
+  {
+    "id": "10_Relations:0043",
+    "file": "10_Relations.html",
+    "tag": "p",
+    "text": "Indeed, let \\(a\\) , \\(b\\) and \\(c\\) be natural numbers with these properties. Since \\(a\\mid b\\) there exists a natural number \\(k\\) such that \\(b=ak\\) , and since \\(b\\mid c\\) there exists a natural number \\(l\\) such that \\(c=bl\\) . We then have",
+    "html": "<p>Indeed, let <span class=\"math notranslate nohighlight\">\\(a\\)</span>, <span class=\"math notranslate nohighlight\">\\(b\\)</span> and <span class=\"math notranslate nohighlight\">\\(c\\)</span> be natural numbers with these properties.  Since\n<span class=\"math notranslate nohighlight\">\\(a\\mid b\\)</span> there exists a natural number <span class=\"math notranslate nohighlight\">\\(k\\)</span> such that <span class=\"math notranslate nohighlight\">\\(b=ak\\)</span>, and since\n<span class=\"math notranslate nohighlight\">\\(b\\mid c\\)</span> there exists a natural number <span class=\"math notranslate nohighlight\">\\(l\\)</span> such that <span class=\"math notranslate nohighlight\">\\(c=bl\\)</span>.  We then have</p>",
+    "zh": "确实，设 \\(a\\)、\\(b\\)、\\(c\\) 为具有这些性质的自然数。由于 \\(a\\mid b\\)，存在自然数 \\(k\\) 使得 \\(b=ak\\)；由于 \\(b\\mid c\\)，存在自然数 \\(l\\) 使得 \\(c=bl\\)。于是"
+  },
+  {
+    "id": "10_Relations:0044",
+    "file": "10_Relations.html",
+    "tag": "p",
+    "text": "so \\(a\\mid c\\) .",
+    "html": "<p>so <span class=\"math notranslate nohighlight\">\\(a\\mid c\\)</span>.</p>",
+    "zh": "因此 \\(a\\mid c\\)。"
+  },
+  {
+    "id": "10_Relations:0045",
+    "file": "10_Relations.html",
+    "tag": "p",
+    "text": "Problem",
+    "html": "<p class=\"admonition-title\">Problem</p>",
+    "zh": "问题"
+  },
+  {
+    "id": "10_Relations:0046",
+    "file": "10_Relations.html",
+    "tag": "p",
+    "text": "Determine which of these properties hold for the relation \\(=\\) on \\(\\mathbb{R}\\) :",
+    "html": "<p>Determine which of these properties hold for the relation <span class=\"math notranslate nohighlight\">\\(=\\)</span> on <span class=\"math notranslate nohighlight\">\\(\\mathbb{R}\\)</span>:</p>",
+    "zh": "判断 \\(\\mathbb{R}\\) 上的关系 \\(=\\) 具有下列哪些性质："
+  },
+  {
+    "id": "10_Relations:0047",
+    "file": "10_Relations.html",
+    "tag": "p",
+    "text": "Problem",
+    "html": "<p class=\"admonition-title\">Problem</p>",
+    "zh": "问题"
+  },
+  {
+    "id": "10_Relations:0048",
+    "file": "10_Relations.html",
+    "tag": "p",
+    "text": "Determine which of these properties hold for the relation \\(\\sim\\) on \\(\\mathbb{R}\\) , defined by, \\(x\\sim y\\) if \\((x-y)^2\\leq 1\\) :",
+    "html": "<p>Determine which of these properties hold for the relation <span class=\"math notranslate nohighlight\">\\(\\sim\\)</span> on <span class=\"math notranslate nohighlight\">\\(\\mathbb{R}\\)</span>, defined by, <span class=\"math notranslate nohighlight\">\\(x\\sim y\\)</span> if <span class=\"math notranslate nohighlight\">\\((x-y)^2\\leq 1\\)</span>:</p>",
+    "zh": "判断 \\(\\mathbb{R}\\) 上的关系 \\(\\sim\\) 具有下列哪些性质，其中 \\(x\\sim y\\) 定义为 \\((x-y)^2\\leq 1\\)："
+  },
+  {
+    "id": "10_Relations:0049",
+    "file": "10_Relations.html",
+    "tag": "p",
+    "text": "Consider the following finite inductive type Hand.",
+    "html": "<p>Consider the following finite inductive type Hand.</p>",
+    "zh": "考虑如下有限归纳类型 Hand。"
+  },
+  {
+    "id": "10_Relations:0050",
+    "file": "10_Relations.html",
+    "tag": "p",
+    "text": "Consider the following relation \\(\\prec\\) on the Hand type.",
+    "html": "<p>Consider the following relation <span class=\"math notranslate nohighlight\">\\(\\prec\\)</span> on the Hand type.</p>",
+    "zh": "考虑 Hand 类型上的如下关系 \\(\\prec\\)。"
+  },
+  {
+    "id": "10_Relations:0051",
+    "file": "10_Relations.html",
+    "tag": "p",
+    "text": "Problem",
+    "html": "<p class=\"admonition-title\">Problem</p>",
+    "zh": "问题"
+  },
+  {
+    "id": "10_Relations:0052",
+    "file": "10_Relations.html",
+    "tag": "p",
+    "text": "Determine which of these properties hold for the relation \\(\\prec\\) :",
+    "html": "<p>Determine which of these properties hold for the relation <span class=\"math notranslate nohighlight\">\\(\\prec\\)</span>:</p>",
+    "zh": "判断关系 \\(\\prec\\) 具有下列哪些性质："
+  },
+  {
+    "id": "10_Relations:0053",
+    "file": "10_Relations.html",
+    "tag": "p",
+    "text": "Definition",
+    "html": "<p class=\"admonition-title\">Definition</p>",
+    "zh": "定义"
+  },
+  {
+    "id": "10_Relations:0054",
+    "file": "10_Relations.html",
+    "tag": "p",
+    "text": "A relation is an equivalence relation , if it is reflexive, symmetric and transitive.",
+    "html": "<p>A relation is an <em>equivalence relation</em>, if it is reflexive, symmetric and transitive.</p>",
+    "zh": "一个关系称为等价关系，如果它是自反的、对称的且传递的。"
+  },
+  {
+    "id": "10_Relations:0055",
+    "file": "10_Relations.html",
+    "tag": "p",
+    "text": "Problem",
+    "html": "<p class=\"admonition-title\">Problem</p>",
+    "zh": "问题"
+  },
+  {
+    "id": "10_Relations:0056",
+    "file": "10_Relations.html",
+    "tag": "p",
+    "text": "Let \\(n\\) be an integer. Show that the relation \\(\\sim\\) on \\(\\mathbb{Z}\\) defined by, \\(x\\sim y\\) if \\(x\\equiv y\\mod n\\) is an equivalence relation.",
+    "html": "<p>Let <span class=\"math notranslate nohighlight\">\\(n\\)</span> be an integer.\nShow that the relation <span class=\"math notranslate nohighlight\">\\(\\sim\\)</span> on <span class=\"math notranslate nohighlight\">\\(\\mathbb{Z}\\)</span> defined by, <span class=\"math notranslate nohighlight\">\\(x\\sim y\\)</span> if\n<span class=\"math notranslate nohighlight\">\\(x\\equiv y\\mod n\\)</span> is an equivalence relation.</p>",
+    "zh": "设 \\(n\\) 为整数。证明 \\(\\mathbb{Z}\\) 上如下定义的关系 \\(\\sim\\) 是等价关系：\\(x\\sim y\\) 当且仅当 \\(x\\equiv y\\mod n\\)。"
+  },
+  {
+    "id": "10_Relations:0057",
+    "file": "10_Relations.html",
+    "tag": "p",
+    "text": "Solution",
+    "html": "<p class=\"admonition-title\">Solution</p>",
+    "zh": "解答"
+  },
+  {
+    "id": "10_Relations:0058",
+    "file": "10_Relations.html",
+    "tag": "p",
+    "text": "By Example 3.3.10 , the relation \\(\\sim\\) is reflexive.",
+    "html": "<p>By <a class=\"reference internal\" href=\"03_Parity_and_Divisibility.html#modeq-refl\"><span class=\"std std-numref\">Example 3.3.10</span></a>, the relation <span class=\"math notranslate nohighlight\">\\(\\sim\\)</span>  is reflexive.</p>",
+    "zh": "由例 3.3.10，关系 \\(\\sim\\) 是自反的。"
+  },
+  {
+    "id": "10_Relations:0059",
+    "file": "10_Relations.html",
+    "tag": "p",
+    "text": "By two of the exercises to Section 3.3 , the relation \\(\\sim\\) is symmetric and transitive.",
+    "html": "<p>By two of the exercises to <a class=\"reference internal\" href=\"03_Parity_and_Divisibility.html#theory-modular\"><span class=\"std std-numref\">Section 3.3</span></a>, the\nrelation <span class=\"math notranslate nohighlight\">\\(\\sim\\)</span>  is symmetric and transitive.</p>",
+    "zh": "由第 3.3 节的两道练习，关系 \\(\\sim\\) 是对称的且传递的。"
+  },
+  {
+    "id": "10_Relations:0060",
+    "file": "10_Relations.html",
+    "tag": "p",
+    "text": "Let’s sketch (a portion of) this relation as a directed graph, say for \\(n=3\\) .",
+    "html": "<p>Let’s sketch (a portion of) this relation as a directed graph, say for <span class=\"math notranslate nohighlight\">\\(n=3\\)</span>.</p>",
+    "zh": "我们画出这个关系的一部分有向图，例如取 \\(n=3\\)。"
+  },
+  {
+    "id": "10_Relations:0061",
+    "file": "10_Relations.html",
+    "tag": "p",
+    "text": "It’s a mess, but it’s just possible to make out a pattern: the numbers form cliques, with, for example, … -5, -2, 1, 4, 7, … all connected to each other and to nothing else. We introduce the following visual shorthand for such a directed graph: when nodes are given different colours, this represents the directed graph in which all nodes of a given colour are connected bi-directionally to all nodes of that colour (including themselves) and to no other nodes.",
+    "html": "<p>It’s a mess, but it’s just possible to make out a pattern: the numbers form cliques, with, for\nexample, … -5, -2, 1, 4, 7, … all connected to each other and to nothing else.  We introduce\nthe following visual shorthand for such a directed graph: when nodes are given different colours,\nthis represents the directed graph in which all nodes of a given colour are connected\nbi-directionally to all nodes of that colour (including themselves) and to no other nodes.</p>",
+    "zh": "图形有些杂乱，但仍勉强可以看出一个模式：这些数形成团，例如 … -5、-2、1、4、7、… 全都彼此相连，并且不与其他数相连。我们为这种有向图引入如下视觉简写：当节点被赋予不同颜色时，它表示这样一个有向图：同一颜色的所有节点彼此双向连接（包括与自身相连），且不与其他颜色的节点相连。"
+  },
+  {
+    "id": "10_Relations:0062",
+    "file": "10_Relations.html",
+    "tag": "p",
+    "text": "Problem",
+    "html": "<p class=\"admonition-title\">Problem</p>",
+    "zh": "问题"
+  },
+  {
+    "id": "10_Relations:0063",
+    "file": "10_Relations.html",
+    "tag": "p",
+    "text": "Show that the relation \\(\\sim\\) on \\(\\mathbb{Z}\\) defined by \\(a\\sim b\\) if \\(a^2=b^2\\) is an equivalence relation.",
+    "html": "<p>Show that the relation <span class=\"math notranslate nohighlight\">\\(\\sim\\)</span> on <span class=\"math notranslate nohighlight\">\\(\\mathbb{Z}\\)</span> defined by <span class=\"math notranslate nohighlight\">\\(a\\sim b\\)</span> if\n<span class=\"math notranslate nohighlight\">\\(a^2=b^2\\)</span> is an equivalence relation.</p>",
+    "zh": "证明 \\(\\mathbb{Z}\\) 上由 \\(a\\sim b\\) 当且仅当 \\(a^2=b^2\\) 定义的关系 \\(\\sim\\) 是等价关系。"
+  },
+  {
+    "id": "10_Relations:0064",
+    "file": "10_Relations.html",
+    "tag": "p",
+    "text": "Solution",
+    "html": "<p class=\"admonition-title\">Solution</p>",
+    "zh": "解答"
+  },
+  {
+    "id": "10_Relations:0065",
+    "file": "10_Relations.html",
+    "tag": "p",
+    "text": "For all integers \\(x\\) , we have \\(x^2=x^2\\) , so \\(x\\sim x\\) . Therefore the relation \\(\\sim\\) is reflexive.",
+    "html": "<p>For all integers <span class=\"math notranslate nohighlight\">\\(x\\)</span>, we have <span class=\"math notranslate nohighlight\">\\(x^2=x^2\\)</span>, so <span class=\"math notranslate nohighlight\">\\(x\\sim x\\)</span>.  Therefore the relation\n<span class=\"math notranslate nohighlight\">\\(\\sim\\)</span> is reflexive.</p>",
+    "zh": "对所有整数 \\(x\\)，有 \\(x^2=x^2\\)，所以 \\(x\\sim x\\)。因此关系 \\(\\sim\\) 是自反的。"
+  },
+  {
+    "id": "10_Relations:0066",
+    "file": "10_Relations.html",
+    "tag": "p",
+    "text": "For all integers \\(x\\) and \\(y\\) , we have that if \\(x\\sim y\\) then \\(x^2=y^2\\) , so \\(y^2=x^2\\) , so \\(y\\sim z\\) . Therefore the relation \\(\\sim\\) is symmetric.",
+    "html": "<p>For all integers <span class=\"math notranslate nohighlight\">\\(x\\)</span> and <span class=\"math notranslate nohighlight\">\\(y\\)</span>, we have that if <span class=\"math notranslate nohighlight\">\\(x\\sim y\\)</span> then <span class=\"math notranslate nohighlight\">\\(x^2=y^2\\)</span>,\nso <span class=\"math notranslate nohighlight\">\\(y^2=x^2\\)</span>, so <span class=\"math notranslate nohighlight\">\\(y\\sim z\\)</span>.\nTherefore the relation <span class=\"math notranslate nohighlight\">\\(\\sim\\)</span> is symmetric.</p>",
+    "zh": "对所有整数 \\(x\\) 和 \\(y\\)，若 \\(x\\sim y\\)，则 \\(x^2=y^2\\)，所以 \\(y^2=x^2\\)，从而 \\(y\\sim x\\)。因此关系 \\(\\sim\\) 是对称的。"
+  },
+  {
+    "id": "10_Relations:0067",
+    "file": "10_Relations.html",
+    "tag": "p",
+    "text": "For all integers \\(x\\) , \\(y\\) and \\(z\\) , we have that if \\(x\\sim y\\) and \\(y\\sim z\\) then \\(x^2=y^2\\) and \\(y^2=z^2\\) , so",
+    "html": "<p>For all integers <span class=\"math notranslate nohighlight\">\\(x\\)</span>, <span class=\"math notranslate nohighlight\">\\(y\\)</span> and <span class=\"math notranslate nohighlight\">\\(z\\)</span>, we have that if <span class=\"math notranslate nohighlight\">\\(x\\sim y\\)</span> and\n<span class=\"math notranslate nohighlight\">\\(y\\sim z\\)</span> then <span class=\"math notranslate nohighlight\">\\(x^2=y^2\\)</span> and <span class=\"math notranslate nohighlight\">\\(y^2=z^2\\)</span>, so</p>",
+    "zh": "对所有整数 \\(x\\)、\\(y\\)、\\(z\\)，若 \\(x\\sim y\\) 且 \\(y\\sim z\\)，则 \\(x^2=y^2\\) 且 \\(y^2=z^2\\)，所以"
+  },
+  {
+    "id": "10_Relations:0068",
+    "file": "10_Relations.html",
+    "tag": "p",
+    "text": "so \\(x\\sim z\\) . Therefore the relation \\(\\sim\\) is transitive.",
+    "html": "<p>so <span class=\"math notranslate nohighlight\">\\(x\\sim z\\)</span>. Therefore the relation <span class=\"math notranslate nohighlight\">\\(\\sim\\)</span> is transitive.</p>",
+    "zh": "因此 \\(x\\sim z\\)。所以关系 \\(\\sim\\) 是传递的。"
+  },
+  {
+    "id": "10_Relations:0069",
+    "file": "10_Relations.html",
+    "tag": "p",
+    "text": "If you try to sketch the directed graph for this relation, you will see that it has the same “clique” behaviour as the previous relation. After sketching the directed graph, sketch the multicoloured “clique” version.",
+    "html": "<p>If you try to sketch the directed graph for this relation, you will see that it has the same\n“clique” behaviour as the previous relation.  After sketching the directed graph, sketch the\nmulticoloured “clique” version.</p>",
+    "zh": "如果你尝试为这个关系画出有向图，会看到它具有与前一个关系相同的“团”行为。画出有向图后，再画出多色“团”版本。"
+  },
+  {
+    "id": "10_Relations:0070",
+    "file": "10_Relations.html",
+    "tag": "p",
+    "text": "You have probably guessed that the colouring can be made consistent in this way for any equivalence relation. Let’s make this mathematically rigorous.",
+    "html": "<p>You have probably guessed that the colouring can be made consistent in this way for any equivalence\nrelation. Let’s make this mathematically rigorous.</p>",
+    "zh": "你大概已经猜到，对任意等价关系，都可以用这种方式一致地着色。我们把这一点数学化。"
+  },
+  {
+    "id": "10_Relations:0071",
+    "file": "10_Relations.html",
+    "tag": "p",
+    "text": "Let \\(r\\) be a relation on a type \\(\\alpha\\) , denoted \\(\\sim\\) in infix notation.",
+    "html": "<p>Let <span class=\"math notranslate nohighlight\">\\(r\\)</span> be a relation on a type <span class=\"math notranslate nohighlight\">\\(\\alpha\\)</span>, denoted <span class=\"math notranslate nohighlight\">\\(\\sim\\)</span> in infix notation.</p>",
+    "zh": "设 \\(r\\) 为类型 \\(\\alpha\\) 上的一个关系，用中缀记号 \\(\\sim\\) 表示。"
+  },
+  {
+    "id": "10_Relations:0072",
+    "file": "10_Relations.html",
+    "tag": "p",
+    "text": "Definition",
+    "html": "<p class=\"admonition-title\">Definition</p>",
+    "zh": "定义"
+  },
+  {
+    "id": "10_Relations:0073",
+    "file": "10_Relations.html",
+    "tag": "p",
+    "text": "For \\(a\\) in \\(\\alpha\\) , the equivalence class of \\(a\\) (denoted \\([a]\\) ) is \\(\\{b:\\alpha\\mid a\\sim b\\}\\) .",
+    "html": "<p>For <span class=\"math notranslate nohighlight\">\\(a\\)</span> in <span class=\"math notranslate nohighlight\">\\(\\alpha\\)</span>, the <em>equivalence class</em> of <span class=\"math notranslate nohighlight\">\\(a\\)</span> (denoted <span class=\"math notranslate nohighlight\">\\([a]\\)</span>) is\n<span class=\"math notranslate nohighlight\">\\(\\{b:\\alpha\\mid a\\sim b\\}\\)</span>.</p>",
+    "zh": "对 \\(\\alpha\\) 中的 \\(a\\)，\\(a\\) 的等价类（记为 \\([a]\\)）定义为 \\(\\{b:\\alpha\\mid a\\sim b\\}\\)。"
+  },
+  {
+    "id": "10_Relations:0074",
+    "file": "10_Relations.html",
+    "tag": "p",
+    "text": "Theorem",
+    "html": "<p class=\"admonition-title\">Theorem</p>",
+    "zh": "定理"
+  },
+  {
+    "id": "10_Relations:0075",
+    "file": "10_Relations.html",
+    "tag": "p",
+    "text": "If the relation \\(r\\) is symmetric and transitive, then for all \\(a_1\\) and \\(a_2\\) , if \\(a_1\\sim a_2\\) , then \\([a_1]=[a_2]\\) .",
+    "html": "<p>If the relation <span class=\"math notranslate nohighlight\">\\(r\\)</span> is symmetric and transitive, then for all <span class=\"math notranslate nohighlight\">\\(a_1\\)</span> and <span class=\"math notranslate nohighlight\">\\(a_2\\)</span>,\nif <span class=\"math notranslate nohighlight\">\\(a_1\\sim a_2\\)</span>, then <span class=\"math notranslate nohighlight\">\\([a_1]=[a_2]\\)</span>.</p>",
+    "zh": "若关系 \\(r\\) 是对称的且传递的，则对所有 \\(a_1\\) 和 \\(a_2\\)，若 \\(a_1\\sim a_2\\)，则 \\([a_1]=[a_2]\\)。"
+  },
+  {
+    "id": "10_Relations:0076",
+    "file": "10_Relations.html",
+    "tag": "p",
+    "text": "Proof",
+    "html": "<p class=\"admonition-title\">Proof</p>",
+    "zh": "证明"
+  },
+  {
+    "id": "10_Relations:0077",
+    "file": "10_Relations.html",
+    "tag": "p",
+    "text": "We must show that for all \\(b\\) in \\(\\alpha\\) , \\(a_1\\sim b\\) if and only if \\(a_2\\sim b\\) .",
+    "html": "<p>We must show that for all <span class=\"math notranslate nohighlight\">\\(b\\)</span> in <span class=\"math notranslate nohighlight\">\\(\\alpha\\)</span>, <span class=\"math notranslate nohighlight\">\\(a_1\\sim b\\)</span> if and only if\n<span class=\"math notranslate nohighlight\">\\(a_2\\sim b\\)</span>.</p>",
+    "zh": "我们必须证明对 \\(\\alpha\\) 中所有 \\(b\\)，有 \\(a_1\\sim b\\) 当且仅当 \\(a_2\\sim b\\)。"
+  },
+  {
+    "id": "10_Relations:0078",
+    "file": "10_Relations.html",
+    "tag": "p",
+    "text": "First, suppose that \\(a_1\\sim b\\) . Since \\(a_1\\sim a_2\\) , by symmetry \\(a_2\\sim a_1\\) , and so by transitivity \\(a_2\\sim a_1\\sim b\\) .",
+    "html": "<p>First, suppose that <span class=\"math notranslate nohighlight\">\\(a_1\\sim b\\)</span>.  Since <span class=\"math notranslate nohighlight\">\\(a_1\\sim a_2\\)</span>, by symmetry\n<span class=\"math notranslate nohighlight\">\\(a_2\\sim a_1\\)</span>, and so by transitivity <span class=\"math notranslate nohighlight\">\\(a_2\\sim a_1\\sim b\\)</span>.</p>",
+    "zh": "首先，假设 \\(a_1\\sim b\\)。由于 \\(a_1\\sim a_2\\)，由对称性得 \\(a_2\\sim a_1\\)，再由传递性得 \\(a_2\\sim a_1\\sim b\\)。"
+  },
+  {
+    "id": "10_Relations:0079",
+    "file": "10_Relations.html",
+    "tag": "p",
+    "text": "Conversely, suppose that \\(a_2\\sim b\\) . Then since \\(a_1\\sim a_2\\) , by transitivity \\(a_1\\sim a_2\\sim b\\) .",
+    "html": "<p>Conversely, suppose that <span class=\"math notranslate nohighlight\">\\(a_2\\sim b\\)</span>.  Then since <span class=\"math notranslate nohighlight\">\\(a_1\\sim a_2\\)</span>, by transitivity\n<span class=\"math notranslate nohighlight\">\\(a_1\\sim a_2\\sim b\\)</span>.</p>",
+    "zh": "反过来，假设 \\(a_2\\sim b\\)。由于 \\(a_1\\sim a_2\\)，由传递性得 \\(a_1\\sim a_2\\sim b\\)。"
+  },
+  {
+    "id": "10_Relations:0080",
+    "file": "10_Relations.html",
+    "tag": "p",
+    "text": "Theorem",
+    "html": "<p class=\"admonition-title\">Theorem</p>",
+    "zh": "定理"
+  },
+  {
+    "id": "10_Relations:0081",
+    "file": "10_Relations.html",
+    "tag": "p",
+    "text": "If the relation \\(r\\) is reflexive, then every \\(a\\) is an element of its own equivalence class: \\(a\\in [a]\\) .",
+    "html": "<p>If the relation <span class=\"math notranslate nohighlight\">\\(r\\)</span> is reflexive, then every <span class=\"math notranslate nohighlight\">\\(a\\)</span> is an element of its own equivalence\nclass: <span class=\"math notranslate nohighlight\">\\(a\\in [a]\\)</span>.</p>",
+    "zh": "若关系 \\(r\\) 是自反的，则每个 \\(a\\) 都属于自己的等价类：\\(a\\in [a]\\)。"
+  },
+  {
+    "id": "10_Relations:0082",
+    "file": "10_Relations.html",
+    "tag": "p",
+    "text": "Proof",
+    "html": "<p class=\"admonition-title\">Proof</p>",
+    "zh": "证明"
+  },
+  {
+    "id": "10_Relations:0083",
+    "file": "10_Relations.html",
+    "tag": "p",
+    "text": "We must show that for all \\(a\\) , it is true that \\(a\\sim a\\) , and this is the definition of reflexivity.",
+    "html": "<p>We must show that for all <span class=\"math notranslate nohighlight\">\\(a\\)</span>, it is true that <span class=\"math notranslate nohighlight\">\\(a\\sim a\\)</span>, and this is the definition\nof reflexivity.</p>",
+    "zh": "我们必须证明对所有 \\(a\\)，都有 \\(a\\sim a\\)，而这正是自反性的定义。"
+  },
+  {
+    "id": "10_Relations:0084",
+    "file": "10_Relations.html",
+    "tag": "p",
+    "text": "Consider the relation \\(=\\) on \\(\\mathbb{Z}\\) . It is an equivalence relation, by Example 10.1.2 .",
+    "html": "<p>Consider the relation <span class=\"math notranslate nohighlight\">\\(=\\)</span> on <span class=\"math notranslate nohighlight\">\\(\\mathbb{Z}\\)</span>.  It is an equivalence relation, by\n<a class=\"reference internal\" href=\"#equals-relation\"><span class=\"std std-numref\">Example 10.1.2</span></a>.</p>",
+    "zh": "考虑 \\(\\mathbb{Z}\\) 上的关系 \\(=\\)。由例 10.1.2，它是等价关系。"
+  },
+  {
+    "id": "10_Relations:0085",
+    "file": "10_Relations.html",
+    "tag": "p",
+    "text": "Exercise: Sketch this relation, by drawing (a portion of) the underlying type \\(\\mathbb{Z}\\) along a line, then colouring each equivalence class in a different colour.",
+    "html": "<p>Exercise: Sketch this relation, by drawing (a portion of) the underlying type\n<span class=\"math notranslate nohighlight\">\\(\\mathbb{Z}\\)</span> along a line, then colouring each equivalence class in a different colour.</p>",
+    "zh": "练习：画出这个关系，方法是沿直线画出底层类型 \\(\\mathbb{Z}\\) 的一部分，然后用不同颜色标出各个等价类。"
+  },
+  {
+    "id": "10_Relations:0086",
+    "file": "10_Relations.html",
+    "tag": "p",
+    "text": "Problem",
+    "html": "<p class=\"admonition-title\">Problem</p>",
+    "zh": "问题"
+  },
+  {
+    "id": "10_Relations:0087",
+    "file": "10_Relations.html",
+    "tag": "p",
+    "text": "Show that the relation \\(\\sim\\) on \\(\\mathbb{Z}\\times\\mathbb{N}\\) defined by, \\((a,b)\\sim(c,d)\\) if \\(a(d+1)=c(b+1)\\) , is an equivalence relation.",
+    "html": "<p>Show that the relation <span class=\"math notranslate nohighlight\">\\(\\sim\\)</span> on <span class=\"math notranslate nohighlight\">\\(\\mathbb{Z}\\times\\mathbb{N}\\)</span> defined by,\n<span class=\"math notranslate nohighlight\">\\((a,b)\\sim(c,d)\\)</span> if <span class=\"math notranslate nohighlight\">\\(a(d+1)=c(b+1)\\)</span>, is an equivalence relation.</p>",
+    "zh": "证明 \\(\\mathbb{Z}\\times\\mathbb{N}\\) 上由 \\((a,b)\\sim(c,d)\\) 当且仅当 \\(a(d+1)=c(b+1)\\) 定义的关系 \\(\\sim\\) 是等价关系。"
+  },
+  {
+    "id": "10_Relations:0088",
+    "file": "10_Relations.html",
+    "tag": "p",
+    "text": "Solution",
+    "html": "<p class=\"admonition-title\">Solution</p>",
+    "zh": "解答"
+  },
+  {
+    "id": "10_Relations:0089",
+    "file": "10_Relations.html",
+    "tag": "p",
+    "text": "For all \\((a,b)\\) in \\(\\mathbb{Z}\\times\\mathbb{N}\\) , \\(a(b+1)=a(b+1)\\) , so \\((a,b)\\sim (a,b)\\) . Therefore \\(\\sim\\) is reflexive.",
+    "html": "<p>For all <span class=\"math notranslate nohighlight\">\\((a,b)\\)</span> in <span class=\"math notranslate nohighlight\">\\(\\mathbb{Z}\\times\\mathbb{N}\\)</span>, <span class=\"math notranslate nohighlight\">\\(a(b+1)=a(b+1)\\)</span>, so\n<span class=\"math notranslate nohighlight\">\\((a,b)\\sim (a,b)\\)</span>.  Therefore <span class=\"math notranslate nohighlight\">\\(\\sim\\)</span> is reflexive.</p>",
+    "zh": "对 \\(\\mathbb{Z}\\times\\mathbb{N}\\) 中所有 \\((a,b)\\)，有 \\(a(b+1)=a(b+1)\\)，所以 \\((a,b)\\sim(a,b)\\)。因此 \\(\\sim\\) 是自反的。"
+  },
+  {
+    "id": "10_Relations:0090",
+    "file": "10_Relations.html",
+    "tag": "p",
+    "text": "For all \\((a,b)\\) and \\((c,d)\\) in \\(\\mathbb{Z}\\times\\mathbb{N}\\) , if \\((a,b)\\sim (c,d)\\) then \\(a(d+1)=c(b+1)\\) , so \\(c(b+1)=a(d+1)\\) , so \\((c,d)\\sim (a,b)\\) . Therefore \\(\\sim\\) is symmetric.",
+    "html": "<p>For all <span class=\"math notranslate nohighlight\">\\((a,b)\\)</span> and <span class=\"math notranslate nohighlight\">\\((c,d)\\)</span> in <span class=\"math notranslate nohighlight\">\\(\\mathbb{Z}\\times\\mathbb{N}\\)</span>, if\n<span class=\"math notranslate nohighlight\">\\((a,b)\\sim (c,d)\\)</span> then <span class=\"math notranslate nohighlight\">\\(a(d+1)=c(b+1)\\)</span>, so <span class=\"math notranslate nohighlight\">\\(c(b+1)=a(d+1)\\)</span>, so\n<span class=\"math notranslate nohighlight\">\\((c,d)\\sim (a,b)\\)</span>.  Therefore <span class=\"math notranslate nohighlight\">\\(\\sim\\)</span> is symmetric.</p>",
+    "zh": "对 \\(\\mathbb{Z}\\times\\mathbb{N}\\) 中所有 \\((a,b)\\) 和 \\((c,d)\\)，若 \\((a,b)\\sim(c,d)\\)，则 \\(a(d+1)=c(b+1)\\)，所以 \\(c(b+1)=a(d+1)\\)，从而 \\((c,d)\\sim(a,b)\\)。因此 \\(\\sim\\) 是对称的。"
+  },
+  {
+    "id": "10_Relations:0091",
+    "file": "10_Relations.html",
+    "tag": "p",
+    "text": "For all \\((a,b)\\) , \\((c,d)\\) and \\((e,f)\\) in \\(\\mathbb{Z}\\times\\mathbb{N}\\) , if \\((a,b)\\sim (c,d)\\) and \\((c,d)\\sim (e,f)\\) then \\(a(d+1)=c(b+1)\\) and \\(c(f+1)=e(d+1)\\) . We will show that \\(a(f+1)=e(b+1)\\) , which will imply that \\((a,b)\\sim (e,f)\\) , which proves the transitivity of \\(\\sim\\) .",
+    "html": "<p>For all <span class=\"math notranslate nohighlight\">\\((a,b)\\)</span>, <span class=\"math notranslate nohighlight\">\\((c,d)\\)</span> and <span class=\"math notranslate nohighlight\">\\((e,f)\\)</span> in <span class=\"math notranslate nohighlight\">\\(\\mathbb{Z}\\times\\mathbb{N}\\)</span>, if\n<span class=\"math notranslate nohighlight\">\\((a,b)\\sim (c,d)\\)</span> and <span class=\"math notranslate nohighlight\">\\((c,d)\\sim (e,f)\\)</span> then <span class=\"math notranslate nohighlight\">\\(a(d+1)=c(b+1)\\)</span> and\n<span class=\"math notranslate nohighlight\">\\(c(f+1)=e(d+1)\\)</span>.  We will show that <span class=\"math notranslate nohighlight\">\\(a(f+1)=e(b+1)\\)</span>, which will imply that\n<span class=\"math notranslate nohighlight\">\\((a,b)\\sim (e,f)\\)</span>, which proves the transitivity of <span class=\"math notranslate nohighlight\">\\(\\sim\\)</span>.</p>",
+    "zh": "对 \\(\\mathbb{Z}\\times\\mathbb{N}\\) 中所有 \\((a,b)\\)、\\((c,d)\\)、\\((e,f)\\)，若 \\((a,b)\\sim(c,d)\\) 且 \\((c,d)\\sim(e,f)\\)，则 \\(a(d+1)=c(b+1)\\) 且 \\(c(f+1)=e(d+1)\\)。我们将证明 \\(a(f+1)=e(b+1)\\)，这将推出 \\((a,b)\\sim(e,f)\\)，从而证明 \\(\\sim\\) 的传递性。"
+  },
+  {
+    "id": "10_Relations:0092",
+    "file": "10_Relations.html",
+    "tag": "p",
+    "text": "Since \\(d+1>0\\) , it suffices to prove that \\((d+1)\\left[a(f+1)\\right]=(d+1)\\left[e(b+1)\\right]\\) . Let \\(B:= b+1\\) , \\(D:= d+1\\) , and \\(F:= f+1\\) : then we know that \\(aD=cB\\) and \\(cF=eD\\) and need to prove that \\(D(aF)=D(eB)\\) .",
+    "html": "<p>Since <span class=\"math notranslate nohighlight\">\\(d+1&gt;0\\)</span>, it suffices to prove that\n<span class=\"math notranslate nohighlight\">\\((d+1)\\left[a(f+1)\\right]=(d+1)\\left[e(b+1)\\right]\\)</span>.  Let\n<span class=\"math notranslate nohighlight\">\\(B:= b+1\\)</span>, <span class=\"math notranslate nohighlight\">\\(D:= d+1\\)</span>, and <span class=\"math notranslate nohighlight\">\\(F:= f+1\\)</span>: then we know that <span class=\"math notranslate nohighlight\">\\(aD=cB\\)</span> and\n<span class=\"math notranslate nohighlight\">\\(cF=eD\\)</span> and need to prove that <span class=\"math notranslate nohighlight\">\\(D(aF)=D(eB)\\)</span>.</p>",
+    "zh": "由于 \\(d+1>0\\)，只需证明 \\((d+1)\\left[a(f+1)\\right]=(d+1)\\left[e(b+1)\\right]\\)。记 \\(B:=b+1\\)、\\(D:=d+1\\)、\\(F:=f+1\\)；于是我们已知 \\(aD=cB\\) 且 \\(cF=eD\\)，并需要证明 \\(D(aF)=D(eB)\\)。"
+  },
+  {
+    "id": "10_Relations:0093",
+    "file": "10_Relations.html",
+    "tag": "p",
+    "text": "Indeed,",
+    "html": "<p>Indeed,</p>",
+    "zh": "确实，"
+  },
+  {
+    "id": "10_Relations:0094",
+    "file": "10_Relations.html",
+    "tag": "p",
+    "text": "Now, sketch the relation \\(\\sim\\) , by drawing (a portion of) the underlying type \\(\\mathbb{Z}\\times\\mathbb{N}\\) in the plane, then colouring each equivalence class in a different colour.",
+    "html": "<p>Now, sketch the relation <span class=\"math notranslate nohighlight\">\\(\\sim\\)</span>, by drawing (a portion of) the underlying type\n<span class=\"math notranslate nohighlight\">\\(\\mathbb{Z}\\times\\mathbb{N}\\)</span> in the plane, then colouring each equivalence class in a\ndifferent colour.</p>",
+    "zh": "现在画出关系 \\(\\sim\\)：在平面中画出底层类型 \\(\\mathbb{Z}\\times\\mathbb{N}\\) 的一部分，然后用不同颜色标出各个等价类。"
+  },
+  {
+    "id": "10_Relations:0095",
+    "file": "10_Relations.html",
+    "tag": "p",
+    "text": "Theorem",
+    "html": "<p class=\"admonition-title\">Theorem</p>",
+    "zh": "定理"
+  },
+  {
+    "id": "10_Relations:0096",
+    "file": "10_Relations.html",
+    "tag": "p",
+    "text": "The relation \\(\\sim\\) on the type of level-0 types defined by, \\(\\alpha\\sim\\beta\\) if there exists a bijective function \\(f:\\alpha\\to\\beta\\) , is an equivalence relation.",
+    "html": "<p>The relation <span class=\"math notranslate nohighlight\">\\(\\sim\\)</span> on the type of level-0 types defined by,\n<span class=\"math notranslate nohighlight\">\\(\\alpha\\sim\\beta\\)</span> if there exists a bijective function <span class=\"math notranslate nohighlight\">\\(f:\\alpha\\to\\beta\\)</span>,\nis an equivalence relation.</p>",
+    "zh": "在 0 层类型的类型上定义关系 \\(\\sim\\)：\\(\\alpha\\sim\\beta\\) 当且仅当存在一个双射函数 \\(f:\\alpha\\to\\beta\\)。这个关系是等价关系。"
+  },
+  {
+    "id": "10_Relations:0097",
+    "file": "10_Relations.html",
+    "tag": "li",
+    "text": "reflexive;",
+    "html": "<li><p>reflexive;</p></li>",
+    "zh": "自反；"
+  },
+  {
+    "id": "10_Relations:0098",
+    "file": "10_Relations.html",
+    "tag": "li",
+    "text": "symmetric;",
+    "html": "<li><p>symmetric;</p></li>",
+    "zh": "对称；"
+  },
+  {
+    "id": "10_Relations:0099",
+    "file": "10_Relations.html",
+    "tag": "li",
+    "text": "antisymmetric;",
+    "html": "<li><p>antisymmetric;</p></li>",
+    "zh": "反对称；"
+  },
+  {
+    "id": "10_Relations:0100",
+    "file": "10_Relations.html",
+    "tag": "li",
+    "text": "transitive.",
+    "html": "<li><p>transitive.</p></li>",
+    "zh": "传递。"
+  },
+  {
+    "id": "10_Relations:0101",
+    "file": "10_Relations.html",
+    "tag": "li",
+    "text": "reflexive;",
+    "html": "<li><p>reflexive;</p></li>",
+    "zh": "自反；"
+  },
+  {
+    "id": "10_Relations:0102",
+    "file": "10_Relations.html",
+    "tag": "li",
+    "text": "symmetric;",
+    "html": "<li><p>symmetric;</p></li>",
+    "zh": "对称；"
+  },
+  {
+    "id": "10_Relations:0103",
+    "file": "10_Relations.html",
+    "tag": "li",
+    "text": "antisymmetric;",
+    "html": "<li><p>antisymmetric;</p></li>",
+    "zh": "反对称；"
+  },
+  {
+    "id": "10_Relations:0104",
+    "file": "10_Relations.html",
+    "tag": "li",
+    "text": "transitive.",
+    "html": "<li><p>transitive.</p></li>",
+    "zh": "传递。"
+  },
+  {
+    "id": "10_Relations:0105",
+    "file": "10_Relations.html",
+    "tag": "li",
+    "text": "reflexive;",
+    "html": "<li><p>reflexive;</p></li>",
+    "zh": "自反；"
+  },
+  {
+    "id": "10_Relations:0106",
+    "file": "10_Relations.html",
+    "tag": "li",
+    "text": "symmetric;",
+    "html": "<li><p>symmetric;</p></li>",
+    "zh": "对称；"
+  },
+  {
+    "id": "10_Relations:0107",
+    "file": "10_Relations.html",
+    "tag": "li",
+    "text": "antisymmetric;",
+    "html": "<li><p>antisymmetric;</p></li>",
+    "zh": "反对称；"
+  },
+  {
+    "id": "10_Relations:0108",
+    "file": "10_Relations.html",
+    "tag": "li",
+    "text": "transitive.",
+    "html": "<li><p>transitive.</p></li>",
+    "zh": "传递。"
+  },
+  {
+    "id": "10_Relations:0109",
+    "file": "10_Relations.html",
+    "tag": "li",
+    "text": "Show that the relation \\(<\\) on \\(\\mathbb{R}\\) is not symmetric. example : ¬ Symmetric (( · : ℝ ) < · ) := by sorry",
+    "html": "<li><p>Show that the relation <span class=\"math notranslate nohighlight\">\\(&lt;\\)</span> on <span class=\"math notranslate nohighlight\">\\(\\mathbb{R}\\)</span> is not symmetric.</p>\n<div class=\"highlight-lean notranslate\"><div class=\"highlight\"><pre><span></span><span class=\"kd\">example</span> <span class=\"o\">:</span> <span class=\"bp\">¬</span> <span class=\"n\">Symmetric</span> <span class=\"o\">((</span><span class=\"bp\">·</span><span class=\"o\">:</span><span class=\"n\">ℝ</span><span class=\"o\">)</span> <span class=\"bp\">&lt;</span> <span class=\"bp\">·</span><span class=\"o\">)</span> <span class=\"o\">:=</span> <span class=\"kd\">by</span>\n  <span class=\"gr\">sorry</span>\n</pre></div>\n</div>\n</li>",
+    "zh": "证明 \\(\\mathbb{R}\\) 上的关系 \\(<\\) 不是对称的。"
+  },
+  {
+    "id": "10_Relations:0110",
+    "file": "10_Relations.html",
+    "tag": "li",
+    "text": "Show that the relation \\(\\sim\\) on \\(\\mathbb{Z}\\) , defined by, \\(x\\sim y\\) if \\(x\\equiv y \\mod 2\\) , is not antisymmetric. local infix : 50 \"∼\" => fun ( x y : ℤ ) ↦ x ≡ y [ ZMOD 2 ] example : ¬ AntiSymmetric ( · ∼ · ) := by sorry",
+    "html": "<li><p>Show that the relation <span class=\"math notranslate nohighlight\">\\(\\sim\\)</span> on <span class=\"math notranslate nohighlight\">\\(\\mathbb{Z}\\)</span>, defined by, <span class=\"math notranslate nohighlight\">\\(x\\sim y\\)</span> if\n<span class=\"math notranslate nohighlight\">\\(x\\equiv y \\mod 2\\)</span>, is not antisymmetric.</p>\n<div class=\"highlight-lean notranslate\"><div class=\"highlight\"><pre><span></span><span class=\"kn\">local</span> <span class=\"kd\">infix</span><span class=\"o\">:</span><span class=\"mi\">50</span> <span class=\"s2\">\"∼\"</span> <span class=\"bp\">=&gt;</span> <span class=\"k\">fun</span> <span class=\"o\">(</span><span class=\"n\">x</span> <span class=\"n\">y</span> <span class=\"o\">:</span> <span class=\"n\">ℤ</span><span class=\"o\">)</span> <span class=\"bp\">↦</span> <span class=\"n\">x</span> <span class=\"bp\">≡</span> <span class=\"n\">y</span> <span class=\"o\">[</span><span class=\"n\">ZMOD</span> <span class=\"mi\">2</span><span class=\"o\">]</span>\n\n<span class=\"kd\">example</span> <span class=\"o\">:</span> <span class=\"bp\">¬</span> <span class=\"n\">AntiSymmetric</span> <span class=\"o\">(</span><span class=\"bp\">·</span> <span class=\"bp\">∼</span> <span class=\"bp\">·</span><span class=\"o\">)</span> <span class=\"o\">:=</span> <span class=\"kd\">by</span>\n  <span class=\"gr\">sorry</span>\n</pre></div>\n</div>\n</li>",
+    "zh": "证明 \\(\\mathbb{Z}\\) 上如下定义的关系 \\(\\sim\\) 不是反对称的：\\(x\\sim y\\) 当且仅当 \\(x\\equiv y \\mod 2\\)。"
+  },
+  {
+    "id": "10_Relations:0111",
+    "file": "10_Relations.html",
+    "tag": "li",
+    "text": "Consider the following finite inductive type Little, and the following relation \\(\\sim\\) on the Little type. Determine which of these properties hold for the relation \\(\\sim\\) : reflexive; symmetric; antisymmetric; transitive. section inductive Little | meg | jo | beth | amy deriving DecidableEq open Little @[reducible] def s : Little → Little → Prop | meg , meg => True | meg , jo => True | meg , beth => True | meg , amy => True | jo , meg => True | jo , jo => True | jo , beth => True | jo , amy => False | beth , meg => True | beth , jo => True | beth , beth => False | beth , amy => True | amy , meg => True | amy , jo => False | amy , beth => True | amy , amy => True local infix : 50 \" ∼ \" => s example : Reflexive ( · ∼ · ) := by sorry example : ¬ Reflexive ( · ∼ · ) := by sorry example : Symmetric ( · ∼ · ) := by sorry example : ¬ Symmetric ( · ∼ · ) := by sorry example : AntiSymmetric ( · ∼ · ) := by sorry example : ¬ AntiSymmetric ( · ∼ · ) := by sorry example : Transitive ( · ∼ · ) := by sorry example : ¬ Transitive ( · ∼ · ) := by sorry",
+    "html": "<li><p>Consider the following finite inductive type Little, and the following relation <span class=\"math notranslate nohighlight\">\\(\\sim\\)</span> on\nthe Little type. Determine which of these properties hold for the relation <span class=\"math notranslate nohighlight\">\\(\\sim\\)</span>:</p>\n<ol class=\"lowerroman simple\">\n<li><p>reflexive;</p></li>\n<li><p>symmetric;</p></li>\n<li><p>antisymmetric;</p></li>\n<li><p>transitive.</p></li>\n</ol>\n<div class=\"highlight-lean notranslate\"><div class=\"highlight\"><pre><span></span><span class=\"kn\">section</span>\n<span class=\"kd\">inductive</span> <span class=\"n\">Little</span>\n  <span class=\"bp\">|</span> <span class=\"n\">meg</span>\n  <span class=\"bp\">|</span> <span class=\"n\">jo</span>\n  <span class=\"bp\">|</span> <span class=\"n\">beth</span>\n  <span class=\"bp\">|</span> <span class=\"n\">amy</span>\n  <span class=\"n\">deriving</span> <span class=\"n\">DecidableEq</span>\n\n<span class=\"kn\">open</span> <span class=\"n\">Little</span>\n\n<span class=\"kd\">@[reducible]</span> <span class=\"kd\">def</span> <span class=\"n\">s</span> <span class=\"o\">:</span> <span class=\"n\">Little</span> <span class=\"bp\">→</span> <span class=\"n\">Little</span> <span class=\"bp\">→</span> <span class=\"kt\">Prop</span>\n  <span class=\"bp\">|</span> <span class=\"n\">meg</span><span class=\"o\">,</span> <span class=\"n\">meg</span> <span class=\"bp\">=&gt;</span> <span class=\"n\">True</span>\n  <span class=\"bp\">|</span> <span class=\"n\">meg</span><span class=\"o\">,</span> <span class=\"n\">jo</span> <span class=\"bp\">=&gt;</span> <span class=\"n\">True</span>\n  <span class=\"bp\">|</span> <span class=\"n\">meg</span><span class=\"o\">,</span> <span class=\"n\">beth</span> <span class=\"bp\">=&gt;</span> <span class=\"n\">True</span>\n  <span class=\"bp\">|</span> <span class=\"n\">meg</span><span class=\"o\">,</span> <span class=\"n\">amy</span> <span class=\"bp\">=&gt;</span> <span class=\"n\">True</span>\n  <span class=\"bp\">|</span> <span class=\"n\">jo</span><span class=\"o\">,</span> <span class=\"n\">meg</span> <span class=\"bp\">=&gt;</span> <span class=\"n\">True</span>\n  <span class=\"bp\">|</span> <span class=\"n\">jo</span><span class=\"o\">,</span> <span class=\"n\">jo</span> <span class=\"bp\">=&gt;</span> <span class=\"n\">True</span>\n  <span class=\"bp\">|</span> <span class=\"n\">jo</span><span class=\"o\">,</span> <span class=\"n\">beth</span> <span class=\"bp\">=&gt;</span> <span class=\"n\">True</span>\n  <span class=\"bp\">|</span> <span class=\"n\">jo</span><span class=\"o\">,</span> <span class=\"n\">amy</span> <span class=\"bp\">=&gt;</span> <span class=\"n\">False</span>\n  <span class=\"bp\">|</span> <span class=\"n\">beth</span><span class=\"o\">,</span> <span class=\"n\">meg</span> <span class=\"bp\">=&gt;</span> <span class=\"n\">True</span>\n  <span class=\"bp\">|</span> <span class=\"n\">beth</span><span class=\"o\">,</span> <span class=\"n\">jo</span> <span class=\"bp\">=&gt;</span> <span class=\"n\">True</span>\n  <span class=\"bp\">|</span> <span class=\"n\">beth</span><span class=\"o\">,</span> <span class=\"n\">beth</span> <span class=\"bp\">=&gt;</span> <span class=\"n\">False</span>\n  <span class=\"bp\">|</span> <span class=\"n\">beth</span><span class=\"o\">,</span> <span class=\"n\">amy</span> <span class=\"bp\">=&gt;</span> <span class=\"n\">True</span>\n  <span class=\"bp\">|</span> <span class=\"n\">amy</span><span class=\"o\">,</span> <span class=\"n\">meg</span> <span class=\"bp\">=&gt;</span> <span class=\"n\">True</span>\n  <span class=\"bp\">|</span> <span class=\"n\">amy</span><span class=\"o\">,</span> <span class=\"n\">jo</span> <span class=\"bp\">=&gt;</span> <span class=\"n\">False</span>\n  <span class=\"bp\">|</span> <span class=\"n\">amy</span><span class=\"o\">,</span> <span class=\"n\">beth</span> <span class=\"bp\">=&gt;</span> <span class=\"n\">True</span>\n  <span class=\"bp\">|</span> <span class=\"n\">amy</span><span class=\"o\">,</span> <span class=\"n\">amy</span> <span class=\"bp\">=&gt;</span> <span class=\"n\">True</span>\n\n<span class=\"kn\">local</span> <span class=\"kd\">infix</span><span class=\"o\">:</span><span class=\"mi\">50</span> <span class=\"s2\">\" ∼ \"</span> <span class=\"bp\">=&gt;</span> <span class=\"n\">s</span>\n</pre></div>\n</div>\n<figure class=\"align-default\">\n<img alt=\"_images/meg-jo-beth-amy.svg\" src=\"_images/meg-jo-beth-amy.svg\"/></figure>\n<div class=\"highlight-lean notranslate\"><div class=\"highlight\"><pre><span></span><span class=\"kd\">example</span> <span class=\"o\">:</span> <span class=\"n\">Reflexive</span> <span class=\"o\">(</span><span class=\"bp\">·</span> <span class=\"bp\">∼</span> <span class=\"bp\">·</span><span class=\"o\">)</span> <span class=\"o\">:=</span> <span class=\"kd\">by</span>\n  <span class=\"gr\">sorry</span>\n\n<span class=\"kd\">example</span> <span class=\"o\">:</span> <span class=\"bp\">¬</span> <span class=\"n\">Reflexive</span> <span class=\"o\">(</span><span class=\"bp\">·</span> <span class=\"bp\">∼</span> <span class=\"bp\">·</span><span class=\"o\">)</span> <span class=\"o\">:=</span> <span class=\"kd\">by</span>\n  <span class=\"gr\">sorry</span>\n\n<span class=\"kd\">example</span> <span class=\"o\">:</span> <span class=\"n\">Symmetric</span> <span class=\"o\">(</span><span class=\"bp\">·</span> <span class=\"bp\">∼</span> <span class=\"bp\">·</span><span class=\"o\">)</span> <span class=\"o\">:=</span> <span class=\"kd\">by</span>\n  <span class=\"gr\">sorry</span>\n\n<span class=\"kd\">example</span> <span class=\"o\">:</span> <span class=\"bp\">¬</span> <span class=\"n\">Symmetric</span> <span class=\"o\">(</span><span class=\"bp\">·</span> <span class=\"bp\">∼</span> <span class=\"bp\">·</span><span class=\"o\">)</span> <span class=\"o\">:=</span> <span class=\"kd\">by</span>\n  <span class=\"gr\">sorry</span>\n\n<span class=\"kd\">example</span> <span class=\"o\">:</span> <span class=\"n\">AntiSymmetric</span> <span class=\"o\">(</span><span class=\"bp\">·</span> <span class=\"bp\">∼</span> <span class=\"bp\">·</span><span class=\"o\">)</span> <span class=\"o\">:=</span> <span class=\"kd\">by</span>\n  <span class=\"gr\">sorry</span>\n\n<span class=\"kd\">example</span> <span class=\"o\">:</span> <span class=\"bp\">¬</span> <span class=\"n\">AntiSymmetric</span> <span class=\"o\">(</span><span class=\"bp\">·</span> <span class=\"bp\">∼</span> <span class=\"bp\">·</span><span class=\"o\">)</span> <span class=\"o\">:=</span> <span class=\"kd\">by</span>\n  <span class=\"gr\">sorry</span>\n\n<span class=\"kd\">example</span> <span class=\"o\">:</span> <span class=\"n\">Transitive</span> <span class=\"o\">(</span><span class=\"bp\">·</span> <span class=\"bp\">∼</span> <span class=\"bp\">·</span><span class=\"o\">)</span> <span class=\"o\">:=</span> <span class=\"kd\">by</span>\n  <span class=\"gr\">sorry</span>\n\n<span class=\"kd\">example</span> <span class=\"o\">:</span> <span class=\"bp\">¬</span> <span class=\"n\">Transitive</span> <span class=\"o\">(</span><span class=\"bp\">·</span> <span class=\"bp\">∼</span> <span class=\"bp\">·</span><span class=\"o\">)</span> <span class=\"o\">:=</span> <span class=\"kd\">by</span>\n  <span class=\"gr\">sorry</span>\n</pre></div>\n</div>\n</li>",
+    "zh": "考虑如下有限归纳类型 Little，以及 Little 类型上的如下关系 \\(\\sim\\)。判断关系 \\(\\sim\\) 具有下列哪些性质：自反；对称；反对称；传递。"
+  },
+  {
+    "id": "10_Relations:0112",
+    "file": "10_Relations.html",
+    "tag": "li",
+    "text": "reflexive;",
+    "html": "<li><p>reflexive;</p></li>",
+    "zh": "自反；"
+  },
+  {
+    "id": "10_Relations:0113",
+    "file": "10_Relations.html",
+    "tag": "li",
+    "text": "symmetric;",
+    "html": "<li><p>symmetric;</p></li>",
+    "zh": "对称；"
+  },
+  {
+    "id": "10_Relations:0114",
+    "file": "10_Relations.html",
+    "tag": "li",
+    "text": "antisymmetric;",
+    "html": "<li><p>antisymmetric;</p></li>",
+    "zh": "反对称；"
+  },
+  {
+    "id": "10_Relations:0115",
+    "file": "10_Relations.html",
+    "tag": "li",
+    "text": "transitive.",
+    "html": "<li><p>transitive.</p></li>",
+    "zh": "传递。"
+  },
+  {
+    "id": "10_Relations:0116",
+    "file": "10_Relations.html",
+    "tag": "li",
+    "text": "Determine which of these properties hold for the relation \\(\\sim\\) on \\(\\mathbb{Z}\\) , defined by, \\(x\\sim y\\) if \\(y\\equiv x+1\\mod 5\\) : reflexive; symmetric; antisymmetric; transitive. Also sketch (a representative portion of) this relation as a directed graph. local infix : 50 \"∼\" => fun ( x y : ℤ ) ↦ y ≡ x + 1 [ ZMOD 5 ] example : Reflexive ( · ∼ · ) := by sorry example : ¬ Reflexive ( · ∼ · ) := by sorry example : Symmetric ( · ∼ · ) := by sorry example : ¬ Symmetric ( · ∼ · ) := by sorry example : AntiSymmetric ( · ∼ · ) := by sorry example : ¬ AntiSymmetric ( · ∼ · ) := by sorry example : Transitive ( · ∼ · ) := by sorry example : ¬ Transitive ( · ∼ · ) := by sorry",
+    "html": "<li><p>Determine which of these properties hold for the relation <span class=\"math notranslate nohighlight\">\\(\\sim\\)</span> on <span class=\"math notranslate nohighlight\">\\(\\mathbb{Z}\\)</span>,\ndefined by, <span class=\"math notranslate nohighlight\">\\(x\\sim y\\)</span> if <span class=\"math notranslate nohighlight\">\\(y\\equiv x+1\\mod 5\\)</span>:</p>\n<ol class=\"lowerroman simple\">\n<li><p>reflexive;</p></li>\n<li><p>symmetric;</p></li>\n<li><p>antisymmetric;</p></li>\n<li><p>transitive.</p></li>\n</ol>\n<p>Also sketch (a representative portion of) this relation as a directed graph.</p>\n<div class=\"highlight-lean notranslate\"><div class=\"highlight\"><pre><span></span><span class=\"kn\">local</span> <span class=\"kd\">infix</span><span class=\"o\">:</span><span class=\"mi\">50</span> <span class=\"s2\">\"∼\"</span> <span class=\"bp\">=&gt;</span> <span class=\"k\">fun</span> <span class=\"o\">(</span><span class=\"n\">x</span> <span class=\"n\">y</span> <span class=\"o\">:</span> <span class=\"n\">ℤ</span><span class=\"o\">)</span> <span class=\"bp\">↦</span> <span class=\"n\">y</span> <span class=\"bp\">≡</span> <span class=\"n\">x</span> <span class=\"bp\">+</span> <span class=\"mi\">1</span> <span class=\"o\">[</span><span class=\"n\">ZMOD</span> <span class=\"mi\">5</span><span class=\"o\">]</span>\n\n<span class=\"kd\">example</span> <span class=\"o\">:</span> <span class=\"n\">Reflexive</span> <span class=\"o\">(</span><span class=\"bp\">·</span> <span class=\"bp\">∼</span> <span class=\"bp\">·</span><span class=\"o\">)</span> <span class=\"o\">:=</span> <span class=\"kd\">by</span>\n  <span class=\"gr\">sorry</span>\n\n<span class=\"kd\">example</span> <span class=\"o\">:</span> <span class=\"bp\">¬</span> <span class=\"n\">Reflexive</span> <span class=\"o\">(</span><span class=\"bp\">·</span> <span class=\"bp\">∼</span> <span class=\"bp\">·</span><span class=\"o\">)</span> <span class=\"o\">:=</span> <span class=\"kd\">by</span>\n  <span class=\"gr\">sorry</span>\n\n<span class=\"kd\">example</span> <span class=\"o\">:</span> <span class=\"n\">Symmetric</span> <span class=\"o\">(</span><span class=\"bp\">·</span> <span class=\"bp\">∼</span> <span class=\"bp\">·</span><span class=\"o\">)</span> <span class=\"o\">:=</span> <span class=\"kd\">by</span>\n  <span class=\"gr\">sorry</span>\n\n<span class=\"kd\">example</span> <span class=\"o\">:</span> <span class=\"bp\">¬</span> <span class=\"n\">Symmetric</span> <span class=\"o\">(</span><span class=\"bp\">·</span> <span class=\"bp\">∼</span> <span class=\"bp\">·</span><span class=\"o\">)</span> <span class=\"o\">:=</span> <span class=\"kd\">by</span>\n  <span class=\"gr\">sorry</span>\n\n<span class=\"kd\">example</span> <span class=\"o\">:</span> <span class=\"n\">AntiSymmetric</span> <span class=\"o\">(</span><span class=\"bp\">·</span> <span class=\"bp\">∼</span> <span class=\"bp\">·</span><span class=\"o\">)</span> <span class=\"o\">:=</span> <span class=\"kd\">by</span>\n  <span class=\"gr\">sorry</span>\n\n<span class=\"kd\">example</span> <span class=\"o\">:</span> <span class=\"bp\">¬</span> <span class=\"n\">AntiSymmetric</span> <span class=\"o\">(</span><span class=\"bp\">·</span> <span class=\"bp\">∼</span> <span class=\"bp\">·</span><span class=\"o\">)</span> <span class=\"o\">:=</span> <span class=\"kd\">by</span>\n  <span class=\"gr\">sorry</span>\n\n<span class=\"kd\">example</span> <span class=\"o\">:</span> <span class=\"n\">Transitive</span> <span class=\"o\">(</span><span class=\"bp\">·</span> <span class=\"bp\">∼</span> <span class=\"bp\">·</span><span class=\"o\">)</span> <span class=\"o\">:=</span> <span class=\"kd\">by</span>\n  <span class=\"gr\">sorry</span>\n\n<span class=\"kd\">example</span> <span class=\"o\">:</span> <span class=\"bp\">¬</span> <span class=\"n\">Transitive</span> <span class=\"o\">(</span><span class=\"bp\">·</span> <span class=\"bp\">∼</span> <span class=\"bp\">·</span><span class=\"o\">)</span> <span class=\"o\">:=</span> <span class=\"kd\">by</span>\n  <span class=\"gr\">sorry</span>\n</pre></div>\n</div>\n</li>",
+    "zh": "判断 \\(\\mathbb{Z}\\) 上如下定义的关系 \\(\\sim\\) 具有哪些性质：\\(x\\sim y\\) 当且仅当 \\(y\\equiv x+1\\mod 5\\)：自反；对称；反对称；传递。并把这个关系的一段代表性部分画成有向图。"
+  },
+  {
+    "id": "10_Relations:0117",
+    "file": "10_Relations.html",
+    "tag": "li",
+    "text": "reflexive;",
+    "html": "<li><p>reflexive;</p></li>",
+    "zh": "自反；"
+  },
+  {
+    "id": "10_Relations:0118",
+    "file": "10_Relations.html",
+    "tag": "li",
+    "text": "symmetric;",
+    "html": "<li><p>symmetric;</p></li>",
+    "zh": "对称；"
+  },
+  {
+    "id": "10_Relations:0119",
+    "file": "10_Relations.html",
+    "tag": "li",
+    "text": "antisymmetric;",
+    "html": "<li><p>antisymmetric;</p></li>",
+    "zh": "反对称；"
+  },
+  {
+    "id": "10_Relations:0120",
+    "file": "10_Relations.html",
+    "tag": "li",
+    "text": "transitive.",
+    "html": "<li><p>transitive.</p></li>",
+    "zh": "传递。"
+  },
+  {
+    "id": "10_Relations:0121",
+    "file": "10_Relations.html",
+    "tag": "li",
+    "text": "Determine which of these properties hold for the relation \\(\\sim\\) on \\(\\mathbb{Z}\\) , defined by, \\(x\\sim y\\) if \\(x+y\\equiv 0\\mod 3\\) : reflexive; symmetric; antisymmetric; transitive. Also sketch (a representative portion of) this relation as a directed graph. local infix : 50 \"∼\" => fun ( x y : ℤ ) ↦ x + y ≡ 0 [ ZMOD 3 ] example : Reflexive ( · ∼ · ) := by sorry example : ¬ Reflexive ( · ∼ · ) := by sorry example : Symmetric ( · ∼ · ) := by sorry example : ¬ Symmetric ( · ∼ · ) := by sorry example : AntiSymmetric ( · ∼ · ) := by sorry example : ¬ AntiSymmetric ( · ∼ · ) := by sorry example : Transitive ( · ∼ · ) := by sorry example : ¬ Transitive ( · ∼ · ) := by sorry",
+    "html": "<li><p>Determine which of these properties hold for the relation <span class=\"math notranslate nohighlight\">\\(\\sim\\)</span> on <span class=\"math notranslate nohighlight\">\\(\\mathbb{Z}\\)</span>,\ndefined by, <span class=\"math notranslate nohighlight\">\\(x\\sim y\\)</span> if <span class=\"math notranslate nohighlight\">\\(x+y\\equiv 0\\mod 3\\)</span>:</p>\n<ol class=\"lowerroman simple\">\n<li><p>reflexive;</p></li>\n<li><p>symmetric;</p></li>\n<li><p>antisymmetric;</p></li>\n<li><p>transitive.</p></li>\n</ol>\n<p>Also sketch (a representative portion of) this relation as a directed graph.</p>\n<div class=\"highlight-lean notranslate\"><div class=\"highlight\"><pre><span></span><span class=\"kn\">local</span> <span class=\"kd\">infix</span><span class=\"o\">:</span><span class=\"mi\">50</span> <span class=\"s2\">\"∼\"</span> <span class=\"bp\">=&gt;</span> <span class=\"k\">fun</span> <span class=\"o\">(</span><span class=\"n\">x</span> <span class=\"n\">y</span> <span class=\"o\">:</span> <span class=\"n\">ℤ</span><span class=\"o\">)</span> <span class=\"bp\">↦</span> <span class=\"n\">x</span> <span class=\"bp\">+</span> <span class=\"n\">y</span> <span class=\"bp\">≡</span> <span class=\"mi\">0</span> <span class=\"o\">[</span><span class=\"n\">ZMOD</span> <span class=\"mi\">3</span><span class=\"o\">]</span>\n\n<span class=\"kd\">example</span> <span class=\"o\">:</span> <span class=\"n\">Reflexive</span> <span class=\"o\">(</span><span class=\"bp\">·</span> <span class=\"bp\">∼</span> <span class=\"bp\">·</span><span class=\"o\">)</span> <span class=\"o\">:=</span> <span class=\"kd\">by</span>\n  <span class=\"gr\">sorry</span>\n\n<span class=\"kd\">example</span> <span class=\"o\">:</span> <span class=\"bp\">¬</span> <span class=\"n\">Reflexive</span> <span class=\"o\">(</span><span class=\"bp\">·</span> <span class=\"bp\">∼</span> <span class=\"bp\">·</span><span class=\"o\">)</span> <span class=\"o\">:=</span> <span class=\"kd\">by</span>\n  <span class=\"gr\">sorry</span>\n\n<span class=\"kd\">example</span> <span class=\"o\">:</span> <span class=\"n\">Symmetric</span> <span class=\"o\">(</span><span class=\"bp\">·</span> <span class=\"bp\">∼</span> <span class=\"bp\">·</span><span class=\"o\">)</span> <span class=\"o\">:=</span> <span class=\"kd\">by</span>\n  <span class=\"gr\">sorry</span>\n\n<span class=\"kd\">example</span> <span class=\"o\">:</span> <span class=\"bp\">¬</span> <span class=\"n\">Symmetric</span> <span class=\"o\">(</span><span class=\"bp\">·</span> <span class=\"bp\">∼</span> <span class=\"bp\">·</span><span class=\"o\">)</span> <span class=\"o\">:=</span> <span class=\"kd\">by</span>\n  <span class=\"gr\">sorry</span>\n\n<span class=\"kd\">example</span> <span class=\"o\">:</span> <span class=\"n\">AntiSymmetric</span> <span class=\"o\">(</span><span class=\"bp\">·</span> <span class=\"bp\">∼</span> <span class=\"bp\">·</span><span class=\"o\">)</span> <span class=\"o\">:=</span> <span class=\"kd\">by</span>\n  <span class=\"gr\">sorry</span>\n\n<span class=\"kd\">example</span> <span class=\"o\">:</span> <span class=\"bp\">¬</span> <span class=\"n\">AntiSymmetric</span> <span class=\"o\">(</span><span class=\"bp\">·</span> <span class=\"bp\">∼</span> <span class=\"bp\">·</span><span class=\"o\">)</span> <span class=\"o\">:=</span> <span class=\"kd\">by</span>\n  <span class=\"gr\">sorry</span>\n\n<span class=\"kd\">example</span> <span class=\"o\">:</span> <span class=\"n\">Transitive</span> <span class=\"o\">(</span><span class=\"bp\">·</span> <span class=\"bp\">∼</span> <span class=\"bp\">·</span><span class=\"o\">)</span> <span class=\"o\">:=</span> <span class=\"kd\">by</span>\n  <span class=\"gr\">sorry</span>\n\n<span class=\"kd\">example</span> <span class=\"o\">:</span> <span class=\"bp\">¬</span> <span class=\"n\">Transitive</span> <span class=\"o\">(</span><span class=\"bp\">·</span> <span class=\"bp\">∼</span> <span class=\"bp\">·</span><span class=\"o\">)</span> <span class=\"o\">:=</span> <span class=\"kd\">by</span>\n  <span class=\"gr\">sorry</span>\n</pre></div>\n</div>\n</li>",
+    "zh": "判断 \\(\\mathbb{Z}\\) 上如下定义的关系 \\(\\sim\\) 具有哪些性质：\\(x\\sim y\\) 当且仅当 \\(x+y\\equiv 0\\mod 3\\)：自反；对称；反对称；传递。并把这个关系的一段代表性部分画成有向图。"
+  },
+  {
+    "id": "10_Relations:0122",
+    "file": "10_Relations.html",
+    "tag": "li",
+    "text": "reflexive;",
+    "html": "<li><p>reflexive;</p></li>",
+    "zh": "自反；"
+  },
+  {
+    "id": "10_Relations:0123",
+    "file": "10_Relations.html",
+    "tag": "li",
+    "text": "symmetric;",
+    "html": "<li><p>symmetric;</p></li>",
+    "zh": "对称；"
+  },
+  {
+    "id": "10_Relations:0124",
+    "file": "10_Relations.html",
+    "tag": "li",
+    "text": "antisymmetric;",
+    "html": "<li><p>antisymmetric;</p></li>",
+    "zh": "反对称；"
+  },
+  {
+    "id": "10_Relations:0125",
+    "file": "10_Relations.html",
+    "tag": "li",
+    "text": "transitive.",
+    "html": "<li><p>transitive.</p></li>",
+    "zh": "传递。"
+  },
+  {
+    "id": "10_Relations:0126",
+    "file": "10_Relations.html",
+    "tag": "li",
+    "text": "Determine which of these properties hold for the relation \\(\\subseteq\\) on \\(\\mathcal{P}(\\mathbb{N})\\) , the type of sets of natural numbers. reflexive; symmetric; antisymmetric; transitive. Also sketch (a representative portion of) this relation as a directed graph. example : Reflexive (( · : Set ℕ ) ⊆ · ) := by sorry example : ¬ Reflexive (( · : Set ℕ ) ⊆ · ) := by sorry example : Symmetric (( · : Set ℕ ) ⊆ · ) := by sorry example : ¬ Symmetric (( · : Set ℕ ) ⊆ · ) := by sorry example : AntiSymmetric (( · : Set ℕ ) ⊆ · ) := by sorry example : ¬ AntiSymmetric (( · : Set ℕ ) ⊆ · ) := by sorry example : Transitive (( · : Set ℕ ) ⊆ · ) := by sorry example : ¬ Transitive (( · : Set ℕ ) ⊆ · ) := by sorry",
+    "html": "<li><p>Determine which of these properties hold for the relation <span class=\"math notranslate nohighlight\">\\(\\subseteq\\)</span> on\n<span class=\"math notranslate nohighlight\">\\(\\mathcal{P}(\\mathbb{N})\\)</span>, the type of sets of natural numbers.</p>\n<ol class=\"lowerroman simple\">\n<li><p>reflexive;</p></li>\n<li><p>symmetric;</p></li>\n<li><p>antisymmetric;</p></li>\n<li><p>transitive.</p></li>\n</ol>\n<p>Also sketch (a representative portion of) this relation as a directed graph.</p>\n<div class=\"highlight-lean notranslate\"><div class=\"highlight\"><pre><span></span><span class=\"kd\">example</span> <span class=\"o\">:</span> <span class=\"n\">Reflexive</span> <span class=\"o\">((</span><span class=\"bp\">·</span> <span class=\"o\">:</span> <span class=\"n\">Set</span> <span class=\"n\">ℕ</span><span class=\"o\">)</span> <span class=\"bp\">⊆</span> <span class=\"bp\">·</span><span class=\"o\">)</span> <span class=\"o\">:=</span> <span class=\"kd\">by</span>\n  <span class=\"gr\">sorry</span>\n\n<span class=\"kd\">example</span> <span class=\"o\">:</span> <span class=\"bp\">¬</span> <span class=\"n\">Reflexive</span> <span class=\"o\">((</span><span class=\"bp\">·</span> <span class=\"o\">:</span> <span class=\"n\">Set</span> <span class=\"n\">ℕ</span><span class=\"o\">)</span> <span class=\"bp\">⊆</span> <span class=\"bp\">·</span><span class=\"o\">)</span> <span class=\"o\">:=</span> <span class=\"kd\">by</span>\n  <span class=\"gr\">sorry</span>\n\n<span class=\"kd\">example</span> <span class=\"o\">:</span> <span class=\"n\">Symmetric</span> <span class=\"o\">((</span><span class=\"bp\">·</span> <span class=\"o\">:</span> <span class=\"n\">Set</span> <span class=\"n\">ℕ</span><span class=\"o\">)</span> <span class=\"bp\">⊆</span> <span class=\"bp\">·</span><span class=\"o\">)</span> <span class=\"o\">:=</span> <span class=\"kd\">by</span>\n  <span class=\"gr\">sorry</span>\n\n<span class=\"kd\">example</span> <span class=\"o\">:</span> <span class=\"bp\">¬</span> <span class=\"n\">Symmetric</span> <span class=\"o\">((</span><span class=\"bp\">·</span> <span class=\"o\">:</span> <span class=\"n\">Set</span> <span class=\"n\">ℕ</span><span class=\"o\">)</span> <span class=\"bp\">⊆</span> <span class=\"bp\">·</span><span class=\"o\">)</span> <span class=\"o\">:=</span> <span class=\"kd\">by</span>\n  <span class=\"gr\">sorry</span>\n\n<span class=\"kd\">example</span> <span class=\"o\">:</span> <span class=\"n\">AntiSymmetric</span> <span class=\"o\">((</span><span class=\"bp\">·</span> <span class=\"o\">:</span> <span class=\"n\">Set</span> <span class=\"n\">ℕ</span><span class=\"o\">)</span> <span class=\"bp\">⊆</span> <span class=\"bp\">·</span><span class=\"o\">)</span> <span class=\"o\">:=</span> <span class=\"kd\">by</span>\n  <span class=\"gr\">sorry</span>\n\n<span class=\"kd\">example</span> <span class=\"o\">:</span> <span class=\"bp\">¬</span> <span class=\"n\">AntiSymmetric</span> <span class=\"o\">((</span><span class=\"bp\">·</span> <span class=\"o\">:</span> <span class=\"n\">Set</span> <span class=\"n\">ℕ</span><span class=\"o\">)</span> <span class=\"bp\">⊆</span> <span class=\"bp\">·</span><span class=\"o\">)</span> <span class=\"o\">:=</span> <span class=\"kd\">by</span>\n  <span class=\"gr\">sorry</span>\n\n<span class=\"kd\">example</span> <span class=\"o\">:</span> <span class=\"n\">Transitive</span> <span class=\"o\">((</span><span class=\"bp\">·</span> <span class=\"o\">:</span> <span class=\"n\">Set</span> <span class=\"n\">ℕ</span><span class=\"o\">)</span> <span class=\"bp\">⊆</span> <span class=\"bp\">·</span><span class=\"o\">)</span> <span class=\"o\">:=</span> <span class=\"kd\">by</span>\n  <span class=\"gr\">sorry</span>\n\n<span class=\"kd\">example</span> <span class=\"o\">:</span> <span class=\"bp\">¬</span> <span class=\"n\">Transitive</span> <span class=\"o\">((</span><span class=\"bp\">·</span> <span class=\"o\">:</span> <span class=\"n\">Set</span> <span class=\"n\">ℕ</span><span class=\"o\">)</span> <span class=\"bp\">⊆</span> <span class=\"bp\">·</span><span class=\"o\">)</span> <span class=\"o\">:=</span> <span class=\"kd\">by</span>\n  <span class=\"gr\">sorry</span>\n</pre></div>\n</div>\n</li>",
+    "zh": "判断 \\(\\mathcal{P}(\\mathbb{N})\\)，即自然数集合的类型，上的关系 \\(\\subseteq\\) 具有哪些性质：自反；对称；反对称；传递。并把这个关系的一段代表性部分画成有向图。"
+  },
+  {
+    "id": "10_Relations:0127",
+    "file": "10_Relations.html",
+    "tag": "li",
+    "text": "reflexive;",
+    "html": "<li><p>reflexive;</p></li>",
+    "zh": "自反；"
+  },
+  {
+    "id": "10_Relations:0128",
+    "file": "10_Relations.html",
+    "tag": "li",
+    "text": "symmetric;",
+    "html": "<li><p>symmetric;</p></li>",
+    "zh": "对称；"
+  },
+  {
+    "id": "10_Relations:0129",
+    "file": "10_Relations.html",
+    "tag": "li",
+    "text": "antisymmetric;",
+    "html": "<li><p>antisymmetric;</p></li>",
+    "zh": "反对称；"
+  },
+  {
+    "id": "10_Relations:0130",
+    "file": "10_Relations.html",
+    "tag": "li",
+    "text": "transitive.",
+    "html": "<li><p>transitive.</p></li>",
+    "zh": "传递。"
+  },
+  {
+    "id": "10_Relations:0131",
+    "file": "10_Relations.html",
+    "tag": "li",
+    "text": "Determine which of these properties hold for the relation \\(\\prec\\) on \\(\\mathbb{R}^2\\) , defined by, \\((x_1, y_1) \\prec (x_2,y_2)\\) if \\(x_1\\le x_2\\) and \\(y_1\\le y_2\\) : reflexive; symmetric; antisymmetric; transitive. local infix : 50 \"≺\" => fun (( x1 , y1 ) : ℝ × ℝ ) ( x2 , y2 ) ↦ ( x1 ≤ x2 ∧ y1 ≤ y2 ) example : Reflexive ( · ≺ · ) := by sorry example : ¬ Reflexive ( · ≺ · ) := by sorry example : Symmetric ( · ≺ · ) := by sorry example : ¬ Symmetric ( · ≺ · ) := by sorry example : AntiSymmetric ( · ≺ · ) := by sorry example : ¬ AntiSymmetric ( · ≺ · ) := by sorry example : Transitive ( · ≺ · ) := by sorry example : ¬ Transitive ( · ≺ · ) := by sorry",
+    "html": "<li><p>Determine which of these properties hold for the relation <span class=\"math notranslate nohighlight\">\\(\\prec\\)</span> on <span class=\"math notranslate nohighlight\">\\(\\mathbb{R}^2\\)</span>,\ndefined by, <span class=\"math notranslate nohighlight\">\\((x_1, y_1) \\prec (x_2,y_2)\\)</span> if <span class=\"math notranslate nohighlight\">\\(x_1\\le x_2\\)</span> and <span class=\"math notranslate nohighlight\">\\(y_1\\le y_2\\)</span>:</p>\n<ol class=\"lowerroman simple\">\n<li><p>reflexive;</p></li>\n<li><p>symmetric;</p></li>\n<li><p>antisymmetric;</p></li>\n<li><p>transitive.</p></li>\n</ol>\n<div class=\"highlight-lean notranslate\"><div class=\"highlight\"><pre><span></span><span class=\"kn\">local</span> <span class=\"kd\">infix</span><span class=\"o\">:</span><span class=\"mi\">50</span> <span class=\"s2\">\"≺\"</span> <span class=\"bp\">=&gt;</span> <span class=\"k\">fun</span> <span class=\"o\">((</span><span class=\"n\">x1</span><span class=\"o\">,</span> <span class=\"n\">y1</span><span class=\"o\">)</span> <span class=\"o\">:</span> <span class=\"n\">ℝ</span> <span class=\"bp\">×</span> <span class=\"n\">ℝ</span><span class=\"o\">)</span> <span class=\"o\">(</span><span class=\"n\">x2</span><span class=\"o\">,</span> <span class=\"n\">y2</span><span class=\"o\">)</span> <span class=\"bp\">↦</span> <span class=\"o\">(</span><span class=\"n\">x1</span> <span class=\"bp\">≤</span> <span class=\"n\">x2</span> <span class=\"bp\">∧</span> <span class=\"n\">y1</span> <span class=\"bp\">≤</span> <span class=\"n\">y2</span><span class=\"o\">)</span>\n\n<span class=\"kd\">example</span> <span class=\"o\">:</span> <span class=\"n\">Reflexive</span> <span class=\"o\">(</span><span class=\"bp\">·</span> <span class=\"bp\">≺</span> <span class=\"bp\">·</span><span class=\"o\">)</span> <span class=\"o\">:=</span> <span class=\"kd\">by</span>\n  <span class=\"gr\">sorry</span>\n\n<span class=\"kd\">example</span> <span class=\"o\">:</span> <span class=\"bp\">¬</span> <span class=\"n\">Reflexive</span> <span class=\"o\">(</span><span class=\"bp\">·</span> <span class=\"bp\">≺</span> <span class=\"bp\">·</span><span class=\"o\">)</span> <span class=\"o\">:=</span> <span class=\"kd\">by</span>\n  <span class=\"gr\">sorry</span>\n\n<span class=\"kd\">example</span> <span class=\"o\">:</span> <span class=\"n\">Symmetric</span> <span class=\"o\">(</span><span class=\"bp\">·</span> <span class=\"bp\">≺</span> <span class=\"bp\">·</span><span class=\"o\">)</span> <span class=\"o\">:=</span> <span class=\"kd\">by</span>\n  <span class=\"gr\">sorry</span>\n\n<span class=\"kd\">example</span> <span class=\"o\">:</span> <span class=\"bp\">¬</span> <span class=\"n\">Symmetric</span> <span class=\"o\">(</span><span class=\"bp\">·</span> <span class=\"bp\">≺</span> <span class=\"bp\">·</span><span class=\"o\">)</span> <span class=\"o\">:=</span> <span class=\"kd\">by</span>\n  <span class=\"gr\">sorry</span>\n\n<span class=\"kd\">example</span> <span class=\"o\">:</span> <span class=\"n\">AntiSymmetric</span> <span class=\"o\">(</span><span class=\"bp\">·</span> <span class=\"bp\">≺</span> <span class=\"bp\">·</span><span class=\"o\">)</span> <span class=\"o\">:=</span> <span class=\"kd\">by</span>\n  <span class=\"gr\">sorry</span>\n\n<span class=\"kd\">example</span> <span class=\"o\">:</span> <span class=\"bp\">¬</span> <span class=\"n\">AntiSymmetric</span> <span class=\"o\">(</span><span class=\"bp\">·</span> <span class=\"bp\">≺</span> <span class=\"bp\">·</span><span class=\"o\">)</span> <span class=\"o\">:=</span> <span class=\"kd\">by</span>\n  <span class=\"gr\">sorry</span>\n\n<span class=\"kd\">example</span> <span class=\"o\">:</span> <span class=\"n\">Transitive</span> <span class=\"o\">(</span><span class=\"bp\">·</span> <span class=\"bp\">≺</span> <span class=\"bp\">·</span><span class=\"o\">)</span> <span class=\"o\">:=</span> <span class=\"kd\">by</span>\n  <span class=\"gr\">sorry</span>\n\n<span class=\"kd\">example</span> <span class=\"o\">:</span> <span class=\"bp\">¬</span> <span class=\"n\">Transitive</span> <span class=\"o\">(</span><span class=\"bp\">·</span> <span class=\"bp\">≺</span> <span class=\"bp\">·</span><span class=\"o\">)</span> <span class=\"o\">:=</span> <span class=\"kd\">by</span>\n  <span class=\"gr\">sorry</span>\n</pre></div>\n</div>\n</li>",
+    "zh": "判断 \\(\\mathbb{R}^2\\) 上如下定义的关系 \\(\\prec\\) 具有哪些性质：\\((x_1,y_1)\\prec(x_2,y_2)\\) 当且仅当 \\(x_1\\le x_2\\) 且 \\(y_1\\le y_2\\)：自反；对称；反对称；传递。"
+  },
+  {
+    "id": "10_Relations:0132",
+    "file": "10_Relations.html",
+    "tag": "li",
+    "text": "reflexive;",
+    "html": "<li><p>reflexive;</p></li>",
+    "zh": "自反；"
+  },
+  {
+    "id": "10_Relations:0133",
+    "file": "10_Relations.html",
+    "tag": "li",
+    "text": "symmetric;",
+    "html": "<li><p>symmetric;</p></li>",
+    "zh": "对称；"
+  },
+  {
+    "id": "10_Relations:0134",
+    "file": "10_Relations.html",
+    "tag": "li",
+    "text": "antisymmetric;",
+    "html": "<li><p>antisymmetric;</p></li>",
+    "zh": "反对称；"
+  },
+  {
+    "id": "10_Relations:0135",
+    "file": "10_Relations.html",
+    "tag": "li",
+    "text": "transitive.",
+    "html": "<li><p>transitive.</p></li>",
+    "zh": "传递。"
+  },
+  {
+    "id": "10_Relations:0136",
+    "file": "10_Relations.html",
+    "tag": "li",
+    "text": "Consider the relation \\(\\sim\\) on \\(\\mathbb{Z}\\) defined by, \\(a\\sim b\\) if there exist positive integers \\(m\\) and \\(n\\) such that \\(am=bn\\) . Show that \\(\\sim\\) is an equivalence relation. Sketch the relation \\(\\sim\\) , by drawing (a portion of) the underlying type \\(\\mathbb{Z}\\) along a line, then colouring each equivalence class in a different colour. local infix : 50 \"∼\" => fun ( a b : ℤ ) ↦ ∃ m n , m > 0 ∧ n > 0 ∧ a * m = b * n example : Reflexive ( · ∼ · ) := by sorry example : Symmetric ( · ∼ · ) := by sorry example : Transitive ( · ∼ · ) := by sorry",
+    "html": "<li><p>Consider the relation <span class=\"math notranslate nohighlight\">\\(\\sim\\)</span> on <span class=\"math notranslate nohighlight\">\\(\\mathbb{Z}\\)</span> defined by, <span class=\"math notranslate nohighlight\">\\(a\\sim b\\)</span> if there\nexist positive integers <span class=\"math notranslate nohighlight\">\\(m\\)</span> and <span class=\"math notranslate nohighlight\">\\(n\\)</span> such that\n<span class=\"math notranslate nohighlight\">\\(am=bn\\)</span>.</p>\n<ul class=\"simple\">\n<li><p>Show that <span class=\"math notranslate nohighlight\">\\(\\sim\\)</span> is an equivalence relation.</p></li>\n<li><p>Sketch the relation <span class=\"math notranslate nohighlight\">\\(\\sim\\)</span>, by drawing (a portion of) the underlying type\n<span class=\"math notranslate nohighlight\">\\(\\mathbb{Z}\\)</span> along a line, then\ncolouring each equivalence class in a different colour.</p></li>\n</ul>\n<div class=\"highlight-lean notranslate\"><div class=\"highlight\"><pre><span></span><span class=\"kn\">local</span> <span class=\"kd\">infix</span><span class=\"o\">:</span><span class=\"mi\">50</span> <span class=\"s2\">\"∼\"</span> <span class=\"bp\">=&gt;</span> <span class=\"k\">fun</span> <span class=\"o\">(</span><span class=\"n\">a</span> <span class=\"n\">b</span> <span class=\"o\">:</span> <span class=\"n\">ℤ</span><span class=\"o\">)</span> <span class=\"bp\">↦</span> <span class=\"bp\">∃</span> <span class=\"n\">m</span> <span class=\"n\">n</span><span class=\"o\">,</span> <span class=\"n\">m</span> <span class=\"bp\">&gt;</span> <span class=\"mi\">0</span> <span class=\"bp\">∧</span> <span class=\"n\">n</span> <span class=\"bp\">&gt;</span> <span class=\"mi\">0</span> <span class=\"bp\">∧</span> <span class=\"n\">a</span> <span class=\"bp\">*</span> <span class=\"n\">m</span> <span class=\"bp\">=</span> <span class=\"n\">b</span> <span class=\"bp\">*</span> <span class=\"n\">n</span>\n\n<span class=\"kd\">example</span> <span class=\"o\">:</span> <span class=\"n\">Reflexive</span> <span class=\"o\">(</span><span class=\"bp\">·</span> <span class=\"bp\">∼</span> <span class=\"bp\">·</span><span class=\"o\">)</span> <span class=\"o\">:=</span> <span class=\"kd\">by</span>\n  <span class=\"gr\">sorry</span>\n\n<span class=\"kd\">example</span> <span class=\"o\">:</span> <span class=\"n\">Symmetric</span> <span class=\"o\">(</span><span class=\"bp\">·</span> <span class=\"bp\">∼</span> <span class=\"bp\">·</span><span class=\"o\">)</span> <span class=\"o\">:=</span> <span class=\"kd\">by</span>\n  <span class=\"gr\">sorry</span>\n\n<span class=\"kd\">example</span> <span class=\"o\">:</span> <span class=\"n\">Transitive</span> <span class=\"o\">(</span><span class=\"bp\">·</span> <span class=\"bp\">∼</span> <span class=\"bp\">·</span><span class=\"o\">)</span> <span class=\"o\">:=</span> <span class=\"kd\">by</span>\n  <span class=\"gr\">sorry</span>\n</pre></div>\n</div>\n</li>",
+    "zh": "考虑 \\(\\mathbb{Z}\\) 上的关系 \\(\\sim\\)，定义为：\\(a\\sim b\\) 当且仅当存在正整数 \\(m\\) 和 \\(n\\)，使得 \\(am=bn\\)。证明 \\(\\sim\\) 是等价关系。画出关系 \\(\\sim\\)：沿直线画出底层类型 \\(\\mathbb{Z}\\) 的一部分，然后用不同颜色标出各个等价类。"
+  },
+  {
+    "id": "10_Relations:0137",
+    "file": "10_Relations.html",
+    "tag": "li",
+    "text": "Show that \\(\\sim\\) is an equivalence relation.",
+    "html": "<li><p>Show that <span class=\"math notranslate nohighlight\">\\(\\sim\\)</span> is an equivalence relation.</p></li>",
+    "zh": "证明 \\(\\sim\\) 是等价关系。"
+  },
+  {
+    "id": "10_Relations:0138",
+    "file": "10_Relations.html",
+    "tag": "li",
+    "text": "Sketch the relation \\(\\sim\\) , by drawing (a portion of) the underlying type \\(\\mathbb{Z}\\) along a line, then colouring each equivalence class in a different colour.",
+    "html": "<li><p>Sketch the relation <span class=\"math notranslate nohighlight\">\\(\\sim\\)</span>, by drawing (a portion of) the underlying type\n<span class=\"math notranslate nohighlight\">\\(\\mathbb{Z}\\)</span> along a line, then\ncolouring each equivalence class in a different colour.</p></li>",
+    "zh": "画出关系 \\(\\sim\\)：沿直线画出底层类型 \\(\\mathbb{Z}\\) 的一部分，然后用不同颜色标出各个等价类。"
+  },
+  {
+    "id": "10_Relations:0139",
+    "file": "10_Relations.html",
+    "tag": "li",
+    "text": "Consider the relation \\(\\sim\\) on \\(\\mathbb{N}^2\\) defined by, \\((a,b)\\sim(c,d)\\) if \\(a+d=b+c\\) . Show that \\(\\sim\\) is an equivalence relation. Sketch the relation \\(\\sim\\) , by drawing (a portion of) the underlying type \\(\\mathbb{N}^2\\) in the plane, then colouring each equivalence class in a different colour. local infix : 50 \"∼\" => fun (( a , b ) : ℕ × ℕ ) ( c , d ) ↦ a + d = b + c example : Reflexive ( · ∼ · ) := by sorry example : Symmetric ( · ∼ · ) := by sorry example : Transitive ( · ∼ · ) := by sorry",
+    "html": "<li><p>Consider the relation <span class=\"math notranslate nohighlight\">\\(\\sim\\)</span> on <span class=\"math notranslate nohighlight\">\\(\\mathbb{N}^2\\)</span> defined by, <span class=\"math notranslate nohighlight\">\\((a,b)\\sim(c,d)\\)</span> if\n<span class=\"math notranslate nohighlight\">\\(a+d=b+c\\)</span>.</p>\n<ul class=\"simple\">\n<li><p>Show that <span class=\"math notranslate nohighlight\">\\(\\sim\\)</span> is an equivalence relation.</p></li>\n<li><p>Sketch the relation <span class=\"math notranslate nohighlight\">\\(\\sim\\)</span>, by drawing  (a portion of) the underlying type\n<span class=\"math notranslate nohighlight\">\\(\\mathbb{N}^2\\)</span> in the plane, then\ncolouring each equivalence class in a different colour.</p></li>\n</ul>\n<div class=\"highlight-lean notranslate\"><div class=\"highlight\"><pre><span></span><span class=\"kn\">local</span> <span class=\"kd\">infix</span><span class=\"o\">:</span><span class=\"mi\">50</span> <span class=\"s2\">\"∼\"</span> <span class=\"bp\">=&gt;</span> <span class=\"k\">fun</span> <span class=\"o\">((</span><span class=\"n\">a</span><span class=\"o\">,</span> <span class=\"n\">b</span><span class=\"o\">)</span> <span class=\"o\">:</span> <span class=\"n\">ℕ</span> <span class=\"bp\">×</span> <span class=\"n\">ℕ</span><span class=\"o\">)</span> <span class=\"o\">(</span><span class=\"n\">c</span><span class=\"o\">,</span> <span class=\"n\">d</span><span class=\"o\">)</span> <span class=\"bp\">↦</span> <span class=\"n\">a</span> <span class=\"bp\">+</span> <span class=\"n\">d</span> <span class=\"bp\">=</span> <span class=\"n\">b</span> <span class=\"bp\">+</span> <span class=\"n\">c</span>\n\n<span class=\"kd\">example</span> <span class=\"o\">:</span> <span class=\"n\">Reflexive</span> <span class=\"o\">(</span><span class=\"bp\">·</span> <span class=\"bp\">∼</span> <span class=\"bp\">·</span><span class=\"o\">)</span> <span class=\"o\">:=</span> <span class=\"kd\">by</span>\n  <span class=\"gr\">sorry</span>\n\n<span class=\"kd\">example</span> <span class=\"o\">:</span> <span class=\"n\">Symmetric</span> <span class=\"o\">(</span><span class=\"bp\">·</span> <span class=\"bp\">∼</span> <span class=\"bp\">·</span><span class=\"o\">)</span> <span class=\"o\">:=</span> <span class=\"kd\">by</span>\n  <span class=\"gr\">sorry</span>\n\n<span class=\"kd\">example</span> <span class=\"o\">:</span> <span class=\"n\">Transitive</span> <span class=\"o\">(</span><span class=\"bp\">·</span> <span class=\"bp\">∼</span> <span class=\"bp\">·</span><span class=\"o\">)</span> <span class=\"o\">:=</span> <span class=\"kd\">by</span>\n  <span class=\"gr\">sorry</span>\n</pre></div>\n</div>\n</li>",
+    "zh": "考虑 \\(\\mathbb{N}^2\\) 上的关系 \\(\\sim\\)，定义为：\\((a,b)\\sim(c,d)\\) 当且仅当 \\(a+d=b+c\\)。证明 \\(\\sim\\) 是等价关系。画出关系 \\(\\sim\\)：在平面中画出底层类型 \\(\\mathbb{N}^2\\) 的一部分，然后用不同颜色标出各个等价类。"
+  },
+  {
+    "id": "10_Relations:0140",
+    "file": "10_Relations.html",
+    "tag": "li",
+    "text": "Show that \\(\\sim\\) is an equivalence relation.",
+    "html": "<li><p>Show that <span class=\"math notranslate nohighlight\">\\(\\sim\\)</span> is an equivalence relation.</p></li>",
+    "zh": "证明 \\(\\sim\\) 是等价关系。"
+  },
+  {
+    "id": "10_Relations:0141",
+    "file": "10_Relations.html",
+    "tag": "li",
+    "text": "Sketch the relation \\(\\sim\\) , by drawing (a portion of) the underlying type \\(\\mathbb{N}^2\\) in the plane, then colouring each equivalence class in a different colour.",
+    "html": "<li><p>Sketch the relation <span class=\"math notranslate nohighlight\">\\(\\sim\\)</span>, by drawing  (a portion of) the underlying type\n<span class=\"math notranslate nohighlight\">\\(\\mathbb{N}^2\\)</span> in the plane, then\ncolouring each equivalence class in a different colour.</p></li>",
+    "zh": "画出关系 \\(\\sim\\)：在平面中画出底层类型 \\(\\mathbb{N}^2\\) 的一部分，然后用不同颜色标出各个等价类。"
+  },
+  {
+    "id": "10_Relations:0142",
+    "file": "10_Relations.html",
+    "tag": "li",
+    "text": "Consider the relation \\(\\sim\\) on \\(\\mathbb{Z}^2\\) defined by, \\((a,b)\\sim(c,d)\\) if there exist positive integers \\(m\\) and \\(n\\) with \\(mb(b^2-3a^2)=nd(d^2-3c^2)\\) . Show that \\(\\sim\\) is an equivalence relation. Sketch the relation \\(\\sim\\) , by drawing (a portion of) the underlying type \\(\\mathbb{Z}^2\\) in the plane, then colouring each equivalence class in a different colour. local infix : 50 \"∼\" => fun (( a , b ) : ℤ × ℤ ) ( c , d ) ↦ ∃ m n , m > 0 ∧ n > 0 ∧ m * b * ( b ^ 2 - 3 * a ^ 2 ) = n * d * ( d ^ 2 - 3 * c ^ 2 ) example : Reflexive ( · ∼ · ) := by sorry example : Symmetric ( · ∼ · ) := by sorry example : Transitive ( · ∼ · ) := by sorry",
+    "html": "<li><p>Consider the relation <span class=\"math notranslate nohighlight\">\\(\\sim\\)</span> on <span class=\"math notranslate nohighlight\">\\(\\mathbb{Z}^2\\)</span> defined by, <span class=\"math notranslate nohighlight\">\\((a,b)\\sim(c,d)\\)</span> if\nthere exist positive integers <span class=\"math notranslate nohighlight\">\\(m\\)</span> and <span class=\"math notranslate nohighlight\">\\(n\\)</span> with <span class=\"math notranslate nohighlight\">\\(mb(b^2-3a^2)=nd(d^2-3c^2)\\)</span>.</p>\n<ul class=\"simple\">\n<li><p>Show that <span class=\"math notranslate nohighlight\">\\(\\sim\\)</span> is an equivalence relation.</p></li>\n<li><p>Sketch the relation <span class=\"math notranslate nohighlight\">\\(\\sim\\)</span>, by drawing (a portion of) the underlying type\n<span class=\"math notranslate nohighlight\">\\(\\mathbb{Z}^2\\)</span> in the plane, then\ncolouring each equivalence class in a different colour.</p></li>\n</ul>\n<div class=\"highlight-lean notranslate\"><div class=\"highlight\"><pre><span></span><span class=\"kn\">local</span> <span class=\"kd\">infix</span><span class=\"o\">:</span><span class=\"mi\">50</span> <span class=\"s2\">\"∼\"</span> <span class=\"bp\">=&gt;</span> <span class=\"k\">fun</span> <span class=\"o\">((</span><span class=\"n\">a</span><span class=\"o\">,</span> <span class=\"n\">b</span><span class=\"o\">)</span> <span class=\"o\">:</span> <span class=\"n\">ℤ</span> <span class=\"bp\">×</span> <span class=\"n\">ℤ</span><span class=\"o\">)</span> <span class=\"o\">(</span><span class=\"n\">c</span><span class=\"o\">,</span> <span class=\"n\">d</span><span class=\"o\">)</span> <span class=\"bp\">↦</span>\n  <span class=\"bp\">∃</span> <span class=\"n\">m</span> <span class=\"n\">n</span><span class=\"o\">,</span> <span class=\"n\">m</span> <span class=\"bp\">&gt;</span> <span class=\"mi\">0</span> <span class=\"bp\">∧</span> <span class=\"n\">n</span> <span class=\"bp\">&gt;</span> <span class=\"mi\">0</span> <span class=\"bp\">∧</span> <span class=\"n\">m</span> <span class=\"bp\">*</span> <span class=\"n\">b</span> <span class=\"bp\">*</span> <span class=\"o\">(</span><span class=\"n\">b</span> <span class=\"bp\">^</span> <span class=\"mi\">2</span> <span class=\"bp\">-</span> <span class=\"mi\">3</span> <span class=\"bp\">*</span> <span class=\"n\">a</span> <span class=\"bp\">^</span> <span class=\"mi\">2</span><span class=\"o\">)</span> <span class=\"bp\">=</span> <span class=\"n\">n</span> <span class=\"bp\">*</span> <span class=\"n\">d</span> <span class=\"bp\">*</span> <span class=\"o\">(</span><span class=\"n\">d</span> <span class=\"bp\">^</span> <span class=\"mi\">2</span> <span class=\"bp\">-</span> <span class=\"mi\">3</span> <span class=\"bp\">*</span> <span class=\"n\">c</span> <span class=\"bp\">^</span> <span class=\"mi\">2</span><span class=\"o\">)</span>\n\n<span class=\"kd\">example</span> <span class=\"o\">:</span> <span class=\"n\">Reflexive</span> <span class=\"o\">(</span><span class=\"bp\">·</span> <span class=\"bp\">∼</span> <span class=\"bp\">·</span><span class=\"o\">)</span> <span class=\"o\">:=</span> <span class=\"kd\">by</span>\n  <span class=\"gr\">sorry</span>\n\n<span class=\"kd\">example</span> <span class=\"o\">:</span> <span class=\"n\">Symmetric</span> <span class=\"o\">(</span><span class=\"bp\">·</span> <span class=\"bp\">∼</span> <span class=\"bp\">·</span><span class=\"o\">)</span> <span class=\"o\">:=</span> <span class=\"kd\">by</span>\n  <span class=\"gr\">sorry</span>\n\n<span class=\"kd\">example</span> <span class=\"o\">:</span> <span class=\"n\">Transitive</span> <span class=\"o\">(</span><span class=\"bp\">·</span> <span class=\"bp\">∼</span> <span class=\"bp\">·</span><span class=\"o\">)</span> <span class=\"o\">:=</span> <span class=\"kd\">by</span>\n  <span class=\"gr\">sorry</span>\n</pre></div>\n</div>\n</li>",
+    "zh": "考虑 \\(\\mathbb{Z}^2\\) 上的关系 \\(\\sim\\)，定义为：\\((a,b)\\sim(c,d)\\) 当且仅当存在正整数 \\(m\\) 和 \\(n\\)，满足 \\(mb(b^2-3a^2)=nd(d^2-3c^2)\\)。证明 \\(\\sim\\) 是等价关系。画出关系 \\(\\sim\\)：在平面中画出底层类型 \\(\\mathbb{Z}^2\\) 的一部分，然后用不同颜色标出各个等价类。"
+  },
+  {
+    "id": "10_Relations:0143",
+    "file": "10_Relations.html",
+    "tag": "li",
+    "text": "Show that \\(\\sim\\) is an equivalence relation.",
+    "html": "<li><p>Show that <span class=\"math notranslate nohighlight\">\\(\\sim\\)</span> is an equivalence relation.</p></li>",
+    "zh": "证明 \\(\\sim\\) 是等价关系。"
+  },
+  {
+    "id": "10_Relations:0144",
+    "file": "10_Relations.html",
+    "tag": "li",
+    "text": "Sketch the relation \\(\\sim\\) , by drawing (a portion of) the underlying type \\(\\mathbb{Z}^2\\) in the plane, then colouring each equivalence class in a different colour.",
+    "html": "<li><p>Sketch the relation <span class=\"math notranslate nohighlight\">\\(\\sim\\)</span>, by drawing (a portion of) the underlying type\n<span class=\"math notranslate nohighlight\">\\(\\mathbb{Z}^2\\)</span> in the plane, then\ncolouring each equivalence class in a different colour.</p></li>",
+    "zh": "画出关系 \\(\\sim\\)：在平面中画出底层类型 \\(\\mathbb{Z}^2\\) 的一部分，然后用不同颜色标出各个等价类。"
+  }
+]
