@@ -1,13 +1,9 @@
 .. _number_theory:
 
-Number theory
-=============
+数论
+====
 
-This chapter is different in style from the other chapters of the book.  The facts here are
-famous theorems, and their proofs require one-off, clever ideas.  These particular ideas will not
-turn up again on homework or exams.  Think of this chapter instead as a capstone: we explore what
-kinds of mathematical statements are in reach with the reasoning tools and theory we have developed
-so far in the book.
+本章在风格上不同于本书其他章节。这里的事实都是著名定理，它们的证明需要一次性的巧妙想法。这些特定想法不会再次出现在作业或考试中。不妨把本章看作一个总结性章节：我们探索借助本书到目前为止已经发展出的推理工具和理论，能够触及哪些数学陈述。
 
 .. include:: ch07_Number_Theory/01_Infinitely_Many_Primes.inc
 .. include:: ch07_Number_Theory/02_Euclid_Lemma.inc

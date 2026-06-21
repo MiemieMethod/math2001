@@ -1,6 +1,6 @@
 .. _homework:
 
-Homework
-========
+作业
+====
 
 .. include:: Homework/hw0.inc

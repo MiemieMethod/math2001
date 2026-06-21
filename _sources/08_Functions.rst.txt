@@ -1,21 +1,13 @@
 .. _functions:
 
-Functions
-=========
+函数
+====
 
-So far in the book, we have studied properties of numbers (whether a number is odd, 
-positive, prime; whether one number is divisible by another) and operations on
-numbers (addition, greatest common divisor).
+到目前为止，本书研究的是数的性质（一个数是否为奇数、正数、素数；一个数是否被另一个数整除）以及数上的运算（加法、最大公因数）。
 
-In this chapter we go up a level of abstraction, and study properties of and
-operations on functions.  These new properties include: whether a function is
-*injective*, *surjective*, *bijective*; whether one function is *inverse* to
-another; and the operation of *composition*.
+本章我们提升一个抽象层次，研究函数的性质以及函数上的运算。这些新性质包括：一个函数是否为*单射*、*满射*、*双射*；一个函数是否是另一个函数的*逆*；以及*复合*这一运算。
 
-We also expand our horizon beyond the numeric types (:math:`\mathbb{N}`,
-:math:`\mathbb{Z}`, :math:`\mathbb{Q}`, :math:`\mathbb{R}`) which have formed the
-setting of the early part of the book.  We now start to work with a broader range
-of types, including function types, finite inductive types, and product types.
+我们还把视野扩展到早期章节所处的数值类型（:math:`\mathbb{N}`、:math:`\mathbb{Z}`、:math:`\mathbb{Q}`、:math:`\mathbb{R}`）之外。现在我们开始处理范围更广的类型，包括函数类型、有限归纳类型和积类型。
 
 .. include:: ch08_Functions/01_Injective_Surjective.inc
 .. include:: ch08_Functions/02_Bijective.inc

@@ -3,18 +3,13 @@
     \mainmatter
 
 .. _proofs_by_calculation:
-    
-Proofs by calculation
-=====================
 
-This book begins in the familiar world of numbers: :math:`\mathbb{N}`, the natural
-numbers (which in this book include 0);
-:math:`\mathbb{Z}`, the integers; :math:`\mathbb{Q}`, the rational numbers;
-and :math:`\mathbb{R}`, the real numbers.  We solve problems which feel pretty close
-to high school algebra -- deducing equalities/inequalities from other
-equalities/inequalities -- using a technique which is not usually taught in high
-school algebra: building a single chain of expressions connecting the left-hand
-side with the right.
+计算式证明
+==========
+
+本书从熟悉的数的世界开始：:math:`\mathbb{N}`，即自然数（本书中包含 0）；
+:math:`\mathbb{Z}`，即整数；:math:`\mathbb{Q}`，即有理数；以及
+:math:`\mathbb{R}`，即实数。我们要解决一些很接近高中代数的问题：从已有等式或不等式推出新的等式或不等式。不过，我们使用的技巧通常并不在高中代数中讲授：构造一条单一的表达式链，把左边与右边连接起来。
 
 .. include:: ch01_Proofs_by_Calculation/01_Proving_Equalities.inc
 .. include:: ch01_Proofs_by_Calculation/02_Proving_Equalities_in_Lean.inc

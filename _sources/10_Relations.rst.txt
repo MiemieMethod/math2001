@@ -1,19 +1,11 @@
 .. _relations:
 
-Relations
-=========
+关系
+====
 
-Just as sets provide a convenient language for properties of the objects in a type,
-*relations* provide a convenient language for the properties of the pairs of objects
-in a type.  This might sound dry and abstract, but such properties turn up all over
-mathematics: the property of one real
-number being less than another; the property of one integer being congruent to
-another modulo 5; the property of one set being a subset of another; the property
-of one function being inverse to another.
+正如集合为一个类型中对象的性质提供了便利语言，*关系*也为一个类型中对象对的性质提供了便利语言。听起来这也许枯燥而抽象，但这样的性质在数学中无处不在：一个实数小于另一个实数；一个整数与另一个整数模 5 同余；一个集合是另一个集合的子集；一个函数是另一个函数的逆。
 
-In this chapter we introduce some of the important properties which relations
-themselves can have: they can be *reflexive*, *symmetric*, *antisymmetric* or
-*transitive*, or any combination of these.
+本章介绍关系本身可以具有的一些重要性质：关系可以是*自反*、*对称*、*反对称*或*传递*的，也可以具有这些性质的任意组合。
 
 .. include:: ch10_Relations/01_Introduction.inc
 .. include:: ch10_Relations/02_Equivalence_Relations.inc

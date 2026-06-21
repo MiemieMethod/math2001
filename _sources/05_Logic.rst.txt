@@ -1,27 +1,13 @@
 .. _logic:
 
-Logic
-=====
+逻辑
+====
 
-In the course of :numref:`Chapter %s <proofs_with_structure>` and
-:numref:`Chapter %s <proofs_with_structure_ii>` we learned the "grammar" of the
-various logical symbols, like :math:`\land`, :math:`\forall` and :math:`\to`.
-In those chapters, logical reasoning took place in fairly concrete mathematical
-situations: problems about equalities and inequalities in the natural
-numbers, the rational numbers, and so on.
+在 :numref:`第 %s 章 <proofs_with_structure>`和 :numref:`第 %s 章 <proofs_with_structure_ii>`中，我们学习了各种逻辑符号的“语法”，例如 :math:`\land`、:math:`\forall` 和 :math:`\to`。在那些章节中，逻辑推理发生在相当具体的数学情境中：关于自然数、有理数等对象的等式和不等式问题。
 
-In this chapter, we take a more abstract point of view, studying the process of
-logical reasoning in its own right.  The central concept is the concept of *logical
-equivalence*: transformations to the logical structure of a statement which are
-always valid, because the "before" and "after" can be deduced from each other 
-using only abstract logical reasoning, not anything specific to the mathematical
-situation at hand.
+本章采取更抽象的观点，研究逻辑推理过程本身。中心概念是*逻辑等价*：对一个陈述的逻辑结构所作的、总是有效的变换；之所以总是有效，是因为变换前后的陈述可以仅靠抽象逻辑推理相互推出，而不依赖当前数学情境中的特殊内容。
 
-The most important logical equivalences are those covered in the final section of
-the chapter, :numref:`Section %s <negation_normalize>`.  These are logical
-equivalences which move a negation symbol (:math:`\lnot`) to a deeper position in a
-logical statement.  Taken together, these transformations give us a way to delay and
-minimize our encounters with :math:`\lnot`, the most awkward logical symbol.
+最重要的逻辑等价是本章最后一节 :numref:`第 %s 节 <negation_normalize>` 中讨论的那些。它们会把否定符号（:math:`\lnot`）移动到逻辑陈述中更深的位置。合在一起，这些变换给了我们一种推迟并尽量减少与 :math:`\lnot` 打交道的方法；它是最别扭的逻辑符号。
 
 .. include:: ch05_Logic/01_Logical_Equivalence.inc
 .. include:: ch05_Logic/02_Excluded_Middle.inc

@@ -1,17 +1,11 @@
 .. _sets:
 
-Sets
+集合
 ====
 
-This chapter introduces the language of *sets*, a convenient way to reason about the
-objects in a type which have some property.  This language includes
-the concept of *membership* in a set, the property of a set being a *subset* of
-another set, and a whole zoo of set operations, such as *intersection*, *union* and
-*complement*, each of which is a wrapper for a logical symbol relating
-the underlying properties.
+本章介绍*集合*语言。它是一种便利的方式，用来讨论某个类型中满足某种性质的对象。这个语言包括集合中的*属于*关系、一个集合是另一个集合的*子集*这一性质，以及一整套集合运算，例如*交*、*并*和*补*；每一种运算都可以看作是对底层性质之间某个逻辑符号的封装。
 
-In the last section of the chapter, :numref:`Section %s <powerset>`, we study the
-collection of sets in a type as a type in its own right.
+在本章最后一节 :numref:`第 %s 节 <powerset>` 中，我们把某个类型中的所有集合组成的集合族本身作为一种类型来研究。
 
 .. include:: ch09_Sets/01_Sets.inc
 .. include:: ch09_Sets/02_Set_Operations.inc

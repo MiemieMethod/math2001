@@ -1,17 +1,12 @@
+证明的技艺
+==========
 
+本书讨论如何书写细致而严谨的数学证明。本书配有以计算机形式化语言
+`Lean <https://leanprover.github.io/about/>`_ 写成的代码。请前往配套的 GitHub 仓库
+https://github.com/hrmacbeth/math2001，将这些代码下载到自己的计算机，或在 Gitpod 云端打开。
 
-The Mechanics of Proof
-======================
-
-This is a book dealing with how to write careful, rigorous mathematical proofs.
-The book is paired with code in the computer formalization language
-`Lean <https://leanprover.github.io/about/>`_. Head over to the associated GitHub repository,
-https://github.com/hrmacbeth/math2001, to download this code to your own computer or to open it in
-the cloud on Gitpod.
-
-This book is aimed at the early university level and has been written for the course
-Math 2001, at Fordham University.  Please reach out to the author,
-`Heather Macbeth <https://faculty.fordham.edu/hmacbeth1/>`_, with comments and corrections.
+本书面向大学低年级学生，并为 Fordham University 的 Math 2001 课程而写。若有意见或修正，欢迎联系作者
+`Heather Macbeth <https://faculty.fordham.edu/hmacbeth1/>`_。
 
 .. toctree::
    :maxdepth: 2
@@ -31,11 +26,10 @@ Math 2001, at Fordham University.  Please reach out to the author,
    07_Number_Theory
    08_Functions
    09_Sets
-   10_Relations 
+   10_Relations
 
-**Appendices**
+**附录**
 
 .. toctree::
    Index_of_Tactics
    Mainstream_Lean
-
