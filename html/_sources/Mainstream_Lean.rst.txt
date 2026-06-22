@@ -24,18 +24,18 @@
 
     * - mathlib 策略
       - 弱化的
-      
+
         *证明的技艺*
-        
+
         版本
       - 差异
 
     * - ``norm_num``
       - ``numbers``
       - ``norm_num`` 能完成本书要求读者手工完成的一些计算，
-      
+
         包括模 :math:`n` 化简、
-        
+
         处理逻辑，以及检查整除性和素性
 
     * - ``gcongr``
@@ -45,17 +45,17 @@
     * - ``linarith``
       - ``addarith``
       - ``linarith`` 除了加减常数外，还可以取线性不等式的常数倍，
-      
+
         可以组合许多线性不等式，且不要求你说明
-        
+
         正在使用哪些假设
 
     * - ``duper``
       - ``exhaust``
       - ``duper`` 能处理包含量词的逻辑任务，而不只限于
-      
+
         无量词的任务
-        
+
 本书中使用的一些策略在 mathlib 中没有直接对应物。它们通常是对一小组引理的封装；
 在 mathlib 中，这些引理会按名称调用。
 
@@ -70,16 +70,16 @@
 
     * - ``extra``
       - ``Int.modEq_fac_zero``、``le_add_of_nonneg_right``、
-      
+
         ``lt_add_of_pos_right`` 等，以及策略
-        
+
         ``positivity``
 
     * - ``cancel``
       - ``mul_left_cancel₀``、``lt_of_pow_lt_pow``、
-      
+
         ``pos_of_mul_pos_left`` 等，以及策略
-        
+
         ``positivity``
 
     * - ``simple_induction``
@@ -91,7 +91,7 @@
         ``two_step_induction_from_starting_point``
 
       - ``Nat.le_induction``、``Nat.twoStepInduction`` 等，
-      
+
         以及策略 ``induction`` 或 ``induction'``
 
 本书中的许多问题若以 mathlib 风格的 Lean 来解，会高效得多，
@@ -106,7 +106,7 @@
     * - 算法
       - mathlib 策略
       - 该策略可以替代的步骤类型
-      
+
     * - `Fourier-Motzkin 消元法 <https://en.wikipedia.org/wiki/Fourier%E2%80%93Motzkin_elimination>`_
       - ``linarith``
       - ``addarith``、``rel``、``ring``、``numbers``

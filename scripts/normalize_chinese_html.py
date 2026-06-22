@@ -78,6 +78,11 @@ FALLBACK_TITLE_MAP = {
     "Transitioning to mainstream Lean": "过渡到主流 Lean",
     "Homework": "作业",
     "Appendices": "附录",
+    "Logical equivalences for negations": "否定的逻辑等价",
+    "Values of the recursively defined function pascal": "递归定义函数 pascal 的取值",
+    "Tactics in this book, and their mathlib originals": "本书策略及其 mathlib 原型",
+    "Tactics in this book with no mathlib analogues": "本书中没有 mathlib 对应物的策略",
+    "Advanced algorithms not used in this book": "本书未使用的高级算法",
 }
 
 UI_REPLACEMENTS = {
@@ -91,6 +96,7 @@ UI_REPLACEMENTS = {
     "Previous": "上一页",
     "Permalink to this headline": "此标题的永久链接",
     "Link to this heading": "链接到此标题",
+    "Permalink to this table": "此表的永久链接",
     "Navigation menu": "导航菜单",
     "Mobile navigation menu": "移动端导航菜单",
     "Page navigation": "页面导航",
@@ -149,6 +155,9 @@ def translate_phrase(text: str, heading_map: dict[str, str]) -> str:
     core = text.strip()
     if not core:
         return text
+    table_label = re.fullmatch(r"Table(\s+[\d.]+)", core)
+    if table_label:
+        return f"{leading}表{table_label.group(1)}{trailing}"
     if core in heading_map:
         return f"{leading}{heading_map[core]}{trailing}"
     if core in UI_REPLACEMENTS:
@@ -177,11 +186,26 @@ def normalize_article_blocks(soup: BeautifulSoup) -> None:
             set_inner_html(tag, replacement)
 
 
+def normalize_caption_blocks(soup: BeautifulSoup) -> None:
+    for caption in soup.select("div[itemprop='articleBody'] caption"):
+        text = plain_text(str(caption))
+        if "Values of the recursively defined function pascal" in text:
+            caption_text = caption.select_one(".caption-text")
+            if caption_text is not None:
+                set_inner_html(
+                    caption_text,
+                    '递归定义函数 <code class="docutils literal notranslate"><span class="pre">pascal</span></code> 的取值',
+                )
+
+
 def is_inside_article_body(tag) -> bool:
     return tag.find_parent(attrs={"itemprop": "articleBody"}) is not None
 
 
 def should_translate_article_node(path: Path, parent) -> bool:
+    classes = set(parent.get("class") or [])
+    if classes.intersection({"caption-number", "caption-text"}):
+        return True
     if path.name in {"index.html", "latexindex.html"}:
         return parent.name in {"h1", "h2", "h3", "h4", "a", "strong"}
     return False
@@ -198,6 +222,7 @@ def normalize_html(path: Path, heading_map: dict[str, str]) -> None:
         soup.html["lang"] = "zh-CN"
 
     normalize_article_blocks(soup)
+    normalize_caption_blocks(soup)
 
     if soup.title and soup.title.string:
         soup.title.string.replace_with(translate_phrase(str(soup.title.string), heading_map))

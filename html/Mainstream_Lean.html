@@ -82,98 +82,98 @@
 <p>你会发现，本书使用的 Lean“方言”不同于 mathlib 库及其相关文献（例如 Mathematics in Lean）中使用的主流数学 Lean。为了帮助你适应，本附录概述主要差异。</p>
 <p>本书中使用的一些策略，是 mathlib 中相应策略的有意弱化版本。我这样做，是为了屏蔽 Lean 的某些能力，因为在本书层次的文字证明中，通常会把这些细节完整写出。这些有意弱化的策略包括：</p>
 <span id="tactic-comparison-table"></span><table class="colwidths-given docutils align-default" id="id1">
-<caption><span class="caption-number">Table 1 </span><span class="caption-text">Tactics in this book, and their mathlib originals</span><a class="headerlink" href="#id1" title="Permalink to this table"></a></caption>
+<caption><span class="caption-number">表 1 </span><span class="caption-text">本书策略及其 mathlib 原型</span><a class="headerlink" href="#id1" title="此表的永久链接"></a></caption>
 <colgroup>
 <col style="width: 27%"/>
 <col style="width: 27%"/>
 <col style="width: 45%"/>
 </colgroup>
 <thead>
-<tr class="row-odd"><th class="head">处理逻辑，以及检查整除性和素性</th>
-<th class="head">处理逻辑，以及检查整除性和素性</th>
-<th class="head">gcongr</th>
+<tr class="row-odd"><th class="head"><p>mathlib 策略</p></th>
+<th class="head">弱化的《证明的技艺》版本</th>
+<th class="head"><p>差异</p></th>
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td>linarith 除了加减常数外，还可以取线性不等式的常数倍，</td>
-<td>可以组合许多线性不等式，且不要求你说明</td>
-<td>正在使用哪些假设</td>
+<tr class="row-even"><td><p>norm_num</p></td>
+<td><p>numbers</p></td>
+<td>norm_num 能完成本书要求读者手工完成的一些计算，包括模 \(n\) 化简、处理逻辑，以及检查整除性和素性</td>
 </tr>
-<tr class="row-odd"><td>正在使用哪些假设</td>
-<td>duper</td>
-<td>exhaust</td>
+<tr class="row-odd"><td><p>gcongr</p></td>
+<td><p>rel</p></td>
+<td>gcongr 不要求你说明正在代入哪些假设</td>
 </tr>
-<tr class="row-even"><td>duper 能处理包含量词的逻辑任务，而不只限于</td>
-<td>无量词的任务</td>
-<td>本书中使用的一些策略在 mathlib 中没有直接对应物。它们通常是对一小组引理的封装；在 mathlib 中，这些引理会按名称调用。</td>
+<tr class="row-even"><td><p>linarith</p></td>
+<td><p>addarith</p></td>
+<td>linarith 除了加减常数外，还可以取线性不等式的常数倍；它能组合许多线性不等式，而且不要求你说明正在使用哪些假设</td>
 </tr>
-<tr class="row-odd"><td>《证明的技艺》中的策略</td>
-<td>所封装的引理</td>
-<td>extra</td>
+<tr class="row-odd"><td><p>duper</p></td>
+<td><p>exhaust</p></td>
+<td>duper 能处理包含量词的逻辑任务，而不只限于无量词的任务</td>
 </tr>
 </tbody>
 </table>
-<p>mathlib 策略</p>
+<p>本书中使用的一些策略在 mathlib 中没有直接对应物。它们通常是对一小组引理的封装；在 mathlib 中，这些引理会按名称调用。</p>
 <span id="tactic-lemma-wrapper-table"></span><table class="colwidths-given docutils align-default" id="id2">
-<caption><span class="caption-number">Table 2 </span><span class="caption-text">Tactics in this book with no mathlib analogues</span><a class="headerlink" href="#id2" title="Permalink to this table"></a></caption>
+<caption><span class="caption-number">表 2 </span><span class="caption-text">本书中没有 mathlib 对应物的策略</span><a class="headerlink" href="#id2" title="此表的永久链接"></a></caption>
 <colgroup>
 <col style="width: 27%"/>
 <col style="width: 73%"/>
 </colgroup>
 <thead>
-<tr class="row-odd"><th class="head">rel</th>
-<th class="head">gcongr 不要求你说明正在代入哪些假设</th>
+<tr class="row-odd"><th class="head"><p>《证明的技艺》中的策略</p></th>
+<th class="head"><p>所封装的引理</p></th>
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td>Int.modEq_fac_zero、le_add_of_nonneg_right、</td>
-<td>lt_add_of_pos_right 等，以及策略</td>
+<tr class="row-even"><td><p>extra</p></td>
+<td>Int.modEq_fac_zero、le_add_of_nonneg_right、lt_add_of_pos_right 等，以及策略 positivity</td>
 </tr>
-<tr class="row-odd"><td>positivity</td>
-<td>cancel</td>
+<tr class="row-odd"><td><p>cancel</p></td>
+<td>mul_left_cancel₀、lt_of_pow_lt_pow、pos_of_mul_pos_left 等，以及策略 positivity</td>
 </tr>
-<tr class="row-even"><td>mul_left_cancel₀、lt_of_pow_lt_pow、</td>
-<td>pos_of_mul_pos_left 等，以及策略</td>
+<tr class="row-even"><td>simple_induction induction_from_starting_point two_step_induction two_step_induction_from_starting_point</td>
+<td>Nat.le_induction、Nat.twoStepInduction 等，以及策略 induction 或 induction'</td>
 </tr>
 </tbody>
 </table>
-<p>弱化的</p>
+<p>本书中的许多问题若以 mathlib 风格的 Lean 来解，会高效得多，因为某些步骤序列可以由超出本书数学范围的高级算法一步完成。应当了解的这类策略包括：</p>
 <span id="decision-procedures"></span><table class="colwidths-given docutils align-default" id="id3">
-<caption><span class="caption-number">Table 3 </span><span class="caption-text">Advanced algorithms not used in this book</span><a class="headerlink" href="#id3" title="Permalink to this table"></a></caption>
+<caption><span class="caption-number">表 3 </span><span class="caption-text">本书未使用的高级算法</span><a class="headerlink" href="#id3" title="此表的永久链接"></a></caption>
 <colgroup>
 <col style="width: 27%"/>
 <col style="width: 27%"/>
 <col style="width: 45%"/>
 </colgroup>
 <thead>
-<tr class="row-odd"><th class="head">代入</th>
-<th class="head">linarith</th>
-<th class="head">addarith</th>
+<tr class="row-odd"><th class="head"><p>算法</p></th>
+<th class="head"><p>mathlib 策略</p></th>
+<th class="head"><p>该策略可以替代的步骤类型</p></th>
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td>positivity</td>
-<td>simple_induction</td>
-<td>induction_from_starting_point</td>
+<tr class="row-even"><td><p>Fourier-Motzkin 消元法</p></td>
+<td><p>linarith</p></td>
+<td><p>addarith、rel、ring、numbers</p></td>
 </tr>
-<tr class="row-odd"><td>two_step_induction</td>
-<td>two_step_induction_from_starting_point</td>
-<td>Nat.le_induction、Nat.twoStepInduction 等，</td>
+<tr class="row-odd"><td><p>Gröbner 基</p></td>
+<td><p>polyrith</p></td>
+<td><p>rw、ring</p></td>
 </tr>
-<tr class="row-even"><td>以及策略 induction 或 induction'</td>
-<td>本书中的许多问题若以 mathlib 风格的 Lean 来解，会高效得多，因为某些步骤序列可以由超出本书数学范围的高级算法一步完成。应当了解的这类策略包括：</td>
-<td>算法</td>
+<tr class="row-even"><td><p>叠加演算</p></td>
+<td><p>duper</p></td>
+<td><p>证明或子证明末尾的逻辑策略</p></td>
 </tr>
 </tbody>
 </table>
-<p>《证明的技艺》</p>
-<p>版本</p>
+<p>本书没有涉及的另一点，是如何与库交互。由于 mathlib 含有超过一百万行 Lean 代码，要弄清库中是否已经有你想要的引理，并不总是容易的。本书通过预先告诉你希望你使用的每个引理名称来避开这个问题。</p>
+<p>与库交互时，需要了解以下几个基本点：</p>
 <ul class="simple">
-<li>norm_num</li>
-<li>numbers</li>
-<li>norm_num 能完成本书要求读者手工完成的一些计算，包括模 \(n\) 化简、</li>
+<li>在线文档通常比源代码更易读：它可搜索，并且含有内部超链接。</li>
+<li>引理往往以极高的一般性陈述……\((a - b) + c = a - (b - c)\) 不是针对 \(\mathbb{R}\) 陈述的，而是针对 SubtractionCommMonoid 陈述的。在修完抽象代数和点集拓扑的第一门课程之后，你可能会更容易与库交互。</li>
+<li>如果你能猜出一个引理的精确陈述，策略 exact? 会在库中找到它。</li>
 </ul>
-<p>差异</p>
+<p>以上只是触及皮毛：Lean 还有许多更多功能，可以帮助你进行数学探索。<a class="reference external" href="https://leanprover-community.github.io/mathematics_in_lean/">Mathematics in Lean</a>、<a class="reference external" href="https://leanprover-community.github.io/">社区网站</a>和<a class="reference external" href="https://leanprover.zulipchat.com/">社区讨论区</a>提供了进一步探索的指引。祝你玩得开心！</p>
 </section>
 </div>
 </div>

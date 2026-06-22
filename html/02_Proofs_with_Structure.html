@@ -175,10 +175,11 @@
 </div>
 <p>逐步阅读 Lean 代码并不难理解这个证明。但 Lean 实际上提供了一个强大的工具来帮助我们理解多步证明：Lean Infoview 窗口。现在我们第一次使用它。让我们随着这个问题的推进，看 infoview 能告诉我们什么。</p>
 <ol class="arabic">
-<li><p>\(1^3+12^3=1729=9^3+10^3\)，但 \(1\ne 9\) 且 \(1\ne 10\)。</p>
+<li><p>把光标放在 <code class="docutils literal notranslate"><span class="pre">have</span> <span class="pre">hb</span> <span class="pre">:</span> <span class="pre">b</span> <span class="pre">=</span> <span class="pre">1</span></code> 这一行的开头，并查看 Lean Infoview 窗口。我们会看到：</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="k">have</span> <span class="n">hb</span> <span class="o">:</span> <span class="n">b</span> <span class="bp">=</span> <span class="mi">1</span>
 </pre></div>
 </div>
+<p>这只是我们起始问题的竖排显示版本：它列出题目给出的所有变量和假设，并在符号 ⊢ 旁显示我们的<em>目标</em>：证明 <code class="docutils literal notranslate"><span class="pre">a</span> <span class="pre">=</span> <span class="pre">9</span></code>。</p>
 <div class="highlight-text notranslate"><div class="highlight"><pre><span></span>a b : ℝ
 h1 : a - 5 * b = 4
 h2 : b + 2 = 3
@@ -190,11 +191,12 @@ h2 : b + 2 = 3
 </pre></div>
 </div>
 </li>
-<li><p>脚注</p>
+<li><p>接下来，把光标移动到如下几行的开头：</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="k">calc</span>
   <span class="n">a</span> <span class="bp">=</span> <span class="o">(</span><span class="n">a</span> <span class="bp">-</span> <span class="mi">5</span> <span class="bp">*</span> <span class="n">b</span><span class="o">)</span> <span class="bp">+</span> <span class="mi">5</span> <span class="bp">*</span> <span class="n">b</span> <span class="o">:=</span> <span class="kd">by</span> <span class="n">ring</span>
 </pre></div>
 </div>
+<p>新证明的事实 <code class="docutils literal notranslate"><span class="pre">hb</span></code>，即 <code class="docutils literal notranslate"><span class="pre">b</span> <span class="pre">=</span> <span class="pre">1</span></code>，已经加入 infoview 的假设列表。</p>
 <div class="highlight-text notranslate"><div class="highlight"><pre><span></span>a b : ℝ
 h1 : a - 5 * b = 4
 h2 : b + 2 = 3
@@ -203,10 +205,11 @@ hb : b = 1
 </pre></div>
 </div>
 </li>
-<li><p>例子改编自 Hammack，《Book of Proof》，第 7.3 节。</p>
+<li><p>最后，把光标移动到最后一行代码之后、下一行的开头：</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="n">_</span> <span class="bp">=</span> <span class="mi">9</span> <span class="o">:=</span> <span class="kd">by</span> <span class="n">ring</span>
 </pre></div>
 </div>
+<p>infoview 现在不再显示任何任务，而是显示信息 <code class="docutils literal notranslate"><span class="pre">No</span> <span class="pre">goals</span></code>，这在视觉上确认了 <code class="docutils literal notranslate"><span class="pre">calc</span></code> 块已经解决目标，从而完成了问题。</p>
 <div class="highlight-text notranslate"><div class="highlight"><pre><span></span>No goals
 </pre></div>
 </div>
@@ -429,22 +432,22 @@ h3 : m + 3 ≤ 9
 <section id="exercises">
 <h3>2.1.9. 练习<a class="headerlink" href="#exercises" title="此标题的永久链接"></a></h3>
 <ol class="arabic">
-<li><p>把光标放在 <code class='"docutils' literal="" notranslate=""><span class='"pre"'>have</span> <span class='"pre"'>hb</span> <span class='"pre"'>:</span> <span class='"pre"'>b</span> <span class='"pre"'>=</span> <span class='"pre"'>1</span></code> 这一行的开头，并查看 Lean Infoview 窗口。我们会看到：</p>
-<p>这只是我们起始问题的竖排显示版本：它列出题目给出的所有变量和假设，并在符号 ⊢ 旁显示我们的<em>目标</em>：证明 <code class='"docutils' literal="" notranslate=""><span class='"pre"'>a</span> <span class='"pre"'>=</span> <span class='"pre"'>9</span></code>。</p>
+<li><p>设 \(x\) 为有理数，且它的平方为 4，并且它大于 1。证明 \(x=2\)。</p>
+<p>建议步骤：证明 \(x(x+2)=2(x+2)\)，然后消去以推出 \(x=2\)。</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">example</span> <span class="o">{</span><span class="n">x</span> <span class="o">:</span> <span class="n">ℚ</span><span class="o">}</span> <span class="o">(</span><span class="n">h1</span> <span class="o">:</span> <span class="n">x</span> <span class="bp">^</span> <span class="mi">2</span> <span class="bp">=</span> <span class="mi">4</span><span class="o">)</span> <span class="o">(</span><span class="n">h2</span> <span class="o">:</span> <span class="mi">1</span> <span class="bp">&lt;</span> <span class="n">x</span><span class="o">)</span> <span class="o">:</span> <span class="n">x</span> <span class="bp">=</span> <span class="mi">2</span> <span class="o">:=</span> <span class="kd">by</span>
   <span class="gr">sorry</span>
 </pre></div>
 </div>
 </li>
-<li><p>接下来，把光标移动到如下几行的开头：</p>
-<p>新证明的事实 <code class='"docutils' literal="" notranslate=""><span class='"pre"'>hb</span></code>，即 <code class='"docutils' literal="" notranslate=""><span class='"pre"'>b</span> <span class='"pre"'>=</span> <span class='"pre"'>1</span></code>，已经加入 infoview 的假设列表。</p>
+<li><p>设整数 \(n\) 满足 \(n^2+4=4n\)。证明 \(n=2\)。</p>
+<p>建议步骤：证明 \((n-2)^2=0\)，消去平方以推出 \(n-2=0\)，然后完成证明。</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">example</span> <span class="o">{</span><span class="n">n</span> <span class="o">:</span> <span class="n">ℤ</span><span class="o">}</span> <span class="o">(</span><span class="n">hn</span> <span class="o">:</span> <span class="n">n</span> <span class="bp">^</span> <span class="mi">2</span> <span class="bp">+</span> <span class="mi">4</span> <span class="bp">=</span> <span class="mi">4</span> <span class="bp">*</span> <span class="n">n</span><span class="o">)</span> <span class="o">:</span> <span class="n">n</span> <span class="bp">=</span> <span class="mi">2</span> <span class="o">:=</span> <span class="kd">by</span>
   <span class="gr">sorry</span>
 </pre></div>
 </div>
 </li>
-<li><p>最后，把光标移动到最后一行代码之后、下一行的开头：</p>
-<p>infoview 现在不再显示任何任务，而是显示信息 <code class='"docutils' literal="" notranslate=""><span class='"pre"'>No</span> <span class='"pre"'>goals</span></code>，这在视觉上确认了 <code class='"docutils' literal="" notranslate=""><span class='"pre"'>calc</span></code> 块已经解决目标，从而完成了问题。</p>
+<li><p>设 \(x\) 和 \(y\) 为有理数，并且假设 \(xy=1\)、\(x \ge 1\)。证明 \(y \le 1\)。</p>
+<p>建议步骤：证明 \(0<xy p=""></xy></p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">example</span> <span class="o">(</span><span class="n">x</span> <span class="n">y</span> <span class="o">:</span> <span class="n">ℚ</span><span class="o">)</span> <span class="o">(</span><span class="n">h</span> <span class="o">:</span> <span class="n">x</span> <span class="bp">*</span> <span class="n">y</span> <span class="bp">=</span> <span class="mi">1</span><span class="o">)</span> <span class="o">(</span><span class="n">h2</span> <span class="o">:</span> <span class="n">x</span> <span class="bp">≥</span> <span class="mi">1</span><span class="o">)</span> <span class="o">:</span> <span class="n">y</span> <span class="bp">≤</span> <span class="mi">1</span> <span class="o">:=</span> <span class="kd">by</span>
   <span class="gr">sorry</span>
 </pre></div>
@@ -579,15 +582,15 @@ h1 : a ^ 2 + b ^ 2 = 0
 <section id="id14">
 <h3>2.2.4. 练习<a class="headerlink" href="#id14" title="此标题的永久链接"></a></h3>
 <ol class="arabic">
-<li><p>设 \(x\) 为有理数，且它的平方为 4，并且它大于 1。证明 \(x=2\)。</p>
-<p>建议步骤：证明 \(x(x+2)=2(x+2)\)，然后消去以推出 \(x=2\)。</p>
+<li><p>设 \(m\) 为满足 \(m + 1=5\) 的整数。证明 \(3m\ne 6\)。</p>
+<p>你可能会想用这样一个事实：若第一个数大于第二个数，则这两个数不相等（你会需要引理 <code class="docutils literal notranslate"><span class="pre">ne_of_gt</span></code>，如 <a class="reference internal" href="#ne-of-gt"><span class="std std-numref">例 2.2.2</span></a>）。</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">example</span> <span class="o">{</span><span class="n">m</span> <span class="o">:</span> <span class="n">ℤ</span><span class="o">}</span> <span class="o">(</span><span class="n">hm</span> <span class="o">:</span> <span class="n">m</span> <span class="bp">+</span> <span class="mi">1</span> <span class="bp">=</span> <span class="mi">5</span><span class="o">)</span> <span class="o">:</span> <span class="mi">3</span> <span class="bp">*</span> <span class="n">m</span> <span class="bp">≠</span> <span class="mi">6</span> <span class="o">:=</span> <span class="kd">by</span>
   <span class="gr">sorry</span>
 </pre></div>
 </div>
 </li>
-<li><p>设整数 \(n\) 满足 \(n^2+4=4n\)。证明 \(n=2\)。</p>
-<p>建议步骤：证明 \((n-2)^2=0\)，消去平方以推出 \(n-2=0\)，然后完成证明。</p>
+<li><p>设 \(s\) 为有理数，且 \(3s \le -6\)、\(2s \ge -4\)。证明 \(s=-2\)。</p>
+<p>你很可能会使用引理 <code class="docutils literal notranslate"><span class="pre">le_antisymm</span></code>，它说明若 \(x\le y\) 且 \(x\ge y\)，则 \(x = y\)。</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">example</span> <span class="o">{</span><span class="n">s</span> <span class="o">:</span> <span class="n">ℚ</span><span class="o">}</span> <span class="o">(</span><span class="n">h1</span> <span class="o">:</span> <span class="mi">3</span> <span class="bp">*</span> <span class="n">s</span> <span class="bp">≤</span> <span class="bp">-</span><span class="mi">6</span><span class="o">)</span> <span class="o">(</span><span class="n">h2</span> <span class="o">:</span> <span class="mi">2</span> <span class="bp">*</span> <span class="n">s</span> <span class="bp">≥</span> <span class="bp">-</span><span class="mi">4</span><span class="o">)</span> <span class="o">:</span> <span class="n">s</span> <span class="bp">=</span> <span class="bp">-</span><span class="mi">2</span> <span class="o">:=</span> <span class="kd">by</span>
   <span class="gr">sorry</span>
 </pre></div>
@@ -596,9 +599,9 @@ h1 : a ^ 2 + b ^ 2 = 0
 </ol>
 <p class="rubric">脚注</p>
 <dl class="footnote brackets">
-<dt class="label" id="id15">设 \(m\) 为整数，并且假设存在整数 \(a\)，使得 \(2a=m\)。证明 \(m\ne 5\)。</dt>
+<dt class="label" id="id15"><span class="brackets"><a class="fn-backref" href="#id10">1</a></span></dt>
 <dd>在这个例子中，这是有理数上关系 \(&lt;\) 的定义的结果。</dd>
-<dt class="label" id="id16">设 \(n\) 为整数。证明存在整数 \(a\)，使得 \(2a^3 \ge na+7\)。</dt>
+<dt class="label" id="id16"><span class="brackets"><a class="fn-backref" href="#id11">2</a></span></dt>
 <dd>这里 ne 表示 “not equal”，lt 表示 “less than”，而 of 表示我们从一个 lt 陈述推出一个 ne 陈述。Lean 标准数学库有许多这样的命名约定，但你不必遵守它们；你自己的引理愿意叫 foo 或 banana 都可以。</dd>
 </dl>
 </section>
@@ -607,35 +610,35 @@ h1 : a ^ 2 + b ^ 2 = 0
 <span id="or"></span><h2>2.3. “或”与分类证明<a class="headerlink" href="#or-and-proof-by-cases" title="此标题的永久链接"></a></h2>
 <section id="id17">
 <h3>2.3.1. 例<a class="headerlink" href="#id17" title="此标题的永久链接"></a></h3>
-<p>在这个例子中，这是有理数上关系 \(&lt;\) 的定义的结果。</p>
-<div class="admonition-problem admonition">
-<p class="admonition-title">这里 <code class="docutils literal notranslate"><span class="pre">ne</span></code> 表示 “not equal”，<code class="docutils literal notranslate"><span class="pre">lt</span></code> 表示 “less than”，而 <code class="docutils literal notranslate"><span class="pre">of</span></code> 表示我们是从一个 <code class="docutils literal notranslate"><span class="pre">lt</span></code> 陈述推出一个 <code class="docutils literal notranslate"><span class="pre">ne</span></code> 陈述。Lean 标准数学库有许多这样的命名约定，但你不必遵守它们；你自己的引理愿意叫 <code class="docutils literal notranslate"><span class="pre">foo</span></code> 或 <code class="docutils literal notranslate"><span class="pre">banana</span></code> 都可以。</p>
 <p>在数学中，“或”（作为逻辑符号记为 \(\lor\)）可以连接两个陈述。例如，下面的问题中，假设就是一个“或”陈述。</p>
+<div class="admonition-problem admonition">
+<p class="admonition-title">问题</p>
+<p>设 \(x\) 和 \(y\) 为实数，并且假设 \(x=1\) 或 \(y=-1\)。证明 \(xy+x=y+1\)。</p>
 </div>
-<p>问题</p>
-<blockquote>
-<div><p>设 \(x\) 和 \(y\) 为实数，并且假设 \(x=1\) 或 \(y=-1\)。证明 \(xy+x=y+1\)。</p>
-</div></blockquote>
 <p>假设</p>
-<div class="admonition-solution admonition">
-<p class="admonition-title">\(x=1\) 或 \(y=-1\)</p>
+<blockquote>
+<div><p>\(x=1\) 或 \(y=-1\)</p>
+</div></blockquote>
 <p>告诉我们，备选项 \(x=1\)、\(y=-1\) 中至少有一个成立（也可能两者都成立，但这不需要特殊处理）。因此，本题解答只需依次考虑这两个备选项。这称为<em>分类证明</em>。</p>
+<div class="admonition-solution admonition">
+<p class="admonition-title">解答</p>
+<p>如果 \(x=1\)，则</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}xy+x&amp;=1\cdot y+1\\
 &amp;= y+1,\end{split}\]</div>
-<p>解答</p>
+<p>而如果 \(y=-1\)，则</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}xy+x&amp;=x\cdot -1+x\\
 &amp;=-1+1\\
 &amp;=y+1.\end{split}\]</div>
 </div>
-<p>如果 \(x=1\)，则</p>
+<p>在 Lean 中，“或”陈述用逻辑符号 ∨ 表示。在本题开始时，infoview 显示一个任务，其中 h 是“或”陈述假设，目标是证明 \(xy+x=y+1\)。</p>
 <div class="highlight-text notranslate"><div class="highlight"><pre><span></span>x y : ℝ
 h : x = 1 ∨ y = -1
 ⊢ x * y + x = y + 1
 </pre></div>
 </div>
-<p>而如果 \(y=-1\)，则</p>
+<p>为了依次考虑“或”陈述表示的两个情形，我们使用策略 <code class="docutils literal notranslate"><span class="pre">obtain</span></code>。应用这个策略之后，infoview 现在显示两个更简单的任务。每个任务中的目标仍然是证明 \(xy+x=y+1\)，但假设已经改变：第一个任务中是左侧备选项 <code class="docutils literal notranslate"><span class="pre">x</span> <span class="pre">=</span> <span class="pre">1</span></code>，第二个任务中是右侧备选项 <code class="docutils literal notranslate"><span class="pre">y</span> <span class="pre">=</span> <span class="pre">-1</span></code>。</p>
 <div class="highlight-text notranslate"><div class="highlight"><pre><span></span>x y : ℝ
 hx : x = 1
 ⊢ x * y + x = y + 1
@@ -645,7 +648,7 @@ hy : y = -1
 ⊢ x * y + x = y + 1
 </pre></div>
 </div>
-<p>在 Lean 中，“或”陈述用逻辑符号 ∨ 表示。在本题开始时，infoview 显示一个任务，其中 h 是“或”陈述假设，目标是证明 \(xy+x=y+1\)。</p>
+<p>然后我们可以逐一解决这些较简单的任务，分别给出计算式证明。</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">example</span> <span class="o">{</span><span class="n">x</span> <span class="n">y</span> <span class="o">:</span> <span class="n">ℝ</span><span class="o">}</span> <span class="o">(</span><span class="n">h</span> <span class="o">:</span> <span class="n">x</span> <span class="bp">=</span> <span class="mi">1</span> <span class="bp">∨</span> <span class="n">y</span> <span class="bp">=</span> <span class="bp">-</span><span class="mi">1</span><span class="o">)</span> <span class="o">:</span> <span class="n">x</span> <span class="bp">*</span> <span class="n">y</span> <span class="bp">+</span> <span class="n">x</span> <span class="bp">=</span> <span class="n">y</span> <span class="bp">+</span> <span class="mi">1</span> <span class="o">:=</span> <span class="kd">by</span>
   <span class="n">obtain</span> <span class="n">hx</span> <span class="bp">|</span> <span class="n">hy</span> <span class="o">:=</span> <span class="n">h</span>
   <span class="k">calc</span>
@@ -660,41 +663,41 @@ hy : y = -1
 </section>
 <section id="sq-ne-two">
 <span id="id18"></span><h3>2.3.2. 例<a class="headerlink" href="#sq-ne-two" title="此标题的永久链接"></a></h3>
-<p>为了依次考虑“或”陈述表示的两个情形，我们使用策略 <code class="docutils literal notranslate"><span class="pre">obtain</span></code>。应用这个策略之后，infoview 现在显示两个更简单的任务。每个任务中的目标仍然是证明 \(xy+x=y+1\)，但假设已经改变：第一个任务中是左侧备选项 <code class="docutils literal notranslate"><span class="pre">x</span> <span class="pre">=</span> <span class="pre">1</span></code>，第二个任务中是右侧备选项 <code class="docutils literal notranslate"><span class="pre">y</span> <span class="pre">=</span> <span class="pre">-1</span></code>。</p>
-<div class="admonition-problem admonition">
-<p class="admonition-title">然后我们可以逐一解决这些较简单的任务，分别给出计算式证明。</p>
 <p>更常见的是，你会在没有直接呈现为“或”陈述的假设时进行分类证明。此时，你需要自己创造这样一个假设：建立并证明一个作为“或”陈述的中间陈述。</p>
+<div class="admonition-problem admonition">
+<p class="admonition-title">问题</p>
+<p>设 \(n\) 为任意自然数。证明 \(n ^ 2 \ne 2\)。</p>
 </div>
-<p>问题</p>
-<blockquote>
-<div><p>设 \(n\) 为任意自然数。证明 \(n ^ 2 \ne 2\)。</p>
-</div></blockquote>
 <p>在这个问题中，我们将对下面这个“或”陈述分类讨论：</p>
-<div class="admonition-solution admonition">
-<p class="admonition-title">\(n \le 1\) 或 \(2 \le n\)。</p>
+<blockquote>
+<div><p>\(n \le 1\) 或 \(2 \le n\)。</p>
+</div></blockquote>
 <p>在纸上，这可以不加证明地陈述；不过严格说来，它来自关于自然数的一个引理：一般而言，\(n\) 要么小于等于某个自然数，要么大于等于下一个自然数。完成这个分类之后，题目的解答就很容易。</p>
-<p>解答</p>
+<div class="admonition-solution admonition">
+<p class="admonition-title">解答</p>
+<p>我们分别考虑 \(n \le 1\) 和 \(2 \le n\) 两种情形。</p>
+<p>情形 1（\(n \le 1\)）：只需证明 \(n ^ 2 &lt; 2\)。事实上，</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}n ^ 2 &amp; \le 1 ^ 2\\
 &amp;&lt;2.\end{split}\]</div>
-<p>我们分别考虑 \(n \le 1\) 和 \(2 \le n\) 两种情形。</p>
+<p>情形 2（\(2 \le n\)）：只需证明 \(n ^ 2 &gt; 2\)。事实上，</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}2 &amp;&lt; 2 ^ 2\\
 &amp; \le n ^ 2.\end{split}\]</div>
 </div>
-<p>情形 1（\(n \le 1\)）：只需证明 \(n ^ 2 &lt; 2\)。事实上，</p>
+<p>在 Lean 中，我们把这个“或”陈述显式建立为一个中间事实，即某个引理的应用，</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">lemma</span> <span class="n">le_or_succ_le</span> <span class="o">(</span><span class="n">a</span> <span class="n">b</span> <span class="o">:</span> <span class="n">ℕ</span><span class="o">)</span> <span class="o">:</span> <span class="n">a</span> <span class="bp">≤</span> <span class="n">b</span> <span class="bp">∨</span> <span class="n">b</span> <span class="bp">+</span> <span class="mi">1</span> <span class="bp">≤</span> <span class="n">a</span> <span class="o">:=</span>
 </pre></div>
 </div>
-<p>情形 2（\(2 \le n\)）：只需证明 \(n ^ 2 &gt; 2\)。事实上，</p>
+<p>我们此前还没有以这种方式调用引理。语法使用 <code class="docutils literal notranslate"><span class="pre">have</span></code>，</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="k">have</span> <span class="n">hn</span> <span class="o">:=</span> <span class="n">le_or_succ_le</span> <span class="n">n</span> <span class="mi">1</span>
 </pre></div>
 </div>
-<p>在 Lean 中，我们把这个“或”陈述显式建立为一个中间事实，即某个引理的应用，</p>
+<p>而在这行代码之后，infoview 显示出我们想要的“或”陈述：</p>
 <div class="highlight-text notranslate"><div class="highlight"><pre><span></span>hn : n ≤ 1 ∨ 2 ≤ n
 </pre></div>
 </div>
-<p>我们此前还没有以这种方式调用引理。语法使用 <code class="docutils literal notranslate"><span class="pre">have</span></code>，</p>
+<p>建立这个中间事实之后，我们对该事实分类讨论，于是留下两个任务，对应两个情形：</p>
 <div class="highlight-text notranslate"><div class="highlight"><pre><span></span>n : ℕ
 hn : n ≤ 1
 ⊢ n ^ 2 ≠ 2
@@ -704,7 +707,7 @@ hn : 2 ≤ n
 ⊢ n ^ 2 ≠ 2
 </pre></div>
 </div>
-<p>而在这行代码之后，infoview 显示出我们想要的“或”陈述：</p>
+<p>练习：第一个情形已经用 Lean 写出。请补全第二个情形的细节。</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">example</span> <span class="o">{</span><span class="n">n</span> <span class="o">:</span> <span class="n">ℕ</span><span class="o">}</span> <span class="o">:</span> <span class="n">n</span> <span class="bp">^</span> <span class="mi">2</span> <span class="bp">≠</span> <span class="mi">2</span> <span class="o">:=</span> <span class="kd">by</span>
   <span class="k">have</span> <span class="n">hn</span> <span class="o">:=</span> <span class="n">le_or_succ_le</span> <span class="n">n</span> <span class="mi">1</span>
   <span class="n">obtain</span> <span class="n">hn</span> <span class="bp">|</span> <span class="n">hn</span> <span class="o">:=</span> <span class="n">hn</span>
@@ -718,28 +721,28 @@ hn : 2 ≤ n
 </section>
 <section id="id19">
 <h3>2.3.3. 例<a class="headerlink" href="#id19" title="此标题的永久链接"></a></h3>
-<p>建立这个中间事实之后，我们对该事实分类讨论，于是留下两个任务，对应两个情形：</p>
-<div class="admonition-problem admonition">
-<p class="admonition-title">练习：第一个情形已经用 Lean 写出。请补全第二个情形的细节。</p>
 <p>到目前为止，我们讨论的是如何处理出现在假设中的“或”陈述。现在转向如何处理出现在目标中的“或”陈述。这很容易：你必须证明这个“或”陈述中的某一个备选项，所以只需宣布你预期哪个备选项可行，然后证明它。</p>
-</div>
-<div class="admonition-solution admonition">
+<div class="admonition-problem admonition">
 <p class="admonition-title">问题</p>
 <p>设 \(x\) 为满足 \(2x+1=5\) 的实数。证明 \(x=1\) 或 \(x=2\)。</p>
+</div>
+<div class="admonition-solution admonition">
+<p class="admonition-title">解答</p>
+<p>我们将证明 \(x=2\)。事实上，</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}x &amp;=\frac{(2x+1)-1}{2}\\
 &amp;=\frac{5-1}{2}\\
 &amp;=2.\end{split}\]</div>
 </div>
-<p>解答</p>
+<p>在 Lean 中，使用策略 <code class="docutils literal notranslate"><span class="pre">right</span></code> 来宣布你将证明目标的右侧备选项（证明左侧则用 <code class="docutils literal notranslate"><span class="pre">left</span></code>）。这会改变 infoview 中显示的目标：从</p>
 <div class="highlight-text notranslate"><div class="highlight"><pre><span></span>⊢ x = 1 ∨ x = 2
 </pre></div>
 </div>
-<p>我们将证明 \(x=2\)。事实上，</p>
+<p>在应用策略之前，变为</p>
 <div class="highlight-text notranslate"><div class="highlight"><pre><span></span>⊢ x = 2
 </pre></div>
 </div>
-<p>在 Lean 中，使用策略 <code class="docutils literal notranslate"><span class="pre">right</span></code> 来宣布你将证明目标的右侧备选项（证明左侧则用 <code class="docutils literal notranslate"><span class="pre">left</span></code>）。这会改变 infoview 中显示的目标：从</p>
+<p>让我们做一个同时包含这两种逻辑推理风格的例子。我们解一个二次方程；这是一种经典情形，其结论中会出现“或”。我们将得到一个“或”陈述作为中间事实，分类讨论，然后在每个情形中选择目标中的一侧。</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">example</span> <span class="o">{</span><span class="n">x</span> <span class="o">:</span> <span class="n">ℝ</span><span class="o">}</span> <span class="o">(</span><span class="n">hx</span> <span class="o">:</span> <span class="mi">2</span> <span class="bp">*</span> <span class="n">x</span> <span class="bp">+</span> <span class="mi">1</span> <span class="bp">=</span> <span class="mi">5</span><span class="o">)</span> <span class="o">:</span> <span class="n">x</span> <span class="bp">=</span> <span class="mi">1</span> <span class="bp">∨</span> <span class="n">x</span> <span class="bp">=</span> <span class="mi">2</span> <span class="o">:=</span> <span class="kd">by</span>
   <span class="n">right</span>
   <span class="k">calc</span>
@@ -751,23 +754,23 @@ hn : 2 ≤ n
 </section>
 <section id="solve-quadratic">
 <span id="id20"></span><h3>2.3.4. 例<a class="headerlink" href="#solve-quadratic" title="此标题的永久链接"></a></h3>
-<p>在应用策略之前，变为</p>
-<div class="admonition-problem admonition">
-<p class="admonition-title">让我们做一个同时包含这两种逻辑推理风格的例子。我们解一个二次方程；这是一种经典情形，其结论中会出现“或”。我们将得到一个“或”陈述作为中间事实，分类讨论，然后在每个情形中选择目标中的一侧。</p>
 <p>让我们做一个同时包含这两种逻辑推理风格的例子。我们解一个二次方程；这是一种经典情形，其结论中会出现“或”。我们将得到一个“或”陈述作为中间事实，分类讨论，然后在每个情形中选择目标中的一侧。</p>
+<div class="admonition-problem admonition">
+<p class="admonition-title">问题</p>
+<p>设 \(x\) 为满足 \(x^2-3x+2=0\) 的实数。证明 \(x=1\) 或 \(x=2\)。</p>
 </div>
 <div class="admonition-solution admonition">
-<p class="admonition-title">设 \(x\) 为满足 \(x^2-3x+2=0\) 的实数。证明 \(x=1\) 或 \(x=2\)。</p>
-<p>设 \(x\) 为满足 \(x^2-3x+2=0\) 的实数。证明 \(x=1\) 或 \(x=2\)。</p>
+<p class="admonition-title">解答</p>
+<p>我们有</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}(x-1)(x-2) &amp;= x ^ 2 - 3x+2\\
 &amp;=0.\end{split}\]</div>
-<p>我们有</p>
-<p>所以 \(x-1=0\) 或 \(x-2=0\)。</p>
 <p>在这个解答中，分类讨论写得比前面的例子略随意。短语“若 \(x-1=0\)”和“若 \(x-2=0\)”悄悄引入了两个情形，并把我们现在要在该情形下证明的目标交给读者来推断。</p>
-</div>
 <p>我已经完成了 Lean 论证的第一部分：写出证明 \((x-1)(x-2)=0\) 的计算，然后调用引理 <code class="docutils literal notranslate"><span class="pre">eq_zero_or_eq_zero_of_mul_eq_zero</span></code>，把它转化为一个“或”陈述。</p>
 <p>练习：补全该论证的 Lean 版本。</p>
+</div>
+<p>在 <a class="reference internal" href="#id17"><span class="std std-numref">例 2.3.2</span></a> 中，我们证明了没有自然数的平方等于 2。没有整数的平方等于 2 也是真的；不过由于负数参与时序关系法则更复杂，Lean 论证会复杂得多。</p>
+<p>我已经完成了 Lean 论证的第一部分：写出证明 \((x-1)(x-2)=0\) 的计算，然后调用引理 <code class="docutils literal notranslate"><span class="pre">eq_zero_or_eq_zero_of_mul_eq_zero</span></code>，把它转化为一个“或”陈述。</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="n">x</span> <span class="o">:</span> <span class="n">ℝ</span>
 <span class="n">hx</span> <span class="o">:</span> <span class="n">x</span> <span class="bp">^</span> <span class="mi">2</span> <span class="bp">-</span> <span class="mi">3</span> <span class="bp">*</span> <span class="n">x</span> <span class="bp">+</span> <span class="mi">2</span> <span class="bp">=</span> <span class="mi">0</span>
 <span class="n">h1</span> <span class="o">:</span> <span class="o">(</span><span class="n">x</span> <span class="bp">-</span> <span class="mi">1</span><span class="o">)</span> <span class="bp">*</span> <span class="o">(</span><span class="n">x</span> <span class="bp">-</span> <span class="mi">2</span><span class="o">)</span> <span class="bp">=</span> <span class="mi">0</span>
@@ -775,7 +778,7 @@ hn : 2 ≤ n
 <span class="bp">⊢</span> <span class="n">x</span> <span class="bp">=</span> <span class="mi">1</span> <span class="bp">∨</span> <span class="n">x</span> <span class="bp">=</span> <span class="mi">2</span>
 </pre></div>
 </div>
-<p>在 <a class="reference internal" href="#id17"><span class="std std-numref">例 2.3.2</span></a> 中，我们证明了没有自然数的平方等于 2。没有整数的平方等于 2 也是真的；不过由于负数参与时序关系法则更复杂，Lean 论证会复杂得多。</p>
+<p>设 \(n\) 为任意整数。证明 \(n ^ 2 \ne 2\)。</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">example</span> <span class="o">{</span><span class="n">x</span> <span class="o">:</span> <span class="n">ℝ</span><span class="o">}</span> <span class="o">(</span><span class="n">hx</span> <span class="o">:</span> <span class="n">x</span> <span class="bp">^</span> <span class="mi">2</span> <span class="bp">-</span> <span class="mi">3</span> <span class="bp">*</span> <span class="n">x</span> <span class="bp">+</span> <span class="mi">2</span> <span class="bp">=</span> <span class="mi">0</span><span class="o">)</span> <span class="o">:</span> <span class="n">x</span> <span class="bp">=</span> <span class="mi">1</span> <span class="bp">∨</span> <span class="n">x</span> <span class="bp">=</span> <span class="mi">2</span> <span class="o">:=</span> <span class="kd">by</span>
   <span class="k">have</span> <span class="n">h1</span> <span class="o">:=</span>
     <span class="k">calc</span>
@@ -788,36 +791,36 @@ hn : 2 ≤ n
 </section>
 <section id="int-sq-ne-two">
 <span id="id21"></span><h3>2.3.5. 例<a class="headerlink" href="#int-sq-ne-two" title="此标题的永久链接"></a></h3>
-<p>我已经完成了 Lean 论证的第一部分：写出证明 \((x-1)(x-2)=0\) 的计算，然后调用引理 <code class="docutils literal notranslate"><span class="pre">eq_zero_or_eq_zero_of_mul_eq_zero</span></code>，把它转化为一个“或”陈述。</p>
-<div class="admonition-problem admonition">
-<p class="admonition-title">设 \(n\) 为任意整数。证明 \(n ^ 2 \ne 2\)。</p>
 <p>在 <a class="reference internal" href="#id17"><span class="std std-numref">例 2.3.2</span></a> 中，我们证明了没有自然数的平方等于 2。没有整数的平方等于 2 也是真的；不过由于负数参与时序关系法则更复杂，Lean 论证会复杂得多。</p>
+<div class="admonition-problem admonition">
+<p class="admonition-title">问题</p>
+<p>情形 1（\(n \le 0\)）：在这个情形中，有 \(0 \le -n\)。我们再分别考虑 \(-n \le 1\) 与 \(2 \le -n\) 两种情形。</p>
 </div>
 <div class="admonition-solution admonition">
-<p class="admonition-title">我们分别考虑 \(n \le 0\) 和 \(1 \le n\) 两种情形。</p>
-<p>情形 1（\(n \le 0\)）：在这个情形中，有 \(0 \le -n\)。我们再分别考虑 \(-n \le 1\) 与 \(2 \le -n\) 两种情形。</p>
-<p>情形 1(i)（\(-n \le 1\)）：只需证明 \(n ^ 2 &lt; 2\)。事实上，</p>
+<p class="admonition-title">解答</p>
 <p>情形 1(ii)（\(2 \le -n\)）：只需证明 \(n ^ 2 &gt; 2\)。事实上，</p>
+<p>情形 2（\(1 \le n\)）：我们分别考虑 \(n \le 1\) 与 \(2 \le n\) 两种情形。</p>
+<p>情形 2(i)（\(n \le 1\)）：只需证明 \(n ^ 2 &lt; 2\)。事实上，</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}n ^ 2 &amp;= (-n) ^ 2\\
 &amp; \le 1 ^ 2\\
 &amp;&lt;2.\end{split}\]</div>
-<p>情形 2（\(1 \le n\)）：我们分别考虑 \(n \le 1\) 与 \(2 \le n\) 两种情形。</p>
+<p>情形 2(ii)（\(2 \le n\)）：只需证明 \(n ^ 2 &gt; 2\)。事实上，</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}2 &amp;&lt; 2 ^ 2\\
 &amp;\le (-n) ^ 2\\
 &amp; = n ^ 2.\end{split}\]</div>
-<p>情形 2(i)（\(n \le 1\)）：只需证明 \(n ^ 2 &lt; 2\)。事实上，</p>
-<p>情形 2(ii)（\(2 \le n\)）：只需证明 \(n ^ 2 &gt; 2\)。事实上，</p>
+<p>当一个证明变得这样复杂时，你可能会发现，用符号 · 标记每个新子证明的开始很有帮助，如下所示。</p>
+<p>我们把这个定理记下来，供以后使用，名称为 <code class="docutils literal notranslate"><span class="pre">sq_ne_two</span></code>。</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}n ^ 2 &amp; \le 1 ^ 2\\
 &amp;&lt;2.\end{split}\]</div>
-<p>当一个证明变得这样复杂时，你可能会发现，用符号 · 标记每个新子证明的开始很有帮助，如下所示。</p>
+<p>在数学中，“且”（作为逻辑符号记为 \(\land\)）和“或”一样，也可以连接两个陈述。例如，下面的问题中，假设就是一个“且”陈述。</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}2 &amp;&lt; 2 ^ 2\\
 &amp; \le n ^ 2.\end{split}\]</div>
 </div>
-<p>我们把这个定理记下来，供以后使用，名称为 <code class="docutils literal notranslate"><span class="pre">sq_ne_two</span></code>。</p>
+<p>当一个证明变得这样复杂时，你可能会发现，用符号 · 标记每个新子证明的开始很有帮助，如下所示。</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">example</span> <span class="o">{</span><span class="n">n</span> <span class="o">:</span> <span class="n">ℤ</span><span class="o">}</span> <span class="o">:</span> <span class="n">n</span> <span class="bp">^</span> <span class="mi">2</span> <span class="bp">≠</span> <span class="mi">2</span> <span class="o">:=</span> <span class="kd">by</span>
   <span class="k">have</span> <span class="n">hn0</span> <span class="o">:=</span> <span class="n">le_or_succ_le</span> <span class="n">n</span> <span class="mi">0</span>
   <span class="n">obtain</span> <span class="n">hn0</span> <span class="bp">|</span> <span class="n">hn0</span> <span class="o">:=</span> <span class="n">hn0</span>
@@ -846,94 +849,97 @@ hn : 2 ≤ n
         <span class="n">_</span> <span class="bp">≤</span> <span class="n">n</span> <span class="bp">^</span> <span class="mi">2</span> <span class="o">:=</span> <span class="kd">by</span> <span class="n">rel</span> <span class="o">[</span><span class="n">hn</span><span class="o">]</span>
 </pre></div>
 </div>
-<p>在数学中，“且”（作为逻辑符号记为 \(\land\)）和“或”一样，也可以连接两个陈述。例如，下面的问题中，假设就是一个“且”陈述。</p>
+<p>设 \(x\) 和 \(y\) 为整数，并且假设 \(2x-y=4\) 且 \(y-x+1=2\)。证明 \(x=5\)。</p>
 </section>
 <section id="id22">
 <h3>2.3.6. 练习<a class="headerlink" href="#id22" title="此标题的永久链接"></a></h3>
 <ol class="arabic">
-<li><p>设 \(x\) 和 \(y\) 为有理数，并且假设 \(xy=1\)、\(x \ge 1\)。证明 \(y \le 1\)。</p>
+<li><p>设 \(x\) 为有理数，并且假设 \(x=4\) 或 \(x=-4\)。证明 \(x^2+1=17\)。</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">example</span> <span class="o">{</span><span class="n">x</span> <span class="o">:</span> <span class="n">ℚ</span><span class="o">}</span> <span class="o">(</span><span class="n">h</span> <span class="o">:</span> <span class="n">x</span> <span class="bp">=</span> <span class="mi">4</span> <span class="bp">∨</span> <span class="n">x</span> <span class="bp">=</span> <span class="bp">-</span><span class="mi">4</span><span class="o">)</span> <span class="o">:</span> <span class="n">x</span> <span class="bp">^</span> <span class="mi">2</span> <span class="bp">+</span> <span class="mi">1</span> <span class="bp">=</span> <span class="mi">17</span> <span class="o">:=</span> <span class="kd">by</span>
   <span class="gr">sorry</span>
 </pre></div>
 </div>
 </li>
-<li><p>设 \(m\) 为满足 \(m + 1=5\) 的整数。证明 \(3m\ne 6\)。</p>
+<li><p>设 \(x\) 为实数，并且假设 \(x=1\) 或 \(x=2\)。证明 \(x^2-3x+2=0\)。</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">example</span> <span class="o">{</span><span class="n">x</span> <span class="o">:</span> <span class="n">ℝ</span><span class="o">}</span> <span class="o">(</span><span class="n">h</span> <span class="o">:</span> <span class="n">x</span> <span class="bp">=</span> <span class="mi">1</span> <span class="bp">∨</span> <span class="n">x</span> <span class="bp">=</span> <span class="mi">2</span><span class="o">)</span> <span class="o">:</span> <span class="n">x</span> <span class="bp">^</span> <span class="mi">2</span> <span class="bp">-</span> <span class="mi">3</span> <span class="bp">*</span> <span class="n">x</span> <span class="bp">+</span> <span class="mi">2</span> <span class="bp">=</span> <span class="mi">0</span> <span class="o">:=</span> <span class="kd">by</span>
   <span class="gr">sorry</span>
 </pre></div>
 </div>
 </li>
-<li><p>设 \(s\) 为有理数，且 \(3s \le -6\)、\(2s \ge -4\)。证明 \(s=-2\)。</p>
+<li><p>设 \(t\) 为有理数，并且假设 \(t=-2\) 或 \(t=3\)。证明 \(t^2-t-6=0\)。</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">example</span> <span class="o">{</span><span class="n">t</span> <span class="o">:</span> <span class="n">ℚ</span><span class="o">}</span> <span class="o">(</span><span class="n">h</span> <span class="o">:</span> <span class="n">t</span> <span class="bp">=</span> <span class="bp">-</span><span class="mi">2</span> <span class="bp">∨</span> <span class="n">t</span> <span class="bp">=</span> <span class="mi">3</span><span class="o">)</span> <span class="o">:</span> <span class="n">t</span> <span class="bp">^</span> <span class="mi">2</span> <span class="bp">-</span> <span class="n">t</span> <span class="bp">-</span> <span class="mi">6</span> <span class="bp">=</span> <span class="mi">0</span> <span class="o">:=</span> <span class="kd">by</span>
   <span class="gr">sorry</span>
 </pre></div>
 </div>
 </li>
-<li><p>设 \(x\) 为有理数，并且假设 \(x=4\) 或 \(x=-4\)。证明 \(x^2+1=17\)。</p>
+<li><p>设 \(x\) 和 \(y\) 为实数，并且假设 \(x=2\) 或 \(y=-2\)。证明 \(x^2+2x=2y+4\)。</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">example</span> <span class="o">{</span><span class="n">x</span> <span class="n">y</span> <span class="o">:</span> <span class="n">ℝ</span><span class="o">}</span> <span class="o">(</span><span class="n">h</span> <span class="o">:</span> <span class="n">x</span> <span class="bp">=</span> <span class="mi">2</span> <span class="bp">∨</span> <span class="n">y</span> <span class="bp">=</span> <span class="bp">-</span><span class="mi">2</span><span class="o">)</span> <span class="o">:</span> <span class="n">x</span> <span class="bp">*</span> <span class="n">y</span> <span class="bp">+</span> <span class="mi">2</span> <span class="bp">*</span> <span class="n">x</span> <span class="bp">=</span> <span class="mi">2</span> <span class="bp">*</span> <span class="n">y</span> <span class="bp">+</span> <span class="mi">4</span> <span class="o">:=</span> <span class="kd">by</span>
   <span class="gr">sorry</span>
 </pre></div>
 </div>
 </li>
-<li><p>设 \(x\) 为实数，并且假设 \(x=1\) 或 \(x=2\)。证明 \(x^2-3x+2=0\)。</p>
+<li><p>设 \(s\) 和 \(t\) 为满足 \(s = 3 - t\) 的有理数。证明 \(s + t = 3\) 或 \(s + t = 5\)。</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">example</span> <span class="o">{</span><span class="n">s</span> <span class="n">t</span> <span class="o">:</span> <span class="n">ℚ</span><span class="o">}</span> <span class="o">(</span><span class="n">h</span> <span class="o">:</span> <span class="n">s</span> <span class="bp">=</span> <span class="mi">3</span> <span class="bp">-</span> <span class="n">t</span><span class="o">)</span> <span class="o">:</span> <span class="n">s</span> <span class="bp">+</span> <span class="n">t</span> <span class="bp">=</span> <span class="mi">3</span> <span class="bp">∨</span> <span class="n">s</span> <span class="bp">+</span> <span class="n">t</span> <span class="bp">=</span> <span class="mi">5</span> <span class="o">:=</span> <span class="kd">by</span>
   <span class="gr">sorry</span>
 </pre></div>
 </div>
 </li>
-<li><p>设 \(t\) 为有理数，并且假设 \(t=-2\) 或 \(t=3\)。证明 \(t^2-t-6=0\)。</p>
+<li><p>设 \(a\) 和 \(b\) 为满足 \(a + 2b &lt; 0\) 的有理数。证明 \(b &lt; a / 2\) 或 \(b &lt; -a/2\)。</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">example</span> <span class="o">{</span><span class="n">a</span> <span class="n">b</span> <span class="o">:</span> <span class="n">ℚ</span><span class="o">}</span> <span class="o">(</span><span class="n">h</span> <span class="o">:</span> <span class="n">a</span> <span class="bp">+</span> <span class="mi">2</span> <span class="bp">*</span> <span class="n">b</span> <span class="bp">&lt;</span> <span class="mi">0</span><span class="o">)</span> <span class="o">:</span> <span class="n">b</span> <span class="bp">&lt;</span> <span class="n">a</span> <span class="bp">/</span> <span class="mi">2</span> <span class="bp">∨</span> <span class="n">b</span> <span class="bp">&lt;</span> <span class="bp">-</span> <span class="n">a</span> <span class="bp">/</span> <span class="mi">2</span> <span class="o">:=</span> <span class="kd">by</span>
   <span class="gr">sorry</span>
 </pre></div>
 </div>
 </li>
-<li><p>设 \(x\) 和 \(y\) 为实数，并且假设 \(x=2\) 或 \(y=-2\)。证明 \(x^2+2x=2y+4\)。</p>
+<li><p>设 \(x\) 和 \(y\) 为满足 \(y = 2x+1\) 的实数。证明 \(x<y>y/2\)。</y></p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">example</span> <span class="o">{</span><span class="n">x</span> <span class="n">y</span> <span class="o">:</span> <span class="n">ℝ</span><span class="o">}</span> <span class="o">(</span><span class="n">h</span> <span class="o">:</span> <span class="n">y</span> <span class="bp">=</span> <span class="mi">2</span> <span class="bp">*</span> <span class="n">x</span> <span class="bp">+</span> <span class="mi">1</span><span class="o">)</span> <span class="o">:</span> <span class="n">x</span> <span class="bp">&lt;</span> <span class="n">y</span> <span class="bp">/</span> <span class="mi">2</span> <span class="bp">∨</span> <span class="n">x</span> <span class="bp">&gt;</span> <span class="n">y</span> <span class="bp">/</span> <span class="mi">2</span> <span class="o">:=</span> <span class="kd">by</span>
   <span class="gr">sorry</span>
 </pre></div>
 </div>
 </li>
-<li><p>设 \(s\) 和 \(t\) 为满足 \(s = 3 - t\) 的有理数。证明 \(s + t = 3\) 或 \(s + t = 5\)。</p>
+<li><p>设 \(x\) 为满足 \(x^2+2x-3=0\) 的实数。证明 \(x=-3\) 或 \(x=1\)。</p>
+<p>你很可能会使用与 <a class="reference internal" href="#id21"><span class="std std-numref">例 2.3.4</span></a> 中相同的引理。</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">example</span> <span class="o">{</span><span class="n">x</span> <span class="o">:</span> <span class="n">ℝ</span><span class="o">}</span> <span class="o">(</span><span class="n">hx</span> <span class="o">:</span> <span class="n">x</span> <span class="bp">^</span> <span class="mi">2</span> <span class="bp">+</span> <span class="mi">2</span> <span class="bp">*</span> <span class="n">x</span> <span class="bp">-</span> <span class="mi">3</span> <span class="bp">=</span> <span class="mi">0</span><span class="o">)</span> <span class="o">:</span> <span class="n">x</span> <span class="bp">=</span> <span class="bp">-</span><span class="mi">3</span> <span class="bp">∨</span> <span class="n">x</span> <span class="bp">=</span> <span class="mi">1</span> <span class="o">:=</span> <span class="kd">by</span>
   <span class="gr">sorry</span>
 </pre></div>
 </div>
 </li>
-<li><p>设 \(a\) 和 \(b\) 为满足 \(a + 2b &lt; 0\) 的有理数。证明 \(b &lt; a / 2\) 或 \(b &lt; -a/2\)。</p>
+<li><p>设 \(a\) 和 \(b\) 为满足 \(a^2+2b^2=3ab\) 的实数。证明 \(a=b\) 或 \(a=2b\)。</p>
+<p>你很可能会使用与 <a class="reference internal" href="#id21"><span class="std std-numref">例 2.3.4</span></a> 中相同的引理。</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">example</span> <span class="o">{</span><span class="n">a</span> <span class="n">b</span> <span class="o">:</span> <span class="n">ℝ</span><span class="o">}</span> <span class="o">(</span><span class="n">hab</span> <span class="o">:</span> <span class="n">a</span> <span class="bp">^</span> <span class="mi">2</span> <span class="bp">+</span> <span class="mi">2</span> <span class="bp">*</span> <span class="n">b</span> <span class="bp">^</span> <span class="mi">2</span> <span class="bp">=</span> <span class="mi">3</span> <span class="bp">*</span> <span class="n">a</span> <span class="bp">*</span> <span class="n">b</span><span class="o">)</span> <span class="o">:</span> <span class="n">a</span> <span class="bp">=</span> <span class="n">b</span> <span class="bp">∨</span> <span class="n">a</span> <span class="bp">=</span> <span class="mi">2</span> <span class="bp">*</span> <span class="n">b</span> <span class="o">:=</span> <span class="kd">by</span>
   <span class="gr">sorry</span>
 </pre></div>
 </div>
 </li>
-<li><p>设 \(x\) 和 \(y\) 为满足 \(y = 2x+1\) 的实数。证明 \(x<y>y/2\)。</y></p>
+<li><p>设 \(t\) 为满足 \(t^3=t^2\) 的实数。证明 \(t=1\) 或 \(t=0\)。</p>
+<p>你很可能会使用与 <a class="reference internal" href="#id21"><span class="std std-numref">例 2.3.4</span></a> 中相同的引理，以及 <code class="docutils literal notranslate"><span class="pre">cancel</span></code> 策略。</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">example</span> <span class="o">{</span><span class="n">t</span> <span class="o">:</span> <span class="n">ℝ</span><span class="o">}</span> <span class="o">(</span><span class="n">ht</span> <span class="o">:</span> <span class="n">t</span> <span class="bp">^</span> <span class="mi">3</span> <span class="bp">=</span> <span class="n">t</span> <span class="bp">^</span> <span class="mi">2</span><span class="o">)</span> <span class="o">:</span> <span class="n">t</span> <span class="bp">=</span> <span class="mi">1</span> <span class="bp">∨</span> <span class="n">t</span> <span class="bp">=</span> <span class="mi">0</span> <span class="o">:=</span> <span class="kd">by</span>
   <span class="gr">sorry</span>
 </pre></div>
 </div>
 </li>
-<li><p>设 \(x\) 为满足 \(x^2+2x-3=0\) 的实数。证明 \(x=-3\) 或 \(x=1\)。</p>
-<p>你很可能会使用与 <a class='"reference' href='"#id21"' internal=""><span class='"std' std-numref="">例 2.3.4</span></a> 中相同的引理。</p>
+<li><p>设 \(n\) 为任意自然数。证明 \(n ^ 2 \ne 7\)。</p>
+<p>你很可能会使用与 <a class="reference internal" href="#id17"><span class="std std-numref">例 2.3.2</span></a> 中相同的引理。</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">example</span> <span class="o">{</span><span class="n">n</span> <span class="o">:</span> <span class="n">ℕ</span><span class="o">}</span> <span class="o">:</span> <span class="n">n</span> <span class="bp">^</span> <span class="mi">2</span> <span class="bp">≠</span> <span class="mi">7</span> <span class="o">:=</span> <span class="kd">by</span>
   <span class="gr">sorry</span>
 </pre></div>
 </div>
 </li>
-<li><p>设 \(a\) 和 \(b\) 为满足 \(a^2+2b^2=3ab\) 的实数。证明 \(a=b\) 或 \(a=2b\)。</p>
-<p>你很可能会使用与 <a class='"reference' href='"#id21"' internal=""><span class='"std' std-numref="">例 2.3.4</span></a> 中相同的引理。</p>
+<li><p>设 \(x\) 为任意整数。证明 \(2x \ne 3\)。</p>
+<p>你很可能会使用与 <a class="reference internal" href="#id17"><span class="std std-numref">例 2.3.2</span></a> 中相同的引理。</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">example</span> <span class="o">{</span><span class="n">x</span> <span class="o">:</span> <span class="n">ℤ</span><span class="o">}</span> <span class="o">:</span> <span class="mi">2</span> <span class="bp">*</span> <span class="n">x</span> <span class="bp">≠</span> <span class="mi">3</span> <span class="o">:=</span> <span class="kd">by</span>
   <span class="gr">sorry</span>
 </pre></div>
 </div>
 </li>
-<li><p>设 \(t\) 为满足 \(t^3=t^2\) 的实数。证明 \(t=1\) 或 \(t=0\)。</p>
-<p>你很可能会使用与 <a class='"reference' href='"#id21"' internal=""><span class='"std' std-numref="">例 2.3.4</span></a> 中相同的引理，以及 <code class='"docutils' literal="" notranslate=""><span class='"pre"'>cancel</span></code> 策略。</p>
+<li><p>设 \(t\) 为任意整数。证明 \(5t \ne 18\)。</p>
+<p>你很可能会使用与 <a class="reference internal" href="#id17"><span class="std std-numref">例 2.3.2</span></a> 中相同的引理。</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">example</span> <span class="o">{</span><span class="n">t</span> <span class="o">:</span> <span class="n">ℤ</span><span class="o">}</span> <span class="o">:</span> <span class="mi">5</span> <span class="bp">*</span> <span class="n">t</span> <span class="bp">≠</span> <span class="mi">18</span> <span class="o">:=</span> <span class="kd">by</span>
   <span class="gr">sorry</span>
 </pre></div>
 </div>
 </li>
-<li><p>设 \(n\) 为任意自然数。证明 \(n ^ 2 \ne 7\)。</p>
-<p>你很可能会使用与 <a class='"reference' href='"#id17"' internal=""><span class='"std' std-numref="">例 2.3.2</span></a> 中相同的引理。</p>
+<li><p>设 \(m\) 为任意自然数。证明 \(m ^ 2 +4m\ne 46\)。</p>
+<p>你很可能会使用与 <a class="reference internal" href="#id17"><span class="std std-numref">例 2.3.2</span></a> 中相同的引理。</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">example</span> <span class="o">{</span><span class="n">m</span> <span class="o">:</span> <span class="n">ℕ</span><span class="o">}</span> <span class="o">:</span> <span class="n">m</span> <span class="bp">^</span> <span class="mi">2</span> <span class="bp">+</span> <span class="mi">4</span> <span class="bp">*</span> <span class="n">m</span> <span class="bp">≠</span> <span class="mi">46</span> <span class="o">:=</span> <span class="kd">by</span>
   <span class="gr">sorry</span>
 </pre></div>
@@ -946,34 +952,34 @@ hn : 2 ≤ n
 <span id="id23"></span><h2>2.4. “且”<a class="headerlink" href="#and" title="此标题的永久链接"></a></h2>
 <section id="id24">
 <h3>2.4.1. 例<a class="headerlink" href="#id24" title="此标题的永久链接"></a></h3>
-<p>当一个证明变得这样复杂时，你可能会发现，用符号 · 标记每个新子证明的开始很有帮助，如下所示。</p>
-<div class="admonition-problem admonition">
-<p class="admonition-title">设 \(x\) 和 \(y\) 为整数，并且假设 \(2x-y=4\) 且 \(y-x+1=2\)。证明 \(x=5\)。</p>
 <p>在数学中，“且”（作为逻辑符号记为 \(\land\)）和“或”一样，也可以连接两个陈述。例如，下面的问题中，假设就是一个“且”陈述。</p>
-</div>
-<p>问题</p>
-<ul class="simple">
-<li><p>设 \(x\) 为任意整数。证明 \(2x \ne 3\)。</p><p>你很可能会使用与 <a class="reference internal" href="#id17"><span class="std std-numref">例 2.3.2</span></a> 中相同的引理。</p></li>
-<li><p>设 \(t\) 为任意整数。证明 \(5t \ne 18\)。</p><p>你很可能会使用与 <a class="reference internal" href="#id17"><span class="std std-numref">例 2.3.2</span></a> 中相同的引理。</p></li>
-</ul>
+<div class="admonition-problem admonition">
+<p class="admonition-title">问题</p>
 <p>设 \(x\) 和 \(y\) 为整数，并且假设 \(2x-y=4\)、\(y-x+1=2\)。证明 \(x=5\)。</p>
-<ul class="simple">
-<li><p>设 \(m\) 为任意自然数。证明 \(m ^ 2 +4m\ne 46\)。</p><p>你很可能会使用与 <a class="reference internal" href="#id17"><span class="std std-numref">例 2.3.2</span></a> 中相同的引理。</p></li>
-</ul>
+</div>
 <p>事实上，我们以前研究过这个问题，即 <a class="reference internal" href="01_Proofs_by_Calculation.html#simultaneous"><span class="std std-numref">例 1.3.6</span></a>。当时，我们把这个问题看作有两个独立假设：</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(2x-y=4\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(y-x+1=2\)</span></p></li>
+</ul>
+<p>但现在，为了讨论方便，我们把它看作只有一个假设：</p>
+<ul class="simple">
+<li>\(2x-y=4\) 且 \(y-x+1=2\)。</li>
+</ul>
+<p>这个区分相当吹毛求疵，在文字中看不出来。在 Lean 中它更明显：我们可能会遇到一个显式含有 <code class="docutils literal notranslate"><span class="pre">∧</span></code> 符号的假设，例如</p>
 <div class="highlight-text notranslate"><div class="highlight"><pre><span></span>x y : ℤ
 h : 2 * x - y = 4 ∧ y - x + 1 = 2
 ⊢ x = 5
 </pre></div>
 </div>
-<p>但现在，为了讨论方便，我们把它看作只有一个假设：</p>
+<p>在这种情况下，策略 <code class="docutils literal notranslate"><span class="pre">obtain</span></code> 会把一个“且”假设拆成它的组成部分，</p>
 <div class="highlight-text notranslate"><div class="highlight"><pre><span></span>x y : ℤ
 h1 : 2 * x - y = 4
 h2 : y - x + 1 = 2
 ⊢ x = 5
 </pre></div>
 </div>
-<p>这个区分相当吹毛求疵，在文字中看不出来。在 Lean 中它更明显：我们可能会遇到一个显式含有 <code class="docutils literal notranslate"><span class="pre">∧</span></code> 符号的假设，例如</p>
+<p>然后我们就可以按需分别访问这些部分来解决问题。在本例中，我们实际上把问题带回了 <a class="reference internal" href="01_Proofs_by_Calculation.html#simultaneous"><span class="std std-numref">例 1.3.6</span></a> 的设定。</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">example</span> <span class="o">{</span><span class="n">x</span> <span class="n">y</span> <span class="o">:</span> <span class="n">ℤ</span><span class="o">}</span> <span class="o">(</span><span class="n">h</span> <span class="o">:</span> <span class="mi">2</span> <span class="bp">*</span> <span class="n">x</span> <span class="bp">-</span> <span class="n">y</span> <span class="bp">=</span> <span class="mi">4</span> <span class="bp">∧</span> <span class="n">y</span> <span class="bp">-</span> <span class="n">x</span> <span class="bp">+</span> <span class="mi">1</span> <span class="bp">=</span> <span class="mi">2</span><span class="o">)</span> <span class="o">:</span> <span class="n">x</span> <span class="bp">=</span> <span class="mi">5</span> <span class="o">:=</span> <span class="kd">by</span>
   <span class="n">obtain</span> <span class="o">⟨</span><span class="n">h1</span><span class="o">,</span> <span class="n">h2</span><span class="o">⟩</span> <span class="o">:=</span> <span class="n">h</span>
   <span class="k">calc</span>
@@ -985,28 +991,28 @@ h2 : y - x + 1 = 2
 </section>
 <section id="abs-le-of-sq-le-sq">
 <span id="id25"></span><h3>2.4.2. 例<a class="headerlink" href="#abs-le-of-sq-le-sq" title="此标题的永久链接"></a></h3>
-<p>在这种情况下，策略 <code class="docutils literal notranslate"><span class="pre">obtain</span></code> 会把一个“且”假设拆成它的组成部分，</p>
-<div class="admonition-problem admonition">
-<p class="admonition-title">然后我们就可以按需分别访问这些部分来解决问题。在本例中，我们实际上把问题带回了 <a class="reference internal" href="01_Proofs_by_Calculation.html#simultaneous"><span class="std std-numref">例 1.3.6</span></a> 的设定。</p>
 <p>“且”假设在实际问题中相对少见。它可能出现的一种情形是：某个单一假设有两个自然的推论，而某个引理把这两个推论配对给出。下面是一个例子。</p>
-</div>
-<div class="admonition-solution admonition">
+<div class="admonition-problem admonition">
 <p class="admonition-title">问题</p>
 <p>设 \(p\) 为满足 \(p^2\le 8\) 的有理数。证明 \(p\ge -5\)。</p>
+</div>
+<div class="admonition-solution admonition">
+<p class="admonition-title">解答</p>
+<p>我们有</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}p^2&amp;\le 9\\
 &amp;= 3^2,\end{split}\]</div>
-<p>解答</p>
+<p>且 3 为正，所以 \(-3\le p\le 3\)。于是</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}p&amp;\ge -3\\
 &amp;\ge -5.\end{split}\]</div>
 </div>
-<p>我们有</p>
+<p>在 Lean 中，我们使用引理 <code class="docutils literal notranslate"><span class="pre">abs_le_of_sq_le_sq'</span></code> 进行这个论证。这个引理由 Fordham 学生 Ben Davidson 加入 Lean 库。请注意该引理结论中的 ∧。</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">theorem</span> <span class="n">abs_le_of_sq_le_sq'</span> <span class="o">{</span><span class="n">x</span> <span class="n">y</span> <span class="o">:</span> <span class="n">ℚ</span><span class="o">}</span> <span class="o">(</span><span class="n">h1</span> <span class="o">:</span> <span class="n">x</span> <span class="bp">^</span> <span class="mi">2</span> <span class="bp">≤</span> <span class="n">y</span> <span class="bp">^</span> <span class="mi">2</span><span class="o">)</span> <span class="o">(</span><span class="n">h2</span> <span class="o">:</span> <span class="mi">0</span> <span class="bp">≤</span> <span class="n">y</span><span class="o">)</span> <span class="o">:</span>
     <span class="bp">-</span><span class="n">y</span> <span class="bp">≤</span> <span class="n">x</span> <span class="bp">∧</span> <span class="n">x</span> <span class="bp">≤</span> <span class="n">y</span> <span class="o">:=</span>
 </pre></div>
 </div>
-<p>且 3 为正，所以 \(-3\le p\le 3\)。于是</p>
+<p>练习：我已经用 Lean 写出了证明中得到中间事实 \(hp' : -3 \le p \land p \le 3\) 的部分。请处理这个“且”假设，然后完成 Lean 中的证明。</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">example</span> <span class="o">{</span><span class="n">p</span> <span class="o">:</span> <span class="n">ℚ</span><span class="o">}</span> <span class="o">(</span><span class="n">hp</span> <span class="o">:</span> <span class="n">p</span> <span class="bp">^</span> <span class="mi">2</span> <span class="bp">≤</span> <span class="mi">8</span><span class="o">)</span> <span class="o">:</span> <span class="n">p</span> <span class="bp">≥</span> <span class="bp">-</span><span class="mi">5</span> <span class="o">:=</span> <span class="kd">by</span>
   <span class="k">have</span> <span class="n">hp'</span> <span class="o">:</span> <span class="bp">-</span><span class="mi">3</span> <span class="bp">≤</span> <span class="n">p</span> <span class="bp">∧</span> <span class="n">p</span> <span class="bp">≤</span> <span class="mi">3</span>
   <span class="bp">·</span> <span class="n">apply</span> <span class="n">abs_le_of_sq_le_sq'</span>
@@ -1017,11 +1023,11 @@ h2 : y - x + 1 = 2
   <span class="gr">sorry</span>
 </pre></div>
 </div>
-<p>在 Lean 中，我们使用引理 <code class="docutils literal notranslate"><span class="pre">abs_le_of_sq_le_sq'</span></code> 进行这个论证。这个引理由 Fordham 学生 Ben Davidson 加入 Lean 库。请注意该引理结论中的 ∧。</p>
+<p>请注意上面证明中一段新的 Lean 语法：像这样一行</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="k">have</span> <span class="n">hp'</span> <span class="o">:</span> <span class="bp">-</span><span class="mi">3</span> <span class="bp">≤</span> <span class="n">p</span> <span class="bp">∧</span> <span class="n">p</span> <span class="bp">≤</span> <span class="mi">3</span>
 </pre></div>
 </div>
-<p>练习：我已经用 Lean 写出了证明中得到中间事实 \(hp' : -3 \le p \land p \le 3\) 的部分。请处理这个“且”假设，然后完成 Lean 中的证明。</p>
+<p>如果没有理由，会使 Lean 要求你给出该理由，也就是说，会出现一个新目标：证明该陈述。</p>
 <div class="highlight-text notranslate"><div class="highlight"><pre><span></span>2 goals
 
 p : ℚ
@@ -1034,35 +1040,35 @@ hp' : -3 ≤ p ∧ p ≤ 3
 ⊢ p ≥ -5
 </pre></div>
 </div>
-<p>请注意上面证明中一段新的 Lean 语法：像这样一行</p>
+<p>当你完成证明之后（如我这里所做），你会回到先前的位置，只不过事实 \(hp'\) 现在已经是一个完全证明过的中间事实，可以供使用。</p>
 </section>
 <section id="id26">
 <h3>2.4.3. 例<a class="headerlink" href="#id26" title="此标题的永久链接"></a></h3>
-<p>如果没有理由，会使 Lean 要求你给出该理由，也就是说，会出现一个新目标：证明该陈述。</p>
-<div class="admonition-problem admonition">
-<p class="admonition-title">当你完成证明之后（如我这里所做），你会回到先前的位置，只不过事实 \(hp'\) 现在已经是一个完全证明过的中间事实，可以供使用。</p>
 <p>有时，一个问题的目标也会含有“且”陈述。例如，你可能会得到一个联立方程组，并被要求确定所有出现变量的值。下面是我们在 <a class="reference internal" href="01_Proofs_by_Calculation.html#id22"><span class="std std-numref">例 1.3.3</span></a> 中见过的联立方程组，但题目陈述被调整为要求我们同时求出 \(a\) 和 \(b\) 的值。</p>
+<div class="admonition-problem admonition">
+<p class="admonition-title">问题</p>
+<p>设 \(a\) 和 \(b\) 为实数，并且假设 \(a-5b=4\)、\(b+2=3\)。证明 \(a=9\) 且 \(b=1\)。</p>
 </div>
-<p>问题</p>
-<div class="admonition-solution admonition">
-<p class="admonition-title">设 \(a\) 和 \(b\) 为实数，并且假设 \(a-5b=4\)、\(b+2=3\)。证明 \(a=9\) 且 \(b=1\)。</p>
 <p>解决这种问题的一种方法，是完全独立地建立所要求的两个事实：</p>
+<div class="admonition-solution admonition">
+<p class="admonition-title">解答</p>
+<p>我们有，</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}a
 &amp;= 4 + 5b \\
 &amp;= -6 + 5(b + 2) \\
 &amp;= -6 + 5 \cdot 3 \\
 &amp;= 9,\end{split}\]</div>
-<p>解答</p>
+<p>又因为 \(b+2=3\)，所以 \(b=1\)。</p>
 </div>
-<p>我们有，</p>
+<p>在 Lean 中，我们使用 <code class="docutils literal notranslate"><span class="pre">constructor</span></code> 策略书写这个证明；它会接受一个目标为“且”陈述的问题，</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="n">a</span> <span class="n">b</span> <span class="o">:</span> <span class="n">ℝ</span>
 <span class="n">h1</span> <span class="o">:</span> <span class="n">a</span> <span class="bp">-</span> <span class="mi">5</span> <span class="bp">*</span> <span class="n">b</span> <span class="bp">=</span> <span class="mi">4</span>
 <span class="n">h2</span> <span class="o">:</span> <span class="n">b</span> <span class="bp">+</span> <span class="mi">2</span> <span class="bp">=</span> <span class="mi">3</span>
 <span class="bp">⊢</span> <span class="n">a</span> <span class="bp">=</span> <span class="mi">9</span> <span class="bp">∧</span> <span class="n">b</span> <span class="bp">=</span> <span class="mi">1</span>
 </pre></div>
 </div>
-<p>又因为 \(b+2=3\)，所以 \(b=1\)。</p>
+<p>并把它化为两个更简单的任务，分别对应“且”的两个部分。</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="n">a</span> <span class="n">b</span> <span class="o">:</span> <span class="n">ℝ</span>
 <span class="n">h1</span> <span class="o">:</span> <span class="n">a</span> <span class="bp">-</span> <span class="mi">5</span> <span class="bp">*</span> <span class="n">b</span> <span class="bp">=</span> <span class="mi">4</span>
 <span class="n">h2</span> <span class="o">:</span> <span class="n">b</span> <span class="bp">+</span> <span class="mi">2</span> <span class="bp">=</span> <span class="mi">3</span>
@@ -1074,7 +1080,7 @@ hp' : -3 ≤ p ∧ p ≤ 3
 <span class="bp">⊢</span> <span class="n">b</span> <span class="bp">=</span> <span class="mi">1</span>
 </pre></div>
 </div>
-<p>在 Lean 中，我们使用 <code class="docutils literal notranslate"><span class="pre">constructor</span></code> 策略书写这个证明；它会接受一个目标为“且”陈述的问题，</p>
+<p>然后我们依次写出这两个任务的 Lean 证明。</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">example</span> <span class="o">{</span><span class="n">a</span> <span class="n">b</span> <span class="o">:</span> <span class="n">ℝ</span><span class="o">}</span> <span class="o">(</span><span class="n">h1</span> <span class="o">:</span> <span class="n">a</span> <span class="bp">-</span> <span class="mi">5</span> <span class="bp">*</span> <span class="n">b</span> <span class="bp">=</span> <span class="mi">4</span><span class="o">)</span> <span class="o">(</span><span class="n">h2</span> <span class="o">:</span> <span class="n">b</span> <span class="bp">+</span> <span class="mi">2</span> <span class="bp">=</span> <span class="mi">3</span><span class="o">)</span> <span class="o">:</span> <span class="n">a</span> <span class="bp">=</span> <span class="mi">9</span> <span class="bp">∧</span> <span class="n">b</span> <span class="bp">=</span> <span class="mi">1</span> <span class="o">:=</span> <span class="kd">by</span>
   <span class="n">constructor</span>
   <span class="bp">·</span> <span class="k">calc</span>
@@ -1085,18 +1091,18 @@ hp' : -3 ≤ p ∧ p ≤ 3
   <span class="bp">·</span> <span class="n">addarith</span> <span class="o">[</span><span class="n">h2</span><span class="o">]</span>
 </pre></div>
 </div>
-<p>并把它化为两个更简单的任务，分别对应“且”的两个部分。</p>
-<div class="admonition-solution admonition">
-<p class="admonition-title">然后我们依次写出这两个任务的 Lean 证明。</p>
 <p>另一种情况是，你可能想记录一个中间事实，然后在证明的两个部分中都使用它。例如，你可能想先解出 \(b\)，然后用它缩短解出 \(a\) 的工作。</p>
+<div class="admonition-solution admonition">
+<p class="admonition-title">解答</p>
+<p>由于 \(b+2=3\)，所以 \(b=1\)。因此</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}a
 &amp;= 4 + 5b \\
 &amp;= 4 + 5 \cdot 3 \\
 &amp;= 9.\end{split}\]</div>
 </div>
-<p>解答</p>
-<p>由于 \(b+2=3\)，所以 \(b=1\)。因此</p>
+<p>通常要留给读者检查：所需目标的两个部分 \(a=9\) 与 \(b=1\) 都已经在某处被建立。</p>
+<p>下面是这个证明在 Lean 中的样子。重要观察是：如果有某个东西要在证明的两个部分中使用（这里是事实 \(b=1\)），那么它必须在使用 <code class="docutils literal notranslate"><span class="pre">constructor</span></code> 策略之前建立。当使用 <code class="docutils literal notranslate"><span class="pre">constructor</span></code> 策略时，到目前为止建立的所有事实，都会在产生的两个任务中都可用：</p>
 <div class="highlight-text notranslate"><div class="highlight"><pre><span></span>a b : ℝ
 h1 : a - 5 * b = 4
 h2 : b + 2 = 3
@@ -1123,26 +1129,26 @@ hb : b = 1
 </section>
 <section id="id27">
 <h3>2.4.4. 例<a class="headerlink" href="#id27" title="此标题的永久链接"></a></h3>
-<p>通常要留给读者检查：所需目标的两个部分 \(a=9\) 与 \(b=1\) 都已经在某处被建立。</p>
-<div class="admonition-problem admonition">
-<p class="admonition-title">下面是这个证明在 Lean 中的样子。重要观察是：如果有某个东西要在证明的两个部分中使用（这里是事实 \(b=1\)），那么它必须在使用 <code class="docutils literal notranslate"><span class="pre">constructor</span></code> 策略之前建立。当使用 <code class="docutils literal notranslate"><span class="pre">constructor</span></code> 策略时，到目前为止建立的所有事实，都会在产生的两个任务中都可用：</p>
 <p>再看一个目标中含有“且”的例子。</p>
-</div>
-<div class="admonition-solution admonition">
+<div class="admonition-problem admonition">
 <p class="admonition-title">问题</p>
 <p>设 \(a\) 和 \(b\) 为实数，并且假设 \(a^2+b^2=0\)。证明 \(a=0\) 且 \(b=0\)。</p>
+</div>
+<div class="admonition-solution admonition">
+<p class="admonition-title">解答</p>
+<p>我们先证明 \(a^2=0\)。\((\star)\) 事实上，</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}a ^ 2 &amp;\le a ^ 2 + b ^ 2\\
 &amp;=0.\end{split}\]</div>
-<p>解答</p>
-<p>我们先证明 \(a^2=0\)。\((\star)\) 事实上，</p>
+<p>并且由于平方非负，还有 \(a^2\geq 0\)。</p>
+<p>由 \((\star)\)，\(a=0\)。同样由 \((\star)\)，</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}b ^ 2 &amp;= a ^ 2 + b ^ 2\\
 &amp;=0,\end{split}\]</div>
-<p>并且由于平方非负，还有 \(a^2\geq 0\)。</p>
-</div>
-<p>由 \((\star)\)，\(a=0\)。同样由 \((\star)\)，</p>
 <p>所以 \(b=0\)。</p>
+</div>
+<p>这个问题的一部分可能让你觉得熟悉。中间目标 \(a^2=0\) 的证明重复了 <a class="reference internal" href="#id12"><span class="std std-numref">例 2.2.3</span></a>。</p>
+<p>下面是 Lean 中的问题陈述，以及从 <a class="reference internal" href="#id12"><span class="std std-numref">例 2.2.3</span></a> 复制来的中间目标 \(a^2=0\) 的证明。请补全余下证明。策略 <code class="docutils literal notranslate"><span class="pre">cancel</span></code> 有助于在已知平方为零时推出量本身为零。</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">example</span> <span class="o">{</span><span class="n">a</span> <span class="n">b</span> <span class="o">:</span> <span class="n">ℝ</span><span class="o">}</span> <span class="o">(</span><span class="n">h1</span> <span class="o">:</span> <span class="n">a</span> <span class="bp">^</span> <span class="mi">2</span> <span class="bp">+</span> <span class="n">b</span> <span class="bp">^</span> <span class="mi">2</span> <span class="bp">=</span> <span class="mi">0</span><span class="o">)</span> <span class="o">:</span> <span class="n">a</span> <span class="bp">=</span> <span class="mi">0</span> <span class="bp">∧</span> <span class="n">b</span> <span class="bp">=</span> <span class="mi">0</span> <span class="o">:=</span> <span class="kd">by</span>
   <span class="k">have</span> <span class="n">h2</span> <span class="o">:</span> <span class="n">a</span> <span class="bp">^</span> <span class="mi">2</span> <span class="bp">=</span> <span class="mi">0</span>
   <span class="bp">·</span> <span class="n">apply</span> <span class="n">le_antisymm</span>
@@ -1169,31 +1175,32 @@ hb : b = 1
 </pre></div>
 </div>
 </li>
-<li><p>\(2x-y=4\) 且 \(y-x+1=2\)。</p>
+<li><p>设 \(m\) 和 \(n\) 为整数，并且假设 \(n \le 8\) 且 \(m + 5 \le n\)。证明 \(m \le 3\)。</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">example</span> <span class="o">{</span><span class="n">m</span> <span class="n">n</span> <span class="o">:</span> <span class="n">ℤ</span><span class="o">}</span> <span class="o">(</span><span class="n">H</span> <span class="o">:</span> <span class="n">n</span> <span class="bp">≤</span> <span class="mi">8</span> <span class="bp">∧</span> <span class="n">m</span> <span class="bp">+</span> <span class="mi">5</span> <span class="bp">≤</span> <span class="n">n</span><span class="o">)</span> <span class="o">:</span> <span class="n">m</span> <span class="bp">≤</span> <span class="mi">3</span> <span class="o">:=</span> <span class="kd">by</span>
   <span class="gr">sorry</span>
 </pre></div>
 </div>
 </li>
-<li><p>设 \(a\) 和 \(b\) 为有理数，并且假设 \(a \le 1\) 且 \(a + b \le 3\)。证明 \(2a+b \le 4\)。</p>
+<li><p>设 \(p\) 为整数，并且假设 \(p + 2 \ge 9\)。证明 \(p^2\geq 49\) 且 \(7 \le p\)。</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">example</span> <span class="o">{</span><span class="n">p</span> <span class="o">:</span> <span class="n">ℤ</span><span class="o">}</span> <span class="o">(</span><span class="n">hp</span> <span class="o">:</span> <span class="n">p</span> <span class="bp">+</span> <span class="mi">2</span> <span class="bp">≥</span> <span class="mi">9</span><span class="o">)</span> <span class="o">:</span> <span class="n">p</span> <span class="bp">^</span> <span class="mi">2</span> <span class="bp">≥</span> <span class="mi">49</span> <span class="bp">∧</span> <span class="mi">7</span> <span class="bp">≤</span> <span class="n">p</span> <span class="o">:=</span> <span class="kd">by</span>
   <span class="gr">sorry</span>
 </pre></div>
 </div>
 </li>
-<li><p>设 \(r\) 和 \(s\) 为实数，并且假设 \(r + s \le 1\) 且 \(r - s \le 5\)。证明 \(2r \le 6\)。</p>
+<li><p>设 \(a\) 为有理数，并且假设 \(a - 1 \ge 5\)。证明 \(a \ge 6\) 且 \(3a \ge 10\)。</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">example</span> <span class="o">{</span><span class="n">a</span> <span class="o">:</span> <span class="n">ℚ</span><span class="o">}</span> <span class="o">(</span><span class="n">h</span> <span class="o">:</span> <span class="n">a</span> <span class="bp">-</span> <span class="mi">1</span> <span class="bp">≥</span> <span class="mi">5</span><span class="o">)</span> <span class="o">:</span> <span class="n">a</span> <span class="bp">≥</span> <span class="mi">6</span> <span class="bp">∧</span> <span class="mi">3</span> <span class="bp">*</span> <span class="n">a</span> <span class="bp">≥</span> <span class="mi">10</span> <span class="o">:=</span> <span class="kd">by</span>
   <span class="gr">sorry</span>
 </pre></div>
 </div>
 </li>
-<li><p>设 \(m\) 和 \(n\) 为整数，并且假设 \(n \le 8\) 且 \(m + 5 \le n\)。证明 \(m \le 3\)。</p>
+<li><p>设 \(x\) 和 \(y\) 为有理数，并且假设 \(x + y = 5\) 且 \(x + 2y = 7\)。证明 \(x=3\) 且 \(y=2\)。</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">example</span> <span class="o">{</span><span class="n">x</span> <span class="n">y</span> <span class="o">:</span> <span class="n">ℚ</span><span class="o">}</span> <span class="o">(</span><span class="n">h</span> <span class="o">:</span> <span class="n">x</span> <span class="bp">+</span> <span class="n">y</span> <span class="bp">=</span> <span class="mi">5</span> <span class="bp">∧</span> <span class="n">x</span> <span class="bp">+</span> <span class="mi">2</span> <span class="bp">*</span> <span class="n">y</span> <span class="bp">=</span> <span class="mi">7</span><span class="o">)</span> <span class="o">:</span> <span class="n">x</span> <span class="bp">=</span> <span class="mi">3</span> <span class="bp">∧</span> <span class="n">y</span> <span class="bp">=</span> <span class="mi">2</span> <span class="o">:=</span> <span class="kd">by</span>
   <span class="gr">sorry</span>
 </pre></div>
 </div>
 </li>
-<li><p>设 \(p\) 为整数，并且假设 \(p + 2 \ge 9\)。证明 \(p^2\geq 49\) 且 \(7 \le p\)。</p>
+<li><p>设 \(a\) 和 \(b\) 为实数，并且假设 \(ab=a=b\)。证明 \(a=b=0\) 或 \(a=b=1\)。</p>
+<p>你很可能需要使用 <a class="reference internal" href="#id21"><span class="std std-numref">例 2.3.4</span></a> 中证明的引理 <code class="docutils literal notranslate"><span class="pre">eq_zero_or_eq_zero_of_mul_eq_zero</span></code>。</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">example</span> <span class="o">{</span><span class="n">a</span> <span class="n">b</span> <span class="o">:</span> <span class="n">ℝ</span><span class="o">}</span> <span class="o">(</span><span class="n">h1</span> <span class="o">:</span> <span class="n">a</span> <span class="bp">*</span> <span class="n">b</span> <span class="bp">=</span> <span class="n">a</span><span class="o">)</span> <span class="o">(</span><span class="n">h2</span> <span class="o">:</span> <span class="n">a</span> <span class="bp">*</span> <span class="n">b</span> <span class="bp">=</span> <span class="n">b</span><span class="o">)</span> <span class="o">:</span>
     <span class="n">a</span> <span class="bp">=</span> <span class="mi">0</span> <span class="bp">∧</span> <span class="n">b</span> <span class="bp">=</span> <span class="mi">0</span> <span class="bp">∨</span> <span class="n">a</span> <span class="bp">=</span> <span class="mi">1</span> <span class="bp">∧</span> <span class="n">b</span> <span class="bp">=</span> <span class="mi">1</span> <span class="o">:=</span> <span class="kd">by</span>
   <span class="gr">sorry</span>
@@ -1207,24 +1214,24 @@ hb : b = 1
 <span id="exists"></span><h2>2.5. 存在性证明<a class="headerlink" href="#existence-proofs" title="此标题的永久链接"></a></h2>
 <section id="id29">
 <h3>2.5.1. 例<a class="headerlink" href="#id29" title="此标题的永久链接"></a></h3>
-<p>这个问题的一部分可能让你觉得熟悉。中间目标 \(a^2=0\) 的证明重复了 <a class="reference internal" href="#id12"><span class="std std-numref">例 2.2.3</span></a>。</p>
-<blockquote>
-<div><p>下面是 Lean 中的问题陈述，以及从 <a class="reference internal" href="#id12"><span class="std std-numref">例 2.2.3</span></a> 复制来的中间目标 \(a^2=0\) 的证明。请补全余下证明。策略 <code class="docutils literal notranslate"><span class="pre">cancel</span></code> 有助于在已知平方为零时推出量本身为零。</p>
-</div></blockquote>
 <p>本节讨论存在量词，即英文中表达为如下形式的逻辑概念：</p>
-<div class="admonition-problem admonition">
-<p class="admonition-title">存在……使得……。</p>
+<blockquote>
+<div><p>存在……使得……。</p>
+</div></blockquote>
 <p>例如，下面的问题中，假设含有一个存在量词。</p>
+<div class="admonition-problem admonition">
+<p class="admonition-title">问题</p>
+<p>设 \(a\) 为有理数，并且假设存在有理数 \(b\)，使得 \(a=b^2+1\)。证明 \(a&gt;0\)。</p>
 </div>
-<p>问题</p>
-<div class="admonition-solution admonition">
-<p class="admonition-title">设 \(a\) 为有理数，并且假设存在有理数 \(b\)，使得 \(a=b^2+1\)。证明 \(a&gt;0\)。</p>
 <p>假设“存在有理数 \(b\)，使得 \(a=b^2+1\)”可以立即拆开，从而真正取得这个存在命题的见证：一个满足 \(a=b^2+1\) 的有理数 \(b\)（也许不止一个，但这里只会选择一个见证）。然后我们就能做一个涉及见证 \(b\) 的普通计算式证明。</p>
+<div class="admonition-solution admonition">
+<p class="admonition-title">解答</p>
+<p>设 \(b\) 为满足 \(a=b^2+1\) 的有理数。我们有，</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}a &amp;=b^2+1\\
 &amp;&gt;0.\end{split}\]</div>
 </div>
-<p>解答</p>
+<p>存在命题的逻辑符号是 \(\exists\)。在 Lean 中，策略 <code class="docutils literal notranslate"><span class="pre">obtain</span></code> 用来把存在性假设拆成一个见证和一个关于该见证的假设。语法与拆开“且”相同（见 <a class="reference internal" href="#and"><span class="std std-numref">第 2.4 节</span></a>）。</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">example</span> <span class="o">{</span><span class="n">a</span> <span class="o">:</span> <span class="n">ℚ</span><span class="o">}</span> <span class="o">(</span><span class="n">h</span> <span class="o">:</span> <span class="bp">∃</span> <span class="n">b</span> <span class="o">:</span> <span class="n">ℚ</span><span class="o">,</span> <span class="n">a</span> <span class="bp">=</span> <span class="n">b</span> <span class="bp">^</span> <span class="mi">2</span> <span class="bp">+</span> <span class="mi">1</span><span class="o">)</span> <span class="o">:</span> <span class="n">a</span> <span class="bp">&gt;</span> <span class="mi">0</span> <span class="o">:=</span> <span class="kd">by</span>
   <span class="n">obtain</span> <span class="o">⟨</span><span class="n">b</span><span class="o">,</span> <span class="n">hb</span><span class="o">⟩</span> <span class="o">:=</span> <span class="n">h</span>
   <span class="k">calc</span>
@@ -1232,13 +1239,13 @@ hb : b = 1
     <span class="n">_</span> <span class="bp">&gt;</span> <span class="mi">0</span> <span class="o">:=</span> <span class="kd">by</span> <span class="n">extra</span>
 </pre></div>
 </div>
-<p>设 \(b\) 为满足 \(a=b^2+1\) 的有理数。我们有，</p>
+<p>在这个问题中，目标视图最初是</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="n">a</span> <span class="o">:</span> <span class="n">ℚ</span>
 <span class="n">h</span> <span class="o">:</span> <span class="bp">∃</span> <span class="n">b</span><span class="o">,</span> <span class="n">a</span> <span class="bp">=</span> <span class="n">b</span> <span class="bp">^</span> <span class="mi">2</span> <span class="bp">+</span> <span class="mi">1</span>
 <span class="bp">⊢</span> <span class="n">a</span> <span class="bp">&gt;</span> <span class="mi">0</span>
 </pre></div>
 </div>
-<p>存在命题的逻辑符号是 \(\exists\)。在 Lean 中，策略 <code class="docutils literal notranslate"><span class="pre">obtain</span></code> 用来把存在性假设拆成一个见证和一个关于该见证的假设。语法与拆开“且”相同（见 <a class="reference internal" href="#and"><span class="std std-numref">第 2.4 节</span></a>）。</p>
+<p>使用 <code class="docutils literal notranslate"><span class="pre">obtain</span></code> 策略之后，存在命题被拆开，于是见证单独出现在变量列表中，并可在后续证明中访问：</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="n">a</span> <span class="n">b</span> <span class="o">:</span> <span class="n">ℚ</span>
 <span class="n">hb</span> <span class="o">:</span> <span class="n">a</span> <span class="bp">=</span> <span class="n">b</span> <span class="bp">^</span> <span class="mi">2</span> <span class="bp">+</span> <span class="mi">1</span>
 <span class="bp">⊢</span> <span class="n">a</span> <span class="bp">&gt;</span> <span class="mi">0</span>
@@ -1247,22 +1254,22 @@ hb : b = 1
 </section>
 <section id="existential-hypothesis-2">
 <span id="id30"></span><h3>2.5.2. 例<a class="headerlink" href="#existential-hypothesis-2" title="此标题的永久链接"></a></h3>
-<p>在这个问题中，目标视图最初是</p>
-<div class="admonition-problem admonition">
-<p class="admonition-title">使用 <code class="docutils literal notranslate"><span class="pre">obtain</span></code> 策略之后，存在命题被拆开，于是见证单独出现在变量列表中，并可在后续证明中访问：</p>
 <p>下面是另一个带有存在性假设的问题：“存在实数 \(a\)，使得 \(at&lt;0\)”。和前面一样，我们先拆开它，然后沿用先前方法。</p>
-</div>
-<div class="admonition-solution admonition">
+<div class="admonition-problem admonition">
 <p class="admonition-title">问题</p>
 <p>设 \(t\) 为实数，并且假设存在实数 \(a\)，使得 \(at&lt;0\)。证明 \(t\ne 0\)。</p>
-<p>解答</p>
+</div>
+<div class="admonition-solution admonition">
+<p class="admonition-title">解答</p>
 <p>设 \(x\) 为满足 \(xt&lt;0\) 的实数。我们分别考虑 \(x\le 0\) 和 \(0&lt;x\) 两种情形。</p>
+<p>情形 1（\(x \le 0\)）：我们有 \(0&lt;(-x)t\) 且 \(0 \le -x\)，所以有 \(0 &lt; t\)，从而 \(t\ne 0\)。</p>
+<p>情形 2（\(0&lt;x\)）：我们有</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}0&amp;&lt;-xt\\
 &amp;=x(-t)\end{split}\]</div>
-<p>情形 1（\(x \le 0\)）：我们有 \(0&lt;(-x)t\) 且 \(0 \le -x\)，所以有 \(0 &lt; t\)，从而 \(t\ne 0\)。</p>
+<p>且 \(0 \le x\)，所以 \(0 &lt; -t\)，于是 \(t&lt;0\)，从而 \(t\ne 0\)，</p>
 </div>
-<p>情形 2（\(0&lt;x\)）：我们有</p>
+<p>下面是 Lean 中的一个部分解答（第一步用 <code class="docutils literal notranslate"><span class="pre">obtain</span></code> 拆开存在命题，稍后又用它进行分类讨论）。情形 2 缺失；请你完成它。</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">example</span> <span class="o">{</span><span class="n">t</span> <span class="o">:</span> <span class="n">ℝ</span><span class="o">}</span> <span class="o">(</span><span class="n">h</span> <span class="o">:</span> <span class="bp">∃</span> <span class="n">a</span> <span class="o">:</span> <span class="n">ℝ</span><span class="o">,</span> <span class="n">a</span> <span class="bp">*</span> <span class="n">t</span> <span class="bp">&lt;</span> <span class="mi">0</span><span class="o">)</span> <span class="o">:</span> <span class="n">t</span> <span class="bp">≠</span> <span class="mi">0</span> <span class="o">:=</span> <span class="kd">by</span>
   <span class="n">obtain</span> <span class="o">⟨</span><span class="n">x</span><span class="o">,</span> <span class="n">hxt</span><span class="o">⟩</span> <span class="o">:=</span> <span class="n">h</span>
   <span class="k">have</span> <span class="n">H</span> <span class="o">:=</span> <span class="n">le_or_gt</span> <span class="n">x</span> <span class="mi">0</span>
@@ -1278,41 +1285,41 @@ hb : b = 1
 </section>
 <section id="simple-existential">
 <span id="id31"></span><h3>2.5.3. 例<a class="headerlink" href="#simple-existential" title="此标题的永久链接"></a></h3>
-<p>且 \(0 \le x\)，所以 \(0 &lt; -t\)，于是 \(t&lt;0\)，从而 \(t\ne 0\)，</p>
-<div class="admonition-problem admonition">
-<p class="admonition-title">下面是 Lean 中的一个部分解答（第一步用 <code class="docutils literal notranslate"><span class="pre">obtain</span></code> 拆开存在命题，稍后又用它进行分类讨论）。情形 2 缺失；请你完成它。</p>
 <p>要证明目标中含有存在量词的问题，你需要自己提供一个见证，然后验证你提出的见证确实有效。</p>
-</div>
-<div class="admonition-solution admonition">
+<div class="admonition-problem admonition">
 <p class="admonition-title">问题</p>
 <p>证明：存在整数 \(n\)，使得 \(12n=84\)。</p>
 </div>
-<p>解答</p>
+<div class="admonition-solution admonition">
+<p class="admonition-title">解答</p>
+<p>整数 \(7\) 具有这个性质。事实上，\(12 \cdot 7=84\)。</p>
+</div>
+<p>在 Lean 中，策略 <code class="docutils literal notranslate"><span class="pre">use</span></code> 用来说明你选取了什么见证。</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">example</span> <span class="o">:</span> <span class="bp">∃</span> <span class="n">n</span> <span class="o">:</span> <span class="n">ℤ</span><span class="o">,</span> <span class="mi">12</span> <span class="bp">*</span> <span class="n">n</span> <span class="bp">=</span> <span class="mi">84</span> <span class="o">:=</span> <span class="kd">by</span>
   <span class="n">use</span> <span class="mi">7</span>
   <span class="n">numbers</span>
 </pre></div>
 </div>
-<p>整数 \(7\) 具有这个性质。事实上，\(12 \cdot 7=84\)。</p>
+<p>在这个问题中，目标最初是</p>
 <div class="highlight-text notranslate"><div class="highlight"><pre><span></span>⊢ ∃ n : ℤ, 12 * n = 84
 </pre></div>
 </div>
-<p>在 Lean 中，策略 <code class="docutils literal notranslate"><span class="pre">use</span></code> 用来说明你选取了什么见证。</p>
+<p>但在策略 <code class="docutils literal notranslate"><span class="pre">use</span> <span class="pre">7</span></code> 之后，目标变成检查所提出的见证 7 是否有效。</p>
 <div class="highlight-text notranslate"><div class="highlight"><pre><span></span>⊢ 12 * 7 = 84
 </pre></div>
 </div>
-<p>在这个问题中，目标最初是</p>
+<p>这正是 <code class="docutils literal notranslate"><span class="pre">numbers</span></code> 所检查的内容。</p>
 </section>
 <section id="id32">
 <h3>2.5.4. 例<a class="headerlink" href="#id32" title="此标题的永久链接"></a></h3>
-<p>但在策略 <code class="docutils literal notranslate"><span class="pre">use</span> <span class="pre">7</span></code> 之后，目标变成检查所提出的见证 7 是否有效。</p>
-<div class="admonition-problem admonition">
-<p class="admonition-title">这正是 <code class="docutils literal notranslate"><span class="pre">numbers</span></code> 所检查的内容。</p>
 <p>通常，要想出存在性目标的见证需要一些创造性。本节余下部分是寻找见证的练习。</p>
-</div>
-<div class="admonition-solution admonition">
+<div class="admonition-problem admonition">
 <p class="admonition-title">问题</p>
 <p>设 \(x\) 为实数。证明存在实数 \(y\)，使得 \(y&gt;x\)。</p>
+</div>
+<div class="admonition-solution admonition">
+<p class="admonition-title">解答</p>
+<p>实数 \(x + 1\) 具有这个性质。事实上，\(x+1&gt;x\)。</p>
 </div>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">example</span> <span class="o">(</span><span class="n">x</span> <span class="o">:</span> <span class="n">ℝ</span><span class="o">)</span> <span class="o">:</span> <span class="bp">∃</span> <span class="n">y</span> <span class="o">:</span> <span class="n">ℝ</span><span class="o">,</span> <span class="n">y</span> <span class="bp">&gt;</span> <span class="n">x</span> <span class="o">:=</span> <span class="kd">by</span>
   <span class="n">use</span> <span class="n">x</span> <span class="bp">+</span> <span class="mi">1</span>
@@ -1323,12 +1330,12 @@ hb : b = 1
 <section id="id33">
 <h3>2.5.5. 例<a class="headerlink" href="#id33" title="此标题的永久链接"></a></h3>
 <div class="admonition-problem admonition">
-<p class="admonition-title">解答</p>
-<p>实数 \(x + 1\) 具有这个性质。事实上，\(x+1&gt;x\)。</p>
-</div>
-<div class="admonition-solution admonition">
 <p class="admonition-title">问题</p>
 <p>证明：存在整数 \(m\) 和 \(n\)，使得 \(m^2-n^2=11\)。</p>
+</div>
+<div class="admonition-solution admonition">
+<p class="admonition-title">解答</p>
+<p>可取 \(m=6\)、\(n=5\)。事实上，</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}6^2-5^2&amp;=36-25\\
 &amp;=11.\end{split}\]</div>
@@ -1340,17 +1347,17 @@ hb : b = 1
 </section>
 <section id="id34">
 <h3>2.5.6. 例<a class="headerlink" href="#id34" title="此标题的永久链接"></a></h3>
-<p>解答</p>
-<div class="admonition-problem admonition">
-<p class="admonition-title">可取 \(m=6\)、\(n=5\)。事实上，</p>
 <p>有时，你可能希望省略明确说明见证是什么的句子“可取……”。这种情况下，你应当格外细致地验证所需性质正是按题目陈述的形式成立。</p>
+<div class="admonition-problem admonition">
+<p class="admonition-title">问题</p>
+<p>设 \(a\) 为整数。证明存在整数 \(m\) 和 \(n\)，使得 \(m^2-n^2=2a+1\)。</p>
 </div>
 <div class="admonition-solution admonition">
-<p class="admonition-title">问题</p>
+<p class="admonition-title">解答</p>
 <div class="math notranslate nohighlight">
 \[(a+1)^2-a^2=2a+1.\]</div>
 </div>
-<p>设 \(a\) 为整数。证明存在整数 \(m\) 和 \(n\)，使得 \(m^2-n^2=2a+1\)。</p>
+<p>在 Lean 中，你仍然必须使用 <code class="docutils literal notranslate"><span class="pre">use</span></code> 来说明见证。</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">example</span> <span class="o">(</span><span class="n">a</span> <span class="o">:</span> <span class="n">ℤ</span><span class="o">)</span> <span class="o">:</span> <span class="bp">∃</span> <span class="n">m</span> <span class="n">n</span> <span class="o">:</span> <span class="n">ℤ</span><span class="o">,</span> <span class="n">m</span> <span class="bp">^</span> <span class="mi">2</span> <span class="bp">-</span> <span class="n">n</span> <span class="bp">^</span> <span class="mi">2</span> <span class="bp">=</span> <span class="mi">2</span> <span class="bp">*</span> <span class="n">a</span> <span class="bp">+</span> <span class="mi">1</span> <span class="o">:=</span> <span class="kd">by</span>
   <span class="gr">sorry</span>
 </pre></div>
@@ -1359,16 +1366,16 @@ hb : b = 1
 <section id="between">
 <span id="id35"></span><h3>2.5.7. 例<a class="headerlink" href="#between" title="此标题的永久链接"></a></h3>
 <div class="admonition-problem admonition">
-<p class="admonition-title">解答</p>
-<p>在 Lean 中，你仍然必须使用 <code class="docutils literal notranslate"><span class="pre">use</span></code> 来说明见证。</p>
-</div>
-<div class="admonition-solution admonition">
 <p class="admonition-title">问题</p>
 <p>设 \(p\) 和 \(q\) 为实数，并假设 \(p&lt;q\)。证明存在实数 \(x\)，使得 \(p&lt;x&lt;q\)。</p>
+</div>
+<div class="admonition-solution admonition">
+<p class="admonition-title">解答</p>
+<p>我们将证明 \(\frac{p+q}{2}\) 具有这个性质。事实上，</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}p&amp;=\frac{p+p}{2}\\
 &amp;&lt;\frac{p+q}{2},\end{split}\]</div>
-<p>解答</p>
+<p>并且</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}\frac{p+q}{2} &amp;&lt;\frac{q+q}{2}\\
 &amp;=q.\end{split}\]</div>
@@ -1381,16 +1388,16 @@ hb : b = 1
 <section id="id36">
 <h3>2.5.8. 例<a class="headerlink" href="#id36" title="此标题的永久链接"></a></h3>
 <blockquote>
-<div><p>我们将证明 \(\frac{p+q}{2}\) 具有这个性质。事实上，</p>
-<p class="attribution">并且</p>
+<div><p>我记得有一次去看望他 [Ramanujan]，当时他病卧在 Putney。我乘坐的出租车号码是 1729，我说这个数在我看来相当乏味，并希望它不是一个不祥之兆。“不，”他回答说，“这是一个非常有趣的数；它是能以两种不同方式表示为两个立方数之和的最小数。”</p>
+<p class="attribution">——G. H. Hardy，《拉马努金：由其生平与工作启发的十二讲》</p>
 </div></blockquote>
 <div class="admonition-problem admonition">
-<p class="admonition-title">我记得有一次去看望他 [Ramanujan]，当时他病卧在 Putney。我乘坐的出租车号码是 1729，我说这个数在我看来相当乏味，并希望它不是一个不祥之兆。“不，”他回答说，“这是一个非常有趣的数；它是能以两种不同方式表示为两个立方数之和的最小数。”</p>
-<p>——G. H. Hardy，《拉马努金：由其生平与工作启发的十二讲》</p>
-</div>
-<div class="admonition-solution admonition">
 <p class="admonition-title">问题</p>
 <p>证明：存在自然数 \(a\)、\(b\)、\(c\) 和 \(d\)，使得 \(a^3+b^3=1729=c^3+d^3\)，但 \(a\ne c\) 且 \(a\ne d\)。<a class="footnote-reference brackets" href="#id68" id="id65">3</a></p>
+</div>
+<div class="admonition-solution admonition">
+<p class="admonition-title">解答</p>
+<p>\(1^3+12^3=1729=9^3+10^3\)，但 \(1\ne 9\) 且 \(1\ne 10\)。</p>
 </div>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">example</span> <span class="o">:</span> <span class="bp">∃</span> <span class="n">a</span> <span class="n">b</span> <span class="n">c</span> <span class="n">d</span> <span class="o">:</span> <span class="n">ℕ</span><span class="o">,</span>
     <span class="n">a</span> <span class="bp">^</span> <span class="mi">3</span> <span class="bp">+</span> <span class="n">b</span> <span class="bp">^</span> <span class="mi">3</span> <span class="bp">=</span> <span class="mi">1729</span> <span class="bp">∧</span> <span class="n">c</span> <span class="bp">^</span> <span class="mi">3</span> <span class="bp">+</span> <span class="n">d</span> <span class="bp">^</span> <span class="mi">3</span> <span class="bp">=</span> <span class="mi">1729</span> <span class="bp">∧</span> <span class="n">a</span> <span class="bp">≠</span> <span class="n">c</span> <span class="bp">∧</span> <span class="n">a</span> <span class="bp">≠</span> <span class="n">d</span> <span class="o">:=</span> <span class="kd">by</span>
@@ -1408,55 +1415,55 @@ hb : b = 1
 <section id="id38">
 <h3>2.5.9. 练习<a class="headerlink" href="#id38" title="此标题的永久链接"></a></h3>
 <ol class="arabic">
-<li><p>设 \(a\) 为有理数，并且假设 \(a - 1 \ge 5\)。证明 \(a \ge 6\) 且 \(3a \ge 10\)。</p>
+<li><p>证明：存在有理数 \(t\)，使得 \(t^2=1.69\)。</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">example</span> <span class="o">:</span> <span class="bp">∃</span> <span class="n">t</span> <span class="o">:</span> <span class="n">ℚ</span><span class="o">,</span> <span class="n">t</span> <span class="bp">^</span> <span class="mi">2</span> <span class="bp">=</span> <span class="mi">1</span><span class="bp">.</span><span class="mi">69</span> <span class="o">:=</span> <span class="kd">by</span>
   <span class="gr">sorry</span>
 </pre></div>
 </div>
 </li>
-<li><p>设 \(x\) 和 \(y\) 为有理数，并且假设 \(x + y = 5\) 且 \(x + 2y = 7\)。证明 \(x=3\) 且 \(y=2\)。</p>
+<li><p>证明：存在整数 \(m\) 和 \(n\)，使得 \(m^2+n^2=85\)。</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">example</span> <span class="o">:</span> <span class="bp">∃</span> <span class="n">m</span> <span class="n">n</span> <span class="o">:</span> <span class="n">ℤ</span><span class="o">,</span> <span class="n">m</span> <span class="bp">^</span> <span class="mi">2</span> <span class="bp">+</span> <span class="n">n</span> <span class="bp">^</span> <span class="mi">2</span> <span class="bp">=</span> <span class="mi">85</span> <span class="o">:=</span> <span class="kd">by</span>
   <span class="gr">sorry</span>
 </pre></div>
 </div>
 </li>
-<li><p>设 \(a\) 和 \(b\) 为实数，并且假设 \(ab=a=b\)。证明 \(a=b=0\) 或 \(a=b=1\)。</p>
+<li><p>证明：存在实数 \(x\)，使得 \(x&lt;0\) 且 \(x^2&lt;1\)。</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">example</span> <span class="o">:</span> <span class="bp">∃</span> <span class="n">x</span> <span class="o">:</span> <span class="n">ℝ</span><span class="o">,</span> <span class="n">x</span> <span class="bp">&lt;</span> <span class="mi">0</span> <span class="bp">∧</span> <span class="n">x</span> <span class="bp">^</span> <span class="mi">2</span> <span class="bp">&lt;</span> <span class="mi">1</span> <span class="o">:=</span> <span class="kd">by</span>
   <span class="gr">sorry</span>
 </pre></div>
 </div>
 </li>
-<li><p>证明：存在有理数 \(t\)，使得 \(t^2=1.69\)。</p>
+<li><p>证明：存在自然数 \(a\) 和 \(b\)，使得 \(2 ^ a = 5b+1\)。</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">example</span> <span class="o">:</span> <span class="bp">∃</span> <span class="n">a</span> <span class="n">b</span> <span class="o">:</span> <span class="n">ℕ</span><span class="o">,</span> <span class="mi">2</span> <span class="bp">^</span> <span class="n">a</span> <span class="bp">=</span> <span class="mi">5</span> <span class="bp">*</span> <span class="n">b</span> <span class="bp">+</span> <span class="mi">1</span> <span class="o">:=</span> <span class="kd">by</span>
   <span class="gr">sorry</span>
 </pre></div>
 </div>
 </li>
-<li><p>证明：存在整数 \(m\) 和 \(n\)，使得 \(m^2+n^2=85\)。</p>
+<li><p>设 \(x\) 为有理数。证明存在有理数 \(y\)，使得 \(y^2&gt;x\)。</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">example</span> <span class="o">(</span><span class="n">x</span> <span class="o">:</span> <span class="n">ℚ</span><span class="o">)</span> <span class="o">:</span> <span class="bp">∃</span> <span class="n">y</span> <span class="o">:</span> <span class="n">ℚ</span><span class="o">,</span> <span class="n">y</span> <span class="bp">^</span> <span class="mi">2</span> <span class="bp">&gt;</span> <span class="n">x</span> <span class="o">:=</span> <span class="kd">by</span>
   <span class="gr">sorry</span>
 </pre></div>
 </div>
 </li>
-<li><p>证明：存在实数 \(x\)，使得 \(x&lt;0\) 且 \(x^2&lt;1\)。</p>
+<li><p>设 \(t\) 为实数，并且假设存在实数 \(a\)，使得 \(at+1<a p=""><p>和 <a class="reference internal" href="#id41"><span class="std std-numref">例 2.5.2</span></a> 中一样，我使用了引理 <code class="docutils literal notranslate"><span class="pre">le_or_gt</span></code>，它说明若 \(s\) 和 \(t\) 为实数，则要么 \(s \le t\)，要么 \(t &lt; s\)；它可以作为一种有用的分类讨论。</p></a></p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">example</span> <span class="o">{</span><span class="n">t</span> <span class="o">:</span> <span class="n">ℝ</span><span class="o">}</span> <span class="o">(</span><span class="n">h</span> <span class="o">:</span> <span class="bp">∃</span> <span class="n">a</span> <span class="o">:</span> <span class="n">ℝ</span><span class="o">,</span> <span class="n">a</span> <span class="bp">*</span> <span class="n">t</span> <span class="bp">+</span> <span class="mi">1</span> <span class="bp">&lt;</span> <span class="n">a</span> <span class="bp">+</span> <span class="n">t</span><span class="o">)</span> <span class="o">:</span> <span class="n">t</span> <span class="bp">≠</span> <span class="mi">1</span> <span class="o">:=</span> <span class="kd">by</span>
   <span class="gr">sorry</span>
 </pre></div>
 </div>
 </li>
-<li><p>证明：存在自然数 \(a\) 和 \(b\)，使得 \(2 ^ a = 5b+1\)。</p>
+<li><p>设 \(m\) 为整数，并且假设存在整数 \(a\)，使得 \(2a=m\)。证明 \(m\ne 5\)。</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">example</span> <span class="o">{</span><span class="n">m</span> <span class="o">:</span> <span class="n">ℤ</span><span class="o">}</span> <span class="o">(</span><span class="n">h</span> <span class="o">:</span> <span class="bp">∃</span> <span class="n">a</span><span class="o">,</span> <span class="mi">2</span> <span class="bp">*</span> <span class="n">a</span> <span class="bp">=</span> <span class="n">m</span><span class="o">)</span> <span class="o">:</span> <span class="n">m</span> <span class="bp">≠</span> <span class="mi">5</span> <span class="o">:=</span> <span class="kd">by</span>
   <span class="gr">sorry</span>
 </pre></div>
 </div>
 </li>
-<li><p>设 \(x\) 为有理数。证明存在有理数 \(y\)，使得 \(y^2&gt;x\)。</p>
+<li><p>设 \(n\) 为整数。证明存在整数 \(a\)，使得 \(2a^3 \ge na+7\)。</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">example</span> <span class="o">{</span><span class="n">n</span> <span class="o">:</span> <span class="n">ℤ</span><span class="o">}</span> <span class="o">:</span> <span class="bp">∃</span> <span class="n">a</span><span class="o">,</span> <span class="mi">2</span> <span class="bp">*</span> <span class="n">a</span> <span class="bp">^</span> <span class="mi">3</span> <span class="bp">≥</span> <span class="n">n</span> <span class="bp">*</span> <span class="n">a</span> <span class="bp">+</span> <span class="mi">7</span> <span class="o">:=</span> <span class="kd">by</span>
   <span class="gr">sorry</span>
 </pre></div>
 </div>
 </li>
-<li><p>设 \(t\) 为实数，并且假设存在实数 \(a\)，使得 \(at+1<a p=""><p>和 <a class='"reference' href='"#id41"' internal=""><span class='"std' std-numref="">例 2.5.2</span></a> 中一样，我使用了引理 <code class='"docutils' literal="" notranslate=""><span class='"pre"'>le_or_gt</span></code>，它说明若 \(s\) 和 \(t\) 为实数，则要么 \(s \le t\)，要么 \(t &lt; s\)；它可以作为一种有用的分类讨论。</p></a></p>
+<li><p>设 \(a\)、\(b\) 和 \(c\) 为实数，并且假设 \(a\le b+c\)、\(b\le a+c\)、\(c\le a+b\)。证明存在非负实数 \(x\)、\(y\) 和 \(z\)，使得 \(a=y+z\)、\(b=x+z\)、\(c=x+y\)。</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">example</span> <span class="o">{</span><span class="n">a</span> <span class="n">b</span> <span class="n">c</span> <span class="o">:</span> <span class="n">ℝ</span><span class="o">}</span> <span class="o">(</span><span class="n">ha</span> <span class="o">:</span> <span class="n">a</span> <span class="bp">≤</span> <span class="n">b</span> <span class="bp">+</span> <span class="n">c</span><span class="o">)</span> <span class="o">(</span><span class="n">hb</span> <span class="o">:</span> <span class="n">b</span> <span class="bp">≤</span> <span class="n">a</span> <span class="bp">+</span> <span class="n">c</span><span class="o">)</span> <span class="o">(</span><span class="n">hc</span> <span class="o">:</span> <span class="n">c</span> <span class="bp">≤</span> <span class="n">a</span> <span class="bp">+</span> <span class="n">b</span><span class="o">)</span> <span class="o">:</span>
     <span class="bp">∃</span> <span class="n">x</span> <span class="n">y</span> <span class="n">z</span><span class="o">,</span> <span class="n">x</span> <span class="bp">≥</span> <span class="mi">0</span> <span class="bp">∧</span> <span class="n">y</span> <span class="bp">≥</span> <span class="mi">0</span> <span class="bp">∧</span> <span class="n">z</span> <span class="bp">≥</span> <span class="mi">0</span> <span class="bp">∧</span> <span class="n">a</span> <span class="bp">=</span> <span class="n">y</span> <span class="bp">+</span> <span class="n">z</span> <span class="bp">∧</span> <span class="n">b</span> <span class="bp">=</span> <span class="n">x</span> <span class="bp">+</span> <span class="n">z</span> <span class="bp">∧</span> <span class="n">c</span> <span class="bp">=</span> <span class="n">x</span> <span class="bp">+</span> <span class="n">y</span> <span class="o">:=</span> <span class="kd">by</span>
   <span class="gr">sorry</span>
@@ -1464,9 +1471,9 @@ hb : b = 1
 </div>
 </li>
 </ol>
-<p class="rubric">解答</p>
+<p class="rubric">脚注</p>
 <dl class="footnote brackets">
-<dt class="label" id="id39">设 \(a\)、\(b\) 和 \(c\) 为实数，并且假设 \(a\le b+c\)、\(b\le a+c\)、\(c\le a+b\)。证明存在非负实数 \(x\)、\(y\) 和 \(z\)，使得 \(a=y+z\)、\(b=x+z\)、\(c=x+y\)。</dt>
+<dt class="label" id="id39"><span class="brackets"><a class="fn-backref" href="#id37">3</a></span></dt>
 <dd>例子改编自 Hammack，《Book of Proof》，第 7.3 节。</dd>
 </dl>
 </section>

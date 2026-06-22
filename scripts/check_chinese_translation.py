@@ -98,6 +98,33 @@ def english_words(text: str) -> list[str]:
     return words
 
 
+def is_code_like_text(text: str) -> bool:
+    if not text:
+        return False
+    codeish = {
+        "addarith",
+        "cancel",
+        "duper",
+        "exact",
+        "exhaust",
+        "gcongr",
+        "induction",
+        "linarith",
+        "norm_num",
+        "numbers",
+        "polyrith",
+        "rel",
+        "ring",
+        "rw",
+        "simple_induction",
+        "two_step_induction",
+    }
+    words = re.findall(r"[A-Za-z][A-Za-z0-9_'.-]*", text)
+    if not words:
+        return False
+    return all(word in codeish or "_" in word or "." in word or "'" in word for word in words)
+
+
 def main() -> None:
     failures = []
     for path in sorted(HTML.glob("*.html")):
@@ -110,6 +137,8 @@ def main() -> None:
                     hidden.extract()
                 text = " ".join(tag.get_text(" ").split())
                 if not text or text == "¶":
+                    continue
+                if is_code_like_text(text):
                     continue
                 if not english_words(text):
                     continue

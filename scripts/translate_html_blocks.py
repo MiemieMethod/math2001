@@ -53,10 +53,24 @@ def normalize_space(text: str) -> str:
 
 
 def block_text(tag) -> str:
-    cloned = copy.copy(tag)
-    for link in cloned.select("a.headerlink"):
-        link.extract()
-    return normalize_space(cloned.get_text(" "))
+    headerlinks = []
+    for link in list(tag.select("a.headerlink")):
+        placeholder = soup_marker(link)
+        link.replace_with(placeholder)
+        headerlinks.append((placeholder, link))
+    text = normalize_space(tag.get_text(" "))
+    for placeholder, link in reversed(headerlinks):
+        placeholder.replace_with(link)
+    return text
+
+
+def soup_marker(tag):
+    soup = tag if isinstance(tag, BeautifulSoup) else tag.find_parent()
+    while soup is not None and not isinstance(soup, BeautifulSoup):
+        soup = soup.find_parent()
+    if soup is None:
+        return NavigableString("")
+    return soup.new_string("")
 
 
 def is_translatable(tag) -> bool:
@@ -69,6 +83,12 @@ def is_translatable(tag) -> bool:
         return False
     classes = set(tag.get("class") or [])
     return not classes.intersection(SKIP_CLASSES)
+
+
+def is_nested_block_candidate(tag) -> bool:
+    if tag.name != "p":
+        return False
+    return tag.find_parent(["li", "dd", "th", "td"]) is not None
 
 
 def iter_blocks(path: Path):
@@ -119,6 +139,10 @@ def extract() -> None:
 
 
 def load_translations() -> dict[str, str]:
+    return {item["id"]: item["zh"] for item in load_translation_items() if item.get("zh", "")}
+
+
+def load_translation_items() -> list[dict]:
     data = []
     if TRANSLATION_DIR.exists():
         for path in sorted(TRANSLATION_DIR.glob("*.json")):
@@ -127,12 +151,24 @@ def load_translations() -> dict[str, str]:
         data = json.loads(TRANSLATIONS.read_text(encoding="utf-8"))
     else:
         raise FileNotFoundError(f"No translations found in {TRANSLATION_DIR} or {TRANSLATIONS}")
-    translations = {}
-    for item in data:
+    return data
+
+
+def build_translation_lookup() -> dict[tuple[str, str, str], str]:
+    lookup = {}
+    for item in load_translation_items():
         zh = item.get("zh", "")
-        if zh:
-            translations[item["id"]] = zh
-    return translations
+        text = normalize_space(item.get("text", ""))
+        tag = item.get("tag", "")
+        item_id = item.get("id", "")
+        if not zh or not text or ":" not in item_id:
+            continue
+        stem = item_id.split(":", 1)[0]
+        key = (stem, tag, text)
+        existing = lookup.get(key)
+        if existing is None or existing == zh:
+            lookup[key] = zh
+    return lookup
 
 
 def unwrap_matching_outer_tag(tag, html: str) -> str:
@@ -172,12 +208,15 @@ def set_inner_html(soup: BeautifulSoup, tag, html: str) -> None:
 
 
 def set_list_item_with_code(soup: BeautifulSoup, tag, html: str) -> None:
+    html = html.replace('\\"', '"')
     if re.search(r"<p(?:\s|>)", html):
         parsed = BeautifulSoup(html, "html.parser")
         new_paragraphs = [node for node in parsed.contents if getattr(node, "name", None) == "p"]
         old_paragraphs = tag.find_all("p", recursive=False)
         for old, new in zip(old_paragraphs, new_paragraphs):
             set_inner_html(soup, old, "".join(str(node) for node in new.contents))
+        for old in old_paragraphs[len(new_paragraphs) :]:
+            old.decompose()
         return
     first_paragraph = tag.find("p", recursive=False)
     set_inner_html(soup, first_paragraph or tag, html)
@@ -186,9 +225,31 @@ def set_list_item_with_code(soup: BeautifulSoup, tag, html: str) -> None:
             paragraph.decompose()
 
 
+def set_translated_block(soup: BeautifulSoup, tag, html: str) -> None:
+    if tag.name == "li" and tag.select_one("pre"):
+        set_list_item_with_code(soup, tag, html)
+        return
+    if tag.name in {"th", "td"}:
+        paragraphs = tag.find_all("p", recursive=False)
+        if len(paragraphs) == 1:
+            set_inner_html(soup, paragraphs[0], html)
+            return
+    set_inner_html(soup, tag, html)
+
+
+def iter_apply_blocks(soup: BeautifulSoup):
+    article = soup.select_one("div[itemprop='articleBody']")
+    if article is None:
+        return
+    for tag in article.find_all(["h1", "h2", "h3", "h4", "p", "li", "dt", "dd", "th", "td"]):
+        if is_nested_block_candidate(tag) or not is_translatable(tag):
+            continue
+        yield tag
+
+
 def apply() -> None:
-    translations = load_translations()
-    files_with_translations = {item_id.split(":", 1)[0] + ".html" for item_id in translations}
+    translations = build_translation_lookup()
+    files_with_translations = {stem + ".html" for stem, _tag, _text in translations}
     applied = 0
     for path in sorted(HTML.glob("*.html")):
         if path.name not in CONTENT_PAGES:
@@ -196,22 +257,10 @@ def apply() -> None:
         if path.name not in files_with_translations:
             continue
         soup = BeautifulSoup(path.read_text(encoding="utf-8"), "lxml")
-        blocks = []
-        seen = set()
-        for selector in TRANSLATABLE_SELECTORS:
-            for tag in soup.select(selector):
-                ident = id(tag)
-                if ident in seen or not is_translatable(tag):
-                    continue
-                seen.add(ident)
-                blocks.append(tag)
-        for index, tag in enumerate(blocks, start=1):
-            zh = translations.get(stable_id(path, index))
+        for tag in iter_apply_blocks(soup):
+            zh = translations.get((path.stem, tag.name, block_text(tag)))
             if zh:
-                if tag.name == "li" and tag.select_one("pre"):
-                    set_list_item_with_code(soup, tag, zh)
-                else:
-                    set_inner_html(soup, tag, zh)
+                set_translated_block(soup, tag, zh)
                 applied += 1
         path.write_text(str(soup), encoding="utf-8")
     print(f"Applied {applied} translated blocks")

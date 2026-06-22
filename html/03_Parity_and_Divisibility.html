@@ -374,85 +374,85 @@ hn : ∃ (k : ℤ), n = 2 * k + 1
 <section id="exercises">
 <h3>3.1.10. 练习<a class="headerlink" href="#exercises" title="此标题的永久链接"></a></h3>
 <ol class="arabic">
-<li><p>所以 \(40\mid m\)。</p>
+<li><p>证明 -9 是奇数。</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">example</span> <span class="o">:</span> <span class="n">Odd</span> <span class="o">(</span><span class="bp">-</span><span class="mi">9</span> <span class="o">:</span> <span class="n">ℤ</span><span class="o">)</span> <span class="o">:=</span> <span class="kd">by</span>
   <span class="gr">sorry</span>
 </pre></div>
 </div>
 </li>
-<li><p>证明 -9 是奇数。</p>
+<li><p>证明 26 是偶数。</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">example</span> <span class="o">:</span> <span class="n">Even</span> <span class="o">(</span><span class="mi">26</span> <span class="o">:</span> <span class="n">ℤ</span><span class="o">)</span> <span class="o">:=</span> <span class="kd">by</span>
   <span class="gr">sorry</span>
 </pre></div>
 </div>
 </li>
-<li><p>证明 26 是偶数。</p>
+<li><p>设 \(m\) 为奇整数，\(n\) 为偶整数。证明 \(n+m\) 是奇数。</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">example</span> <span class="o">{</span><span class="n">m</span> <span class="n">n</span> <span class="o">:</span> <span class="n">ℤ</span><span class="o">}</span> <span class="o">(</span><span class="n">hm</span> <span class="o">:</span> <span class="n">Odd</span> <span class="n">m</span><span class="o">)</span> <span class="o">(</span><span class="n">hn</span> <span class="o">:</span> <span class="n">Even</span> <span class="n">n</span><span class="o">)</span> <span class="o">:</span> <span class="n">Odd</span> <span class="o">(</span><span class="n">n</span> <span class="bp">+</span> <span class="n">m</span><span class="o">)</span> <span class="o">:=</span> <span class="kd">by</span>
   <span class="gr">sorry</span>
 </pre></div>
 </div>
 </li>
-<li><p>设 \(m\) 为奇整数，\(n\) 为偶整数。证明 \(n+m\) 是奇数。</p>
+<li><p>设 \(p\) 为奇整数，\(q\) 为偶整数。证明 \(p-q-4\) 是奇数。</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">example</span> <span class="o">{</span><span class="n">p</span> <span class="n">q</span> <span class="o">:</span> <span class="n">ℤ</span><span class="o">}</span> <span class="o">(</span><span class="n">hp</span> <span class="o">:</span> <span class="n">Odd</span> <span class="n">p</span><span class="o">)</span> <span class="o">(</span><span class="n">hq</span> <span class="o">:</span> <span class="n">Even</span> <span class="n">q</span><span class="o">)</span> <span class="o">:</span> <span class="n">Odd</span> <span class="o">(</span><span class="n">p</span> <span class="bp">-</span> <span class="n">q</span> <span class="bp">-</span> <span class="mi">4</span><span class="o">)</span> <span class="o">:=</span> <span class="kd">by</span>
   <span class="gr">sorry</span>
 </pre></div>
 </div>
 </li>
-<li><p>设 \(p\) 为奇整数，\(q\) 为偶整数。证明 \(p-q-4\) 是奇数。</p>
+<li><p>设 \(a\) 为偶整数，\(b\) 为奇整数。证明 \(3a+b-3\) 是偶数。</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">example</span> <span class="o">{</span><span class="n">a</span> <span class="n">b</span> <span class="o">:</span> <span class="n">ℤ</span><span class="o">}</span> <span class="o">(</span><span class="n">ha</span> <span class="o">:</span> <span class="n">Even</span> <span class="n">a</span><span class="o">)</span> <span class="o">(</span><span class="n">hb</span> <span class="o">:</span> <span class="n">Odd</span> <span class="n">b</span><span class="o">)</span> <span class="o">:</span> <span class="n">Even</span> <span class="o">(</span><span class="mi">3</span> <span class="bp">*</span> <span class="n">a</span> <span class="bp">+</span> <span class="n">b</span> <span class="bp">-</span> <span class="mi">3</span><span class="o">)</span> <span class="o">:=</span> <span class="kd">by</span>
   <span class="gr">sorry</span>
 </pre></div>
 </div>
 </li>
-<li><p>设 \(a\) 为偶整数，\(b\) 为奇整数。证明 \(3a+b-3\) 是偶数。</p>
+<li><p>证明：如果整数 \(r\) 和 \(s\) 都是奇数，则 \(3r-5s\) 是偶数。</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">example</span> <span class="o">{</span><span class="n">r</span> <span class="n">s</span> <span class="o">:</span> <span class="n">ℤ</span><span class="o">}</span> <span class="o">(</span><span class="n">hr</span> <span class="o">:</span> <span class="n">Odd</span> <span class="n">r</span><span class="o">)</span> <span class="o">(</span><span class="n">hs</span> <span class="o">:</span> <span class="n">Odd</span> <span class="n">s</span><span class="o">)</span> <span class="o">:</span> <span class="n">Even</span> <span class="o">(</span><span class="mi">3</span> <span class="bp">*</span> <span class="n">r</span> <span class="bp">-</span> <span class="mi">5</span> <span class="bp">*</span> <span class="n">s</span><span class="o">)</span> <span class="o">:=</span> <span class="kd">by</span>
   <span class="gr">sorry</span>
 </pre></div>
 </div>
 </li>
-<li><p>证明：如果整数 \(r\) 和 \(s\) 都是奇数，则 \(3r-5s\) 是偶数。</p>
+<li><p>设 \(x\) 为整数。证明：如果 \(x\) 是奇数，则 \(x^3\) 也是奇数。</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">example</span> <span class="o">{</span><span class="n">x</span> <span class="o">:</span> <span class="n">ℤ</span><span class="o">}</span> <span class="o">(</span><span class="n">hx</span> <span class="o">:</span> <span class="n">Odd</span> <span class="n">x</span><span class="o">)</span> <span class="o">:</span> <span class="n">Odd</span> <span class="o">(</span><span class="n">x</span> <span class="bp">^</span> <span class="mi">3</span><span class="o">)</span> <span class="o">:=</span> <span class="kd">by</span>
   <span class="gr">sorry</span>
 </pre></div>
 </div>
 </li>
-<li><p>设 \(x\) 为整数。证明：如果 \(x\) 是奇数，则 \(x^3\) 也是奇数。</p>
+<li><p>设 \(n\) 为奇整数。证明 \(n^2-3n+2\) 是偶数。</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">example</span> <span class="o">{</span><span class="n">n</span> <span class="o">:</span> <span class="n">ℤ</span><span class="o">}</span> <span class="o">(</span><span class="n">hn</span> <span class="o">:</span> <span class="n">Odd</span> <span class="n">n</span><span class="o">)</span> <span class="o">:</span> <span class="n">Even</span> <span class="o">(</span><span class="n">n</span> <span class="bp">^</span> <span class="mi">2</span> <span class="bp">-</span> <span class="mi">3</span> <span class="bp">*</span> <span class="n">n</span> <span class="bp">+</span> <span class="mi">2</span><span class="o">)</span> <span class="o">:=</span> <span class="kd">by</span>
   <span class="gr">sorry</span>
 </pre></div>
 </div>
 </li>
-<li><p>设 \(n\) 为奇整数。证明 \(n^2-3n+2\) 是偶数。</p>
+<li><p>设 \(a\) 为整数，并假设 \(a\) 是奇数。证明 \(a^2+2a-4\) 是奇数。</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">example</span> <span class="o">{</span><span class="n">a</span> <span class="o">:</span> <span class="n">ℤ</span><span class="o">}</span> <span class="o">(</span><span class="n">ha</span> <span class="o">:</span> <span class="n">Odd</span> <span class="n">a</span><span class="o">)</span> <span class="o">:</span> <span class="n">Odd</span> <span class="o">(</span><span class="n">a</span> <span class="bp">^</span> <span class="mi">2</span> <span class="bp">+</span> <span class="mi">2</span> <span class="bp">*</span> <span class="n">a</span> <span class="bp">-</span> <span class="mi">4</span><span class="o">)</span> <span class="o">:=</span> <span class="kd">by</span>
   <span class="gr">sorry</span>
 </pre></div>
 </div>
 </li>
-<li><p>设 \(a\) 为整数，并假设 \(a\) 是奇数。证明 \(a^2+2a-4\) 是奇数。</p>
+<li><p>设 \(p\) 为奇整数。证明 \(p^2+3p-5\) 是奇数。</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">example</span> <span class="o">{</span><span class="n">p</span> <span class="o">:</span> <span class="n">ℤ</span><span class="o">}</span> <span class="o">(</span><span class="n">hp</span> <span class="o">:</span> <span class="n">Odd</span> <span class="n">p</span><span class="o">)</span> <span class="o">:</span> <span class="n">Odd</span> <span class="o">(</span><span class="n">p</span> <span class="bp">^</span> <span class="mi">2</span> <span class="bp">+</span> <span class="mi">3</span> <span class="bp">*</span> <span class="n">p</span> <span class="bp">-</span> <span class="mi">5</span><span class="o">)</span> <span class="o">:=</span> <span class="kd">by</span>
   <span class="gr">sorry</span>
 </pre></div>
 </div>
 </li>
-<li><p>设 \(p\) 为奇整数。证明 \(p^2+3p-5\) 是奇数。</p>
+<li><p>设 \(x\) 和 \(y\) 为奇整数。证明 \(xy\) 是奇数。</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">example</span> <span class="o">{</span><span class="n">x</span> <span class="n">y</span> <span class="o">:</span> <span class="n">ℤ</span><span class="o">}</span> <span class="o">(</span><span class="n">hx</span> <span class="o">:</span> <span class="n">Odd</span> <span class="n">x</span><span class="o">)</span> <span class="o">(</span><span class="n">hy</span> <span class="o">:</span> <span class="n">Odd</span> <span class="n">y</span><span class="o">)</span> <span class="o">:</span> <span class="n">Odd</span> <span class="o">(</span><span class="n">x</span> <span class="bp">*</span> <span class="n">y</span><span class="o">)</span> <span class="o">:=</span> <span class="kd">by</span>
   <span class="gr">sorry</span>
 </pre></div>
 </div>
 </li>
-<li><p>设 \(x\) 和 \(y\) 为奇整数。证明 \(xy\) 是奇数。</p>
+<li><p>设 \(n\) 为整数。证明 \(3n^2+3n-1\) 是奇数。</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">example</span> <span class="o">(</span><span class="n">n</span> <span class="o">:</span> <span class="n">ℤ</span><span class="o">)</span> <span class="o">:</span> <span class="n">Odd</span> <span class="o">(</span><span class="mi">3</span> <span class="bp">*</span> <span class="n">n</span> <span class="bp">^</span> <span class="mi">2</span> <span class="bp">+</span> <span class="mi">3</span> <span class="bp">*</span> <span class="n">n</span> <span class="bp">-</span> <span class="mi">1</span><span class="o">)</span> <span class="o">:=</span> <span class="kd">by</span>
   <span class="gr">sorry</span>
 </pre></div>
 </div>
 </li>
-<li><p>设 \(n\) 为整数。证明 \(3n^2+3n-1\) 是奇数。</p>
+<li><p>设 \(n\) 为整数。证明存在整数 \(m\geq n\)，使得 \(m\) 为奇数。</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">example</span> <span class="o">(</span><span class="n">n</span> <span class="o">:</span> <span class="n">ℤ</span><span class="o">)</span> <span class="o">:</span> <span class="bp">∃</span> <span class="n">m</span> <span class="bp">≥</span> <span class="n">n</span><span class="o">,</span> <span class="n">Odd</span> <span class="n">m</span> <span class="o">:=</span> <span class="kd">by</span>
   <span class="gr">sorry</span>
 </pre></div>
 </div>
 </li>
-<li><p>设 \(n\) 为整数。证明存在整数 \(m\geq n\)，使得 \(m\) 为奇数。</p>
+<li><p>设 \(a\)、\(b\) 和 \(c\) 为整数。证明 \(a-b\)、\(a+c\) 或 \(b-c\) 中至少有一个是偶数。<a class="footnote-reference brackets" href="#id57" id="id12">1</a></p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">example</span> <span class="o">(</span><span class="n">a</span> <span class="n">b</span> <span class="n">c</span> <span class="o">:</span> <span class="n">ℤ</span><span class="o">)</span> <span class="o">:</span> <span class="n">Even</span> <span class="o">(</span><span class="n">a</span> <span class="bp">-</span> <span class="n">b</span><span class="o">)</span> <span class="bp">∨</span> <span class="n">Even</span> <span class="o">(</span><span class="n">a</span> <span class="bp">+</span> <span class="n">c</span><span class="o">)</span> <span class="bp">∨</span> <span class="n">Even</span> <span class="o">(</span><span class="n">b</span> <span class="bp">-</span> <span class="n">c</span><span class="o">)</span> <span class="o">:=</span> <span class="kd">by</span>
   <span class="gr">sorry</span>
 </pre></div>
@@ -461,7 +461,7 @@ hn : ∃ (k : ℤ), n = 2 * k + 1
 </ol>
 <p class="rubric">脚注</p>
 <dl class="footnote brackets">
-<dt class="label" id="id11">设 \(n\) 为能被 5 和 13 整除的整数。证明它也能被 65 整除。</dt>
+<dt class="label" id="id11"><span class="brackets"><a class="fn-backref" href="#id10">1</a></span></dt>
 <dd>练习取自 Hammack，《Book of Proof》，第 9 章。</dd>
 </dl>
 </section>
@@ -470,31 +470,31 @@ hn : ∃ (k : ℤ), n = 2 * k + 1
 <span id="id12"></span><h2>3.2. 整除性<a class="headerlink" href="#divisibility" title="此标题的永久链接"></a></h2>
 <section id="id13">
 <h3>3.2.1. 例<a class="headerlink" href="#id13" title="此标题的永久链接"></a></h3>
-<p>练习取自 Hammack，《Book of Proof》，第 9 章。</p>
+<p>另一个你也许以前见过的数学定义是整除性的定义。</p>
 <div class="admonition-definition admonition">
-<p class="admonition-title">另一个你也许以前见过的数学定义是整除性的定义。</p>
-<p>定义</p>
-</div>
+<p class="admonition-title">定义</p>
 <p>自然数 \(b\) 能被另一个自然数 \(a\) 整除，如果存在自然数 \(c\)，使得 \(b=ac\)。</p>
+</div>
+<p>例如，</p>
 <div class="admonition-problem admonition">
-<p class="admonition-title">例如，</p>
-<p>问题</p>
+<p class="admonition-title">问题</p>
+<p>证明自然数 88 能被 11 整除。</p>
 </div>
 <div class="admonition-solution admonition">
-<p class="admonition-title">证明自然数 88 能被 11 整除。</p>
-<p>解答</p>
-</div>
+<p class="admonition-title">解答</p>
 <p>\(88 = 11 \cdot 8\)。</p>
+</div>
+<p>整除性是一个非常重要的概念，并且有几种不同说法。下面这些说法含义相同：</p>
 <ul class="simple">
-<li>设 \(a\)、\(b\) 和 \(c\) 为整数。证明 \(a-b\)、\(a+c\) 或 \(b-c\) 中至少有一个是偶数。<a class="footnote-reference brackets" href="#id57" id="id12">1</a></li>
 <li>\(b\) 能被 \(a\) 整除</li>
 <li>\(b\) 是 \(a\) 的倍数</li>
 <li>\(a\) 是 \(b\) 的约数</li>
 <li>\(a\) 是 \(b\) 的因子</li>
+<li>\(a\) 整除 \(b\)</li>
 </ul>
-<p>整除性是一个非常重要的概念，并且有几种不同说法。下面这些说法含义相同：</p>
 <p>我们最常使用最后一种“\(a\) 整除 \(b\)”，因为它最简洁。还有一个标准记号 \(a \mid b\)，我们也会经常使用。</p>
 <p>在 Lean 中，整除性的定义已经在库中，同时还有许多关于它的定理。我们通常用记号 ∣ 在 Lean 中处理这个定义，它的写法与纸上记号相同。</p>
+<p>与 <a class="reference internal" href="#parity"><span class="std std-numref">第 3.1 节</span></a> 中的 <code class="docutils literal notranslate"><span class="pre">dsimp</span> <span class="pre">[Odd]</span></code> 类似，可以在 Lean 证明中途展开整除性的定义，以提醒自己它在当前语境中的含义。命令是 <code class="docutils literal notranslate"><span class="pre">dsimp</span> <span class="pre">[(·</span> <span class="pre">∣</span> <span class="pre">·)]</span></code>。</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">example</span> <span class="o">:</span> <span class="o">(</span><span class="mi">11</span> <span class="o">:</span> <span class="n">ℕ</span><span class="o">)</span> <span class="bp">∣</span> <span class="mi">88</span> <span class="o">:=</span> <span class="kd">by</span>
   <span class="n">dsimp</span> <span class="o">[(</span><span class="bp">·</span> <span class="bp">∣</span> <span class="bp">·</span><span class="o">)]</span>
   <span class="n">use</span> <span class="mi">8</span>
@@ -504,19 +504,19 @@ hn : ∃ (k : ℤ), n = 2 * k + 1
 </section>
 <section id="id14">
 <h3>3.2.2. 例<a class="headerlink" href="#id14" title="此标题的永久链接"></a></h3>
-<p>与 <a class="reference internal" href="#parity"><span class="std std-numref">第 3.1 节</span></a> 中的 <code class="docutils literal notranslate"><span class="pre">dsimp</span> <span class="pre">[Odd]</span></code> 类似，可以在 Lean 证明中途展开整除性的定义，以提醒自己它在当前语境中的含义。命令是 <code class="docutils literal notranslate"><span class="pre">dsimp</span> <span class="pre">[(·</span> <span class="pre">∣</span> <span class="pre">·)]</span></code>。</p>
+<p>这个定义的另一个特点是，虽然我们上面是对自然数陈述的，但我们也经常希望考虑整数的整除性。下面是相应定义。</p>
 <div class="admonition-definition admonition">
-<p class="admonition-title">这个定义的另一个特点是，虽然我们上面是对自然数陈述的，但我们也经常希望考虑整数的整除性。下面是相应定义。</p>
-<p>定义</p>
-</div>
+<p class="admonition-title">定义</p>
 <p>整数 \(b\) 能被另一个整数 \(a\) 整除，如果存在整数 \(c\)，使得 \(b=ac\)。</p>
+</div>
+<p>对于整数整除性，我们也使用所有相同的变体术语，以及相同的记号 \(a \mid b\)。</p>
 <div class="admonition-problem admonition">
-<p class="admonition-title">对于整数整除性，我们也使用所有相同的变体术语，以及相同的记号 \(a \mid b\)。</p>
-<p>问题</p>
+<p class="admonition-title">问题</p>
+<p>证明整数 6 能被 -2 整除。</p>
 </div>
 <div class="admonition-solution admonition">
-<p class="admonition-title">证明整数 6 能被 -2 整除。</p>
-<p>解答</p>
+<p class="admonition-title">解答</p>
+<p>\(6 = -2 \cdot -3\)。</p>
 </div>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">example</span> <span class="o">:</span> <span class="o">(</span><span class="bp">-</span><span class="mi">2</span> <span class="o">:</span> <span class="n">ℤ</span><span class="o">)</span> <span class="bp">∣</span> <span class="mi">6</span> <span class="o">:=</span> <span class="kd">by</span>
   <span class="gr">sorry</span>
@@ -526,16 +526,16 @@ hn : ∃ (k : ℤ), n = 2 * k + 1
 <section id="id15">
 <h3>3.2.3. 例<a class="headerlink" href="#id15" title="此标题的永久链接"></a></h3>
 <div class="admonition-problem admonition">
-<p class="admonition-title">\(6 = -2 \cdot -3\)。</p>
-<p>问题</p>
+<p class="admonition-title">问题</p>
+<p>设 \(a\) 和 \(b\) 为整数，并且假设 \(a \mid b\)。证明 \(a \mid b^2+2b\)。</p>
 </div>
 <div class="admonition-solution admonition">
-<p class="admonition-title">设 \(a\) 和 \(b\) 为整数，并且假设 \(a \mid b\)。证明 \(a \mid b^2+2b\)。</p>
-<p>解答</p>
+<p class="admonition-title">解答</p>
+<p>由于 \(a \mid b\)，存在整数 \(k\)，使得 \(b=ak\)。于是</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}b ^ 2 + 2 b &amp;= (a k) ^ 2 + 2 (a k) \\
 &amp; = a (k (a k + 2)).\end{split}\]</div>
-<p>由于 \(a \mid b\)，存在整数 \(k\)，使得 \(b=ak\)。于是</p>
+<p>所以 \(a \mid b^2+2b\)。</p>
 </div>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">example</span> <span class="o">{</span><span class="n">a</span> <span class="n">b</span> <span class="o">:</span> <span class="n">ℤ</span><span class="o">}</span> <span class="o">(</span><span class="n">hab</span> <span class="o">:</span> <span class="n">a</span> <span class="bp">∣</span> <span class="n">b</span><span class="o">)</span> <span class="o">:</span> <span class="n">a</span> <span class="bp">∣</span> <span class="n">b</span> <span class="bp">^</span> <span class="mi">2</span> <span class="bp">+</span> <span class="mi">2</span> <span class="bp">*</span> <span class="n">b</span> <span class="o">:=</span> <span class="kd">by</span>
   <span class="n">obtain</span> <span class="o">⟨</span><span class="n">k</span><span class="o">,</span> <span class="n">hk</span><span class="o">⟩</span> <span class="o">:=</span> <span class="n">hab</span>
@@ -549,19 +549,19 @@ hn : ∃ (k : ℤ), n = 2 * k + 1
 <section id="id16">
 <h3>3.2.4. 例<a class="headerlink" href="#id16" title="此标题的永久链接"></a></h3>
 <div class="admonition-problem admonition">
-<p class="admonition-title">所以 \(a \mid b^2+2b\)。</p>
-<p>问题</p>
+<p class="admonition-title">问题</p>
+<p>设 \(a\)、\(b\) 和 \(c\) 为自然数，并且假设 \(a \mid b\) 且 \(b^2\mid c\)。证明 \(a^2 \mid c\)。</p>
 </div>
 <div class="admonition-solution admonition">
-<p class="admonition-title">设 \(a\)、\(b\) 和 \(c\) 为自然数，并且假设 \(a \mid b\) 且 \(b^2\mid c\)。证明 \(a^2 \mid c\)。</p>
-<p>解答</p>
+<p class="admonition-title">解答</p>
+<p>由于 \(a \mid b\)，存在自然数 \(x\) 使得 \(b=ax\)。由于 \(b^2 \mid c\)，存在自然数 \(y\) 使得 \(c=b^2y\)。于是</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}c &amp;= b ^ 2 y \\
 &amp; = (a x) ^ 2 y\\
 &amp; = a ^ 2 (x ^ 2 y).\end{split}\]</div>
-<p>由于 \(a \mid b\)，存在自然数 \(x\) 使得 \(b=ax\)。由于 \(b^2 \mid c\)，存在自然数 \(y\) 使得 \(c=b^2y\)。于是</p>
-</div>
 <p>所以 \(a^2 \mid c\)。</p>
+</div>
+<p>把这个解答翻译成 Lean。照常，如果愿意，你可以使用命令 <code class="docutils literal notranslate"><span class="pre">dsimp</span> <span class="pre">[(·</span> <span class="pre">∣</span> <span class="pre">·)]</span> <span class="pre">at</span> <span class="pre">*</span></code> 在目标状态中的所有地方把 \(\mid\) 展开为定义，不过这不是必需的。</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">example</span> <span class="o">{</span><span class="n">a</span> <span class="n">b</span> <span class="n">c</span> <span class="o">:</span> <span class="n">ℕ</span><span class="o">}</span> <span class="o">(</span><span class="n">hab</span> <span class="o">:</span> <span class="n">a</span> <span class="bp">∣</span> <span class="n">b</span><span class="o">)</span> <span class="o">(</span><span class="n">hbc</span> <span class="o">:</span> <span class="n">b</span> <span class="bp">^</span> <span class="mi">2</span> <span class="bp">∣</span> <span class="n">c</span><span class="o">)</span> <span class="o">:</span> <span class="n">a</span> <span class="bp">^</span> <span class="mi">2</span> <span class="bp">∣</span> <span class="n">c</span> <span class="o">:=</span> <span class="kd">by</span>
   <span class="gr">sorry</span>
 </pre></div>
@@ -570,16 +570,16 @@ hn : ∃ (k : ℤ), n = 2 * k + 1
 <section id="id17">
 <h3>3.2.5. 例<a class="headerlink" href="#id17" title="此标题的永久链接"></a></h3>
 <div class="admonition-problem admonition">
-<p class="admonition-title">把这个解答翻译成 Lean。照常，如果愿意，你可以使用命令 <code class="docutils literal notranslate"><span class="pre">dsimp</span> <span class="pre">[(·</span> <span class="pre">∣</span> <span class="pre">·)]</span> <span class="pre">at</span> <span class="pre">*</span></code> 在目标状态中的所有地方把 \(\mid\) 展开为定义，不过这不是必需的。</p>
-<p>问题</p>
+<p class="admonition-title">问题</p>
+<p>设 \(x\)、\(y\) 和 \(z\) 为自然数，并且假设 \(xy \mid z\)。证明 \(x \mid z\)。</p>
 </div>
 <div class="admonition-solution admonition">
-<p class="admonition-title">设 \(x\)、\(y\) 和 \(z\) 为自然数，并且假设 \(xy \mid z\)。证明 \(x \mid z\)。</p>
-<p>解答</p>
+<p class="admonition-title">解答</p>
+<p>由于 \(xy \mid z\)，存在自然数 \(t\)，使得 \(z=(xy)t\)。于是</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}z &amp;= (xy)t \\
 &amp; = x(yt).\end{split}\]</div>
-<p>由于 \(xy \mid z\)，存在自然数 \(t\)，使得 \(z=(xy)t\)。于是</p>
+<p>所以 \(x \mid z\)。</p>
 </div>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">example</span> <span class="o">{</span><span class="n">x</span> <span class="n">y</span> <span class="n">z</span> <span class="o">:</span> <span class="n">ℕ</span><span class="o">}</span> <span class="o">(</span><span class="n">h</span> <span class="o">:</span> <span class="n">x</span> <span class="bp">*</span> <span class="n">y</span> <span class="bp">∣</span> <span class="n">z</span><span class="o">)</span> <span class="o">:</span> <span class="n">x</span> <span class="bp">∣</span> <span class="n">z</span> <span class="o">:=</span> <span class="kd">by</span>
   <span class="gr">sorry</span>
@@ -588,22 +588,22 @@ hn : ∃ (k : ℤ), n = 2 * k + 1
 </section>
 <section id="not-divisible">
 <span id="id18"></span><h3>3.2.6. 例<a class="headerlink" href="#not-divisible" title="此标题的永久链接"></a></h3>
-<p>所以 \(x \mid z\)。</p>
+<p>你可能会问，怎样证明一个数不能被另一个数整除。这里有一个方便的判据，它是本书后面将在 <a class="reference internal" href="04_Proofs_with_Structure_II.html#id38"><span class="std std-numref">例 4.5.8</span></a> 中证明的定理：如果整数 \(b\) 位于整数 \(a\) 的两个相邻倍数之间，则 \(a\) 不整除 \(b\)。</p>
 <div class="admonition-problem admonition">
-<p class="admonition-title">你可能会问，怎样证明一个数不能被另一个数整除。这里有一个方便的判据，它是本书后面将在 <a class="reference internal" href="04_Proofs_with_Structure_II.html#id38"><span class="std std-numref">例 4.5.8</span></a> 中证明的定理：如果整数 \(b\) 位于整数 \(a\) 的两个相邻倍数之间，则 \(a\) 不整除 \(b\)。</p>
-<p>问题</p>
+<p class="admonition-title">问题</p>
+<p>证明 12 不能被 5 整除。</p>
 </div>
 <div class="admonition-solution admonition">
-<p class="admonition-title">证明 12 不能被 5 整除。</p>
-<p>解答</p>
-</div>
+<p class="admonition-title">解答</p>
 <p>\(5 \cdot 2 &lt; 12 &lt; 5 \cdot (2 + 1)\)。</p>
+</div>
+<p>在 Lean 中，这个判据可作为引理 <code class="docutils literal notranslate"><span class="pre">Int.not_dvd_of_exists_lt_and_lt</span></code> 使用：</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">lemma</span> <span class="n">Int.not_dvd_of_exists_lt_and_lt</span> <span class="o">(</span><span class="n">a</span> <span class="n">b</span> <span class="o">:</span> <span class="n">ℤ</span><span class="o">)</span>
   <span class="o">(</span><span class="n">h</span> <span class="o">:</span> <span class="bp">∃</span> <span class="n">q</span><span class="o">,</span> <span class="n">b</span> <span class="bp">*</span> <span class="n">q</span> <span class="bp">&lt;</span> <span class="n">a</span> <span class="bp">∧</span> <span class="n">a</span> <span class="bp">&lt;</span> <span class="n">b</span> <span class="bp">*</span> <span class="o">(</span><span class="n">q</span> <span class="bp">+</span> <span class="mi">1</span><span class="o">))</span> <span class="o">:</span>
   <span class="bp">¬</span><span class="n">b</span> <span class="bp">∣</span> <span class="n">a</span> <span class="o">:=</span>
 </pre></div>
 </div>
-<p>在 Lean 中，这个判据可作为引理 <code class="docutils literal notranslate"><span class="pre">Int.not_dvd_of_exists_lt_and_lt</span></code> 使用：</p>
+<p>下面是在 Lean 中写出的同一解答。</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">example</span> <span class="o">:</span> <span class="bp">¬</span><span class="o">(</span><span class="mi">5</span> <span class="o">:</span> <span class="n">ℤ</span><span class="o">)</span> <span class="bp">∣</span> <span class="mi">12</span> <span class="o">:=</span> <span class="kd">by</span>
   <span class="n">apply</span> <span class="n">Int.not_dvd_of_exists_lt_and_lt</span>
   <span class="n">use</span> <span class="mi">2</span>
@@ -616,17 +616,17 @@ hn : ∃ (k : ℤ), n = 2 * k + 1
 <section id="dvd-bd-1">
 <span id="id19"></span><h3>3.2.7. 例<a class="headerlink" href="#dvd-bd-1" title="此标题的永久链接"></a></h3>
 <div class="admonition-problem admonition">
-<p class="admonition-title">下面是在 Lean 中写出的同一解答。</p>
-<p>问题</p>
+<p class="admonition-title">问题</p>
+<p>设 \(a\) 和 \(b\) 为自然数，其中 \(b\) 为正，并且假设 \(a\) 整除 \(b\)。证明 \(a \le b\)。</p>
 </div>
 <div class="admonition-solution admonition">
-<p class="admonition-title">设 \(a\) 和 \(b\) 为自然数，其中 \(b\) 为正，并且假设 \(a\) 整除 \(b\)。证明 \(a \le b\)。</p>
-<p>解答</p>
+<p class="admonition-title">解答</p>
 <p>由于 \(a \mid b\)，存在自然数 \(k\)，使得 \(b=ak\)。</p>
+<p>我们先注意到</p>
 <div class="math notranslate nohighlight">
 \[0 &lt; b =ak\]</div>
-<p>我们先注意到</p>
 <p>所以 \(0&lt;k\)。因此实际上 \(1 \le k\)。</p>
+<p>现在，我们有</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}a &amp;= a \cdot 1 \\
 &amp;≤ a k \\
@@ -646,80 +646,80 @@ hn : ∃ (k : ℤ), n = 2 * k + 1
     <span class="n">_</span> <span class="bp">=</span> <span class="n">b</span> <span class="o">:=</span> <span class="kd">by</span> <span class="n">rw</span> <span class="o">[</span><span class="n">hk</span><span class="o">]</span>
 </pre></div>
 </div>
-<p>现在，我们有</p>
+<p>这个引理在 Lean 主库中可用，名称为 <code class="docutils literal notranslate"><span class="pre">Nat.le_of_dvd</span></code>。</p>
 </section>
 <section id="dvd-bd-2">
 <span id="id20"></span><h3>3.2.8. 例<a class="headerlink" href="#dvd-bd-2" title="此标题的永久链接"></a></h3>
 <div class="admonition-problem admonition">
-<p class="admonition-title">这个引理在 Lean 主库中可用，名称为 <code class="docutils literal notranslate"><span class="pre">Nat.le_of_dvd</span></code>。</p>
-<p>问题</p>
+<p class="admonition-title">问题</p>
+<p>设 \(a\) 和 \(b\) 为自然数，其中 \(b\) 为正，并且假设 \(a\) 整除 \(b\)。证明 \(a\) 为正。</p>
 </div>
 <div class="admonition-solution admonition">
-<p class="admonition-title">设 \(a\) 和 \(b\) 为自然数，其中 \(b\) 为正，并且假设 \(a\) 整除 \(b\)。证明 \(a\) 为正。</p>
-<p>解答</p>
+<p class="admonition-title">解答</p>
 <p>由于 \(a \mid b\)，存在自然数 \(k\)，使得 \(b=ak\)。</p>
+<p>我们有</p>
 <div class="math notranslate nohighlight">
 \[0 &lt; b = a k,\]</div>
-<p>我们有</p>
+<p>所以 \(0&lt;a\)。</p>
 </div>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">example</span> <span class="o">{</span><span class="n">a</span> <span class="n">b</span> <span class="o">:</span> <span class="n">ℕ</span><span class="o">}</span> <span class="o">(</span><span class="n">hab</span> <span class="o">:</span> <span class="n">a</span> <span class="bp">∣</span> <span class="n">b</span><span class="o">)</span> <span class="o">(</span><span class="n">hb</span> <span class="o">:</span> <span class="mi">0</span> <span class="bp">&lt;</span> <span class="n">b</span><span class="o">)</span> <span class="o">:</span> <span class="mi">0</span> <span class="bp">&lt;</span> <span class="n">a</span> <span class="o">:=</span> <span class="kd">by</span>
   <span class="gr">sorry</span>
 </pre></div>
 </div>
-<p>所以 \(0&lt;a\)。</p>
+<p>这个引理也在 Lean 主库中可用，名称为 <code class="docutils literal notranslate"><span class="pre">Nat.pos_of_dvd_of_pos</span></code>。</p>
 </section>
 <section id="id21">
 <h3>3.2.9. 练习<a class="headerlink" href="#id21" title="此标题的永久链接"></a></h3>
 <ol class="arabic">
-<li><p>\(a\) 整除 \(b\)</p>
+<li><p>证明 0 能被每个整数 \(t\) 整除。</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">example</span> <span class="o">(</span><span class="n">t</span> <span class="o">:</span> <span class="n">ℤ</span><span class="o">)</span> <span class="o">:</span> <span class="n">t</span> <span class="bp">∣</span> <span class="mi">0</span> <span class="o">:=</span> <span class="kd">by</span>
   <span class="gr">sorry</span>
 </pre></div>
 </div>
 </li>
-<li><p>证明 0 能被每个整数 \(t\) 整除。</p>
+<li><p>证明 -10 不能被 3 整除。</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">example</span> <span class="o">:</span> <span class="bp">¬</span><span class="o">(</span><span class="mi">3</span> <span class="o">:</span> <span class="n">ℤ</span><span class="o">)</span> <span class="bp">∣</span> <span class="bp">-</span><span class="mi">10</span> <span class="o">:=</span> <span class="kd">by</span>
   <span class="gr">sorry</span>
 </pre></div>
 </div>
 </li>
-<li><p>证明 -10 不能被 3 整除。</p>
+<li><p>设 \(x\) 和 \(y\) 为整数，并且假设 \(x \mid y\)。证明 \(x \mid 3y-4y^2\)。</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">example</span> <span class="o">{</span><span class="n">x</span> <span class="n">y</span> <span class="o">:</span> <span class="n">ℤ</span><span class="o">}</span> <span class="o">(</span><span class="n">h</span> <span class="o">:</span> <span class="n">x</span> <span class="bp">∣</span> <span class="n">y</span><span class="o">)</span> <span class="o">:</span> <span class="n">x</span> <span class="bp">∣</span> <span class="mi">3</span> <span class="bp">*</span> <span class="n">y</span> <span class="bp">-</span> <span class="mi">4</span> <span class="bp">*</span> <span class="n">y</span> <span class="bp">^</span> <span class="mi">2</span> <span class="o">:=</span> <span class="kd">by</span>
   <span class="gr">sorry</span>
 </pre></div>
 </div>
 </li>
-<li><p>设 \(x\) 和 \(y\) 为整数，并且假设 \(x \mid y\)。证明 \(x \mid 3y-4y^2\)。</p>
+<li><p>设 \(m\) 和 \(n\) 为整数，并且假设 \(m \mid n\)。证明 \(m \mid 2n^3+n\)。</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">example</span> <span class="o">{</span><span class="n">m</span> <span class="n">n</span> <span class="o">:</span> <span class="n">ℤ</span><span class="o">}</span> <span class="o">(</span><span class="n">h</span> <span class="o">:</span> <span class="n">m</span> <span class="bp">∣</span> <span class="n">n</span><span class="o">)</span> <span class="o">:</span> <span class="n">m</span> <span class="bp">∣</span> <span class="mi">2</span> <span class="bp">*</span> <span class="n">n</span> <span class="bp">^</span> <span class="mi">3</span> <span class="bp">+</span> <span class="n">n</span> <span class="o">:=</span> <span class="kd">by</span>
   <span class="gr">sorry</span>
 </pre></div>
 </div>
 </li>
-<li><p>设 \(m\) 和 \(n\) 为整数，并且假设 \(m \mid n\)。证明 \(m \mid 2n^3+n\)。</p>
+<li><p>设 \(a\) 和 \(b\) 为整数，并且假设 \(a \mid b\)。证明 \(a \mid 2b^3-b^2+3b\)。</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">example</span> <span class="o">{</span><span class="n">a</span> <span class="n">b</span> <span class="o">:</span> <span class="n">ℤ</span><span class="o">}</span> <span class="o">(</span><span class="n">hab</span> <span class="o">:</span> <span class="n">a</span> <span class="bp">∣</span> <span class="n">b</span><span class="o">)</span> <span class="o">:</span> <span class="n">a</span> <span class="bp">∣</span> <span class="mi">2</span> <span class="bp">*</span> <span class="n">b</span> <span class="bp">^</span> <span class="mi">3</span> <span class="bp">-</span> <span class="n">b</span> <span class="bp">^</span> <span class="mi">2</span> <span class="bp">+</span> <span class="mi">3</span> <span class="bp">*</span> <span class="n">b</span> <span class="o">:=</span> <span class="kd">by</span>
   <span class="gr">sorry</span>
 </pre></div>
 </div>
 </li>
-<li><p>设 \(a\) 和 \(b\) 为整数，并且假设 \(a \mid b\)。证明 \(a \mid 2b^3-b^2+3b\)。</p>
+<li><p>设 \(k\)、\(l\) 和 \(m\) 为整数，并且假设 \(k\) 整除 \(l\)，且 \(l^3\) 整除 \(m\)。证明 \(k^3\) 整除 \(m\)。</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">example</span> <span class="o">{</span><span class="n">k</span> <span class="n">l</span> <span class="n">m</span> <span class="o">:</span> <span class="n">ℤ</span><span class="o">}</span> <span class="o">(</span><span class="n">h1</span> <span class="o">:</span> <span class="n">k</span> <span class="bp">∣</span> <span class="n">l</span><span class="o">)</span> <span class="o">(</span><span class="n">h2</span> <span class="o">:</span> <span class="n">l</span> <span class="bp">^</span> <span class="mi">3</span> <span class="bp">∣</span> <span class="n">m</span><span class="o">)</span> <span class="o">:</span> <span class="n">k</span> <span class="bp">^</span> <span class="mi">3</span> <span class="bp">∣</span> <span class="n">m</span> <span class="o">:=</span> <span class="kd">by</span>
   <span class="gr">sorry</span>
 </pre></div>
 </div>
 </li>
-<li><p>设 \(k\)、\(l\) 和 \(m\) 为整数，并且假设 \(k\) 整除 \(l\)，且 \(l^3\) 整除 \(m\)。证明 \(k^3\) 整除 \(m\)。</p>
+<li><p>设 \(p\)、\(q\) 和 \(r\) 为整数，并且假设 \(p^3\) 整除 \(q\)，且 \(q^2\) 整除 \(r\)。证明 \(p^6\) 整除 \(r\)。</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">example</span> <span class="o">{</span><span class="n">p</span> <span class="n">q</span> <span class="n">r</span> <span class="o">:</span> <span class="n">ℤ</span><span class="o">}</span> <span class="o">(</span><span class="n">hpq</span> <span class="o">:</span> <span class="n">p</span> <span class="bp">^</span> <span class="mi">3</span> <span class="bp">∣</span> <span class="n">q</span><span class="o">)</span> <span class="o">(</span><span class="n">hqr</span> <span class="o">:</span> <span class="n">q</span> <span class="bp">^</span> <span class="mi">2</span> <span class="bp">∣</span> <span class="n">r</span><span class="o">)</span> <span class="o">:</span> <span class="n">p</span> <span class="bp">^</span> <span class="mi">6</span> <span class="bp">∣</span> <span class="n">r</span> <span class="o">:=</span> <span class="kd">by</span>
   <span class="gr">sorry</span>
 </pre></div>
 </div>
 </li>
-<li><p>设 \(p\)、\(q\) 和 \(r\) 为整数，并且假设 \(p^3\) 整除 \(q\)，且 \(q^2\) 整除 \(r\)。证明 \(p^6\) 整除 \(r\)。</p>
+<li><p>证明：存在自然数 \(n&gt;0\)，使得 \(9\) 是 \(2^n-1\) 的因子。</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">example</span> <span class="o">:</span> <span class="bp">∃</span> <span class="n">n</span> <span class="o">:</span> <span class="n">ℕ</span><span class="o">,</span> <span class="mi">0</span> <span class="bp">&lt;</span> <span class="n">n</span> <span class="bp">∧</span> <span class="mi">9</span> <span class="bp">∣</span> <span class="mi">2</span> <span class="bp">^</span> <span class="n">n</span> <span class="bp">-</span> <span class="mi">1</span> <span class="o">:=</span> <span class="kd">by</span>
   <span class="gr">sorry</span>
 </pre></div>
 </div>
 </li>
-<li><p>证明：存在自然数 \(n&gt;0\)，使得 \(9\) 是 \(2^n-1\) 的因子。</p>
+<li><p>证明：存在整数 \(a\) 和 \(b\)，且 \(0&lt;b&lt;a\)，使得 \(a-b \mid a+b\)。</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">example</span> <span class="o">:</span> <span class="bp">∃</span> <span class="n">a</span> <span class="n">b</span> <span class="o">:</span> <span class="n">ℤ</span><span class="o">,</span> <span class="mi">0</span> <span class="bp">&lt;</span> <span class="n">b</span> <span class="bp">∧</span> <span class="n">b</span> <span class="bp">&lt;</span> <span class="n">a</span> <span class="bp">∧</span> <span class="n">a</span> <span class="bp">-</span> <span class="n">b</span> <span class="bp">∣</span> <span class="n">a</span> <span class="bp">+</span> <span class="n">b</span> <span class="o">:=</span> <span class="kd">by</span>
   <span class="gr">sorry</span>
 </pre></div>
@@ -731,10 +731,10 @@ hn : ∃ (k : ℤ), n = 2 * k + 1
 <section id="modular-arithmetic-theory">
 <span id="theory-modular"></span><h2>3.3. 模算术：理论<a class="headerlink" href="#modular-arithmetic-theory" title="此标题的永久链接"></a></h2>
 <div class="admonition-definition admonition">
-<p class="admonition-title">这个引理也在 Lean 主库中可用，名称为 <code class="docutils literal notranslate"><span class="pre">Nat.pos_of_dvd_of_pos</span></code>。</p>
-<p>定义</p>
-</div>
+<p class="admonition-title">定义</p>
 <p>整数 \(a\) 和 \(b\) 称为模 \(n\) 同余，如果 \(n\mid (a-b)\)。</p>
+</div>
+<p>我们用记号 \(a\equiv b \mod n\) 表示 \(a\) 与 \(b\) 模 \(n\) 同余。</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">def</span> <span class="n">Int.ModEq</span> <span class="o">(</span><span class="n">n</span> <span class="n">a</span> <span class="n">b</span> <span class="o">:</span> <span class="n">ℤ</span><span class="o">)</span> <span class="o">:</span> <span class="kt">Prop</span> <span class="o">:=</span> <span class="n">n</span> <span class="bp">∣</span> <span class="n">a</span> <span class="bp">-</span> <span class="n">b</span>
 
 <span class="kd">notation</span><span class="o">:</span><span class="mi">50</span> <span class="n">a</span> <span class="s2">" ≡ "</span> <span class="n">b</span> <span class="s2">" [ZMOD "</span> <span class="n">n</span> <span class="s2">"]"</span> <span class="bp">=&gt;</span> <span class="n">Int.ModEq</span> <span class="n">n</span> <span class="n">a</span> <span class="n">b</span>
@@ -743,12 +743,12 @@ hn : ∃ (k : ℤ), n = 2 * k + 1
 <section id="id22">
 <h3>3.3.1. 例<a class="headerlink" href="#id22" title="此标题的永久链接"></a></h3>
 <div class="admonition-problem admonition">
-<p class="admonition-title">我们用记号 \(a\equiv b \mod n\) 表示 \(a\) 与 \(b\) 模 \(n\) 同余。</p>
-<p>问题</p>
+<p class="admonition-title">问题</p>
+<p>证明 \(11\equiv 3 \mod 4\)。</p>
 </div>
 <div class="admonition-solution admonition">
-<p class="admonition-title">证明 \(11\equiv 3 \mod 4\)。</p>
-<p>解答</p>
+<p class="admonition-title">解答</p>
+<p>\(11-3=4\cdot 2\)，所以 \(4\mid(11-3)\)。</p>
 </div>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">example</span> <span class="o">:</span> <span class="mi">11</span> <span class="bp">≡</span> <span class="mi">3</span> <span class="o">[</span><span class="n">ZMOD</span> <span class="mi">4</span><span class="o">]</span> <span class="o">:=</span> <span class="kd">by</span>
   <span class="n">use</span> <span class="mi">2</span>
@@ -759,12 +759,12 @@ hn : ∃ (k : ℤ), n = 2 * k + 1
 <section id="id23">
 <h3>3.3.2. 例<a class="headerlink" href="#id23" title="此标题的永久链接"></a></h3>
 <div class="admonition-problem admonition">
-<p class="admonition-title">\(11-3=4\cdot 2\)，所以 \(4\mid(11-3)\)。</p>
-<p>问题</p>
+<p class="admonition-title">问题</p>
+<p>证明 \(-5\equiv 1 \mod 3\)。</p>
 </div>
 <div class="admonition-solution admonition">
-<p class="admonition-title">证明 \(-5\equiv 1 \mod 3\)。</p>
-<p>解答</p>
+<p class="admonition-title">解答</p>
+<p>\(-5-1=3\cdot -2\)，所以 \(3\mid(-5-1)\)。</p>
 </div>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">example</span> <span class="o">:</span> <span class="bp">-</span><span class="mi">5</span> <span class="bp">≡</span> <span class="mi">1</span> <span class="o">[</span><span class="n">ZMOD</span> <span class="mi">3</span><span class="o">]</span> <span class="o">:=</span> <span class="kd">by</span>
   <span class="gr">sorry</span>
@@ -774,17 +774,17 @@ hn : ∃ (k : ℤ), n = 2 * k + 1
 <section id="modeq-add">
 <span id="id24"></span><h3>3.3.3. 例<a class="headerlink" href="#modeq-add" title="此标题的永久链接"></a></h3>
 <div class="admonition-lemma-addition-rule-for-modular-arithmetic admonition">
-<p class="admonition-title">\(-5-1=3\cdot -2\)，所以 \(3\mid(-5-1)\)。</p>
-<p>引理（模算术的加法规则）</p>
+<p class="admonition-title">引理（模算术的加法规则）</p>
+<p>设 \(a\)、\(b\)、\(c\)、\(d\) 和 \(n\) 为整数，并且假设 \(a\equiv b \mod n\)、\(c\equiv d \mod n\)。则 \(a+c\equiv b+d \mod n\)。</p>
 </div>
 <div class="admonition-proof admonition">
-<p class="admonition-title">设 \(a\)、\(b\)、\(c\)、\(d\) 和 \(n\) 为整数，并且假设 \(a\equiv b \mod n\)、\(c\equiv d \mod n\)。则 \(a+c\equiv b+d \mod n\)。</p>
-<p>证明</p>
+<p class="admonition-title">证明</p>
+<p>由于 \(a\equiv b \mod n\)，存在整数 \(x\)，使得 \(a-b=nx\)。由于 \(c\equiv d \mod n\)，存在整数 \(y\)，使得 \(c-d=ny\)。于是</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}a + c - (b + d) &amp;= (a - b) + (c - d) \\
 &amp;= n x + n y \\
 &amp;= n (x + y),\end{split}\]</div>
-<p>由于 \(a\equiv b \mod n\)，存在整数 \(x\)，使得 \(a-b=nx\)。由于 \(c\equiv d \mod n\)，存在整数 \(y\)，使得 \(c-d=ny\)。于是</p>
+<p>所以 \(a+c\equiv b+d \mod n\)。</p>
 </div>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">theorem</span> <span class="n">Int.ModEq.add</span> <span class="o">{</span><span class="n">n</span> <span class="n">a</span> <span class="n">b</span> <span class="n">c</span> <span class="n">d</span> <span class="o">:</span> <span class="n">ℤ</span><span class="o">}</span> <span class="o">(</span><span class="n">h1</span> <span class="o">:</span> <span class="n">a</span> <span class="bp">≡</span> <span class="n">b</span> <span class="o">[</span><span class="n">ZMOD</span> <span class="n">n</span><span class="o">])</span> <span class="o">(</span><span class="n">h2</span> <span class="o">:</span> <span class="n">c</span> <span class="bp">≡</span> <span class="n">d</span> <span class="o">[</span><span class="n">ZMOD</span> <span class="n">n</span><span class="o">])</span> <span class="o">:</span>
     <span class="n">a</span> <span class="bp">+</span> <span class="n">c</span> <span class="bp">≡</span> <span class="n">b</span> <span class="bp">+</span> <span class="n">d</span> <span class="o">[</span><span class="n">ZMOD</span> <span class="n">n</span><span class="o">]</span> <span class="o">:=</span> <span class="kd">by</span>
@@ -802,8 +802,8 @@ hn : ∃ (k : ℤ), n = 2 * k + 1
 <section id="exercise">
 <h3>3.3.4. 练习<a class="headerlink" href="#exercise" title="此标题的永久链接"></a></h3>
 <div class="admonition-lemma-subtraction-rule-for-modular-arithmetic admonition">
-<p class="admonition-title">所以 \(a+c\equiv b+d \mod n\)。</p>
-<p>引理（模算术的减法规则）</p>
+<p class="admonition-title">引理（模算术的减法规则）</p>
+<p>设 \(a\)、\(b\)、\(c\)、\(d\) 和 \(n\) 为整数，并且假设 \(a\equiv b \mod n\)、\(c\equiv d \mod n\)。则 \(a-c\equiv b-d \mod n\)。</p>
 </div>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">theorem</span> <span class="n">Int.ModEq.sub</span> <span class="o">{</span><span class="n">n</span> <span class="n">a</span> <span class="n">b</span> <span class="n">c</span> <span class="n">d</span> <span class="o">:</span> <span class="n">ℤ</span><span class="o">}</span> <span class="o">(</span><span class="n">h1</span> <span class="o">:</span> <span class="n">a</span> <span class="bp">≡</span> <span class="n">b</span> <span class="o">[</span><span class="n">ZMOD</span> <span class="n">n</span><span class="o">])</span> <span class="o">(</span><span class="n">h2</span> <span class="o">:</span> <span class="n">c</span> <span class="bp">≡</span> <span class="n">d</span> <span class="o">[</span><span class="n">ZMOD</span> <span class="n">n</span><span class="o">])</span> <span class="o">:</span>
     <span class="n">a</span> <span class="bp">-</span> <span class="n">c</span> <span class="bp">≡</span> <span class="n">b</span> <span class="bp">-</span> <span class="n">d</span> <span class="o">[</span><span class="n">ZMOD</span> <span class="n">n</span><span class="o">]</span> <span class="o">:=</span> <span class="kd">by</span>
@@ -814,8 +814,8 @@ hn : ∃ (k : ℤ), n = 2 * k + 1
 <section id="id25">
 <h3>3.3.5. 练习<a class="headerlink" href="#id25" title="此标题的永久链接"></a></h3>
 <div class="admonition-lemma-negation-rule-for-modular-arithmetic admonition">
-<p class="admonition-title">设 \(a\)、\(b\)、\(c\)、\(d\) 和 \(n\) 为整数，并且假设 \(a\equiv b \mod n\)、\(c\equiv d \mod n\)。则 \(a-c\equiv b-d \mod n\)。</p>
-<p>引理（模算术的取负规则）</p>
+<p class="admonition-title">引理（模算术的取负规则）</p>
+<p>设 \(a\)、\(b\) 和 \(n\) 为整数，并且假设 \(a\equiv b \mod n\)。则 \(-a\equiv -b \mod n\)。</p>
 </div>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">theorem</span> <span class="n">Int.ModEq.neg</span> <span class="o">{</span><span class="n">n</span> <span class="n">a</span> <span class="n">b</span> <span class="o">:</span> <span class="n">ℤ</span><span class="o">}</span> <span class="o">(</span><span class="n">h1</span> <span class="o">:</span> <span class="n">a</span> <span class="bp">≡</span> <span class="n">b</span> <span class="o">[</span><span class="n">ZMOD</span> <span class="n">n</span><span class="o">])</span> <span class="o">:</span> <span class="bp">-</span><span class="n">a</span> <span class="bp">≡</span> <span class="bp">-</span><span class="n">b</span> <span class="o">[</span><span class="n">ZMOD</span> <span class="n">n</span><span class="o">]</span> <span class="o">:=</span> <span class="kd">by</span>
   <span class="gr">sorry</span>
@@ -825,17 +825,17 @@ hn : ∃ (k : ℤ), n = 2 * k + 1
 <section id="modeq-mul">
 <span id="id26"></span><h3>3.3.6. 例<a class="headerlink" href="#modeq-mul" title="此标题的永久链接"></a></h3>
 <div class="admonition-lemma-multiplication-rule-for-modular-arithmetic admonition">
-<p class="admonition-title">设 \(a\)、\(b\) 和 \(n\) 为整数，并且假设 \(a\equiv b \mod n\)。则 \(-a\equiv -b \mod n\)。</p>
-<p>引理（模算术的乘法规则）</p>
+<p class="admonition-title">引理（模算术的乘法规则）</p>
+<p>设 \(a\)、\(b\)、\(c\)、\(d\) 和 \(n\) 为整数，并且假设 \(a\equiv b \mod n\)、\(c\equiv d \mod n\)。则 \(ac\equiv bd \mod n\)。</p>
 </div>
 <div class="admonition-proof admonition">
-<p class="admonition-title">设 \(a\)、\(b\)、\(c\)、\(d\) 和 \(n\) 为整数，并且假设 \(a\equiv b \mod n\)、\(c\equiv d \mod n\)。则 \(ac\equiv bd \mod n\)。</p>
-<p>证明</p>
+<p class="admonition-title">证明</p>
+<p>由于 \(a\equiv b \mod n\)，存在整数 \(x\)，使得 \(a-b=nx\)。由于 \(c\equiv d \mod n\)，存在整数 \(y\)，使得 \(c-d=ny\)。于是</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}a c - b d &amp;= (a - b) c + b (c - d) \\
 &amp;= (n x)  c + b  (n y) \\
 &amp; = n (x c + b y),\end{split}\]</div>
-<p>由于 \(a\equiv b \mod n\)，存在整数 \(x\)，使得 \(a-b=nx\)。由于 \(c\equiv d \mod n\)，存在整数 \(y\)，使得 \(c-d=ny\)。于是</p>
+<p>所以 \(ac\equiv bd \mod n\)。</p>
 </div>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">theorem</span> <span class="n">Int.ModEq.mul</span> <span class="o">{</span><span class="n">n</span> <span class="n">a</span> <span class="n">b</span> <span class="n">c</span> <span class="n">d</span> <span class="o">:</span> <span class="n">ℤ</span><span class="o">}</span> <span class="o">(</span><span class="n">h1</span> <span class="o">:</span> <span class="n">a</span> <span class="bp">≡</span> <span class="n">b</span> <span class="o">[</span><span class="n">ZMOD</span> <span class="n">n</span><span class="o">])</span> <span class="o">(</span><span class="n">h2</span> <span class="o">:</span> <span class="n">c</span> <span class="bp">≡</span> <span class="n">d</span> <span class="o">[</span><span class="n">ZMOD</span> <span class="n">n</span><span class="o">])</span> <span class="o">:</span>
     <span class="n">a</span> <span class="bp">*</span> <span class="n">c</span> <span class="bp">≡</span> <span class="n">b</span> <span class="bp">*</span> <span class="n">d</span> <span class="o">[</span><span class="n">ZMOD</span> <span class="n">n</span><span class="o">]</span> <span class="o">:=</span> <span class="kd">by</span>
@@ -851,31 +851,31 @@ hn : ∃ (k : ℤ), n = 2 * k + 1
 </section>
 <section id="no-mod-division">
 <span id="id27"></span><h3>3.3.7. 例<a class="headerlink" href="#no-mod-division" title="此标题的永久链接"></a></h3>
-<p>所以 \(ac\equiv bd \mod n\)。</p>
+<p>警告：模算术中不存在“除法规则”！</p>
 <div class="admonition-problem admonition">
-<p class="admonition-title">警告：模算术中不存在“除法规则”！</p>
-<p>问题</p>
+<p class="admonition-title">问题</p>
+<p>可能存在整数 \(a\)、\(b\)、\(c\)、\(d\) 和 \(n\)，使得 \(a\equiv b \mod n\)、\(c\equiv d \mod n\)，但 \(\frac{a}{c}\not\equiv \frac{b}{d} \mod n\)。</p>
 </div>
 <div class="admonition-solution admonition">
-<p class="admonition-title">可能存在整数 \(a\)、\(b\)、\(c\)、\(d\) 和 \(n\)，使得 \(a\equiv b \mod n\)、\(c\equiv d \mod n\)，但 \(\frac{a}{c}\not\equiv \frac{b}{d} \mod n\)。</p>
-<p>解答</p>
+<p class="admonition-title">解答</p>
+<p>可取 \(a=10\)、\(b=18\)、\(c=2\)、\(d=6\)。事实上，</p>
 <ul class="simple">
-<li>证明：存在整数 \(a\) 和 \(b\)，且 \(0&lt;b&lt;a\)，使得 \(a-b \mid a+b\)。</li>
 <li>\(10-18=4\cdot -2\)，所以 \(10\equiv 18 \mod 4\)；</li>
 <li>\(2-6=4\cdot -1\)，所以 \(2\equiv 6 \mod 4\)；</li>
+<li>\(\frac{10}{2}-\frac{18}{6}=2\) 位于 4 的两个相邻倍数 \(4\cdot 0\) 与 \(4\cdot (0+1)\) 之间，所以 \(\frac{10}{2}\not\equiv \frac{18}{6} \mod 4\)。</li>
 </ul>
 </div>
-<p>可取 \(a=10\)、\(b=18\)、\(c=2\)、\(d=6\)。事实上，</p>
+<p>注意，这里我们使用了 <a class="reference internal" href="#id27"><span class="std std-numref">例 3.2.6</span></a> 中的不整除判据。</p>
 </section>
 <section id="id28">
 <h3>3.3.8. 例<a class="headerlink" href="#id28" title="此标题的永久链接"></a></h3>
 <div class="admonition-lemma-squaring-rule-for-modular-arithmetic admonition">
-<p class="admonition-title">注意，这里我们使用了 <a class="reference internal" href="#id27"><span class="std std-numref">例 3.2.6</span></a> 中的不整除判据。</p>
-<p>引理（模算术的平方规则）</p>
+<p class="admonition-title">引理（模算术的平方规则）</p>
+<p>设 \(a\)、\(b\) 和 \(n\) 为整数，并且假设 \(a\equiv b \mod n\)。则 \(a^2\equiv b^2 \mod n\)。</p>
 </div>
 <div class="admonition-proof admonition">
-<p class="admonition-title">设 \(a\)、\(b\) 和 \(n\) 为整数，并且假设 \(a\equiv b \mod n\)。则 \(a^2\equiv b^2 \mod n\)。</p>
-<p>证明</p>
+<p class="admonition-title">证明</p>
+<p>由于 \(a\equiv b \mod n\)，存在整数 \(x\)，使得 \(a-b=nx\)。于是</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}a ^ 2 - b ^ 2 &amp;= (a - b)  (a + b) \\
 &amp;= (n x) (a + b) \\
@@ -894,17 +894,17 @@ hn : ∃ (k : ℤ), n = 2 * k + 1
 <section id="modeq-pow">
 <span id="id29"></span><h3>3.3.9. 练习<a class="headerlink" href="#modeq-pow" title="此标题的永久链接"></a></h3>
 <div class="admonition-lemma-cubing-rule-for-modular-arithmetic admonition">
-<p class="admonition-title">由于 \(a\equiv b \mod n\)，存在整数 \(x\)，使得 \(a-b=nx\)。于是</p>
-<p>引理（模算术的立方规则）</p>
+<p class="admonition-title">引理（模算术的立方规则）</p>
+<p>设 \(a\)、\(b\) 和 \(n\) 为整数，并且假设 \(a\equiv b \mod n\)。则 \(a^3\equiv b^3 \mod n\)。</p>
 </div>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">theorem</span> <span class="n">Int.ModEq.pow_three</span> <span class="o">(</span><span class="n">h</span> <span class="o">:</span> <span class="n">a</span> <span class="bp">≡</span> <span class="n">b</span> <span class="o">[</span><span class="n">ZMOD</span> <span class="n">n</span><span class="o">])</span> <span class="o">:</span> <span class="n">a</span> <span class="bp">^</span> <span class="mi">3</span> <span class="bp">≡</span> <span class="n">b</span> <span class="bp">^</span> <span class="mi">3</span> <span class="o">[</span><span class="n">ZMOD</span> <span class="n">n</span><span class="o">]</span> <span class="o">:=</span> <span class="kd">by</span>
   <span class="gr">sorry</span>
 </pre></div>
 </div>
-<p>设 \(a\)、\(b\) 和 \(n\) 为整数，并且假设 \(a\equiv b \mod n\)。则 \(a^3\equiv b^3 \mod n\)。</p>
+<p>事实上，对任意幂次同样成立，尽管我们现在还没有证明它的工具。本书稍后会在 <a class="reference internal" href="06_Induction.html#id4"><span class="std std-numref">例 6.1.3</span></a> 中回到这一点。</p>
 <div class="admonition-lemma-power-rule-for-modular-arithmetic admonition">
-<p class="admonition-title">事实上，对任意幂次同样成立，尽管我们现在还没有证明它的工具。本书稍后会在 <a class="reference internal" href="06_Induction.html#id4"><span class="std std-numref">例 6.1.3</span></a> 中回到这一点。</p>
-<p>引理（模算术的幂规则）</p>
+<p class="admonition-title">引理（模算术的幂规则）</p>
+<p>设 \(k\) 为自然数，设 \(a\)、\(b\) 和 \(n\) 为整数，并且假设 \(a\equiv b \mod n\)。则 \(a^k\equiv b^k \mod n\)。</p>
 </div>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">theorem</span> <span class="n">Int.ModEq.pow</span> <span class="o">(</span><span class="n">k</span> <span class="o">:</span> <span class="n">ℕ</span><span class="o">)</span> <span class="o">(</span><span class="n">h</span> <span class="o">:</span> <span class="n">a</span> <span class="bp">≡</span> <span class="n">b</span> <span class="o">[</span><span class="n">ZMOD</span> <span class="n">n</span><span class="o">])</span> <span class="o">:</span> <span class="n">a</span> <span class="bp">^</span> <span class="n">k</span> <span class="bp">≡</span> <span class="n">b</span> <span class="bp">^</span> <span class="n">k</span> <span class="o">[</span><span class="n">ZMOD</span> <span class="n">n</span><span class="o">]</span> <span class="o">:=</span>
   <span class="gr">sorry</span> <span class="c1">-- we'll prove this later in the book</span>
@@ -914,12 +914,12 @@ hn : ∃ (k : ℤ), n = 2 * k + 1
 <section id="modeq-refl">
 <span id="id30"></span><h3>3.3.10. 例<a class="headerlink" href="#modeq-refl" title="此标题的永久链接"></a></h3>
 <div class="admonition-lemma-reflexivity-rule-for-modular-arithmetic admonition">
-<p class="admonition-title">设 \(k\) 为自然数，设 \(a\)、\(b\) 和 \(n\) 为整数，并且假设 \(a\equiv b \mod n\)。则 \(a^k\equiv b^k \mod n\)。</p>
-<p>引理（模算术的自反性规则）</p>
+<p class="admonition-title">引理（模算术的自反性规则）</p>
+<p>设 \(a\) 和 \(n\) 为整数。则 \(a\equiv a \mod n\)。</p>
 </div>
 <div class="admonition-proof admonition">
-<p class="admonition-title">设 \(a\) 和 \(n\) 为整数。则 \(a\equiv a \mod n\)。</p>
-<p>证明</p>
+<p class="admonition-title">证明</p>
+<p>\(a-a=n\cdot 0\)，所以 \(n\mid a-a\)。</p>
 </div>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">theorem</span> <span class="n">Int.ModEq.refl</span> <span class="o">(</span><span class="n">a</span> <span class="o">:</span> <span class="n">ℤ</span><span class="o">)</span> <span class="o">:</span> <span class="n">a</span> <span class="bp">≡</span> <span class="n">a</span> <span class="o">[</span><span class="n">ZMOD</span> <span class="n">n</span><span class="o">]</span> <span class="o">:=</span> <span class="kd">by</span>
   <span class="n">use</span> <span class="mi">0</span>
@@ -929,12 +929,12 @@ hn : ∃ (k : ℤ), n = 2 * k + 1
 </section>
 <section id="apply-mod-lemmas-example">
 <span id="id31"></span><h3>3.3.11. 例<a class="headerlink" href="#apply-mod-lemmas-example" title="此标题的永久链接"></a></h3>
-<p>\(a-a=n\cdot 0\)，所以 \(n\mid a-a\)。</p>
+<p>呼！刚才有很多引理。但你现在会看到，它们很值得。假设现在遇到一个非常具体的模算术问题，其一般类型与我们已见过的问题相同。</p>
 <div class="admonition-problem admonition">
-<p class="admonition-title">呼！刚才有很多引理。但你现在会看到，它们很值得。假设现在遇到一个非常具体的模算术问题，其一般类型与我们已见过的问题相同。</p>
-<p>问题</p>
-</div>
+<p class="admonition-title">问题</p>
 <p>设 \(a\) 和 \(b\) 为整数，并且假设 \(a\equiv 2 \mod 4\)。证明 \(a b ^ 2 + a ^ 2 b + 3a \equiv 2b ^ 2 + 2 ^ 2 \cdot b + 3 \cdot 2 \mod 4\)。</p>
+</div>
+<p>我们可以直接从定义出发解决它，但那相当痛苦：</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">example</span> <span class="o">{</span><span class="n">a</span> <span class="n">b</span> <span class="o">:</span> <span class="n">ℤ</span><span class="o">}</span> <span class="o">(</span><span class="n">ha</span> <span class="o">:</span> <span class="n">a</span> <span class="bp">≡</span> <span class="mi">2</span> <span class="o">[</span><span class="n">ZMOD</span> <span class="mi">4</span><span class="o">])</span> <span class="o">:</span>
     <span class="n">a</span> <span class="bp">*</span> <span class="n">b</span> <span class="bp">^</span> <span class="mi">2</span> <span class="bp">+</span> <span class="n">a</span> <span class="bp">^</span> <span class="mi">2</span> <span class="bp">*</span> <span class="n">b</span> <span class="bp">+</span> <span class="mi">3</span> <span class="bp">*</span> <span class="n">a</span> <span class="bp">≡</span> <span class="mi">2</span> <span class="bp">*</span> <span class="n">b</span> <span class="bp">^</span> <span class="mi">2</span> <span class="bp">+</span> <span class="mi">2</span> <span class="bp">^</span> <span class="mi">2</span> <span class="bp">*</span> <span class="n">b</span> <span class="bp">+</span> <span class="mi">3</span> <span class="bp">*</span> <span class="mi">2</span> <span class="o">[</span><span class="n">ZMOD</span> <span class="mi">4</span><span class="o">]</span> <span class="o">:=</span> <span class="kd">by</span>
   <span class="n">obtain</span> <span class="o">⟨</span><span class="n">x</span><span class="o">,</span> <span class="n">hx</span><span class="o">⟩</span> <span class="o">:=</span> <span class="n">ha</span>
@@ -947,7 +947,7 @@ hn : ∃ (k : ℤ), n = 2 * k + 1
     <span class="n">_</span> <span class="bp">=</span> <span class="mi">4</span> <span class="bp">*</span> <span class="o">(</span><span class="n">x</span> <span class="bp">*</span> <span class="o">(</span><span class="n">b</span> <span class="bp">^</span> <span class="mi">2</span> <span class="bp">+</span> <span class="n">a</span> <span class="bp">*</span> <span class="n">b</span> <span class="bp">+</span> <span class="mi">2</span> <span class="bp">*</span> <span class="n">b</span> <span class="bp">+</span> <span class="mi">3</span><span class="o">))</span> <span class="o">:=</span> <span class="kd">by</span> <span class="n">ring</span>
 </pre></div>
 </div>
-<p>我们可以直接从定义出发解决它，但那相当痛苦：</p>
+<p>或者，更好的是，我们可以按正确顺序应用已经证明过的引理的正确组合来解决它。这需要少得多的思考：</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">example</span> <span class="o">{</span><span class="n">a</span> <span class="n">b</span> <span class="o">:</span> <span class="n">ℤ</span><span class="o">}</span> <span class="o">(</span><span class="n">ha</span> <span class="o">:</span> <span class="n">a</span> <span class="bp">≡</span> <span class="mi">2</span> <span class="o">[</span><span class="n">ZMOD</span> <span class="mi">4</span><span class="o">])</span> <span class="o">:</span>
     <span class="n">a</span> <span class="bp">*</span> <span class="n">b</span> <span class="bp">^</span> <span class="mi">2</span> <span class="bp">+</span> <span class="n">a</span> <span class="bp">^</span> <span class="mi">2</span> <span class="bp">*</span> <span class="n">b</span> <span class="bp">+</span> <span class="mi">3</span> <span class="bp">*</span> <span class="n">a</span> <span class="bp">≡</span> <span class="mi">2</span> <span class="bp">*</span> <span class="n">b</span> <span class="bp">^</span> <span class="mi">2</span> <span class="bp">+</span> <span class="mi">2</span> <span class="bp">^</span> <span class="mi">2</span> <span class="bp">*</span> <span class="n">b</span> <span class="bp">+</span> <span class="mi">3</span> <span class="bp">*</span> <span class="mi">2</span> <span class="o">[</span><span class="n">ZMOD</span> <span class="mi">4</span><span class="o">]</span> <span class="o">:=</span> <span class="kd">by</span>
   <span class="n">apply</span> <span class="n">Int.ModEq.add</span>
@@ -968,45 +968,45 @@ hn : ∃ (k : ℤ), n = 2 * k + 1
 <section id="id32">
 <h3>3.3.12. 练习<a class="headerlink" href="#id32" title="此标题的永久链接"></a></h3>
 <ol class="arabic">
-<li><p>\(\frac{10}{2}-\frac{18}{6}=2\) 位于 4 的两个相邻倍数 \(4\cdot 0\) 与 \(4\cdot (0+1)\) 之间，所以 \(\frac{10}{2}\not\equiv \frac{18}{6} \mod 4\)。</p>
+<li><p>证明 \(34\equiv 104 \mod 5\)。</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">example</span> <span class="o">:</span> <span class="mi">34</span> <span class="bp">≡</span> <span class="mi">104</span> <span class="o">[</span><span class="n">ZMOD</span> <span class="mi">5</span><span class="o">]</span> <span class="o">:=</span> <span class="kd">by</span>
   <span class="gr">sorry</span>
 </pre></div>
 </div>
 </li>
-<li><p>证明 \(34\equiv 104 \mod 5\)。</p>
+<li><p>（模算术的对称性规则）设 \(a\)、\(b\) 和 \(n\) 为整数，并且假设 \(a\equiv b \mod n\)。证明 \(b\equiv a \mod n\)。</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">theorem</span> <span class="n">Int.ModEq.symm</span> <span class="o">(</span><span class="n">h</span> <span class="o">:</span> <span class="n">a</span> <span class="bp">≡</span> <span class="n">b</span> <span class="o">[</span><span class="n">ZMOD</span> <span class="n">n</span><span class="o">])</span> <span class="o">:</span> <span class="n">b</span> <span class="bp">≡</span> <span class="n">a</span> <span class="o">[</span><span class="n">ZMOD</span> <span class="n">n</span><span class="o">]</span> <span class="o">:=</span> <span class="kd">by</span>
   <span class="gr">sorry</span>
 </pre></div>
 </div>
 </li>
-<li><p>（模算术的对称性规则）设 \(a\)、\(b\) 和 \(n\) 为整数，并且假设 \(a\equiv b \mod n\)。证明 \(b\equiv a \mod n\)。</p>
+<li><p>（模算术的传递性规则）设 \(a\)、\(b\)、\(c\) 和 \(n\) 为整数，并且假设 \(a\equiv b \mod n\) 且 \(b\equiv c \mod n\)。证明 \(a\equiv c \mod n\)。</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">theorem</span> <span class="n">Int.ModEq.trans</span> <span class="o">(</span><span class="n">h1</span> <span class="o">:</span> <span class="n">a</span> <span class="bp">≡</span> <span class="n">b</span> <span class="o">[</span><span class="n">ZMOD</span> <span class="n">n</span><span class="o">])</span> <span class="o">(</span><span class="n">h2</span> <span class="o">:</span> <span class="n">b</span> <span class="bp">≡</span> <span class="n">c</span> <span class="o">[</span><span class="n">ZMOD</span> <span class="n">n</span><span class="o">])</span> <span class="o">:</span>
     <span class="n">a</span> <span class="bp">≡</span> <span class="n">c</span> <span class="o">[</span><span class="n">ZMOD</span> <span class="n">n</span><span class="o">]</span> <span class="o">:=</span> <span class="kd">by</span>
   <span class="gr">sorry</span>
 </pre></div>
 </div>
 </li>
-<li><p>（模算术的传递性规则）设 \(a\)、\(b\)、\(c\) 和 \(n\) 为整数，并且假设 \(a\equiv b \mod n\) 且 \(b\equiv c \mod n\)。证明 \(a\equiv c \mod n\)。</p>
+<li><p>设 \(a\)、\(c\) 和 \(n\) 为整数。证明 \(a+nc\equiv a \mod n\)。</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">example</span> <span class="o">:</span> <span class="n">a</span> <span class="bp">+</span> <span class="n">n</span> <span class="bp">*</span> <span class="n">c</span> <span class="bp">≡</span> <span class="n">a</span> <span class="o">[</span><span class="n">ZMOD</span> <span class="n">n</span><span class="o">]</span> <span class="o">:=</span> <span class="kd">by</span>
   <span class="gr">sorry</span>
 </pre></div>
 </div>
 </li>
-<li>设 \(a\)、\(c\) 和 \(n\) 为整数。证明 \(a+nc\equiv a \mod n\)。</li>
-<li><p>给出 <a class="reference internal" href="#id33"><span class="std std-numref">例 3.3.7</span></a> 的另一种解答（即使用不同的数）。</p>
+<li>给出 <a class="reference internal" href="#id33"><span class="std std-numref">例 3.3.7</span></a> 的另一种解答（即使用不同的数）。</li>
+<li><p>设 \(a\) 和 \(b\) 为整数，并且假设 \(a \equiv b \mod 5\)。证明 \(2a+3 \equiv 2b+3 \mod 5\)。请给出两个解答，仿照 <a class="reference internal" href="#id37"><span class="std std-numref">例 3.3.11</span></a> 中两个解答的风格。</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">example</span> <span class="o">{</span><span class="n">a</span> <span class="n">b</span> <span class="o">:</span> <span class="n">ℤ</span><span class="o">}</span> <span class="o">(</span><span class="n">h</span> <span class="o">:</span> <span class="n">a</span> <span class="bp">≡</span> <span class="n">b</span> <span class="o">[</span><span class="n">ZMOD</span> <span class="mi">5</span><span class="o">])</span> <span class="o">:</span> <span class="mi">2</span> <span class="bp">*</span> <span class="n">a</span> <span class="bp">+</span> <span class="mi">3</span> <span class="bp">≡</span> <span class="mi">2</span> <span class="bp">*</span> <span class="n">b</span> <span class="bp">+</span> <span class="mi">3</span> <span class="o">[</span><span class="n">ZMOD</span> <span class="mi">5</span><span class="o">]</span> <span class="o">:=</span> <span class="kd">by</span>
   <span class="gr">sorry</span>
 </pre></div>
 </div>
 </li>
-<li><p>设 \(a\) 和 \(b\) 为整数，并且假设 \(a \equiv b \mod 5\)。证明 \(2a+3 \equiv 2b+3 \mod 5\)。请给出两个解答，仿照 <a class="reference internal" href="#id37"><span class="std std-numref">例 3.3.11</span></a> 中两个解答的风格。</p>
+<li><p>设 \(m\) 和 \(n\) 为整数，并且假设 \(m \equiv n \mod 4\)。证明 \(3m-1 \equiv 3n-1 \mod 4\)。请给出两个解答，仿照 <a class="reference internal" href="#id37"><span class="std std-numref">例 3.3.11</span></a> 中两个解答的风格。</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">example</span> <span class="o">{</span><span class="n">m</span> <span class="n">n</span> <span class="o">:</span> <span class="n">ℤ</span><span class="o">}</span> <span class="o">(</span><span class="n">h</span> <span class="o">:</span> <span class="n">m</span> <span class="bp">≡</span> <span class="n">n</span> <span class="o">[</span><span class="n">ZMOD</span> <span class="mi">4</span><span class="o">])</span> <span class="o">:</span> <span class="mi">3</span> <span class="bp">*</span> <span class="n">m</span> <span class="bp">-</span> <span class="mi">1</span> <span class="bp">≡</span> <span class="mi">3</span> <span class="bp">*</span> <span class="n">n</span> <span class="bp">-</span> <span class="mi">1</span> <span class="o">[</span><span class="n">ZMOD</span> <span class="mi">4</span><span class="o">]</span> <span class="o">:=</span> <span class="kd">by</span>
   <span class="gr">sorry</span>
 </pre></div>
 </div>
 </li>
-<li><p>设 \(m\) 和 \(n\) 为整数，并且假设 \(m \equiv n \mod 4\)。证明 \(3m-1 \equiv 3n-1 \mod 4\)。请给出两个解答，仿照 <a class="reference internal" href="#id37"><span class="std std-numref">例 3.3.11</span></a> 中两个解答的风格。</p>
+<li><p>设 \(k\) 为整数，并且假设 \(k\equiv 3 \mod 5\)。证明 \(4k+k^3+3\equiv 4\cdot 3 + 3^3 + 3 \mod 5\)。请给出两个解答，仿照 <a class="reference internal" href="#id37"><span class="std std-numref">例 3.3.11</span></a> 中两个解答的风格。</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">example</span> <span class="o">{</span><span class="n">k</span> <span class="o">:</span> <span class="n">ℤ</span><span class="o">}</span> <span class="o">(</span><span class="n">hb</span> <span class="o">:</span> <span class="n">k</span> <span class="bp">≡</span> <span class="mi">3</span> <span class="o">[</span><span class="n">ZMOD</span> <span class="mi">5</span><span class="o">])</span> <span class="o">:</span>
     <span class="mi">4</span> <span class="bp">*</span> <span class="n">k</span> <span class="bp">+</span> <span class="n">k</span> <span class="bp">^</span> <span class="mi">3</span> <span class="bp">+</span> <span class="mi">3</span> <span class="bp">≡</span> <span class="mi">4</span> <span class="bp">*</span> <span class="mi">3</span> <span class="bp">+</span> <span class="mi">3</span> <span class="bp">^</span> <span class="mi">3</span> <span class="bp">+</span> <span class="mi">3</span> <span class="o">[</span><span class="n">ZMOD</span> <span class="mi">5</span><span class="o">]</span> <span class="o">:=</span> <span class="kd">by</span>
   <span class="gr">sorry</span>
@@ -1020,13 +1020,13 @@ hn : ∃ (k : ℤ), n = 2 * k + 1
 <span id="using-modular"></span><h2>3.4. 模算术：计算<a class="headerlink" href="#modular-arithmetic-calculations" title="此标题的永久链接"></a></h2>
 <section id="id33">
 <h3>3.4.1. 例<a class="headerlink" href="#id33" title="此标题的永久链接"></a></h3>
-<p>或者，更好的是，我们可以按正确顺序应用已经证明过的引理的正确组合来解决它。这需要少得多的思考：</p>
+<p>回忆 <a class="reference internal" href="#id37"><span class="std std-numref">例 3.3.11</span></a> 的问题。</p>
 <div class="admonition-problem admonition">
-<p class="admonition-title">回忆 <a class="reference internal" href="#id37"><span class="std std-numref">例 3.3.11</span></a> 的问题。</p>
-<p>问题</p>
-</div>
+<p class="admonition-title">问题</p>
 <p>设 \(a\) 和 \(b\) 为整数，并且假设 \(a\equiv 2 \mod 4\)。证明 \(a b ^ 2 + a ^ 2 b + 3a \equiv 2b ^ 2 + 2 ^ 2 \cdot b + 3 \cdot 2 \mod 4\)。</p>
+</div>
 <p>在解决这个问题以及 <a class="reference internal" href="#using-modular"><span class="std std-numref">第 3.3 节</span></a> 中许多类似问题之后，你大概觉得自己已经能一眼检查这种风格的任何陈述是否正确。这很好！当你可以一眼看出某个结论时，在文字证明中通常也可以省略细节。</p>
+<p>这通常也是容易写出 Lean 策略来检查一类陈述正确性的时刻。我正是这样做的：更新了策略 <code class="docutils literal notranslate"><span class="pre">rel</span></code>，使其覆盖模算术的这类步骤。</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">example</span> <span class="o">{</span><span class="n">a</span> <span class="n">b</span> <span class="o">:</span> <span class="n">ℤ</span><span class="o">}</span> <span class="o">(</span><span class="n">ha</span> <span class="o">:</span> <span class="n">a</span> <span class="bp">≡</span> <span class="mi">2</span> <span class="o">[</span><span class="n">ZMOD</span> <span class="mi">4</span><span class="o">])</span> <span class="o">:</span>
     <span class="n">a</span> <span class="bp">*</span> <span class="n">b</span> <span class="bp">^</span> <span class="mi">2</span> <span class="bp">+</span> <span class="n">a</span> <span class="bp">^</span> <span class="mi">2</span> <span class="bp">*</span> <span class="n">b</span> <span class="bp">+</span> <span class="mi">3</span> <span class="bp">*</span> <span class="n">a</span> <span class="bp">≡</span> <span class="mi">2</span> <span class="bp">*</span> <span class="n">b</span> <span class="bp">^</span> <span class="mi">2</span> <span class="bp">+</span> <span class="mi">2</span> <span class="bp">^</span> <span class="mi">2</span> <span class="bp">*</span> <span class="n">b</span> <span class="bp">+</span> <span class="mi">3</span> <span class="bp">*</span> <span class="mi">2</span> <span class="o">[</span><span class="n">ZMOD</span> <span class="mi">4</span><span class="o">]</span> <span class="o">:=</span> <span class="kd">by</span>
   <span class="n">rel</span> <span class="o">[</span><span class="n">ha</span><span class="o">]</span>
@@ -1035,13 +1035,13 @@ hn : ∃ (k : ℤ), n = 2 * k + 1
 </section>
 <section id="id34">
 <h3>3.4.2. 例<a class="headerlink" href="#id34" title="此标题的永久链接"></a></h3>
-<p>这通常也是容易写出 Lean 策略来检查一类陈述正确性的时刻。我正是这样做的：更新了策略 <code class="docutils literal notranslate"><span class="pre">rel</span></code>，使其覆盖模算术的这类步骤。</p>
+<p>从现在起，我们会解决更有趣的模算术问题，把类似 <a class="reference internal" href="#id37"><span class="std std-numref">例 3.3.11</span></a> 的步骤压缩为一行。</p>
 <div class="admonition-problem admonition">
-<p class="admonition-title">从现在起，我们会解决更有趣的模算术问题，把类似 <a class="reference internal" href="#id37"><span class="std std-numref">例 3.3.11</span></a> 的步骤压缩为一行。</p>
-<p>问题</p>
+<p class="admonition-title">问题</p>
+<p>设 \(a\) 和 \(b\) 为整数，且 \(a \equiv 4\mod 5\)、\(b \equiv 3\mod 5\)。证明 \(ab+b^3+3 \equiv 2\mod 5\)。</p>
 </div>
 <div class="admonition-solution admonition">
-<p class="admonition-title">设 \(a\) 和 \(b\) 为整数，且 \(a \equiv 4\mod 5\)、\(b \equiv 3\mod 5\)。证明 \(ab+b^3+3 \equiv 2\mod 5\)。</p>
+<p class="admonition-title">解答</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}a b + b ^ 3 + 3  &amp;\equiv 4 b + b ^ 3 + 3  \mod 5\\
 &amp;\equiv 4 \cdot 3 + 3 ^ 3 + 3  \mod 5\\
@@ -1061,12 +1061,12 @@ hn : ∃ (k : ℤ), n = 2 * k + 1
 <section id="id35">
 <h3>3.4.3. 例<a class="headerlink" href="#id35" title="此标题的永久链接"></a></h3>
 <div class="admonition-problem admonition">
-<p class="admonition-title">解答</p>
-<p>问题</p>
+<p class="admonition-title">问题</p>
+<p>证明：存在整数 \(a\)，使得 \(6a \equiv 4\mod 11\)。</p>
 </div>
 <div class="admonition-solution admonition">
-<p class="admonition-title">证明：存在整数 \(a\)，使得 \(6a \equiv 4\mod 11\)。</p>
-<p>解答</p>
+<p class="admonition-title">解答</p>
+<p>整数 8 具有这个性质。事实上，</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}6 \cdot 8 &amp;= 4 + 4 \cdot 11\\
 &amp;\equiv 4\mod 11.\end{split}\]</div>
@@ -1082,23 +1082,23 @@ hn : ∃ (k : ℤ), n = 2 * k + 1
 <section id="first-mod-cases">
 <span id="id36"></span><h3>3.4.4. 例<a class="headerlink" href="#first-mod-cases" title="此标题的永久链接"></a></h3>
 <div class="admonition-problem admonition">
-<p class="admonition-title">整数 8 具有这个性质。事实上，</p>
-<p>问题</p>
+<p class="admonition-title">问题</p>
+<p>设 \(x\) 为整数。证明 \(x ^ 3 \equiv x\mod 3\)。</p>
 </div>
 <div class="admonition-solution admonition">
-<p class="admonition-title">设 \(x\) 为整数。证明 \(x ^ 3 \equiv x\mod 3\)。</p>
-<p>解答</p>
+<p class="admonition-title">解答</p>
 <p>我们按照 \(x\) 模 3 的余数分类讨论。</p>
+<p>情形 1（\(x\equiv 0\mod 3\)）：</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}x^3 &amp;\equiv 0^3\mod 3\\
 &amp; = 0\\
 &amp;\equiv x\mod 3.\end{split}\]</div>
-<p>情形 1（\(x\equiv 0\mod 3\)）：</p>
+<p>情形 2（\(x\equiv 1\mod 3\)）：</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}x^3 &amp;\equiv 1^3\mod 3\\
 &amp; = 1\\
 &amp;\equiv x\mod 3.\end{split}\]</div>
-<p>情形 2（\(x\equiv 1\mod 3\)）：</p>
+<p>情形 3（\(x\equiv 2\mod 3\)）：</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}x^3 &amp;\equiv 2^3\mod 3\\
 &amp; = 2 + 3 \cdot 2\\
@@ -1126,44 +1126,44 @@ hn : ∃ (k : ℤ), n = 2 * k + 1
 <section id="id37">
 <h3>3.4.5. 练习<a class="headerlink" href="#id37" title="此标题的永久链接"></a></h3>
 <ol class="arabic">
-<li><p>设 \(k\) 为整数，并且假设 \(k\equiv 3 \mod 5\)。证明 \(4k+k^3+3\equiv 4\cdot 3 + 3^3 + 3 \mod 5\)。请给出两个解答，仿照 <a class="reference internal" href="#id37"><span class="std std-numref">例 3.3.11</span></a> 中两个解答的风格。</p>
+<li><p>设 \(n\) 为满足 \(n\equiv 1\mod 3\) 的整数。证明 \(n^3+7n\equiv 2\mod 3\)。</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">example</span> <span class="o">{</span><span class="n">n</span> <span class="o">:</span> <span class="n">ℤ</span><span class="o">}</span> <span class="o">(</span><span class="n">hn</span> <span class="o">:</span> <span class="n">n</span> <span class="bp">≡</span> <span class="mi">1</span> <span class="o">[</span><span class="n">ZMOD</span> <span class="mi">3</span><span class="o">])</span> <span class="o">:</span> <span class="n">n</span> <span class="bp">^</span> <span class="mi">3</span> <span class="bp">+</span> <span class="mi">7</span> <span class="bp">*</span> <span class="n">n</span> <span class="bp">≡</span> <span class="mi">2</span> <span class="o">[</span><span class="n">ZMOD</span> <span class="mi">3</span><span class="o">]</span> <span class="o">:=</span>
   <span class="gr">sorry</span>
 </pre></div>
 </div>
 </li>
-<li><p>设 \(n\) 为满足 \(n\equiv 1\mod 3\) 的整数。证明 \(n^3+7n\equiv 2\mod 3\)。</p>
+<li><p>设 \(a\) 为满足 \(a\equiv 3\mod 4\) 的整数。证明 \(a^3+4a^2+2\equiv 1\mod 4\)。</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">example</span> <span class="o">{</span><span class="n">a</span> <span class="o">:</span> <span class="n">ℤ</span><span class="o">}</span> <span class="o">(</span><span class="n">ha</span> <span class="o">:</span> <span class="n">a</span> <span class="bp">≡</span> <span class="mi">3</span> <span class="o">[</span><span class="n">ZMOD</span> <span class="mi">4</span><span class="o">])</span> <span class="o">:</span>
     <span class="n">a</span> <span class="bp">^</span> <span class="mi">3</span> <span class="bp">+</span> <span class="mi">4</span> <span class="bp">*</span> <span class="n">a</span> <span class="bp">^</span> <span class="mi">2</span> <span class="bp">+</span> <span class="mi">2</span> <span class="bp">≡</span> <span class="mi">1</span> <span class="o">[</span><span class="n">ZMOD</span> <span class="mi">4</span><span class="o">]</span> <span class="o">:=</span>
   <span class="gr">sorry</span>
 </pre></div>
 </div>
 </li>
-<li><p>设 \(a\) 为满足 \(a\equiv 3\mod 4\) 的整数。证明 \(a^3+4a^2+2\equiv 1\mod 4\)。</p>
+<li><p>设 \(a\) 和 \(b\) 为整数。证明 \((a+b)^3\equiv a^3+b^3\mod 3\)。</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">example</span> <span class="o">(</span><span class="n">a</span> <span class="n">b</span> <span class="o">:</span> <span class="n">ℤ</span><span class="o">)</span> <span class="o">:</span> <span class="o">(</span><span class="n">a</span> <span class="bp">+</span> <span class="n">b</span><span class="o">)</span> <span class="bp">^</span> <span class="mi">3</span> <span class="bp">≡</span> <span class="n">a</span> <span class="bp">^</span> <span class="mi">3</span> <span class="bp">+</span> <span class="n">b</span> <span class="bp">^</span> <span class="mi">3</span> <span class="o">[</span><span class="n">ZMOD</span> <span class="mi">3</span><span class="o">]</span> <span class="o">:=</span>
   <span class="gr">sorry</span>
 </pre></div>
 </div>
 </li>
-<li><p>设 \(a\) 和 \(b\) 为整数。证明 \((a+b)^3\equiv a^3+b^3\mod 3\)。</p>
+<li><p>证明：存在整数 \(a\)，使得 \(4a\equiv 1\mod 7\)。</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">example</span> <span class="o">:</span> <span class="bp">∃</span> <span class="n">a</span> <span class="o">:</span> <span class="n">ℤ</span><span class="o">,</span> <span class="mi">4</span> <span class="bp">*</span> <span class="n">a</span> <span class="bp">≡</span> <span class="mi">1</span> <span class="o">[</span><span class="n">ZMOD</span> <span class="mi">7</span><span class="o">]</span> <span class="o">:=</span> <span class="kd">by</span>
   <span class="gr">sorry</span>
 </pre></div>
 </div>
 </li>
-<li><p>证明：存在整数 \(a\)，使得 \(4a\equiv 1\mod 7\)。</p>
+<li><p>证明：存在整数 \(k\)，使得 \(5k\equiv 6\mod 8\)。</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">example</span> <span class="o">:</span> <span class="bp">∃</span> <span class="n">k</span> <span class="o">:</span> <span class="n">ℤ</span><span class="o">,</span> <span class="mi">5</span> <span class="bp">*</span> <span class="n">k</span> <span class="bp">≡</span> <span class="mi">6</span> <span class="o">[</span><span class="n">ZMOD</span> <span class="mi">8</span><span class="o">]</span> <span class="o">:=</span> <span class="kd">by</span>
   <span class="gr">sorry</span>
 </pre></div>
 </div>
 </li>
-<li><p>证明：存在整数 \(k\)，使得 \(5k\equiv 6\mod 8\)。</p>
+<li><p>设 \(n\) 为整数。证明 \(5n^2+3n+7\equiv 1\mod 2\)。</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">example</span> <span class="o">(</span><span class="n">n</span> <span class="o">:</span> <span class="n">ℤ</span><span class="o">)</span> <span class="o">:</span> <span class="mi">5</span> <span class="bp">*</span> <span class="n">n</span> <span class="bp">^</span> <span class="mi">2</span> <span class="bp">+</span> <span class="mi">3</span> <span class="bp">*</span> <span class="n">n</span> <span class="bp">+</span> <span class="mi">7</span> <span class="bp">≡</span> <span class="mi">1</span> <span class="o">[</span><span class="n">ZMOD</span> <span class="mi">2</span><span class="o">]</span> <span class="o">:=</span> <span class="kd">by</span>
   <span class="gr">sorry</span>
 </pre></div>
 </div>
 </li>
-<li><p>设 \(n\) 为整数。证明 \(5n^2+3n+7\equiv 1\mod 2\)。</p>
+<li><p>设 \(x\) 为整数。证明 \(x^5\equiv x\mod 5\)。</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">example</span> <span class="o">{</span><span class="n">x</span> <span class="o">:</span> <span class="n">ℤ</span><span class="o">}</span> <span class="o">:</span> <span class="n">x</span> <span class="bp">^</span> <span class="mi">5</span> <span class="bp">≡</span> <span class="n">x</span> <span class="o">[</span><span class="n">ZMOD</span> <span class="mi">5</span><span class="o">]</span> <span class="o">:=</span> <span class="kd">by</span>
   <span class="gr">sorry</span>
 </pre></div>
@@ -1177,17 +1177,17 @@ hn : ∃ (k : ℤ), n = 2 * k + 1
 <section id="bezout-prob1">
 <span id="id38"></span><h3>3.5.1. 例<a class="headerlink" href="#bezout-prob1" title="此标题的永久链接"></a></h3>
 <div class="admonition-problem admonition">
-<p class="admonition-title">情形 3（\(x\equiv 2\mod 3\)）：</p>
-<p>问题</p>
+<p class="admonition-title">问题</p>
+<p>设 \(n\) 为整数，并且假设 \(5n\) 是 \(8\) 的倍数。证明 \(n\) 也是 \(8\) 的倍数。</p>
 </div>
 <div class="admonition-solution admonition">
-<p class="admonition-title">设 \(n\) 为整数，并且假设 \(5n\) 是 \(8\) 的倍数。证明 \(n\) 也是 \(8\) 的倍数。</p>
-<p>解答</p>
+<p class="admonition-title">解答</p>
+<p>由于 \(8\mid 5n\)，存在整数 \(a\)，使得 \(5n=8a\)。于是</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}n &amp;= -3  (5  n) + 16 n \\
 &amp;= -3  (8  a) + 16  n \\
 &amp; = 8 (-3 a + 2  n),\end{split}\]</div>
-<p>由于 \(8\mid 5n\)，存在整数 \(a\)，使得 \(5n=8a\)。于是</p>
+<p>所以 \(8\mid n\)。</p>
 </div>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">example</span> <span class="o">{</span><span class="n">n</span> <span class="o">:</span> <span class="n">ℤ</span><span class="o">}</span> <span class="o">(</span><span class="n">hn</span> <span class="o">:</span> <span class="mi">8</span> <span class="bp">∣</span> <span class="mi">5</span> <span class="bp">*</span> <span class="n">n</span><span class="o">)</span> <span class="o">:</span> <span class="mi">8</span> <span class="bp">∣</span> <span class="n">n</span> <span class="o">:=</span> <span class="kd">by</span>
   <span class="n">obtain</span> <span class="o">⟨</span><span class="n">a</span><span class="o">,</span> <span class="n">ha</span><span class="o">⟩</span> <span class="o">:=</span> <span class="n">hn</span>
@@ -1198,17 +1198,17 @@ hn : ∃ (k : ℤ), n = 2 * k + 1
     <span class="n">_</span> <span class="bp">=</span> <span class="mi">8</span> <span class="bp">*</span> <span class="o">(</span><span class="bp">-</span><span class="mi">3</span> <span class="bp">*</span> <span class="n">a</span> <span class="bp">+</span> <span class="mi">2</span> <span class="bp">*</span> <span class="n">n</span><span class="o">)</span> <span class="o">:=</span> <span class="kd">by</span> <span class="n">ring</span>
 </pre></div>
 </div>
-<p>所以 \(8\mid n\)。</p>
+<p>这种问题通常会有许多可能的解法。下面是另一种解法。</p>
 <div class="admonition-solution admonition">
-<p class="admonition-title">这种问题通常会有许多可能的解法。下面是另一种解法。</p>
-<p>解答</p>
+<p class="admonition-title">解答</p>
+<p>由于 \(8\mid 5n\)，存在整数 \(a\)，使得 \(5n=8a\)。于是</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}n &amp;= 5 (5  n) - 24 n \\
 &amp;= 5  (8  a) -24  n \\
 &amp; = 8 (5 a - 3  n),\end{split}\]</div>
-<p>由于 \(8\mid 5n\)，存在整数 \(a\)，使得 \(5n=8a\)。于是</p>
-</div>
 <p>所以 \(8\mid n\)。</p>
+</div>
+<p>请试着把这个变体解答输入 Lean。</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">example</span> <span class="o">{</span><span class="n">n</span> <span class="o">:</span> <span class="n">ℤ</span><span class="o">}</span> <span class="o">(</span><span class="n">hn</span> <span class="o">:</span> <span class="mi">8</span> <span class="bp">∣</span> <span class="mi">5</span> <span class="bp">*</span> <span class="n">n</span><span class="o">)</span> <span class="o">:</span> <span class="mi">8</span> <span class="bp">∣</span> <span class="n">n</span> <span class="o">:=</span> <span class="kd">by</span>
   <span class="gr">sorry</span>
 </pre></div>
@@ -1217,17 +1217,17 @@ hn : ∃ (k : ℤ), n = 2 * k + 1
 <section id="bezout-prob2">
 <span id="id39"></span><h3>3.5.2. 例<a class="headerlink" href="#bezout-prob2" title="此标题的永久链接"></a></h3>
 <div class="admonition-problem admonition">
-<p class="admonition-title">请试着把这个变体解答输入 Lean。</p>
-<p>问题</p>
+<p class="admonition-title">问题</p>
+<p>证明：如果对某个整数 \(n\) 有 \(5\) 整除 \(3n\)，则 \(5\) 也整除 \(n\)。</p>
 </div>
 <div class="admonition-solution admonition">
-<p class="admonition-title">证明：如果对某个整数 \(n\) 有 \(5\) 整除 \(3n\)，则 \(5\) 也整除 \(n\)。</p>
-<p>解答</p>
+<p class="admonition-title">解答</p>
+<p>由于 \(5\mid 3n\)，存在整数 \(x\)，使得 \(3n=5x\)。于是</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}n &amp;= 2  (3  n) - 5 n \\
 &amp;= 2  (5  x) - 5  n \\
 &amp; = 5 (2x -  n),\end{split}\]</div>
-<p>由于 \(5\mid 3n\)，存在整数 \(x\)，使得 \(3n=5x\)。于是</p>
+<p>所以 \(5\mid n\)。</p>
 </div>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">example</span> <span class="o">{</span><span class="n">n</span> <span class="o">:</span> <span class="n">ℤ</span><span class="o">}</span> <span class="o">(</span><span class="n">h1</span> <span class="o">:</span> <span class="mi">5</span> <span class="bp">∣</span> <span class="mi">3</span> <span class="bp">*</span> <span class="n">n</span><span class="o">)</span> <span class="o">:</span> <span class="mi">5</span> <span class="bp">∣</span> <span class="n">n</span> <span class="o">:=</span> <span class="kd">by</span>
   <span class="gr">sorry</span>
@@ -1237,18 +1237,18 @@ hn : ∃ (k : ℤ), n = 2 * k + 1
 <section id="bezout-prob3">
 <span id="id40"></span><h3>3.5.3. 例<a class="headerlink" href="#bezout-prob3" title="此标题的永久链接"></a></h3>
 <div class="admonition-problem admonition">
-<p class="admonition-title">所以 \(5\mid n\)。</p>
-<p>问题</p>
+<p class="admonition-title">问题</p>
+<p>设 \(m\) 为能被 8 和 5 整除的整数。证明它也能被 40 整除。</p>
 </div>
 <div class="admonition-solution admonition">
-<p class="admonition-title">设 \(m\) 为能被 8 和 5 整除的整数。证明它也能被 40 整除。</p>
-<p>解答</p>
+<p class="admonition-title">解答</p>
+<p>由于 \(8\mid m\)，存在整数 \(a\)，使得 \(m=8a\)。由于 \(5\mid m\)，存在整数 \(b\)，使得 \(m=5b\)。于是</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}m &amp;= -15 m + 16 m\\
 &amp;= -15 (8 a) + 16  m \\
 &amp;= -15 (8  a) + 16  (5  b) \\
 &amp; = 40 (-3  a + 2  b),\end{split}\]</div>
-<p>由于 \(8\mid m\)，存在整数 \(a\)，使得 \(m=8a\)。由于 \(5\mid m\)，存在整数 \(b\)，使得 \(m=5b\)。于是</p>
+<p>所以 \(40\mid m\)。</p>
 </div>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">example</span> <span class="o">{</span><span class="n">m</span> <span class="o">:</span> <span class="n">ℤ</span><span class="o">}</span> <span class="o">(</span><span class="n">h1</span> <span class="o">:</span> <span class="mi">8</span> <span class="bp">∣</span> <span class="n">m</span><span class="o">)</span> <span class="o">(</span><span class="n">h2</span> <span class="o">:</span> <span class="mi">5</span> <span class="bp">∣</span> <span class="n">m</span><span class="o">)</span> <span class="o">:</span> <span class="mi">40</span> <span class="bp">∣</span> <span class="n">m</span> <span class="o">:=</span> <span class="kd">by</span>
   <span class="n">obtain</span> <span class="o">⟨</span><span class="n">a</span><span class="o">,</span> <span class="n">ha</span><span class="o">⟩</span> <span class="o">:=</span> <span class="n">h1</span>
@@ -1265,25 +1265,25 @@ hn : ∃ (k : ℤ), n = 2 * k + 1
 <section id="id41">
 <h3>3.5.4. 练习<a class="headerlink" href="#id41" title="此标题的永久链接"></a></h3>
 <ol class="arabic">
-<li><p>设 \(x\) 为整数。证明 \(x^5\equiv x\mod 5\)。</p>
+<li><p>证明：如果 6 整除 \(11n\)，则 6 整除 \(n\)。</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">example</span> <span class="o">{</span><span class="n">n</span> <span class="o">:</span> <span class="n">ℤ</span><span class="o">}</span> <span class="o">(</span><span class="n">hn</span> <span class="o">:</span> <span class="mi">6</span> <span class="bp">∣</span> <span class="mi">11</span> <span class="bp">*</span> <span class="n">n</span><span class="o">)</span> <span class="o">:</span> <span class="mi">6</span> <span class="bp">∣</span> <span class="n">n</span> <span class="o">:=</span> <span class="kd">by</span>
   <span class="gr">sorry</span>
 </pre></div>
 </div>
 </li>
-<li><p>证明：如果 6 整除 \(11n\)，则 6 整除 \(n\)。</p>
+<li><p>设 \(a\) 为整数，并假设 \(5a\) 是 \(7\) 的倍数。证明 \(a\) 也是 \(7\) 的倍数。</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">example</span> <span class="o">{</span><span class="n">a</span> <span class="o">:</span> <span class="n">ℤ</span><span class="o">}</span> <span class="o">(</span><span class="n">ha</span> <span class="o">:</span> <span class="mi">7</span> <span class="bp">∣</span> <span class="mi">5</span> <span class="bp">*</span> <span class="n">a</span><span class="o">)</span> <span class="o">:</span> <span class="mi">7</span> <span class="bp">∣</span> <span class="n">a</span> <span class="o">:=</span> <span class="kd">by</span>
   <span class="gr">sorry</span>
 </pre></div>
 </div>
 </li>
-<li><p>设 \(a\) 为整数，并假设 \(5a\) 是 \(7\) 的倍数。证明 \(a\) 也是 \(7\) 的倍数。</p>
+<li><p>假设 7 和 9 都是某个整数 \(n\) 的因子。证明 63 也是 \(n\) 的因子。</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">example</span> <span class="o">{</span><span class="n">n</span> <span class="o">:</span> <span class="n">ℤ</span><span class="o">}</span> <span class="o">(</span><span class="n">h1</span> <span class="o">:</span> <span class="mi">7</span> <span class="bp">∣</span> <span class="n">n</span><span class="o">)</span> <span class="o">(</span><span class="n">h2</span> <span class="o">:</span> <span class="mi">9</span> <span class="bp">∣</span> <span class="n">n</span><span class="o">)</span> <span class="o">:</span> <span class="mi">63</span> <span class="bp">∣</span> <span class="n">n</span> <span class="o">:=</span> <span class="kd">by</span>
   <span class="gr">sorry</span>
 </pre></div>
 </div>
 </li>
-<li><p>假设 7 和 9 都是某个整数 \(n\) 的因子。证明 63 也是 \(n\) 的因子。</p>
+<li><p>设 \(n\) 为能被 5 和 13 整除的整数。证明它也能被 65 整除。</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">example</span> <span class="o">{</span><span class="n">n</span> <span class="o">:</span> <span class="n">ℤ</span><span class="o">}</span> <span class="o">(</span><span class="n">h1</span> <span class="o">:</span> <span class="mi">5</span> <span class="bp">∣</span> <span class="n">n</span><span class="o">)</span> <span class="o">(</span><span class="n">h2</span> <span class="o">:</span> <span class="mi">13</span> <span class="bp">∣</span> <span class="n">n</span><span class="o">)</span> <span class="o">:</span> <span class="mi">65</span> <span class="bp">∣</span> <span class="n">n</span> <span class="o">:=</span> <span class="kd">by</span>
   <span class="gr">sorry</span>
 </pre></div>

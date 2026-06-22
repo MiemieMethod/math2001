@@ -293,11 +293,11 @@
 </div>
 <p>在填写这些理由时，你大概已经发现 Lean 中出错会发生什么：某处会出现红色下划线。例如，下面每种写法都会在某处产生红色下划线。请试试看！</p>
 <ul class="simple">
-<li>但在 <a class="reference internal" href="#eq-with-div"><span class="std std-numref">例 1.3.4</span></a> 中，有一个推导需要除法，而不只是加法和减法：若 \(3w+1=4\)，则 \(w=1\)。</li>
-<li>我们仍然要求这种证明完整写出。</li>
-<li>请检查 <code class="docutils literal notranslate"><span class="pre">addarith</span></code> 不能验证这个推导。</li>
 <li>拼写错误，例如把 <code class="docutils literal notranslate"><span class="pre">ring</span></code> 写成 <code class="docutils literal notranslate"><span class="pre">rin</span></code></li>
 <li>标点错误，例如写成 <code class="docutils literal notranslate"><span class="pre">rw</span> <span class="pre">[h2</span></code> 而不是 <code class="docutils literal notranslate"><span class="pre">rw</span> <span class="pre">[h2]</span></code></li>
+<li>理由中使用了错误的策略，例如应该用 <code class="docutils literal notranslate"><span class="pre">rw</span></code> 时却写了 <code class="docutils literal notranslate"><span class="pre">ring</span></code></li>
+<li>为理由中的策略提供了错误信息，例如实际代换的是 <code class="docutils literal notranslate"><span class="pre">h1</span></code>，却写成 <code class="docutils literal notranslate"><span class="pre">rw</span> <span class="pre">[h2]</span></code></li>
+<li>计算中的数学错误，例如写成 \(1 - 2 * s\) 而不是 \(-1 - 2 * s\)</li>
 </ul>
 <p>如果没有任何红色下划线，那么你的证明就是正确的。有时红色下划线很小，所以要仔细看。你还可以查看 VS Code 底部的蓝色状态栏来再次确认。符号 “⊗” 旁边的数字表示文件中有多少个错误；如果没有错误，还会显示一个对勾。</p>
 </section>
@@ -342,9 +342,9 @@
 <p>下一节，即 <a class="reference internal" href="#tips-and-tricks"><span class="std std-numref">第 1.3 节</span></a>，包含许多计算式证明的例子。先不细读那一节的数学内容，请按照书中给出的纸上证明，把其中一些例子输入到 Lean 中。下一节对应的 Lean 文件是 <code class="docutils literal notranslate"><span class="pre">Math2001/01_Proofs_by_Calculation/03_Tips_and_Tricks</span></code>。</p>
 <p class="rubric">脚注</p>
 <dl class="footnote brackets">
-<dt class="label" id="id17">若 \(x=2\) 且 \(y ^ 2 = -7\)，则 \(x+y^2=-5\)。</dt>
+<dt class="label" id="id17"><span class="brackets"><a class="fn-backref" href="#id13">1</a></span></dt>
 <dd>你是在向 Lean 表示歉意：你还没有为这个断言提供证明！</dd>
-<dt class="label" id="id18">若 \(t=4-st\)，则 \(t+st&gt;0\)。</dt>
+<dt class="label" id="id18"><span class="brackets"><a class="fn-backref" href="#id16">2</a></span></dt>
 <dd>如果没有括号，例如 x * y * z，那么 Lean 会把表达式尽可能向前结合地加括号，也就是 (x * y) * z。</dd>
 </dl>
 </section>
@@ -353,19 +353,19 @@
 <span id="id19"></span><h2>1.3. 提示与技巧<a class="headerlink" href="#tips-and-tricks" title="此标题的永久链接"></a></h2>
 <section id="id20">
 <h3>1.3.1. 例<a class="headerlink" href="#id20" title="此标题的永久链接"></a></h3>
-<p>你是在向 Lean 表示歉意：你还没有为这个断言提供证明！</p>
-<div class="admonition-problem admonition">
-<p class="admonition-title">如果没有括号，例如 x * y * z，那么 Lean 会把表达式尽可能向前结合地加括号，也就是 (x * y) * z。</p>
 <p>本节介绍一些实际想出计算式证明的提示与技巧。</p>
+<div class="admonition-problem admonition">
+<p class="admonition-title">问题</p>
+<p>设 \(a\) 和 \(b\) 为整数，并且假设 \(a = 2b + 5\)、\(b = 3\)。证明 \(a = 11\)。</p>
 </div>
-<p>问题</p>
+<p>由于本题目标是证明 \(a=11\)，我们已经知道解答大致会长成这样：</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}a&amp;=\ldots\\
 &amp;=\ldots\\
 &amp;=11.\end{split}\]</div>
-<p>设 \(a\) 和 \(b\) 为整数，并且假设 \(a = 2b + 5\)、\(b = 3\)。证明 \(a = 11\)。</p>
+<p>四处寻找思路时，我们看到一个假设 \(a = 2b + 5\) 的左边正好是 \(a\)。于是把它作为计算的第一步，余下步骤便自然写出。</p>
 <div class="admonition-solution admonition">
-<p class="admonition-title">由于本题目标是证明 \(a=11\)，我们已经知道解答大致会长成这样：</p>
+<p class="admonition-title">解答</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}a &amp;= 2b + 5 \\
 &amp;= 2 \cdot 3 + 5 \\
@@ -378,19 +378,19 @@
 </section>
 <section id="easy-eq">
 <span id="id21"></span><h3>1.3.2. 例<a class="headerlink" href="#easy-eq" title="此标题的永久链接"></a></h3>
-<p>四处寻找思路时，我们看到一个假设 \(a = 2b + 5\) 的左边正好是 \(a\)。于是把它作为计算的第一步，余下步骤便自然写出。</p>
-<div class="admonition-problem admonition">
-<p class="admonition-title">解答</p>
 <p>更常见的情况是，没有任何假设的左边或右边会精确出现在目标中。下面是一个例子。</p>
+<div class="admonition-problem admonition">
+<p class="admonition-title">问题</p>
+<p>设 \(x\) 为整数，并且假设 \(x+4=2\)。证明 \(x=-2\)。</p>
 </div>
-<p>问题</p>
+<p>由于本题目标是证明 \(x=-2\)，我们已经知道解答大致会长成这样：</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}x&amp;=\ldots\\
 &amp;=\ldots\\
 &amp;=-2.\end{split}\]</div>
-<p>设 \(x\) 为整数，并且假设 \(x+4=2\)。证明 \(x=-2\)。</p>
+<p>唯一假设的左边是 \(x+4\)，所以我们通过在 \(x\) 中加上再减去 \(4\)，在目标中制造出一个 \(x+4\)：\(x=(x+4)-4\)。之后证明的其余部分就很容易完成。</p>
 <div class="admonition-solution admonition">
-<p class="admonition-title">由于本题目标是证明 \(x=-2\)，我们已经知道解答大致会长成这样：</p>
+<p class="admonition-title">解答</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}x&amp;=(x+4)-4\\
 &amp;=2-4\\
@@ -403,14 +403,14 @@
 </section>
 <section id="id22">
 <span id="id23"></span><h3>1.3.3. 例<a class="headerlink" href="#id22" title="此标题的永久链接"></a></h3>
-<p>唯一假设的左边是 \(x+4\)，所以我们通过在 \(x\) 中加上再减去 \(4\)，在目标中制造出一个 \(x+4\)：\(x=(x+4)-4\)。之后证明的其余部分就很容易完成。</p>
-<div class="admonition-problem admonition">
-<p class="admonition-title">解答</p>
 <p>有时，我们需要不止一次执行这种在目标中“制造”某个假设一侧的过程。</p>
+<div class="admonition-problem admonition">
+<p class="admonition-title">问题</p>
+<p>设 \(a\) 和 \(b\) 为实数，并且假设 \(a-5b=4\)、\(b+2=3\)。证明 \(a=9\)。</p>
 </div>
-<p>问题</p>
+<p>在解答的第一步，我们“制造”出一个 \(a-5b\)；后来在第三步，我们又“制造”出一个 \(b+2\)。</p>
 <div class="admonition-solution admonition">
-<p class="admonition-title">设 \(a\) 和 \(b\) 为实数，并且假设 \(a-5b=4\)、\(b+2=3\)。证明 \(a=9\)。</p>
+<p class="admonition-title">解答</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}a
 &amp;= (a - 5b) + 5b\\
@@ -426,13 +426,13 @@
 </section>
 <section id="eq-with-div">
 <span id="id24"></span><h3>1.3.4. 例<a class="headerlink" href="#eq-with-div" title="此标题的永久链接"></a></h3>
-<p>在解答的第一步，我们“制造”出一个 \(a-5b\)；后来在第三步，我们又“制造”出一个 \(b+2\)。</p>
-<div class="admonition-problem admonition">
-<p class="admonition-title">解答</p>
 <p>我们也许需要同时使用加减法和乘除法来“制造”假设的一侧。</p>
+<div class="admonition-problem admonition">
+<p class="admonition-title">问题</p>
+<p>设 \(w\) 为有理数，并且假设 \(3w+1=4\)。证明 \(w=1\)。</p>
 </div>
 <div class="admonition-solution admonition">
-<p class="admonition-title">问题</p>
+<p class="admonition-title">解答</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}w&amp;=\frac{3w+1}{3}-\frac{1}{3}\\
 &amp;=\frac{4}{3}-\frac{1}{3}\\
@@ -445,20 +445,20 @@
 </section>
 <section id="id25">
 <h3>1.3.5. 例<a class="headerlink" href="#id25" title="此标题的永久链接"></a></h3>
-<p>设 \(w\) 为有理数，并且假设 \(3w+1=4\)。证明 \(w=1\)。</p>
-<div class="admonition-problem admonition">
-<p class="admonition-title">解答</p>
 <p>这种技巧也适用于经典的 Algebra I 风格方程。考虑下面的问题：</p>
+<div class="admonition-problem admonition">
+<p class="admonition-title">问题</p>
+<p>设 \(x\) 为整数，并且假设 \(2x + 3 = x\)。证明 \(x=-3\)。</p>
 </div>
-<p>问题</p>
+<p>你也许学过通过移项和整理来解这种方程，类似这样：</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}2x+3&amp;=x\\
 2x+3-x&amp;=x-x\\
 x + 3&amp;= 0\\
 x &amp;=-3.\end{split}\]</div>
-<p>设 \(x\) 为整数，并且假设 \(2x + 3 = x\)。证明 \(x=-3\)。</p>
+<p>但这个解答也可以通过“制造”一个 \(2x+3\)，呈现为计算式证明。</p>
 <div class="admonition-solution admonition">
-<p class="admonition-title">你也许学过通过移项和整理来解这种方程，类似这样：</p>
+<p class="admonition-title">解答</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}x&amp;=(2x+3)-x-3\\
 &amp;=x-x-3\\
@@ -471,12 +471,12 @@ x &amp;=-3.\end{split}\]</div>
 </section>
 <section id="simultaneous">
 <span id="id26"></span><h3>1.3.6. 例<a class="headerlink" href="#simultaneous" title="此标题的永久链接"></a></h3>
-<p>但这个解答也可以通过“制造”一个 \(2x+3\)，呈现为计算式证明。</p>
-<div class="admonition-problem admonition">
-<p class="admonition-title">解答</p>
 <p>类似地，你可能以前见过如下的联立方程组：</p>
+<div class="admonition-problem admonition">
+<p class="admonition-title">问题</p>
+<p>设 \(x\) 和 \(y\) 为整数，并且假设 \(2x-y=4\)、\(y-x+1=2\)。证明 \(x=5\)。</p>
 </div>
-<p>问题</p>
+<p>你也许学过通过相加或相减方程来消去不关心的变量，然后解剩下的单变量方程。</p>
 <div class="math notranslate nohighlight">
 \[ \begin{align}\begin{aligned}2x-y&amp;=4
 &amp;
@@ -489,9 +489,9 @@ x &amp;=-3.\end{split}\]</div>
 \hspace{1cm}&amp;\\x&amp;=5
 &amp;
 \hspace{1cm}&amp;\end{aligned}\end{align} \]</div>
-<p>设 \(x\) 和 \(y\) 为整数，并且假设 \(2x-y=4\)、\(y-x+1=2\)。证明 \(x=5\)。</p>
+<p>但这个论证也可以呈现为计算式证明；这样做的好处是，不会出现需要读者自行追踪的神秘一行“把 (1) 与 (2) 相加”。</p>
 <div class="admonition-solution admonition">
-<p class="admonition-title">你也许学过通过相加或相减方程来消去不关心的变量，然后解剩下的单变量方程。</p>
+<p class="admonition-title">解答</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}x &amp;=(2x-y)+(y-x+1)-1\\
 &amp;=4+2-1\\
@@ -504,13 +504,13 @@ x &amp;=-3.\end{split}\]</div>
 </section>
 <section id="id27">
 <h3>1.3.7. 例<a class="headerlink" href="#id27" title="此标题的永久链接"></a></h3>
-<p>但这个论证也可以呈现为计算式证明；这样做的好处是，不会出现需要读者自行追踪的神秘一行“把 (1) 与 (2) 相加”。</p>
-<div class="admonition-problem admonition">
-<p class="admonition-title">解答</p>
 <p>下面是另一个通过构造假设的巧妙组合来解联立方程组的例子。</p>
+<div class="admonition-problem admonition">
+<p class="admonition-title">问题</p>
+<p>设 \(u\) 和 \(v\) 为有理数，并且假设 \(u+2v=4\)、\(u-2v=6\)。证明 \(u=5\)。</p>
 </div>
 <div class="admonition-solution admonition">
-<p class="admonition-title">问题</p>
+<p class="admonition-title">解答</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}u &amp;= \frac{(u+2v)+(u-2v)}{2}\\
 &amp;=\frac{4+6}{2}\\
@@ -523,13 +523,13 @@ x &amp;=-3.\end{split}\]</div>
 </section>
 <section id="id28">
 <h3>1.3.8. 例<a class="headerlink" href="#id28" title="此标题的永久链接"></a></h3>
-<p>设 \(u\) 和 \(v\) 为有理数，并且假设 \(u+2v=4\)、\(u-2v=6\)。证明 \(u=5\)。</p>
-<div class="admonition-problem admonition">
-<p class="admonition-title">解答</p>
 <p>再看一个例子。这一次我们必须结合前两个例子的技巧：取假设的不同倍数来消去 \(y\)，然后除以剩下的 \(x\) 的倍数。</p>
+<div class="admonition-problem admonition">
+<p class="admonition-title">问题</p>
+<p>设 \(x\) 和 \(y\) 为实数，并且假设 \(x + y = 4\)、\(5x-3y=4\)。证明 \(x=2\)。</p>
 </div>
 <div class="admonition-solution admonition">
-<p class="admonition-title">问题</p>
+<p class="admonition-title">解答</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}x &amp;= \frac{3(x+y)+(5x-3y)}{8}\\
 &amp;=\frac{3\cdot 4+4}{8}\\
@@ -542,13 +542,13 @@ x &amp;=-3.\end{split}\]</div>
 </section>
 <section id="id29">
 <h3>1.3.9. 例<a class="headerlink" href="#id29" title="此标题的永久链接"></a></h3>
-<p>设 \(x\) 和 \(y\) 为实数，并且假设 \(x + y = 4\)、\(5x-3y=4\)。证明 \(x=2\)。</p>
-<div class="admonition-problem admonition">
-<p class="admonition-title">解答</p>
 <p>最后，我们做几个含有次数大于一的方程的例子。</p>
+<div class="admonition-problem admonition">
+<p class="admonition-title">问题</p>
+<p>设 \(a\) 和 \(b\) 为有理数，并且假设 \(a-3=2b\)。证明 \(a ^ 2 - a + 3 = 4 b ^ 2 + 10 b + 9\)。</p>
 </div>
 <div class="admonition-solution admonition">
-<p class="admonition-title">问题</p>
+<p class="admonition-title">解答</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}a ^ 2 - a + 3 &amp;=\left[(a-3)^2+6a-9\right]-a+3\\
 &amp;=(a-3)^2+5a-6\\
@@ -557,7 +557,7 @@ x &amp;=-3.\end{split}\]</div>
 &amp;=(2b)^2+5(2b)+9\\
 &amp;=4b^2+10b+9.\end{split}\]</div>
 </div>
-<p>设 \(a\) 和 \(b\) 为有理数，并且假设 \(a-3=2b\)。证明 \(a ^ 2 - a + 3 = 4 b ^ 2 + 10 b + 9\)。</p>
+<p>上面的证明比必要步骤多一些，是为了说明你可能怎样想出这个证明：先通过引入 \((a-3)^2\) 并加减多出来的项来处理 \(a^2\) 项；然后化简；再处理 \(a\) 项；再化简；最后代换并再次化简。它可以缩短为一个尽量简洁的证明：一步大的代数计算、一步代换，再加最后一步代数计算。</p>
 <div class="admonition-solution admonition">
 <p class="admonition-title">解答</p>
 <div class="math notranslate nohighlight">
@@ -572,23 +572,23 @@ x &amp;=-3.\end{split}\]</div>
 </section>
 <section id="id30">
 <h3>1.3.10. 例<a class="headerlink" href="#id30" title="此标题的永久链接"></a></h3>
-<p>上面的证明比必要步骤多一些，是为了说明你可能怎样想出这个证明：先通过引入 \((a-3)^2\) 并加减多出来的项来处理 \(a^2\) 项；然后化简；再处理 \(a\) 项；再化简；最后代换并再次化简。它可以缩短为一个尽量简洁的证明：一步大的代数计算、一步代换，再加最后一步代数计算。</p>
-<div class="admonition-problem admonition">
-<p class="admonition-title">解答</p>
 <p>下面是另一个含有次数大于一的项的例子。</p>
+<div class="admonition-problem admonition">
+<p class="admonition-title">问题</p>
+<p>设 \(z\) 为实数，并且假设 \(z^2-2=0\)。证明 \(z ^ 4 - z ^ 3 - z ^ 2 + 2 z + 1=3\)。</p>
 </div>
 <div class="admonition-solution admonition">
-<p class="admonition-title">问题</p>
+<p class="admonition-title">解答</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}z ^ 4 - z ^ 3 - z ^ 2 + 2 z + 1
 &amp;=(z ^ 2 - z + 1) (z ^ 2 - 2)+3\\
 &amp;=(z^2-z+1)\cdot 0+3\\
 &amp;=3.\end{split}\]</div>
 </div>
-<p>设 \(z\) 为实数，并且假设 \(z^2-2=0\)。证明 \(z ^ 4 - z ^ 3 - z ^ 2 + 2 z + 1=3\)。</p>
+<p>这看起来几乎太巧了，对吧？在草稿中，我是用你也许学过的多项式长除法想出这个解答的：用 \(z^2-2\) 除 \(z ^ 4 - z ^ 3 - z ^ 2 + 2 z + 1\)，商为 \(z ^ 2 - z + 1\)，余数为 \(3\)。但在证明中，用什么方法发现下列事实并不重要：</p>
 <div class="math notranslate nohighlight">
 \[z ^ 4 - z ^ 3 - z ^ 2 + 2 z + 1=(z ^ 2 - z + 1) (z ^ 2 - 2)+3.\]</div>
-<p>解答</p>
+<p>这是一个纯粹的代数恒等式，可以通过展开并化简轻松检查，因此你可以直接陈述这个结果，而不必写出发现它的方法。</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">example</span> <span class="o">{</span><span class="n">z</span> <span class="o">:</span> <span class="n">ℝ</span><span class="o">}</span> <span class="o">(</span><span class="n">h1</span> <span class="o">:</span> <span class="n">z</span> <span class="bp">^</span> <span class="mi">2</span> <span class="bp">-</span> <span class="mi">2</span> <span class="bp">=</span> <span class="mi">0</span><span class="o">)</span> <span class="o">:</span> <span class="n">z</span> <span class="bp">^</span> <span class="mi">4</span> <span class="bp">-</span> <span class="n">z</span> <span class="bp">^</span> <span class="mi">3</span> <span class="bp">-</span> <span class="n">z</span> <span class="bp">^</span> <span class="mi">2</span> <span class="bp">+</span> <span class="mi">2</span> <span class="bp">*</span> <span class="n">z</span> <span class="bp">+</span> <span class="mi">1</span> <span class="bp">=</span> <span class="mi">3</span> <span class="o">:=</span>
   <span class="gr">sorry</span>
 </pre></div>
@@ -596,101 +596,101 @@ x &amp;=-3.\end{split}\]</div>
 </section>
 <section id="id31">
 <h3>1.3.11. 练习<a class="headerlink" href="#id31" title="此标题的永久链接"></a></h3>
-<p>这看起来几乎太巧了，对吧？在草稿中，我是用你也许学过的多项式长除法想出这个解答的：用 \(z^2-2\) 除 \(z ^ 4 - z ^ 3 - z ^ 2 + 2 z + 1\)，商为 \(z ^ 2 - z + 1\)，余数为 \(3\)。但在证明中，用什么方法发现下列事实并不重要：</p>
+<p>为下列各题给出计算式证明。</p>
 <ol class="arabic">
-<li><p>理由中使用了错误的策略，例如应该用 <code class="docutils literal notranslate"><span class="pre">rw</span></code> 时却写了 <code class="docutils literal notranslate"><span class="pre">ring</span></code></p>
+<li><p>设 \(x\) 和 \(y\) 为实数，并且假设 \(x = 3\)、\(y = 4x - 3\)。证明 \(y = 9\)。</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">example</span> <span class="o">{</span><span class="n">x</span> <span class="n">y</span> <span class="o">:</span> <span class="n">ℝ</span><span class="o">}</span> <span class="o">(</span><span class="n">h1</span> <span class="o">:</span> <span class="n">x</span> <span class="bp">=</span> <span class="mi">3</span><span class="o">)</span> <span class="o">(</span><span class="n">h2</span> <span class="o">:</span> <span class="n">y</span> <span class="bp">=</span> <span class="mi">4</span> <span class="bp">*</span> <span class="n">x</span> <span class="bp">-</span> <span class="mi">3</span><span class="o">)</span> <span class="o">:</span> <span class="n">y</span> <span class="bp">=</span> <span class="mi">9</span> <span class="o">:=</span>
   <span class="gr">sorry</span>
 </pre></div>
 </div>
 </li>
-<li><p>为理由中的策略提供了错误信息，例如实际代换的是 <code class="docutils literal notranslate"><span class="pre">h1</span></code>，却写成 <code class="docutils literal notranslate"><span class="pre">rw</span> <span class="pre">[h2]</span></code></p>
+<li><p>设 \(a\) 和 \(b\) 为整数，并且假设 \(a-b=0\)。证明 \(a=b\)。</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">example</span> <span class="o">{</span><span class="n">a</span> <span class="n">b</span> <span class="o">:</span> <span class="n">ℤ</span><span class="o">}</span> <span class="o">(</span><span class="n">h</span> <span class="o">:</span> <span class="n">a</span> <span class="bp">-</span> <span class="n">b</span> <span class="bp">=</span> <span class="mi">0</span><span class="o">)</span> <span class="o">:</span> <span class="n">a</span> <span class="bp">=</span> <span class="n">b</span> <span class="o">:=</span>
   <span class="gr">sorry</span>
 </pre></div>
 </div>
 </li>
-<li><p>计算中的数学错误，例如写成 \(1 - 2 * s\) 而不是 \(-1 - 2 * s\)</p>
+<li><p>设 \(x\) 和 \(y\) 为整数，并且假设 \(x-3y=5\)、\(y=3\)。证明 \(x=14\)。</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">example</span> <span class="o">{</span><span class="n">x</span> <span class="n">y</span> <span class="o">:</span> <span class="n">ℤ</span><span class="o">}</span> <span class="o">(</span><span class="n">h1</span> <span class="o">:</span> <span class="n">x</span> <span class="bp">-</span> <span class="mi">3</span> <span class="bp">*</span> <span class="n">y</span> <span class="bp">=</span> <span class="mi">5</span><span class="o">)</span> <span class="o">(</span><span class="n">h2</span> <span class="o">:</span> <span class="n">y</span> <span class="bp">=</span> <span class="mi">3</span><span class="o">)</span> <span class="o">:</span> <span class="n">x</span> <span class="bp">=</span> <span class="mi">14</span> <span class="o">:=</span>
   <span class="gr">sorry</span>
 </pre></div>
 </div>
 </li>
-<li><p>设 \(x\) 和 \(y\) 为实数，并且假设 \(x = 3\)、\(y = 4x - 3\)。证明 \(y = 9\)。</p>
+<li><p>设 \(p\) 和 \(q\) 为有理数，并且假设 \(p-2q=1\)、\(q=-1\)。证明 \(p=-1\)。</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">example</span> <span class="o">{</span><span class="n">p</span> <span class="n">q</span> <span class="o">:</span> <span class="n">ℚ</span><span class="o">}</span> <span class="o">(</span><span class="n">h1</span> <span class="o">:</span> <span class="n">p</span> <span class="bp">-</span> <span class="mi">2</span> <span class="bp">*</span> <span class="n">q</span> <span class="bp">=</span> <span class="mi">1</span><span class="o">)</span> <span class="o">(</span><span class="n">h2</span> <span class="o">:</span> <span class="n">q</span> <span class="bp">=</span> <span class="bp">-</span><span class="mi">1</span><span class="o">)</span> <span class="o">:</span> <span class="n">p</span> <span class="bp">=</span> <span class="bp">-</span><span class="mi">1</span> <span class="o">:=</span>
   <span class="gr">sorry</span>
 </pre></div>
 </div>
 </li>
-<li><p>设 \(a\) 和 \(b\) 为整数，并且假设 \(a-b=0\)。证明 \(a=b\)。</p>
+<li><p>设 \(x\) 和 \(y\) 为有理数，并且假设 \(y+1=3\)、\(x+2y=3\)。证明 \(x=-1\)。</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">example</span> <span class="o">{</span><span class="n">x</span> <span class="n">y</span> <span class="o">:</span> <span class="n">ℚ</span><span class="o">}</span> <span class="o">(</span><span class="n">h1</span> <span class="o">:</span> <span class="n">y</span> <span class="bp">+</span> <span class="mi">1</span> <span class="bp">=</span> <span class="mi">3</span><span class="o">)</span> <span class="o">(</span><span class="n">h2</span> <span class="o">:</span> <span class="n">x</span> <span class="bp">+</span> <span class="mi">2</span> <span class="bp">*</span> <span class="n">y</span> <span class="bp">=</span> <span class="mi">3</span><span class="o">)</span> <span class="o">:</span> <span class="n">x</span> <span class="bp">=</span> <span class="bp">-</span><span class="mi">1</span> <span class="o">:=</span>
   <span class="gr">sorry</span>
 </pre></div>
 </div>
 </li>
-<li><p>设 \(x\) 和 \(y\) 为整数，并且假设 \(x-3y=5\)、\(y=3\)。证明 \(x=14\)。</p>
+<li><p>设 \(p\) 和 \(q\) 为整数，并且假设 \(p+4q=1\)、\(q-1=2\)。证明 \(p=-11\)。</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">example</span> <span class="o">{</span><span class="n">p</span> <span class="n">q</span> <span class="o">:</span> <span class="n">ℤ</span><span class="o">}</span> <span class="o">(</span><span class="n">h1</span> <span class="o">:</span> <span class="n">p</span> <span class="bp">+</span> <span class="mi">4</span> <span class="bp">*</span> <span class="n">q</span> <span class="bp">=</span> <span class="mi">1</span><span class="o">)</span> <span class="o">(</span><span class="n">h2</span> <span class="o">:</span> <span class="n">q</span> <span class="bp">-</span> <span class="mi">1</span> <span class="bp">=</span> <span class="mi">2</span><span class="o">)</span> <span class="o">:</span> <span class="n">p</span> <span class="bp">=</span> <span class="bp">-</span><span class="mi">11</span> <span class="o">:=</span>
   <span class="gr">sorry</span>
 </pre></div>
 </div>
 </li>
-<li><p>设 \(p\) 和 \(q\) 为有理数，并且假设 \(p-2q=1\)、\(q=-1\)。证明 \(p=-1\)。</p>
+<li><p>设 \(a\)、\(b\) 和 \(c\) 为实数，并且假设 \(a+2b+3c=7\)、\(b+2c=3\)、\(c=1\)。证明 \(a=2\)。</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">example</span> <span class="o">{</span><span class="n">a</span> <span class="n">b</span> <span class="n">c</span> <span class="o">:</span> <span class="n">ℝ</span><span class="o">}</span> <span class="o">(</span><span class="n">h1</span> <span class="o">:</span> <span class="n">a</span> <span class="bp">+</span> <span class="mi">2</span> <span class="bp">*</span> <span class="n">b</span> <span class="bp">+</span> <span class="mi">3</span> <span class="bp">*</span> <span class="n">c</span> <span class="bp">=</span> <span class="mi">7</span><span class="o">)</span> <span class="o">(</span><span class="n">h2</span> <span class="o">:</span> <span class="n">b</span> <span class="bp">+</span> <span class="mi">2</span> <span class="bp">*</span> <span class="n">c</span> <span class="bp">=</span> <span class="mi">3</span><span class="o">)</span>
     <span class="o">(</span><span class="n">h3</span> <span class="o">:</span> <span class="n">c</span> <span class="bp">=</span> <span class="mi">1</span><span class="o">)</span> <span class="o">:</span> <span class="n">a</span> <span class="bp">=</span> <span class="mi">2</span> <span class="o">:=</span>
   <span class="gr">sorry</span>
 </pre></div>
 </div>
 </li>
-<li><p>设 \(x\) 和 \(y\) 为有理数，并且假设 \(y+1=3\)、\(x+2y=3\)。证明 \(x=-1\)。</p>
+<li><p>设 \(u\) 和 \(v\) 为有理数，并且假设 \(4u+v=3\)、\(v=2\)。证明 \(u=1/4\)。</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">example</span> <span class="o">{</span><span class="n">u</span> <span class="n">v</span> <span class="o">:</span> <span class="n">ℚ</span><span class="o">}</span> <span class="o">(</span><span class="n">h1</span> <span class="o">:</span> <span class="mi">4</span> <span class="bp">*</span> <span class="n">u</span> <span class="bp">+</span> <span class="n">v</span> <span class="bp">=</span> <span class="mi">3</span><span class="o">)</span> <span class="o">(</span><span class="n">h2</span> <span class="o">:</span> <span class="n">v</span> <span class="bp">=</span> <span class="mi">2</span><span class="o">)</span> <span class="o">:</span> <span class="n">u</span> <span class="bp">=</span> <span class="mi">1</span> <span class="bp">/</span> <span class="mi">4</span> <span class="o">:=</span>
   <span class="gr">sorry</span>
 </pre></div>
 </div>
 </li>
-<li><p>设 \(p\) 和 \(q\) 为整数，并且假设 \(p+4q=1\)、\(q-1=2\)。证明 \(p=-11\)。</p>
+<li><p>设 \(c\) 为有理数，并且假设 \(4c + 1 = 3c - 2\)。证明 \(c = -3\)。</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">example</span> <span class="o">{</span><span class="n">c</span> <span class="o">:</span> <span class="n">ℚ</span><span class="o">}</span> <span class="o">(</span><span class="n">h1</span> <span class="o">:</span> <span class="mi">4</span> <span class="bp">*</span> <span class="n">c</span> <span class="bp">+</span> <span class="mi">1</span> <span class="bp">=</span> <span class="mi">3</span> <span class="bp">*</span> <span class="n">c</span> <span class="bp">-</span> <span class="mi">2</span><span class="o">)</span> <span class="o">:</span> <span class="n">c</span> <span class="bp">=</span> <span class="bp">-</span><span class="mi">3</span> <span class="o">:=</span>
   <span class="gr">sorry</span>
 </pre></div>
 </div>
 </li>
-<li><p>设 \(a\)、\(b\) 和 \(c\) 为实数，并且假设 \(a+2b+3c=7\)、\(b+2c=3\)、\(c=1\)。证明 \(a=2\)。</p>
+<li><p>设 \(p\) 为实数，并且假设 \(5p - 3 = 3p + 1\)。证明 \(p = 2\)。</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">example</span> <span class="o">{</span><span class="n">p</span> <span class="o">:</span> <span class="n">ℝ</span><span class="o">}</span> <span class="o">(</span><span class="n">h1</span> <span class="o">:</span> <span class="mi">5</span> <span class="bp">*</span> <span class="n">p</span> <span class="bp">-</span> <span class="mi">3</span> <span class="bp">=</span> <span class="mi">3</span> <span class="bp">*</span> <span class="n">p</span> <span class="bp">+</span> <span class="mi">1</span><span class="o">)</span> <span class="o">:</span> <span class="n">p</span> <span class="bp">=</span> <span class="mi">2</span> <span class="o">:=</span>
   <span class="gr">sorry</span>
 </pre></div>
 </div>
 </li>
-<li><p>设 \(u\) 和 \(v\) 为有理数，并且假设 \(4u+v=3\)、\(v=2\)。证明 \(u=1/4\)。</p>
+<li><p>设 \(x\) 和 \(y\) 为整数，并且假设 \(2x+y=4\)、\(x+y=1\)。证明 \(x=3\)。</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">example</span> <span class="o">{</span><span class="n">x</span> <span class="n">y</span> <span class="o">:</span> <span class="n">ℤ</span><span class="o">}</span> <span class="o">(</span><span class="n">h1</span> <span class="o">:</span> <span class="mi">2</span> <span class="bp">*</span> <span class="n">x</span> <span class="bp">+</span> <span class="n">y</span> <span class="bp">=</span> <span class="mi">4</span><span class="o">)</span> <span class="o">(</span><span class="n">h2</span> <span class="o">:</span> <span class="n">x</span> <span class="bp">+</span> <span class="n">y</span> <span class="bp">=</span> <span class="mi">1</span><span class="o">)</span> <span class="o">:</span> <span class="n">x</span> <span class="bp">=</span> <span class="mi">3</span> <span class="o">:=</span>
   <span class="gr">sorry</span>
 </pre></div>
 </div>
 </li>
-<li><p>设 \(c\) 为有理数，并且假设 \(4c + 1 = 3c - 2\)。证明 \(c = -3\)。</p>
+<li><p>设 \(a\) 和 \(b\) 为实数，并且假设 \(a + 2b = 4\)、\(a - b = 1\)。证明 \(a = 2\)。</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">example</span> <span class="o">{</span><span class="n">a</span> <span class="n">b</span> <span class="o">:</span> <span class="n">ℝ</span><span class="o">}</span> <span class="o">(</span><span class="n">h1</span> <span class="o">:</span> <span class="n">a</span> <span class="bp">+</span> <span class="mi">2</span> <span class="bp">*</span> <span class="n">b</span> <span class="bp">=</span> <span class="mi">4</span><span class="o">)</span> <span class="o">(</span><span class="n">h2</span> <span class="o">:</span> <span class="n">a</span> <span class="bp">-</span> <span class="n">b</span> <span class="bp">=</span> <span class="mi">1</span><span class="o">)</span> <span class="o">:</span> <span class="n">a</span> <span class="bp">=</span> <span class="mi">2</span> <span class="o">:=</span>
   <span class="gr">sorry</span>
 </pre></div>
 </div>
 </li>
-<li><p>设 \(p\) 为实数，并且假设 \(5p - 3 = 3p + 1\)。证明 \(p = 2\)。</p>
+<li><p>设 \(u\) 和 \(v\) 为实数，并且假设 \(u+1=v\)。证明 \(u^2+3u+1=v^2+v-1\)。</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">example</span> <span class="o">{</span><span class="n">u</span> <span class="n">v</span> <span class="o">:</span> <span class="n">ℝ</span><span class="o">}</span> <span class="o">(</span><span class="n">h1</span> <span class="o">:</span> <span class="n">u</span> <span class="bp">+</span> <span class="mi">1</span> <span class="bp">=</span> <span class="n">v</span><span class="o">)</span> <span class="o">:</span> <span class="n">u</span> <span class="bp">^</span> <span class="mi">2</span> <span class="bp">+</span> <span class="mi">3</span> <span class="bp">*</span> <span class="n">u</span> <span class="bp">+</span> <span class="mi">1</span> <span class="bp">=</span> <span class="n">v</span> <span class="bp">^</span> <span class="mi">2</span> <span class="bp">+</span> <span class="n">v</span> <span class="bp">-</span> <span class="mi">1</span> <span class="o">:=</span>
   <span class="gr">sorry</span>
 </pre></div>
 </div>
 </li>
-<li><p>设 \(x\) 和 \(y\) 为整数，并且假设 \(2x+y=4\)、\(x+y=1\)。证明 \(x=3\)。</p>
+<li><p>设 \(t\) 为有理数，并且假设 \(t^2-4=0\)。证明 \(t^4 + 3t^3 - 3t^2 - 2t - 2 = 10t+2\)。</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">example</span> <span class="o">{</span><span class="n">t</span> <span class="o">:</span> <span class="n">ℚ</span><span class="o">}</span> <span class="o">(</span><span class="n">ht</span> <span class="o">:</span> <span class="n">t</span> <span class="bp">^</span> <span class="mi">2</span> <span class="bp">-</span> <span class="mi">4</span> <span class="bp">=</span> <span class="mi">0</span><span class="o">)</span> <span class="o">:</span>
     <span class="n">t</span> <span class="bp">^</span> <span class="mi">4</span> <span class="bp">+</span> <span class="mi">3</span> <span class="bp">*</span> <span class="n">t</span> <span class="bp">^</span> <span class="mi">3</span> <span class="bp">-</span> <span class="mi">3</span> <span class="bp">*</span> <span class="n">t</span> <span class="bp">^</span> <span class="mi">2</span> <span class="bp">-</span> <span class="mi">2</span> <span class="bp">*</span> <span class="n">t</span> <span class="bp">-</span> <span class="mi">2</span> <span class="bp">=</span> <span class="mi">10</span> <span class="bp">*</span> <span class="n">t</span> <span class="bp">+</span> <span class="mi">2</span> <span class="o">:=</span>
   <span class="gr">sorry</span>
 </pre></div>
 </div>
 </li>
-<li><p>设 \(a\) 和 \(b\) 为实数，并且假设 \(a + 2b = 4\)、\(a - b = 1\)。证明 \(a = 2\)。</p>
+<li><p>\(\!\!\!\!{^*}\) 设 \(x\) 和 \(y\) 为实数，并且假设 \(x + 3 = 5\)、\(2x - yx = 0\)。证明 \(y = 2\)。</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">example</span> <span class="o">{</span><span class="n">x</span> <span class="n">y</span> <span class="o">:</span> <span class="n">ℝ</span><span class="o">}</span> <span class="o">(</span><span class="n">h1</span> <span class="o">:</span> <span class="n">x</span> <span class="bp">+</span> <span class="mi">3</span> <span class="bp">=</span> <span class="mi">5</span><span class="o">)</span> <span class="o">(</span><span class="n">h2</span> <span class="o">:</span> <span class="mi">2</span> <span class="bp">*</span> <span class="n">x</span> <span class="bp">-</span> <span class="n">y</span> <span class="bp">*</span> <span class="n">x</span> <span class="bp">=</span> <span class="mi">0</span><span class="o">)</span> <span class="o">:</span> <span class="n">y</span> <span class="bp">=</span> <span class="mi">2</span> <span class="o">:=</span>
   <span class="gr">sorry</span>
 </pre></div>
 </div>
 </li>
-<li><p>设 \(u\) 和 \(v\) 为实数，并且假设 \(u+1=v\)。证明 \(u^2+3u+1=v^2+v-1\)。</p>
+<li><p>\(\!\!\!\!{^*}\) 设 \(p\)、\(q\) 和 \(r\) 为有理数，并且假设 \(p + q + r = 0\)、\(pq + pr + qr = 2\)。证明 \(p ^ 2 + q ^ 2 + r ^ 2 = -4\)。</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">example</span> <span class="o">{</span><span class="n">p</span> <span class="n">q</span> <span class="n">r</span> <span class="o">:</span> <span class="n">ℚ</span><span class="o">}</span> <span class="o">(</span><span class="n">h1</span> <span class="o">:</span> <span class="n">p</span> <span class="bp">+</span> <span class="n">q</span> <span class="bp">+</span> <span class="n">r</span> <span class="bp">=</span> <span class="mi">0</span><span class="o">)</span> <span class="o">(</span><span class="n">h2</span> <span class="o">:</span> <span class="n">p</span> <span class="bp">*</span> <span class="n">q</span> <span class="bp">+</span> <span class="n">p</span> <span class="bp">*</span> <span class="n">r</span> <span class="bp">+</span> <span class="n">q</span> <span class="bp">*</span> <span class="n">r</span> <span class="bp">=</span> <span class="mi">2</span><span class="o">)</span> <span class="o">:</span>
     <span class="n">p</span> <span class="bp">^</span> <span class="mi">2</span> <span class="bp">+</span> <span class="n">q</span> <span class="bp">^</span> <span class="mi">2</span> <span class="bp">+</span> <span class="n">r</span> <span class="bp">^</span> <span class="mi">2</span> <span class="bp">=</span> <span class="bp">-</span><span class="mi">4</span> <span class="o">:=</span>
   <span class="gr">sorry</span>
@@ -704,13 +704,13 @@ x &amp;=-3.\end{split}\]</div>
 <span id="id32"></span><h2>1.4. 证明不等式<a class="headerlink" href="#proving-inequalities" title="此标题的永久链接"></a></h2>
 <section id="id33">
 <span id="id34"></span><h3>1.4.1. 例<a class="headerlink" href="#id33" title="此标题的永久链接"></a></h3>
-<p>这是一个纯粹的代数恒等式，可以通过展开并化简轻松检查，因此你可以直接陈述这个结果，而不必写出发现它的方法。</p>
-<div class="admonition-problem admonition">
-<p class="admonition-title">为下列各题给出计算式证明。</p>
 <p>计算式证明也很适合证明不等式，也就是含有 \(&lt;\)、\(\le\)、\(&gt;\) 或 \(\ge\) 的事实。考虑下面这个完整例子：</p>
+<div class="admonition-problem admonition">
+<p class="admonition-title">问题</p>
+<p>设 \(x\) 和 \(y\) 为整数，并且假设 \(x + 3 \le 2\)、\(y + 2x\geq 3\)。证明 \(y&gt;3\)。</p>
 </div>
 <div class="admonition-solution admonition">
-<p class="admonition-title">问题</p>
+<p class="admonition-title">解答</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}y&amp;=(y+2x)-2x\\
 &amp;\geq 3 - 2x\\
@@ -718,24 +718,24 @@ x &amp;=-3.\end{split}\]</div>
 &amp;\geq 9 - 2 \cdot 2\\
 &amp;&gt; 3.\end{split}\]</div>
 </div>
-<p>设 \(x\) 和 \(y\) 为整数，并且假设 \(x + 3 \le 2\)、\(y + 2x\geq 3\)。证明 \(y&gt;3\)。</p>
-<p>解答</p>
 <p>目标是证明 \(y&gt;3\)，我们通过写出一串不等式来完成证明；这串不等式从表达式 \(y\)（左上）开始，到 \(3\)（右下）结束。这个证明隐含地包含五个步骤：</p>
 <p>1. \(\underline{\text{证明 }y=(y+2x)-2x}\)：代数重排。</p>
 <p>2. \(\underline{\text{证明 }(y+2x)-2x\geq 3-2x}\)：这使用给定事实 \(y + 2x\geq 3\)，以及不等式在减去同一个量时保持方向的一般规则（\(A\geq B\) 蕴含 \(A-C\geq B-C\)）。</p>
 <p>3. \(\underline{\text{证明 }3-2x=9-2(x+3)}\)：代数重排</p>
 <p>4. \(\underline{\text{证明 }9-2(x+3)\geq 9-2\cdot 2}\)：这使用给定事实 \(x + 3 \le 2\)，以及两条一般规则：不等式在乘以正数时保持方向（若 \(C\geq 0\)，则 \(A\geq B\) 蕴含 \(CA\geq CB\)），并且在作减法时方向反转（\(A\geq B\) 蕴含 \(C-B\geq C-A\)）。</p>
-<ul class="simple">
-<li>设 \(t\) 为有理数，并且假设 \(t^2-4=0\)。证明 \(t^4 + 3t^3 - 3t^2 - 2t - 2 = 10t+2\)。</li>
-<li>\(\!\!\!\!{^*}\) 设 \(x\) 和 \(y\) 为实数，并且假设 \(x + 3 = 5\)、\(2x - yx = 0\)。证明 \(y = 2\)。</li>
-</ul>
 <p>5. \(\underline{\text{证明 }9-2\cdot 2&gt;3}\)：这是一个数值事实，可由直接计算和比较证明。</p>
 <p>请仔细思考第 2 步和第 4 步。它们很像等式的计算式证明中我们称为“代换步骤”的那些步骤（在 Lean 中是 <code class="docutils literal notranslate"><span class="pre">rw</span></code>）。例如，</p>
-<p>但它们并不是直接代换；相反，它们使用的是前面提到的关于不等式在减法、乘法等运算下保持或反转方向的规则。有些情况下并不存在相关规则。例如，由 \(x \le y\) 通常既不能推出 \(\sin x \le \sin y\)，也不能推出 \(\sin x \ge \sin y\)。</p>
 <ul class="simple">
-<li>\(\!\!\!\!{^*}\) 设 \(p\)、\(q\) 和 \(r\) 为有理数，并且假设 \(p + q + r = 0\)、\(pq + pr + qr = 2\)。证明 \(p ^ 2 + q ^ 2 + r ^ 2 = -4\)。</li>
 <li>第 2 步看起来像是把不等式 \(y + 2x\geq 3\) “代入”表达式 \((y+2x)-2x\)，得到 \((y+2x)-2x\geq 3-2x\)；</li>
 <li>第 4 步看起来像是把不等式 \(x + 3 \le 2\) “代入”表达式 \(9-2(x+3)\)，得到 \(9-2(x+3)\geq 9-2\cdot 2\)。</li>
+</ul>
+<p>但它们并不是直接代换；相反，它们使用的是前面提到的关于不等式在减法、乘法等运算下保持或反转方向的规则。有些情况下并不存在相关规则。例如，由 \(x \le y\) 通常既不能推出 \(\sin x \le \sin y\)，也不能推出 \(\sin x \ge \sin y\)。</p>
+<p>还要仔细看每一步标出的关系。第一步是 \(=\)，第二步是 \(\geq\)，第三步是 \(=\)，第四步是 \(\geq\)，最后一步是 \(&gt;\)。每一种关系都反映了该步所用的具体推理。最终结果是 \(&gt;\)，因为可以说 \(&gt;\) 优先于 \(\geq\) 和 \(=\)（而且 \(\geq\) 又优先于 \(=\)）。也就是说，如果你知道 \(A\geq B\) 且 \(B&gt;C\)，那么它们可以传递地合成为 \(&gt;\) 关系：\(A&gt;C\)。</p>
+<p>现在我们在 Lean 中解同一道题。</p>
+<ul class="simple">
+<li>代数重排步骤和前面一样，用 <code class="docutils literal notranslate"><span class="pre">ring</span></code> 说明理由。</li>
+<li>“类似代换”的步骤用策略 <code class="docutils literal notranslate"><span class="pre">rel</span></code> 说明理由，并指出正在“代入”的不等式；但要注意，如果相关运算下不存在保持或反转不等式方向的规则，那么在这种情况下使用它会失败。</li>
+<li>“数值事实”用策略 <code class="docutils literal notranslate"><span class="pre">numbers</span></code> 说明理由。（这个策略也可以说明关于等式的“数值事实”，例如 \(4^2+4\cdot 1=20\)；我们之前对此使用的是 <code class="docutils literal notranslate"><span class="pre">ring</span></code> 策略。）</li>
 </ul>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">example</span> <span class="o">{</span><span class="n">x</span> <span class="n">y</span> <span class="o">:</span> <span class="n">ℤ</span><span class="o">}</span> <span class="o">(</span><span class="n">hx</span> <span class="o">:</span> <span class="n">x</span> <span class="bp">+</span> <span class="mi">3</span> <span class="bp">≤</span> <span class="mi">2</span><span class="o">)</span> <span class="o">(</span><span class="n">hy</span> <span class="o">:</span> <span class="n">y</span> <span class="bp">+</span> <span class="mi">2</span> <span class="bp">*</span> <span class="n">x</span> <span class="bp">≥</span> <span class="mi">3</span><span class="o">)</span> <span class="o">:</span> <span class="n">y</span> <span class="bp">&gt;</span> <span class="mi">3</span> <span class="o">:=</span>
   <span class="k">calc</span>
@@ -749,24 +749,24 @@ x &amp;=-3.\end{split}\]</div>
 </section>
 <section id="id35">
 <span id="id36"></span><h3>1.4.2. 例<a class="headerlink" href="#id35" title="此标题的永久链接"></a></h3>
-<p>还要仔细看每一步标出的关系。第一步是 \(=\)，第二步是 \(\geq\)，第三步是 \(=\)，第四步是 \(\geq\)，最后一步是 \(&gt;\)。每一种关系都反映了该步所用的具体推理。最终结果是 \(&gt;\)，因为可以说 \(&gt;\) 优先于 \(\geq\) 和 \(=\)（而且 \(\geq\) 又优先于 \(=\)）。也就是说，如果你知道 \(A\geq B\) 且 \(B&gt;C\)，那么它们可以传递地合成为 \(&gt;\) 关系：\(A&gt;C\)。</p>
-<div class="admonition-problem admonition">
-<p class="admonition-title">现在我们在 Lean 中解同一道题。</p>
 <p>下面是另一个不等式计算式证明的完整例子。</p>
+<div class="admonition-problem admonition">
+<p class="admonition-title">问题</p>
+<p>设 \(r\) 和 \(s\) 为有理数，并且假设 \(s+3\geq r\)、\(s+r \leq 3\)。证明 \(r\leq 3\)。</p>
 </div>
 <div class="admonition-solution admonition">
-<p class="admonition-title">问题</p>
+<p class="admonition-title">解答</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}r&amp;=\frac{(s+r)+r-s}{2}\\
 &amp;\leq \frac{3+(s+3)-s}{2}\\
 &amp;=3.\end{split}\]</div>
 </div>
-<p>设 \(r\) 和 \(s\) 为有理数，并且假设 \(s+3\geq r\)、\(s+r \leq 3\)。证明 \(r\leq 3\)。</p>
-<p>解答</p>
 <p>目标是证明 \(r\leq 3\)，该证明隐含地包含三个步骤：</p>
 <p>1. \(\underline{\text{证明 }r=\frac{(s+r)+r-s}{2}}\)：代数重排。</p>
 <p>2. \(\underline{\text{证明 }\frac{(s+r)+r-s}{2}\leq \frac{3+(s+3)-s}{2}}\)：这里是在“代入”给定事实 \(s+3\geq r\) 和 \(s+r \leq 3\)，使用的是不等式在加法下、以及在除以正数下保持方向的规则（并且还隐含地使用了 2 为正）。</p>
 <p>3. \(\underline{\text{证明 }\frac{3+(s+3)-s}{2}=3}\)：代数重排。</p>
+<p>这一次，第一步的关系是 \(=\)，第二步是 \(\leq\)，第三步是 \(=\)，而“净结果”就是关系 \(\leq\)。</p>
+<p>练习：补全下面这个 Lean 解答中的 sorry。</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">example</span> <span class="o">{</span><span class="n">r</span> <span class="n">s</span> <span class="o">:</span> <span class="n">ℚ</span><span class="o">}</span> <span class="o">(</span><span class="n">h1</span> <span class="o">:</span> <span class="n">s</span> <span class="bp">+</span> <span class="mi">3</span> <span class="bp">≥</span> <span class="n">r</span><span class="o">)</span> <span class="o">(</span><span class="n">h2</span> <span class="o">:</span> <span class="n">s</span> <span class="bp">+</span> <span class="n">r</span> <span class="bp">≤</span> <span class="mi">3</span><span class="o">)</span> <span class="o">:</span> <span class="n">r</span> <span class="bp">≤</span> <span class="mi">3</span> <span class="o">:=</span>
   <span class="k">calc</span>
     <span class="n">r</span> <span class="bp">=</span> <span class="o">(</span><span class="n">s</span> <span class="bp">+</span> <span class="n">r</span> <span class="bp">+</span> <span class="n">r</span> <span class="bp">-</span> <span class="n">s</span><span class="o">)</span> <span class="bp">/</span> <span class="mi">2</span> <span class="o">:=</span> <span class="kd">by</span> <span class="gr">sorry</span>
@@ -777,20 +777,20 @@ x &amp;=-3.\end{split}\]</div>
 </section>
 <section id="id37">
 <h3>1.4.3. 例<a class="headerlink" href="#id37" title="此标题的永久链接"></a></h3>
-<p id="id38">这一次，第一步的关系是 \(=\)，第二步是 \(\leq\)，第三步是 \(=\)，而“净结果”就是关系 \(\leq\)。</p>
+<p id="id38">再看一个类似的问题：</p>
 <div class="admonition-problem admonition">
-<p class="admonition-title">练习：补全下面这个 Lean 解答中的 sorry。</p>
-<p>再看一个类似的问题：</p>
+<p class="admonition-title">问题</p>
+<p>设 \(x\) 和 \(y\) 为实数，并且假设 \(y\leq x+5\)、\(x\leq -2\)。证明 \(x+y&lt;2\)。</p>
 </div>
 <div class="admonition-solution admonition">
-<p class="admonition-title">问题</p>
+<p class="admonition-title">解答</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}x + y &amp;\leq x + (x + 5)\\
 &amp;= 2x+5 \\
 &amp;\leq 2\cdot -2 +5\\
 &amp;&lt; 2.\end{split}\]</div>
 </div>
-<p>设 \(x\) 和 \(y\) 为实数，并且假设 \(y\leq x+5\)、\(x\leq -2\)。证明 \(x+y&lt;2\)。</p>
+<p>练习：在 Lean 中表示这个问题的解答。</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">example</span> <span class="o">{</span><span class="n">x</span> <span class="n">y</span> <span class="o">:</span> <span class="n">ℝ</span><span class="o">}</span> <span class="o">(</span><span class="n">h1</span> <span class="o">:</span> <span class="n">y</span> <span class="bp">≤</span> <span class="n">x</span> <span class="bp">+</span> <span class="mi">5</span><span class="o">)</span> <span class="o">(</span><span class="n">h2</span> <span class="o">:</span> <span class="n">x</span> <span class="bp">≤</span> <span class="bp">-</span><span class="mi">2</span><span class="o">)</span> <span class="o">:</span> <span class="n">x</span> <span class="bp">+</span> <span class="n">y</span> <span class="bp">&lt;</span> <span class="mi">2</span> <span class="o">:=</span>
   <span class="gr">sorry</span>
 </pre></div>
@@ -798,13 +798,13 @@ x &amp;=-3.\end{split}\]</div>
 </section>
 <section id="shorthand">
 <span id="id39"></span><h3>1.4.4. 例<a class="headerlink" href="#shorthand" title="此标题的永久链接"></a></h3>
-<p>解答</p>
-<div class="admonition-problem admonition" id="id40">
-<p class="admonition-title">练习：在 Lean 中表示这个问题的解答。</p>
 <p>在下面的问题中，请注意 \(0&lt;A\leq 1\) 和 \(x,y\leq B\) 等简写，它们用来简洁地表达若干相关不等式。你可以查看后面的 Lean 陈述，看看这些简写更明确地表示什么。</p>
+<div class="admonition-problem admonition" id="id40">
+<p class="admonition-title">问题</p>
+<p>设 \(u, v, x, y, A\) 和 \(B\) 为实数。假设已知 \(0&lt;A\leq 1, B\geq 1, x,y\leq B, 0\leq u&lt;A\) 且 \(0\leq v&lt;A\)。证明 \(uy+vx+uv&lt;3AB\)。</p>
 </div>
 <div class="admonition-solution admonition">
-<p class="admonition-title">问题</p>
+<p class="admonition-title">解答</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}uy+vx+uv&amp;\leq uB+vB+uv\\
 &amp;\leq AB+AB+Av\\
@@ -813,9 +813,9 @@ x &amp;=-3.\end{split}\]</div>
 &amp;&lt;AB+AB+BA \vphantom{&gt;}\\
 &amp;=3AB.\end{split}\]</div>
 </div>
-<p>设 \(u, v, x, y, A\) 和 \(B\) 为实数。假设已知 \(0&lt;A\leq 1, B\geq 1, x,y\leq B, 0\leq u&lt;A\) 且 \(0\leq v&lt;A\)。证明 \(uy+vx+uv&lt;3AB\)。</p>
-<p>解答</p>
 <p>在这个计算中，多次使用了关于不等式在乘法下保持方向的规则。例如，在第一步 \(uy+vx+uv\leq uB+vB+uv\) 中，使用给定事实 \(x\leq B\) 和 \(y\leq B\)，并结合规则：不等式 \(≤\) 在乘以非负常数时保持方向（这里的常数是 \(u\)）。在第二步 \(uB+vB+uv\leq AB+AB+Av\) 中，给定事实 \(u&lt; A\) 和 \(v&lt; A\) 分别乘以非负常数 \(B\) 和 \(v\)。</p>
+<p>重要的是，如果某个非负性证明是“显然”的，那么通常可以省略对你所乘常数非负性的形式证明。例如在这个例子中，\(B\) 的非负性来自给定假设 \(B\geq 1\)。Lean 策略 <code class="docutils literal notranslate"><span class="pre">rel</span></code> 也被设置为能推断这些“显然”的正性和非负性证明。</p>
+<p>练习：补全下面这个 Lean 解答中的 sorry。你需要判断每一步使用了九个假设中的哪一个。</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">example</span> <span class="o">{</span><span class="n">u</span> <span class="n">v</span> <span class="n">x</span> <span class="n">y</span> <span class="n">A</span> <span class="n">B</span> <span class="o">:</span> <span class="n">ℝ</span><span class="o">}</span> <span class="o">(</span><span class="n">h1</span> <span class="o">:</span> <span class="mi">0</span> <span class="bp">&lt;</span> <span class="n">A</span><span class="o">)</span> <span class="o">(</span><span class="n">h2</span> <span class="o">:</span> <span class="n">A</span> <span class="bp">≤</span> <span class="mi">1</span><span class="o">)</span> <span class="o">(</span><span class="n">h3</span> <span class="o">:</span> <span class="mi">1</span> <span class="bp">≤</span> <span class="n">B</span><span class="o">)</span> <span class="o">(</span><span class="n">h4</span> <span class="o">:</span> <span class="n">x</span> <span class="bp">≤</span> <span class="n">B</span><span class="o">)</span>
     <span class="o">(</span><span class="n">h5</span> <span class="o">:</span> <span class="n">y</span> <span class="bp">≤</span> <span class="n">B</span><span class="o">)</span> <span class="o">(</span><span class="n">h6</span> <span class="o">:</span> <span class="mi">0</span> <span class="bp">≤</span> <span class="n">u</span><span class="o">)</span> <span class="o">(</span><span class="n">h7</span> <span class="o">:</span> <span class="mi">0</span> <span class="bp">≤</span> <span class="n">v</span><span class="o">)</span> <span class="o">(</span><span class="n">h8</span> <span class="o">:</span> <span class="n">u</span> <span class="bp">&lt;</span> <span class="n">A</span><span class="o">)</span> <span class="o">(</span><span class="n">h9</span> <span class="o">:</span> <span class="n">v</span> <span class="bp">&lt;</span> <span class="n">A</span><span class="o">)</span> <span class="o">:</span>
     <span class="n">u</span> <span class="bp">*</span> <span class="n">y</span> <span class="bp">+</span> <span class="n">v</span> <span class="bp">*</span> <span class="n">x</span> <span class="bp">+</span> <span class="n">u</span> <span class="bp">*</span> <span class="n">v</span> <span class="bp">&lt;</span> <span class="mi">3</span> <span class="bp">*</span> <span class="n">A</span> <span class="bp">*</span> <span class="n">B</span> <span class="o">:=</span>
@@ -832,17 +832,17 @@ x &amp;=-3.\end{split}\]</div>
 </section>
 <section id="id41">
 <h3>1.4.5. 例<a class="headerlink" href="#id41" title="此标题的永久链接"></a></h3>
-<p>重要的是，如果某个非负性证明是“显然”的，那么通常可以省略对你所乘常数非负性的形式证明。例如在这个例子中，\(B\) 的非负性来自给定假设 \(B\geq 1\)。Lean 策略 <code class="docutils literal notranslate"><span class="pre">rel</span></code> 也被设置为能推断这些“显然”的正性和非负性证明。</p>
-<div class="admonition-problem admonition">
-<p class="admonition-title">练习：补全下面这个 Lean 解答中的 sorry。你需要判断每一步使用了九个假设中的哪一个。</p>
 <p>下面是一个有一点微妙之处的例子。</p>
-</div>
-<p>问题</p>
-<a class="reference internal image-reference" href="_images/cross_1.4.png"><img alt="_images/cross_1.4.png" class="align-center" src="_images/cross_1.4.png" style="width: 240px;"/></a>
+<div class="admonition-problem admonition">
+<p class="admonition-title">问题</p>
 <p>证明：若 \(t\) 为实数且 \(t\geq 10\)，则 \(t^2-3t+17\geq 5\)。</p>
+</div>
 <p>看到假设 \(t\geq 10\) 时，你也许会想把它直接“代入”表达式 \(t^2-3t+17\)。</p>
+<a class="reference internal image-reference" href="_images/cross_1.4.png"><img alt="_images/cross_1.4.png" class="align-center" src="_images/cross_1.4.png" style="width: 240px;"/></a>
+<p>这不是一个有效解答！由 \(t\geq 10\) 可以推出 \(t^2\geq 10^2\)（有一般规则：平方保持非负数之间的不等式），也可以推出 \(3t\geq 3\cdot 10\)（把不等式乘以非负常数）。但第二个不等式在取负时会反向，得到 \(-3t\leq -3\cdot 10\)，因此我们无法判断 \(t^2-3t+17\) 与 \(10^2-3\cdot 10+17\) 的相对大小。</p>
+<p>下面是本题的一个有效解答。我们不是立即从 \(t^2\) 降到 \(10^2\)，而是“降到一半”，到 \(10t\)。这样它就能抵消 \(-3t\) 项，与其合并成 \(7t\)；这个项的系数为正而非负，从而允许对给定事实 \(t\geq 10\) 作有效的进一步代换。</p>
 <div class="admonition-solution admonition">
-<p class="admonition-title">这不是一个有效解答！由 \(t\geq 10\) 可以推出 \(t^2\geq 10^2\)（有一般规则：平方保持非负数之间的不等式），也可以推出 \(3t\geq 3\cdot 10\)（把不等式乘以非负常数）。但第二个不等式在取负时会反向，得到 \(-3t\leq -3\cdot 10\)，因此我们无法判断 \(t^2-3t+17\) 与 \(10^2-3\cdot 10+17\) 的相对大小。</p>
+<p class="admonition-title">解答</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}t^2-3t+17&amp;=t\cdot t-3t+17\\
 &amp;\geq 10t-3t+17\\
@@ -850,7 +850,7 @@ x &amp;=-3.\end{split}\]</div>
 &amp;\geq 7\cdot 10+17\\
 &amp;\geq 5.\end{split}\]</div>
 </div>
-<p>下面是本题的一个有效解答。我们不是立即从 \(t^2\) 降到 \(10^2\)，而是“降到一半”，到 \(10t\)。这样它就能抵消 \(-3t\) 项，与其合并成 \(7t\)；这个项的系数为正而非负，从而允许对给定事实 \(t\geq 10\) 作有效的进一步代换。</p>
+<p>练习：补全下面这个 Lean 解答中的 sorry。也请试着在 Lean 中写出那个错误解答，并检查 Lean 是否会报错。</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">example</span> <span class="o">{</span><span class="n">t</span> <span class="o">:</span> <span class="n">ℚ</span><span class="o">}</span> <span class="o">(</span><span class="n">ht</span> <span class="o">:</span> <span class="n">t</span> <span class="bp">≥</span> <span class="mi">10</span><span class="o">)</span> <span class="o">:</span> <span class="n">t</span> <span class="bp">^</span> <span class="mi">2</span> <span class="bp">-</span> <span class="mi">3</span> <span class="bp">*</span> <span class="n">t</span> <span class="bp">-</span> <span class="mi">17</span> <span class="bp">≥</span> <span class="mi">5</span> <span class="o">:=</span>
   <span class="k">calc</span>
     <span class="n">t</span> <span class="bp">^</span> <span class="mi">2</span> <span class="bp">-</span> <span class="mi">3</span> <span class="bp">*</span> <span class="n">t</span> <span class="bp">-</span> <span class="mi">17</span>
@@ -864,29 +864,29 @@ x &amp;=-3.\end{split}\]</div>
 </section>
 <section id="id42">
 <h3>1.4.6. 例<a class="headerlink" href="#id42" title="此标题的永久链接"></a></h3>
-<p>解答</p>
-<div class="admonition-problem admonition">
-<p class="admonition-title">练习：补全下面这个 Lean 解答中的 sorry。也请试着在 Lean 中写出那个错误解答，并检查 Lean 是否会报错。</p>
 <p>下面还有一个容易出错的问题。</p>
-</div>
-<p>问题</p>
+<div class="admonition-problem admonition">
+<p class="admonition-title">问题</p>
 <p>设 \(n\geq 5\) 为整数。证明 \(n ^ 2 &gt; 2n + 11\)。</p>
+</div>
+<p>注意，“设 \(n\geq 5\) 为整数”（如上题所用）是常见简写，意思是“设 \(n\) 为整数，并假设 \(n\geq 5\)”。</p>
+<p>下面是本题一个错误的“代换”解答：</p>
 <blockquote>
 <div><div class="math notranslate nohighlight">
 \[\begin{split}n^2&amp;\geq 5^2\\
 &amp;&gt; 2 \cdot 5+11\\
 &amp;\leq 2n+11.\end{split}\]</div>
 </div></blockquote>
-<p>注意，“设 \(n\geq 5\) 为整数”（如上题所用）是常见简写，意思是“设 \(n\) 为整数，并假设 \(n\geq 5\)”。</p>
-<ul class="simple">
-<li>代数重排步骤和前面一样，用 <code class="docutils literal notranslate"><span class="pre">ring</span></code> 说明理由。</li>
-<li>“类似代换”的步骤用策略 <code class="docutils literal notranslate"><span class="pre">rel</span></code> 说明理由，并指出正在“代入”的不等式；但要注意，如果相关运算下不存在保持或反转不等式方向的规则，那么在这种情况下使用它会失败。</li>
-<li>“数值事实”用策略 <code class="docutils literal notranslate"><span class="pre">numbers</span></code> 说明理由。（这个策略也可以说明关于等式的“数值事实”，例如 \(4^2+4\cdot 1=20\)；我们之前对此使用的是 <code class="docutils literal notranslate"><span class="pre">ring</span></code> 策略。）</li>
-</ul>
-<p>下面是本题一个错误的“代换”解答：</p>
 <p>错在哪里？每一个单独的推理都是有效的：</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(n^2\geq 5^2\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(5^2&gt; 2 \cdot 5+11\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(2 \cdot 5+11\leq 2n+11\)</span></p></li>
+</ul>
+<p>但是符号序列 \(\geq\)、\(&gt;\)、\(\leq\) 不能传递地合并。（如果 \(A&gt;B\) 且 \(B\leq C\)，我们无法得出 \(A\) 与 \(C\) 相对大小的结论。）</p>
+<p>下面是本题的正确解答。技巧仍然是在第一步更细致一些：先只从 \(n^2\) 降到 \(5n\)，而不是降到 \(5^2\)。</p>
 <div class="admonition-solution admonition">
-<p class="admonition-title">但是符号序列 \(\geq\)、\(&gt;\)、\(\leq\) 不能传递地合并。（如果 \(A&gt;B\) 且 \(B\leq C\)，我们无法得出 \(A\) 与 \(C\) 相对大小的结论。）</p>
+<p class="admonition-title">解答</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}n^2&amp;=n\cdot n\\
 &amp;\geq 5n\\
@@ -895,28 +895,28 @@ x &amp;=-3.\end{split}\]</div>
 &amp;= 2n + 11 + 4\\
 &amp;&gt;2n+11.\end{split}\]</div>
 </div>
-<p>下面是本题的正确解答。技巧仍然是在第一步更细致一些：先只从 \(n^2\) 降到 \(5n\)，而不是降到 \(5^2\)。</p>
+<p>练习：在 Lean 中表示这个问题的解答。也请试着在 Lean 中写出那个错误解答，并检查 Lean 是否会报错。</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">example</span> <span class="o">{</span><span class="n">n</span> <span class="o">:</span> <span class="n">ℤ</span><span class="o">}</span> <span class="o">(</span><span class="n">hn</span> <span class="o">:</span> <span class="n">n</span> <span class="bp">≥</span> <span class="mi">5</span><span class="o">)</span> <span class="o">:</span> <span class="n">n</span> <span class="bp">^</span> <span class="mi">2</span> <span class="bp">&gt;</span> <span class="mi">2</span> <span class="bp">*</span> <span class="n">n</span> <span class="bp">+</span> <span class="mi">11</span> <span class="o">:=</span>
   <span class="gr">sorry</span>
 </pre></div>
 </div>
-<p>解答</p>
+<p>事实上，在写出正确解答时，你可能会发现最后一步很难说明理由。学完下一个例子后，再回来看那一步。</p>
 </section>
 <section id="sq-nonneg">
 <span id="id43"></span><h3>1.4.7. 例<a class="headerlink" href="#sq-nonneg" title="此标题的永久链接"></a></h3>
-<p>练习：在 Lean 中表示这个问题的解答。也请试着在 Lean 中写出那个错误解答，并检查 Lean 是否会报错。</p>
-<div class="admonition-problem admonition">
-<p class="admonition-title">事实上，在写出正确解答时，你可能会发现最后一步很难说明理由。学完下一个例子后，再回来看那一步。</p>
 <p>下一个例子包含一个新技巧。</p>
+<div class="admonition-problem admonition">
+<p class="admonition-title">问题</p>
+<p>设 \(m\) 和 \(n\) 为整数，并且假设 \(m ^ 2 + n \le 2\)。证明 \(n \le 2\)。</p>
 </div>
-<p>问题</p>
+<p>我们通过观察平方为正来解决这个问题，所以 \(n\) 必定小于 \(m ^ 2 + n\)。（严格地说，是“小于或等于”。）因此，既然 \(m ^ 2 + n\) 有上界 2，这个上界也必定适用于更小的数 \(n\)。</p>
 <div class="admonition-solution admonition">
-<p class="admonition-title">设 \(m\) 和 \(n\) 为整数，并且假设 \(m ^ 2 + n \le 2\)。证明 \(n \le 2\)。</p>
+<p class="admonition-title">解答</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}n&amp;\le m ^ 2 + n\\
 &amp;\le 2.\end{split}\]</div>
 </div>
-<p>我们通过观察平方为正来解决这个问题，所以 \(n\) 必定小于 \(m ^ 2 + n\)。（严格地说，是“小于或等于”。）因此，既然 \(m ^ 2 + n\) 有上界 2，这个上界也必定适用于更小的数 \(n\)。</p>
+<p>Lean 知道平方为正，并能默默处理这种论证。</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">example</span> <span class="o">{</span><span class="n">m</span> <span class="n">n</span> <span class="o">:</span> <span class="n">ℤ</span><span class="o">}</span> <span class="o">(</span><span class="n">h</span> <span class="o">:</span> <span class="n">m</span> <span class="bp">^</span> <span class="mi">2</span> <span class="bp">+</span> <span class="n">n</span> <span class="bp">≤</span> <span class="mi">2</span><span class="o">)</span> <span class="o">:</span> <span class="n">n</span> <span class="bp">≤</span> <span class="mi">2</span> <span class="o">:=</span>
   <span class="k">calc</span>
     <span class="n">n</span> <span class="bp">≤</span> <span class="n">m</span> <span class="bp">^</span> <span class="mi">2</span> <span class="bp">+</span> <span class="n">n</span> <span class="o">:=</span> <span class="kd">by</span> <span class="n">extra</span>
@@ -926,20 +926,20 @@ x &amp;=-3.\end{split}\]</div>
 </section>
 <section id="id44">
 <h3>1.4.8. 例<a class="headerlink" href="#id44" title="此标题的永久链接"></a></h3>
-<p>解答</p>
-<div class="admonition-problem admonition" id="id45">
-<p class="admonition-title">Lean 知道平方为正，并能默默处理这种论证。</p>
 <p>利用平方非负是证明不等式的一种非常常见的方法。下面是另一个例子，在其中要想出恰好应该加上的平方 \((x-y)^2\)，需要一点巧思。</p>
+<div class="admonition-problem admonition" id="id45">
+<p class="admonition-title">问题</p>
+<p>设 \(x\) 和 \(y\) 为实数，并且假设 \(x ^ 2 + y ^ 2 \le 1\)。证明 \((x + y) ^ 2 &lt; 3\)。</p>
 </div>
 <div class="admonition-solution admonition">
-<p class="admonition-title">问题</p>
+<p class="admonition-title">解答</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}(x + y) ^ 2 &amp;\le (x + y) ^ 2 + (x - y) ^ 2\\
 &amp;= 2 (x ^ 2 + y ^ 2)\\
 &amp;\le 2 \cdot 1\\
 &amp;&lt; 3.\end{split}\]</div>
 </div>
-<p>设 \(x\) 和 \(y\) 为实数，并且假设 \(x ^ 2 + y ^ 2 \le 1\)。证明 \((x + y) ^ 2 &lt; 3\)。</p>
+<p>练习：补全下面这个 Lean 解答中的 sorry。</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">example</span> <span class="o">{</span><span class="n">x</span> <span class="n">y</span> <span class="o">:</span> <span class="n">ℝ</span><span class="o">}</span> <span class="o">(</span><span class="n">h</span> <span class="o">:</span> <span class="n">x</span> <span class="bp">^</span> <span class="mi">2</span> <span class="bp">+</span> <span class="n">y</span> <span class="bp">^</span> <span class="mi">2</span> <span class="bp">≤</span> <span class="mi">1</span><span class="o">)</span> <span class="o">:</span> <span class="o">(</span><span class="n">x</span> <span class="bp">+</span> <span class="n">y</span><span class="o">)</span> <span class="bp">^</span> <span class="mi">2</span> <span class="bp">&lt;</span> <span class="mi">3</span> <span class="o">:=</span>
   <span class="k">calc</span>
     <span class="o">(</span><span class="n">x</span> <span class="bp">+</span> <span class="n">y</span><span class="o">)</span> <span class="bp">^</span> <span class="mi">2</span> <span class="bp">≤</span> <span class="o">(</span><span class="n">x</span> <span class="bp">+</span> <span class="n">y</span><span class="o">)</span> <span class="bp">^</span> <span class="mi">2</span> <span class="bp">+</span> <span class="o">(</span><span class="n">x</span> <span class="bp">-</span> <span class="n">y</span><span class="o">)</span> <span class="bp">^</span> <span class="mi">2</span> <span class="o">:=</span> <span class="kd">by</span> <span class="gr">sorry</span>
@@ -951,13 +951,13 @@ x &amp;=-3.\end{split}\]</div>
 </section>
 <section id="id46">
 <h3>1.4.9. 例<a class="headerlink" href="#id46" title="此标题的永久链接"></a></h3>
-<p>解答</p>
-<div class="admonition-problem admonition" id="id47">
-<p class="admonition-title">练习：补全下面这个 Lean 解答中的 sorry。</p>
 <p>同一个技巧再来一次……</p>
+<div class="admonition-problem admonition" id="id47">
+<p class="admonition-title">问题</p>
+<p>设 \(a\) 和 \(b\) 为非负有理数，并且假设 \(a+b\leq 8\)。证明 \(3ab+a \leq 7b+72\)。</p>
 </div>
 <div class="admonition-solution admonition">
-<p class="admonition-title">问题</p>
+<p class="admonition-title">解答</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}3ab+a&amp;\leq 2b^2+a^2+(3ab+a)\\
 &amp;=2(a+b)b+(a+b)a+a\\
@@ -966,7 +966,7 @@ x &amp;=-3.\end{split}\]</div>
 &amp;\leq 7b+9\cdot 8\\
 &amp;=7b+72.\end{split}\]</div>
 </div>
-<p>设 \(a\) 和 \(b\) 为非负有理数，并且假设 \(a+b\leq 8\)。证明 \(3ab+a \leq 7b+72\)。</p>
+<p>练习：补全下面这个 Lean 解答中的 sorry。</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">example</span> <span class="o">{</span><span class="n">a</span> <span class="n">b</span> <span class="o">:</span> <span class="n">ℚ</span><span class="o">}</span> <span class="o">(</span><span class="n">h1</span> <span class="o">:</span> <span class="n">a</span> <span class="bp">≥</span> <span class="mi">0</span><span class="o">)</span> <span class="o">(</span><span class="n">h2</span> <span class="o">:</span> <span class="n">b</span> <span class="bp">≥</span> <span class="mi">0</span><span class="o">)</span> <span class="o">(</span><span class="n">h3</span> <span class="o">:</span> <span class="n">a</span> <span class="bp">+</span> <span class="n">b</span> <span class="bp">≤</span> <span class="mi">8</span><span class="o">)</span> <span class="o">:</span>
     <span class="mi">3</span> <span class="bp">*</span> <span class="n">a</span> <span class="bp">*</span> <span class="n">b</span> <span class="bp">+</span> <span class="n">a</span> <span class="bp">≤</span> <span class="mi">7</span> <span class="bp">*</span> <span class="n">b</span> <span class="bp">+</span> <span class="mi">72</span> <span class="o">:=</span>
   <span class="k">calc</span>
@@ -982,13 +982,13 @@ x &amp;=-3.\end{split}\]</div>
 </section>
 <section id="id48">
 <h3>1.4.10. 例<a class="headerlink" href="#id48" title="此标题的永久链接"></a></h3>
-<p>解答</p>
-<div class="admonition-problem admonition">
-<p class="admonition-title">练习：补全下面这个 Lean 解答中的 sorry。</p>
 <p>最后，这是这个技巧的一个特别惊人的例子<a class="footnote-reference brackets" href="#id55" id="id52">3</a>，它调用了三个不同平方的非负性：\((a ^ 2 (b ^ 2 - c ^ 2)) ^ 2\)、\((b ^ 4 - c ^ 4) ^ 2\) 和 \((a ^ 2 b c - b ^ 2 c ^ 2) ^ 2\)。</p>
+<div class="admonition-problem admonition">
+<p class="admonition-title">问题</p>
+<p>设 \(a\)、\(b\) 和 \(c\) 为实数。证明 \(a ^ 2 (a ^ 6 + 8 b ^ 3 c ^ 3) ≤ (a ^ 4 + b ^ 4 + c ^ 4) ^ 2\)。</p>
 </div>
 <div class="admonition-solution admonition">
-<p class="admonition-title">问题</p>
+<p class="admonition-title">解答</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}&amp;a ^ 2 (a ^ 6 + 8 b ^ 3 c ^ 3)\\
 &amp;\le 2  (a ^ 2 (b ^ 2 - c ^ 2)) ^ 2 + (b ^ 4 - c ^ 4) ^ 2 +
@@ -1027,64 +1027,64 @@ x &amp;=-3.\end{split}\]</div>
 </pre></div>
 </div>
 </li>
-<li><p>设 \(x\) 和 \(y\) 为整数，并且假设 \(x+3 \geq 2y\)、\(1 \le y\)。证明 \(x \geq -1\)。</p>
+<li><p>设 \(n\geq 10\) 为整数。证明 \(n ^ 4 - 2n ^ 2 &gt; 3n ^ 3\)。</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">example</span> <span class="o">{</span><span class="n">n</span> <span class="o">:</span> <span class="n">ℤ</span><span class="o">}</span> <span class="o">(</span><span class="n">hn</span> <span class="o">:</span> <span class="n">n</span> <span class="bp">≥</span> <span class="mi">10</span><span class="o">)</span> <span class="o">:</span> <span class="n">n</span> <span class="bp">^</span> <span class="mi">4</span> <span class="bp">-</span> <span class="mi">2</span> <span class="bp">*</span> <span class="n">n</span> <span class="bp">^</span> <span class="mi">2</span> <span class="bp">&gt;</span> <span class="mi">3</span> <span class="bp">*</span> <span class="n">n</span> <span class="bp">^</span> <span class="mi">3</span> <span class="o">:=</span>
   <span class="gr">sorry</span>
 </pre></div>
 </div>
 </li>
-<li><p>设 \(a\) 和 \(b\) 为有理数，并且假设 \(3 \leq a\)、\(a+2b\geq 4\)。证明 \(a+b\geq 3\)。</p>
+<li><p>设 \(n\geq 5\) 为整数。证明 \(n ^ 2 - 2n + 3 &gt; 14\)。</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">example</span> <span class="o">{</span><span class="n">n</span> <span class="o">:</span> <span class="n">ℤ</span><span class="o">}</span> <span class="o">(</span><span class="n">h1</span> <span class="o">:</span> <span class="n">n</span> <span class="bp">≥</span> <span class="mi">5</span><span class="o">)</span> <span class="o">:</span> <span class="n">n</span> <span class="bp">^</span> <span class="mi">2</span> <span class="bp">-</span> <span class="mi">2</span> <span class="bp">*</span> <span class="n">n</span> <span class="bp">+</span> <span class="mi">3</span> <span class="bp">&gt;</span> <span class="mi">14</span> <span class="o">:=</span>
   <span class="gr">sorry</span>
 </pre></div>
 </div>
 </li>
-<li><p>设 \(x\) 为整数，且 \(x\geq 9\)。证明 \(x ^ 3 - 8x ^ 2 + 2x \geq 3\)。</p>
+<li><p>设 \(x\) 为有理数。证明 \(x ^ 2 - 2x \ge -1\)。</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">example</span> <span class="o">{</span><span class="n">x</span> <span class="o">:</span> <span class="n">ℚ</span><span class="o">}</span> <span class="o">:</span> <span class="n">x</span> <span class="bp">^</span> <span class="mi">2</span> <span class="bp">-</span> <span class="mi">2</span> <span class="bp">*</span> <span class="n">x</span> <span class="bp">≥</span> <span class="bp">-</span><span class="mi">1</span> <span class="o">:=</span>
   <span class="gr">sorry</span>
 </pre></div>
 </div>
 </li>
-<li><p>设 \(n\geq 10\) 为整数。证明 \(n ^ 4 - 2n ^ 2 &gt; 3n ^ 3\)。</p>
+<li><p>设 \(a\) 和 \(b\) 为实数。证明 \(a ^ 2 + b ^ 2 \ge 2ab\)。</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">example</span> <span class="o">(</span><span class="n">a</span> <span class="n">b</span> <span class="o">:</span> <span class="n">ℝ</span><span class="o">)</span> <span class="o">:</span> <span class="n">a</span> <span class="bp">^</span> <span class="mi">2</span> <span class="bp">+</span> <span class="n">b</span> <span class="bp">^</span> <span class="mi">2</span> <span class="bp">≥</span> <span class="mi">2</span> <span class="bp">*</span> <span class="n">a</span> <span class="bp">*</span> <span class="n">b</span> <span class="o">:=</span>
   <span class="gr">sorry</span>
 </pre></div>
 </div>
 </li>
 </ol>
-<p class="rubric">设 \(a\)、\(b\) 和 \(c\) 为实数。证明 \(a ^ 2 (a ^ 6 + 8 b ^ 3 c ^ 3) ≤ (a ^ 4 + b ^ 4 + c ^ 4) ^ 2\)。</p>
+<p class="rubric">脚注</p>
 <dl class="footnote brackets">
-<dt class="label" id="id51">若 \(m \le 8 - n\)，则 \(10&gt;m+n\)。</dt>
+<dt class="label" id="id51"><span class="brackets"><a class="fn-backref" href="#id49">3</a></span></dt>
 <dd>改编自 IMO 2001，第 2 题。</dd>
 </dl>
 </section>
 </section>
 <section id="a-shortcut">
 <span id="shortcut"></span><h2>1.5. 一种简便写法<a class="headerlink" href="#a-shortcut" title="此标题的永久链接"></a></h2>
-<p>解答</p>
-<div class="admonition-problem admonition">
-<p class="admonition-title">脚注</p>
-<p>改编自 IMO 2001，第 2 题。</p>
-</div>
 <p>我们已经解决的一些问题，其实一眼就能看出答案。比如 <a class="reference internal" href="#easy-eq"><span class="std std-numref">例 1.3.2</span></a>：</p>
+<div class="admonition-problem admonition">
+<p class="admonition-title">问题</p>
+<p>设 \(x\) 为整数，并且假设 \(x+4=2\)。证明 \(x=-2\)。</p>
+</div>
+<p>我们用如下计算解决了它：</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}x&amp;=(x+4)-4\\
 &amp;=2-4\\
 &amp;=-2,\end{split}\]</div>
-<p>问题</p>
-<p>设 \(x\) 为整数，并且假设 \(x+4=2\)。证明 \(x=-2\)。</p>
-<p>我们用如下计算解决了它：</p>
+<p>但说实话，这似乎有点小题大做。</p>
+<p>在本书中，我们按如下方式划线：如果一个事实能仅仅通过在两边加减项（不涉及乘法、除法等）从另一个事实推出，那么就不需要写出完整的计算式证明。</p>
+<p>为了在 Lean 中使用，我提供了一个策略 <code class="docutils literal notranslate"><span class="pre">addarith</span></code>，它会执行这种简单推导。下面是在上例中的用法：</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">example</span> <span class="o">{</span><span class="n">x</span> <span class="o">:</span> <span class="n">ℤ</span><span class="o">}</span> <span class="o">(</span><span class="n">h1</span> <span class="o">:</span> <span class="n">x</span> <span class="bp">+</span> <span class="mi">4</span> <span class="bp">=</span> <span class="mi">2</span><span class="o">)</span> <span class="o">:</span> <span class="n">x</span> <span class="bp">=</span> <span class="bp">-</span><span class="mi">2</span> <span class="o">:=</span> <span class="kd">by</span> <span class="n">addarith</span> <span class="o">[</span><span class="n">h1</span><span class="o">]</span>
 </pre></div>
 </div>
-<p>但说实话，这似乎有点小题大做。</p>
+<p>下面还有一些只涉及加减项的推导；因此，对这些推导我们也不要求写出显式的计算式证明：</p>
 <ul>
-<li><p>设 \(n\geq 5\) 为整数。证明 \(n ^ 2 - 2n + 3 &gt; 14\)。</p>
+<li><p>若 \(a-2b=1\)，则 \(a=2b+1\)。</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">example</span> <span class="o">{</span><span class="n">a</span> <span class="n">b</span> <span class="o">:</span> <span class="n">ℤ</span><span class="o">}</span> <span class="o">(</span><span class="n">ha</span> <span class="o">:</span> <span class="n">a</span> <span class="bp">-</span> <span class="mi">2</span> <span class="bp">*</span> <span class="n">b</span> <span class="bp">=</span> <span class="mi">1</span><span class="o">)</span> <span class="o">:</span> <span class="n">a</span> <span class="bp">=</span> <span class="mi">2</span> <span class="bp">*</span> <span class="n">b</span> <span class="bp">+</span> <span class="mi">1</span> <span class="o">:=</span> <span class="kd">by</span> <span class="n">addarith</span> <span class="o">[</span><span class="n">ha</span><span class="o">]</span>
 </pre></div>
 </div>
 </li>
-<li><p>设 \(x\) 为有理数。证明 \(x ^ 2 - 2x \ge -1\)。</p>
+<li><p>若 \(x=2\) 且 \(y ^ 2 = -7\)，则 \(x+y^2=-5\)。</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">example</span> <span class="o">{</span><span class="n">x</span> <span class="n">y</span> <span class="o">:</span> <span class="n">ℚ</span><span class="o">}</span> <span class="o">(</span><span class="n">hx</span> <span class="o">:</span> <span class="n">x</span> <span class="bp">=</span> <span class="mi">2</span><span class="o">)</span> <span class="o">(</span><span class="n">hy</span> <span class="o">:</span> <span class="n">y</span> <span class="bp">^</span> <span class="mi">2</span> <span class="bp">=</span> <span class="bp">-</span><span class="mi">7</span><span class="o">)</span> <span class="o">:</span> <span class="n">x</span> <span class="bp">+</span> <span class="n">y</span> <span class="bp">^</span> <span class="mi">2</span> <span class="bp">=</span> <span class="bp">-</span><span class="mi">5</span> <span class="o">:=</span>
   <span class="k">calc</span>
     <span class="n">x</span> <span class="bp">+</span> <span class="n">y</span> <span class="bp">^</span> <span class="mi">2</span> <span class="bp">=</span> <span class="n">x</span> <span class="bp">-</span> <span class="mi">7</span> <span class="o">:=</span> <span class="kd">by</span> <span class="n">addarith</span> <span class="o">[</span><span class="n">hy</span><span class="o">]</span>
@@ -1093,26 +1093,26 @@ x &amp;=-3.\end{split}\]</div>
 </div>
 </li>
 </ul>
-<p>在本书中，我们按如下方式划线：如果一个事实能仅仅通过在两边加减项（不涉及乘法、除法等）从另一个事实推出，那么就不需要写出完整的计算式证明。</p>
+<p>对于不等式也可以这样做，只要不等式推导中涉及的全部只是加减项。例如：</p>
 <ul>
-<li><p>设 \(a\) 和 \(b\) 为实数。证明 \(a ^ 2 + b ^ 2 \ge 2ab\)。</p>
+<li><p>若 \(t=4-st\)，则 \(t+st&gt;0\)。</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">example</span> <span class="o">{</span><span class="n">s</span> <span class="n">t</span> <span class="o">:</span> <span class="n">ℝ</span><span class="o">}</span> <span class="o">(</span><span class="n">h</span> <span class="o">:</span> <span class="n">t</span> <span class="bp">=</span> <span class="mi">4</span> <span class="bp">-</span> <span class="n">s</span> <span class="bp">*</span> <span class="n">t</span><span class="o">)</span> <span class="o">:</span> <span class="n">t</span> <span class="bp">+</span> <span class="n">s</span> <span class="bp">*</span> <span class="n">t</span> <span class="bp">&gt;</span> <span class="mi">0</span> <span class="o">:=</span> <span class="kd">by</span> <span class="n">addarith</span> <span class="o">[</span><span class="n">h</span><span class="o">]</span>
 </pre></div>
 </div>
 </li>
-<li><p>若 \(a-2b=1\)，则 \(a=2b+1\)。</p>
+<li><p>若 \(m \le 8 - n\)，则 \(10&gt;m+n\)。</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">example</span> <span class="o">{</span><span class="n">m</span> <span class="n">n</span> <span class="o">:</span> <span class="n">ℝ</span><span class="o">}</span> <span class="o">(</span><span class="n">h1</span> <span class="o">:</span> <span class="n">m</span> <span class="bp">≤</span> <span class="mi">8</span> <span class="bp">-</span> <span class="n">n</span><span class="o">)</span> <span class="o">:</span> <span class="mi">10</span> <span class="bp">&gt;</span> <span class="n">m</span> <span class="bp">+</span> <span class="n">n</span> <span class="o">:=</span> <span class="kd">by</span> <span class="n">addarith</span> <span class="o">[</span><span class="n">h1</span><span class="o">]</span>
 </pre></div>
 </div>
 </li>
 </ul>
-<p>为了在 Lean 中使用，我提供了一个策略 <code class="docutils literal notranslate"><span class="pre">addarith</span></code>，它会执行这种简单推导。下面是在上例中的用法：</p>
+<p>但在 <a class="reference internal" href="#eq-with-div"><span class="std std-numref">例 1.3.4</span></a> 中，有一个推导需要除法，而不只是加法和减法：若 \(3w+1=4\)，则 \(w=1\)。</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}w&amp;=\frac{3w+1}{3}-\frac{1}{3}\\
 &amp;=\frac{4}{3}-\frac{1}{3}\\
 &amp;=1.\end{split}\]</div>
-<p>下面还有一些只涉及加减项的推导；因此，对这些推导我们也不要求写出显式的计算式证明：</p>
-<p>对于不等式也可以这样做，只要不等式推导中涉及的全部只是加减项。例如：</p>
+<p>我们仍然要求这种证明完整写出。</p>
+<p>请检查 <code class="docutils literal notranslate"><span class="pre">addarith</span></code> 不能验证这个推导。</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">example</span> <span class="o">{</span><span class="n">w</span> <span class="o">:</span> <span class="n">ℚ</span><span class="o">}</span> <span class="o">(</span><span class="n">h1</span> <span class="o">:</span> <span class="mi">3</span> <span class="bp">*</span> <span class="n">w</span> <span class="bp">+</span> <span class="mi">1</span> <span class="bp">=</span> <span class="mi">4</span><span class="o">)</span> <span class="o">:</span> <span class="n">w</span> <span class="bp">=</span> <span class="mi">1</span> <span class="o">:=</span> <span class="gr">sorry</span>
 </pre></div>
 </div>
