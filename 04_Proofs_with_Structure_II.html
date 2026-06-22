@@ -420,37 +420,37 @@ hb2 : ∀ (y : ℝ), y ^ 2 ≤ 2 → y ≤ b
 <section id="exercises">
 <h3>4.1.10. 练习<a class="headerlink" href="#exercises" title="此标题的永久链接"></a></h3>
 <ol class="arabic">
-<li><p>（5、6、7、8 的情形依此类推。）</p>
+<li><p>设 \(a\) 为有理数，并假设对所有有理数 \(b\)，都有 \(a\ge -3+4b-b^2\)。证明 \(a\ge 1\)。</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">example</span> <span class="o">{</span><span class="n">a</span> <span class="o">:</span> <span class="n">ℚ</span><span class="o">}</span> <span class="o">(</span><span class="n">h</span> <span class="o">:</span> <span class="bp">∀</span> <span class="n">b</span> <span class="o">:</span> <span class="n">ℚ</span><span class="o">,</span> <span class="n">a</span> <span class="bp">≥</span> <span class="bp">-</span><span class="mi">3</span> <span class="bp">+</span> <span class="mi">4</span> <span class="bp">*</span> <span class="n">b</span> <span class="bp">-</span> <span class="n">b</span> <span class="bp">^</span> <span class="mi">2</span><span class="o">)</span> <span class="o">:</span> <span class="n">a</span> <span class="bp">≥</span> <span class="mi">1</span> <span class="o">:=</span>
   <span class="gr">sorry</span>
 </pre></div>
 </div>
 </li>
-<li><p>设 \(a\) 为有理数，并假设对所有有理数 \(b\)，都有 \(a\ge -3+4b-b^2\)。证明 \(a\ge 1\)。</p>
+<li><p>设 \(n\) 为整数，并假设每个介于 1 与 5 之间的整数 \(m\) 都是 \(n\) 的因子。证明 15 是 \(n\) 的因子。（你可能需要复习第 3.5 节。）</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">example</span> <span class="o">{</span><span class="n">n</span> <span class="o">:</span> <span class="n">ℤ</span><span class="o">}</span> <span class="o">(</span><span class="n">hn</span> <span class="o">:</span> <span class="bp">∀</span> <span class="n">m</span><span class="o">,</span> <span class="mi">1</span> <span class="bp">≤</span> <span class="n">m</span> <span class="bp">→</span> <span class="n">m</span> <span class="bp">≤</span> <span class="mi">5</span> <span class="bp">→</span> <span class="n">m</span> <span class="bp">∣</span> <span class="n">n</span><span class="o">)</span> <span class="o">:</span> <span class="mi">15</span> <span class="bp">∣</span> <span class="n">n</span> <span class="o">:=</span> <span class="kd">by</span>
   <span class="gr">sorry</span>
 </pre></div>
 </div>
 </li>
-<li><p>设 \(n\) 为整数，并假设每个介于 1 与 5 之间的整数 \(m\) 都是 \(n\) 的因子。证明 15 是 \(n\) 的因子。（你可能需要复习第 3.5 节。）</p>
+<li><p>证明：存在自然数 \(n\)，使得每个自然数 \(m\) 都至少为 \(n\)。</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">example</span> <span class="o">:</span> <span class="bp">∃</span> <span class="n">n</span> <span class="o">:</span> <span class="n">ℕ</span><span class="o">,</span> <span class="bp">∀</span> <span class="n">m</span> <span class="o">:</span> <span class="n">ℕ</span><span class="o">,</span> <span class="n">n</span> <span class="bp">≤</span> <span class="n">m</span> <span class="o">:=</span> <span class="kd">by</span>
   <span class="gr">sorry</span>
 </pre></div>
 </div>
 </li>
-<li><p>证明：存在自然数 \(n\)，使得每个自然数 \(m\) 都至少为 \(n\)。</p>
+<li><p>证明：存在实数 \(a\)，使得对所有实数 \(b\)，存在实数 \(c\)，满足 \(a + b &lt; c\)。</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">example</span> <span class="o">:</span> <span class="bp">∃</span> <span class="n">a</span> <span class="o">:</span> <span class="n">ℝ</span><span class="o">,</span> <span class="bp">∀</span> <span class="n">b</span> <span class="o">:</span> <span class="n">ℝ</span><span class="o">,</span> <span class="bp">∃</span> <span class="n">c</span> <span class="o">:</span> <span class="n">ℝ</span><span class="o">,</span> <span class="n">a</span> <span class="bp">+</span> <span class="n">b</span> <span class="bp">&lt;</span> <span class="n">c</span> <span class="o">:=</span> <span class="kd">by</span>
   <span class="gr">sorry</span>
 </pre></div>
 </div>
 </li>
-<li><p>证明：存在实数 \(a\)，使得对所有实数 \(b\)，存在实数 \(c\)，满足 \(a + b &lt; c\)。</p>
+<li><p>证明：对所有充分大的实数 \(x\)，都有 \(x ^ 3 + 3 x ≥ 7 x ^ 2 + 12\)。</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">example</span> <span class="o">:</span> <span class="n">forall_sufficiently_large</span> <span class="n">x</span> <span class="o">:</span> <span class="n">ℝ</span><span class="o">,</span> <span class="n">x</span> <span class="bp">^</span> <span class="mi">3</span> <span class="bp">+</span> <span class="mi">3</span> <span class="bp">*</span> <span class="n">x</span> <span class="bp">≥</span> <span class="mi">7</span> <span class="bp">*</span> <span class="n">x</span> <span class="bp">^</span> <span class="mi">2</span> <span class="bp">+</span> <span class="mi">12</span> <span class="o">:=</span> <span class="kd">by</span>
   <span class="gr">sorry</span>
 </pre></div>
 </div>
 </li>
-<li><p>证明：对所有充分大的实数 \(x\)，都有 \(x ^ 3 + 3 x ≥ 7 x ^ 2 + 12\)。</p>
+<li><p>证明 45 不是素数。你可以像例 4.1.9 中那样使用 Lean 引理 <code class="docutils literal notranslate"><span class="pre">not_prime</span></code>。</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">example</span> <span class="o">:</span> <span class="bp">¬</span><span class="o">(</span><span class="n">Prime</span> <span class="mi">45</span><span class="o">)</span> <span class="o">:=</span> <span class="kd">by</span>
   <span class="gr">sorry</span>
 </pre></div>
@@ -459,7 +459,7 @@ hb2 : ∀ (y : ℝ), y ^ 2 ≤ 2 → y ≤ b
 </ol>
 <p class="rubric">脚注</p>
 <dl class="footnote brackets">
-<dt class="label" id="id11">证明 97 是素数。</dt>
+<dt class="label" id="id11"><span class="brackets"><a class="fn-backref" href="#id5">1</a></span></dt>
 <dd>也就是说，\(a\) 是平方至多为 2 的实数集合中的最大元。</dd>
 </dl>
 </section>
@@ -469,30 +469,30 @@ hb2 : ∀ (y : ℝ), y ^ 2 ≤ 2 → y ≤ b
 <section id="id12">
 <h3>4.2.1. 例<a class="headerlink" href="#id12" title="此标题的永久链接"></a></h3>
 <div class="admonition-problem admonition">
-<p class="admonition-title">也就是说，\(a\) 是平方至多为 2 的实数集合中的最大元。</p>
-<p>问题</p>
-</div>
+<p class="admonition-title">问题</p>
 <p>设 \(a\) 为有理数。证明 \(3a+1\le 7\) 当且仅当 \(a\le 2\)。</p>
+</div>
+<p>短语“当且仅当”的含义正如字面所示。本题中，我们必须证明：（1）若 \(3a+1\le 7\)，则 \(a\le 2\)；（2）若 \(a\le 2\)，则 \(3a+1\le 7\)。</p>
 <div class="admonition-solution admonition">
-<p class="admonition-title">短语“当且仅当”的含义正如字面所示。本题中，我们必须证明：（1）若 \(3a+1\le 7\)，则 \(a\le 2\)；（2）若 \(a\le 2\)，则 \(3a+1\le 7\)。</p>
-<p>解答</p>
+<p class="admonition-title">解答</p>
+<p>首先，假设 \(3a+1\le 7\)。那么</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}a&amp;=\frac{(3a+1)-1}{3}\\
 &amp;\le \frac{7-1}{3}\\
 &amp;=2.\end{split}\]</div>
-<p>首先，假设 \(3a+1\le 7\)。那么</p>
+<p>反过来，假设 \(a\le 2\)。那么</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}3a+1&amp;\le 3\cdot 2+1\\
 &amp;=7.\end{split}\]</div>
 </div>
-<p>反过来，假设 \(a\le 2\)。那么</p>
+<p>在手写证明中，分别用符号 \(\Rightarrow\) 和 \(\Leftarrow\) 标注两个方向是很常见的：</p>
 <div class="admonition-solution admonition">
-<p class="admonition-title">在手写证明中，分别用符号 \(\Rightarrow\) 和 \(\Leftarrow\) 标注两个方向是很常见的：</p>
-<p>解答</p>
+<p class="admonition-title">解答</p>
 <p>\(\Rightarrow\) 假设 \(3a+1\le 7\)。那么……</p>
-</div>
 <p>\(\Leftarrow\) 假设 \(a\le 2\)。那么……</p>
+</div>
 <p>这种写法适合用于作业、考试、黑板书写等场合。在更正式的写作中（例如本书中），我们省略这些符号，而使用“首先”“反过来”等词语来提示证明的不同部分。</p>
+<p>在 Lean 中，“当且仅当”用双蕴含符号 ↔ 表示。由于在底层，“当且仅当”是一个“且”陈述，我们使用与“且”目标相同的策略：<code class="docutils literal notranslate"><span class="pre">constructor</span></code>。</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">example</span> <span class="o">{</span><span class="n">a</span> <span class="o">:</span> <span class="n">ℚ</span><span class="o">}</span> <span class="o">:</span> <span class="mi">3</span> <span class="bp">*</span> <span class="n">a</span> <span class="bp">+</span> <span class="mi">1</span> <span class="bp">≤</span> <span class="mi">7</span> <span class="bp">↔</span> <span class="n">a</span> <span class="bp">≤</span> <span class="mi">2</span> <span class="o">:=</span> <span class="kd">by</span>
   <span class="n">constructor</span>
   <span class="bp">·</span> <span class="n">intro</span> <span class="n">h</span>
@@ -507,24 +507,24 @@ hb2 : ∀ (y : ℝ), y ^ 2 ≤ 2 → y ≤ b
 </section>
 <section id="bezout-iff">
 <span id="id13"></span><h3>4.2.2. 例<a class="headerlink" href="#bezout-iff" title="此标题的永久链接"></a></h3>
-<p>在 Lean 中，“当且仅当”用双蕴含符号 ↔ 表示。由于在底层，“当且仅当”是一个“且”陈述，我们使用与“且”目标相同的策略：<code class="docutils literal notranslate"><span class="pre">constructor</span></code>。</p>
+<p>我们把例 3.5.1 改写为一个当且仅当问题。现在有两件事要证明，其中一件我们以前已经证明过。</p>
 <div class="admonition-problem admonition">
-<p class="admonition-title">我们把例 3.5.1 改写为一个当且仅当问题。现在有两件事要证明，其中一件我们以前已经证明过。</p>
-<p>问题</p>
+<p class="admonition-title">问题</p>
+<p>设 \(n\) 为整数。证明 \(5n\) 是 \(8\) 的倍数，当且仅当 \(n\) 是 \(8\) 的倍数。</p>
 </div>
 <div class="admonition-solution admonition">
-<p class="admonition-title">设 \(n\) 为整数。证明 \(5n\) 是 \(8\) 的倍数，当且仅当 \(n\) 是 \(8\) 的倍数。</p>
-<p>解答</p>
+<p class="admonition-title">解答</p>
+<p>假设 \(8\mid 5n\)。则存在整数 \(a\)，使得 \(5n=8a\)。所以</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}n &amp;= -3  (5  n) + 16 n \\
 &amp;= -3  (8  a) + 16  n \\
 &amp; = 8 (-3 a + 2  n),\end{split}\]</div>
-<p>假设 \(8\mid 5n\)。则存在整数 \(a\)，使得 \(5n=8a\)。所以</p>
 <p>因此 \(8\mid n\)。</p>
+<p>反过来，假设 \(8\mid n\)。则存在整数 \(a\)，使得 \(n=8a\)。所以</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}5n &amp;= 5(8a) \\
 &amp;= 8(5a),\end{split}\]</div>
-<p>反过来，假设 \(8\mid n\)。则存在整数 \(a\)，使得 \(n=8a\)。所以</p>
+<p>因此 \(8\mid 5n\)。</p>
 </div>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">example</span> <span class="o">{</span><span class="n">n</span> <span class="o">:</span> <span class="n">ℤ</span><span class="o">}</span> <span class="o">:</span> <span class="mi">8</span> <span class="bp">∣</span> <span class="mi">5</span> <span class="bp">*</span> <span class="n">n</span> <span class="bp">↔</span> <span class="mi">8</span> <span class="bp">∣</span> <span class="n">n</span> <span class="o">:=</span> <span class="kd">by</span>
   <span class="n">constructor</span>
@@ -546,15 +546,15 @@ hb2 : ∀ (y : ℝ), y ^ 2 ≤ 2 → y ≤ b
 <section id="odd-iff-modeq">
 <span id="id14"></span><h3>4.2.3. 例<a class="headerlink" href="#odd-iff-modeq" title="此标题的永久链接"></a></h3>
 <div class="admonition-problem admonition">
-<p class="admonition-title">因此 \(8\mid 5n\)。</p>
-<p>问题</p>
+<p class="admonition-title">问题</p>
+<p>证明：整数 \(n\) 为奇数，当且仅当它模 2 同余于 1。</p>
 </div>
 <div class="admonition-solution admonition">
-<p class="admonition-title">证明：整数 \(n\) 为奇数，当且仅当它模 2 同余于 1。</p>
-<p>解答</p>
+<p class="admonition-title">解答</p>
 <p>首先，假设 \(n\) 为奇数。则存在整数 \(k\)，使得 \(n=2k+1\)。因此 \(n-1=2k\)，所以 \(n-1\) 能被 2 整除，从而 \(n\equiv 1\mod 2\)。</p>
-</div>
 <p>反过来，假设 \(n\equiv 1\mod 2\)。则 \(2\mid n -1\)，所以存在整数 \(k\)，使得 \(n-1=2k\)。于是 \(n=2k+1\)，因此 \(n\) 为奇数。</p>
+</div>
+<p>我们把这个例子命名为 <code class="docutils literal notranslate"><span class="pre">Int.odd_iff_modEq</span></code>，以便以后使用。</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">theorem</span> <span class="n">odd_iff_modEq</span> <span class="o">(</span><span class="n">n</span> <span class="o">:</span> <span class="n">ℤ</span><span class="o">)</span> <span class="o">:</span> <span class="n">Odd</span> <span class="n">n</span> <span class="bp">↔</span> <span class="n">n</span> <span class="bp">≡</span> <span class="mi">1</span> <span class="o">[</span><span class="n">ZMOD</span> <span class="mi">2</span><span class="o">]</span> <span class="o">:=</span> <span class="kd">by</span>
   <span class="n">constructor</span>
   <span class="bp">·</span> <span class="n">intro</span> <span class="n">h</span>
@@ -569,10 +569,10 @@ hb2 : ∀ (y : ℝ), y ^ 2 ≤ 2 → y ≤ b
 </section>
 <section id="even-iff-modeq">
 <span id="id15"></span><h3>4.2.4. 例<a class="headerlink" href="#even-iff-modeq" title="此标题的永久链接"></a></h3>
-<p>我们把这个例子命名为 <code class="docutils literal notranslate"><span class="pre">Int.odd_iff_modEq</span></code>，以便以后使用。</p>
+<p>现在用同样方式刻画偶性。</p>
 <div class="admonition-problem admonition">
-<p class="admonition-title">现在用同样方式刻画偶性。</p>
-<p>问题</p>
+<p class="admonition-title">问题</p>
+<p>证明：整数 \(n\) 为偶数，当且仅当它模 2 同余于 0。</p>
 </div>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">theorem</span> <span class="n">even_iff_modEq</span> <span class="o">(</span><span class="n">n</span> <span class="o">:</span> <span class="n">ℤ</span><span class="o">)</span> <span class="o">:</span> <span class="n">Even</span> <span class="n">n</span> <span class="bp">↔</span> <span class="n">n</span> <span class="bp">≡</span> <span class="mi">0</span> <span class="o">[</span><span class="n">ZMOD</span> <span class="mi">2</span><span class="o">]</span> <span class="o">:=</span> <span class="kd">by</span>
   <span class="n">constructor</span>
@@ -588,23 +588,23 @@ hb2 : ∀ (y : ℝ), y ^ 2 ≤ 2 → y ≤ b
 </section>
 <section id="id16">
 <h3>4.2.5. 例<a class="headerlink" href="#id16" title="此标题的永久链接"></a></h3>
-<p>证明：整数 \(n\) 为偶数，当且仅当它模 2 同余于 0。</p>
+<p>高中阶段所谓“解”方程的概念，实际上对应一个“当且仅当”问题：为了解一个方程，你列出一串数，并证明它们满足该方程，而没有其他数满足该方程。</p>
 <div class="admonition-problem admonition">
-<p class="admonition-title">高中阶段所谓“解”方程的概念，实际上对应一个“当且仅当”问题：为了解一个方程，你列出一串数，并证明它们满足该方程，而没有其他数满足该方程。</p>
-<p>问题</p>
+<p class="admonition-title">问题</p>
+<p>设 \(x\) 为实数。证明 \(x ^ 2 + x - 6 = 0\)，当且仅当 \(x = -3\) 或 \(x = 2\)。</p>
 </div>
 <div class="admonition-solution admonition">
-<p class="admonition-title">设 \(x\) 为实数。证明 \(x ^ 2 + x - 6 = 0\)，当且仅当 \(x = -3\) 或 \(x = 2\)。</p>
-<p>解答</p>
+<p class="admonition-title">解答</p>
+<p>首先，假设 \(x ^ 2 + x - 6 = 0\)。那么</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}(x+3)(x-2)&amp;=x ^ 2 + x - 6\\
 &amp;=0,\end{split}\]</div>
-<p>首先，假设 \(x ^ 2 + x - 6 = 0\)。那么</p>
 <p>所以要么 \(x+3=0\)，要么 \(x-2=0\)。若为前者，则 \(x=-3\)；若为后者，则 \(x=2\)。</p>
+<p>反过来，若 \(x=-3\)，则</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}x ^ 2 + x - 6&amp;=(-3)^2+(-3)-6\\
 &amp;=0,\end{split}\]</div>
-<p>反过来，若 \(x=-3\)，则</p>
+<p>而若 \(x=2\)，则</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}x ^ 2 + x - 6&amp;=2^2+2-6\\
 &amp;=0.\end{split}\]</div>
@@ -617,22 +617,22 @@ hb2 : ∀ (y : ℝ), y ^ 2 ≤ 2 → y ≤ b
 <section id="id17">
 <h3>4.2.6. 例<a class="headerlink" href="#id17" title="此标题的永久链接"></a></h3>
 <div class="admonition-problem admonition">
-<p class="admonition-title">而若 \(x=2\)，则</p>
-<p>问题</p>
+<p class="admonition-title">问题</p>
+<p>设 \(a\) 为整数。证明 \(a^2-5a+5 \le -1\)，当且仅当 \(a\) 为 2 或 3。</p>
 </div>
 <div class="admonition-solution admonition">
-<p class="admonition-title">设 \(a\) 为整数。证明 \(a^2-5a+5 \le -1\)，当且仅当 \(a\) 为 2 或 3。</p>
-<p>解答</p>
+<p class="admonition-title">解答</p>
+<p>首先，假设 \(a^2-5a+5 \le -1\)。那么</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}(2 a - 5) ^ 2&amp;= 4 (a ^ 2 - 5 a + 5) + 5 \\
 &amp;\le 4 \cdot -1 + 5 \\
 &amp;= 1^2,\end{split}\]</div>
-<p>首先，假设 \(a^2-5a+5 \le -1\)。那么</p>
 <p>所以 \(-1\le 2a-5\le 1\)。因此 \(2 \cdot 2 \le 2a\)，从而 \(2 \le a\)；同理 \(2a ≤ 2 \cdot 3\)，从而 \(a \le 3\)。因为 \(2\le a\le 3\)，所以 \(a\) 是 2 或 3。</p>
+<p>反过来，若 \(a=2\)，则</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}a^2-5a+5 &amp;= 2^2-5\cdot 2+5  \\
 &amp;\le -1,\end{split}\]</div>
-<p>反过来，若 \(a=2\)，则</p>
+<p>而若 \(a=3\)，则</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}a^2-5a+5 &amp;= 3^2-5\cdot 3+5  \\
 &amp;\le -1.\end{split}\]</div>
@@ -644,24 +644,24 @@ hb2 : ∀ (y : ℝ), y ^ 2 ≤ 2 → y ≤ b
 </section>
 <section id="id18">
 <h3>4.2.7. 例<a class="headerlink" href="#id18" title="此标题的永久链接"></a></h3>
-<p>而若 \(a=3\)，则</p>
+<p>有些库引理具有“当且仅当”的形式。这很方便，因为它们可以代替两个普通引理，两个方向各对应一个。</p>
 <div class="admonition-problem admonition">
-<p class="admonition-title">有些库引理具有“当且仅当”的形式。这很方便，因为它们可以代替两个普通引理，两个方向各对应一个。</p>
-<p>问题</p>
+<p class="admonition-title">问题</p>
+<p>设 \(n\) 为整数，并假设 \(n ^ 2 - 10 n + 24 = 0\)。证明 \(n\) 为偶数。</p>
 </div>
 <div class="admonition-solution admonition">
-<p class="admonition-title">设 \(n\) 为整数，并假设 \(n ^ 2 - 10 n + 24 = 0\)。证明 \(n\) 为偶数。</p>
-<p>解答</p>
+<p class="admonition-title">解答</p>
+<p>我们有</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}(n-4)(n-6)&amp;= n^2-10n+24\\
 &amp;= 0,\end{split}\]</div>
-<p>我们有</p>
-</div>
 <p>所以要么 \(n-4=0\)，要么 \(n-6=0\)。若为前者，则 \(n=2\cdot 2\)，所以 \(n\) 为偶数；若为后者，则 \(n=2\cdot 3\)，所以 \(n\) 为偶数。</p>
+</div>
+<p>在本题中，我们需要把事实 \((n-4)(n-6)=0\) 转化为“\(n-4=0\) 或 \(n-6=0\)”这一事实。以前（例如例 2.3.4 中），我们会在 Lean 中把这个事实直接代入引理</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">theorem</span> <span class="n">eq_zero_or_eq_zero_of_mul_eq_zero</span> <span class="o">{</span><span class="n">a</span> <span class="n">b</span> <span class="o">:</span> <span class="n">ℤ</span><span class="o">}</span> <span class="o">(</span><span class="n">h</span> <span class="o">:</span> <span class="n">a</span> <span class="bp">*</span> <span class="n">b</span> <span class="bp">=</span> <span class="mi">0</span><span class="o">)</span> <span class="o">:</span> <span class="n">a</span> <span class="bp">=</span> <span class="mi">0</span> <span class="bp">∨</span> <span class="n">b</span> <span class="bp">=</span> <span class="mi">0</span> <span class="o">:=</span>
 </pre></div>
 </div>
-<p>在本题中，我们需要把事实 \((n-4)(n-6)=0\) 转化为“\(n-4=0\) 或 \(n-6=0\)”这一事实。以前（例如例 2.3.4 中），我们会在 Lean 中把这个事实直接代入引理</p>
+<p>从而得到如下证明框架：</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">example</span> <span class="o">{</span><span class="n">n</span> <span class="o">:</span> <span class="n">ℤ</span><span class="o">}</span> <span class="o">(</span><span class="n">hn</span> <span class="o">:</span> <span class="n">n</span> <span class="bp">^</span> <span class="mi">2</span> <span class="bp">-</span> <span class="mi">10</span> <span class="bp">*</span> <span class="n">n</span> <span class="bp">+</span> <span class="mi">24</span> <span class="bp">=</span> <span class="mi">0</span><span class="o">)</span> <span class="o">:</span> <span class="n">Even</span> <span class="n">n</span> <span class="o">:=</span> <span class="kd">by</span>
   <span class="k">have</span> <span class="n">hn1</span> <span class="o">:=</span>
     <span class="k">calc</span> <span class="o">(</span><span class="n">n</span> <span class="bp">-</span> <span class="mi">4</span><span class="o">)</span> <span class="bp">*</span> <span class="o">(</span><span class="n">n</span> <span class="bp">-</span> <span class="mi">6</span><span class="o">)</span> <span class="bp">=</span> <span class="n">n</span> <span class="bp">^</span> <span class="mi">2</span> <span class="bp">-</span> <span class="mi">10</span> <span class="bp">*</span> <span class="n">n</span> <span class="bp">+</span> <span class="mi">24</span> <span class="o">:=</span> <span class="kd">by</span> <span class="n">ring</span>
@@ -670,12 +670,12 @@ hb2 : ∀ (y : ℝ), y ^ 2 ≤ 2 → y ≤ b
   <span class="gr">sorry</span>
 </pre></div>
 </div>
-<p>从而得到如下证明框架：</p>
 <p>（练习：完成该证明。）</p>
+<p>但库中也有一个 ↔ 形式的引理，它把 <code class="docutils literal notranslate"><span class="pre">eq_zero_or_eq_zero_of_mul_eq_zero</span></code> 与该陈述的逆向（另一个方向）合并在一起：</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">theorem</span> <span class="n">mul_eq_zero</span> <span class="o">{</span><span class="n">a</span> <span class="n">b</span> <span class="o">:</span> <span class="n">ℤ</span><span class="o">}</span> <span class="o">:</span> <span class="n">a</span> <span class="bp">*</span> <span class="n">b</span> <span class="bp">=</span> <span class="mi">0</span> <span class="bp">↔</span> <span class="n">a</span> <span class="bp">=</span> <span class="mi">0</span> <span class="bp">∨</span> <span class="n">b</span> <span class="bp">=</span> <span class="mi">0</span> <span class="o">:=</span>
 </pre></div>
 </div>
-<p>但库中也有一个 ↔ 形式的引理，它把 <code class="docutils literal notranslate"><span class="pre">eq_zero_or_eq_zero_of_mul_eq_zero</span></code> 与该陈述的逆向（另一个方向）合并在一起：</p>
+<p>在 Lean 中，我们可以用 <code class="docutils literal notranslate"><span class="pre">rw</span></code> 策略使用一个 ↔ 引理；它会把假设（或目标）中形如 ↔ 左边的表达式转换为形如 ↔ 右边的表达式。</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">example</span> <span class="o">{</span><span class="n">n</span> <span class="o">:</span> <span class="n">ℤ</span><span class="o">}</span> <span class="o">(</span><span class="n">hn</span> <span class="o">:</span> <span class="n">n</span> <span class="bp">^</span> <span class="mi">2</span> <span class="bp">-</span> <span class="mi">10</span> <span class="bp">*</span> <span class="n">n</span> <span class="bp">+</span> <span class="mi">24</span> <span class="bp">=</span> <span class="mi">0</span><span class="o">)</span> <span class="o">:</span> <span class="n">Even</span> <span class="n">n</span> <span class="o">:=</span> <span class="kd">by</span>
   <span class="k">have</span> <span class="n">hn1</span> <span class="o">:=</span>
     <span class="k">calc</span> <span class="o">(</span><span class="n">n</span> <span class="bp">-</span> <span class="mi">4</span><span class="o">)</span> <span class="bp">*</span> <span class="o">(</span><span class="n">n</span> <span class="bp">-</span> <span class="mi">6</span><span class="o">)</span> <span class="bp">=</span> <span class="n">n</span> <span class="bp">^</span> <span class="mi">2</span> <span class="bp">-</span> <span class="mi">10</span> <span class="bp">*</span> <span class="n">n</span> <span class="bp">+</span> <span class="mi">24</span> <span class="o">:=</span> <span class="kd">by</span> <span class="n">ring</span>
@@ -687,14 +687,14 @@ hb2 : ∀ (y : ℝ), y ^ 2 ≤ 2 → y ≤ b
 </section>
 <section id="id19">
 <h3>4.2.8. 例<a class="headerlink" href="#id19" title="此标题的永久链接"></a></h3>
-<p>在 Lean 中，我们可以用 <code class="docutils literal notranslate"><span class="pre">rw</span></code> 策略使用一个 ↔ 引理；它会把假设（或目标）中形如 ↔ 左边的表达式转换为形如 ↔ 右边的表达式。</p>
+<p>上面在例 4.2.3 中，我们证明了一个整数是奇数当且仅当它模 2 同余于 1，并把它记录为 <code class="docutils literal notranslate"><span class="pre">Int.odd_iff_modEq</span></code>。现在这也是一个很方便的“当且仅当”库引理，我们可以用它通过模算术来解决奇偶性问题。举例来说，我们重新做一遍例 3.1.5 中的问题。</p>
 <div class="admonition-problem admonition">
-<p class="admonition-title">上面在例 4.2.3 中，我们证明了一个整数是奇数当且仅当它模 2 同余于 1，并把它记录为 <code class="docutils literal notranslate"><span class="pre">Int.odd_iff_modEq</span></code>。现在这也是一个很方便的“当且仅当”库引理，我们可以用它通过模算术来解决奇偶性问题。举例来说，我们重新做一遍例 3.1.5 中的问题。</p>
-<p>问题</p>
+<p class="admonition-title">问题</p>
+<p>证明：若整数 \(x\) 和 \(y\) 都为奇数，则 \(x+y+1\) 为奇数。</p>
 </div>
 <div class="admonition-solution admonition">
-<p class="admonition-title">证明：若整数 \(x\) 和 \(y\) 都为奇数，则 \(x+y+1\) 为奇数。</p>
-<p>解答</p>
+<p class="admonition-title">解答</p>
+<p>我们将证明：若 \(x\equiv 1 \mod 2\) 且 \(y\equiv 1 \mod 2\)，则 \(x+y+1\equiv 1 \mod 2\)。确实，</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}x + y + 1 &amp;\equiv 1 + 1 + 1 \mod 2\\
 &amp;= 2 \cdot 1 + 1\\
@@ -710,18 +710,18 @@ hb2 : ∀ (y : ℝ), y ^ 2 ≤ 2 → y ≤ b
 </section>
 <section id="even-or-odd-proof">
 <span id="id20"></span><h3>4.2.9. 例<a class="headerlink" href="#even-or-odd-proof" title="此标题的永久链接"></a></h3>
-<p>我们将证明：若 \(x\equiv 1 \mod 2\) 且 \(y\equiv 1 \mod 2\)，则 \(x+y+1\equiv 1 \mod 2\)。确实，</p>
+<p>利用奇偶性关于模算术的刻画，我们还可以证明例 3.1.9 中跳过证明的定理。</p>
 <div class="admonition-theorem admonition">
-<p class="admonition-title">利用奇偶性关于模算术的刻画，我们还可以证明例 3.1.9 中跳过证明的定理。</p>
-<p>定理</p>
+<p class="admonition-title">定理</p>
+<p>每个整数不是偶数就是奇数。</p>
 </div>
 <div class="admonition-proof admonition">
-<p class="admonition-title">每个整数不是偶数就是奇数。</p>
-<p>证明</p>
+<p class="admonition-title">证明</p>
 <p>设 \(n\) 为整数。我们按照 \(n\) 模 2 的余数分类讨论。</p>
 <p>若 \(n\equiv 0\mod 2\)，则 \(n\) 为偶数，证明完成。</p>
-</div>
 <p>若 \(n\equiv 1\mod 2\)，则 \(n\) 为奇数，证明完成。</p>
+</div>
+<p>使用例 4.2.3 与例 4.2.4 中的引理 <code class="docutils literal notranslate"><span class="pre">Int.odd_iff_modEq</span></code> 和 <code class="docutils literal notranslate"><span class="pre">Int.even_iff_modEq</span></code>，以及策略 <code class="docutils literal notranslate"><span class="pre">mod_cases</span></code>，把这个证明写成 Lean。我已经写出了开头。</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">example</span> <span class="o">(</span><span class="n">n</span> <span class="o">:</span> <span class="n">ℤ</span><span class="o">)</span> <span class="o">:</span> <span class="n">Even</span> <span class="n">n</span> <span class="bp">∨</span> <span class="n">Odd</span> <span class="n">n</span> <span class="o">:=</span> <span class="kd">by</span>
   <span class="n">mod_cases</span> <span class="n">hn</span> <span class="o">:</span> <span class="n">n</span> <span class="bp">%</span> <span class="mi">2</span>
   <span class="bp">·</span> <span class="n">left</span>
@@ -734,31 +734,31 @@ hb2 : ∀ (y : ℝ), y ^ 2 ≤ 2 → y ≤ b
 <section id="id21">
 <h3>4.2.10. 练习<a class="headerlink" href="#id21" title="此标题的永久链接"></a></h3>
 <ol class="arabic">
-<li><p>证明 45 不是素数。你可以像例 4.1.9 中那样使用 Lean 引理 <code class="docutils literal notranslate"><span class="pre">not_prime</span></code>。</p>
+<li><p>设 \(x\) 为实数。证明 \(2x-1=11\) 当且仅当 \(x=6\)。</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">example</span> <span class="o">{</span><span class="n">x</span> <span class="o">:</span> <span class="n">ℝ</span><span class="o">}</span> <span class="o">:</span> <span class="mi">2</span> <span class="bp">*</span> <span class="n">x</span> <span class="bp">-</span> <span class="mi">1</span> <span class="bp">=</span> <span class="mi">11</span> <span class="bp">↔</span> <span class="n">x</span> <span class="bp">=</span> <span class="mi">6</span> <span class="o">:=</span> <span class="kd">by</span>
   <span class="gr">sorry</span>
 </pre></div>
 </div>
 </li>
-<li><p>设 \(x\) 为实数。证明 \(2x-1=11\) 当且仅当 \(x=6\)。</p>
+<li><p>设 \(n\) 为整数。证明 63 是 \(n\) 的因子，当且仅当 7 和 9 都是 \(n\) 的因子。</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">example</span> <span class="o">{</span><span class="n">n</span> <span class="o">:</span> <span class="n">ℤ</span><span class="o">}</span> <span class="o">:</span> <span class="mi">63</span> <span class="bp">∣</span> <span class="n">n</span> <span class="bp">↔</span> <span class="mi">7</span> <span class="bp">∣</span> <span class="n">n</span> <span class="bp">∧</span> <span class="mi">9</span> <span class="bp">∣</span> <span class="n">n</span> <span class="o">:=</span> <span class="kd">by</span>
   <span class="gr">sorry</span>
 </pre></div>
 </div>
 </li>
-<li><p>设 \(n\) 为整数。证明 63 是 \(n\) 的因子，当且仅当 7 和 9 都是 \(n\) 的因子。</p>
+<li><p>设 \(a\) 和 \(n\) 为整数。证明 \(a\) 是 \(n\) 的倍数，当且仅当 \(a \equiv 0 \mod n\)。</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">theorem</span> <span class="n">dvd_iff_modEq</span> <span class="o">{</span><span class="n">a</span> <span class="n">n</span> <span class="o">:</span> <span class="n">ℤ</span><span class="o">}</span> <span class="o">:</span> <span class="n">n</span> <span class="bp">∣</span> <span class="n">a</span> <span class="bp">↔</span> <span class="n">a</span> <span class="bp">≡</span> <span class="mi">0</span> <span class="o">[</span><span class="n">ZMOD</span> <span class="n">n</span><span class="o">]</span> <span class="o">:=</span> <span class="kd">by</span>
   <span class="gr">sorry</span>
 </pre></div>
 </div>
 </li>
-<li><p>设 \(a\) 和 \(n\) 为整数。证明 \(a\) 是 \(n\) 的倍数，当且仅当 \(a \equiv 0 \mod n\)。</p>
+<li><p>设 \(a\) 和 \(b\) 为整数，并假设 \(a \mid b\)。证明 \(a \mid 2b^3-b^2+3b\)。注意，这已经作为第 3.2 节中的一道练习出现过。但现在使用上一题证明的引理 <code class="docutils literal notranslate"><span class="pre">Int.dvd_iff_modEq</span></code>，这类问题会容易得多。</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">example</span> <span class="o">{</span><span class="n">a</span> <span class="n">b</span> <span class="o">:</span> <span class="n">ℤ</span><span class="o">}</span> <span class="o">(</span><span class="n">hab</span> <span class="o">:</span> <span class="n">a</span> <span class="bp">∣</span> <span class="n">b</span><span class="o">)</span> <span class="o">:</span> <span class="n">a</span> <span class="bp">∣</span> <span class="mi">2</span> <span class="bp">*</span> <span class="n">b</span> <span class="bp">^</span> <span class="mi">3</span> <span class="bp">-</span> <span class="n">b</span> <span class="bp">^</span> <span class="mi">2</span> <span class="bp">+</span> <span class="mi">3</span> <span class="bp">*</span> <span class="n">b</span> <span class="o">:=</span> <span class="kd">by</span>
   <span class="gr">sorry</span>
 </pre></div>
 </div>
 </li>
-<li><p>设 \(a\) 和 \(b\) 为整数，并假设 \(a \mid b\)。证明 \(a \mid 2b^3-b^2+3b\)。注意，这已经作为第 3.2 节中的一道练习出现过。但现在使用上一题证明的引理 <code class="docutils literal notranslate"><span class="pre">Int.dvd_iff_modEq</span></code>，这类问题会容易得多。</p>
+<li><p>设 \(k\) 为自然数。证明 \(k^2 \le 6\) 当且仅当 \(k\) 为 0、1 或 2。</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">example</span> <span class="o">{</span><span class="n">k</span> <span class="o">:</span> <span class="n">ℕ</span><span class="o">}</span> <span class="o">:</span> <span class="n">k</span> <span class="bp">^</span> <span class="mi">2</span> <span class="bp">≤</span> <span class="mi">6</span> <span class="bp">↔</span> <span class="n">k</span> <span class="bp">=</span> <span class="mi">0</span> <span class="bp">∨</span> <span class="n">k</span> <span class="bp">=</span> <span class="mi">1</span> <span class="bp">∨</span> <span class="n">k</span> <span class="bp">=</span> <span class="mi">2</span> <span class="o">:=</span> <span class="kd">by</span>
   <span class="gr">sorry</span>
 </pre></div>
@@ -772,14 +772,14 @@ hb2 : ∀ (y : ℝ), y ^ 2 ≤ 2 → y ≤ b
 <section id="id22">
 <h3>4.3.1. 例<a class="headerlink" href="#id22" title="此标题的永久链接"></a></h3>
 <div class="admonition-problem admonition">
-<p class="admonition-title">使用例 4.2.3 与例 4.2.4 中的引理 <code class="docutils literal notranslate"><span class="pre">Int.odd_iff_modEq</span></code> 和 <code class="docutils literal notranslate"><span class="pre">Int.even_iff_modEq</span></code>，以及策略 <code class="docutils literal notranslate"><span class="pre">mod_cases</span></code>，把这个证明写成 Lean。我已经写出了开头。</p>
-<p>问题</p>
+<p class="admonition-title">问题</p>
+<p>证明：存在唯一实数 \(a\)，使得 \(3a+1=7\)。</p>
 </div>
 <div class="admonition-solution admonition">
-<p class="admonition-title">证明：存在唯一实数 \(a\)，使得 \(3a+1=7\)。</p>
-<p>解答</p>
+<p class="admonition-title">解答</p>
 <p>我们将证明 2 是唯一具有这个性质的实数。</p>
 <p>首先，我们证明 2 具有这个性质。确实，\(3\cdot 2+1=7\)。</p>
+<p>现在，设 \(y\) 为满足 \(3y+1=7\) 的实数。那么</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}y &amp;= \frac{(3 y + 1) - 1} {3}\\
 &amp;= \frac{7 - 1}{ 3}\\
@@ -801,26 +801,26 @@ hb2 : ∀ (y : ℝ), y ^ 2 ≤ 2 → y ≤ b
 <section id="id23">
 <h3>4.3.2. 例<a class="headerlink" href="#id23" title="此标题的永久链接"></a></h3>
 <div class="admonition-problem admonition">
-<p class="admonition-title">现在，设 \(y\) 为满足 \(3y+1=7\) 的实数。那么</p>
-<p>问题</p>
+<p class="admonition-title">问题</p>
+<p>证明：存在唯一有理数 \(x\)，使得对于每个介于 1 与 3 之间的有理数 \(a\)，都有 \((a-x)^2\le 1\)。</p>
 </div>
 <div class="admonition-solution admonition">
-<p class="admonition-title">证明：存在唯一有理数 \(x\)，使得对于每个介于 1 与 3 之间的有理数 \(a\)，都有 \((a-x)^2\le 1\)。</p>
-<p>解答</p>
+<p class="admonition-title">解答</p>
 <p>我们将证明 2 是唯一具有这个性质的有理数。</p>
+<p>首先，若 \(a\) 是介于 1 与 3 之间的有理数，则 \(-1 \le a-2 \le 1\)，所以由例 2.1.7 可得</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}(a-2)^2 &amp;\le 1 ^ 2\\
 &amp;=1.\end{split}\]</div>
-<p>首先，若 \(a\) 是介于 1 与 3 之间的有理数，则 \(-1 \le a-2 \le 1\)，所以由例 2.1.7 可得</p>
 <p>现在，设 \(y\) 为有理数，并且对于每个介于 1 与 3 之间的有理数 \(a\)，都有 \((a-y)^2\le 1\)。</p>
 <p>因为 1 介于 1 与 3 之间，所以 \((1-y)^2\le 1\)；因为 3 介于 1 与 3 之间，所以 \((3-y)^2\le 1\)。</p>
+<p>于是</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}(y - 2) ^ 2 &amp;= \frac{(1 - y) ^ 2 + (3 - y) ^ 2 - 2}{ 2}\\
 &amp;≤  \frac{1 + 1 - 2}{2} \\
 &amp; = 0.\end{split}\]</div>
-<p>于是</p>
-</div>
 <p>又由于平方非负，\((y - 2) ^ 2\geq 0\)。因此 \((y - 2) ^ 2= 0\)，所以 \(y - 2= 0\)，从而 \(y = 2\)。</p>
+</div>
+<p>在 Lean 中，例 2.1.7 的结果可作为引理 <code class="docutils literal notranslate"><span class="pre">sq_le_sq'</span></code> 使用。</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">example</span> <span class="o">:</span> <span class="bp">∃!</span> <span class="n">x</span> <span class="o">:</span> <span class="n">ℚ</span><span class="o">,</span> <span class="bp">∀</span> <span class="n">a</span><span class="o">,</span> <span class="n">a</span> <span class="bp">≥</span> <span class="mi">1</span> <span class="bp">→</span> <span class="n">a</span> <span class="bp">≤</span> <span class="mi">3</span> <span class="bp">→</span> <span class="o">(</span><span class="n">a</span> <span class="bp">-</span> <span class="n">x</span><span class="o">)</span> <span class="bp">^</span> <span class="mi">2</span> <span class="bp">≤</span> <span class="mi">1</span> <span class="o">:=</span> <span class="kd">by</span>
   <span class="gr">sorry</span>
 </pre></div>
@@ -829,23 +829,23 @@ hb2 : ∀ (y : ℝ), y ^ 2 ≤ 2 → y ≤ b
 <section id="id24">
 <h3>4.3.3. 例<a class="headerlink" href="#id24" title="此标题的永久链接"></a></h3>
 <div class="admonition-problem admonition">
-<p class="admonition-title">在 Lean 中，例 2.1.7 的结果可作为引理 <code class="docutils literal notranslate"><span class="pre">sq_le_sq'</span></code> 使用。</p>
-<p>问题</p>
-</div>
+<p class="admonition-title">问题</p>
 <p>设 \(x\) 为有理数，并假设存在唯一有理数 \(a\) 满足 \(a^2=x\)。证明 \(x=0\)。</p>
+</div>
+<p>更口语地说：唯一具有唯一平方根的有理数是 0。</p>
 <div class="admonition-solution admonition">
-<p class="admonition-title">更口语地说：唯一具有唯一平方根的有理数是 0。</p>
-<p>解答</p>
+<p class="admonition-title">解答</p>
+<p>我们先证明 \(-a=a\)。确实，</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}(-a)^2&amp;=a^2\\
 &amp;=x,\end{split}\]</div>
-<p>我们先证明 \(-a=a\)。确实，</p>
 <p>而由于 \(a\) 是唯一满足 \(a^2=x\) 的有理数，这意味着 \(-a=a\)。</p>
+<p>由此可得</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}a &amp;= \frac{a - (-a)}{ 2}\\
 &amp;=\frac{a-a}{2}\\
 &amp; = 0.\end{split}\]</div>
-<p>由此可得</p>
+<p>所以也有 \(x=0\)：</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}x &amp;= a ^ 2 \\
 &amp;= 0 ^ 2\\
@@ -872,37 +872,37 @@ hb2 : ∀ (y : ℝ), y ^ 2 ≤ 2 → y ≤ b
 </section>
 <section id="division-algorithm">
 <span id="id25"></span><h3>4.3.4. 例<a class="headerlink" href="#division-algorithm" title="此标题的永久链接"></a></h3>
-<p>所以也有 \(x=0\)：</p>
+<p>下面是一个关于整数的重要定理，我们会在本书后面第 6.6 节的练习中证明它。</p>
 <div class="admonition-theorem-the-division-algorithm admonition">
-<p class="admonition-title">下面是一个关于整数的重要定理，我们会在本书后面第 6.6 节的练习中证明它。</p>
-<p>定理（带余除法定理）</p>
-</div>
+<p class="admonition-title">定理（带余除法定理）</p>
 <p>设 \(a\) 和 \(b\) 为整数，且 \(b\) 为正。则存在唯一整数 \(r\)，满足 \(0\le r&lt;b\)，并且 \(a\equiv r\mod b\)。</p>
+</div>
 <p>这个引理使我们能够按照模 \(b\) 的同余类作分类讨论（Lean 策略 <code class="docutils literal notranslate"><span class="pre">mod_cases</span></code>）。但它实际上更强一些，因为陈述中的“唯一性”部分还提供了额外信息。</p>
+<p>在 Lean 库中，它以下列形式可用：</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">lemma</span> <span class="n">Int.existsUnique_modEq_lt</span> <span class="o">(</span><span class="n">a</span> <span class="n">b</span> <span class="o">:</span> <span class="n">ℤ</span><span class="o">)</span> <span class="o">(</span><span class="n">h</span> <span class="o">:</span> <span class="mi">0</span> <span class="bp">&lt;</span> <span class="n">b</span><span class="o">)</span> <span class="o">:</span>
   <span class="bp">∃!</span> <span class="n">r</span> <span class="o">:</span> <span class="n">ℤ</span><span class="o">,</span> <span class="mi">0</span> <span class="bp">≤</span> <span class="n">r</span> <span class="bp">∧</span> <span class="n">r</span> <span class="bp">&lt;</span> <span class="n">b</span> <span class="bp">∧</span> <span class="n">a</span> <span class="bp">≡</span> <span class="n">r</span> <span class="o">[</span><span class="n">ZMOD</span> <span class="n">b</span><span class="o">]</span> <span class="o">:=</span>
 </pre></div>
 </div>
-<p>在 Lean 库中，它以下列形式可用：</p>
+<p>为了更好地理解这个定理，我们只证明它无穷多个情形中的一个。</p>
 <div class="admonition-problem admonition">
-<p class="admonition-title">为了更好地理解这个定理，我们只证明它无穷多个情形中的一个。</p>
-<p>问题</p>
+<p class="admonition-title">问题</p>
+<p>证明：存在唯一整数 \(r\)，使得 \(0\le r &lt; 5\) 且 \(14\equiv r\mod 5\)。</p>
 </div>
 <div class="admonition-solution admonition">
-<p class="admonition-title">证明：存在唯一整数 \(r\)，使得 \(0\le r &lt; 5\) 且 \(14\equiv r\mod 5\)。</p>
-<p>解答</p>
+<p class="admonition-title">解答</p>
 <p>我们将证明具有这个性质的唯一整数是 4。</p>
 <p>首先，我们证明 4 具有这个性质。确实 \(0\le 4 &lt; 5\)，并且由于 \(14 - 4 = 5 \cdot 2\)，有 \(14\equiv 4\mod 5\)。</p>
 <p>现在，设 \(r\) 为满足 \(0\le r &lt; 5\) 且 \(14\equiv r\mod 5\) 的整数。则存在整数 \(q\)，使得 \(14-r=5q\)。</p>
+<p>我们有</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}5&amp; \cdot 1 &lt; 14 - r \\
 &amp; = 5q,\end{split}\]</div>
-<p>我们有</p>
+<p>所以由于 \(5\) 为正，\(1&lt;q\)。类似地，我们有</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}5 q &amp;= 14 - r \\
   &amp; &lt; 5 \cdot 3\end{split}\]</div>
-<p>所以由于 \(5\) 为正，\(1&lt;q\)。类似地，我们有</p>
 <p>所以由于 \(5\) 为正，\(q&lt;3\)。</p>
+<p>因此 \(q\) 必为 2，这是严格介于 1 与 3 之间的唯一整数。于是 \(r=14-5\cdot 2=4\)。</p>
 </div>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">example</span> <span class="o">:</span> <span class="bp">∃!</span> <span class="n">r</span> <span class="o">:</span> <span class="n">ℤ</span><span class="o">,</span> <span class="mi">0</span> <span class="bp">≤</span> <span class="n">r</span> <span class="bp">∧</span> <span class="n">r</span> <span class="bp">&lt;</span> <span class="mi">5</span> <span class="bp">∧</span> <span class="mi">14</span> <span class="bp">≡</span> <span class="n">r</span> <span class="o">[</span><span class="n">ZMOD</span> <span class="mi">5</span><span class="o">]</span> <span class="o">:=</span> <span class="kd">by</span>
   <span class="n">use</span> <span class="mi">4</span>
@@ -934,19 +934,19 @@ hb2 : ∀ (y : ℝ), y ^ 2 ≤ 2 → y ≤ b
 <section id="id26">
 <h3>4.3.5. 练习<a class="headerlink" href="#id26" title="此标题的永久链接"></a></h3>
 <ol class="arabic">
-<li><p>设 \(k\) 为自然数。证明 \(k^2 \le 6\) 当且仅当 \(k\) 为 0、1 或 2。</p>
+<li><p>证明：存在唯一有理数 \(x\)，使得 \(4x-3=9\)。</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">example</span> <span class="o">:</span> <span class="bp">∃!</span> <span class="n">x</span> <span class="o">:</span> <span class="n">ℚ</span><span class="o">,</span> <span class="mi">4</span> <span class="bp">*</span> <span class="n">x</span> <span class="bp">-</span> <span class="mi">3</span> <span class="bp">=</span> <span class="mi">9</span> <span class="o">:=</span> <span class="kd">by</span>
   <span class="gr">sorry</span>
 </pre></div>
 </div>
 </li>
-<li><p>证明：存在唯一有理数 \(x\)，使得 \(4x-3=9\)。</p>
+<li><p>证明：存在唯一自然数 \(n\)，使得对所有自然数 \(a\)，都有 \(n\le a\)。</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">example</span> <span class="o">:</span> <span class="bp">∃!</span> <span class="n">n</span> <span class="o">:</span> <span class="n">ℕ</span><span class="o">,</span> <span class="bp">∀</span> <span class="n">a</span><span class="o">,</span> <span class="n">n</span> <span class="bp">≤</span> <span class="n">a</span> <span class="o">:=</span> <span class="kd">by</span>
   <span class="gr">sorry</span>
 </pre></div>
 </div>
 </li>
-<li><p>证明：存在唯一自然数 \(n\)，使得对所有自然数 \(a\)，都有 \(n\le a\)。</p>
+<li><p>证明：存在唯一整数 \(r\)，使得 \(0\le r &lt; 3\) 且 \(11\equiv r\mod 3\)。</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">example</span> <span class="o">:</span> <span class="bp">∃!</span> <span class="n">r</span> <span class="o">:</span> <span class="n">ℤ</span><span class="o">,</span> <span class="mi">0</span> <span class="bp">≤</span> <span class="n">r</span> <span class="bp">∧</span> <span class="n">r</span> <span class="bp">&lt;</span> <span class="mi">3</span> <span class="bp">∧</span> <span class="mi">11</span> <span class="bp">≡</span> <span class="n">r</span> <span class="o">[</span><span class="n">ZMOD</span> <span class="mi">3</span><span class="o">]</span> <span class="o">:=</span> <span class="kd">by</span>
   <span class="gr">sorry</span>
 </pre></div>
@@ -959,25 +959,25 @@ hb2 : ∀ (y : ℝ), y ^ 2 ≤ 2 → y ≤ b
 <span id="contradiction-hyp"></span><h2>4.4. 矛盾的假设<a class="headerlink" href="#contradictory-hypotheses" title="此标题的永久链接"></a></h2>
 <section id="pos-of-mul-pos-right-proof">
 <span id="id27"></span><h3>4.4.1. 例<a class="headerlink" href="#pos-of-mul-pos-right-proof" title="此标题的永久链接"></a></h3>
-<p>因此 \(q\) 必为 2，这是严格介于 1 与 3 之间的唯一整数。于是 \(r=14-5\cdot 2=4\)。</p>
 <p>有时我们会遇到两个相互矛盾的假设。此时就不需要再证明别的东西了。两个相互矛盾的假设说明我们所假设的情形其实不可能发生。</p>
 <p>这在分类证明中很常见。你可能把问题化为一组情形，在某些情形中证明目标，而在另外一些情形中证明它们不可能发生。</p>
+<p>下面是这类推理的一个例子。为了把要点说清楚，我把解答写得非常细。</p>
 <div class="admonition-lemma admonition">
-<p class="admonition-title">下面是这类推理的一个例子。为了把要点说清楚，我把解答写得非常细。</p>
-<p>引理</p>
-</div>
+<p class="admonition-title">引理</p>
 <p>设 \(x\) 和 \(y\) 为实数，并假设 \(0&lt;xy\) 且 \(0 \le x\)。证明 \(0&lt;y\)。</p>
+</div>
+<p>我们以前已经多次使用过这个事实；它是 <code class="docutils literal notranslate"><span class="pre">cancel</span></code> 策略背后的事实之一。</p>
 <div class="admonition-proof admonition">
-<p class="admonition-title">我们以前已经多次使用过这个事实；它是 <code class="docutils literal notranslate"><span class="pre">cancel</span></code> 策略背后的事实之一。</p>
-<p>证明</p>
+<p class="admonition-title">证明</p>
 <p>我们按照 \(y\) 是否为正分两种情形讨论。</p>
+<p>情形 1（\(y \le 0\)）：由于 \(0 \le x\)，我们有</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}0 &amp;= x \cdot 0\\
 &amp;\geq xy,\end{split}\]</div>
-<p>情形 1（\(y \le 0\)）：由于 \(0 \le x\)，我们有</p>
 <p>所以 \(0&lt;xy\) 为假。这与假设 \(0&lt; xy\) 矛盾，因此这一情形不可能发生。</p>
-</div>
 <p>情形 2（\(0 &lt; y\)）：这正是我们需要证明的结论，所以证明完成。</p>
+</div>
+<p>在 Lean 中，<code class="docutils literal notranslate"><span class="pre">contradiction</span></code> 策略通过指出两个相互矛盾的假设来结束一个证明（或子证明）。在这个例子的 Lean 翻译中，注意它使用前的目标状态是</p>
 <div class="highlight-text notranslate"><div class="highlight"><pre><span></span>y x : ℝ
 h : 0 &lt; x * y
 hx : 0 ≤ x
@@ -986,7 +986,7 @@ this : ¬0 &lt; x * y
 ⊢ 0 &lt; y
 </pre></div>
 </div>
-<p>在 Lean 中，<code class="docutils literal notranslate"><span class="pre">contradiction</span></code> 策略通过指出两个相互矛盾的假设来结束一个证明（或子证明）。在这个例子的 Lean 翻译中，注意它使用前的目标状态是</p>
+<p>其中含有相互矛盾的假设 h : 0 &lt; x * y 和 this : ¬0 &lt; x * y。（记住，¬ 是“非”的逻辑符号。如果你没有为假设命名，Lean 会把它标记为 this。）</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">example</span> <span class="o">{</span><span class="n">y</span> <span class="o">:</span> <span class="n">ℝ</span><span class="o">}</span> <span class="o">(</span><span class="n">x</span> <span class="o">:</span> <span class="n">ℝ</span><span class="o">)</span> <span class="o">(</span><span class="n">h</span> <span class="o">:</span> <span class="mi">0</span> <span class="bp">&lt;</span> <span class="n">x</span> <span class="bp">*</span> <span class="n">y</span><span class="o">)</span> <span class="o">(</span><span class="n">hx</span> <span class="o">:</span> <span class="mi">0</span> <span class="bp">≤</span> <span class="n">x</span><span class="o">)</span> <span class="o">:</span> <span class="mi">0</span> <span class="bp">&lt;</span> <span class="n">y</span> <span class="o">:=</span> <span class="kd">by</span>
   <span class="n">obtain</span> <span class="n">hneg</span> <span class="bp">|</span> <span class="n">hpos</span> <span class="o">:</span> <span class="n">y</span> <span class="bp">≤</span> <span class="mi">0</span> <span class="bp">∨</span> <span class="mi">0</span> <span class="bp">&lt;</span> <span class="n">y</span> <span class="o">:=</span> <span class="n">le_or_lt</span> <span class="n">y</span> <span class="mi">0</span>
   <span class="bp">·</span> <span class="c1">-- the case `y ≤ 0`</span>
@@ -1003,20 +1003,20 @@ this : ¬0 &lt; x * y
 </section>
 <section id="numbers-contradiction">
 <span id="id28"></span><h3>4.4.2. 例<a class="headerlink" href="#numbers-contradiction" title="此标题的永久链接"></a></h3>
-<p>其中含有相互矛盾的假设 h : 0 &lt; x * y 和 this : ¬0 &lt; x * y。（记住，¬ 是“非”的逻辑符号。如果你没有为假设命名，Lean 会把它标记为 this。）</p>
+<p>得到矛盾的一种很常见方式，是证明若干假设推出某个“显然为假”的数值事实，而这个假的事实可以由 <code class="docutils literal notranslate"><span class="pre">numbers</span></code> 检查。</p>
 <div class="admonition-problem admonition">
-<p class="admonition-title">得到矛盾的一种很常见方式，是证明若干假设推出某个“显然为假”的数值事实，而这个假的事实可以由 <code class="docutils literal notranslate"><span class="pre">numbers</span></code> 检查。</p>
-<p>问题</p>
+<p class="admonition-title">问题</p>
+<p>设 \(t\) 为小于 3 的整数，并假设 \(t - 1 = 6\)。证明 \(t=13\)。</p>
 </div>
 <div class="admonition-solution admonition">
-<p class="admonition-title">设 \(t\) 为小于 3 的整数，并假设 \(t - 1 = 6\)。证明 \(t=13\)。</p>
-<p>解答</p>
+<p class="admonition-title">解答</p>
+<p>我们有</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}7 &amp;= t\\
 &amp;&lt;3.\end{split}\]</div>
-<p>我们有</p>
-</div>
 <p>但显然 \(7 &lt;3\) 为假，矛盾。因此任何结论（包括 \(t=13\)）都为真。</p>
+</div>
+<p>你可以像前面的例子一样，直接使用 <code class="docutils literal notranslate"><span class="pre">contradiction</span></code> 策略把这个证明写成 Lean：</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">example</span> <span class="o">{</span><span class="n">t</span> <span class="o">:</span> <span class="n">ℤ</span><span class="o">}</span> <span class="o">(</span><span class="n">h2</span> <span class="o">:</span> <span class="n">t</span> <span class="bp">&lt;</span> <span class="mi">3</span><span class="o">)</span> <span class="o">(</span><span class="n">h</span> <span class="o">:</span> <span class="n">t</span> <span class="bp">-</span> <span class="mi">1</span> <span class="bp">=</span> <span class="mi">6</span><span class="o">)</span> <span class="o">:</span> <span class="n">t</span> <span class="bp">=</span> <span class="mi">13</span> <span class="o">:=</span> <span class="kd">by</span>
   <span class="k">have</span> <span class="n">H</span> <span class="o">:=</span>
   <span class="k">calc</span>
@@ -1026,7 +1026,7 @@ this : ¬0 &lt; x * y
   <span class="n">contradiction</span>
 </pre></div>
 </div>
-<p>你可以像前面的例子一样，直接使用 <code class="docutils literal notranslate"><span class="pre">contradiction</span></code> 策略把这个证明写成 Lean：</p>
+<p>不过这一模式也足够常见，所以 Lean 中有一个简写。若 <code class="docutils literal notranslate"><span class="pre">H</span></code> 是一个假设，并且它的否定可以由 <code class="docutils literal notranslate"><span class="pre">numbers</span></code> 证明，那么写 <code class="docutils literal notranslate"><span class="pre">numbers</span> <span class="pre">at</span> <span class="pre">H</span></code> 就会关闭目标。</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">example</span> <span class="o">{</span><span class="n">t</span> <span class="o">:</span> <span class="n">ℤ</span><span class="o">}</span> <span class="o">(</span><span class="n">h2</span> <span class="o">:</span> <span class="n">t</span> <span class="bp">&lt;</span> <span class="mi">3</span><span class="o">)</span> <span class="o">(</span><span class="n">h</span> <span class="o">:</span> <span class="n">t</span> <span class="bp">-</span> <span class="mi">1</span> <span class="bp">=</span> <span class="mi">6</span><span class="o">)</span> <span class="o">:</span> <span class="n">t</span> <span class="bp">=</span> <span class="mi">13</span> <span class="o">:=</span> <span class="kd">by</span>
   <span class="k">have</span> <span class="n">H</span> <span class="o">:=</span>
   <span class="k">calc</span>
@@ -1039,25 +1039,25 @@ this : ¬0 &lt; x * y
 <section id="mod-contradictory">
 <span id="id29"></span><h3>4.4.3. 例<a class="headerlink" href="#mod-contradictory" title="此标题的永久链接"></a></h3>
 <div class="admonition-problem admonition">
-<p class="admonition-title">不过这一模式也足够常见，所以 Lean 中有一个简写。若 <code class="docutils literal notranslate"><span class="pre">H</span></code> 是一个假设，并且它的否定可以由 <code class="docutils literal notranslate"><span class="pre">numbers</span></code> 证明，那么写 <code class="docutils literal notranslate"><span class="pre">numbers</span> <span class="pre">at</span> <span class="pre">H</span></code> 就会关闭目标。</p>
-<p>问题</p>
+<p class="admonition-title">问题</p>
+<p>证明：若 \(n^2+n+1\equiv 1\mod 3\)，则 \(n\equiv 0\mod 3\) 或 \(n\equiv 2\mod 3\)。</p>
 </div>
 <div class="admonition-solution admonition">
-<p class="admonition-title">证明：若 \(n^2+n+1\equiv 1\mod 3\)，则 \(n\equiv 0\mod 3\) 或 \(n\equiv 2\mod 3\)。</p>
-<p>解答</p>
+<p class="admonition-title">解答</p>
+<p>我们按照 \(n\) 模 3 的余数分类讨论。若 \(n\equiv 0\mod 3\) 或 \(n\equiv 2\mod 3\)，则证明完成。否则 \(n\equiv 1\mod 3\)，于是</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}0 &amp;\equiv 0 + 3 \cdot 1 \mod 3 \\
   &amp; = 1 ^ 2 + 1 + 1\\
   &amp;\equiv n ^ 2 + n + 1 \mod 3\\
   &amp;\equiv 1 \mod 3,\end{split}\]</div>
-<p>我们按照 \(n\) 模 3 的余数分类讨论。若 \(n\equiv 0\mod 3\) 或 \(n\equiv 2\mod 3\)，则证明完成。否则 \(n\equiv 1\mod 3\)，于是</p>
-</div>
 <p>矛盾。</p>
+</div>
+<p>注意，在上面的证明中，我们多做了一点工作来得到 \(0\equiv 1\mod 3\) 作为矛盾，而不是得到更容易推出的 \(3\equiv 1\mod 3\)：</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}3 &amp; = 1 ^ 2 + 1 + 1\\
   &amp;\equiv \ldots\end{split}\]</div>
-<p>注意，在上面的证明中，我们多做了一点工作来得到 \(0\equiv 1\mod 3\) 作为矛盾，而不是得到更容易推出的 \(3\equiv 1\mod 3\)：</p>
 <p>在本书中，我们只把满足 \(0 \le i&lt;n\) 且 \(0 \le j&lt;n\) 的同余 \(i\equiv j\mod n\) 视为“显然为真/假”。涉及更大数的同余，我们要求显式地先化简到模 \(n\) 的代表元；正如这里把 \(3=1 ^ 2 + 1 + 1\) 模 3 化为 \(0 + 3 \cdot 1\)，因而化为 \(0\)。</p>
+<p>其数学依据是唯一性引理 <code class="docutils literal notranslate"><span class="pre">Int.existsUnique_modEq_lt</span></code>，见例 4.3.4。</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">example</span> <span class="o">(</span><span class="n">n</span> <span class="o">:</span> <span class="n">ℤ</span><span class="o">)</span> <span class="o">(</span><span class="n">hn</span> <span class="o">:</span> <span class="n">n</span> <span class="bp">^</span> <span class="mi">2</span> <span class="bp">+</span> <span class="n">n</span> <span class="bp">+</span> <span class="mi">1</span> <span class="bp">≡</span> <span class="mi">1</span> <span class="o">[</span><span class="n">ZMOD</span> <span class="mi">3</span><span class="o">])</span> <span class="o">:</span>
     <span class="n">n</span> <span class="bp">≡</span> <span class="mi">0</span> <span class="o">[</span><span class="n">ZMOD</span> <span class="mi">3</span><span class="o">]</span> <span class="bp">∨</span> <span class="n">n</span> <span class="bp">≡</span> <span class="mi">2</span> <span class="o">[</span><span class="n">ZMOD</span> <span class="mi">3</span><span class="o">]</span> <span class="o">:=</span> <span class="kd">by</span>
   <span class="n">mod_cases</span> <span class="n">h</span> <span class="o">:</span> <span class="n">n</span> <span class="bp">%</span> <span class="mi">3</span>
@@ -1079,21 +1079,21 @@ this : ¬0 &lt; x * y
 </section>
 <section id="prime-test">
 <span id="id30"></span><h3>4.4.4. 例<a class="headerlink" href="#prime-test" title="此标题的永久链接"></a></h3>
-<p>其数学依据是唯一性引理 <code class="docutils literal notranslate"><span class="pre">Int.existsUnique_modEq_lt</span></code>，见例 4.3.4。</p>
+<p>我们在例 4.1.8 中定义了素数，并证明了 2 是素数。现在我们证明该定义的一个轻微改写版本；它在证明其他数为素数时会很方便。</p>
 <div class="admonition-lemma admonition">
-<p class="admonition-title">我们在例 4.1.8 中定义了素数，并证明了 2 是素数。现在我们证明该定义的一个轻微改写版本；它在证明其他数为素数时会很方便。</p>
-<p>引理</p>
+<p class="admonition-title">引理</p>
+<p>设 \(p\) 为大于等于 2 的自然数。假设对于所有满足 \(1&lt;m&lt;p\) 的自然数 \(m\)，\(m\) 不是 \(p\) 的因子。证明 \(p\) 是素数。</p>
 </div>
 <div class="admonition-proof admonition">
-<p class="admonition-title">设 \(p\) 为大于等于 2 的自然数。假设对于所有满足 \(1&lt;m&lt;p\) 的自然数 \(m\)，\(m\) 不是 \(p\) 的因子。证明 \(p\) 是素数。</p>
-<p>证明</p>
+<p class="admonition-title">证明</p>
 <p>既然已知 \(2 \le p\)，剩下要证明的是“素数”定义的第二部分：设 \(m\) 为 \(p\) 的因子（\(\star\)）；我们必须证明 \(m=1\) 或 \(m=p\)。</p>
 <p>由于 \(m\) 是 \(p\) 的因子，我们有 \(1 \le m\)。所以要么 \(m=1\)，要么 \(1&lt;m\)；我们相应地分类讨论。</p>
 <p>情形 1（\(m=1\)）：这立即给出目标 \(m=1\) 或 \(m=p\)。</p>
 <p>情形 2（\(1&lt;m\)）：由于 \(m\) 是 \(p\) 的因子，我们有 \(m \le p\)。所以要么 \(m=p\)，要么 \(m&lt;p\)；我们相应地分类讨论。</p>
 <p>情形 2(i)（\(m=p\)）：这立即给出目标 \(m=1\) 或 \(m=p\)。</p>
-</div>
 <p>情形 2(ii)（\(m&lt;p\)）：现在我们已经证明 \(1&lt;m&lt;p\)，由题目给出的一个事实可知，\(m\) 不是 \(p\) 的因子。这与前面的陈述（\(\star\)）矛盾。</p>
+</div>
+<p>我已经在 Lean 中填好了这个证明的大约一半；请补全其余部分，包括最后的矛盾。如果需要查找关于因子大小界的 Lean 名称，它们在例 3.2.7 和例 3.2.8 中已经证明。</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">example</span> <span class="o">{</span><span class="n">p</span> <span class="o">:</span> <span class="n">ℕ</span><span class="o">}</span> <span class="o">(</span><span class="n">hp</span> <span class="o">:</span> <span class="mi">2</span> <span class="bp">≤</span> <span class="n">p</span><span class="o">)</span> <span class="o">(</span><span class="n">H</span> <span class="o">:</span> <span class="bp">∀</span> <span class="n">m</span> <span class="o">:</span> <span class="n">ℕ</span><span class="o">,</span> <span class="mi">1</span> <span class="bp">&lt;</span> <span class="n">m</span> <span class="bp">→</span> <span class="n">m</span> <span class="bp">&lt;</span> <span class="n">p</span> <span class="bp">→</span> <span class="bp">¬</span><span class="n">m</span> <span class="bp">∣</span> <span class="n">p</span><span class="o">)</span> <span class="o">:</span> <span class="n">Prime</span> <span class="n">p</span> <span class="o">:=</span> <span class="kd">by</span>
   <span class="n">constructor</span>
   <span class="bp">·</span> <span class="n">apply</span> <span class="n">hp</span> <span class="c1">-- show that `2 ≤ p`</span>
@@ -1108,18 +1108,18 @@ this : ¬0 &lt; x * y
   <span class="gr">sorry</span>
 </pre></div>
 </div>
-<p>我已经在 Lean 中填好了这个证明的大约一半；请补全其余部分，包括最后的矛盾。如果需要查找关于因子大小界的 Lean 名称，它们在例 3.2.7 和例 3.2.8 中已经证明。</p>
 <p>我们把它记录下来，以便以后用 Lean 名称 <code class="docutils literal notranslate"><span class="pre">prime_test</span></code> 调用。</p>
+<p>下面举例说明如何使用这个素性判定引理。</p>
 <div class="admonition-problem admonition">
-<p class="admonition-title">下面举例说明如何使用这个素性判定引理。</p>
-<p>问题</p>
+<p class="admonition-title">问题</p>
+<p>证明 5 是素数。</p>
 </div>
 <div class="admonition-solution admonition">
-<p class="admonition-title">证明 5 是素数。</p>
-<p>解答</p>
+<p class="admonition-title">解答</p>
 <p>显然 \(2 ≤ 5\)。设 \(m\) 为满足 \(1&lt;m&lt;5\) 的自然数。我们必须证明 5 不是 \(m\) 的倍数。需要检查三种情形：</p>
 <p>情形 1（\(m=2\)）：由于 5 位于 2 的相邻倍数 \(2\cdot 2\) 与 \(2 \cdot 3\) 之间，所以 5 不是 2 的倍数。</p>
 <p>情形 2（\(m=3\)）：由于 5 位于 3 的相邻倍数 \(3\cdot 1\) 与 \(3 \cdot 2\) 之间，所以 5 不是 3 的倍数。</p>
+<p>情形 3（\(m=4\)）：由于 5 位于 4 的相邻倍数 \(4\cdot 1\) 与 \(4 \cdot 2\) 之间，所以 5 不是 4 的倍数。</p>
 </div>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">example</span> <span class="o">:</span> <span class="n">Prime</span> <span class="mi">5</span> <span class="o">:=</span> <span class="kd">by</span>
   <span class="n">apply</span> <span class="n">prime_test</span>
@@ -1135,44 +1135,44 @@ this : ¬0 &lt; x * y
     <span class="n">constructor</span> <span class="bp">&lt;;&gt;</span> <span class="n">numbers</span>
 </pre></div>
 </div>
-<p>情形 3（\(m=4\)）：由于 5 位于 4 的相邻倍数 \(4\cdot 1\) 与 \(4 \cdot 2\) 之间，所以 5 不是 4 的倍数。</p>
+<p>这里 <code class="docutils literal notranslate"><span class="pre">constructor</span> <span class="pre">&lt;;&gt;</span> <span class="pre">numbers</span></code> 是如下代码的简写：</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="n">constructor</span>
 <span class="bp">·</span> <span class="n">numbers</span>
 <span class="bp">·</span> <span class="n">numbers</span>
 </pre></div>
 </div>
-<p>这里 <code class="docutils literal notranslate"><span class="pre">constructor</span> <span class="pre">&lt;;&gt;</span> <span class="pre">numbers</span></code> 是如下代码的简写：</p>
+<p>更一般地，<code class="docutils literal notranslate"><span class="pre">&lt;;&gt;</span></code> 连接两个策略，并把第二个策略应用到第一个策略产生的每个目标上。</p>
 </section>
 <section id="id31">
 <h3>4.4.5. 例<a class="headerlink" href="#id31" title="此标题的永久链接"></a></h3>
-<p>更一般地，<code class="docutils literal notranslate"><span class="pre">&lt;;&gt;</span></code> 连接两个策略，并把第二个策略应用到第一个策略产生的每个目标上。</p>
+<p>下面是一个更难的例子，它有许多情形。</p>
 <div class="admonition-problem admonition">
-<p class="admonition-title">下面是一个更难的例子，它有许多情形。</p>
-<p>问题</p>
-</div>
+<p class="admonition-title">问题</p>
 <p>设 \(a\)、\(b\) 和 \(c\) 为正自然数，满足 \(a^2+b^2=c^2\)。证明 \(3 \le a\)。</p>
+</div>
+<p>满足这个方程的三个数称为一个勾股数组，因为由勾股定理可知，这意味着它们构成一个直角三角形的三边。自然数 3、4、5 满足这个方程：\(3^2+4^2=5^2\)。还有其他解，例如 5、12、13；但本题要证明 3、4、5 是最小的解。</p>
 <div class="admonition-solution admonition">
-<p class="admonition-title">满足这个方程的三个数称为一个勾股数组，因为由勾股定理可知，这意味着它们构成一个直角三角形的三边。自然数 3、4、5 满足这个方程：\(3^2+4^2=5^2\)。还有其他解，例如 5、12、13；但本题要证明 3、4、5 是最小的解。</p>
-<p>解答</p>
+<p class="admonition-title">解答</p>
 <p>要么 \(a \le 2\)，要么 \(3 \le a\)。如果 \(3 \le a\)，则证明完成。若 \(a \le 2\)，我们将导出矛盾。</p>
 <p>要么 \(b \le 1\)，要么 \(2 \le b\)。我们分别讨论这两种情形。</p>
 <p>情形 1（\(b \le 1\)）：</p>
+<p>我们有</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}c ^ 2 &amp; = a ^ 2 + b ^ 2 \\
 &amp;\le 2^2+1^2\\
 &amp;&lt;3^2.\end{split}\]</div>
-<p>我们有</p>
+<p>这推出 \(c&lt;3\)。现在我们有上界 \(a \le 2\)、\(b \le 1\)、\(c &lt; 3\)，因此 \(a\) 为 1 或 2，\(b\) 为 1，且 \(c\) 为 1 或 2。我们可以分析所有这些情形，并检查它们都不成立：</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}1^2+1^2&amp;\ne 1^2,\\
 2^2+1^2&amp;\ne 1^2,\\
 1^2+1^2&amp;\ne 2^2,\\
 2^2+1^2&amp;\ne 2^2.\end{split}\]</div>
-<p>这推出 \(c&lt;3\)。现在我们有上界 \(a \le 2\)、\(b \le 1\)、\(c &lt; 3\)，因此 \(a\) 为 1 或 2，\(b\) 为 1，且 \(c\) 为 1 或 2。我们可以分析所有这些情形，并检查它们都不成立：</p>
 <p>情形 2（\(2 \le b\)）：</p>
+<p>我们有</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}b ^ 2 &amp;&lt; a ^ 2 + b ^ 2 \\
     &amp; = c ^ 2,\end{split}\]</div>
-<p>我们有</p>
+<p>所以 \(b&lt;c\)，从而 \(b+1\le c\)。但另一方面</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}c ^ 2 &amp;= a ^ 2 + b ^ 2 \\
   &amp;≤ 2 ^ 2 + b ^ 2 \\
@@ -1180,9 +1180,9 @@ this : ¬0 &lt; x * y
   &amp; ≤ b ^ 2 + 2 b \\
   &amp; &lt; b ^ 2 + 2b + 1\\
   &amp; = (b + 1) ^ 2,\end{split}\]</div>
-<p>所以 \(b&lt;c\)，从而 \(b+1\le c\)。但另一方面</p>
-</div>
 <p>所以 \(c&lt;b+1\)，从而 \(b+1\le c\) 为假。这两个事实相互矛盾。</p>
+</div>
+<p>请把这个证明写成 Lean。它会比较长；我的版本有 27 行。</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">example</span> <span class="o">{</span><span class="n">a</span> <span class="n">b</span> <span class="n">c</span> <span class="o">:</span> <span class="n">ℕ</span><span class="o">}</span> <span class="o">(</span><span class="n">ha</span> <span class="o">:</span> <span class="mi">0</span> <span class="bp">&lt;</span> <span class="n">a</span><span class="o">)</span> <span class="o">(</span><span class="n">hb</span> <span class="o">:</span> <span class="mi">0</span> <span class="bp">&lt;</span> <span class="n">b</span><span class="o">)</span> <span class="o">(</span><span class="n">hc</span> <span class="o">:</span> <span class="mi">0</span> <span class="bp">&lt;</span> <span class="n">c</span><span class="o">)</span>
     <span class="o">(</span><span class="n">h_pyth</span> <span class="o">:</span> <span class="n">a</span> <span class="bp">^</span> <span class="mi">2</span> <span class="bp">+</span> <span class="n">b</span> <span class="bp">^</span> <span class="mi">2</span> <span class="bp">=</span> <span class="n">c</span> <span class="bp">^</span> <span class="mi">2</span><span class="o">)</span> <span class="o">:</span> <span class="mi">3</span> <span class="bp">≤</span> <span class="n">a</span> <span class="o">:=</span> <span class="kd">by</span>
   <span class="gr">sorry</span>
@@ -1192,26 +1192,26 @@ this : ¬0 &lt; x * y
 <section id="id32">
 <h3>4.4.6. 练习<a class="headerlink" href="#id32" title="此标题的永久链接"></a></h3>
 <ol class="arabic">
-<li><p>证明：存在唯一整数 \(r\)，使得 \(0\le r &lt; 3\) 且 \(11\equiv r\mod 3\)。</p>
+<li><p>设 \(x\) 和 \(y\) 为实数，其中 \(x\) 非负；又设 \(n\) 为正自然数。证明：若 \(y^n \le x^n\)，则 \(y\le x\)。我们以前已经使用过这个事实；它也是 <code class="docutils literal notranslate"><span class="pre">cancel</span></code> 策略背后的引理之一。</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">example</span> <span class="o">{</span><span class="n">x</span> <span class="n">y</span> <span class="o">:</span> <span class="n">ℝ</span><span class="o">}</span> <span class="o">(</span><span class="n">n</span> <span class="o">:</span> <span class="n">ℕ</span><span class="o">)</span> <span class="o">(</span><span class="n">hx</span> <span class="o">:</span> <span class="mi">0</span> <span class="bp">≤</span> <span class="n">x</span><span class="o">)</span> <span class="o">(</span><span class="n">hn</span> <span class="o">:</span> <span class="mi">0</span> <span class="bp">&lt;</span> <span class="n">n</span><span class="o">)</span> <span class="o">(</span><span class="n">h</span> <span class="o">:</span> <span class="n">y</span> <span class="bp">^</span> <span class="n">n</span> <span class="bp">≤</span> <span class="n">x</span> <span class="bp">^</span> <span class="n">n</span><span class="o">)</span> <span class="o">:</span>
     <span class="n">y</span> <span class="bp">≤</span> <span class="n">x</span> <span class="o">:=</span> <span class="kd">by</span>
   <span class="gr">sorry</span>
 </pre></div>
 </div>
 </li>
-<li><p>设 \(x\) 和 \(y\) 为实数，其中 \(x\) 非负；又设 \(n\) 为正自然数。证明：若 \(y^n \le x^n\)，则 \(y\le x\)。我们以前已经使用过这个事实；它也是 <code class="docutils literal notranslate"><span class="pre">cancel</span></code> 策略背后的引理之一。</p>
+<li><p>证明：若 \(n^2\equiv 4\mod 5\)，则 \(n\equiv 2\mod 5\) 或 \(n\equiv 3\mod 5\)。</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">example</span> <span class="o">(</span><span class="n">n</span> <span class="o">:</span> <span class="n">ℤ</span><span class="o">)</span> <span class="o">(</span><span class="n">hn</span> <span class="o">:</span> <span class="n">n</span> <span class="bp">^</span> <span class="mi">2</span> <span class="bp">≡</span> <span class="mi">4</span> <span class="o">[</span><span class="n">ZMOD</span> <span class="mi">5</span><span class="o">])</span> <span class="o">:</span> <span class="n">n</span> <span class="bp">≡</span> <span class="mi">2</span> <span class="o">[</span><span class="n">ZMOD</span> <span class="mi">5</span><span class="o">]</span> <span class="bp">∨</span> <span class="n">n</span> <span class="bp">≡</span> <span class="mi">3</span> <span class="o">[</span><span class="n">ZMOD</span> <span class="mi">5</span><span class="o">]</span> <span class="o">:=</span> <span class="kd">by</span>
   <span class="gr">sorry</span>
 </pre></div>
 </div>
 </li>
-<li><p>证明：若 \(n^2\equiv 4\mod 5\)，则 \(n\equiv 2\mod 5\) 或 \(n\equiv 3\mod 5\)。</p>
+<li><p>证明 7 是素数。</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">example</span> <span class="o">:</span> <span class="n">Prime</span> <span class="mi">7</span> <span class="o">:=</span> <span class="kd">by</span>
   <span class="gr">sorry</span>
 </pre></div>
 </div>
 </li>
-<li><p>证明 7 是素数。</p>
+<li><p>给出第 2.1 节练习中一道题的另一种证明：设 \(x\) 为有理数，满足平方为 4，并且大于 1。证明 \(x=2\)。不要使用 <code class="docutils literal notranslate"><span class="pre">cancel</span></code> 策略；请直接使用本节思想：分成两种情形，然后排除其中一种。（你可能会发现推出一个数值矛盾会很方便。）</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">example</span> <span class="o">{</span><span class="n">x</span> <span class="o">:</span> <span class="n">ℚ</span><span class="o">}</span> <span class="o">(</span><span class="n">h1</span> <span class="o">:</span> <span class="n">x</span> <span class="bp">^</span> <span class="mi">2</span> <span class="bp">=</span> <span class="mi">4</span><span class="o">)</span> <span class="o">(</span><span class="n">h2</span> <span class="o">:</span> <span class="mi">1</span> <span class="bp">&lt;</span> <span class="n">x</span><span class="o">)</span> <span class="o">:</span> <span class="n">x</span> <span class="bp">=</span> <span class="mi">2</span> <span class="o">:=</span> <span class="kd">by</span>
   <span class="k">have</span> <span class="n">h3</span> <span class="o">:=</span>
     <span class="k">calc</span>
@@ -1222,7 +1222,7 @@ this : ¬0 &lt; x * y
 </pre></div>
 </div>
 </li>
-<li><p>给出第 2.1 节练习中一道题的另一种证明：设 \(x\) 为有理数，满足平方为 4，并且大于 1。证明 \(x=2\)。不要使用 <code class="docutils literal notranslate"><span class="pre">cancel</span></code> 策略；请直接使用本节思想：分成两种情形，然后排除其中一种。（你可能会发现推出一个数值矛盾会很方便。）</p>
+<li><p>证明一个素数要么等于 2，要么为奇数。</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">example</span> <span class="o">(</span><span class="n">p</span> <span class="o">:</span> <span class="n">ℕ</span><span class="o">)</span> <span class="o">(</span><span class="n">h</span> <span class="o">:</span> <span class="n">Prime</span> <span class="n">p</span><span class="o">)</span> <span class="o">:</span> <span class="n">p</span> <span class="bp">=</span> <span class="mi">2</span> <span class="bp">∨</span> <span class="n">Odd</span> <span class="n">p</span> <span class="o">:=</span> <span class="kd">by</span>
   <span class="gr">sorry</span>
 </pre></div>
@@ -1236,12 +1236,12 @@ this : ¬0 &lt; x * y
 <section id="contradiction-ex1">
 <span id="id33"></span><h3>4.5.1. 例<a class="headerlink" href="#contradiction-ex1" title="此标题的永久链接"></a></h3>
 <div class="admonition-problem admonition">
-<p class="admonition-title">请把这个证明写成 Lean。它会比较长；我的版本有 27 行。</p>
-<p>问题</p>
+<p class="admonition-title">问题</p>
+<p>证明：并非对所有实数 \(x\)，都有 \(x^2\geq x\)。</p>
 </div>
 <div class="admonition-solution admonition">
-<p class="admonition-title">证明：并非对所有实数 \(x\)，都有 \(x^2\geq x\)。</p>
-<p>解答</p>
+<p class="admonition-title">解答</p>
+<p>假设对所有实数 \(x\)，都有 \(x^2\geq x\)。那么特别地 \(0.5^2\geq 0.5\)，但这是假的，矛盾。</p>
 </div>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">example</span> <span class="o">:</span> <span class="bp">¬</span> <span class="o">(</span><span class="bp">∀</span> <span class="n">x</span> <span class="o">:</span> <span class="n">ℝ</span><span class="o">,</span> <span class="n">x</span> <span class="bp">^</span> <span class="mi">2</span> <span class="bp">≥</span> <span class="n">x</span><span class="o">)</span> <span class="o">:=</span> <span class="kd">by</span>
   <span class="n">intro</span> <span class="n">h</span>
@@ -1253,23 +1253,23 @@ this : ¬0 &lt; x * y
 <section id="id34">
 <h3>4.5.2. 例<a class="headerlink" href="#id34" title="此标题的永久链接"></a></h3>
 <div class="admonition-problem admonition">
-<p class="admonition-title">假设对所有实数 \(x\)，都有 \(x^2\geq x\)。那么特别地 \(0.5^2\geq 0.5\)，但这是假的，矛盾。</p>
-<p>问题</p>
-</div>
+<p class="admonition-title">问题</p>
 <p>证明 13 不是 3 的倍数。</p>
+</div>
+<p>过去我们曾用定理 <code class="docutils literal notranslate"><span class="pre">Nat.not_dvd_of_exists_lt_and_lt</span></code> 来建立不整除事实。但现在我们终于有工具从第一原理证明它。</p>
 <div class="admonition-solution admonition">
-<p class="admonition-title">过去我们曾用定理 <code class="docutils literal notranslate"><span class="pre">Nat.not_dvd_of_exists_lt_and_lt</span></code> 来建立不整除事实。但现在我们终于有工具从第一原理证明它。</p>
-<p>解答</p>
+<p class="admonition-title">解答</p>
 <p>假设 13 是 3 的倍数。那么存在自然数 \(k\)，使得 \(13=3k\)。</p>
+<p>情形 1，\(k \le 4\)：那么</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}13 &amp;= 3k \\
 &amp;\le 3\cdot 4,\end{split}\]</div>
-<p>情形 1，\(k \le 4\)：那么</p>
 <p>矛盾。</p>
+<p>情形 2，\(k \ge 5\)：那么</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}13 &amp;= 3k \\
 &amp;\ge 3\cdot 5,\end{split}\]</div>
-<p>情形 2，\(k \ge 5\)：那么</p>
+<p>矛盾。</p>
 </div>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">example</span> <span class="o">:</span> <span class="bp">¬</span> <span class="mi">3</span> <span class="bp">∣</span> <span class="mi">13</span> <span class="o">:=</span> <span class="kd">by</span>
   <span class="n">intro</span> <span class="n">H</span>
@@ -1286,16 +1286,16 @@ this : ¬0 &lt; x * y
 <section id="id35">
 <h3>4.5.3. 例<a class="headerlink" href="#id35" title="此标题的永久链接"></a></h3>
 <div class="admonition-problem admonition">
-<p class="admonition-title">矛盾。</p>
-<p>问题</p>
+<p class="admonition-title">问题</p>
+<p>设 \(x\) 和 \(y\) 为实数，并假设 \(x+y=0\)。证明 \(x\) 与 \(y\) 不可能同时为正。</p>
 </div>
 <div class="admonition-solution admonition">
-<p class="admonition-title">设 \(x\) 和 \(y\) 为实数，并假设 \(x+y=0\)。证明 \(x\) 与 \(y\) 不可能同时为正。</p>
-<p>解答</p>
+<p class="admonition-title">解答</p>
+<p>假设 \(x\) 与 \(y\) 都为正。那么</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}0 &amp;= x+y \\
 &amp;&gt; 0,\end{split}\]</div>
-<p>假设 \(x\) 与 \(y\) 都为正。那么</p>
+<p>矛盾。</p>
 </div>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">example</span> <span class="o">{</span><span class="n">x</span> <span class="n">y</span> <span class="o">:</span> <span class="n">ℝ</span><span class="o">}</span> <span class="o">(</span><span class="n">h</span> <span class="o">:</span> <span class="n">x</span> <span class="bp">+</span> <span class="n">y</span> <span class="bp">=</span> <span class="mi">0</span><span class="o">)</span> <span class="o">:</span> <span class="bp">¬</span><span class="o">(</span><span class="n">x</span> <span class="bp">&gt;</span> <span class="mi">0</span> <span class="bp">∧</span> <span class="n">y</span> <span class="bp">&gt;</span> <span class="mi">0</span><span class="o">)</span> <span class="o">:=</span> <span class="kd">by</span>
   <span class="n">intro</span> <span class="n">h</span>
@@ -1310,23 +1310,23 @@ this : ¬0 &lt; x * y
 <section id="sq-ne-two">
 <span id="id36"></span><h3>4.5.4. 例<a class="headerlink" href="#sq-ne-two" title="此标题的永久链接"></a></h3>
 <div class="admonition-problem admonition">
-<p class="admonition-title">矛盾。</p>
-<p>问题</p>
-</div>
+<p class="admonition-title">问题</p>
 <p>证明：不存在自然数 \(n\)，使得 \(n^2=2\)。</p>
+</div>
+<p>（与例 2.3.2 比较。）</p>
 <div class="admonition-solution admonition">
-<p class="admonition-title">（与例 2.3.2 比较。）</p>
-<p>解答</p>
+<p class="admonition-title">解答</p>
 <p>假设存在某个整数 \(n\) 满足 \(n^2=2\)。</p>
+<p>情形 1，\(n \le 1\)：那么</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}2 &amp;= n^2 \\
 &amp;\le 1^2,\end{split}\]</div>
-<p>情形 1，\(n \le 1\)：那么</p>
 <p>矛盾。</p>
+<p>情形 2，\(n \ge 2\)：那么</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}2 &amp;= n^2 \\
 &amp;\ge 2^2,\end{split}\]</div>
-<p>情形 2，\(n \ge 2\)：那么</p>
+<p>矛盾。</p>
 </div>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">example</span> <span class="o">:</span> <span class="bp">¬</span> <span class="o">(</span><span class="bp">∃</span> <span class="n">n</span> <span class="o">:</span> <span class="n">ℕ</span><span class="o">,</span> <span class="n">n</span> <span class="bp">^</span> <span class="mi">2</span> <span class="bp">=</span> <span class="mi">2</span><span class="o">)</span> <span class="o">:=</span> <span class="kd">by</span>
   <span class="gr">sorry</span>
@@ -1336,19 +1336,19 @@ this : ¬0 &lt; x * y
 <section id="even-iff-not-odd">
 <span id="id37"></span><h3>4.5.5. 例<a class="headerlink" href="#even-iff-not-odd" title="此标题的永久链接"></a></h3>
 <div class="admonition-lemma admonition">
-<p class="admonition-title">矛盾。</p>
-<p>引理</p>
+<p class="admonition-title">引理</p>
+<p>证明：整数 \(n\) 为偶数，当且仅当它不是奇数。</p>
 </div>
 <div class="admonition-proof admonition">
-<p class="admonition-title">证明：整数 \(n\) 为偶数，当且仅当它不是奇数。</p>
-<p>证明</p>
+<p class="admonition-title">证明</p>
+<p>首先，设 \(n\) 为偶数，并反设它也是奇数。那么 \(n\equiv 0\mod 2\)，但也有 \(n\equiv 1\mod 2\)。所以</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}0 &amp;\equiv n \mod 2 \\
 &amp;\equiv 1\mod 2,\end{split}\]</div>
-<p>首先，设 \(n\) 为偶数，并反设它也是奇数。那么 \(n\equiv 0\mod 2\)，但也有 \(n\equiv 1\mod 2\)。所以</p>
 <p>矛盾。</p>
-</div>
 <p>现在，假设 \(n\) 不是奇数。由于 \(n\) 必须是偶数或奇数，所以它是偶数。</p>
+</div>
+<p>我们把它记录下来，供以后在 Lean 问题中用名称 <code class="docutils literal notranslate"><span class="pre">Int.even_iff_not_odd</span></code> 调用。</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">example</span> <span class="o">(</span><span class="n">n</span> <span class="o">:</span> <span class="n">ℤ</span><span class="o">)</span> <span class="o">:</span> <span class="n">Int.Even</span> <span class="n">n</span> <span class="bp">↔</span> <span class="bp">¬</span> <span class="n">Int.Odd</span> <span class="n">n</span> <span class="o">:=</span> <span class="kd">by</span>
   <span class="n">constructor</span>
   <span class="bp">·</span> <span class="n">intro</span> <span class="n">h1</span> <span class="n">h2</span>
@@ -1364,10 +1364,10 @@ this : ¬0 &lt; x * y
     <span class="bp">·</span> <span class="n">contradiction</span>
 </pre></div>
 </div>
-<p>我们把它记录下来，供以后在 Lean 问题中用名称 <code class="docutils literal notranslate"><span class="pre">Int.even_iff_not_odd</span></code> 调用。</p>
+<p>现在重复这个过程来刻画“非偶”。</p>
 <div class="admonition-lemma admonition">
-<p class="admonition-title">现在重复这个过程来刻画“非偶”。</p>
-<p>引理</p>
+<p class="admonition-title">引理</p>
+<p>证明：整数 \(n\) 为奇数，当且仅当它不是偶数。</p>
 </div>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">example</span> <span class="o">(</span><span class="n">n</span> <span class="o">:</span> <span class="n">ℤ</span><span class="o">)</span> <span class="o">:</span> <span class="n">Int.Odd</span> <span class="n">n</span> <span class="bp">↔</span> <span class="bp">¬</span> <span class="n">Int.Even</span> <span class="n">n</span> <span class="o">:=</span> <span class="kd">by</span>
   <span class="gr">sorry</span>
@@ -1377,31 +1377,31 @@ this : ¬0 &lt; x * y
 <section id="id38">
 <h3>4.5.6. 例<a class="headerlink" href="#id38" title="此标题的永久链接"></a></h3>
 <div class="admonition-problem admonition">
-<p class="admonition-title">证明：整数 \(n\) 为奇数，当且仅当它不是偶数。</p>
-<p>问题</p>
+<p class="admonition-title">问题</p>
+<p>设 \(n\) 为整数。证明 \(n^2\not\equiv 2 \mod 3\)。</p>
 </div>
 <div class="admonition-solution admonition">
-<p class="admonition-title">设 \(n\) 为整数。证明 \(n^2\not\equiv 2 \mod 3\)。</p>
-<p>解答</p>
+<p class="admonition-title">解答</p>
 <p>假设 \(n^2\equiv 2 \mod 3\)。我们按照 \(n\) 模 3 的余数分类讨论。</p>
+<p>若 \(n\equiv 0 \mod 3\)，则</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}0 &amp;= 0^2 \\
 &amp;\equiv n^2 \mod 3 \\
 &amp;\equiv 2 \mod 3,\end{split}\]</div>
-<p>若 \(n\equiv 0 \mod 3\)，则</p>
 <p>矛盾。</p>
+<p>若 \(n\equiv 1 \mod 3\)，则</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}1 &amp;= 1^2 \\
 &amp;\equiv n^2 \mod 3 \\
 &amp;\equiv 2 \mod 3,\end{split}\]</div>
-<p>若 \(n\equiv 1 \mod 3\)，则</p>
 <p>矛盾。</p>
+<p>最后，若 \(n\equiv 2 \mod 3\)，则</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}1 &amp;\equiv 1 + 3 \cdot 1\mod 3\\
 &amp;=2^2 \\
 &amp;\equiv n^2 \mod 3 \\
 &amp;\equiv 2 \mod 3,\end{split}\]</div>
-<p>最后，若 \(n\equiv 2 \mod 3\)，则</p>
+<p>矛盾。</p>
 </div>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">example</span> <span class="o">(</span><span class="n">n</span> <span class="o">:</span> <span class="n">ℤ</span><span class="o">)</span> <span class="o">:</span> <span class="bp">¬</span><span class="o">(</span><span class="n">n</span> <span class="bp">^</span> <span class="mi">2</span> <span class="bp">≡</span> <span class="mi">2</span> <span class="o">[</span><span class="n">ZMOD</span> <span class="mi">3</span><span class="o">])</span> <span class="o">:=</span> <span class="kd">by</span>
   <span class="n">intro</span> <span class="n">h</span>
@@ -1418,14 +1418,14 @@ this : ¬0 &lt; x * y
 </section>
 <section id="not-prime-proof">
 <span id="id39"></span><h3>4.5.7. 例<a class="headerlink" href="#not-prime-proof" title="此标题的永久链接"></a></h3>
-<p>矛盾。</p>
+<p>现在我们可以偿还几笔账。首先，有如下定理，它最早在例 4.1.9 中提到：</p>
 <div class="admonition-theorem admonition">
-<p class="admonition-title">现在我们可以偿还几笔账。首先，有如下定理，它最早在例 4.1.9 中提到：</p>
-<p>定理</p>
+<p class="admonition-title">定理</p>
+<p>设 \(p\)、\(k\) 和 \(l\) 为自然数，且 \(k\ne 1\)、\(k\ne p\)、\(p=kl\)。则 \(p\) 不是素数。</p>
 </div>
 <div class="admonition-proof admonition">
-<p class="admonition-title">设 \(p\)、\(k\) 和 \(l\) 为自然数，且 \(k\ne 1\)、\(k\ne p\)、\(p=kl\)。则 \(p\) 不是素数。</p>
-<p>证明</p>
+<p class="admonition-title">证明</p>
+<p>\(k\) 是 \(p\) 的因子。如果 \(p\) 是素数，那么根据定义，\(p\) 的任意因子 \(x\) 都满足 \(x=1\) 或 \(x=p\)，所以特别地 \(k=1\) 或 \(k=p\)。但这两者都会与假设矛盾。</p>
 </div>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">example</span> <span class="o">{</span><span class="n">p</span> <span class="o">:</span> <span class="n">ℕ</span><span class="o">}</span> <span class="o">(</span><span class="n">k</span> <span class="n">l</span> <span class="o">:</span> <span class="n">ℕ</span><span class="o">)</span> <span class="o">(</span><span class="n">hk1</span> <span class="o">:</span> <span class="n">k</span> <span class="bp">≠</span> <span class="mi">1</span><span class="o">)</span> <span class="o">(</span><span class="n">hkp</span> <span class="o">:</span> <span class="n">k</span> <span class="bp">≠</span> <span class="n">p</span><span class="o">)</span> <span class="o">(</span><span class="n">hkl</span> <span class="o">:</span> <span class="n">p</span> <span class="bp">=</span> <span class="n">k</span> <span class="bp">*</span> <span class="n">l</span><span class="o">)</span> <span class="o">:</span>
     <span class="bp">¬</span><span class="o">(</span><span class="n">Prime</span> <span class="n">p</span><span class="o">)</span> <span class="o">:=</span> <span class="kd">by</span>
@@ -1443,31 +1443,31 @@ this : ¬0 &lt; x * y
 </section>
 <section id="not-divisible-proof">
 <span id="id40"></span><h3>4.5.8. 例<a class="headerlink" href="#not-divisible-proof" title="此标题的永久链接"></a></h3>
-<p>\(k\) 是 \(p\) 的因子。如果 \(p\) 是素数，那么根据定义，\(p\) 的任意因子 \(x\) 都满足 \(x=1\) 或 \(x=p\)，所以特别地 \(k=1\) 或 \(k=p\)。但这两者都会与假设矛盾。</p>
+<p>其次，还有如下定理，它最早在例 3.2.6 中提到：</p>
 <div class="admonition-theorem admonition">
-<p class="admonition-title">其次，还有如下定理，它最早在例 3.2.6 中提到：</p>
-<p>定理</p>
-</div>
+<p class="admonition-title">定理</p>
 <p>设 \(a\) 和 \(b\) 为整数。如果存在整数 \(q\)，使得 \(bq&lt;a&lt;b(q + 1)\)，则 \(a\) 不是 \(b\) 的倍数。</p>
+</div>
+<p>这就是我们在 Lean 中以 <code class="docutils literal notranslate"><span class="pre">Int.not_dvd_of_exists_lt_and_lt</span></code> 调用过的引理。</p>
 <div class="admonition-proof admonition">
-<p class="admonition-title">这就是我们在 Lean 中以 <code class="docutils literal notranslate"><span class="pre">Int.not_dvd_of_exists_lt_and_lt</span></code> 调用过的引理。</p>
-<p>证明</p>
+<p class="admonition-title">证明</p>
 <p>为导出矛盾，假设 \(a\) 是 \(b\) 的倍数。则存在整数 \(k\)，使得 \(a=bk\)。又设 \(q\) 为满足 \(b q&lt;a&lt;b(q + 1)\) 的整数。</p>
+<p>我们先注意到</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}0 &amp;= a - a\\
 &amp;&lt; b(q+1)-bq\\
 &amp;=b.\end{split}\]</div>
-<p>我们先注意到</p>
+<p>现在分别从两个已知不等式出发推理。我们先观察到</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}bk &amp;=a \\
   &amp; &lt; b(q+1),\end{split}\]</div>
-<p>现在分别从两个已知不等式出发推理。我们先观察到</p>
 <p>因此（由于 \(b&gt;0\)）有 \(k &lt; q+1\)。</p>
+<p>接着我们观察到</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}bq &amp;&lt; a \\
   &amp; =bk,\end{split}\]</div>
-<p>接着我们观察到</p>
 <p>因此（由于 \(b&gt;0\)）有 \(q &lt; k\)，从而 \(q+1 \le k\)。</p>
+<p>这两个事实相互矛盾，所以 \(a\) 终究不是 \(b\) 的倍数。</p>
 </div>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">example</span> <span class="o">(</span><span class="n">a</span> <span class="n">b</span> <span class="o">:</span> <span class="n">ℤ</span><span class="o">)</span> <span class="o">(</span><span class="n">h</span> <span class="o">:</span> <span class="bp">∃</span> <span class="n">q</span><span class="o">,</span> <span class="n">b</span> <span class="bp">*</span> <span class="n">q</span> <span class="bp">&lt;</span> <span class="n">a</span> <span class="bp">∧</span> <span class="n">a</span> <span class="bp">&lt;</span> <span class="n">b</span> <span class="bp">*</span> <span class="o">(</span><span class="n">q</span> <span class="bp">+</span> <span class="mi">1</span><span class="o">))</span> <span class="o">:</span> <span class="bp">¬</span><span class="n">b</span> <span class="bp">∣</span> <span class="n">a</span> <span class="o">:=</span> <span class="kd">by</span>
   <span class="n">intro</span> <span class="n">H</span>
@@ -1487,28 +1487,28 @@ this : ¬0 &lt; x * y
 </section>
 <section id="better-prime-test">
 <span id="id41"></span><h3>4.5.9. 例<a class="headerlink" href="#better-prime-test" title="此标题的永久链接"></a></h3>
-<p>这两个事实相互矛盾，所以 \(a\) 终究不是 \(b\) 的倍数。</p>
+<p>我们还建立一个素性判定，它比例 4.4.4 中的判定更高效。</p>
 <div class="admonition-theorem admonition">
-<p class="admonition-title">我们还建立一个素性判定，它比例 4.4.4 中的判定更高效。</p>
-<p>定理</p>
-</div>
+<p class="admonition-title">定理</p>
 <p>设 \(p\) 为至少为 2 的自然数。设 \(T\) 为另一个自然数，其平方大于 \(p\)；并假设每个满足 \(1&lt;m&lt;T\) 的自然数 \(m\) 都不是 \(p\) 的因子。则 \(p\) 是素数。</p>
+</div>
+<p>（注意，在例 4.4.4 的判定中，我们必须检查直到 \(p\) 的每个数都不是 \(p\) 的因子；而使用这个判定，只需检查到大约 \(p\) 的平方根为止。）</p>
 <div class="admonition-proof admonition">
-<p class="admonition-title">（注意，在例 4.4.4 的判定中，我们必须检查直到 \(p\) 的每个数都不是 \(p\) 的因子；而使用这个判定，只需检查到大约 \(p\) 的平方根为止。）</p>
-<p>证明</p>
+<p class="admonition-title">证明</p>
 <p>由例 4.4.4 中的素性判定，只需证明每个满足 \(1&lt;m&lt;p\) 的自然数 \(m\) 都不是 \(p\) 的因子。设 \(m\) 为这样的自然数。若 \(m &lt; T\)，则由假设可知 \(m\) 不是 \(p\) 的因子。</p>
 <p>于是，假设 \(T \le m\)，并且 \(m\) 是 \(p\) 的因子。则存在自然数 \(l\)，使得 \(p= ml\)。自然数 \(l\) 也是 \(p\) 的因子。</p>
+<p>我们断言 \(1&lt;l\)。只需证明 \(m \cdot 1 &lt; ml\)，而事实上</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}m\cdot 1 &amp;=m \\
   &amp; &lt; p\\
   &amp;=ml.\end{split}\]</div>
-<p>我们断言 \(1&lt;l\)。只需证明 \(m \cdot 1 &lt; ml\)，而事实上</p>
+<p>我们还断言 \(l&lt;T\)。只需证明 \(Tl &lt; T \cdot T\)，而事实上</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}Tl &amp; \le ml \\
   &amp; =p\\
   &amp;&lt; T^2\\
   &amp;=T\cdot T.\end{split}\]</div>
-<p>我们还断言 \(l&lt;T\)。只需证明 \(Tl &lt; T \cdot T\)，而事实上</p>
+<p>既然已经证明 \(1&lt;l&lt;T\)，由假设可知 \(l\) 不是 \(p\) 的因子，矛盾。因此 \(m\) 终究不是 \(p\) 的因子。</p>
 </div>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">example</span> <span class="o">{</span><span class="n">p</span> <span class="o">:</span> <span class="n">ℕ</span><span class="o">}</span> <span class="o">(</span><span class="n">hp</span> <span class="o">:</span> <span class="mi">2</span> <span class="bp">≤</span> <span class="n">p</span><span class="o">)</span>  <span class="o">(</span><span class="n">T</span> <span class="o">:</span> <span class="n">ℕ</span><span class="o">)</span> <span class="o">(</span><span class="n">hTp</span> <span class="o">:</span> <span class="n">p</span> <span class="bp">&lt;</span> <span class="n">T</span> <span class="bp">^</span> <span class="mi">2</span><span class="o">)</span>
     <span class="o">(</span><span class="n">H</span> <span class="o">:</span> <span class="bp">∀</span> <span class="o">(</span><span class="n">m</span> <span class="o">:</span> <span class="n">ℕ</span><span class="o">),</span> <span class="mi">1</span> <span class="bp">&lt;</span> <span class="n">m</span> <span class="bp">→</span> <span class="n">m</span> <span class="bp">&lt;</span> <span class="n">T</span> <span class="bp">→</span> <span class="bp">¬</span> <span class="o">(</span><span class="n">m</span> <span class="bp">∣</span> <span class="n">p</span><span class="o">))</span> <span class="o">:</span>
@@ -1532,19 +1532,19 @@ this : ¬0 &lt; x * y
   <span class="n">contradiction</span>
 </pre></div>
 </div>
-<p>既然已经证明 \(1&lt;l&lt;T\)，由假设可知 \(l\) 不是 \(p\) 的因子，矛盾。因此 \(m\) 终究不是 \(p\) 的因子。</p>
 <p>我们把它记录下来，以便以后用 Lean 名称 <code class="docutils literal notranslate"><span class="pre">better_prime_test</span></code> 调用。</p>
+<p>下面举例说明如何使用这个素性判定引理。我把后面的若干情形留给你检查。</p>
 <div class="admonition-problem admonition">
-<p class="admonition-title">下面举例说明如何使用这个素性判定引理。我把后面的若干情形留给你检查。</p>
-<p>问题</p>
+<p class="admonition-title">问题</p>
+<p>证明 79 是素数。</p>
 </div>
 <div class="admonition-solution admonition">
-<p class="admonition-title">证明 79 是素数。</p>
-<p>解答</p>
+<p class="admonition-title">解答</p>
 <p>显然 \(2 ≤ 79\)。还要注意 \(79&lt;9^2\)。设 \(m\) 为满足 \(1&lt;m&lt;9\) 的自然数。我们要证明 79 不是 \(m\) 的倍数。需要检查七种情形：</p>
 <p>情形 1（\(m=2\)）：由于 79 位于 2 的相邻倍数 \(2\cdot 39\) 与 \(2 \cdot 40\) 之间，所以 79 不是 2 的倍数。</p>
 <p>情形 2（\(m=3\)）：由于 79 位于 3 的相邻倍数 \(3\cdot 26\) 与 \(3 \cdot 27\) 之间，所以 79 不是 3 的倍数。</p>
 <p>情形 3（\(m=4\)）：由于 79 位于 4 的相邻倍数 \(4\cdot 19\) 与 \(4 \cdot 20\) 之间，所以 79 不是 4 的倍数。</p>
+<p>（5、6、7、8 的情形依此类推。）</p>
 </div>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">example</span> <span class="o">:</span> <span class="n">Prime</span> <span class="mi">79</span> <span class="o">:=</span> <span class="kd">by</span>
   <span class="n">apply</span> <span class="n">better_prime_test</span> <span class="o">(</span><span class="n">T</span> <span class="o">:=</span> <span class="mi">9</span><span class="o">)</span>
@@ -1569,55 +1569,55 @@ this : ¬0 &lt; x * y
 <section id="id42">
 <h3>4.5.10. 练习<a class="headerlink" href="#id42" title="此标题的永久链接"></a></h3>
 <ol class="arabic">
-<li><p>证明一个素数要么等于 2，要么为奇数。</p>
+<li><p>证明：不存在实数 \(t\)，使得 \(t \le 4\) 且 \(t\geq 5\)。</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">example</span> <span class="o">:</span> <span class="bp">¬</span> <span class="o">(</span><span class="bp">∃</span> <span class="n">t</span> <span class="o">:</span> <span class="n">ℝ</span><span class="o">,</span> <span class="n">t</span> <span class="bp">≤</span> <span class="mi">4</span> <span class="bp">∧</span> <span class="n">t</span> <span class="bp">≥</span> <span class="mi">5</span><span class="o">)</span> <span class="o">:=</span> <span class="kd">by</span>
   <span class="gr">sorry</span>
 </pre></div>
 </div>
 </li>
-<li><p>证明：不存在实数 \(t\)，使得 \(t \le 4\) 且 \(t\geq 5\)。</p>
+<li><p>证明：不存在实数 \(a\)，使得 \(a^2 \le 8\) 且 \(a^3\geq 30\)。</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">example</span> <span class="o">:</span> <span class="bp">¬</span> <span class="o">(</span><span class="bp">∃</span> <span class="n">a</span> <span class="o">:</span> <span class="n">ℝ</span><span class="o">,</span> <span class="n">a</span> <span class="bp">^</span> <span class="mi">2</span> <span class="bp">≤</span> <span class="mi">8</span> <span class="bp">∧</span> <span class="n">a</span> <span class="bp">^</span> <span class="mi">3</span> <span class="bp">≥</span> <span class="mi">30</span><span class="o">)</span> <span class="o">:=</span> <span class="kd">by</span>
   <span class="gr">sorry</span>
 </pre></div>
 </div>
 </li>
-<li><p>证明：不存在实数 \(a\)，使得 \(a^2 \le 8\) 且 \(a^3\geq 30\)。</p>
+<li><p>证明 7 不是偶数。</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">example</span> <span class="o">:</span> <span class="bp">¬</span> <span class="n">Int.Even</span> <span class="mi">7</span> <span class="o">:=</span> <span class="kd">by</span>
   <span class="gr">sorry</span>
 </pre></div>
 </div>
 </li>
-<li><p>证明 7 不是偶数。</p>
+<li><p>设整数 \(n\) 满足 \(n+3=7\)。证明 \(n\) 不可能既为偶数又是方程 \(n^2=10\) 的解。</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">example</span> <span class="o">{</span><span class="n">n</span> <span class="o">:</span> <span class="n">ℤ</span><span class="o">}</span> <span class="o">(</span><span class="n">hn</span> <span class="o">:</span> <span class="n">n</span> <span class="bp">+</span> <span class="mi">3</span> <span class="bp">=</span> <span class="mi">7</span><span class="o">)</span> <span class="o">:</span> <span class="bp">¬</span> <span class="o">(</span><span class="n">Int.Even</span> <span class="n">n</span> <span class="bp">∧</span> <span class="n">n</span> <span class="bp">^</span> <span class="mi">2</span> <span class="bp">=</span> <span class="mi">10</span><span class="o">)</span> <span class="o">:=</span> <span class="kd">by</span>
   <span class="gr">sorry</span>
 </pre></div>
 </div>
 </li>
-<li><p>设整数 \(n\) 满足 \(n+3=7\)。证明 \(n\) 不可能既为偶数又是方程 \(n^2=10\) 的解。</p>
+<li><p>设实数 \(x\) 满足 \(x^2&lt;9\)。证明 \(x\) 不可能小于等于 -3，也不可能大于等于 3。</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">example</span> <span class="o">{</span><span class="n">x</span> <span class="o">:</span> <span class="n">ℝ</span><span class="o">}</span> <span class="o">(</span><span class="n">hx</span> <span class="o">:</span> <span class="n">x</span> <span class="bp">^</span> <span class="mi">2</span> <span class="bp">&lt;</span> <span class="mi">9</span><span class="o">)</span> <span class="o">:</span> <span class="bp">¬</span> <span class="o">(</span><span class="n">x</span> <span class="bp">≤</span> <span class="bp">-</span><span class="mi">3</span> <span class="bp">∨</span> <span class="n">x</span> <span class="bp">≥</span> <span class="mi">3</span><span class="o">)</span> <span class="o">:=</span> <span class="kd">by</span>
   <span class="gr">sorry</span>
 </pre></div>
 </div>
 </li>
-<li><p>设实数 \(x\) 满足 \(x^2&lt;9\)。证明 \(x\) 不可能小于等于 -3，也不可能大于等于 3。</p>
+<li><p>证明：不存在自然数 \(N\)，使得每个大于 \(N\) 的自然数都是偶数。</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">example</span> <span class="o">:</span> <span class="bp">¬</span> <span class="o">(</span><span class="bp">∃</span> <span class="n">N</span> <span class="o">:</span> <span class="n">ℕ</span><span class="o">,</span> <span class="bp">∀</span> <span class="n">k</span> <span class="bp">&gt;</span> <span class="n">N</span><span class="o">,</span> <span class="n">Nat.Even</span> <span class="n">k</span><span class="o">)</span> <span class="o">:=</span> <span class="kd">by</span>
   <span class="gr">sorry</span>
 </pre></div>
 </div>
 </li>
-<li><p>证明：不存在自然数 \(N\)，使得每个大于 \(N\) 的自然数都是偶数。</p>
+<li><p>设 \(n\) 为整数。证明 \(n^2\not\equiv 2 \mod 4\)。</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">example</span> <span class="o">(</span><span class="n">n</span> <span class="o">:</span> <span class="n">ℤ</span><span class="o">)</span> <span class="o">:</span> <span class="bp">¬</span><span class="o">(</span><span class="n">n</span> <span class="bp">^</span> <span class="mi">2</span> <span class="bp">≡</span> <span class="mi">2</span> <span class="o">[</span><span class="n">ZMOD</span> <span class="mi">4</span><span class="o">])</span> <span class="o">:=</span> <span class="kd">by</span>
   <span class="gr">sorry</span>
 </pre></div>
 </div>
 </li>
-<li><p>设 \(n\) 为整数。证明 \(n^2\not\equiv 2 \mod 4\)。</p>
+<li><p>证明 1 不是素数。我们把这个引理记录下来，以便以后用名称 <code class="docutils literal notranslate"><span class="pre">not_prime_one</span></code> 调用。</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">example</span> <span class="o">:</span> <span class="bp">¬</span> <span class="n">Prime</span> <span class="mi">1</span> <span class="o">:=</span> <span class="kd">by</span>
   <span class="gr">sorry</span>
 </pre></div>
 </div>
 </li>
-<li><p>证明 1 不是素数。我们把这个引理记录下来，以便以后用名称 <code class="docutils literal notranslate"><span class="pre">not_prime_one</span></code> 调用。</p>
+<li><p>证明 97 是素数。</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">example</span> <span class="o">:</span> <span class="n">Prime</span> <span class="mi">97</span> <span class="o">:=</span> <span class="kd">by</span>
   <span class="gr">sorry</span>
 </pre></div>

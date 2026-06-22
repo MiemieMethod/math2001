@@ -352,59 +352,59 @@ IH : 2 ^ k ≥ k + 1
 <section id="exercises">
 <h3>6.1.7. 练习<a class="headerlink" href="#exercises" title="此标题的永久链接"></a></h3>
 <ol class="arabic">
-<li><p>我们在例 6.7.5 中证明了：对任意整数 \(a\) 和 \(b\)，整数 \(L(a,b)\) 和 \(R(a,b)\) 满足</p>
+<li><p>设 \(n\) 为自然数。证明 \(3 ^n\ge n^2+n+1\)。</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">example</span> <span class="o">(</span><span class="n">n</span> <span class="o">:</span> <span class="n">ℕ</span><span class="o">)</span> <span class="o">:</span> <span class="mi">3</span> <span class="bp">^</span> <span class="n">n</span> <span class="bp">≥</span> <span class="n">n</span> <span class="bp">^</span> <span class="mi">2</span> <span class="bp">+</span> <span class="n">n</span> <span class="bp">+</span> <span class="mi">1</span> <span class="o">:=</span> <span class="kd">by</span>
   <span class="gr">sorry</span>
 </pre></div>
 </div>
 </li>
-<li><p>例如，\(L(7,5)=-2\)、\(R(7,5)=3\)，且 \(\operatorname{gcd}(7,5)=1\)，</p>
+<li><p>设 \(a\geq -1\) 为实数，设 \(n\) 为自然数。证明 \((1+a)^n\ge 1+na\)。这个事实称为 Bernoulli 不等式。</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">example</span> <span class="o">{</span><span class="n">a</span> <span class="o">:</span> <span class="n">ℝ</span><span class="o">}</span> <span class="o">(</span><span class="n">ha</span> <span class="o">:</span> <span class="bp">-</span><span class="mi">1</span> <span class="bp">≤</span> <span class="n">a</span><span class="o">)</span> <span class="o">(</span><span class="n">n</span> <span class="o">:</span> <span class="n">ℕ</span><span class="o">)</span> <span class="o">:</span> <span class="o">(</span><span class="mi">1</span> <span class="bp">+</span> <span class="n">a</span><span class="o">)</span> <span class="bp">^</span> <span class="n">n</span> <span class="bp">≥</span> <span class="mi">1</span> <span class="bp">+</span> <span class="n">n</span> <span class="bp">*</span> <span class="n">a</span> <span class="o">:=</span> <span class="kd">by</span>
   <span class="gr">sorry</span>
 </pre></div>
 </div>
 </li>
-<li><p>并且 \((-2) \cdot 7 + 3 \cdot 5 = 1\)。</p>
+<li><p>设 \(n\) 为自然数。证明 \(5^n\) 模 8 同余于 \(1\) 或 \(5\)。</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">example</span> <span class="o">(</span><span class="n">n</span> <span class="o">:</span> <span class="n">ℕ</span><span class="o">)</span> <span class="o">:</span> <span class="mi">5</span> <span class="bp">^</span> <span class="n">n</span> <span class="bp">≡</span> <span class="mi">1</span> <span class="o">[</span><span class="n">ZMOD</span> <span class="mi">8</span><span class="o">]</span> <span class="bp">∨</span> <span class="mi">5</span> <span class="bp">^</span> <span class="n">n</span> <span class="bp">≡</span> <span class="mi">5</span> <span class="o">[</span><span class="n">ZMOD</span> <span class="mi">8</span><span class="o">]</span> <span class="o">:=</span> <span class="kd">by</span>
   <span class="gr">sorry</span>
 </pre></div>
 </div>
 </li>
-<li><p>但有趣的是，具有该性质的整数对通常并不唯一。例如，</p>
+<li><p>设 \(n\) 为自然数。证明 \(6^n\) 模 7 同余于 \(1\) 或 \(6\)。</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">example</span> <span class="o">(</span><span class="n">n</span> <span class="o">:</span> <span class="n">ℕ</span><span class="o">)</span> <span class="o">:</span> <span class="mi">6</span> <span class="bp">^</span> <span class="n">n</span> <span class="bp">≡</span> <span class="mi">1</span> <span class="o">[</span><span class="n">ZMOD</span> <span class="mi">7</span><span class="o">]</span> <span class="bp">∨</span> <span class="mi">6</span> <span class="bp">^</span> <span class="n">n</span> <span class="bp">≡</span> <span class="mi">6</span> <span class="o">[</span><span class="n">ZMOD</span> <span class="mi">7</span><span class="o">]</span> <span class="o">:=</span> <span class="kd">by</span>
   <span class="gr">sorry</span>
 </pre></div>
 </div>
 </li>
-<li><p>在应用中，通常只需要这个性质，而不需要通过 \(L(a,b)\) 和 \(R(a,b)\) 的具体构造。因此我们把它单独记录下来。这个事实称为贝祖等式。</p>
+<li><p>设 \(n\) 为自然数。证明 \(4^n\) 模 7 同余于 \(1\)、\(2\) 或 \(4\)。</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">example</span> <span class="o">(</span><span class="n">n</span> <span class="o">:</span> <span class="n">ℕ</span><span class="o">)</span> <span class="o">:</span>
     <span class="mi">4</span> <span class="bp">^</span> <span class="n">n</span> <span class="bp">≡</span> <span class="mi">1</span> <span class="o">[</span><span class="n">ZMOD</span> <span class="mi">7</span><span class="o">]</span> <span class="bp">∨</span> <span class="mi">4</span> <span class="bp">^</span> <span class="n">n</span> <span class="bp">≡</span> <span class="mi">2</span> <span class="o">[</span><span class="n">ZMOD</span> <span class="mi">7</span><span class="o">]</span> <span class="bp">∨</span> <span class="mi">4</span> <span class="bp">^</span> <span class="n">n</span> <span class="bp">≡</span> <span class="mi">4</span> <span class="o">[</span><span class="n">ZMOD</span> <span class="mi">7</span><span class="o">]</span> <span class="o">:=</span> <span class="kd">by</span>
   <span class="gr">sorry</span>
 </pre></div>
 </div>
 </li>
-<li><p>推论（贝祖等式）</p>
+<li><p>证明：对所有充分大的自然数 \(n\)，都有 \(3^n\geq 2^n+100\)。</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">example</span> <span class="o">:</span> <span class="n">forall_sufficiently_large</span> <span class="n">n</span> <span class="o">:</span> <span class="n">ℕ</span><span class="o">,</span> <span class="o">(</span><span class="mi">3</span><span class="o">:</span><span class="n">ℤ</span><span class="o">)</span> <span class="bp">^</span> <span class="n">n</span> <span class="bp">≥</span> <span class="mi">2</span> <span class="bp">^</span> <span class="n">n</span> <span class="bp">+</span> <span class="mi">100</span> <span class="o">:=</span> <span class="kd">by</span>
   <span class="n">dsimp</span>
   <span class="gr">sorry</span>
 </pre></div>
 </div>
 </li>
-<li><p>设 \(a\) 和 \(b\) 为整数。则存在整数 \(x\) 和 \(y\)，使得 \(xa+yb=\operatorname{gcd}(a,b)\)。</p>
+<li><p>证明：对所有充分大的自然数 \(n\)，都有 \(2^n\geq n^2+4\)。</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">example</span> <span class="o">:</span> <span class="n">forall_sufficiently_large</span> <span class="n">n</span> <span class="o">:</span> <span class="n">ℕ</span><span class="o">,</span> <span class="mi">2</span> <span class="bp">^</span> <span class="n">n</span> <span class="bp">≥</span> <span class="n">n</span> <span class="bp">^</span> <span class="mi">2</span> <span class="bp">+</span> <span class="mi">4</span> <span class="o">:=</span> <span class="kd">by</span>
   <span class="n">dsimp</span>
   <span class="gr">sorry</span>
 </pre></div>
 </div>
 </li>
-<li><p>证明</p>
+<li><p>证明：对所有充分大的自然数 \(n\)，都有 \(2^n\geq n^3\)。</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">example</span> <span class="o">:</span> <span class="n">forall_sufficiently_large</span> <span class="n">n</span> <span class="o">:</span> <span class="n">ℕ</span><span class="o">,</span> <span class="mi">2</span> <span class="bp">^</span> <span class="n">n</span> <span class="bp">≥</span> <span class="n">n</span> <span class="bp">^</span> <span class="mi">3</span> <span class="o">:=</span> <span class="kd">by</span>
   <span class="n">dsimp</span>
   <span class="gr">sorry</span>
 </pre></div>
 </div>
 </li>
-<li><p>由例 6.7.5，整数 \(L(a,b)\) 和 \(R(a,b)\) 具有这个性质。</p>
+<li><p>设 \(a\) 为奇自然数。用归纳法证明：对所有自然数 \(n\)，自然数 \(a^n\) 为奇数。并由此推出：对所有自然数 \(a\) 和 \(n\)，若 \(a^n\) 为偶数，则 \(a\) 为偶数。（这一部分不是归纳问题。）</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">theorem</span> <span class="n">Odd.pow</span> <span class="o">{</span><span class="n">a</span> <span class="o">:</span> <span class="n">ℕ</span><span class="o">}</span> <span class="o">(</span><span class="n">ha</span> <span class="o">:</span> <span class="n">Odd</span> <span class="n">a</span><span class="o">)</span> <span class="o">(</span><span class="n">n</span> <span class="o">:</span> <span class="n">ℕ</span><span class="o">)</span> <span class="o">:</span> <span class="n">Odd</span> <span class="o">(</span><span class="n">a</span> <span class="bp">^</span> <span class="n">n</span><span class="o">)</span> <span class="o">:=</span> <span class="kd">by</span>
   <span class="gr">sorry</span>
 
@@ -760,7 +760,7 @@ A_4&amp;=1+2+3+4\\
 <section id="id13">
 <h3>6.2.7. 练习<a class="headerlink" href="#id13" title="此标题的永久链接"></a></h3>
 <ol class="arabic">
-<li><p>设 \(n\) 为自然数。证明 \(3 ^n\ge n^2+n+1\)。</p>
+<li><p>考虑由如下递归定义的数列 \((c_n)\)：\[\begin{split}c_0&amp;=7 \\ \text{对 }n:\mathbb{N},\quad c_{n+1} &amp;= 3c_n-10.\end{split}\] 证明：对所有自然数 \(n\)，整数 \(c_n\) 为奇数。</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}c_0&amp;=7 \\
 \text{for }n:\mathbb{N},\quad c_{n+1} &amp;= 3c_n-10.\end{split}\]</div>
@@ -773,13 +773,13 @@ A_4&amp;=1+2+3+4\\
 </pre></div>
 </div>
 </li>
-<li><p>设 \(a\geq -1\) 为实数，设 \(n\) 为自然数。证明 \((1+a)^n\ge 1+na\)。这个事实称为 Bernoulli 不等式。</p>
+<li><p>设数列 \((c_n)\) 如前一题定义。证明：对所有 \(n\)，有 \(c_n=2\cdot 3^n+5\)。</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">example</span> <span class="o">(</span><span class="n">n</span> <span class="o">:</span> <span class="n">ℕ</span><span class="o">)</span> <span class="o">:</span> <span class="n">c</span> <span class="n">n</span> <span class="bp">=</span> <span class="mi">2</span> <span class="bp">*</span> <span class="mi">3</span> <span class="bp">^</span> <span class="n">n</span> <span class="bp">+</span> <span class="mi">5</span> <span class="o">:=</span> <span class="kd">by</span>
   <span class="gr">sorry</span>
 </pre></div>
 </div>
 </li>
-<li><p>设 \(n\) 为自然数。证明 \(5^n\) 模 8 同余于 \(1\) 或 \(5\)。</p>
+<li><p>考虑由如下递归定义的数列 \((y_n)\)：\[\begin{split}y_0&amp;=2 \\ \text{对 }n:\mathbb{N},\quad y_{n+1} &amp;= y_n{}^2.\end{split}\] 证明：对所有自然数 \(n\)，有 \(y_n=2^{2^n}\)。</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}y_0&amp;=2 \\
 \text{for }n:\mathbb{N},\quad y_{n+1} &amp;= y_n{}^2.\end{split}\]</div>
@@ -792,7 +792,7 @@ A_4&amp;=1+2+3+4\\
 </pre></div>
 </div>
 </li>
-<li><p>设 \(n\) 为自然数。证明 \(6^n\) 模 7 同余于 \(1\) 或 \(6\)。</p>
+<li><p>考虑由如下递归定义的数列 \((B_n)\)：\[\begin{split}B_0&amp;=0 \\ \text{对 }n:\mathbb{N},\quad B_{n+1} &amp;= B_n+(n+1)^2.\end{split}\] 因而 \(B_n\) 表示和 \(1^2+2^2+3^2+\cdots+n^2\)。证明：对所有自然数 \(n\)，\[B_n=\frac{n(n+1)(2n+1)}{6}.\]</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}B_0&amp;=0 \\
 \text{for }n:\mathbb{N},\quad B_{n+1} &amp;= B_n+(n+1)^2.\end{split}\]</div>
@@ -807,7 +807,7 @@ A_4&amp;=1+2+3+4\\
 </pre></div>
 </div>
 </li>
-<li><p>设 \(n\) 为自然数。证明 \(4^n\) 模 7 同余于 \(1\)、\(2\) 或 \(4\)。</p>
+<li><p>考虑由如下递归定义的数列 \((S_n)\)：\[\begin{split}S_0&amp;=1 \\ \text{对 }n:\mathbb{N},\quad S_{n+1} &amp;= S_n+\frac{1}{2^{n+1}}.\end{split}\] 因而 \(S_n\) 表示和 \(1+\frac{1}{2}+\frac{1}{4}+\cdots+\frac{1}{2^n}\)。证明：对所有自然数 \(n\)，\[S_n=2-\frac{1}{2^n}.\]</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}S_0&amp;=1 \\
 \text{for }n:\mathbb{N},\quad S_{n+1} &amp;= S_n+\frac{1}{2^{n+1}}.\end{split}\]</div>
@@ -822,19 +822,19 @@ A_4&amp;=1+2+3+4\\
 </pre></div>
 </div>
 </li>
-<li><p>证明：对所有充分大的自然数 \(n\)，都有 \(3^n\geq 2^n+100\)。</p>
+<li><p>证明：对所有自然数 \(n\)，\(n!\) 严格为正。我们把它记录下来，以便以后用名称 <code class="docutils literal notranslate"><span class="pre">factorial_pos</span></code> 调用。</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">example</span> <span class="o">(</span><span class="n">n</span> <span class="o">:</span> <span class="n">ℕ</span><span class="o">)</span> <span class="o">:</span> <span class="mi">0</span> <span class="bp">&lt;</span> <span class="n">n</span> <span class="bp">!</span> <span class="o">:=</span> <span class="kd">by</span>
   <span class="gr">sorry</span>
 </pre></div>
 </div>
 </li>
-<li><p>证明：对所有充分大的自然数 \(n\)，都有 \(2^n\geq n^2+4\)。</p>
+<li><p>证明：对所有 \(n\geq 2\)，\(n!\) 为偶数。请使用从起点 2 开始的归纳（见例 6.1.5）。</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">example</span> <span class="o">{</span><span class="n">n</span> <span class="o">:</span> <span class="n">ℕ</span><span class="o">}</span> <span class="o">(</span><span class="n">hn</span> <span class="o">:</span> <span class="mi">2</span> <span class="bp">≤</span> <span class="n">n</span><span class="o">)</span> <span class="o">:</span> <span class="n">Nat.Even</span> <span class="o">(</span><span class="n">n</span> <span class="bp">!</span><span class="o">)</span> <span class="o">:=</span> <span class="kd">by</span>
   <span class="gr">sorry</span>
 </pre></div>
 </div>
 </li>
-<li><p>证明：对所有充分大的自然数 \(n\)，都有 \(2^n\geq n^3\)。</p>
+<li><p>证明：对所有自然数 \(n\)，都有 \((n+1)!\le (n+1)^n\)。（与例 6.2.6 比较。）</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">example</span> <span class="o">(</span><span class="n">n</span> <span class="o">:</span> <span class="n">ℕ</span><span class="o">)</span> <span class="o">:</span> <span class="o">(</span><span class="n">n</span> <span class="bp">+</span> <span class="mi">1</span><span class="o">)</span> <span class="bp">!</span> <span class="bp">≤</span> <span class="o">(</span><span class="n">n</span> <span class="bp">+</span> <span class="mi">1</span><span class="o">)</span> <span class="bp">^</span> <span class="n">n</span> <span class="o">:=</span> <span class="kd">by</span>
   <span class="gr">sorry</span>
 </pre></div>
@@ -929,15 +929,15 @@ a_4&amp;=a_3+2a_2\\
 <p class="admonition-title">解答</p>
 <p>我们将证明一个比题目陈述更精确的结果，即对所有自然数 \(n\geq 1\)，要么</p>
 <ul class="simple">
-<li>设 \(a\) 为奇自然数。用归纳法证明：对所有自然数 \(n\)，自然数 \(a^n\) 为奇数。并由此推出：对所有自然数 \(a\) 和 \(n\)，若 \(a^n\) 为偶数，则 \(a\) 为偶数。（这一部分不是归纳问题。）</li>
-<li>考虑由如下递归定义的数列 \((c_n)\)：\[\begin{split}c_0&amp;=7 \\ \text{对 }n:\mathbb{N},\quad c_{n+1} &amp;= 3c_n-10.\end{split}\] 证明：对所有自然数 \(n\)，整数 \(c_n\) 为奇数。</li>
+<li>\(a_n\equiv 1\mod 6\) 且 \(a_{n+1}\equiv 5\mod 6\)，或</li>
+<li>\(a_n\equiv 5\mod 6\) 且 \(a_{n+1}\equiv 1\mod 6\)。</li>
 </ul>
 <p>我们对 \(n\) 归纳证明。</p>
 <p>对于基例 \(n=1\)，注意 \(a_1=1\) 且 \(a_2=5\)，所以 \(a_1\equiv 1\mod 6\) 且 \(a_2\equiv 5\mod 6\)。</p>
 <p>对于归纳步，设 \(k\) 为自然数，并假设要么</p>
 <ul class="simple">
-<li>设数列 \((c_n)\) 如前一题定义。证明：对所有 \(n\)，有 \(c_n=2\cdot 3^n+5\)。</li>
-<li>考虑由如下递归定义的数列 \((y_n)\)：\[\begin{split}y_0&amp;=2 \\ \text{对 }n:\mathbb{N},\quad y_{n+1} &amp;= y_n{}^2.\end{split}\] 证明：对所有自然数 \(n\)，有 \(y_n=2^{2^n}\)。</li>
+<li>\(a_k\equiv 1\mod 6\) 且 \(a_{k+1}\equiv 5\mod 6\)，或</li>
+<li>\(a_k\equiv 5\mod 6\) 且 \(a_{k+1}\equiv 1\mod 6\)。</li>
 </ul>
 <p>情形 1（\(a_k\equiv 1\mod 6\) 且 \(a_{k+1}\equiv 5\mod 6\)）：那么</p>
 <div class="math notranslate nohighlight">
@@ -1153,7 +1153,7 @@ d_1&amp;=1\\
 <section id="id21">
 <h3>6.3.6. 练习<a class="headerlink" href="#id21" title="此标题的永久链接"></a></h3>
 <ol class="arabic">
-<li><p>考虑由如下递归定义的数列 \((B_n)\)：\[\begin{split}B_0&amp;=0 \\ \text{对 }n:\mathbb{N},\quad B_{n+1} &amp;= B_n+(n+1)^2.\end{split}\] 因而 \(B_n\) 表示和 \(1^2+2^2+3^2+\cdots+n^2\)。证明：对所有自然数 \(n\)，\[B_n=\frac{n(n+1)(2n+1)}{6}.\]</p>
+<li><p>考虑由如下递归定义的数列 \((b_n)\)：\[\begin{split}b_0&amp;=0\\ b_1&amp;=1\\ \text{对 }n:\mathbb{N},\quad b_{n+2}&amp;=5b_{n+1}-6b_n.\end{split}\] 证明：对所有自然数 \(n\)，都有 \(b_n=3^n - 2 ^ n\)。</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}b_0&amp;=0\\
 b_1&amp;=1\\
@@ -1168,7 +1168,7 @@ b_1&amp;=1\\
 </pre></div>
 </div>
 </li>
-<li><p>考虑由如下递归定义的数列 \((S_n)\)：\[\begin{split}S_0&amp;=1 \\ \text{对 }n:\mathbb{N},\quad S_{n+1} &amp;= S_n+\frac{1}{2^{n+1}}.\end{split}\] 因而 \(S_n\) 表示和 \(1+\frac{1}{2}+\frac{1}{4}+\cdots+\frac{1}{2^n}\)。证明：对所有自然数 \(n\)，\[S_n=2-\frac{1}{2^n}.\]</p>
+<li><p>考虑由如下递归定义的数列 \((c_n)\)：\[\begin{split}c_0&amp;=3\\ c_1&amp;=2\\ \text{对 }n:\mathbb{N},\quad c_{n+2}&amp;=4c_n.\end{split}\] 证明：对所有自然数 \(n\)，都有 \(c_n=2\cdot 2^n+(-2)^n\)。</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}c_0&amp;=3\\
 c_1&amp;=2\\
@@ -1183,7 +1183,7 @@ c_1&amp;=2\\
 </pre></div>
 </div>
 </li>
-<li><p>证明：对所有自然数 \(n\)，\(n!\) 严格为正。我们把它记录下来，以便以后用名称 <code class="docutils literal notranslate"><span class="pre">factorial_pos</span></code> 调用。</p>
+<li><p>考虑由如下递归定义的数列 \((t_n)\)：\[\begin{split}t_0&amp;=5\\ t_1&amp;=7\\ \text{对 }n:\mathbb{N},\quad t_{n+2}&amp;=2t_{n+1}-t_n.\end{split}\] 证明：对所有自然数 \(n\)，都有 \(t_n=2n+5\)。</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}t_0&amp;=5\\
 t_1&amp;=7\\
@@ -1198,7 +1198,7 @@ t_1&amp;=7\\
 </pre></div>
 </div>
 </li>
-<li><p>证明：对所有 \(n\geq 2\)，\(n!\) 为偶数。请使用从起点 2 开始的归纳（见例 6.1.5）。</p>
+<li><p>考虑由如下递归定义的数列 \((q_n)\)：\[\begin{split}q_0&amp;=1\\ q_1&amp;=2\\ \text{对 }n:\mathbb{N},\quad q_{n+2}&amp;=2q_{n+1}-q_n+6n + 6.\end{split}\] 证明：对所有自然数 \(n\)，都有 \(q_n=n^3+1\)。</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}q_0&amp;=1\\
 q_1&amp;=2\\
@@ -1213,7 +1213,7 @@ q_1&amp;=2\\
 </pre></div>
 </div>
 </li>
-<li><p>证明：对所有自然数 \(n\)，都有 \((n+1)!\le (n+1)^n\)。（与例 6.2.6 比较。）</p>
+<li><p>考虑由如下递归定义的数列 \((s_n)\)：\[\begin{split}s_0&amp;=2\\ s_1&amp;=3\\ \text{对 }n:\mathbb{N},\quad s_{n+2}&amp;=2s_{n+1}+3s_n.\end{split}\] 证明：对所有自然数 \(m\)，\(s_m\) 模 5 同余于 2 或 3。</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}s_0&amp;=2\\
 s_1&amp;=3\\
@@ -1228,7 +1228,7 @@ s_1&amp;=3\\
 </pre></div>
 </div>
 </li>
-<li><p>\(a_n\equiv 1\mod 6\) 且 \(a_{n+1}\equiv 5\mod 6\)，或</p>
+<li><p>考虑由如下递归定义的数列 \((p_n)\)：\[\begin{split}p_0&amp;=2\\ p_1&amp;=3\\ \text{对 }n:\mathbb{N},\quad p_{n+2}&amp;=6p_{n+1}-p_n.\end{split}\] 证明：对所有自然数 \(m\geq 1\)，\(p_m\) 模 7 同余于 2 或 3。</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}p_0&amp;=2\\
 p_1&amp;=3\\
@@ -1243,7 +1243,7 @@ p_1&amp;=3\\
 </pre></div>
 </div>
 </li>
-<li><p>\(a_n\equiv 5\mod 6\) 且 \(a_{n+1}\equiv 1\mod 6\)。</p>
+<li><p>考虑由如下递归定义的数列 \((r_n)\)：\[\begin{split}r_0&amp;=2\\ r_1&amp;=0\\ \text{对 }n:\mathbb{N},\quad r_{n+2}&amp;=2r_{n+1}+r_n.\end{split}\] 证明：对所有充分大的自然数 \(n\)，都有 \(r_n\geq 2^n\)。</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}r_0&amp;=2\\
 r_1&amp;=0\\
@@ -1258,7 +1258,7 @@ r_1&amp;=0\\
 </pre></div>
 </div>
 </li>
-<li><p>\(a_k\equiv 1\mod 6\) 且 \(a_{k+1}\equiv 5\mod 6\)，或</p>
+<li><p>证明 Fibonacci 数列 \((F_n)\) 满足：对所有充分大的自然数 \(n\)，都有 \(0.4 \cdot 1.6^n &lt; F_n &lt; 0.5 \cdot 1.7^n\)。</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">example</span> <span class="o">:</span> <span class="n">forall_sufficiently_large</span> <span class="n">n</span> <span class="o">:</span> <span class="n">ℕ</span><span class="o">,</span>
     <span class="o">(</span><span class="mi">0</span><span class="bp">.</span><span class="mi">4</span><span class="o">:</span><span class="n">ℚ</span><span class="o">)</span> <span class="bp">*</span> <span class="mi">1</span><span class="bp">.</span><span class="mi">6</span> <span class="bp">^</span> <span class="n">n</span> <span class="bp">&lt;</span> <span class="n">F</span> <span class="n">n</span> <span class="bp">∧</span> <span class="n">F</span> <span class="n">n</span> <span class="bp">&lt;</span> <span class="o">(</span><span class="mi">0</span><span class="bp">.</span><span class="mi">5</span><span class="o">:</span><span class="n">ℚ</span><span class="o">)</span> <span class="bp">*</span> <span class="mi">1</span><span class="bp">.</span><span class="mi">7</span> <span class="bp">^</span> <span class="n">n</span> <span class="o">:=</span> <span class="kd">by</span>
   <span class="gr">sorry</span>
@@ -1268,8 +1268,8 @@ r_1&amp;=0\\
 </ol>
 <p class="rubric">脚注</p>
 <dl class="footnote brackets">
-<dt class="label" id="id22">证明：对所有自然数 \(n&gt;0\)，存在自然数 \(a\) 和 \(x\)，其中 \(x\) 为奇数，并且 \(n=2^ax\)。建议做法：先按 \(n\) 的奇偶性分类，使用引理 <code class="docutils literal notranslate"><span class="pre">even_or_odd</span></code>。</dt>
-<dd>证明：对所有自然数 \(a\) 和 \(b\)，都有 \(P_{a,b} =P_{b,a}\)。</dd>
+<dt class="label" id="id22"><span class="brackets"><a class="fn-backref" href="#id19">1</a></span></dt>
+<dd>例子改编自 Hammack，《Book of Proof》，第 10.5 节。</dd>
 </dl>
 </section>
 </section>
@@ -1277,25 +1277,25 @@ r_1&amp;=0\\
 <span id="id23"></span><h2>6.4. 强归纳法<a class="headerlink" href="#strong-induction" title="此标题的永久链接"></a></h2>
 <section id="id24">
 <h3>6.4.1. 例<a class="headerlink" href="#id24" title="此标题的永久链接"></a></h3>
-<p>例子改编自 Hammack，《Book of Proof》，第 10.5 节。</p>
 <p>我们已经遇到越来越复杂的归纳原理：从例 6.1.1 中的“简单归纳”开始，最后到例 6.3.5 中相当小众的“从指定起点开始的两步归纳”。与其随着问题变得更复杂而发展越来越奇特的归纳原理，不如解释一种更一般的方法：强归纳法。这个方法让我们可以逐个证明关于自然数的命题；在每一步中，所依赖的不仅是紧前一步，而是任意先前步骤。</p>
+<p>我们用强归纳法重新做一遍例 6.3.3。差别在 Lean 中会更明显，但我们先给出文字证明；在文字证明中，差别主要只是强调方式不同。</p>
 <div class="admonition-problem admonition">
-<p class="admonition-title">我们用强归纳法重新做一遍例 6.3.3。差别在 Lean 中会更明显，但我们先给出文字证明；在文字证明中，差别主要只是强调方式不同。</p>
-<p>问题</p>
+<p class="admonition-title">问题</p>
+<p>证明：对所有自然数 \(n\)，都有 \(F_n \le 2^n\)。</p>
 </div>
 <div class="admonition-solution admonition">
-<p class="admonition-title">证明：对所有自然数 \(n\)，都有 \(F_n \le 2^n\)。</p>
-<p>解答</p>
+<p class="admonition-title">解答</p>
 <p>我们对 \(n\) 作强归纳证明。设 \(n\) 为自然数，并假设对所有自然数 \(m &lt; n\)，都有 \(F_m \le 2^m\)。（\(\star\)）</p>
 <p>我们按照 \(n\) 是 0、1，还是对某个自然数 \(k\) 有 \(n=k+2\) 分类讨论。</p>
+<p>当 \(n=0\) 时，我们有</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}F_0&amp;=1\\
 &amp;\le 2^0.\end{split}\]</div>
-<p>当 \(n=0\) 时，我们有</p>
+<p>当 \(n=1\) 时，我们有</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}F_1&amp;=1\\
 &amp;\le 2^1.\end{split}\]</div>
-<p>当 \(n=1\) 时，我们有</p>
+<p>当 \(n=k+2\) 时，我们有 \(k&lt;k+2\) 且 \(k+1&lt;k+2\)，所以由归纳假设（\(\star\)），\(F_k\le 2^k\) 且 \(F_{k+1}\le 2^{k+1}\)。因此</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}F_{k+2}&amp;=F_{k+1}+F_k\\
 &amp;\le 2^{k+1}+2^k\\
@@ -1303,12 +1303,12 @@ r_1&amp;=0\\
 &amp;= 2^{k+1}+2^{k+1}\\
 &amp;= 2^{k+2}.\end{split}\]</div>
 </div>
-<p>当 \(n=k+2\) 时，我们有 \(k&lt;k+2\) 且 \(k+1&lt;k+2\)，所以由归纳假设（\(\star\)），\(F_k\le 2^k\) 且 \(F_{k+1}\le 2^{k+1}\)。因此</p>
+<p>在 Lean 中，强归纳法几乎可以静默地用于证明。我们建立一个定理，陈述想要用强归纳证明的结果（这里的陈述是</p>
 <blockquote>
-<div><p>在 Lean 中，强归纳法几乎可以静默地用于证明。我们建立一个定理，陈述想要用强归纳证明的结果（这里的陈述是</p>
+<div><p>对所有自然数 \(n\)，\(F_n \le 2^n\)</p>
 </div></blockquote>
-<p>对所有自然数 \(n\)，\(F_n \le 2^n\)</p>
 <p>我在 Lean 中把它命名为 <code class="docutils literal notranslate"><span class="pre">F_bound</span></code>）。然后在该定理的证明内部，我们可以引用这个定理本身！Lean 会尝试为我们检查：我们只把该定理用于比当前正在研究的值更小的输入值。</p>
+<p>你可能觉得这很可疑，或者有循环论证的危险。请自己检查：如果你尝试在值 \(n\) 本身，或在更大的值如 \(n+17\) 处调用引理 <code class="docutils literal notranslate"><span class="pre">F_bound</span></code>，Lean 会报错。</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">theorem</span> <span class="n">F_bound</span> <span class="o">(</span><span class="n">n</span> <span class="o">:</span> <span class="n">ℕ</span><span class="o">)</span> <span class="o">:</span> <span class="n">F</span> <span class="n">n</span> <span class="bp">≤</span> <span class="mi">2</span> <span class="bp">^</span> <span class="n">n</span> <span class="o">:=</span> <span class="kd">by</span>
   <span class="k">match</span> <span class="n">n</span> <span class="k">with</span>
   <span class="bp">|</span> <span class="mi">0</span> <span class="bp">=&gt;</span>
@@ -1330,23 +1330,23 @@ r_1&amp;=0\\
 <section id="exists-prime-factor">
 <span id="id25"></span><h3>6.4.2. 例<a class="headerlink" href="#exists-prime-factor" title="此标题的永久链接"></a></h3>
 <div class="admonition-theorem admonition">
-<p class="admonition-title">你可能觉得这很可疑，或者有循环论证的危险。请自己检查：如果你尝试在值 \(n\) 本身，或在更大的值如 \(n+17\) 处调用引理 <code class="docutils literal notranslate"><span class="pre">F_bound</span></code>，Lean 会报错。</p>
-<p>定理</p>
+<p class="admonition-title">定理</p>
+<p>设 \(n \geq 2\) 为自然数。则存在素数 \(p\)，使得 \(p\) 是 \(n\) 的因子。</p>
 </div>
 <div class="admonition-proof admonition">
-<p class="admonition-title">设 \(n \geq 2\) 为自然数。则存在素数 \(p\)，使得 \(p\) 是 \(n\) 的因子。</p>
-<p>证明</p>
+<p class="admonition-title">证明</p>
 <p>我们对 \(n\) 作强归纳证明。设 \(n\) 为自然数，并假设对所有满足 \(2 \le m &lt; n\) 的自然数 \(m\)，都存在素数 \(p\) 是 \(m\) 的因子。（\(\star\)）</p>
 <p>如果 \(n\) 是素数，那么 \(n\) 本身就是 \(n\) 的一个素因子，证明完成。</p>
 <p>如果 \(n\) 不是素数，那么由于 \(n \geq 2\)，存在自然数 \(m\) 满足 \(2 \le m &lt; n\)，且 \(m\) 是 \(n\) 的因子。（这在第 5.3 节的一道练习中已经证明。）由归纳假设（\(\star\)），存在素数 \(p\) 是 \(m\) 的因子。</p>
+<p>由于 \(m\mid n\)，存在自然数 \(x\)，使得 \(n = mx\)。由于 \(p \mid m\)，存在自然数 \(y\)，使得 \(m = py\)。于是</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}n &amp;=mx\\
 &amp;=(py)x\\
 &amp;=p(xy),\end{split}\]</div>
-<p>由于 \(m\mid n\)，存在自然数 \(x\)，使得 \(n = mx\)。由于 \(p \mid m\)，存在自然数 \(y\)，使得 \(m = py\)。于是</p>
-</div>
 <p>所以 \(p\) 也是 \(n\) 的因子。</p>
+</div>
 <p>下面是在 Lean 中的同一个证明。第 5.3 节练习中的引理在 Lean 中名为 <code class="docutils literal notranslate"><span class="pre">exists_factor_of_not_prime</span></code>。</p>
+<p>注意，这又是一个强归纳证明：在 \(n\) 处实例化的定理证明内部，我们调用了同一个定理（命名为 <code class="docutils literal notranslate"><span class="pre">exists_prime_factor</span></code>）在 \(m\) 处的实例。此时 Lean 有一个可用假设说明 \(m&lt;n\)，所以这是有效的。</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">theorem</span> <span class="n">exists_prime_factor</span> <span class="o">{</span><span class="n">n</span> <span class="o">:</span> <span class="n">ℕ</span><span class="o">}</span> <span class="o">(</span><span class="n">hn2</span> <span class="o">:</span> <span class="mi">2</span> <span class="bp">≤</span> <span class="n">n</span><span class="o">)</span> <span class="o">:</span> <span class="bp">∃</span> <span class="n">p</span> <span class="o">:</span> <span class="n">ℕ</span><span class="o">,</span> <span class="n">Prime</span> <span class="n">p</span> <span class="bp">∧</span> <span class="n">p</span> <span class="bp">∣</span> <span class="n">n</span> <span class="o">:=</span> <span class="kd">by</span>
   <span class="n">by_cases</span> <span class="n">hn</span> <span class="o">:</span> <span class="n">Prime</span> <span class="n">n</span>
   <span class="bp">.</span> <span class="c1">-- case 1: `n` is prime</span>
@@ -1372,7 +1372,7 @@ r_1&amp;=0\\
 <section id="id26">
 <h3>6.4.3. 练习<a class="headerlink" href="#id26" title="此标题的永久链接"></a></h3>
 <ol class="arabic">
-<li><p>\(a_k\equiv 5\mod 6\) 且 \(a_{k+1}\equiv 1\mod 6\)。</p>
+<li><p>证明：对所有自然数 \(n&gt;0\)，存在自然数 \(a\) 和 \(x\)，其中 \(x\) 为奇数，并且 \(n=2^ax\)。建议做法：先按 \(n\) 的奇偶性分类，使用引理 <code class="docutils literal notranslate"><span class="pre">even_or_odd</span></code>。</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">theorem</span> <span class="n">extract_pow_two</span> <span class="o">(</span><span class="n">n</span> <span class="o">:</span> <span class="n">ℕ</span><span class="o">)</span> <span class="o">(</span><span class="n">hn</span> <span class="o">:</span> <span class="mi">0</span> <span class="bp">&lt;</span> <span class="n">n</span><span class="o">)</span> <span class="o">:</span> <span class="bp">∃</span> <span class="n">a</span> <span class="n">x</span><span class="o">,</span> <span class="n">Odd</span> <span class="n">x</span> <span class="bp">∧</span> <span class="n">n</span> <span class="bp">=</span> <span class="mi">2</span> <span class="bp">^</span> <span class="n">a</span> <span class="bp">*</span> <span class="n">x</span> <span class="o">:=</span> <span class="kd">by</span>
   <span class="gr">sorry</span>
 </pre></div>
@@ -1385,15 +1385,15 @@ r_1&amp;=0\\
 <span id="pascal"></span><h2>6.5. 帕斯卡三角形<a class="headerlink" href="#pascal-s-triangle" title="此标题的永久链接"></a></h2>
 <section id="definition">
 <span id="pascal-def"></span><h3>6.5.1. 定义<a class="headerlink" href="#definition" title="此标题的永久链接"></a></h3>
-<p>注意，这又是一个强归纳证明：在 \(n\) 处实例化的定理证明内部，我们调用了同一个定理（命名为 <code class="docutils literal notranslate"><span class="pre">exists_prime_factor</span></code>）在 \(m\) 处的实例。此时 Lean 有一个可用假设说明 \(m</p>
+<p>考虑由如下递归定义的自然数族 \((P_{a,b})\)：</p>
 <blockquote>
 <div><div class="math notranslate nohighlight">
 \[\begin{split}\text{for }a:\mathbb{N},\quad P_{a,0}&amp;=1 \\
 \text{for }b:\mathbb{N},\quad P_{0,b+1}&amp;=1 \\
 \text{for }a,b:\mathbb{N},\quad P_{a+1,b+1} &amp;= P_{a+1,b}+P_{a,b+1}.\end{split}\]</div>
 </div></blockquote>
-<p>考虑由如下递归定义的自然数族 \((P_{a,b})\)：</p>
 <p>这个定义是良基的，因为定义的每一步只依赖先前的项 \(P_{a,b}\)，而对这些项而言，表达式 \(a+b\) 严格更小。</p>
+<p>下面是在 Lean 中的样子，其中良基性说明用语法 <code class="docutils literal notranslate"><span class="pre">termination_by</span></code> 表达。</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">def</span> <span class="n">pascal</span> <span class="o">:</span> <span class="n">ℕ</span> <span class="bp">→</span> <span class="n">ℕ</span> <span class="bp">→</span> <span class="n">ℕ</span>
   <span class="bp">|</span> <span class="n">a</span><span class="o">,</span> <span class="mi">0</span> <span class="bp">=&gt;</span> <span class="mi">1</span>
   <span class="bp">|</span> <span class="mi">0</span><span class="o">,</span> <span class="n">b</span> <span class="bp">+</span> <span class="mi">1</span> <span class="bp">=&gt;</span> <span class="mi">1</span>
@@ -1401,13 +1401,13 @@ r_1&amp;=0\\
 <span class="n">termination_by</span> <span class="n">_</span> <span class="n">a</span> <span class="n">b</span> <span class="bp">=&gt;</span> <span class="n">a</span> <span class="bp">+</span> <span class="n">b</span>
 </pre></div>
 </div>
-<p>下面是在 Lean 中的样子，其中良基性说明用语法 <code class="docutils literal notranslate"><span class="pre">termination_by</span></code> 表达。</p>
+<p>照常，Lean 可以算出我们要求的任意函数值。例如，</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="k">#eval</span> <span class="n">pascal</span> <span class="mi">2</span> <span class="mi">4</span> <span class="c1">-- infoview displays `15`</span>
 </pre></div>
 </div>
-<p>照常，Lean 可以算出我们要求的任意函数值。例如，</p>
+<p>下面列出 \(a\) 和 \(b\) 从 0 到 5 的所有取值。</p>
 <span id="pascal-triangle-table"></span><table class="colwidths-given docutils align-default" id="id43">
-<caption><span class="caption-number">Table 6.1 </span><span class="caption-text">Values of the recursively defined function <code class="docutils literal notranslate"><span class="pre">pascal</span></code></span><a class="headerlink" href="#id43" title="Permalink to this table"></a></caption>
+<caption><span class="caption-number">表 6.1 </span><span class="caption-text">递归定义函数 <code class="docutils literal notranslate"><span class="pre">pascal</span></code> 的取值</span><a class="headerlink" href="#id43" title="此表的永久链接"></a></caption>
 <colgroup>
 <col style="width: 14%"/>
 <col style="width: 14%"/>
@@ -1419,24 +1419,24 @@ r_1&amp;=0\\
 </colgroup>
 <thead>
 <tr class="row-odd"><th class="head stub"></th>
-<th class="head">使用简单归纳证明：对所有自然数 \(a\)，都有 \(P_{a,1} =a+1\)。</th>
-<th class="head">证明例 6.6.4 对负 \(d\) 的类似结论：对任意整数 \(n\) 和 \(d\)，若 \(d\) 为负，则 \(d&lt;\operatorname{mod}(n, d)\)。</th>
-<th class="head">考虑递归定义在整数上的函数 \(T\)：\[\begin{split}T(n)= \begin{cases} T(1-n)+2n-1,&amp;0&lt; n\\ T(-n),&amp;n&lt; 0\\ 0&amp;n=0. \end{cases}\end{split}\] 这个递归定义是良基的，因为它的自引用在 \(|3n-1|\) 上严格下降。证明：对所有整数 \(n\)，都有 \(T(n)=n^2\)。</th>
-<th class="head">设 \(a\) 和 \(b\) 为整数，且 \(b\) 为正。证明：存在唯一整数 \(r\) 位于范围 \(0 \le r &lt; b\) 内，使得 \(a\equiv r\mod b\)。这个定理升级了例 6.6.5：它不仅断言存在性，也断言唯一性。我们在例 4.3.4 中曾不加证明地陈述它（Lean 名称为 <code class="docutils literal notranslate"><span class="pre">Int.existsUnique_modEq_lt</span></code>），并且每当我们从“显然不成立的同余”推出矛盾时，例如例 4.4.3 中，都在隐式使用它。建议做法：把下面的内容写成一个独立定理 <code class="docutils literal notranslate"><span class="pre">uniqueness</span></code> 并证明它，思路大致仿照例 4.3.4 中证明的特殊情形：设 \(a\) 和 \(b\) 为整数，且 \(b\) 为正。设 \(r\) 和 \(s\) 为整数，二者都在范围 \(0 \le r &lt; b\)、\(0 \le s &lt; b\) 中，并且都与 \(a\) 模 \(b\) 同余。证明它们相等。然后结合例 6.6.5 中的论证，把各部分合在一起。</th>
-<th class="head">\(\underline{\text{若 }0&lt;b\text{，则 }-b&lt;\operatorname{mod}(a,b)&lt;b}\)：由例 6.6.3 和例 6.6.4，\(0\le \operatorname{mod}(a,b)&lt;b\)，这立即给出上界；下界则来自 \[\begin{split}-b&amp;&lt;0\\ &amp;\le \operatorname{mod}(a,b).\end{split}\]</th>
-<th class="head">\(\underline{\text{若 }b&lt;0\text{，则 }b&lt;\operatorname{mod}(a,-b)&lt;-b}\)：我们有 \(0&lt;-b\)，所以由例 6.6.3 和例 6.6.4，\(0\le \operatorname{mod}(a,-b)&lt;-b\)，这立即给出上界；下界则来自 \[\begin{split}b&amp;&lt;0\\ &amp;\le \operatorname{mod}(a,-b).\end{split}\]</th>
+<th class="head"><p>0</p></th>
+<th class="head"><p>1</p></th>
+<th class="head"><p>2</p></th>
+<th class="head"><p>3</p></th>
+<th class="head"><p>4</p></th>
+<th class="head"><p>5</p></th>
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><th class="stub">证明 \(\operatorname{gcd}(a,b)\) 不仅是 \(a\) 和 \(b\) 的公因子（见例 6.7.3），而且是它们的最大公因子：若整数 \(d\) 同时整除 \(a\) 和 \(b\)，则它整除 \(\operatorname{gcd}(a,b)\)。本题不需要归纳；它是贝祖等式（例 6.7.6）的直接推论。</th>
-<td><p>下面列出 \(a\) 和 \(b\) 从 0 到 5 的所有取值。</p></td>
+<tr class="row-even"><th class="stub"><p>0</p></th>
+<td><p>1</p></td>
 <td><p>1</p></td>
 <td><p>1</p></td>
 <td><p>1</p></td>
 <td><p>1</p></td>
 <td><p>1</p></td>
 </tr>
-<tr class="row-odd"><th class="stub">例子改编自 Hammack，《Book of Proof》，第 10.5 节。</th>
+<tr class="row-odd"><th class="stub"><p>1</p></th>
 <td><p>1</p></td>
 <td><p>2</p></td>
 <td><p>3</p></td>
@@ -1444,7 +1444,7 @@ r_1&amp;=0\\
 <td><p>5</p></td>
 <td><p>6</p></td>
 </tr>
-<tr class="row-even"><th class="stub">例子改编自 Hammack，《Book of Proof》，第 10.5 节。</th>
+<tr class="row-even"><th class="stub"><p>2</p></th>
 <td><p>1</p></td>
 <td><p>3</p></td>
 <td><p>6</p></td>
@@ -1479,36 +1479,36 @@ r_1&amp;=0\\
 </tbody>
 </table>
 <p>请从头重新计算其中几个值，以检查你对定义的理解。</p>
-<p>请从头重新计算其中几个值，以检查你对定义的理解。</p>
+<p>函数 <code class="docutils literal notranslate"><span class="pre">pascal</span></code> 的传统可视化方式，是把上表旋转后排成一个三角形。</p>
 <figure class="align-default" id="id44">
 <img alt="_images/pascal.gif" src="_images/pascal.gif"/>
 <figcaption>
-<p>请从头重新计算其中几个值，以检查你对定义的理解。<a class="headerlink" href="#id44" title="Permalink to this image"></a></p>
+<p>图 6.1 Pascal 三角形（图片来源：Wikimedia Commons）<a class="headerlink" href="#id44" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
 </section>
 <section id="pascal-bound">
 <span id="id27"></span><h3>6.5.2. 例<a class="headerlink" href="#pascal-bound" title="此标题的永久链接"></a></h3>
 <div class="admonition-theorem admonition">
-<p class="admonition-title">请从头重新计算其中几个值，以检查你对定义的理解。</p>
-<p>请从头重新计算其中几个值，以检查你对定义的理解。</p>
+<p class="admonition-title">定理</p>
+<p>对所有自然数 \(a\) 和 \(b\)，有 \(P_{a,b} \le (a+b)!\)。</p>
 </div>
 <div class="admonition-proof admonition">
-<p class="admonition-title">请从头重新计算其中几个值，以检查你对定义的理解。</p>
-<p>请从头重新计算其中几个值，以检查你对定义的理解。</p>
-<p>请从头重新计算其中几个值，以检查你对定义的理解。</p>
+<p class="admonition-title">证明</p>
+<p>我们相对于表达式 \(a+b\) 作强归纳证明。</p>
+<p>由第 6.2 节的一道练习，阶乘总是 \(\geq 1\)，所以对所有 \(a\)，</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}P_{a,0}&amp;=1\\
 &amp;\le (a+0)!,\end{split}\]</div>
-<p>请从头重新计算其中几个值，以检查你对定义的理解。</p>
+<p>并且对所有 \(b\)，</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}P_{0,b+1}&amp;=1\\
 &amp;\le (0+(b+1))!.\end{split}\]</div>
-<p>请从头重新计算其中几个值，以检查你对定义的理解。</p>
+<p>现在设 \(a\) 和 \(b\) 为自然数，并假设对所有满足 \(x+y&lt;(a+1)+(b+1)\) 的 \(x\) 和 \(y\)，都有 \(P_{x,y} \le (x+y)!\)。那么特别地</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}P_{a+1,b} &amp;\le ((a+1)+b)!\\
 P_{a,b+1} &amp;\le (a+(b+1))!.\end{split}\]</div>
-<p>函数 <code class="docutils literal notranslate"><span class="pre">pascal</span></code> 的传统可视化方式，是把上表旋转后排成一个三角形。</p>
+<p>所以</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}P_{a + 1,b + 1} &amp;= P_{a + 1, b} + P_{a, b + 1}\\
   &amp; ≤ (a + 1 + b) ! + (a + (b + 1)) !\\
@@ -1540,15 +1540,15 @@ P_{a,b+1} &amp;\le (a+(b+1))!.\end{split}\]</div>
 </section>
 <section id="id28">
 <h3>6.5.3. 例<a class="headerlink" href="#id28" title="此标题的永久链接"></a></h3>
-<p>图 6.1 Pascal 三角形（图片来源：Wikimedia Commons）</p>
+<p>通过更精细的计算，我们可以把例 6.5.2 中的上界改进为一个精确公式。</p>
 <div class="admonition-theorem admonition">
 <p class="admonition-title">定理</p>
-<p>对所有自然数 \(a\) 和 \(b\)，有 \(P_{a,b} \le (a+b)!\)。</p>
+<p>对所有自然数 \(a\) 和 \(b\)，有 \(P_{a,b}\, a!\, b!= (a+b)!\)。</p>
 </div>
 <div class="admonition-proof admonition">
 <p class="admonition-title">证明</p>
 <p>我们相对于表达式 \(a+b\) 作强归纳证明。</p>
-<p>由第 6.2 节的一道练习，阶乘总是 \(\geq 1\)，所以对所有 \(a\)，</p>
+<p>对所有 \(a\)，</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}P_{a,0}&amp;=1\\
 &amp;= (a+0)!,\end{split}\]</div>
@@ -1556,7 +1556,7 @@ P_{a,b+1} &amp;\le (a+(b+1))!.\end{split}\]</div>
 <div class="math notranslate nohighlight">
 \[\begin{split}P_{0,b+1}&amp;=1\\
 &amp;= (0+(b+1))!.\end{split}\]</div>
-<p>现在设 \(a\) 和 \(b\) 为自然数，并假设对所有满足 \(x+y&lt;(a+1)+(b+1)\) 的 \(x\) 和 \(y\)，都有 \(P_{x,y} \le (x+y)!\)。那么特别地</p>
+<p>现在设 \(a\) 和 \(b\) 为自然数，并假设对所有满足 \(x+y&lt;(a+1)+(b+1)\) 的 \(x\) 和 \(y\)，都有 \(P_{x,y}\, x!\, y! = (x+y)!\)。那么特别地</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}P_{a+1,b} \ (a+1)! \ b! &amp;= ((a+1)+b)!\\
 P_{a,b+1} \ a! \ (b+1)! &amp;= (a+(b+1))!.\end{split}\]</div>
@@ -1607,12 +1607,12 @@ P_{a,b+1} \ a! \ (b+1)! &amp;= (a+(b+1))!.\end{split}\]</div>
 </pre></div>
 </div>
 <div class="admonition-corollary admonition">
-<p class="admonition-title">通过更精细的计算，我们可以把例 6.5.2 中的上界改进为一个精确公式。</p>
-<p>定理</p>
+<p class="admonition-title">Corollary</p>
+<p>对所有自然数 \(a\) 和 \(b\)，</p>
 <div class="math notranslate nohighlight">
 \[P_{a,b}=\frac{(a+b)!}{a! \ b!}.\]</div>
 </div>
-<p>对所有自然数 \(a\) 和 \(b\)，有 \(P_{a,b}\, a!\, b!= (a+b)!\)。</p>
+<p>这个事实只是上面定理的平凡重排；但由于除法问题，Lean 证明更复杂，而本书基本上避免处理除法。这里不必纠结细节，也不必纠结两个不熟悉的策略 <code class="docutils literal notranslate"><span class="pre">field_simp</span></code> 和 <code class="docutils literal notranslate"><span class="pre">norm_cast</span></code>。</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">example</span> <span class="o">(</span><span class="n">a</span> <span class="n">b</span> <span class="o">:</span> <span class="n">ℕ</span><span class="o">)</span> <span class="o">:</span> <span class="o">(</span><span class="n">pascal</span> <span class="n">a</span> <span class="n">b</span> <span class="o">:</span> <span class="n">ℚ</span><span class="o">)</span> <span class="bp">=</span> <span class="o">(</span><span class="n">a</span> <span class="bp">+</span> <span class="n">b</span><span class="o">)</span><span class="bp">!</span> <span class="bp">/</span> <span class="o">(</span><span class="n">a</span> <span class="bp">!</span> <span class="bp">*</span> <span class="n">b</span> <span class="bp">!</span><span class="o">)</span> <span class="o">:=</span> <span class="kd">by</span>
   <span class="k">have</span> <span class="n">ha</span> <span class="o">:=</span> <span class="n">factorial_pos</span> <span class="n">a</span>
   <span class="k">have</span> <span class="n">hb</span> <span class="o">:=</span> <span class="n">factorial_pos</span> <span class="n">b</span>
@@ -1626,7 +1626,7 @@ P_{a,b+1} \ a! \ (b+1)! &amp;= (a+(b+1))!.\end{split}\]</div>
 <section id="id29">
 <h3>6.5.4. 练习<a class="headerlink" href="#id29" title="此标题的永久链接"></a></h3>
 <ol class="arabic">
-<li><p>考虑由如下递归定义的数列 \((b_n)\)：\[\begin{split}b_0&amp;=0\\ b_1&amp;=1\\ \text{对 }n:\mathbb{N},\quad b_{n+2}&amp;=5b_{n+1}-6b_n.\end{split}\] 证明：对所有自然数 \(n\)，都有 \(b_n=3^n - 2 ^ n\)。</p>
+<li><p>证明：对所有自然数 \(a\) 和 \(b\)，都有 \(P_{a,b} =P_{b,a}\)。</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">theorem</span> <span class="n">pascal_symm</span> <span class="o">(</span><span class="n">m</span> <span class="n">n</span> <span class="o">:</span> <span class="n">ℕ</span><span class="o">)</span> <span class="o">:</span> <span class="n">pascal</span> <span class="n">m</span> <span class="n">n</span> <span class="bp">=</span> <span class="n">pascal</span> <span class="n">n</span> <span class="n">m</span> <span class="o">:=</span> <span class="kd">by</span>
   <span class="k">match</span> <span class="n">m</span><span class="o">,</span> <span class="n">n</span> <span class="k">with</span>
   <span class="bp">|</span> <span class="mi">0</span><span class="o">,</span> <span class="mi">0</span> <span class="bp">=&gt;</span> <span class="gr">sorry</span>
@@ -1637,7 +1637,7 @@ P_{a,b+1} \ a! \ (b+1)! &amp;= (a+(b+1))!.\end{split}\]</div>
 </pre></div>
 </div>
 </li>
-<li><p>考虑由如下递归定义的数列 \((c_n)\)：\[\begin{split}c_0&amp;=3\\ c_1&amp;=2\\ \text{对 }n:\mathbb{N},\quad c_{n+2}&amp;=4c_n.\end{split}\] 证明：对所有自然数 \(n\)，都有 \(c_n=2\cdot 2^n+(-2)^n\)。</p>
+<li><p>使用简单归纳证明：对所有自然数 \(a\)，都有 \(P_{a,1} =a+1\)。</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">example</span> <span class="o">(</span><span class="n">a</span> <span class="o">:</span> <span class="n">ℕ</span><span class="o">)</span> <span class="o">:</span> <span class="n">pascal</span> <span class="n">a</span> <span class="mi">1</span> <span class="bp">=</span> <span class="n">a</span> <span class="bp">+</span> <span class="mi">1</span> <span class="o">:=</span> <span class="kd">by</span>
   <span class="gr">sorry</span>
 </pre></div>
@@ -1650,7 +1650,7 @@ P_{a,b+1} \ a! \ (b+1)! &amp;= (a+(b+1))!.\end{split}\]</div>
 <span id="constructive-division-algorithm"></span><h2>6.6. 带余除法定理<a class="headerlink" href="#the-division-algorithm" title="此标题的永久链接"></a></h2>
 <section id="constructive-division-algorithm-def">
 <span id="id30"></span><h3>6.6.1. 定义<a class="headerlink" href="#constructive-division-algorithm-def" title="此标题的永久链接"></a></h3>
-<p>证明</p>
+<p>考虑递归定义在整数上的函数 \(\operatorname{mod}\) 和 \(\operatorname{div}\)：</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}\operatorname{mod}(n, d)&amp;=
 \begin{cases}
@@ -1666,7 +1666,7 @@ n,&amp;0\le nd\le d^2\text{ and }n\ne d
 1,&amp;n=d\\
 0,&amp;0\le nd\le d^2\text{ and }n\ne d
 \end{cases}\end{split}\]</div>
-<p>我们相对于表达式 \(a+b\) 作强归纳证明。</p>
+<p>直观上，\(\operatorname{div}\) 计算 \(n\) 除以 \(d\) 的商（小学意义上的商，即得到一个整数而不是继续写小数），而 \(\operatorname{mod}\) 计算 \(n\) 除以 \(d\) 的余数。例如，</p>
 <div class="math notranslate nohighlight">
 \[ \begin{align}\begin{aligned}&amp;
 &amp;
@@ -1709,12 +1709,12 @@ n,&amp;0\le nd\le d^2\text{ and }n\ne d
 &amp;
 &amp;
 &amp;=2.\end{aligned}\end{align} \]</div>
-<p>对所有 \(a\)，</p>
+<p>这些定义是良基的，因为定义的每一步只依赖先前的项 \(\operatorname{mod}(n, d)\)、\(\operatorname{div}(n, d)\)，而对这些项而言，表达式 \(2n-d\) 的绝对值严格更小。（这一点并不非常明显，尽管 Lean 可以自动证明。作为可靠性检查，</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}2 \cdot 11 - 4 = 18\\
 2 \cdot 7 - 4 = 10\\
 2 \cdot 3 - 4 = 2\end{split}\]</div>
-<p>并且对所有 \(b\)，</p>
+<p>它确实严格减小。）下面是在 Lean 中的样子，其中良基性说明和定义 6.5.1 一样，用语法 <code class="docutils literal notranslate"><span class="pre">termination_by</span></code> 表达。</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">def</span> <span class="n">fmod</span> <span class="o">(</span><span class="n">n</span> <span class="n">d</span> <span class="o">:</span> <span class="n">ℤ</span><span class="o">)</span> <span class="o">:</span> <span class="n">ℤ</span> <span class="o">:=</span>
   <span class="k">if</span> <span class="n">n</span> <span class="bp">*</span> <span class="n">d</span> <span class="bp">&lt;</span> <span class="mi">0</span> <span class="k">then</span>
     <span class="n">fmod</span> <span class="o">(</span><span class="n">n</span> <span class="bp">+</span> <span class="n">d</span><span class="o">)</span> <span class="n">d</span>
@@ -1738,49 +1738,49 @@ n,&amp;0\le nd\le d^2\text{ and }n\ne d
 <span class="n">termination_by</span> <span class="n">_</span> <span class="n">n</span> <span class="n">d</span> <span class="bp">=&gt;</span> <span class="mi">2</span> <span class="bp">*</span> <span class="n">n</span> <span class="bp">-</span> <span class="n">d</span>
 </pre></div>
 </div>
-<p>现在设 \(a\) 和 \(b\) 为自然数，并假设对所有满足 \(x+y&lt;(a+1)+(b+1)\) 的 \(x\) 和 \(y\)，都有 \(P_{x,y}\, x!\, y! = (x+y)!\)。那么特别地</p>
+<p>我们检查一下它们是否做了应该做的事：</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="k">#eval</span> <span class="n">fmod</span> <span class="mi">11</span> <span class="mi">4</span> <span class="c1">-- infoview displays `3`</span>
 <span class="k">#eval</span> <span class="n">fdiv</span> <span class="mi">11</span> <span class="mi">4</span> <span class="c1">-- infoview displays `2`</span>
 </pre></div>
 </div>
-<p>所以</p>
+<p>请自己计算几个例子（并用 Lean 检查），看看你是否相信 \(\operatorname{div}\) 和 \(\operatorname{mod}\) 正在产生“商”和“余数”。现在我们把这一点严谨化。</p>
 </section>
 <section id="mod-add-div">
 <span id="id31"></span><h3>6.6.2. 例<a class="headerlink" href="#mod-add-div" title="此标题的永久链接"></a></h3>
 <div class="admonition-theorem admonition">
-<p class="admonition-title">对所有自然数 \(a\) 和 \(b\)，</p>
-<p>对所有自然数 \(a\) 和 \(b\)，</p>
+<p class="admonition-title">定理</p>
+<p>对任意整数 \(n\) 和 \(d\)，都有 \(\operatorname{mod}(n, d) + d \cdot \operatorname{div}(n, d) = n\)。</p>
 </div>
 <div class="admonition-proof admonition">
-<p class="admonition-title">这个事实只是上面定理的平凡重排；但由于除法问题，Lean 证明更复杂，而本书基本上避免处理除法。这里不必纠结细节，也不必纠结两个不熟悉的策略 <code class="docutils literal notranslate"><span class="pre">field_simp</span></code> 和 <code class="docutils literal notranslate"><span class="pre">norm_cast</span></code>。</p>
-<p>考虑递归定义在整数上的函数 \(\operatorname{mod}\) 和 \(\operatorname{div}\)：</p>
-<p>直观上，\(\operatorname{div}\) 计算 \(n\) 除以 \(d\) 的商（小学意义上的商，即得到一个整数而不是继续写小数），而 \(\operatorname{mod}\) 计算 \(n\) 除以 \(d\) 的余数。例如，</p>
+<p class="admonition-title">证明</p>
+<p>我们相对于表达式 \(2n-d\) 作强归纳证明。假设对所有满足 \(|2m-c|&lt;|2n-d|\) 的整数 \(m\) 和 \(c\)，都有 \(\operatorname{mod}(m, c) + c \cdot \operatorname{div}(m, c) = m\)。</p>
+<p>情形 1（\(nd&lt;0\)）：由归纳假设，</p>
 <div class="math notranslate nohighlight">
 \[\operatorname{mod}(n+d, d) + d \cdot \operatorname{div}(n+d, d) = n+d,\]</div>
-<p>这些定义是良基的，因为定义的每一步只依赖先前的项 \(\operatorname{mod}(n, d)\)、\(\operatorname{div}(n, d)\)，而对这些项而言，表达式 \(2n-d\) 的绝对值严格更小。（这一点并不非常明显，尽管 Lean 可以自动证明。作为可靠性检查，</p>
+<p>所以</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}\operatorname{mod}(n, d) + d \cdot \operatorname{div}(n, d)
 &amp;=\operatorname{mod}(n+d, d) + d \cdot (\operatorname{div}(n+d, d) -1)\\
 &amp;=(\operatorname{mod}(n+d, d) + d \cdot \operatorname{div}(n+d, d))-d\\
 &amp;=(n+d)-d\\
 &amp;=n.\end{split}\]</div>
-<p>它确实严格减小。）下面是在 Lean 中的样子，其中良基性说明和定义 6.5.1 一样，用语法 <code class="docutils literal notranslate"><span class="pre">termination_by</span></code> 表达。</p>
+<p>情形 2（\(0&lt;d(n-d)\)）：由归纳假设，</p>
 <div class="math notranslate nohighlight">
 \[\operatorname{mod}(n-d, d) + d \cdot \operatorname{div}(n-d, d) = n-d,\]</div>
-<p>我们检查一下它们是否做了应该做的事：</p>
+<p>所以</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}\operatorname{mod}(n, d) + d \cdot \operatorname{div}(n, d)
 &amp;=\operatorname{mod}(n-d, d) + d \cdot (\operatorname{div}(n-d, d) +1)\\
 &amp;=(\operatorname{mod}(n-d, d) + d \cdot \operatorname{div}(n-d, d))+d\\
 &amp;=(n-d)+d\\
 &amp;=n.\end{split}\]</div>
-<p>请自己计算几个例子（并用 Lean 检查），看看你是否相信 \(\operatorname{div}\) 和 \(\operatorname{mod}\) 正在产生“商”和“余数”。现在我们把这一点严谨化。</p>
+<p>情形 3（\(n=d\)）：那么</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}\operatorname{mod}(n, d) + d \cdot \operatorname{div}(n, d)
 &amp;=0 + d\cdot 1\\
 &amp;=d\\
 &amp;=n.\end{split}\]</div>
-<p>定理</p>
+<p>情形 4：在这个情形中，</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}\operatorname{mod}(n, d) + d \cdot \operatorname{div}(n, d)
 &amp;=n + d\cdot 0\\
@@ -1812,16 +1812,16 @@ n,&amp;0\le nd\le d^2\text{ and }n\ne d
 <section id="mod-nonneg">
 <span id="id32"></span><h3>6.6.3. 例<a class="headerlink" href="#mod-nonneg" title="此标题的永久链接"></a></h3>
 <div class="admonition-theorem admonition">
-<p class="admonition-title">对任意整数 \(n\) 和 \(d\)，都有 \(\operatorname{mod}(n, d) + d \cdot \operatorname{div}(n, d) = n\)。</p>
-<p>证明</p>
+<p class="admonition-title">定理</p>
+<p>对任意整数 \(n\) 和 \(d\)，若 \(d\) 为正，则 \(\operatorname{mod}(n, d)\) 非负。</p>
 </div>
 <div class="admonition-proof admonition">
-<p class="admonition-title">我们相对于表达式 \(2n-d\) 作强归纳证明。假设对所有满足 \(|2m-c|&lt;|2n-d|\) 的整数 \(m\) 和 \(c\)，都有 \(\operatorname{mod}(m, c) + c \cdot \operatorname{div}(m, c) = m\)。</p>
-<p>情形 1（\(nd&lt;0\)）：由归纳假设，</p>
-<p>所以</p>
-<p>情形 2（\(0&lt;d(n-d)\)）：由归纳假设，</p>
-<p>所以</p>
-<p>情形 3（\(n=d\)）：那么</p>
+<p class="admonition-title">证明</p>
+<p>我们相对于表达式 \(2n-d\) 作强归纳证明。假设对所有整数 \(m\) 和 \(c\)，若 \(c\) 为正且 \(|2m-c|&lt;|2n-d|\)，则 \(\operatorname{mod}(m, c)\) 非负。</p>
+<p>情形 1（\(nd&lt;0\)）：由归纳假设，\(\operatorname{mod}(n, d)=\operatorname{mod}(n + d, d)\geq 0\)。</p>
+<p>情形 2（\(0&lt;d(n-d)\)）：由归纳假设，\(\operatorname{mod}(n, d)=\operatorname{mod}(n - d, d)\geq 0\)。</p>
+<p>情形 3（\(n=d\)）：\(\operatorname{mod}(n, d)= 0\)，所以 \(\operatorname{mod}(n, d)\geq 0\)。</p>
+<p>情形 4（\(0\le nd\le d^2\) 且 \(n\ne d\)）：由于 \(0\le nd\) 且根据假设 \(0&lt;d\)，可得 \(\operatorname{mod}(n, d)=n\geq 0\)。</p>
 </div>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">theorem</span> <span class="n">fmod_nonneg_of_pos</span> <span class="o">(</span><span class="n">n</span> <span class="o">:</span> <span class="n">ℤ</span><span class="o">)</span> <span class="o">{</span><span class="n">d</span> <span class="o">:</span> <span class="n">ℤ</span><span class="o">}</span> <span class="o">(</span><span class="n">hd</span> <span class="o">:</span> <span class="mi">0</span> <span class="bp">&lt;</span> <span class="n">d</span><span class="o">)</span> <span class="o">:</span> <span class="mi">0</span> <span class="bp">≤</span> <span class="n">fmod</span> <span class="n">n</span> <span class="n">d</span> <span class="o">:=</span> <span class="kd">by</span>
   <span class="n">rw</span> <span class="o">[</span><span class="n">fmod</span><span class="o">]</span>
@@ -1843,16 +1843,16 @@ n,&amp;0\le nd\le d^2\text{ and }n\ne d
 <section id="mod-lt">
 <span id="id33"></span><h3>6.6.4. 例<a class="headerlink" href="#mod-lt" title="此标题的永久链接"></a></h3>
 <div class="admonition-theorem admonition">
-<p class="admonition-title">情形 4：在这个情形中，</p>
-<p>定理</p>
+<p class="admonition-title">定理</p>
+<p>对任意整数 \(n\) 和 \(d\)，若 \(d\) 为正，则 \(\operatorname{mod}(n, d)&lt;d\)。</p>
 </div>
 <div class="admonition-proof admonition">
-<p class="admonition-title">对任意整数 \(n\) 和 \(d\)，若 \(d\) 为正，则 \(\operatorname{mod}(n, d)\) 非负。</p>
-<p>证明</p>
-<p>我们相对于表达式 \(2n-d\) 作强归纳证明。假设对所有整数 \(m\) 和 \(c\)，若 \(c\) 为正且 \(|2m-c|&lt;|2n-d|\)，则 \(\operatorname{mod}(m, c)\) 非负。</p>
-<p>情形 1（\(nd&lt;0\)）：由归纳假设，\(\operatorname{mod}(n, d)=\operatorname{mod}(n + d, d)\geq 0\)。</p>
-<p>情形 2（\(0&lt;d(n-d)\)）：由归纳假设，\(\operatorname{mod}(n, d)=\operatorname{mod}(n - d, d)\geq 0\)。</p>
-<p>情形 3（\(n=d\)）：\(\operatorname{mod}(n, d)= 0\)，所以 \(\operatorname{mod}(n, d)\geq 0\)。</p>
+<p class="admonition-title">证明</p>
+<p>我们相对于表达式 \(2n-d\) 作强归纳证明。假设对所有整数 \(m\) 和 \(c\)，若 \(c\) 为正且 \(|2m-c|&lt;|2n-d|\)，则 \(\operatorname{mod}(m, c)&lt;c\)。</p>
+<p>情形 1（\(nd&lt;0\)）：由归纳假设，\(\operatorname{mod}(n, d)=\operatorname{mod}(n + d, d)&lt;d\)。</p>
+<p>情形 2（\(0&lt;d(n-d)\)）：由归纳假设，\(\operatorname{mod}(n, d)=\operatorname{mod}(n - d, d)&lt;d\)。</p>
+<p>情形 3（\(n=d\)）：由假设，\(\operatorname{mod}(n, d)= 0&lt;d\)。</p>
+<p>情形 4（\(0\le nd\le d^2\) 且 \(n\ne d\)）：我们有 \(n-d\le 0\)，因为 \(d(n-d)\le 0\)，且由假设 \(0&lt;d\)。因此 \(n\le d\)。又由假设，\(n\ne d\)。合在一起，得到 \(n&lt;d\)。</p>
 </div>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">theorem</span> <span class="n">fmod_lt_of_pos</span> <span class="o">(</span><span class="n">n</span> <span class="o">:</span> <span class="n">ℤ</span><span class="o">)</span> <span class="o">{</span><span class="n">d</span> <span class="o">:</span> <span class="n">ℤ</span><span class="o">}</span> <span class="o">(</span><span class="n">hd</span> <span class="o">:</span> <span class="mi">0</span> <span class="bp">&lt;</span> <span class="n">d</span><span class="o">)</span> <span class="o">:</span> <span class="n">fmod</span> <span class="n">n</span> <span class="n">d</span> <span class="bp">&lt;</span> <span class="n">d</span> <span class="o">:=</span> <span class="kd">by</span>
   <span class="n">rw</span> <span class="o">[</span><span class="n">fmod</span><span class="o">]</span>
@@ -1879,20 +1879,20 @@ n,&amp;0\le nd\le d^2\text{ and }n\ne d
 </section>
 <section id="weak-division-algorithm">
 <span id="id34"></span><h3>6.6.5. 例<a class="headerlink" href="#weak-division-algorithm" title="此标题的永久链接"></a></h3>
-<p>情形 4（\(0\le nd\le d^2\) 且 \(n\ne d\)）：由于 \(0\le nd\) 且根据假设 \(0&lt;d\)，可得 \(\operatorname{mod}(n, d)=n\geq 0\)。</p>
+<p>把这些合在一起，我们可以证明如下定理。该定理解释了我们从例 3.4.4 起一直使用的策略 <code class="docutils literal notranslate"><span class="pre">mod_cases</span></code>：对于一个模正整数 \(b\) 考察的整数 \(a\)，我们只需列出有限多种可能。</p>
 <div class="admonition-theorem admonition">
 <p class="admonition-title">定理</p>
-<p>对任意整数 \(n\) 和 \(d\)，若 \(d\) 为正，则 \(\operatorname{mod}(n, d)&lt;d\)。</p>
+<p>设 \(a\) 和 \(b\) 为整数，且 \(b\) 为正。存在整数 \(r\)，满足 \(0 \le r &lt; b\)，并且 \(a \equiv r\mod b\)。</p>
 </div>
 <div class="admonition-proof admonition">
 <p class="admonition-title">证明</p>
-<p>我们相对于表达式 \(2n-d\) 作强归纳证明。假设对所有整数 \(m\) 和 \(c\)，若 \(c\) 为正且 \(|2m-c|&lt;|2n-d|\)，则 \(\operatorname{mod}(m, c)&lt;c\)。</p>
+<p>我们证明整数 \(\operatorname{mod}(a,b)\) 具有这个性质。确实，由例 6.6.3 和例 6.6.4，\(0 \le \operatorname{mod}(a,b) &lt; b\)；又由例 6.6.2，</p>
 <div class="math notranslate nohighlight">
 \[\operatorname{mod}(a, b) + b \cdot \operatorname{div}(a, b) = a,\]</div>
-<p>情形 1（\(nd&lt;0\)）：由归纳假设，\(\operatorname{mod}(n, d)=\operatorname{mod}(n + d, d)&lt;d\)。</p>
+<p>所以</p>
 <div class="math notranslate nohighlight">
 \[a-\operatorname{mod}(a, b)=b \cdot \operatorname{div}(a, b),\]</div>
-<p>情形 2（\(0&lt;d(n-d)\)）：由归纳假设，\(\operatorname{mod}(n, d)=\operatorname{mod}(n - d, d)&lt;d\)。</p>
+<p>所以</p>
 <div class="math notranslate nohighlight">
 \[a \equiv \operatorname{mod}(a, b)\mod b.\]</div>
 </div>
@@ -1911,13 +1911,13 @@ n,&amp;0\le nd\le d^2\text{ and }n\ne d
 <section id="id35">
 <h3>6.6.6. 练习<a class="headerlink" href="#id35" title="此标题的永久链接"></a></h3>
 <ol class="arabic">
-<li><p>考虑由如下递归定义的数列 \((t_n)\)：\[\begin{split}t_0&amp;=5\\ t_1&amp;=7\\ \text{对 }n:\mathbb{N},\quad t_{n+2}&amp;=2t_{n+1}-t_n.\end{split}\] 证明：对所有自然数 \(n\)，都有 \(t_n=2n+5\)。</p>
+<li><p>证明例 6.6.4 对负 \(d\) 的类似结论：对任意整数 \(n\) 和 \(d\)，若 \(d\) 为负，则 \(d&lt;\operatorname{mod}(n, d)\)。</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">theorem</span> <span class="n">lt_fmod_of_neg</span> <span class="o">(</span><span class="n">n</span> <span class="o">:</span> <span class="n">ℤ</span><span class="o">)</span> <span class="o">{</span><span class="n">d</span> <span class="o">:</span> <span class="n">ℤ</span><span class="o">}</span> <span class="o">(</span><span class="n">hd</span> <span class="o">:</span> <span class="n">d</span> <span class="bp">&lt;</span> <span class="mi">0</span><span class="o">)</span> <span class="o">:</span> <span class="n">d</span> <span class="bp">&lt;</span> <span class="n">fmod</span> <span class="n">n</span> <span class="n">d</span> <span class="o">:=</span> <span class="kd">by</span>
   <span class="gr">sorry</span>
 </pre></div>
 </div>
 </li>
-<li><p>考虑由如下递归定义的数列 \((q_n)\)：\[\begin{split}q_0&amp;=1\\ q_1&amp;=2\\ \text{对 }n:\mathbb{N},\quad q_{n+2}&amp;=2q_{n+1}-q_n+6n + 6.\end{split}\] 证明：对所有自然数 \(n\)，都有 \(q_n=n^3+1\)。</p>
+<li><p>考虑递归定义在整数上的函数 \(T\)：\[\begin{split}T(n)= \begin{cases} T(1-n)+2n-1,&amp;0&lt; n\\ T(-n),&amp;n&lt; 0\\ 0&amp;n=0. \end{cases}\end{split}\] 这个递归定义是良基的，因为它的自引用在 \(|3n-1|\) 上严格下降。证明：对所有整数 \(n\)，都有 \(T(n)=n^2\)。</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}T(n)=
 \begin{cases}
@@ -1939,7 +1939,7 @@ T(-n),&amp;n&lt; 0\\
 </pre></div>
 </div>
 </li>
-<li><p>考虑由如下递归定义的数列 \((s_n)\)：\[\begin{split}s_0&amp;=2\\ s_1&amp;=3\\ \text{对 }n:\mathbb{N},\quad s_{n+2}&amp;=2s_{n+1}+3s_n.\end{split}\] 证明：对所有自然数 \(m\)，\(s_m\) 模 5 同余于 2 或 3。</p>
+<li><p>设 \(a\) 和 \(b\) 为整数，且 \(b\) 为正。证明：存在唯一整数 \(r\) 位于范围 \(0 \le r &lt; b\) 内，使得 \(a\equiv r\mod b\)。这个定理升级了例 6.6.5：它不仅断言存在性，也断言唯一性。我们在例 4.3.4 中曾不加证明地陈述它（Lean 名称为 <code class="docutils literal notranslate"><span class="pre">Int.existsUnique_modEq_lt</span></code>），并且每当我们从“显然不成立的同余”推出矛盾时，例如例 4.4.3 中，都在隐式使用它。建议做法：把下面的内容写成一个独立定理 <code class="docutils literal notranslate"><span class="pre">uniqueness</span></code> 并证明它，思路大致仿照例 4.3.4 中证明的特殊情形：设 \(a\) 和 \(b\) 为整数，且 \(b\) 为正。设 \(r\) 和 \(s\) 为整数，二者都在范围 \(0 \le r &lt; b\)、\(0 \le s &lt; b\) 中，并且都与 \(a\) 模 \(b\) 同余。证明它们相等。然后结合例 6.6.5 中的论证，把各部分合在一起。</p>
 <blockquote>
 <div><p>设 \(a\) 和 \(b\) 为整数，且 \(b\) 为正。设 \(r\) 和 \(s\) 为整数，二者都在范围 \(0 \le r &lt; b\)、\(0 \le s &lt; b\) 中，并且都与 \(a\) 模 \(b\) 同余。证明 \(r=s\)。</p>
 </div></blockquote>
@@ -1961,8 +1961,8 @@ T(-n),&amp;n&lt; 0\\
 <section id="euclidean-algorithm-def">
 <span id="id36"></span><h3>6.7.1. 定义<a class="headerlink" href="#euclidean-algorithm-def" title="此标题的永久链接"></a></h3>
 <div class="admonition-definition admonition">
-<p class="admonition-title">情形 3（\(n=d\)）：由假设，\(\operatorname{mod}(n, d)= 0&lt;d\)。</p>
-<p>情形 4（\(0\le nd\le d^2\) 且 \(n\ne d\)）：我们有 \(n-d\le 0\)，因为 \(d(n-d)\le 0\)，且由假设 \(0&lt;d\)。因此 \(n\le d\)。又由假设，\(n\ne d\)。合在一起，得到 \(n&lt;d\)。</p>
+<p class="admonition-title">定义</p>
+<p>两个整数的函数 \(\operatorname{gcd}\) 递归定义如下：</p>
 <blockquote>
 <div><div class="math notranslate nohighlight">
 \[\begin{split}\operatorname{gcd}(a,b)=
@@ -1974,7 +1974,7 @@ T(-n),&amp;n&lt; 0\\
 \end{cases}\end{split}\]</div>
 </div></blockquote>
 </div>
-<p>把这些合在一起，我们可以证明如下定理。该定理解释了我们从例 3.4.4 起一直使用的策略 <code class="docutils literal notranslate"><span class="pre">mod_cases</span></code>：对于一个模正整数 \(b\) 考察的整数 \(a\)，我们只需列出有限多种可能。</p>
+<p>我们练习计算 \(\operatorname{gcd}\) 函数。计算 \(\operatorname{gcd}(-21,15)\)：</p>
 <div class="math notranslate nohighlight">
 \[ \begin{align}\begin{aligned}\operatorname{mod}(-21,15)&amp;=9
 &amp;
@@ -1997,9 +1997,9 @@ T(-n),&amp;n&lt; 0\\
 &amp;\qquad
 &amp;
 &amp;=3.\end{aligned}\end{align} \]</div>
-<p>定理</p>
-<p>设 \(a\) 和 \(b\) 为整数，且 \(b\) 为正。存在整数 \(r\)，满足 \(0 \le r &lt; b\)，并且 \(a \equiv r\mod b\)。</p>
-<p>证明</p>
+<p>（记住，\(\operatorname{mod}(a,b)\) 是定义 6.6.1 中定义的“余数”函数。）</p>
+<p>和定义 6.5.1、定义 6.6.1 中一样，我们需要说明这个递归定义是良基的，也就是该过程总会终止。也和那些章节一样，我们通过给出一个随着过程推进其绝对值严格变小的表达式来做到这一点。这里的表达式是 \(b\)，即两个数中的第二个（注意在例子中 \(b\) 依次为 15、9、6、3、0，确实在减小）。</p>
+<p>这导向下面对 \(\operatorname{gcd}\) 的 Lean 定义尝试，其中子句 <code class="docutils literal notranslate"><span class="pre">termination_by</span> <span class="pre">_</span> <span class="pre">a</span> <span class="pre">b</span> <span class="pre">=&gt;</span> <span class="pre">b</span></code> 表示 \(b\) 是良基性的大小表达式。</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">def</span> <span class="n">gcd</span> <span class="o">(</span><span class="n">a</span> <span class="n">b</span> <span class="o">:</span> <span class="n">ℤ</span><span class="o">)</span> <span class="o">:</span> <span class="n">ℤ</span> <span class="o">:=</span>
   <span class="k">if</span> <span class="mi">0</span> <span class="bp">&lt;</span> <span class="n">b</span> <span class="k">then</span>
     <span class="n">gcd</span> <span class="n">b</span> <span class="o">(</span><span class="n">fmod</span> <span class="n">a</span> <span class="n">b</span><span class="o">)</span>
@@ -2012,20 +2012,20 @@ T(-n),&amp;n&lt; 0\\
 <span class="n">termination_by</span> <span class="n">_</span> <span class="n">a</span> <span class="n">b</span> <span class="bp">=&gt;</span> <span class="n">b</span>
 </pre></div>
 </div>
-<p>我们证明整数 \(\operatorname{mod}(a,b)\) 具有这个性质。确实，由例 6.6.3 和例 6.6.4，\(0 \le \operatorname{mod}(a,b) &lt; b\)；又由例 6.6.2，</p>
+<p>但不同于第 6.5 节和第 6.6 节，这个定义还不完整：沿递归过程 \(b\) 在减小这一事实“足够不明显”，需要一个显式证明。</p>
 <div class="admonition-proposition admonition">
-<p class="admonition-title">所以</p>
-<p>所以</p>
+<p class="admonition-title">Proposition</p>
+<p>递归定义 \(\operatorname{gcd}\) 是良基的。</p>
 </div>
 <div class="admonition-proof admonition">
-<p class="admonition-title">定义</p>
-<p>两个整数的函数 \(\operatorname{gcd}\) 递归定义如下：</p>
+<p class="admonition-title">证明</p>
+<p>有两件事要检查：</p>
 <ol class="arabic">
-<li>考虑由如下递归定义的数列 \((p_n)\)：\[\begin{split}p_0&amp;=2\\ p_1&amp;=3\\ \text{对 }n:\mathbb{N},\quad p_{n+2}&amp;=6p_{n+1}-p_n.\end{split}\] 证明：对所有自然数 \(m\geq 1\)，\(p_m\) 模 7 同余于 2 或 3。</li>
-<li>考虑由如下递归定义的数列 \((r_n)\)：\[\begin{split}r_0&amp;=2\\ r_1&amp;=0\\ \text{对 }n:\mathbb{N},\quad r_{n+2}&amp;=2r_{n+1}+r_n.\end{split}\] 证明：对所有充分大的自然数 \(n\)，都有 \(r_n\geq 2^n\)。</li>
+<li>\(\underline{\text{若 }0&lt;b\text{，则 }-b&lt;\operatorname{mod}(a,b)&lt;b}\)：由例 6.6.3 和例 6.6.4，\(0\le \operatorname{mod}(a,b)&lt;b\)，这立即给出上界；下界则来自 \[\begin{split}-b&amp;&lt;0\\ &amp;\le \operatorname{mod}(a,b).\end{split}\]</li>
+<li>\(\underline{\text{若 }b&lt;0\text{，则 }b&lt;\operatorname{mod}(a,-b)&lt;-b}\)：我们有 \(0&lt;-b\)，所以由例 6.6.3 和例 6.6.4，\(0\le \operatorname{mod}(a,-b)&lt;-b\)，这立即给出上界；下界则来自 \[\begin{split}b&amp;&lt;0\\ &amp;\le \operatorname{mod}(a,-b).\end{split}\]</li>
 </ol>
 </div>
-<p>我们练习计算 \(\operatorname{gcd}\) 函数。计算 \(\operatorname{gcd}(-21,15)\)：</p>
+<p>在 Lean 中，我们分别陈述并证明这些事实，用属性 <code class="docutils literal notranslate"><span class="pre">@[decreasing]</span></code> 标记它们；这使随后的定义 <code class="docutils literal notranslate"><span class="pre">gcd</span></code> 能够调用它们来证明良基性。请检查：如果省略它们，定义会报错。</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">@[decreasing]</span> <span class="kd">theorem</span> <span class="n">lower_bound_fmod1</span> <span class="o">(</span><span class="n">a</span> <span class="n">b</span> <span class="o">:</span> <span class="n">ℤ</span><span class="o">)</span> <span class="o">(</span><span class="n">h1</span> <span class="o">:</span> <span class="mi">0</span> <span class="bp">&lt;</span> <span class="n">b</span><span class="o">)</span> <span class="o">:</span> <span class="bp">-</span><span class="n">b</span> <span class="bp">&lt;</span> <span class="n">fmod</span> <span class="n">a</span> <span class="n">b</span> <span class="o">:=</span> <span class="kd">by</span>
   <span class="k">have</span> <span class="n">H</span> <span class="o">:</span> <span class="mi">0</span> <span class="bp">≤</span> <span class="n">fmod</span> <span class="n">a</span> <span class="n">b</span>
   <span class="bp">·</span> <span class="n">apply</span> <span class="n">fmod_nonneg_of_pos</span>
@@ -2050,25 +2050,25 @@ T(-n),&amp;n&lt; 0\\
   <span class="n">apply</span> <span class="n">h1</span>
 </pre></div>
 </div>
-<p>（记住，\(\operatorname{mod}(a,b)\) 是定义 6.6.1 中定义的“余数”函数。）</p>
+<p>之后，Lean 定义 <code class="docutils literal notranslate"><span class="pre">gcd</span></code> 就能成功通过。可靠性检查：Lean 定义是否与我们上面对 \(\operatorname{gcd}(-21,15)\) 的计算一致？</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="k">#eval</span> <span class="n">gcd</span> <span class="o">(</span><span class="bp">-</span><span class="mi">21</span><span class="o">)</span> <span class="mi">15</span> <span class="c1">-- infoview displays `3`</span>
 </pre></div>
 </div>
 </section>
 <section id="gcd-nonneg">
 <span id="id37"></span><h3>6.7.2. 例<a class="headerlink" href="#gcd-nonneg" title="此标题的永久链接"></a></h3>
-<p>和定义 6.5.1、定义 6.6.1 中一样，我们需要说明这个递归定义是良基的，也就是该过程总会终止。也和那些章节一样，我们通过给出一个随着过程推进其绝对值严格变小的表达式来做到这一点。这里的表达式是 \(b\)，即两个数中的第二个（注意在例子中 \(b\) 依次为 15、9、6、3、0，确实在减小）。</p>
+<p>关于 \(\operatorname{gcd}\) 的每个事实，都将使用同样的良基性理由通过强归纳来证明。</p>
 <div class="admonition-proposition admonition">
-<p class="admonition-title">这导向下面对 \(\operatorname{gcd}\) 的 Lean 定义尝试，其中子句 <code class="docutils literal notranslate"><span class="pre">termination_by</span> <span class="pre">_</span> <span class="pre">a</span> <span class="pre">b</span> <span class="pre">=&gt;</span> <span class="pre">b</span></code> 表示 \(b\) 是良基性的大小表达式。</p>
-<p>但不同于第 6.5 节和第 6.6 节，这个定义还不完整：沿递归过程 \(b\) 在减小这一事实“足够不明显”，需要一个显式证明。</p>
+<p class="admonition-title">Proposition</p>
+<p>对所有整数 \(a\) 和 \(b\)，整数 \(\operatorname{gcd}(a,b)\) 非负。</p>
 </div>
 <div class="admonition-proof admonition">
-<p class="admonition-title">递归定义 \(\operatorname{gcd}\) 是良基的。</p>
-<p>递归定义 \(\operatorname{gcd}\) 是良基的。</p>
-<p>证明</p>
-<p>有两件事要检查：</p>
-<p>在 Lean 中，我们分别陈述并证明这些事实，用属性 <code class="docutils literal notranslate"><span class="pre">@[decreasing]</span></code> 标记它们；这使随后的定义 <code class="docutils literal notranslate"><span class="pre">gcd</span></code> 能够调用它们来证明良基性。请检查：如果省略它们，定义会报错。</p>
-<p>之后，Lean 定义 <code class="docutils literal notranslate"><span class="pre">gcd</span></code> 就能成功通过。可靠性检查：Lean 定义是否与我们上面对 \(\operatorname{gcd}(-21,15)\) 的计算一致？</p>
+<p class="admonition-title">证明</p>
+<p>我们对 \(b\) 作强归纳证明。假设对所有满足 \(|y|&lt;|b|\) 的整数 \(x\) 和 \(y\)，都有 \(0 \le \operatorname{gcd}(x, y)\)。</p>
+<p>情形 1（\(0&lt;b\)）：\(\operatorname{gcd}(a,b)\) 等于 \(\operatorname{gcd}(b,\operatorname{mod}(a,b))\)，后者由归纳假设非负。</p>
+<p>情形 2（\(b&lt;0\)）：\(\operatorname{gcd}(a,b)\) 等于 \(\operatorname{gcd}(b,\operatorname{mod}(a,-b))\)，后者由归纳假设非负。</p>
+<p>情形 3（\(b=0\)，\(0\le a\)）：此时 \(\operatorname{gcd}(a,b)=a\geq 0\)。</p>
+<p>情形 4（\(b=0\)，\(a&lt;0\)）：此时 \(\operatorname{gcd}(a,b)=-a\geq 0\)。</p>
 </div>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">theorem</span> <span class="n">gcd_nonneg</span> <span class="o">(</span><span class="n">a</span> <span class="n">b</span> <span class="o">:</span> <span class="n">ℤ</span><span class="o">)</span> <span class="o">:</span> <span class="mi">0</span> <span class="bp">≤</span> <span class="n">gcd</span> <span class="n">a</span> <span class="n">b</span> <span class="o">:=</span> <span class="kd">by</span>
   <span class="n">rw</span> <span class="o">[</span><span class="n">gcd</span><span class="o">]</span>
@@ -2090,39 +2090,39 @@ T(-n),&amp;n&lt; 0\\
 <section id="common-divisor">
 <span id="id38"></span><h3>6.7.3. 例<a class="headerlink" href="#common-divisor" title="此标题的永久链接"></a></h3>
 <div class="admonition-proposition admonition">
-<p class="admonition-title">关于 \(\operatorname{gcd}\) 的每个事实，都将使用同样的良基性理由通过强归纳来证明。</p>
-<p>对所有整数 \(a\) 和 \(b\)，整数 \(\operatorname{gcd}(a,b)\) 非负。</p>
+<p class="admonition-title">Proposition</p>
+<p>对所有整数 \(a\) 和 \(b\)，整数 \(\operatorname{gcd}(a,b)\) 同时是 \(a\) 和 \(b\) 的因子。</p>
 </div>
-<p>对所有整数 \(a\) 和 \(b\)，整数 \(\operatorname{gcd}(a,b)\) 非负。</p>
+<p>也就是说，\(\operatorname{gcd}(a,b)\) 是 \(a\) 和 \(b\) 的公因子。我们稍后会证明（见练习），它事实上是 \(a\) 和 \(b\) 的最大公因子，因此英文缩写为 GCD。</p>
 <div class="admonition-proof admonition">
 <p class="admonition-title">证明</p>
 <p>我们对 \(b\) 作强归纳证明。假设对所有满足 \(|y|&lt;|b|\) 的整数 \(x\) 和 \(y\)，都有 \(0 \le \operatorname{gcd}(x, y)\)。</p>
-<p>情形 1（\(0&lt;b\)）：\(\operatorname{gcd}(a,b)\) 等于 \(\operatorname{gcd}(b,\operatorname{mod}(a,b))\)，后者由归纳假设非负。</p>
-<p>情形 2（\(b&lt;0\)）：\(\operatorname{gcd}(a,b)\) 等于 \(\operatorname{gcd}(b,\operatorname{mod}(a,-b))\)，后者由归纳假设非负。</p>
-<p>情形 3（\(b=0\)，\(0\le a\)）：此时 \(\operatorname{gcd}(a,b)=a\geq 0\)。</p>
+<p>情形 1（\(0&lt;b\)）：令 \(q=\operatorname{div}(a,b)\)，令 \(r=\operatorname{mod}(a,b)\)，于是 \(a=r+bq\)（由例 6.6.2）。</p>
+<p>那么由递归定义，\(\operatorname{gcd}(a,b)\) 等于 \(\operatorname{gcd}(b,r)\)；由归纳假设，它同时整除 \(b\) 和 \(r\)。我们需要证明它整除 \(b\)（这是立即的）和 \(a\)；现在转向后者。</p>
+<p>由于 \(\operatorname{gcd}(a,b)\mid b\)，存在整数 \(k\)，使得 \(b = \operatorname{gcd}(a,b)k\)；又由于 \(\operatorname{gcd}(a,b)\mid r\)，存在整数 \(l\)，使得 \(r = \operatorname{gcd}(a,b)l\)。于是有</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}a&amp;=r+bq\\
 &amp;=\operatorname{gcd}(a,b)l+(\operatorname{gcd}(a,b)k)q\\
 &amp;=\operatorname{gcd}(a,b)\cdot (l+kq),\end{split}\]</div>
-<p>情形 4（\(b=0\)，\(a&lt;0\)）：此时 \(\operatorname{gcd}(a,b)=-a\geq 0\)。</p>
-<p>对所有整数 \(a\) 和 \(b\)，整数 \(\operatorname{gcd}(a,b)\) 同时是 \(a\) 和 \(b\) 的因子。</p>
-<p>对所有整数 \(a\) 和 \(b\)，整数 \(\operatorname{gcd}(a,b)\) 同时是 \(a\) 和 \(b\) 的因子。</p>
-<p>也就是说，\(\operatorname{gcd}(a,b)\) 是 \(a\) 和 \(b\) 的公因子。我们稍后会证明（见练习），它事实上是 \(a\) 和 \(b\) 的最大公因子，因此英文缩写为 GCD。</p>
+<p>所以 \(\operatorname{gcd}(a,b)\mid a\)。</p>
+<p>情形 2（\(b&lt;0\)）：令 \(q=\operatorname{div}(a,-b)\)，令 \(r=\operatorname{mod}(a,-b)\)，于是 \(a=r+(-b)q\)（由例 6.6.2）。</p>
+<p>那么由递归定义，\(\operatorname{gcd}(a,b)\) 等于 \(\operatorname{gcd}(b,r)\)；由归纳假设，它同时整除 \(b\) 和 \(r\)。我们需要证明它整除 \(b\)（这是立即的）和 \(a\)；现在转向后者。</p>
+<p>由于 \(\operatorname{gcd}(a,b)\mid b\)，存在整数 \(k\)，使得 \(b = \operatorname{gcd}(a,b)k\)；又由于 \(\operatorname{gcd}(a,b)\mid r\)，存在整数 \(l\)，使得 \(r = \operatorname{gcd}(a,b)l\)。于是有</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}a&amp;=r+(-b)q\\
 &amp;=\operatorname{gcd}(a,b)l+(-\operatorname{gcd}(a,b)k)q\\
 &amp;=\operatorname{gcd}(a,b)\cdot (l-kq),\end{split}\]</div>
-<p>证明</p>
-<p>我们对 \(b\) 作强归纳证明。假设对所有满足 \(|y|&lt;|b|\) 的整数 \(x\) 和 \(y\)，都有 \(0 \le \operatorname{gcd}(x, y)\)。</p>
+<p>所以 \(\operatorname{gcd}(a,b)\mid a\)。</p>
+<p>情形 3（\(b=0\)，\(0\le a\)）：此时 \(\operatorname{gcd}(a,b)=a\)，它是 \(a\) 的因子，因为 \(a\cdot 1=a\)；也是 \(b\) 的因子，因为</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}b &amp;= 0\\
 &amp;=0\cdot a.\end{split}\]</div>
-<p>情形 1（\(0&lt;b\)）：令 \(q=\operatorname{div}(a,b)\)，令 \(r=\operatorname{mod}(a,b)\)，于是 \(a=r+bq\)（由例 6.6.2）。</p>
+<p>情形 4（\(b=0\)，\(a&lt;0\)）：此时 \(\operatorname{gcd}(a,b)=-a\)，它是 \(a\) 的因子，因为 \(-a\cdot -1=a\)；也是 \(b\) 的因子，因为</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}b &amp;= 0\\
 &amp;=0\cdot -a.\end{split}\]</div>
 </div>
-<p>那么由递归定义，\(\operatorname{gcd}(a,b)\) 等于 \(\operatorname{gcd}(b,r)\)；由归纳假设，它同时整除 \(b\) 和 \(r\)。我们需要证明它整除 \(b\)（这是立即的）和 \(a\)；现在转向后者。</p>
+<p>可以在 Lean 中用一个“且”目标的结构来建立这个证明，如下所示：（其中 <code class="docutils literal notranslate"><span class="pre">_</span></code> 只是用于展示基本结构的占位符。）</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">theorem</span> <span class="n">gcd_dvd</span> <span class="o">(</span><span class="n">a</span> <span class="n">b</span> <span class="o">:</span> <span class="n">ℤ</span><span class="o">)</span> <span class="o">:</span> <span class="n">gcd</span> <span class="n">a</span> <span class="n">b</span> <span class="bp">∣</span> <span class="n">b</span> <span class="bp">∧</span> <span class="n">gcd</span> <span class="n">a</span> <span class="n">b</span> <span class="bp">∣</span> <span class="n">a</span> <span class="o">:=</span> <span class="kd">by</span>
   <span class="n">rw</span> <span class="o">[</span><span class="n">gcd</span><span class="o">]</span>
   <span class="n">split_ifs</span> <span class="k">with</span> <span class="n">h1</span> <span class="n">h2</span> <span class="bp">&lt;;&gt;</span> <span class="n">push_neg</span> <span class="n">at</span> <span class="bp">*</span>
@@ -2157,7 +2157,7 @@ T(-n),&amp;n&lt; 0\\
 <span class="n">termination_by</span> <span class="n">gcd_dvd</span> <span class="n">a</span> <span class="n">b</span> <span class="bp">=&gt;</span> <span class="n">b</span>
 </pre></div>
 </div>
-<p>由于 \(\operatorname{gcd}(a,b)\mid b\)，存在整数 \(k\)，使得 \(b = \operatorname{gcd}(a,b)k\)；又由于 \(\operatorname{gcd}(a,b)\mid r\)，存在整数 \(l\)，使得 \(r = \operatorname{gcd}(a,b)l\)。于是有</p>
+<p>但在任务 \(\operatorname{gcd}(a,b)\mid b\) 和任务 \(\operatorname{gcd}(a,b)\mid a\) 之间不断切换，有点难以跟踪。更优雅的设置是使用两个独立引理：一个证明 \(\operatorname{gcd}(a,b)\mid b\)，另一个证明 \(\operatorname{gcd}(a,b)\mid a\)，其结构如下：</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">theorem</span> <span class="n">gcd_dvd_right</span> <span class="o">(</span><span class="n">a</span> <span class="n">b</span> <span class="o">:</span> <span class="n">ℤ</span><span class="o">)</span> <span class="o">:</span> <span class="n">gcd</span> <span class="n">a</span> <span class="n">b</span> <span class="bp">∣</span> <span class="n">b</span> <span class="o">:=</span> <span class="kd">by</span>
   <span class="n">rw</span> <span class="o">[</span><span class="n">gcd</span><span class="o">]</span>
   <span class="n">split_ifs</span> <span class="k">with</span> <span class="n">h1</span> <span class="n">h2</span> <span class="bp">&lt;;&gt;</span> <span class="n">push_neg</span> <span class="n">at</span> <span class="bp">*</span>
@@ -2187,7 +2187,7 @@ T(-n),&amp;n&lt; 0\\
     <span class="gr">sorry</span>
 </pre></div>
 </div>
-<p>所以 \(\operatorname{gcd}(a,b)\mid a\)。</p>
+<p>但现在强归纳结构变复杂了：<code class="docutils literal notranslate"><span class="pre">gcd_dvd_right</span></code> 的证明依赖较小 \(a,b\) 值处的 <code class="docutils literal notranslate"><span class="pre">gcd_dvd_left</span></code>，而 <code class="docutils literal notranslate"><span class="pre">gcd_dvd_left</span></code> 的证明又依赖较小 \(a,b\) 值处的 <code class="docutils literal notranslate"><span class="pre">gcd_dvd_right</span></code>。这称为相互归纳，在 Lean 中有特殊语法：两个定理被包在一个 <code class="docutils literal notranslate"><span class="pre">mutual</span></code> 块中，末尾给出共同的终止性说明，如下：</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">mutual</span>
 
 <span class="kd">theorem</span> <span class="n">gcd_dvd_right</span> <span class="o">(</span><span class="n">a</span> <span class="n">b</span> <span class="o">:</span> <span class="n">ℤ</span><span class="o">)</span> <span class="o">:</span> <span class="n">gcd</span> <span class="n">a</span> <span class="n">b</span> <span class="bp">∣</span> <span class="n">b</span> <span class="o">:=</span> <span class="kd">by</span>
@@ -2200,7 +2200,7 @@ T(-n),&amp;n&lt; 0\\
 <span class="n">termination_by</span> <span class="n">gcd_dvd_right</span> <span class="n">a</span> <span class="n">b</span> <span class="bp">=&gt;</span> <span class="n">b</span> <span class="bp">;</span> <span class="n">gcd_dvd_left</span> <span class="n">a</span> <span class="n">b</span> <span class="bp">=&gt;</span> <span class="n">b</span>
 </pre></div>
 </div>
-<p>情形 2（\(b&lt;0\)）：令 \(q=\operatorname{div}(a,-b)\)，令 \(r=\operatorname{mod}(a,-b)\)，于是 \(a=r+(-b)q\)（由例 6.6.2）。</p>
+<p>下面是完整的 Lean 证明。</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">mutual</span>
 <span class="kd">theorem</span> <span class="n">gcd_dvd_right</span> <span class="o">(</span><span class="n">a</span> <span class="n">b</span> <span class="o">:</span> <span class="n">ℤ</span><span class="o">)</span> <span class="o">:</span> <span class="n">gcd</span> <span class="n">a</span> <span class="n">b</span> <span class="bp">∣</span> <span class="n">b</span> <span class="o">:=</span> <span class="kd">by</span>
   <span class="n">rw</span> <span class="o">[</span><span class="n">gcd</span><span class="o">]</span>
@@ -2258,14 +2258,14 @@ T(-n),&amp;n&lt; 0\\
 <span class="n">termination_by</span> <span class="n">gcd_dvd_right</span> <span class="n">a</span> <span class="n">b</span> <span class="bp">=&gt;</span> <span class="n">b</span> <span class="bp">;</span> <span class="n">gcd_dvd_left</span> <span class="n">a</span> <span class="n">b</span> <span class="bp">=&gt;</span> <span class="n">b</span>
 </pre></div>
 </div>
-<p>那么由递归定义，\(\operatorname{gcd}(a,b)\) 等于 \(\operatorname{gcd}(b,r)\)；由归纳假设，它同时整除 \(b\) 和 \(r\)。我们需要证明它整除 \(b\)（这是立即的）和 \(a\)；现在转向后者。</p>
+<p>上面的证明中有一个新策略：<code class="docutils literal notranslate"><span class="pre">set</span></code>，它为一个长表达式引入短名称（通常是因为该表达式频繁出现，而你不想反复完整输入）。注意使用它前后目标状态如何变化。</p>
 </section>
 <section id="bezout-def">
 <span id="id39"></span><h3>6.7.4. 定义<a class="headerlink" href="#bezout-def" title="此标题的永久链接"></a></h3>
-<p>由于 \(\operatorname{gcd}(a,b)\mid b\)，存在整数 \(k\)，使得 \(b = \operatorname{gcd}(a,b)k\)；又由于 \(\operatorname{gcd}(a,b)\mid r\)，存在整数 \(l\)，使得 \(r = \operatorname{gcd}(a,b)l\)。于是有</p>
+<p>定义 6.7.1 中描述的过程通常称为欧几里得算法。一个称为扩展欧几里得算法的过程，会在计算 \(\operatorname{gcd}(a,b)\) 的同时计算另外两个函数，我们称之为 \(L(a,b)\) 和 \(R(a,b)\)。</p>
 <div class="admonition-definition admonition">
-<p class="admonition-title">所以 \(\operatorname{gcd}(a,b)\mid a\)。</p>
-<p>情形 3（\(b=0\)，\(0\le a\)）：此时 \(\operatorname{gcd}(a,b)=a\)，它是 \(a\) 的因子，因为 \(a\cdot 1=a\)；也是 \(b\) 的因子，因为</p>
+<p class="admonition-title">定义</p>
+<p>两个整数的函数 \(L\) 和 \(R\) 相互递归定义如下：</p>
 <blockquote>
 <div><div class="math notranslate nohighlight">
 \[\begin{split}L(a,b)&amp;=
@@ -2283,21 +2283,21 @@ R(a,b)&amp;=
 \end{cases}  \\\end{split}\]</div>
 </div></blockquote>
 </div>
-<p>情形 4（\(b=0\)，\(a&lt;0\)）：此时 \(\operatorname{gcd}(a,b)=-a\)，它是 \(a\) 的因子，因为 \(-a\cdot -1=a\)；也是 \(b\) 的因子，因为</p>
-<p>可以在 Lean 中用一个“且”目标的结构来建立这个证明，如下所示：（其中 <code class="docutils literal notranslate"><span class="pre">_</span></code> 只是用于展示基本结构的占位符。）</p>
+<p>我们用和定义 6.7.1 中相同的例子（\(a=-21\)，\(b=15\)），一起练习计算 \(\operatorname{gcd}(a,b)\)、\(L(a,b)\) 和 \(R(a,b)\)。</p>
+<p>由于递归过程中同时需要 \(\operatorname{div}\) 和 \(\operatorname{mod}\)，预先一起计算它们会很方便：</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}-21&amp;=9+15\cdot -2\\
 15&amp;=6+9\cdot 1\\
 9&amp;=3+6\cdot 1\\
 6&amp;=0+3\cdot 2.\end{split}\]</div>
-<p>但在任务 \(\operatorname{gcd}(a,b)\mid b\) 和任务 \(\operatorname{gcd}(a,b)\mid a\) 之间不断切换，有点难以跟踪。更优雅的设置是使用两个独立引理：一个证明 \(\operatorname{gcd}(a,b)\mid b\)，另一个证明 \(\operatorname{gcd}(a,b)\mid a\)，其结构如下：</p>
+<p>（这张表简记了 \(\operatorname{div}(-21,15)=-2\)、\(\operatorname{mod}(-21,15)=9\)，等等。）我们立即得到</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}\operatorname{gcd}(-21,15)&amp;=\operatorname{gcd}(15,9)\\
 &amp;=\operatorname{gcd}(9,6)\\
 &amp;=\operatorname{gcd}(6,3)\\
 &amp;=\operatorname{gcd}(3,0)\\
 &amp;=3,\end{split}\]</div>
-<p>但现在强归纳结构变复杂了：<code class="docutils literal notranslate"><span class="pre">gcd_dvd_right</span></code> 的证明依赖较小 \(a,b\) 值处的 <code class="docutils literal notranslate"><span class="pre">gcd_dvd_left</span></code>，而 <code class="docutils literal notranslate"><span class="pre">gcd_dvd_left</span></code> 的证明又依赖较小 \(a,b\) 值处的 <code class="docutils literal notranslate"><span class="pre">gcd_dvd_right</span></code>。这称为相互归纳，在 Lean 中有特殊语法：两个定理被包在一个 <code class="docutils literal notranslate"><span class="pre">mutual</span></code> 块中，末尾给出共同的终止性说明，如下：</p>
+<p>和以前一样。为了计算 \(L(a,b)\) 和 \(R(a,b)\)，从后往前推比较方便：</p>
 <div class="math notranslate nohighlight">
 \[ \begin{align}\begin{aligned}L(3,0)&amp;=1
 &amp;
@@ -2326,7 +2326,7 @@ R(a,b)&amp;=
 \qquad&amp;=-1-(-2)\cdot 2\\&amp;
 &amp;
 \qquad&amp;=3\end{aligned}\end{align} \]</div>
-<p>下面是完整的 Lean 证明。</p>
+<p>在 Lean 中，这个相互递归定义看起来类似于例 6.7.3 中的相互归纳证明；和那个例子一样，它被包在标记为 <code class="docutils literal notranslate"><span class="pre">mutual</span></code> 的块中。</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">mutual</span>
 
 <span class="kd">def</span> <span class="n">L</span> <span class="o">(</span><span class="n">a</span> <span class="n">b</span> <span class="o">:</span> <span class="n">ℤ</span><span class="o">)</span> <span class="o">:</span> <span class="n">ℤ</span> <span class="o">:=</span>
@@ -2351,7 +2351,7 @@ R(a,b)&amp;=
 <span class="n">termination_by</span> <span class="n">L</span> <span class="n">a</span> <span class="n">b</span> <span class="bp">=&gt;</span> <span class="n">b</span> <span class="bp">;</span> <span class="n">R</span> <span class="n">a</span> <span class="n">b</span> <span class="bp">=&gt;</span> <span class="n">b</span>
 </pre></div>
 </div>
-<p>上面的证明中有一个新策略：<code class="docutils literal notranslate"><span class="pre">set</span></code>，它为一个长表达式引入短名称（通常是因为该表达式频繁出现，而你不想反复完整输入）。注意使用它前后目标状态如何变化。</p>
+<p>可靠性检查：Lean 定义是否与我们手算的 \(L(-21,15)\) 和 \(R(-21,15)\) 一致？</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="k">#eval</span> <span class="n">L</span> <span class="o">(</span><span class="bp">-</span><span class="mi">21</span><span class="o">)</span> <span class="mi">15</span> <span class="c1">-- infoview displays `2`</span>
 <span class="k">#eval</span> <span class="n">R</span> <span class="o">(</span><span class="bp">-</span><span class="mi">21</span><span class="o">)</span> <span class="mi">15</span> <span class="c1">-- infoview displays `3`</span>
 </pre></div>
@@ -2359,23 +2359,23 @@ R(a,b)&amp;=
 </section>
 <section id="bezout-gcd-recursive">
 <span id="id40"></span><h3>6.7.5. 例<a class="headerlink" href="#bezout-gcd-recursive" title="此标题的永久链接"></a></h3>
-<p>定义 6.7.1 中描述的过程通常称为欧几里得算法。一个称为扩展欧几里得算法的过程，会在计算 \(\operatorname{gcd}(a,b)\) 的同时计算另外两个函数，我们称之为 \(L(a,b)\) 和 \(R(a,b)\)。</p>
+<p>定义 \(L(a,b)\) 和 \(R(a,b)\) 的原因，是它们满足如下恒等式。</p>
 <div class="admonition-theorem admonition">
-<p class="admonition-title">定义</p>
-<p>两个整数的函数 \(L\) 和 \(R\) 相互递归定义如下：</p>
+<p class="admonition-title">定理</p>
+<p>对所有整数 \(a\) 和 \(b\)，</p>
 <div class="math notranslate nohighlight">
 \[L(a,b)a+R(a,b)b=\operatorname{gcd}(a,b).\]</div>
 </div>
 <div class="admonition-proof admonition">
-<p class="admonition-title">我们用和定义 6.7.1 中相同的例子（\(a=-21\)，\(b=15\)），一起练习计算 \(\operatorname{gcd}(a,b)\)、\(L(a,b)\) 和 \(R(a,b)\)。</p>
-<p>由于递归过程中同时需要 \(\operatorname{div}\) 和 \(\operatorname{mod}\)，预先一起计算它们会很方便：</p>
-<p>（这张表简记了 \(\operatorname{div}(-21,15)=-2\)、\(\operatorname{mod}(-21,15)=9\)，等等。）我们立即得到</p>
-<p>和以前一样。为了计算 \(L(a,b)\) 和 \(R(a,b)\)，从后往前推比较方便：</p>
+<p class="admonition-title">证明</p>
+<p>我们对 \(b\) 作强归纳证明。假设对所有满足 \(|y|&lt;|b|\) 的整数 \(x\) 和 \(y\)，都有 \(0 \le \operatorname{gcd}(x, y)\)。</p>
+<p>情形 1（\(0&lt;b\)）：令 \(q=\operatorname{div}(a,b)\)，令 \(r=\operatorname{mod}(a,b)\)，于是 \(a=r+bq\)（由例 6.6.2）。</p>
+<p>于是由递推定义，</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}\operatorname{gcd}(a,b)&amp;=\operatorname{gcd}(b,r)\\
 L(a,b)&amp;=R(b,r)\\
 R(a,b)&amp;=L(b,r)-qR(b,r)\end{split}\]</div>
-<p>在 Lean 中，这个相互递归定义看起来类似于例 6.7.3 中的相互归纳证明；和那个例子一样，它被包在标记为 <code class="docutils literal notranslate"><span class="pre">mutual</span></code> 的块中。</p>
+<p>并且由归纳假设，\(L(b,r)b+R(b,r)r=\operatorname{gcd}(b,r)\)。所以</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}L(a,b)a+R(a,b)b
 &amp;=R(b,r)a+\left(L(b,r)-qR(b,r)\right)b\\
@@ -2383,13 +2383,13 @@ R(a,b)&amp;=L(b,r)-qR(b,r)\end{split}\]</div>
 &amp;=R(b,r)r+L(b,r)b\\
 &amp;=\operatorname{gcd}(b,r)\\
 &amp;=\operatorname{gcd}(a,b).\end{split}\]</div>
-<p>可靠性检查：Lean 定义是否与我们手算的 \(L(-21,15)\) 和 \(R(-21,15)\) 一致？</p>
-<p>定义 \(L(a,b)\) 和 \(R(a,b)\) 的原因，是它们满足如下恒等式。</p>
+<p>情形 2（\(b&lt;0\)）：令 \(q=\operatorname{div}(a,-b)\)，令 \(r=\operatorname{mod}(a,-b)\)，于是 \(a=r+(-b)q\)（由例 6.6.2）。</p>
+<p>于是由递推定义，</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}\operatorname{gcd}(a,b)&amp;=\operatorname{gcd}(b,r)\\
 L(a,b)&amp;=R(b,r)\\
 R(a,b)&amp;=L(b,r)+qR(b,r)\end{split}\]</div>
-<p>定理</p>
+<p>并且由归纳假设，\(L(b,r)b+R(b,r)r=\operatorname{gcd}(b,r)\)。所以</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}L(a,b)a+R(a,b)b
 &amp;=R(b,r)a+\left(L(b,r)+qR(b,r)\right)b\\
@@ -2397,20 +2397,20 @@ R(a,b)&amp;=L(b,r)+qR(b,r)\end{split}\]</div>
 &amp;=R(b,r)r+L(b,r)b\\
 &amp;=\operatorname{gcd}(b,r)\\
 &amp;=\operatorname{gcd}(a,b).\end{split}\]</div>
-<p>对所有整数 \(a\) 和 \(b\)，</p>
+<p>情形 3（\(b=0\)，\(0\le a\)）：由递推定义，\(\operatorname{gcd}(a,b)=a\)、\(L(a,b)=1\)、\(R(a,b)=0\)，所以</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}L(a,b)a+R(a,b)b
 &amp;=1\cdot a+0\cdot b\\
 &amp;=a\\
 &amp;=\operatorname{gcd}(a,b).\end{split}\]</div>
-<p>证明</p>
+<p>情形 4（\(b=0\)，\(a&lt;0\)）：由递推定义，\(\operatorname{gcd}(a,b)=-a\)、\(L(a,b)=-1\)、\(R(a,b)=0\)，所以</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}L(a,b)a+R(a,b)b
 &amp;=-1\cdot -a+0\cdot b\\
 &amp;=a\\
 &amp;=\operatorname{gcd}(a,b).\end{split}\]</div>
 </div>
-<p>我们对 \(b\) 作强归纳证明。假设对所有满足 \(|y|&lt;|b|\) 的整数 \(x\) 和 \(y\)，都有 \(0 \le \operatorname{gcd}(x, y)\)。</p>
+<p>下面是在 Lean 中的同一个证明。</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">theorem</span> <span class="n">L_mul_add_R_mul</span> <span class="o">(</span><span class="n">a</span> <span class="n">b</span> <span class="o">:</span> <span class="n">ℤ</span><span class="o">)</span> <span class="o">:</span> <span class="n">L</span> <span class="n">a</span> <span class="n">b</span> <span class="bp">*</span> <span class="n">a</span> <span class="bp">+</span> <span class="n">R</span> <span class="n">a</span> <span class="n">b</span> <span class="bp">*</span> <span class="n">b</span> <span class="bp">=</span> <span class="n">gcd</span> <span class="n">a</span> <span class="n">b</span> <span class="o">:=</span> <span class="kd">by</span>
   <span class="n">rw</span> <span class="o">[</span><span class="n">R</span><span class="o">,</span> <span class="n">L</span><span class="o">,</span> <span class="n">gcd</span><span class="o">]</span>
   <span class="n">split_ifs</span> <span class="k">with</span> <span class="n">h1</span> <span class="n">h2</span> <span class="bp">&lt;;&gt;</span> <span class="n">push_neg</span> <span class="n">at</span> <span class="bp">*</span>
@@ -2442,30 +2442,30 @@ R(a,b)&amp;=L(b,r)+qR(b,r)\end{split}\]</div>
 </section>
 <section id="bezout-gcd">
 <span id="id41"></span><h3>6.7.6. 例<a class="headerlink" href="#bezout-gcd" title="此标题的永久链接"></a></h3>
-<p>情形 1（\(0&lt;b\)）：令 \(q=\operatorname{div}(a,b)\)，令 \(r=\operatorname{mod}(a,b)\)，于是 \(a=r+bq\)（由例 6.6.2）。</p>
+<p>我们在例 6.7.5 中证明了：对任意整数 \(a\) 和 \(b\)，整数 \(L(a,b)\) 和 \(R(a,b)\) 满足</p>
 <div class="math notranslate nohighlight">
 \[L(a,b)a+R(a,b)b=\operatorname{gcd}(a,b).\]</div>
-<p>于是由递推定义，</p>
+<p>例如，\(L(7,5)=-2\)、\(R(7,5)=3\)，且 \(\operatorname{gcd}(7,5)=1\)，</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="k">#eval</span> <span class="n">L</span> <span class="mi">7</span> <span class="mi">5</span> <span class="c1">-- infoview displays `-2`</span>
 <span class="k">#eval</span> <span class="n">R</span> <span class="mi">7</span> <span class="mi">5</span> <span class="c1">-- infoview displays `3`</span>
 <span class="k">#eval</span> <span class="n">gcd</span> <span class="mi">7</span> <span class="mi">5</span> <span class="c1">-- infoview displays `1`</span>
 </pre></div>
 </div>
-<p>并且由归纳假设，\(L(b,r)b+R(b,r)r=\operatorname{gcd}(b,r)\)。所以</p>
-<p>情形 2（\(b&lt;0\)）：令 \(q=\operatorname{div}(a,-b)\)，令 \(r=\operatorname{mod}(a,-b)\)，于是 \(a=r+(-b)q\)（由例 6.6.2）。</p>
+<p>并且 \((-2) \cdot 7 + 3 \cdot 5 = 1\)。</p>
+<p>但有趣的是，具有该性质的整数对通常并不唯一。例如，</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}3 \cdot 7 + (-4) \cdot 5 &amp;= 1\\
 (-7) \cdot 7 + 10 \cdot 5 &amp;= 1\\
 8 \cdot 7 + (-11) \cdot 5 &amp;= 1\\
 \ldots\end{split}\]</div>
-<p>于是由递推定义，</p>
+<p>在应用中，通常只需要这个性质，而不需要通过 \(L(a,b)\) 和 \(R(a,b)\) 的具体构造。因此我们把它单独记录下来。这个事实称为贝祖等式。</p>
 <div class="admonition-corollary-bezout-s-identity admonition">
-<p class="admonition-title">并且由归纳假设，\(L(b,r)b+R(b,r)r=\operatorname{gcd}(b,r)\)。所以</p>
-<p>情形 3（\(b=0\)，\(0\le a\)）：由递推定义，\(\operatorname{gcd}(a,b)=a\)、\(L(a,b)=1\)、\(R(a,b)=0\)，所以</p>
+<p class="admonition-title">推论（贝祖等式）</p>
+<p>设 \(a\) 和 \(b\) 为整数。则存在整数 \(x\) 和 \(y\)，使得 \(xa+yb=\operatorname{gcd}(a,b)\)。</p>
 </div>
 <div class="admonition-proof admonition">
-<p class="admonition-title">情形 4（\(b=0\)，\(a&lt;0\)）：由递推定义，\(\operatorname{gcd}(a,b)=-a\)、\(L(a,b)=-1\)、\(R(a,b)=0\)，所以</p>
-<p>下面是在 Lean 中的同一个证明。</p>
+<p class="admonition-title">证明</p>
+<p>由例 6.7.5，整数 \(L(a,b)\) 和 \(R(a,b)\) 具有这个性质。</p>
 </div>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">theorem</span> <span class="n">bezout</span> <span class="o">(</span><span class="n">a</span> <span class="n">b</span> <span class="o">:</span> <span class="n">ℤ</span><span class="o">)</span> <span class="o">:</span> <span class="bp">∃</span> <span class="n">x</span> <span class="n">y</span> <span class="o">:</span> <span class="n">ℤ</span><span class="o">,</span> <span class="n">x</span> <span class="bp">*</span> <span class="n">a</span> <span class="bp">+</span> <span class="n">y</span> <span class="bp">*</span> <span class="n">b</span> <span class="bp">=</span> <span class="n">gcd</span> <span class="n">a</span> <span class="n">b</span> <span class="o">:=</span> <span class="kd">by</span>
   <span class="n">use</span> <span class="n">L</span> <span class="n">a</span> <span class="n">b</span><span class="o">,</span> <span class="n">R</span> <span class="n">a</span> <span class="n">b</span>
@@ -2476,7 +2476,7 @@ R(a,b)&amp;=L(b,r)+qR(b,r)\end{split}\]</div>
 <section id="id42">
 <h3>6.7.7. 练习<a class="headerlink" href="#id42" title="此标题的永久链接"></a></h3>
 <ol class="arabic">
-<li><p>证明 Fibonacci 数列 \((F_n)\) 满足：对所有充分大的自然数 \(n\)，都有 \(0.4 \cdot 1.6^n &lt; F_n &lt; 0.5 \cdot 1.7^n\)。</p>
+<li><p>证明 \(\operatorname{gcd}(a,b)\) 不仅是 \(a\) 和 \(b\) 的公因子（见例 6.7.3），而且是它们的最大公因子：若整数 \(d\) 同时整除 \(a\) 和 \(b\)，则它整除 \(\operatorname{gcd}(a,b)\)。本题不需要归纳；它是贝祖等式（例 6.7.6）的直接推论。</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">theorem</span> <span class="n">gcd_maximal</span> <span class="o">{</span><span class="n">d</span> <span class="n">a</span> <span class="n">b</span> <span class="o">:</span> <span class="n">ℤ</span><span class="o">}</span> <span class="o">(</span><span class="n">ha</span> <span class="o">:</span> <span class="n">d</span> <span class="bp">∣</span> <span class="n">a</span><span class="o">)</span> <span class="o">(</span><span class="n">hb</span> <span class="o">:</span> <span class="n">d</span> <span class="bp">∣</span> <span class="n">b</span><span class="o">)</span> <span class="o">:</span> <span class="n">d</span> <span class="bp">∣</span> <span class="n">gcd</span> <span class="n">a</span> <span class="n">b</span> <span class="o">:=</span> <span class="kd">by</span>
   <span class="gr">sorry</span>
 </pre></div>

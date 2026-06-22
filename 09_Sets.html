@@ -431,7 +431,7 @@
 <section id="exercises">
 <h3>9.1.10. 练习<a class="headerlink" href="#exercises" title="此标题的永久链接"></a></h3>
 <ol class="arabic">
-<li><p>在集合论中（本书不采用它作为逻辑基础），\(\mathcal{P}(X)\) 称为 \(X\) 的幂集。也许在类型论中，我们应该把它称为 \(X\) 的“幂类型”……？</p>
+<li><p>证明或反驳：\(4\in \{a:\mathbb{Q} \mid a&lt;3\}\)。</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">example</span> <span class="o">:</span> <span class="mi">4</span> <span class="bp">∈</span> <span class="o">{</span><span class="n">a</span> <span class="o">:</span> <span class="n">ℚ</span> <span class="bp">|</span> <span class="n">a</span> <span class="bp">&lt;</span> <span class="mi">3</span><span class="o">}</span> <span class="o">:=</span> <span class="kd">by</span>
   <span class="gr">sorry</span>
 
@@ -440,7 +440,7 @@
 </pre></div>
 </div>
 </li>
-<li><p>证明或反驳：\(4\in \{a:\mathbb{Q} \mid a&lt;3\}\)。</p>
+<li><p>证明或反驳：\(6\in \{n:\mathbb{N} \mid n\mid 42\}\)。</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">example</span> <span class="o">:</span> <span class="mi">6</span> <span class="bp">∈</span> <span class="o">{</span><span class="n">n</span> <span class="o">:</span> <span class="n">ℕ</span> <span class="bp">|</span> <span class="n">n</span> <span class="bp">∣</span> <span class="mi">42</span><span class="o">}</span> <span class="o">:=</span> <span class="kd">by</span>
   <span class="gr">sorry</span>
 
@@ -449,7 +449,7 @@
 </pre></div>
 </div>
 </li>
-<li><p>证明或反驳：\(6\in \{n:\mathbb{N} \mid n\mid 42\}\)。</p>
+<li><p>证明或反驳：\(8\in \{k:\mathbb{Z} \mid 5\mid k\}\)。</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">example</span> <span class="o">:</span> <span class="mi">8</span> <span class="bp">∈</span> <span class="o">{</span><span class="n">k</span> <span class="o">:</span> <span class="n">ℤ</span> <span class="bp">|</span> <span class="mi">5</span> <span class="bp">∣</span> <span class="n">k</span><span class="o">}</span> <span class="o">:=</span> <span class="kd">by</span>
   <span class="gr">sorry</span>
 
@@ -458,7 +458,7 @@
 </pre></div>
 </div>
 </li>
-<li><p>证明或反驳：\(8\in \{k:\mathbb{Z} \mid 5\mid k\}\)。</p>
+<li><p>证明或反驳：\(11\in \{n:\mathbb{N} \mid n\text{ is odd}\}\)。</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">example</span> <span class="o">:</span> <span class="mi">11</span> <span class="bp">∈</span> <span class="o">{</span><span class="n">n</span> <span class="o">:</span> <span class="n">ℕ</span> <span class="bp">|</span> <span class="n">Odd</span> <span class="n">n</span><span class="o">}</span> <span class="o">:=</span> <span class="kd">by</span>
   <span class="gr">sorry</span>
 
@@ -467,7 +467,7 @@
 </pre></div>
 </div>
 </li>
-<li><p>证明或反驳：\(11\in \{n:\mathbb{N} \mid n\text{ is odd}\}\)。</p>
+<li><p>证明或反驳：\(-3\in \{x:\mathbb{R} \mid \forall y :\mathbb{R}, x\le y^2\}\)。</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">example</span> <span class="o">:</span> <span class="bp">-</span><span class="mi">3</span> <span class="bp">∈</span> <span class="o">{</span><span class="n">x</span> <span class="o">:</span> <span class="n">ℝ</span> <span class="bp">|</span> <span class="bp">∀</span> <span class="n">y</span> <span class="o">:</span> <span class="n">ℝ</span><span class="o">,</span> <span class="n">x</span> <span class="bp">≤</span> <span class="n">y</span> <span class="bp">^</span> <span class="mi">2</span><span class="o">}</span> <span class="o">:=</span> <span class="kd">by</span>
   <span class="gr">sorry</span>
 
@@ -476,7 +476,7 @@
 </pre></div>
 </div>
 </li>
-<li><p>证明或反驳：\(-3\in \{x:\mathbb{R} \mid \forall y :\mathbb{R}, x\le y^2\}\)。</p>
+<li><p>证明或反驳：\(\{a:\mathbb{N} \mid 20\mid a\}\subseteq \{x:\mathbb{N} \mid 5 \mid x\}\)。</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">example</span> <span class="o">:</span> <span class="o">{</span><span class="n">a</span> <span class="o">:</span> <span class="n">ℕ</span> <span class="bp">|</span> <span class="mi">20</span> <span class="bp">∣</span> <span class="n">a</span><span class="o">}</span> <span class="bp">⊆</span> <span class="o">{</span><span class="n">x</span> <span class="o">:</span> <span class="n">ℕ</span> <span class="bp">|</span> <span class="mi">5</span> <span class="bp">∣</span> <span class="n">x</span><span class="o">}</span> <span class="o">:=</span> <span class="kd">by</span>
   <span class="gr">sorry</span>
 
@@ -485,7 +485,7 @@
 </pre></div>
 </div>
 </li>
-<li><p>证明或反驳：\(\{a:\mathbb{N} \mid 20\mid a\}\subseteq \{x:\mathbb{N} \mid 5 \mid x\}\)。</p>
+<li><p>证明或反驳：\(\{a:\mathbb{N} \mid 5\mid a\}\subseteq \{x:\mathbb{N} \mid 20 \mid x\}\)。</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">example</span> <span class="o">:</span> <span class="o">{</span><span class="n">a</span> <span class="o">:</span> <span class="n">ℕ</span> <span class="bp">|</span> <span class="mi">5</span> <span class="bp">∣</span> <span class="n">a</span><span class="o">}</span> <span class="bp">⊆</span> <span class="o">{</span><span class="n">x</span> <span class="o">:</span> <span class="n">ℕ</span> <span class="bp">|</span> <span class="mi">20</span> <span class="bp">∣</span> <span class="n">x</span><span class="o">}</span> <span class="o">:=</span> <span class="kd">by</span>
   <span class="gr">sorry</span>
 
@@ -494,7 +494,7 @@
 </pre></div>
 </div>
 </li>
-<li><p>证明或反驳：\(\{a:\mathbb{N} \mid 5\mid a\}\subseteq \{x:\mathbb{N} \mid 20 \mid x\}\)。</p>
+<li><p>证明或反驳：\(\{r:\mathbb{Z} \mid 3\mid r\}\subseteq \{s:\mathbb{Z} \mid 0 \le s\}\)。</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">example</span> <span class="o">:</span> <span class="o">{</span><span class="n">r</span> <span class="o">:</span> <span class="n">ℤ</span> <span class="bp">|</span> <span class="mi">3</span> <span class="bp">∣</span> <span class="n">r</span><span class="o">}</span> <span class="bp">⊆</span> <span class="o">{</span><span class="n">s</span> <span class="o">:</span> <span class="n">ℤ</span> <span class="bp">|</span> <span class="mi">0</span> <span class="bp">≤</span> <span class="n">s</span><span class="o">}</span> <span class="o">:=</span> <span class="kd">by</span>
   <span class="gr">sorry</span>
 
@@ -503,7 +503,7 @@
 </pre></div>
 </div>
 </li>
-<li><p>证明或反驳：\(\{r:\mathbb{Z} \mid 3\mid r\}\subseteq \{s:\mathbb{Z} \mid 0 \le s\}\)。</p>
+<li><p>证明或反驳：\(\{m:\mathbb{Z} \mid m\ge 10\}\subseteq \{n:\mathbb{Z} \mid n^3-7n^2\geq 4n\}\)。</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">example</span> <span class="o">:</span> <span class="o">{</span><span class="n">m</span> <span class="o">:</span> <span class="n">ℤ</span> <span class="bp">|</span> <span class="n">m</span> <span class="bp">≥</span> <span class="mi">10</span><span class="o">}</span> <span class="bp">⊆</span> <span class="o">{</span><span class="n">n</span> <span class="o">:</span> <span class="n">ℤ</span> <span class="bp">|</span> <span class="n">n</span> <span class="bp">^</span> <span class="mi">3</span> <span class="bp">-</span> <span class="mi">7</span> <span class="bp">*</span> <span class="n">n</span> <span class="bp">^</span> <span class="mi">2</span> <span class="bp">≥</span> <span class="mi">4</span> <span class="bp">*</span> <span class="n">n</span><span class="o">}</span> <span class="o">:=</span> <span class="kd">by</span>
   <span class="gr">sorry</span>
 
@@ -512,7 +512,7 @@
 </pre></div>
 </div>
 </li>
-<li><p>证明或反驳：\(\{m:\mathbb{Z} \mid m\ge 10\}\subseteq \{n:\mathbb{Z} \mid n^3-7n^2\geq 4n\}\)。</p>
+<li><p>证明或反驳：\(\{n:\mathbb{Z} \mid n\text{ is even}\}=\{a:\mathbb{Z} \mid a\equiv 6\mod 2\}\)。</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">example</span> <span class="o">:</span> <span class="o">{</span><span class="n">n</span> <span class="o">:</span> <span class="n">ℤ</span> <span class="bp">|</span> <span class="n">Even</span> <span class="n">n</span><span class="o">}</span> <span class="bp">=</span> <span class="o">{</span><span class="n">a</span> <span class="o">:</span> <span class="n">ℤ</span> <span class="bp">|</span> <span class="n">a</span> <span class="bp">≡</span> <span class="mi">6</span> <span class="o">[</span><span class="n">ZMOD</span> <span class="mi">2</span><span class="o">]}</span> <span class="o">:=</span> <span class="kd">by</span>
   <span class="gr">sorry</span>
 
@@ -521,7 +521,7 @@
 </pre></div>
 </div>
 </li>
-<li><p>证明或反驳：\(\{n:\mathbb{Z} \mid n\text{ is even}\}=\{a:\mathbb{Z} \mid a\equiv 6\mod 2\}\)。</p>
+<li><p>证明或反驳：\(\{t:\mathbb{R} \mid t^2-5t+4=0\}=\{4\}\)。</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">example</span> <span class="o">:</span> <span class="o">{</span><span class="n">t</span> <span class="o">:</span> <span class="n">ℝ</span> <span class="bp">|</span> <span class="n">t</span> <span class="bp">^</span> <span class="mi">2</span> <span class="bp">-</span> <span class="mi">5</span> <span class="bp">*</span> <span class="n">t</span> <span class="bp">+</span> <span class="mi">4</span> <span class="bp">=</span> <span class="mi">0</span><span class="o">}</span> <span class="bp">=</span> <span class="o">{</span><span class="mi">4</span><span class="o">}</span> <span class="o">:=</span> <span class="kd">by</span>
   <span class="gr">sorry</span>
 
@@ -530,7 +530,7 @@
 </pre></div>
 </div>
 </li>
-<li><p>证明或反驳：\(\{t:\mathbb{R} \mid t^2-5t+4=0\}=\{4\}\)。</p>
+<li><p>证明或反驳：\(\{k:\mathbb{Z} \mid 8\mid 6k\}=\{l:\mathbb{Z} \mid 8\mid l\}\)。</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">example</span> <span class="o">:</span> <span class="o">{</span><span class="n">k</span> <span class="o">:</span> <span class="n">ℤ</span> <span class="bp">|</span> <span class="mi">8</span> <span class="bp">∣</span> <span class="mi">6</span> <span class="bp">*</span> <span class="n">k</span><span class="o">}</span> <span class="bp">=</span> <span class="o">{</span><span class="n">l</span> <span class="o">:</span> <span class="n">ℤ</span> <span class="bp">|</span> <span class="mi">8</span> <span class="bp">∣</span> <span class="n">l</span><span class="o">}</span> <span class="o">:=</span> <span class="kd">by</span>
   <span class="gr">sorry</span>
 
@@ -539,7 +539,7 @@
 </pre></div>
 </div>
 </li>
-<li><p>证明或反驳：\(\{k:\mathbb{Z} \mid 8\mid 6k\}=\{l:\mathbb{Z} \mid 8\mid l\}\)。</p>
+<li><p>证明或反驳：\(\{k:\mathbb{Z} \mid 7\mid 9k\}=\{l:\mathbb{Z} \mid 7\mid l\}\)。</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">example</span> <span class="o">:</span> <span class="o">{</span><span class="n">k</span> <span class="o">:</span> <span class="n">ℤ</span> <span class="bp">|</span> <span class="mi">7</span> <span class="bp">∣</span> <span class="mi">9</span> <span class="bp">*</span> <span class="n">k</span><span class="o">}</span> <span class="bp">=</span> <span class="o">{</span><span class="n">l</span> <span class="o">:</span> <span class="n">ℤ</span> <span class="bp">|</span> <span class="mi">7</span> <span class="bp">∣</span> <span class="n">l</span><span class="o">}</span> <span class="o">:=</span> <span class="kd">by</span>
   <span class="gr">sorry</span>
 
@@ -548,7 +548,7 @@
 </pre></div>
 </div>
 </li>
-<li><p>证明或反驳：\(\{k:\mathbb{Z} \mid 7\mid 9k\}=\{l:\mathbb{Z} \mid 7\mid l\}\)。</p>
+<li><p>证明或反驳：\(\{1,2,3\}=\{1,2\}\)。</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">example</span> <span class="o">:</span> <span class="o">{</span><span class="mi">1</span><span class="o">,</span> <span class="mi">2</span><span class="o">,</span> <span class="mi">3</span><span class="o">}</span> <span class="bp">=</span> <span class="o">{</span><span class="mi">1</span><span class="o">,</span> <span class="mi">2</span><span class="o">}</span> <span class="o">:=</span> <span class="kd">by</span>
   <span class="gr">sorry</span>
 
@@ -557,7 +557,7 @@
 </pre></div>
 </div>
 </li>
-<li><p>证明或反驳：\(\{1,2,3\}=\{1,2\}\)。</p>
+<li><p>证明 \(\{x:\mathbb{R} \mid x^2+3x+2=0\}=\{-1,-2\}\)。</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">example</span> <span class="o">:</span> <span class="o">{</span><span class="n">x</span> <span class="o">:</span> <span class="n">ℝ</span> <span class="bp">|</span> <span class="n">x</span> <span class="bp">^</span> <span class="mi">2</span> <span class="bp">+</span> <span class="mi">3</span> <span class="bp">*</span> <span class="n">x</span> <span class="bp">+</span> <span class="mi">2</span> <span class="bp">=</span> <span class="mi">0</span><span class="o">}</span> <span class="bp">=</span> <span class="o">{</span><span class="bp">-</span><span class="mi">1</span><span class="o">,</span> <span class="bp">-</span><span class="mi">2</span><span class="o">}</span> <span class="o">:=</span> <span class="kd">by</span>
   <span class="gr">sorry</span>
 </pre></div>
@@ -825,49 +825,49 @@
 </pre></div>
 </div>
 <ol class="arabic">
-<li><p>证明 \(\{x:\mathbb{R} \mid x^2+3x+2=0\}=\{-1,-2\}\)。</p>
+<li><p>写出一个不含重复元素的显式列举有限集合，或写出 \(\emptyset\)，使它等于 \(\{-1,2,4,4\}\cup\{3,-2,2\}\)。当你的答案正确时，给出的 Lean 证明会通过。</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">example</span> <span class="o">:</span> <span class="o">{</span><span class="bp">-</span><span class="mi">1</span><span class="o">,</span> <span class="mi">2</span><span class="o">,</span> <span class="mi">4</span><span class="o">,</span> <span class="mi">4</span><span class="o">}</span> <span class="bp">∪</span> <span class="o">{</span><span class="mi">3</span><span class="o">,</span> <span class="bp">-</span><span class="mi">2</span><span class="o">,</span> <span class="mi">2</span><span class="o">}</span> <span class="bp">=</span> <span class="gr">sorry</span> <span class="o">:=</span> <span class="kd">by</span> <span class="n">check_equality_of_explicit_sets</span>
 </pre></div>
 </div>
 </li>
-<li><p>写出一个不含重复元素的显式列举有限集合，或写出 \(\emptyset\)，使它等于 \(\{-1,2,4,4\}\cup\{3,-2,2\}\)。当你的答案正确时，给出的 Lean 证明会通过。</p>
+<li><p>写出一个不含重复元素的显式列举有限集合，或写出 \(\emptyset\)，使它等于 \(\{0,1,2,3,4\}\cap\{0,2,4,6,8\}\)。当你的答案正确时，给出的 Lean 证明会通过。</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">example</span> <span class="o">:</span> <span class="o">{</span><span class="mi">0</span><span class="o">,</span> <span class="mi">1</span><span class="o">,</span> <span class="mi">2</span><span class="o">,</span> <span class="mi">3</span><span class="o">,</span> <span class="mi">4</span><span class="o">}</span> <span class="bp">∩</span> <span class="o">{</span><span class="mi">0</span><span class="o">,</span> <span class="mi">2</span><span class="o">,</span> <span class="mi">4</span><span class="o">,</span> <span class="mi">6</span><span class="o">,</span> <span class="mi">8</span><span class="o">}</span> <span class="bp">=</span> <span class="gr">sorry</span> <span class="o">:=</span> <span class="kd">by</span>
   <span class="n">check_equality_of_explicit_sets</span>
 </pre></div>
 </div>
 </li>
-<li><p>写出一个不含重复元素的显式列举有限集合，或写出 \(\emptyset\)，使它等于 \(\{0,1,2,3,4\}\cap\{0,2,4,6,8\}\)。当你的答案正确时，给出的 Lean 证明会通过。</p>
+<li><p>写出一个不含重复元素的显式列举有限集合，或写出 \(\emptyset\)，使它等于 \(\{1,2\}\cap\{3\}\)。当你的答案正确时，给出的 Lean 证明会通过。</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">example</span> <span class="o">:</span> <span class="o">{</span><span class="mi">1</span><span class="o">,</span> <span class="mi">2</span><span class="o">}</span> <span class="bp">∩</span> <span class="o">{</span><span class="mi">3</span><span class="o">}</span> <span class="bp">=</span> <span class="gr">sorry</span> <span class="o">:=</span> <span class="kd">by</span> <span class="n">check_equality_of_explicit_sets</span>
 </pre></div>
 </div>
 </li>
-<li><p>写出一个不含重复元素的显式列举有限集合，或写出 \(\emptyset\)，使它等于 \(\{1,2\}\cap\{3\}\)。当你的答案正确时，给出的 Lean 证明会通过。</p>
+<li><p>写出一个不含重复元素的显式列举有限集合，或写出 \(\emptyset\)，使它等于 \(\{3,4,5\}^c\cap\{1,3,5,7,9\}\)。当你的答案正确时，给出的 Lean 证明会通过。</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">example</span> <span class="o">:</span> <span class="o">{</span><span class="mi">3</span><span class="o">,</span> <span class="mi">4</span><span class="o">,</span> <span class="mi">5</span><span class="o">}</span><span class="bp">ᶜ</span> <span class="bp">∩</span> <span class="o">{</span><span class="mi">1</span><span class="o">,</span> <span class="mi">3</span><span class="o">,</span> <span class="mi">5</span><span class="o">,</span> <span class="mi">7</span><span class="o">,</span> <span class="mi">9</span><span class="o">}</span> <span class="bp">=</span> <span class="gr">sorry</span> <span class="o">:=</span> <span class="kd">by</span>
   <span class="n">check_equality_of_explicit_sets</span>
 </pre></div>
 </div>
 </li>
-<li><p>写出一个不含重复元素的显式列举有限集合，或写出 \(\emptyset\)，使它等于 \(\{3,4,5\}^c\cap\{1,3,5,7,9\}\)。当你的答案正确时，给出的 Lean 证明会通过。</p>
+<li><p>证明 \(\{r:\mathbb{Z}\mid r\equiv 7\mod 10\}\subseteq \{s:\mathbb{Z}\mid s\equiv 1\mod 2\}\cap\{t:\mathbb{Z}\mid t\equiv 2\mod 5\}\)。</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">example</span> <span class="o">:</span> <span class="o">{</span><span class="n">r</span> <span class="o">:</span> <span class="n">ℤ</span> <span class="bp">|</span> <span class="n">r</span> <span class="bp">≡</span> <span class="mi">7</span> <span class="o">[</span><span class="n">ZMOD</span> <span class="mi">10</span><span class="o">]</span> <span class="o">}</span>
     <span class="bp">⊆</span> <span class="o">{</span><span class="n">s</span> <span class="o">:</span> <span class="n">ℤ</span> <span class="bp">|</span> <span class="n">s</span> <span class="bp">≡</span> <span class="mi">1</span> <span class="o">[</span><span class="n">ZMOD</span> <span class="mi">2</span><span class="o">]}</span> <span class="bp">∩</span> <span class="o">{</span><span class="n">t</span> <span class="o">:</span> <span class="n">ℤ</span> <span class="bp">|</span> <span class="n">t</span> <span class="bp">≡</span> <span class="mi">2</span> <span class="o">[</span><span class="n">ZMOD</span> <span class="mi">5</span><span class="o">]}</span> <span class="o">:=</span> <span class="kd">by</span>
   <span class="gr">sorry</span>
 </pre></div>
 </div>
 </li>
-<li><p>证明 \(\{r:\mathbb{Z}\mid r\equiv 7\mod 10\}\subseteq \{s:\mathbb{Z}\mid s\equiv 1\mod 2\}\cap\{t:\mathbb{Z}\mid t\equiv 2\mod 5\}\)。</p>
+<li><p>证明 \(\{n:\mathbb{Z}\mid 5\mid n\}\cap \{n:\mathbb{Z}\mid 8\mid n\}\subseteq\{n:\mathbb{Z}\mid 40\mid n\}\)。</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">example</span> <span class="o">:</span> <span class="o">{</span><span class="n">n</span> <span class="o">:</span> <span class="n">ℤ</span> <span class="bp">|</span> <span class="mi">5</span> <span class="bp">∣</span> <span class="n">n</span><span class="o">}</span> <span class="bp">∩</span> <span class="o">{</span><span class="n">n</span> <span class="o">:</span> <span class="n">ℤ</span> <span class="bp">|</span> <span class="mi">8</span> <span class="bp">∣</span> <span class="n">n</span><span class="o">}</span> <span class="bp">⊆</span> <span class="o">{</span><span class="n">n</span> <span class="o">:</span> <span class="n">ℤ</span> <span class="bp">|</span> <span class="mi">40</span> <span class="bp">∣</span> <span class="n">n</span><span class="o">}</span> <span class="o">:=</span> <span class="kd">by</span>
   <span class="gr">sorry</span>
 </pre></div>
 </div>
 </li>
-<li><p>证明 \(\{n:\mathbb{Z}\mid 5\mid n\}\cap \{n:\mathbb{Z}\mid 8\mid n\}\subseteq\{n:\mathbb{Z}\mid 40\mid n\}\)。</p>
+<li><p>证明 \(\{n:\mathbb{Z}\mid 3\mid n\}\cup \{n:\mathbb{Z}\mid 2\mid n\}\subseteq\{n:\mathbb{Z}\mid n^2\equiv 1\mod 6\}^{c}\)。</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">example</span> <span class="o">:</span>
     <span class="o">{</span><span class="n">n</span> <span class="o">:</span> <span class="n">ℤ</span> <span class="bp">|</span> <span class="mi">3</span> <span class="bp">∣</span> <span class="n">n</span><span class="o">}</span> <span class="bp">∪</span> <span class="o">{</span><span class="n">n</span> <span class="o">:</span> <span class="n">ℤ</span> <span class="bp">|</span> <span class="mi">2</span> <span class="bp">∣</span> <span class="n">n</span><span class="o">}</span> <span class="bp">⊆</span> <span class="o">{</span><span class="n">n</span> <span class="o">:</span> <span class="n">ℤ</span> <span class="bp">|</span> <span class="n">n</span> <span class="bp">^</span> <span class="mi">2</span> <span class="bp">≡</span> <span class="mi">1</span> <span class="o">[</span><span class="n">ZMOD</span> <span class="mi">6</span><span class="o">]}</span><span class="bp">ᶜ</span> <span class="o">:=</span> <span class="kd">by</span>
   <span class="gr">sorry</span>
 </pre></div>
 </div>
 </li>
-<li><p>证明 \(\{n:\mathbb{Z}\mid 3\mid n\}\cup \{n:\mathbb{Z}\mid 2\mid n\}\subseteq\{n:\mathbb{Z}\mid n^2\equiv 1\mod 6\}^{c}\)。</p>
+<li><p>我们定义：类型 \(X\) 中的集合 \(s\) 的大小至少为二，若存在 \(s\) 中两个不同元素 \(x_1\) 和 \(x_2\)；大小至少为三，若存在 \(s\) 中三个两两不同的元素 \(x_1,x_2,x_3\)。设 \(s\) 和 \(t\) 是某个类型 \(X\) 中大小至少为二的集合，并假设 \(s\cap t\) 的大小并非至少为二。证明 \(s\cup t\) 的大小至少为三。本题有大量不同情形；请大量使用 <code class="docutils literal notranslate"><span class="pre">exhaust</span></code> 来清除子情形。</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">def</span> <span class="n">SizeAtLeastTwo</span> <span class="o">(</span><span class="n">s</span> <span class="o">:</span> <span class="n">Set</span> <span class="n">X</span><span class="o">)</span> <span class="o">:</span> <span class="kt">Prop</span> <span class="o">:=</span> <span class="bp">∃</span> <span class="n">x1</span> <span class="n">x2</span> <span class="o">:</span> <span class="n">X</span><span class="o">,</span> <span class="n">x1</span> <span class="bp">≠</span> <span class="n">x2</span> <span class="bp">∧</span> <span class="n">x1</span> <span class="bp">∈</span> <span class="n">s</span> <span class="bp">∧</span> <span class="n">x2</span> <span class="bp">∈</span> <span class="n">s</span>
 <span class="kd">def</span> <span class="n">SizeAtLeastThree</span> <span class="o">(</span><span class="n">s</span> <span class="o">:</span> <span class="n">Set</span> <span class="n">X</span><span class="o">)</span> <span class="o">:</span> <span class="kt">Prop</span> <span class="o">:=</span>
   <span class="bp">∃</span> <span class="n">x1</span> <span class="n">x2</span> <span class="n">x3</span> <span class="o">:</span> <span class="n">X</span><span class="o">,</span> <span class="n">x1</span> <span class="bp">≠</span> <span class="n">x2</span> <span class="bp">∧</span> <span class="n">x1</span> <span class="bp">≠</span> <span class="n">x3</span> <span class="bp">∧</span> <span class="n">x2</span> <span class="bp">≠</span> <span class="n">x3</span> <span class="bp">∧</span> <span class="n">x1</span> <span class="bp">∈</span> <span class="n">s</span> <span class="bp">∧</span> <span class="n">x2</span> <span class="bp">∈</span> <span class="n">s</span> <span class="bp">∧</span> <span class="n">x3</span> <span class="bp">∈</span> <span class="n">s</span>
@@ -1016,7 +1016,7 @@
 <section id="id24">
 <h3>9.3.6. 练习<a class="headerlink" href="#id24" title="此标题的永久链接"></a></h3>
 <ol class="arabic">
-<li><p>我们定义：类型 \(X\) 中的集合 \(s\) 的大小至少为二，若存在 \(s\) 中两个不同元素 \(x_1\) 和 \(x_2\)；大小至少为三，若存在 \(s\) 中三个两两不同的元素 \(x_1,x_2,x_3\)。设 \(s\) 和 \(t\) 是某个类型 \(X\) 中大小至少为二的集合，并假设 \(s\cap t\) 的大小并非至少为二。证明 \(s\cup t\) 的大小至少为三。本题有大量不同情形；请大量使用 <code class="docutils literal notranslate"><span class="pre">exhaust</span></code> 来清除子情形。</p>
+<li><p>考虑函数 \(r : \mathcal{P}(\mathbb{N})\to \mathcal{P}(\mathbb{N})\)，定义为 \(r(s)=s\cup \{3\}\)。证明 \(r\) 不是单射。</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">def</span> <span class="n">r</span> <span class="o">(</span><span class="n">s</span> <span class="o">:</span> <span class="n">Set</span> <span class="n">ℕ</span><span class="o">)</span> <span class="o">:</span> <span class="n">Set</span> <span class="n">ℕ</span> <span class="o">:=</span> <span class="n">s</span> <span class="bp">∪</span> <span class="o">{</span><span class="mi">3</span><span class="o">}</span>
 
 <span class="kd">example</span> <span class="o">:</span> <span class="bp">¬</span> <span class="n">Injective</span> <span class="n">r</span> <span class="o">:=</span> <span class="kd">by</span>
@@ -1024,7 +1024,7 @@
 </pre></div>
 </div>
 </li>
-<li><p>考虑函数 \(r : \mathcal{P}(\mathbb{N})\to \mathcal{P}(\mathbb{N})\)，定义为 \(r(s)=s\cup \{3\}\)。证明 \(r\) 不是单射。</p>
+<li><p>考虑按如下递归定义的整数集合序列 \(U_n\)：\[\begin{split}U_0&amp;=\mathbb{Z} \\ \text{for }n:\mathbb{N},\quad U_{n+1} &amp;=\{x:\mathbb{Z}\mid \exists y\in U_n, x = 2y \}\end{split}\]证明对所有自然数 \(n\)，都有 \(U_n=\{x:\mathbb{Z}\mid 2^n\mid x\}\)。</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}U_0&amp;=\mathbb{Z} \\
 \text{for }n:\mathbb{N},\quad U_{n+1} &amp;=\{x:\mathbb{Z}\mid \exists \ y\in U_n, x = 2y \}\end{split}\]</div>
@@ -1046,7 +1046,7 @@
 </ol>
 <p class="rubric">脚注</p>
 <dl class="footnote brackets">
-<dt class="label" id="id25">考虑按如下递归定义的整数集合序列 \(U_n\)：\[\begin{split}U_0&amp;=\mathbb{Z} \\ \text{for }n:\mathbb{N},\quad U_{n+1} &amp;=\{x:\mathbb{Z}\mid \exists y\in U_n, x = 2y \}\end{split}\]证明对所有自然数 \(n\)，都有 \(U_n=\{x:\mathbb{Z}\mid 2^n\mid x\}\)。</dt>
+<dt class="label" id="id25"><span class="brackets"><a class="fn-backref" href="#id19">1</a></span></dt>
 <dd>在集合论中（本书不采用它作为逻辑基础），\(\mathcal{P}(X)\) 称为 \(X\) 的幂集。也许在类型论中，我们应该把它称为 \(X\) 的“幂类型”……？</dd>
 </dl>
 </section>

@@ -118,10 +118,10 @@
 <p>本书基于我在 2023 年春季于 Fordham University 教授的一门课程的讲义。该课程有 20 名学生，主要是一、二年级学生，其中位背景是 Calculus II。许多学生（但并非全部）也修过一门计算机编程入门课。</p>
 <p>这门课每周两次，每次 75 分钟，共 13 周；在这段时间里覆盖了本书约 80% 的内容。一次典型课堂结构可能如下：</p>
 <ul class="simple">
-<li>例如，在大多数代数推理中使用计算块，以及偏好正向推理而不是反向推理。</li>
-<li>如果你想要相反方向的教材，<a class="reference external" href="https://leanprover-community.github.io/mathematics_in_lean/">Mathematics in Lean</a> 是数学化 Lean 的标准入门书。但请注意，那本书预期读者有更多数学经验：即使只是证明初等命题，书写惯用的 Lean 代码也需要一定的数学成熟度。</li>
-<li>用于代数推理的策略词汇包括 <code class="docutils literal notranslate"><span class="pre">ring</span></code>、<code class="docutils literal notranslate"><span class="pre">rw</span></code>、<code class="docutils literal notranslate"><span class="pre">numbers</span></code>（即 <code class="docutils literal notranslate"><span class="pre">norm_num</span></code>）、<code class="docutils literal notranslate"><span class="pre">rel</span></code>（为本书定制编写，但现在已进入 mathlib 正式库）、<code class="docutils literal notranslate"><span class="pre">extra</span></code>（定制编写）和 <code class="docutils literal notranslate"><span class="pre">cancel</span></code>（定制编写）。它们足以处理整数上几乎所有代数推理，包括非线性不等式。本书在 <a class="reference internal" href="01_Proofs_by_Calculation.html#proving-equalities-in-lean"><span class="std std-numref">第 1.2 节</span></a> 到 <a class="reference internal" href="02_Proofs_with_Structure.html#tactic-mode"><span class="std std-numref">第 2.1 节</span></a> 中训练这种语汇，后来会带来回报：它避免了按名称调用无穷无尽的引理，例如 <code class="docutils literal notranslate"><span class="pre">mul_le_mul_of_nonneg_left</span></code>、<code class="docutils literal notranslate"><span class="pre">pow_pos</span></code> 或 <code class="docutils literal notranslate"><span class="pre">le_of_pow_le_pow</span></code>。其他定制自动化也会轻量地简化归纳原理、良基性证明、积类型和集合方面的工作。全书中按名称调用的引理总数不到五十个。</li>
-<li>事实上，在许多入门证明课程中，即使没有真正掌握这种推理方式，也完全有可能应付大量以<em>等式</em>为主的推理；但若不掌握计算式证明，几乎不可能熟练处理<em>不等式</em>。如果学生没有在入门证明课程中学会这一技巧，那么到实分析时，它会重新回来成为障碍。</li>
+<li>25 分钟传统黑板讲授；</li>
+<li>5 分钟屏幕共享讲授，在 Lean 中做同样的问题；</li>
+<li>20 分钟学生两人一组在 Lean 中练习，教师巡视；</li>
+<li>25 分钟传统黑板讲授，也许比前一段更偏理论。</li>
 </ul>
 <p>这门课的作业可按需提供。作业相对较短（每周 5 到 7 题），但学生几乎必须同时以书面和 Lean 两种形式提交所有题目。大多数学生需要在办公时间或通过电子邮件获得支持，才能完成这些作业。</p>
 <p>课程还在第 5 周和第 10 周设置了口试。这些是一对一的 20 分钟面试，用来评估 Lean 熟练度：学生现场解决此前未见过的 Lean 练习（每位学生的题目不同），并口头解释自己的推理。课程成绩构成为：作业 25%，口试 20%，传统笔试 55%（一次期中和一次期末，二者完全不含 Lean）。</p>
@@ -132,26 +132,26 @@
 <h2>致谢<a class="headerlink" href="#acknowledgements" title="此标题的永久链接"></a></h2>
 <p>我由衷感谢</p>
 <ul class="simple">
-<li>有经验的读者也许会喜欢 <a class="reference internal" href="05_Logic.html#lem"><span class="std std-numref">第 5.2 节</span></a>中的问题；该节引入经典推理。这些问题（据我所知）是新的，而且比通常教材中的例子更初等。</li>
-<li>25 分钟传统黑板讲授；</li>
-<li>5 分钟屏幕共享讲授，在 Lean 中做同样的问题；</li>
-<li>20 分钟学生两人一组在 Lean 中练习，教师巡视；</li>
-<li>25 分钟传统黑板讲授，也许比前一段更偏理论。</li>
 <li>Microsoft Research 提供了<a class="reference external" href="https://www.microsoft.com/en-us/research/academic-program/microsoft-research-lean-award-program/">资助</a>，支持本书写作；</li>
 <li>Fordham 的本系允许我教授这门发展出本书的实验课程；</li>
+<li>该课程 Math 2001 L01 Spring 2023 中勇敢尝试的学生们，感谢他们的热情与机智；</li>
+<li>Matthew Hertz 搭建了本书的 Sphinx 基础设施，并排版了最初几章；</li>
+<li><a class="reference external" href="https://leanprover-community.github.io/">mathlib 社区</a>，特别是 Mario Carneiro、Gabriel Ebner、Scott Morrison、Thomas Murrills 和 David Renshaw，感谢他们在 2022 年秋至 2023 年冬进行 Lean 3 到 Lean 4 移植时，优先处理我课程所需的库内容；</li>
+<li>Mario Carneiro 还参与了多次长时间编程攻关，产出了本书中最有意思的一些定制策略；</li>
+<li>Jeremy Avigad、Rob Lewis 和 Patrick Massot 分享了 Lean 课程的技术基础设施，并与我多次讨论用 Lean 教授数学这一梦想。</li>
 </ul>
 <p class="rubric">脚注</p>
 <dl class="footnote brackets">
-<dt class="label" id="id6">该课程 Math 2001 L01 Spring 2023 中勇敢尝试的学生们，感谢他们的热情与机智；</dt>
-<dd>1</dd>
-<dt class="label" id="id7">Matthew Hertz 搭建了本书的 Sphinx 基础设施，并排版了最初几章；</dt>
-<dd>2</dd>
-<dt class="label" id="id8"><a class="reference external" href="https://leanprover-community.github.io/">mathlib 社区</a>，特别是 Mario Carneiro、Gabriel Ebner、Scott Morrison、Thomas Murrills 和 David Renshaw，感谢他们在 2022 年秋至 2023 年冬进行 Lean 3 到 Lean 4 移植时，优先处理我课程所需的库内容；</dt>
-<dd>3</dd>
-<dt class="label" id="id9">Mario Carneiro 还参与了多次长时间编程攻关，产出了本书中最有意思的一些定制策略；</dt>
-<dd>4</dd>
-<dt class="label" id="id10">Jeremy Avigad、Rob Lewis 和 Patrick Massot 分享了 Lean 课程的技术基础设施，并与我多次讨论用 Lean 教授数学这一梦想。</dt>
-<dd>5</dd>
+<dt class="label" id="id6">1</dt>
+<dd>例如，在大多数代数推理中使用计算块，以及偏好正向推理而不是反向推理。</dd>
+<dt class="label" id="id7">2</dt>
+<dd>如果你想要相反方向的教材，<a class="reference external" href="https://leanprover-community.github.io/mathematics_in_lean/">Mathematics in Lean</a> 是数学化 Lean 的标准入门书。但请注意，那本书预期读者有更多数学经验：即使只是证明初等命题，书写惯用的 Lean 代码也需要一定的数学成熟度。</dd>
+<dt class="label" id="id8">3</dt>
+<dd>用于代数推理的策略词汇包括 <code class="docutils literal notranslate"><span class="pre">ring</span></code>、<code class="docutils literal notranslate"><span class="pre">rw</span></code>、<code class="docutils literal notranslate"><span class="pre">numbers</span></code>（即 <code class="docutils literal notranslate"><span class="pre">norm_num</span></code>）、<code class="docutils literal notranslate"><span class="pre">rel</span></code>（为本书定制编写，但现在已进入 mathlib 正式库）、<code class="docutils literal notranslate"><span class="pre">extra</span></code>（定制编写）和 <code class="docutils literal notranslate"><span class="pre">cancel</span></code>（定制编写）。它们足以处理整数上几乎所有代数推理，包括非线性不等式。本书在 <a class="reference internal" href="01_Proofs_by_Calculation.html#proving-equalities-in-lean"><span class="std std-numref">第 1.2 节</span></a> 到 <a class="reference internal" href="02_Proofs_with_Structure.html#tactic-mode"><span class="std std-numref">第 2.1 节</span></a> 中训练这种语汇，后来会带来回报：它避免了按名称调用无穷无尽的引理，例如 <code class="docutils literal notranslate"><span class="pre">mul_le_mul_of_nonneg_left</span></code>、<code class="docutils literal notranslate"><span class="pre">pow_pos</span></code> 或 <code class="docutils literal notranslate"><span class="pre">le_of_pow_le_pow</span></code>。其他定制自动化也会轻量地简化归纳原理、良基性证明、积类型和集合方面的工作。全书中按名称调用的引理总数不到五十个。</dd>
+<dt class="label" id="id9">4</dt>
+<dd>事实上，在许多入门证明课程中，即使没有真正掌握这种推理方式，也完全有可能应付大量以<em>等式</em>为主的推理；但若不掌握计算式证明，几乎不可能熟练处理<em>不等式</em>。如果学生没有在入门证明课程中学会这一技巧，那么到实分析时，它会重新回来成为障碍。</dd>
+<dt class="label" id="id10">5</dt>
+<dd>有经验的读者也许会喜欢 <a class="reference internal" href="05_Logic.html#lem"><span class="std std-numref">第 5.2 节</span></a>中的问题；该节引入经典推理。这些问题（据我所知）是新的，而且比通常教材中的例子更初等。</dd>
 </dl>
 </section>
 </section>

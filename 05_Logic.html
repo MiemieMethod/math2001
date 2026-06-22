@@ -138,30 +138,30 @@
 <table cellpadding="5" style="border:1px solid gray; border-collapse: collapse">
 <thead>
 <tr>
-<th style="border:1px solid gray">我们分别讨论 \(n \le 1\) 和 \(2 \le n\) 两种情形。</th>
-<th style="border:1px solid gray">情形 1（\(n \le 1\)）：只需证明 \(n ^ 2 &lt; 2\)。确实，</th>
-<th style="border:1px solid gray">情形 2（\(2 \le n\)）：只需证明 \(n ^ 2 &gt; 2\)。确实，</th></tr>
+<th style="border:1px solid gray">P</th>
+<th style="border:1px solid gray">Q</th>
+<th style="border:1px solid gray">(P ∧ Q)</th></tr>
 </thead>
 <tbody>
 <tr>
-<td style="border:1px solid gray; background-color:limegreen">使用表 5.1 中的规则逐步证明：\(\lnot(\forall a b :\mathbb{Z}, ab=1 \to a = 1 \lor b = 1)\) 与 \(\exists a b :\mathbb{Z}, ab = 1\land a \ne 1 \land b \ne 1\) 逻辑等价。</td>
-<td style="border:1px solid gray; background-color:limegreen">使用表 5.1 中的规则逐步证明：\(\lnot(\exists x:\mathbb{R},\forall y:\mathbb{R}, y \le x)\) 与 \(\forall x:\mathbb{R},\exists y:\mathbb{R}, y &gt; x\) 逻辑等价。</td>
-<td style="border:1px solid gray; background-color:limegreen">使用表 5.1 中的规则逐步证明：\(\lnot(\exists m:\mathbb{Z},\forall n:\mathbb{Z},m=n+5)\) 与 \(\forall m:\mathbb{Z},\exists n:\mathbb{Z},m\ne n+5\) 逻辑等价。</td></tr>
-<tr><td style="border:1px solid gray; background-color:lightcoral">在脑中求出下面各否定的形式，然后用 Lean 输出检查你的结果。</td>
-<td style="border:1px solid gray; background-color:limegreen">证明：并非对所有实数 \(x\)，都有 \(x^2\geq x\)。（我们已经在例 4.5.1 中解决过它；但这一次，请给出一个以 <code class="docutils literal notranslate"><span class="pre">push_neg</span></code> 开始的证明。）</td>
-<td style="border:1px solid gray; background-color:lightcoral">证明：不存在实数 \(t\)，使得 \(t \le 4\) 且 \(t\geq 5\)。（我们已经在第 4.5 节的练习中解决过它；但这一次，请给出一个以 <code class="docutils literal notranslate"><span class="pre">push_neg</span></code> 开始的证明。）</td></tr>
-<tr><td style="border:1px solid gray; background-color:limegreen">证明 7 不是偶数。（我们已经在第 4.5 节的练习中解决过它；但这一次，请给出一个以 <code class="docutils literal notranslate"><span class="pre">push_neg</span></code> 开始的证明。）</td>
-<td style="border:1px solid gray; background-color:lightcoral">设 \(p\) 和 \(k\) 为自然数，且 \(k\ne 1\)、\(k\ne p\)、\(k\mid p\)。证明 \(p\) 不是素数。（我们已经在例 4.5.7 中解决过它；但这一次，请给出一个以 <code class="docutils literal notranslate"><span class="pre">push_neg</span></code> 开始的证明。）</td>
-<td style="border:1px solid gray; background-color:lightcoral">证明：不存在整数 \(a\)，使得对所有整数 \(n\)，都有 \(2a^3 ≥ na+7\)。建议结构：先把否定规范化。你可能会觉得，把这个事实与第 2.5 节第 8 题比较很有意思。这个陈述为假而那一个为真，怎么可能？</td></tr>
-<tr><td style="border:1px solid gray; background-color:lightcoral">设 \(p \geq 2\) 为非素自然数。证明存在自然数 \(m\)，满足 \(2 \le m &lt; p\)，且 \(m\) 是 \(p\) 的因子。我们把这个引理记录下来，以便以后用名称 <code class="docutils literal notranslate"><span class="pre">exists_factor_of_not_prime</span></code> 调用。建议结构：先设置一个中间目标，即“并非任意满足 \(2 \le m &lt; p\) 的自然数 \(m\) 都不是 \(p\) 的因子”，并使用例 4.4.4 中的引理 <code class="docutils literal notranslate"><span class="pre">prime_test</span></code> 通过反证法证明它。然后把该结果的否定规范化。</td>
-<td style="border:1px solid gray; background-color:lightcoral">真</td>
-<td style="border:1px solid gray; background-color:lightcoral">有经验的读者会注意到，这个证明改编自一个更著名的问题：证明存在某个无理数的无理数次幂是有理数。</td></tr>
+<td style="border:1px solid gray; background-color:limegreen">真</td>
+<td style="border:1px solid gray; background-color:limegreen">真</td>
+<td style="border:1px solid gray; background-color:limegreen">真</td></tr>
+<tr><td style="border:1px solid gray; background-color:lightcoral">假</td>
+<td style="border:1px solid gray; background-color:limegreen">真</td>
+<td style="border:1px solid gray; background-color:lightcoral">假</td></tr>
+<tr><td style="border:1px solid gray; background-color:limegreen">真</td>
+<td style="border:1px solid gray; background-color:lightcoral">假</td>
+<td style="border:1px solid gray; background-color:lightcoral">假</td></tr>
+<tr><td style="border:1px solid gray; background-color:lightcoral">假</td>
+<td style="border:1px solid gray; background-color:lightcoral">假</td>
+<td style="border:1px solid gray; background-color:lightcoral">假</td></tr>
 </tbody>
 </table>
 <br/><p>类似地，\(\lnot P\) 的规则如下：它与 \(P\) 相反。</p>
-<table cellpadding="5" style="border:1px solid gray; border-collapse: collapse"><thead><tr><th style="border:1px solid gray">下面是在 Lean 中的样子。我留了一点给你完成。</th><th style="border:1px solid gray">证明下面的命题逻辑陈述：</th></tr></thead><tbody><tr><td style="border:1px solid gray; background-color:limegreen">真</td><td style="border:1px solid gray; background-color:lightcoral">假</td></tr><tr><td style="border:1px solid gray; background-color:lightcoral">真</td><td style="border:1px solid gray; background-color:limegreen">假</td></tr></tbody></table>
+<table cellpadding="5" style="border:1px solid gray; border-collapse: collapse"><thead><tr><th style="border:1px solid gray">P</th><th style="border:1px solid gray">¬P</th></tr></thead><tbody><tr><td style="border:1px solid gray; background-color:limegreen">真</td><td style="border:1px solid gray; background-color:lightcoral">假</td></tr><tr><td style="border:1px solid gray; background-color:lightcoral">假</td><td style="border:1px solid gray; background-color:limegreen">真</td></tr></tbody></table>
 <br/><p>利用基本运算的规则，我们可以从一个较复杂陈述所由构成的运算出发，逐步求出它的真值表。例如，要求 \(\lnot(P \land \lnot Q)\) 的真值表，先计算 \(\lnot Q\) 的表，再计算 \(P \land \lnot Q\) 的表，最后计算 \(\lnot(P \land \lnot Q)\) 的表。</p>
-<table cellpadding="5" style="border:1px solid gray; border-collapse: collapse"><thead><tr><th style="border:1px solid gray">证明下面的命题逻辑陈述：</th><th style="border:1px solid gray">证明下面的命题逻辑陈述：</th><th style="border:1px solid gray">证明下面的命题逻辑陈述：</th><th style="border:1px solid gray">证明下面的命题逻辑陈述：</th><th style="border:1px solid gray">证明下面的命题逻辑陈述：</th></tr></thead><tbody><tr><td style="border:1px solid gray; background-color:limegreen">真</td><td style="border:1px solid gray; background-color:limegreen">假</td><td style="border:1px solid gray; background-color:lightcoral">运算</td><td style="border:1px solid gray; background-color:lightcoral">否定外层形式</td><td style="border:1px solid gray; background-color:limegreen">否定内层形式</td></tr><tr><td style="border:1px solid gray; background-color:lightcoral">Lean 名称</td><td style="border:1px solid gray; background-color:limegreen">证明</td><td style="border:1px solid gray; background-color:lightcoral">真</td><td style="border:1px solid gray; background-color:lightcoral">真</td><td style="border:1px solid gray; background-color:limegreen">真</td></tr><tr><td style="border:1px solid gray; background-color:limegreen">假</td><td style="border:1px solid gray; background-color:lightcoral">真</td><td style="border:1px solid gray; background-color:limegreen">运算</td><td style="border:1px solid gray; background-color:limegreen">否定外层形式</td><td style="border:1px solid gray; background-color:lightcoral">否定内层形式</td></tr><tr><td style="border:1px solid gray; background-color:lightcoral">运算</td><td style="border:1px solid gray; background-color:lightcoral">否定外层形式</td><td style="border:1px solid gray; background-color:limegreen">否定内层形式</td><td style="border:1px solid gray; background-color:lightcoral">Lean 名称</td><td style="border:1px solid gray; background-color:limegreen">证明</td></tr></tbody></table>
+<table cellpadding="5" style="border:1px solid gray; border-collapse: collapse"><thead><tr><th style="border:1px solid gray">P</th><th style="border:1px solid gray">Q</th><th style="border:1px solid gray">¬Q</th><th style="border:1px solid gray">(P ∧ ¬Q)</th><th style="border:1px solid gray">¬(P ∧ ¬Q)</th></tr></thead><tbody><tr><td style="border:1px solid gray; background-color:limegreen">真</td><td style="border:1px solid gray; background-color:limegreen">真</td><td style="border:1px solid gray; background-color:lightcoral">假</td><td style="border:1px solid gray; background-color:lightcoral">假</td><td style="border:1px solid gray; background-color:limegreen">真</td></tr><tr><td style="border:1px solid gray; background-color:lightcoral">假</td><td style="border:1px solid gray; background-color:limegreen">真</td><td style="border:1px solid gray; background-color:lightcoral">假</td><td style="border:1px solid gray; background-color:lightcoral">假</td><td style="border:1px solid gray; background-color:limegreen">真</td></tr><tr><td style="border:1px solid gray; background-color:limegreen">真</td><td style="border:1px solid gray; background-color:lightcoral">假</td><td style="border:1px solid gray; background-color:limegreen">真</td><td style="border:1px solid gray; background-color:limegreen">真</td><td style="border:1px solid gray; background-color:lightcoral">假</td></tr><tr><td style="border:1px solid gray; background-color:lightcoral">假</td><td style="border:1px solid gray; background-color:lightcoral">假</td><td style="border:1px solid gray; background-color:limegreen">真</td><td style="border:1px solid gray; background-color:lightcoral">假</td><td style="border:1px solid gray; background-color:limegreen">真</td></tr></tbody></table>
 <br/><p>你应该练习手算真值表，但 Lean 命令 <code class="docutils literal notranslate"><span class="pre">#truth_table</span></code> 也会自动完成它。</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="bp">#</span><span class="n">truth_table</span> <span class="bp">¬</span><span class="o">(</span><span class="n">P</span> <span class="bp">∧</span> <span class="bp">¬</span> <span class="n">Q</span><span class="o">)</span>
 </pre></div>
@@ -171,9 +171,9 @@
 <section id="exercise">
 <h3>5.1.3. 练习<a class="headerlink" href="#exercise" title="此标题的永久链接"></a></h3>
 <p>其余基本逻辑运算的规则如下：</p>
-<table cellpadding="5" style="border:1px solid gray; border-collapse: collapse"><thead><tr><th style="border:1px solid gray">证明 \(P \land P\) 与 \(P\) 逻辑等价。</th><th style="border:1px solid gray">证明 \(P \lor Q\) 与 \(Q \lor P\) 逻辑等价。</th><th style="border:1px solid gray">证明 \(\lnot(P \lor Q)\) 与 \(\lnot P \land \lnot Q\) 逻辑等价。这个定理在库中名为 <code class="docutils literal notranslate"><span class="pre">not_or</span></code>。它是“德摩根律”之一。</th></tr></thead><tbody><tr><td style="border:1px solid gray; background-color:limegreen">真</td><td style="border:1px solid gray; background-color:limegreen">真</td><td style="border:1px solid gray; background-color:limegreen">真</td></tr><tr><td style="border:1px solid gray; background-color:lightcoral">假</td><td style="border:1px solid gray; background-color:limegreen">真</td><td style="border:1px solid gray; background-color:limegreen">假</td></tr><tr><td style="border:1px solid gray; background-color:limegreen">真</td><td style="border:1px solid gray; background-color:lightcoral">假</td><td style="border:1px solid gray; background-color:limegreen">假</td></tr><tr><td style="border:1px solid gray; background-color:lightcoral">假</td><td style="border:1px solid gray; background-color:lightcoral">假</td><td style="border:1px solid gray; background-color:lightcoral">假</td></tr></tbody></table>
-<br/><table cellpadding="5" style="border:1px solid gray; border-collapse: collapse"><thead><tr><th style="border:1px solid gray">证明下面的一阶逻辑陈述：</th><th style="border:1px solid gray">证明下面的一阶逻辑陈述：</th><th style="border:1px solid gray">证明 \(\exists x \ y, P(x, y)\) 与 \(\exists y \ x, P(x, y)\) 逻辑等价。</th></tr></thead><tbody><tr><td style="border:1px solid gray; background-color:limegreen">真</td><td style="border:1px solid gray; background-color:limegreen">假</td><td style="border:1px solid gray; background-color:limegreen">假</td></tr><tr><td style="border:1px solid gray; background-color:lightcoral">真</td><td style="border:1px solid gray; background-color:limegreen">真</td><td style="border:1px solid gray; background-color:limegreen">真</td></tr><tr><td style="border:1px solid gray; background-color:limegreen">假</td><td style="border:1px solid gray; background-color:lightcoral">假</td><td style="border:1px solid gray; background-color:lightcoral">真</td></tr><tr><td style="border:1px solid gray; background-color:lightcoral">假</td><td style="border:1px solid gray; background-color:lightcoral">真</td><td style="border:1px solid gray; background-color:limegreen">假</td></tr></tbody></table>
-<br/><table cellpadding="5" style="border:1px solid gray; border-collapse: collapse"><thead><tr><th style="border:1px solid gray">证明 \(\forall x \ y, P(x, y)\) 与 \(\forall y \ x, P(x, y)\) 逻辑等价。</th><th style="border:1px solid gray">证明 \((\exists x, P(x)) \land Q\) 与 \(\exists x, (P(x) \land Q)\) 逻辑等价。</th><th style="border:1px solid gray">若对每个自然数 \(n\)，不等式 \(\left(1+\frac{x}{n}\right)^n&lt;3\) 都成立，则称实数 \(x\) 为三平衡的。证明：存在实数 \(x\)，使得 \(x\) 是三平衡的，而 \(x+1\) 不是三平衡的。</th></tr></thead><tbody><tr><td style="border:1px solid gray; background-color:limegreen">假</td><td style="border:1px solid gray; background-color:limegreen">真</td><td style="border:1px solid gray; background-color:limegreen">真</td></tr><tr><td style="border:1px solid gray; background-color:lightcoral">假</td><td style="border:1px solid gray; background-color:limegreen">真</td><td style="border:1px solid gray; background-color:lightcoral">真</td></tr><tr><td style="border:1px solid gray; background-color:limegreen">假</td><td style="border:1px solid gray; background-color:lightcoral">假</td><td style="border:1px solid gray; background-color:lightcoral">假</td></tr><tr><td style="border:1px solid gray; background-color:lightcoral">真</td><td style="border:1px solid gray; background-color:lightcoral">假</td><td style="border:1px solid gray; background-color:limegreen">真</td></tr></tbody></table>
+<table cellpadding="5" style="border:1px solid gray; border-collapse: collapse"><thead><tr><th style="border:1px solid gray">P</th><th style="border:1px solid gray">Q</th><th style="border:1px solid gray">(P ∨ Q)</th></tr></thead><tbody><tr><td style="border:1px solid gray; background-color:limegreen">真</td><td style="border:1px solid gray; background-color:limegreen">真</td><td style="border:1px solid gray; background-color:limegreen">真</td></tr><tr><td style="border:1px solid gray; background-color:lightcoral">假</td><td style="border:1px solid gray; background-color:limegreen">真</td><td style="border:1px solid gray; background-color:limegreen">真</td></tr><tr><td style="border:1px solid gray; background-color:limegreen">真</td><td style="border:1px solid gray; background-color:lightcoral">假</td><td style="border:1px solid gray; background-color:limegreen">真</td></tr><tr><td style="border:1px solid gray; background-color:lightcoral">假</td><td style="border:1px solid gray; background-color:lightcoral">假</td><td style="border:1px solid gray; background-color:lightcoral">假</td></tr></tbody></table>
+<br/><table cellpadding="5" style="border:1px solid gray; border-collapse: collapse"><thead><tr><th style="border:1px solid gray">P</th><th style="border:1px solid gray">Q</th><th style="border:1px solid gray">(P → Q)</th></tr></thead><tbody><tr><td style="border:1px solid gray; background-color:limegreen">真</td><td style="border:1px solid gray; background-color:limegreen">真</td><td style="border:1px solid gray; background-color:limegreen">真</td></tr><tr><td style="border:1px solid gray; background-color:lightcoral">假</td><td style="border:1px solid gray; background-color:limegreen">真</td><td style="border:1px solid gray; background-color:limegreen">真</td></tr><tr><td style="border:1px solid gray; background-color:limegreen">真</td><td style="border:1px solid gray; background-color:lightcoral">假</td><td style="border:1px solid gray; background-color:lightcoral">假</td></tr><tr><td style="border:1px solid gray; background-color:lightcoral">假</td><td style="border:1px solid gray; background-color:lightcoral">假</td><td style="border:1px solid gray; background-color:limegreen">真</td></tr></tbody></table>
+<br/><table cellpadding="5" style="border:1px solid gray; border-collapse: collapse"><thead><tr><th style="border:1px solid gray">P</th><th style="border:1px solid gray">Q</th><th style="border:1px solid gray">(P ↔ Q)</th></tr></thead><tbody><tr><td style="border:1px solid gray; background-color:limegreen">真</td><td style="border:1px solid gray; background-color:limegreen">真</td><td style="border:1px solid gray; background-color:limegreen">真</td></tr><tr><td style="border:1px solid gray; background-color:lightcoral">假</td><td style="border:1px solid gray; background-color:limegreen">真</td><td style="border:1px solid gray; background-color:lightcoral">假</td></tr><tr><td style="border:1px solid gray; background-color:limegreen">真</td><td style="border:1px solid gray; background-color:lightcoral">假</td><td style="border:1px solid gray; background-color:lightcoral">假</td></tr><tr><td style="border:1px solid gray; background-color:lightcoral">假</td><td style="border:1px solid gray; background-color:lightcoral">假</td><td style="border:1px solid gray; background-color:limegreen">真</td></tr></tbody></table>
 <br/><div class="admonition-problem admonition">
 <p class="admonition-title">问题</p>
 <p>求出 \(P \leftrightarrow (\lnot P \lor Q)\) 的真值表。</p>
@@ -271,85 +271,85 @@
 <section id="exercises">
 <span id="logical-equivalence-exercises"></span><h3>5.1.7. 练习<a class="headerlink" href="#exercises" title="此标题的永久链接"></a></h3>
 <ol class="arabic">
-<li><p>证明 \(\lnot(\forall m :\mathbb{Z}, m\ne 2 \to \exists n:\mathbb{Z},n^2 = m)\) 与 \(\exists m :\mathbb{Z}, m\ne 2\land \forall n :\mathbb{Z},n^2 ≠ m\) 逻辑等价。</p>
+<li><p>证明下面的命题逻辑陈述：</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">example</span> <span class="o">{</span><span class="n">P</span> <span class="n">Q</span> <span class="o">:</span> <span class="kt">Prop</span><span class="o">}</span> <span class="o">(</span><span class="n">h</span> <span class="o">:</span> <span class="n">P</span> <span class="bp">∧</span> <span class="n">Q</span><span class="o">)</span> <span class="o">:</span> <span class="n">P</span> <span class="bp">∨</span> <span class="n">Q</span> <span class="o">:=</span> <span class="kd">by</span>
   <span class="gr">sorry</span>
 </pre></div>
 </div>
 </li>
-<li><p>例 5.1.6</p>
+<li><p>证明下面的命题逻辑陈述：</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">example</span> <span class="o">{</span><span class="n">P</span> <span class="n">Q</span> <span class="n">R</span> <span class="o">:</span> <span class="kt">Prop</span><span class="o">}</span> <span class="o">(</span><span class="n">h1</span> <span class="o">:</span> <span class="n">P</span> <span class="bp">→</span> <span class="n">Q</span><span class="o">)</span> <span class="o">(</span><span class="n">h2</span> <span class="o">:</span> <span class="n">P</span> <span class="bp">→</span> <span class="n">R</span><span class="o">)</span> <span class="o">(</span><span class="n">h3</span> <span class="o">:</span> <span class="n">P</span><span class="o">)</span> <span class="o">:</span> <span class="n">Q</span> <span class="bp">∧</span> <span class="n">R</span> <span class="o">:=</span> <span class="kd">by</span>
   <span class="gr">sorry</span>
 </pre></div>
 </div>
 </li>
-<li><p>请你自己试一试！</p>
+<li><p>证明下面的命题逻辑陈述：</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">example</span> <span class="o">(</span><span class="n">P</span> <span class="o">:</span> <span class="kt">Prop</span><span class="o">)</span> <span class="o">:</span> <span class="bp">¬</span><span class="o">(</span><span class="n">P</span> <span class="bp">∧</span> <span class="bp">¬</span> <span class="n">P</span><span class="o">)</span> <span class="o">:=</span> <span class="kd">by</span>
   <span class="gr">sorry</span>
 </pre></div>
 </div>
 </li>
-<li><p>问题</p>
+<li><p>证明下面的命题逻辑陈述：</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">example</span> <span class="o">{</span><span class="n">P</span> <span class="n">Q</span> <span class="o">:</span> <span class="kt">Prop</span><span class="o">}</span> <span class="o">(</span><span class="n">h1</span> <span class="o">:</span> <span class="n">P</span> <span class="bp">↔</span> <span class="bp">¬</span> <span class="n">Q</span><span class="o">)</span> <span class="o">(</span><span class="n">h2</span> <span class="o">:</span> <span class="n">Q</span><span class="o">)</span> <span class="o">:</span> <span class="bp">¬</span> <span class="n">P</span> <span class="o">:=</span> <span class="kd">by</span>
   <span class="gr">sorry</span>
 </pre></div>
 </div>
 </li>
-<li><p>例 5.1.6</p>
+<li><p>证明下面的命题逻辑陈述：</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">example</span> <span class="o">{</span><span class="n">P</span> <span class="n">Q</span> <span class="o">:</span> <span class="kt">Prop</span><span class="o">}</span> <span class="o">(</span><span class="n">h1</span> <span class="o">:</span> <span class="n">P</span> <span class="bp">∨</span> <span class="n">Q</span><span class="o">)</span> <span class="o">(</span><span class="n">h2</span> <span class="o">:</span> <span class="n">Q</span> <span class="bp">→</span> <span class="n">P</span><span class="o">)</span> <span class="o">:</span> <span class="n">P</span> <span class="o">:=</span> <span class="kd">by</span>
   <span class="gr">sorry</span>
 </pre></div>
 </div>
 </li>
-<li><p>在本题中，除了表 5.1 中的规则外，你还需要使用引理 <code class="docutils literal notranslate"><span class="pre">not_lt</span></code>，把一个 \(&lt;\) 的否定转化为 \(\geq\)。</p>
+<li><p>证明下面的命题逻辑陈述：</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">example</span> <span class="o">{</span><span class="n">P</span> <span class="n">Q</span> <span class="n">R</span> <span class="o">:</span> <span class="kt">Prop</span><span class="o">}</span> <span class="o">(</span><span class="n">h</span> <span class="o">:</span> <span class="n">P</span> <span class="bp">↔</span> <span class="n">Q</span><span class="o">)</span> <span class="o">:</span> <span class="o">(</span><span class="n">P</span> <span class="bp">∧</span> <span class="n">R</span><span class="o">)</span> <span class="bp">↔</span> <span class="o">(</span><span class="n">Q</span> <span class="bp">∧</span> <span class="n">R</span><span class="o">)</span> <span class="o">:=</span> <span class="kd">by</span>
   <span class="gr">sorry</span>
 </pre></div>
 </div>
 </li>
-<li><p>练习 5.3.6</p>
+<li><p>证明 \(P \land P\) 与 \(P\) 逻辑等价。</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">example</span> <span class="o">(</span><span class="n">P</span> <span class="o">:</span> <span class="kt">Prop</span><span class="o">)</span> <span class="o">:</span> <span class="o">(</span><span class="n">P</span> <span class="bp">∧</span> <span class="n">P</span><span class="o">)</span> <span class="bp">↔</span> <span class="n">P</span> <span class="o">:=</span> <span class="kd">by</span>
   <span class="gr">sorry</span>
 </pre></div>
 </div>
 </li>
-<li><p>依次应用这些规则后，任何数学陈述都可以化为“否定在内侧”的形式。这通常是证明中最方便的形式（可比较第 4.4 节和第 4.5 节中反证法证明的相对笨拙，与更早章节中证明的差别）。</p>
+<li><p>证明 \(P \lor Q\) 与 \(Q \lor P\) 逻辑等价。</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">example</span> <span class="o">(</span><span class="n">P</span> <span class="n">Q</span> <span class="o">:</span> <span class="kt">Prop</span><span class="o">)</span> <span class="o">:</span> <span class="o">(</span><span class="n">P</span> <span class="bp">∨</span> <span class="n">Q</span><span class="o">)</span> <span class="bp">↔</span> <span class="o">(</span><span class="n">Q</span> <span class="bp">∨</span> <span class="n">P</span><span class="o">)</span> <span class="o">:=</span> <span class="kd">by</span>
   <span class="gr">sorry</span>
 </pre></div>
 </div>
 </li>
-<li><p>下面是这个过程的一个例子。</p>
+<li><p>证明 \(\lnot(P \lor Q)\) 与 \(\lnot P \land \lnot Q\) 逻辑等价。这个定理在库中名为 <code class="docutils literal notranslate"><span class="pre">not_or</span></code>。它是“德摩根律”之一。</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">example</span> <span class="o">(</span><span class="n">P</span> <span class="n">Q</span> <span class="o">:</span> <span class="kt">Prop</span><span class="o">)</span> <span class="o">:</span> <span class="bp">¬</span><span class="o">(</span><span class="n">P</span> <span class="bp">∨</span> <span class="n">Q</span><span class="o">)</span> <span class="bp">↔</span> <span class="o">(</span><span class="bp">¬</span><span class="n">P</span> <span class="bp">∧</span> <span class="bp">¬</span><span class="n">Q</span><span class="o">)</span> <span class="o">:=</span> <span class="kd">by</span>
   <span class="gr">sorry</span>
 </pre></div>
 </div>
 </li>
-<li><p>练习 5.3.6</p>
+<li><p>证明下面的一阶逻辑陈述：</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">example</span> <span class="o">{</span><span class="n">P</span> <span class="n">Q</span> <span class="o">:</span> <span class="n">α</span> <span class="bp">→</span> <span class="kt">Prop</span><span class="o">}</span> <span class="o">(</span><span class="n">h1</span> <span class="o">:</span> <span class="bp">∀</span> <span class="n">x</span><span class="o">,</span> <span class="n">P</span> <span class="n">x</span> <span class="bp">→</span> <span class="n">Q</span> <span class="n">x</span><span class="o">)</span> <span class="o">(</span><span class="n">h2</span> <span class="o">:</span> <span class="bp">∀</span> <span class="n">x</span><span class="o">,</span> <span class="n">P</span> <span class="n">x</span><span class="o">)</span> <span class="o">:</span> <span class="bp">∀</span> <span class="n">x</span><span class="o">,</span> <span class="n">Q</span> <span class="n">x</span> <span class="o">:=</span> <span class="kd">by</span>
   <span class="gr">sorry</span>
 </pre></div>
 </div>
 </li>
-<li><p>依次应用这些规则后，任何数学陈述都可以化为“否定在内侧”的形式。这通常是证明中最方便的形式（可比较第 4.4 节和第 4.5 节中反证法证明的相对笨拙，与更早章节中证明的差别）。</p>
+<li><p>证明下面的一阶逻辑陈述：</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">example</span> <span class="o">{</span><span class="n">P</span> <span class="n">Q</span> <span class="o">:</span> <span class="n">α</span> <span class="bp">→</span> <span class="kt">Prop</span><span class="o">}</span> <span class="o">(</span><span class="n">h</span> <span class="o">:</span> <span class="bp">∀</span> <span class="n">x</span><span class="o">,</span> <span class="n">P</span> <span class="n">x</span> <span class="bp">↔</span> <span class="n">Q</span> <span class="n">x</span><span class="o">)</span> <span class="o">:</span> <span class="o">(</span><span class="bp">∃</span> <span class="n">x</span><span class="o">,</span> <span class="n">P</span> <span class="n">x</span><span class="o">)</span> <span class="bp">↔</span> <span class="o">(</span><span class="bp">∃</span> <span class="n">x</span><span class="o">,</span> <span class="n">Q</span> <span class="n">x</span><span class="o">)</span> <span class="o">:=</span> <span class="kd">by</span>
   <span class="gr">sorry</span>
 </pre></div>
 </div>
 </li>
-<li><p>下面是这个过程的一个例子。</p>
+<li><p>证明 \(\exists x \ y, P(x, y)\) 与 \(\exists y \ x, P(x, y)\) 逻辑等价。</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">example</span> <span class="o">(</span><span class="n">P</span> <span class="o">:</span> <span class="n">α</span> <span class="bp">→</span> <span class="n">β</span> <span class="bp">→</span> <span class="kt">Prop</span><span class="o">)</span> <span class="o">:</span> <span class="o">(</span><span class="bp">∃</span> <span class="n">x</span> <span class="n">y</span><span class="o">,</span> <span class="n">P</span> <span class="n">x</span> <span class="n">y</span><span class="o">)</span> <span class="bp">↔</span> <span class="bp">∃</span> <span class="n">y</span> <span class="n">x</span><span class="o">,</span> <span class="n">P</span> <span class="n">x</span> <span class="n">y</span> <span class="o">:=</span> <span class="kd">by</span>
   <span class="gr">sorry</span>
 </pre></div>
 </div>
 </li>
-<li><p>问题</p>
+<li><p>证明 \(\forall x \ y, P(x, y)\) 与 \(\forall y \ x, P(x, y)\) 逻辑等价。</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">example</span> <span class="o">(</span><span class="n">P</span> <span class="o">:</span> <span class="n">α</span> <span class="bp">→</span> <span class="n">β</span> <span class="bp">→</span> <span class="kt">Prop</span><span class="o">)</span> <span class="o">:</span> <span class="o">(</span><span class="bp">∀</span> <span class="n">x</span> <span class="n">y</span><span class="o">,</span> <span class="n">P</span> <span class="n">x</span> <span class="n">y</span><span class="o">)</span> <span class="bp">↔</span> <span class="bp">∀</span> <span class="n">y</span> <span class="n">x</span><span class="o">,</span> <span class="n">P</span> <span class="n">x</span> <span class="n">y</span> <span class="o">:=</span> <span class="kd">by</span>
   <span class="gr">sorry</span>
 </pre></div>
 </div>
 </li>
-<li><p>证明 \(\lnot(\forall m :\mathbb{Z}, m\ne 2 \to \exists n:\mathbb{Z},n^2 = m)\) 与 \(\exists m :\mathbb{Z}, m\ne 2\land \forall n :\mathbb{Z},n^2 ≠ m\) 逻辑等价。</p>
+<li><p>证明 \((\exists x, P(x)) \land Q\) 与 \(\exists x, (P(x) \land Q)\) 逻辑等价。</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">example</span> <span class="o">(</span><span class="n">P</span> <span class="o">:</span> <span class="n">α</span> <span class="bp">→</span> <span class="kt">Prop</span><span class="o">)</span> <span class="o">(</span><span class="n">Q</span> <span class="o">:</span> <span class="kt">Prop</span><span class="o">)</span> <span class="o">:</span> <span class="o">((</span><span class="bp">∃</span> <span class="n">x</span><span class="o">,</span> <span class="n">P</span> <span class="n">x</span><span class="o">)</span> <span class="bp">∧</span> <span class="n">Q</span><span class="o">)</span> <span class="bp">↔</span> <span class="bp">∃</span> <span class="n">x</span><span class="o">,</span> <span class="o">(</span><span class="n">P</span> <span class="n">x</span> <span class="bp">∧</span> <span class="n">Q</span><span class="o">)</span> <span class="o">:=</span> <span class="kd">by</span>
   <span class="gr">sorry</span>
 </pre></div>
@@ -518,7 +518,7 @@ h2 : ¬ Superpowered 2
 <section id="id14">
 <h3>5.2.7. 练习<a class="headerlink" href="#id14" title="此标题的永久链接"></a></h3>
 <ol class="arabic">
-<li><p>在 Lean 中，我们可以用一个计算式证明完成它：使用 <code class="docutils literal notranslate"><span class="pre">rel</span></code> 策略，并在每一步用表 5.1 中的一条规则改写。</p>
+<li><p>若对每个自然数 \(n\)，不等式 \(\left(1+\frac{x}{n}\right)^n&lt;3\) 都成立，则称实数 \(x\) 为三平衡的。证明：存在实数 \(x\)，使得 \(x\) 是三平衡的，而 \(x+1\) 不是三平衡的。</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">def</span> <span class="n">Tribalanced</span> <span class="o">(</span><span class="n">x</span> <span class="o">:</span> <span class="n">ℝ</span><span class="o">)</span> <span class="o">:</span> <span class="kt">Prop</span> <span class="o">:=</span> <span class="bp">∀</span> <span class="n">n</span> <span class="o">:</span> <span class="n">ℕ</span><span class="o">,</span> <span class="o">(</span><span class="mi">1</span> <span class="bp">+</span> <span class="n">x</span> <span class="bp">/</span> <span class="n">n</span><span class="o">)</span> <span class="bp">^</span> <span class="n">n</span> <span class="bp">&lt;</span> <span class="mi">3</span>
 
 <span class="kd">example</span> <span class="o">:</span> <span class="bp">∃</span> <span class="n">x</span> <span class="o">:</span> <span class="n">ℝ</span><span class="o">,</span> <span class="n">Tribalanced</span> <span class="n">x</span> <span class="bp">∧</span> <span class="bp">¬</span> <span class="n">Tribalanced</span> <span class="o">(</span><span class="n">x</span> <span class="bp">+</span> <span class="mi">1</span><span class="o">)</span> <span class="o">:=</span> <span class="kd">by</span>
@@ -526,13 +526,13 @@ h2 : ¬ Superpowered 2
 </pre></div>
 </div>
 </li>
-<li><p>请你自己试一试！</p>
+<li><p>证明 \(\lnot P \to \lnot Q\) 与 \(Q \to P\) 逻辑等价。你需要使用排中律。这个逻辑等价称为逆否命题原理。作为可靠性检查，你也可以比较它们的真值表。</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">example</span> <span class="o">(</span><span class="n">P</span> <span class="n">Q</span> <span class="o">:</span> <span class="kt">Prop</span><span class="o">)</span> <span class="o">:</span> <span class="o">(</span><span class="bp">¬</span><span class="n">P</span> <span class="bp">→</span> <span class="bp">¬</span><span class="n">Q</span><span class="o">)</span> <span class="bp">↔</span> <span class="o">(</span><span class="n">Q</span> <span class="bp">→</span> <span class="n">P</span><span class="o">)</span> <span class="o">:=</span> <span class="kd">by</span>
   <span class="gr">sorry</span>
 </pre></div>
 </div>
 </li>
-<li><p>问题</p>
+<li><p>如果你还在好奇：2 不是超能的。这个问题由数学家 Pierre de Fermat 于 1650 年提出；他像我们一样观察到 3、5、17、257 和 65537 都是素数。1732 年，Leonhard Euler 证明序列中的下一个数 \(2^{2^5}+1=4294967297\) 等于 \(641 \times 6700417\)，因而不是素数，问题由此解决。请使用 Euler 的发现，给出一个不分类讨论的证明来解决例 5.2.5 中的问题。</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">example</span> <span class="o">:</span> <span class="bp">∃</span> <span class="n">k</span> <span class="o">:</span> <span class="n">ℕ</span><span class="o">,</span> <span class="n">Superpowered</span> <span class="n">k</span> <span class="bp">∧</span> <span class="bp">¬</span> <span class="n">Superpowered</span> <span class="o">(</span><span class="n">k</span> <span class="bp">+</span> <span class="mi">1</span><span class="o">)</span> <span class="o">:=</span> <span class="kd">by</span>
   <span class="gr">sorry</span>
 </pre></div>
@@ -541,8 +541,8 @@ h2 : ¬ Superpowered 2
 </ol>
 <p class="rubric">脚注</p>
 <dl class="footnote brackets">
-<dt class="label" id="id15">解答</dt>
-<dd>只需证明：对任意自然数 \(n\)，都有 \(n ^ 2 \ne 2\)。</dd>
+<dt class="label" id="id15"><span class="brackets"><a class="fn-backref" href="#id12">1</a></span></dt>
+<dd>有经验的读者会注意到，这个证明改编自一个更著名的问题：证明存在某个无理数的无理数次幂是有理数。</dd>
 </dl>
 </section>
 </section>
@@ -550,11 +550,11 @@ h2 : ¬ Superpowered 2
 <span id="negation-normalize"></span><h2>5.3. 否定的范式<a class="headerlink" href="#normal-form-for-negations" title="此标题的永久链接"></a></h2>
 <section id="negation-normalize-intro">
 <span id="id16"></span><h3>5.3.1. 例<a class="headerlink" href="#negation-normalize-intro" title="此标题的永久链接"></a></h3>
-<p>有经验的读者会注意到，这个证明改编自一个更著名的问题：证明存在某个无理数的无理数次幂是有理数。</p>
 <p>有一类重要的逻辑等价允许我们把否定在逻辑陈述中向内“推进”。例如，我们在例 5.1.6 中证明了否定 \(\exists\) 的规则（\(\lnot\exists x, P(x)\) 与 \(\forall x, \lnot P(x)\) 逻辑等价），又在第 5.1 节练习中证明了否定 \(\lor\) 的规则（\(\lnot(P \lor Q)\) 与 \(\lnot P \land \lnot Q\) 逻辑等价）。</p>
+<p>我们再做一个同类规则，即否定 \(\land\) 的规则。这个规则需要使用排中律。我已经完成了前半部分，把后半部分留给你。</p>
 <div class="admonition-problem admonition">
-<p class="admonition-title">我们再做一个同类规则，即否定 \(\land\) 的规则。这个规则需要使用排中律。我已经完成了前半部分，把后半部分留给你。</p>
-<p>问题</p>
+<p class="admonition-title">问题</p>
+<p>证明 \(\lnot(P \land Q)\) 与 \(\lnot P \lor \lnot Q\) 逻辑等价。</p>
 </div>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">example</span> <span class="o">(</span><span class="n">P</span> <span class="n">Q</span> <span class="o">:</span> <span class="kt">Prop</span><span class="o">)</span> <span class="o">:</span> <span class="bp">¬</span> <span class="o">(</span><span class="n">P</span> <span class="bp">∧</span> <span class="n">Q</span><span class="o">)</span> <span class="bp">↔</span> <span class="o">(</span><span class="bp">¬</span> <span class="n">P</span> <span class="bp">∨</span> <span class="bp">¬</span> <span class="n">Q</span><span class="o">)</span> <span class="o">:=</span> <span class="kd">by</span>
   <span class="n">constructor</span>
@@ -572,9 +572,9 @@ h2 : ¬ Superpowered 2
   <span class="bp">·</span> <span class="gr">sorry</span>
 </pre></div>
 </div>
-<p>证明 \(\lnot(P \land Q)\) 与 \(\lnot P \lor \lnot Q\) 逻辑等价。</p>
+<p>下面给出完整的一组规则，以及它们在 Lean 中的引理名称。余下证明留作本节练习。</p>
 <span id="negation-rule-table"></span><table class="colwidths-given docutils align-default" id="id22">
-<caption><span class="caption-number">Table 5.1 </span><span class="caption-text">Logical equivalences for negations</span><a class="headerlink" href="#id22" title="Permalink to this table"></a></caption>
+<caption><span class="caption-number">表 5.1 </span><span class="caption-text">否定的逻辑等价</span><a class="headerlink" href="#id22" title="此表的永久链接"></a></caption>
 <colgroup>
 <col style="width: 8%"/>
 <col style="width: 20%"/>
@@ -583,62 +583,62 @@ h2 : ¬ Superpowered 2
 <col style="width: 32%"/>
 </colgroup>
 <thead>
-<tr class="row-odd"><th class="head">证明 \(\lnot P \to \lnot Q\) 与 \(Q \to P\) 逻辑等价。你需要使用排中律。这个逻辑等价称为逆否命题原理。作为可靠性检查，你也可以比较它们的真值表。</th>
-<th class="head">如果你还在好奇：2 不是超能的。这个问题由数学家 Pierre de Fermat 于 1650 年提出；他像我们一样观察到 3、5、17、257 和 65537 都是素数。1732 年，Leonhard Euler 证明序列中的下一个数 \(2^{2^5}+1=4294967297\) 等于 \(641 \times 6700417\)，因而不是素数，问题由此解决。请使用 Euler 的发现，给出一个不分类讨论的证明来解决例 5.2.5 中的问题。</th>
-<th class="head">证明 \(\lnot(\lnot P)\) 与 \(P\) 逻辑等价。本练习的要点是你正在证明表 5.1 中的引理 <code class="docutils literal notranslate"><span class="pre">not_not</span></code>。所以不要使用该引理，也不要使用依赖它的策略 <code class="docutils literal notranslate"><span class="pre">push_neg</span></code>；请从零开始证明它。你需要使用排中律。</th>
-<th class="head">证明 \(\lnot(P \to Q)\) 与 \(P \land \lnot Q\) 逻辑等价。本练习的要点是你正在证明表 5.1 中的引理 <code class="docutils literal notranslate"><span class="pre">not_imp</span></code>。所以不要使用该引理，也不要使用依赖它的策略 <code class="docutils literal notranslate"><span class="pre">push_neg</span></code>；请从零开始证明它。你需要使用排中律。</th>
-<th class="head">证明 \(\lnot\forall x, P(x)\) 与 \(\exists x, \lnot P(x)\) 逻辑等价。本练习的要点是你正在证明表 5.1 中的引理 <code class="docutils literal notranslate"><span class="pre">not_forall</span></code>。所以不要使用该引理，也不要使用依赖它的策略 <code class="docutils literal notranslate"><span class="pre">push_neg</span></code>；请从零开始证明它。你需要使用排中律。</th>
+<tr class="row-odd"><th class="head"><p>运算</p></th>
+<th class="head"><p>否定外层形式</p></th>
+<th class="head"><p>否定内层形式</p></th>
+<th class="head"><p>Lean 名称</p></th>
+<th class="head"><p>证明</p></th>
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td>真</td>
-<td>真</td>
-<td>真</td>
-<td>假</td>
-<td>真</td>
+<tr class="row-even"><td><p><span class="math notranslate nohighlight">\(\lnot\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(\lnot(\lnot P)\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(P\)</span></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">not_not</span></code></p></td>
+<td><p>练习 5.3.6</p></td>
 </tr>
-<tr class="row-odd"><td>真</td>
-<td>真</td>
-<td>假</td>
-<td>真</td>
-<td>假</td>
+<tr class="row-odd"><td><p><span class="math notranslate nohighlight">\(\lor\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(\lnot(P \lor Q)\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(\lnot P \land \lnot Q\)</span></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">not_or</span></code></p></td>
+<td><p>练习 5.1.7</p></td>
 </tr>
-<tr class="row-even"><td>假</td>
-<td>假</td>
-<td>真</td>
-<td>真</td>
-<td>真</td>
+<tr class="row-even"><td><p><span class="math notranslate nohighlight">\(\land\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(\lnot(P \land Q)\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(\lnot P \lor \lnot Q\)</span></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">not_and_or</span></code></p></td>
+<td><p>例 5.3.1</p></td>
 </tr>
-<tr class="row-odd"><td>假</td>
-<td>真</td>
-<td>真</td>
-<td>真</td>
-<td>假</td>
+<tr class="row-odd"><td><p><span class="math notranslate nohighlight">\(\to\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(\lnot(P \to Q)\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(P \land \lnot Q\)</span></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">not_imp</span></code></p></td>
+<td><p>练习 5.3.6</p></td>
 </tr>
-<tr class="row-even"><td>假</td>
-<td>假</td>
-<td>假</td>
-<td>真</td>
-<td>真</td>
+<tr class="row-even"><td><p><span class="math notranslate nohighlight">\(\exists\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(\lnot(\exists x, P(x))\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(\forall x, \lnot P(x)\)</span></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">not_exists</span></code></p></td>
+<td><p>例 5.1.6</p></td>
 </tr>
-<tr class="row-odd"><td>真</td>
-<td>真</td>
-<td>假</td>
-<td>真</td>
-<td>假</td>
+<tr class="row-odd"><td><p><span class="math notranslate nohighlight">\(\forall\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(\lnot(\forall x, P(x))\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(\exists x, \lnot P(x)\)</span></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">not_forall</span></code></p></td>
+<td><p>练习 5.3.6</p></td>
 </tr>
 </tbody>
 </table>
 </section>
 <section id="id17">
 <h3>5.3.2. 例<a class="headerlink" href="#id17" title="此标题的永久链接"></a></h3>
-<p>下面给出完整的一组规则，以及它们在 Lean 中的引理名称。余下证明留作本节练习。</p>
-<p>运算</p>
+<p>依次应用这些规则后，任何数学陈述都可以化为“否定在内侧”的形式。这通常是证明中最方便的形式（可比较第 4.4 节和第 4.5 节中反证法证明的相对笨拙，与更早章节中证明的差别）。</p>
+<p>下面是这个过程的一个例子。</p>
 <div class="admonition-problem admonition">
-<p class="admonition-title">否定外层形式</p>
-<p>否定内层形式</p>
+<p class="admonition-title">问题</p>
+<p>证明 \(\lnot(\forall m :\mathbb{Z}, m\ne 2 \to \exists n:\mathbb{Z},n^2 = m)\) 与 \(\exists m :\mathbb{Z}, m\ne 2\land \forall n :\mathbb{Z},n^2 ≠ m\) 逻辑等价。</p>
 </div>
-<p>Lean 名称</p>
+<p>在 Lean 中，我们可以用一个计算式证明完成它：使用 <code class="docutils literal notranslate"><span class="pre">rel</span></code> 策略，并在每一步用表 5.1 中的一条规则改写。</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">example</span> <span class="o">:</span>
     <span class="bp">¬</span><span class="o">(</span><span class="bp">∀</span> <span class="n">m</span> <span class="o">:</span> <span class="n">ℤ</span><span class="o">,</span> <span class="n">m</span> <span class="bp">≠</span> <span class="mi">2</span> <span class="bp">→</span> <span class="bp">∃</span> <span class="n">n</span> <span class="o">:</span> <span class="n">ℤ</span><span class="o">,</span> <span class="n">n</span> <span class="bp">^</span> <span class="mi">2</span> <span class="bp">=</span> <span class="n">m</span><span class="o">)</span> <span class="bp">↔</span> <span class="bp">∃</span> <span class="n">m</span> <span class="o">:</span> <span class="n">ℤ</span><span class="o">,</span> <span class="n">m</span> <span class="bp">≠</span> <span class="mi">2</span> <span class="bp">∧</span> <span class="bp">∀</span> <span class="n">n</span> <span class="o">:</span> <span class="n">ℤ</span><span class="o">,</span> <span class="n">n</span> <span class="bp">^</span> <span class="mi">2</span> <span class="bp">≠</span> <span class="n">m</span> <span class="o">:=</span>
   <span class="k">calc</span> <span class="bp">¬</span><span class="o">(</span><span class="bp">∀</span> <span class="n">m</span> <span class="o">:</span> <span class="n">ℤ</span><span class="o">,</span> <span class="n">m</span> <span class="bp">≠</span> <span class="mi">2</span> <span class="bp">→</span> <span class="bp">∃</span> <span class="n">n</span> <span class="o">:</span> <span class="n">ℤ</span><span class="o">,</span> <span class="n">n</span> <span class="bp">^</span> <span class="mi">2</span> <span class="bp">=</span> <span class="n">m</span><span class="o">)</span>
@@ -650,13 +650,13 @@ h2 : ¬ Superpowered 2
 </section>
 <section id="id18">
 <h3>5.3.3. 例<a class="headerlink" href="#id18" title="此标题的永久链接"></a></h3>
-<p>证明</p>
+<p>请你自己试一试！</p>
 <div class="admonition-problem admonition">
-<p class="admonition-title">请你自己试一试！</p>
-<p>练习 5.3.6</p>
-</div>
+<p class="admonition-title">问题</p>
 <p>证明 \(\lnot(\forall n :\mathbb{Z}, \exists m : \mathbb{Z}, n^2 &lt; m &lt; (n+1)^2)\) 与 \(\exists n :\mathbb{Z}, \forall m : \mathbb{Z}, n^2 \geq m \lor m \geq (n+1)^2\) 逻辑等价。</p>
-<p>练习 5.3.6</p>
+</div>
+<p>在本题中，除了表 5.1 中的规则外，你还需要使用引理 <code class="docutils literal notranslate"><span class="pre">not_lt</span></code>，把一个 \(&lt;\) 的否定转化为 \(\geq\)。</p>
+<p>还要注意，\(n^2 &lt; m &lt; (n+1)^2\) 是 \(n^2 &lt; m \land m &lt; (n+1)^2\) 的简写。我们以前在例 1.4.4 中已经遇到过这一点。</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">example</span> <span class="o">:</span> <span class="bp">¬</span><span class="o">(</span><span class="bp">∀</span> <span class="n">n</span> <span class="o">:</span> <span class="n">ℤ</span><span class="o">,</span> <span class="bp">∃</span> <span class="n">m</span> <span class="o">:</span> <span class="n">ℤ</span><span class="o">,</span> <span class="n">n</span> <span class="bp">^</span> <span class="mi">2</span> <span class="bp">&lt;</span> <span class="n">m</span> <span class="bp">∧</span> <span class="n">m</span> <span class="bp">&lt;</span> <span class="o">(</span><span class="n">n</span> <span class="bp">+</span> <span class="mi">1</span><span class="o">)</span> <span class="bp">^</span> <span class="mi">2</span><span class="o">)</span>
     <span class="bp">↔</span> <span class="bp">∃</span> <span class="n">n</span> <span class="o">:</span> <span class="n">ℤ</span><span class="o">,</span> <span class="bp">∀</span> <span class="n">m</span> <span class="o">:</span> <span class="n">ℤ</span><span class="o">,</span> <span class="n">n</span> <span class="bp">^</span> <span class="mi">2</span> <span class="bp">≥</span> <span class="n">m</span> <span class="bp">∨</span> <span class="n">m</span> <span class="bp">≥</span> <span class="o">(</span><span class="n">n</span> <span class="bp">+</span> <span class="mi">1</span><span class="o">)</span> <span class="bp">^</span> <span class="mi">2</span> <span class="o">:=</span>
   <span class="gr">sorry</span>
@@ -665,7 +665,7 @@ h2 : ¬ Superpowered 2
 </section>
 <section id="id19">
 <h3>5.3.4. 例<a class="headerlink" href="#id19" title="此标题的永久链接"></a></h3>
-<p>练习 5.3.6</p>
+<p>这个过程显然非常程式化。你应该学会在脑中完成它。照常，只要一个证明过程是程式化的，Lean 中就会有策略替我们完成。这个策略名为 <code class="docutils literal notranslate"><span class="pre">push_neg</span></code>。下面是在前两个例子上使用它并显示输出的样子：</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="bp">#</span><span class="n">push_neg</span> <span class="bp">¬</span><span class="o">(</span><span class="bp">∀</span> <span class="n">m</span> <span class="o">:</span> <span class="n">ℤ</span><span class="o">,</span> <span class="n">m</span> <span class="bp">≠</span> <span class="mi">2</span> <span class="bp">→</span> <span class="bp">∃</span> <span class="n">n</span> <span class="o">:</span> <span class="n">ℤ</span><span class="o">,</span> <span class="n">n</span> <span class="bp">^</span> <span class="mi">2</span> <span class="bp">=</span> <span class="n">m</span><span class="o">)</span>
   <span class="c1">-- ∃ m : ℤ, m ≠ 2 ∧ ∀ (n : ℤ), n ^ 2 ≠ m</span>
 
@@ -673,41 +673,41 @@ h2 : ¬ Superpowered 2
   <span class="c1">-- ∃ n : ℤ, ∀ m : ℤ, m ≤ n ^ 2 ∨ (n + 1) ^ 2 ≤ m</span>
 </pre></div>
 </div>
-<p>下面是这个过程的一个例子。</p>
+<p>在脑中求出下面各否定的形式，然后用 Lean 输出检查你的结果。</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="bp">#</span><span class="n">push_neg</span> <span class="bp">¬</span><span class="o">(</span><span class="bp">∃</span> <span class="n">m</span> <span class="n">n</span> <span class="o">:</span> <span class="n">ℤ</span><span class="o">,</span> <span class="bp">∀</span> <span class="n">t</span> <span class="o">:</span> <span class="n">ℝ</span><span class="o">,</span> <span class="n">m</span> <span class="bp">&lt;</span> <span class="n">t</span> <span class="bp">∧</span> <span class="n">t</span> <span class="bp">&lt;</span> <span class="n">n</span><span class="o">)</span>
 <span class="bp">#</span><span class="n">push_neg</span> <span class="bp">¬</span><span class="o">(</span><span class="bp">∀</span> <span class="n">a</span> <span class="o">:</span> <span class="n">ℕ</span><span class="o">,</span> <span class="bp">∃</span> <span class="n">x</span> <span class="n">y</span> <span class="o">:</span> <span class="n">ℕ</span><span class="o">,</span> <span class="n">x</span> <span class="bp">*</span> <span class="n">y</span> <span class="bp">∣</span> <span class="n">a</span> <span class="bp">→</span> <span class="n">x</span> <span class="bp">∣</span> <span class="n">a</span> <span class="bp">∧</span> <span class="n">y</span> <span class="bp">∣</span> <span class="n">a</span><span class="o">)</span>
 <span class="bp">#</span><span class="n">push_neg</span> <span class="bp">¬</span><span class="o">(</span><span class="bp">∀</span> <span class="n">m</span> <span class="o">:</span> <span class="n">ℤ</span><span class="o">,</span> <span class="n">m</span> <span class="bp">≠</span> <span class="mi">2</span> <span class="bp">→</span> <span class="bp">∃</span> <span class="n">n</span> <span class="o">:</span> <span class="n">ℤ</span><span class="o">,</span> <span class="n">n</span> <span class="bp">^</span> <span class="mi">2</span> <span class="bp">=</span> <span class="n">m</span><span class="o">)</span>
 </pre></div>
 </div>
-<p>练习 5.1.7</p>
+<p>本节末尾还有更多这种类型的练习。</p>
 </section>
 <section id="id20">
 <h3>5.3.5. 例<a class="headerlink" href="#id20" title="此标题的永久链接"></a></h3>
-<p>证明 \(\lnot(\forall m :\mathbb{Z}, m\ne 2 \to \exists n:\mathbb{Z},n^2 = m)\) 与 \(\exists m :\mathbb{Z}, m\ne 2\land \forall n :\mathbb{Z},n^2 ≠ m\) 逻辑等价。</p>
+<p>我们来说明向内推进否定的过程在普通证明中如何有用。回到例 4.5.4 的问题。</p>
 <div class="admonition-problem admonition">
-<p class="admonition-title">在 Lean 中，我们可以用一个计算式证明完成它：使用 <code class="docutils literal notranslate"><span class="pre">rel</span></code> 策略，并在每一步用表 5.1 中的一条规则改写。</p>
-<p>练习 5.1.7</p>
+<p class="admonition-title">问题</p>
+<p>证明：不存在自然数 \(n\)，使得 \(n^2=2\)。</p>
 </div>
-<p>问题</p>
+<p>当时，我们观察到这个问题的解答似乎与例 2.3.2 的解答非常相似。</p>
 <div class="admonition-problem admonition">
-<p class="admonition-title">例 5.3.1</p>
-<p>在本题中，除了表 5.1 中的规则外，你还需要使用引理 <code class="docutils literal notranslate"><span class="pre">not_lt</span></code>，把一个 \(&lt;\) 的否定转化为 \(\geq\)。</p>
+<p class="admonition-title">问题</p>
+<p>设 \(n\) 为任意自然数。证明 \(n ^ 2 \ne 2\)。</p>
 </div>
-<p>还要注意，\(n^2 &lt; m &lt; (n+1)^2\) 是 \(n^2 &lt; m \land m &lt; (n+1)^2\) 的简写。我们以前在例 1.4.4 中已经遇到过这一点。</p>
+<p>现在我们可以理解原因：两个问题的陈述是逻辑等价的！两个解答中的数学思想相同，但例 2.3.2 的解答在概念上更简单，因为它不涉及矛盾。我们可以把例 4.5.4 重新表述为例 2.3.2 的形式，然后写出例 2.3.2 的解答，从而给出更易理解的解答。</p>
 <div class="admonition-solution admonition">
-<p class="admonition-title">例 5.3.1</p>
-<p>在脑中求出下面各否定的形式，然后用 Lean 输出检查你的结果。</p>
-<p>练习 5.3.6</p>
-<p>依次应用这些规则后，任何数学陈述都可以化为“否定在内侧”的形式。这通常是证明中最方便的形式（可比较第 4.4 节和第 4.5 节中反证法证明的相对笨拙，与更早章节中证明的差别）。</p>
+<p class="admonition-title">解答</p>
+<p>只需证明：对任意自然数 \(n\)，都有 \(n ^ 2 \ne 2\)。</p>
+<p>我们分别讨论 \(n \le 1\) 和 \(2 \le n\) 两种情形。</p>
+<p>情形 1（\(n \le 1\)）：只需证明 \(n ^ 2 &lt; 2\)。确实，</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}n ^ 2 &amp; \le 1 ^ 2\\
 &amp;&lt;2.\end{split}\]</div>
-<p>下面是这个过程的一个例子。</p>
+<p>情形 2（\(2 \le n\)）：只需证明 \(n ^ 2 &gt; 2\)。确实，</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}2 &amp;&lt; 2 ^ 2\\
 &amp; \le n ^ 2.\end{split}\]</div>
 </div>
-<p>练习 5.3.6</p>
+<p>下面是在 Lean 中的样子。我留了一点给你完成。</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">example</span> <span class="o">:</span> <span class="bp">¬</span> <span class="o">(</span><span class="bp">∃</span> <span class="n">n</span> <span class="o">:</span> <span class="n">ℕ</span><span class="o">,</span> <span class="n">n</span> <span class="bp">^</span> <span class="mi">2</span> <span class="bp">=</span> <span class="mi">2</span><span class="o">)</span> <span class="o">:=</span> <span class="kd">by</span>
   <span class="n">push_neg</span>
   <span class="n">intro</span> <span class="n">n</span>
@@ -724,44 +724,44 @@ h2 : ¬ Superpowered 2
 <section id="negation-normalize-exercises">
 <span id="id21"></span><h3>5.3.6. 练习<a class="headerlink" href="#negation-normalize-exercises" title="此标题的永久链接"></a></h3>
 <ol class="arabic">
-<li><p>证明 \(\lnot(\forall n :\mathbb{Z}, \exists m : \mathbb{Z}, n^2 &lt; m &lt; (n+1)^2)\) 与 \(\exists n :\mathbb{Z}, \forall m : \mathbb{Z}, n^2 \geq m \lor m \geq (n+1)^2\) 逻辑等价。</p>
+<li><p>证明 \(\lnot(\lnot P)\) 与 \(P\) 逻辑等价。本练习的要点是你正在证明表 5.1 中的引理 <code class="docutils literal notranslate"><span class="pre">not_not</span></code>。所以不要使用该引理，也不要使用依赖它的策略 <code class="docutils literal notranslate"><span class="pre">push_neg</span></code>；请从零开始证明它。你需要使用排中律。</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">example</span> <span class="o">(</span><span class="n">P</span> <span class="o">:</span> <span class="kt">Prop</span><span class="o">)</span> <span class="o">:</span> <span class="bp">¬</span> <span class="o">(</span><span class="bp">¬</span> <span class="n">P</span><span class="o">)</span> <span class="bp">↔</span> <span class="n">P</span> <span class="o">:=</span> <span class="kd">by</span>
   <span class="gr">sorry</span>
 </pre></div>
 </div>
 </li>
-<li><p>在本题中，除了表 5.1 中的规则外，你还需要使用引理 <code class="docutils literal notranslate"><span class="pre">not_lt</span></code>，把一个 \(&lt;\) 的否定转化为 \(\geq\)。</p>
+<li><p>证明 \(\lnot(P \to Q)\) 与 \(P \land \lnot Q\) 逻辑等价。本练习的要点是你正在证明表 5.1 中的引理 <code class="docutils literal notranslate"><span class="pre">not_imp</span></code>。所以不要使用该引理，也不要使用依赖它的策略 <code class="docutils literal notranslate"><span class="pre">push_neg</span></code>；请从零开始证明它。你需要使用排中律。</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">example</span> <span class="o">(</span><span class="n">P</span> <span class="n">Q</span> <span class="o">:</span> <span class="kt">Prop</span><span class="o">)</span> <span class="o">:</span> <span class="bp">¬</span> <span class="o">(</span><span class="n">P</span> <span class="bp">→</span> <span class="n">Q</span><span class="o">)</span> <span class="bp">↔</span> <span class="o">(</span><span class="n">P</span> <span class="bp">∧</span> <span class="bp">¬</span> <span class="n">Q</span><span class="o">)</span> <span class="o">:=</span> <span class="kd">by</span>
   <span class="gr">sorry</span>
 </pre></div>
 </div>
 </li>
-<li><p>还要注意，\(n^2 &lt; m &lt; (n+1)^2\) 是 \(n^2 &lt; m \land m &lt; (n+1)^2\) 的简写。我们以前在例 1.4.4 中已经遇到过这一点。</p>
+<li><p>证明 \(\lnot\forall x, P(x)\) 与 \(\exists x, \lnot P(x)\) 逻辑等价。本练习的要点是你正在证明表 5.1 中的引理 <code class="docutils literal notranslate"><span class="pre">not_forall</span></code>。所以不要使用该引理，也不要使用依赖它的策略 <code class="docutils literal notranslate"><span class="pre">push_neg</span></code>；请从零开始证明它。你需要使用排中律。</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">example</span> <span class="o">(</span><span class="n">P</span> <span class="o">:</span> <span class="n">α</span> <span class="bp">→</span> <span class="kt">Prop</span><span class="o">)</span> <span class="o">:</span> <span class="bp">¬</span> <span class="o">(</span><span class="bp">∀</span> <span class="n">x</span><span class="o">,</span> <span class="n">P</span> <span class="n">x</span><span class="o">)</span> <span class="bp">↔</span> <span class="bp">∃</span> <span class="n">x</span><span class="o">,</span> <span class="bp">¬</span> <span class="n">P</span> <span class="n">x</span> <span class="o">:=</span> <span class="kd">by</span>
   <span class="gr">sorry</span>
 </pre></div>
 </div>
 </li>
-<li><p>这个过程显然非常程式化。你应该学会在脑中完成它。照常，只要一个证明过程是程式化的，Lean 中就会有策略替我们完成。这个策略名为 <code class="docutils literal notranslate"><span class="pre">push_neg</span></code>。下面是在前两个例子上使用它并显示输出的样子：</p>
+<li><p>使用表 5.1 中的规则逐步证明：\(\lnot(\forall a b :\mathbb{Z}, ab=1 \to a = 1 \lor b = 1)\) 与 \(\exists a b :\mathbb{Z}, ab = 1\land a \ne 1 \land b \ne 1\) 逻辑等价。</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">example</span> <span class="o">:</span> <span class="o">(</span><span class="bp">¬</span> <span class="bp">∀</span> <span class="n">a</span> <span class="n">b</span> <span class="o">:</span> <span class="n">ℤ</span><span class="o">,</span> <span class="n">a</span> <span class="bp">*</span> <span class="n">b</span> <span class="bp">=</span> <span class="mi">1</span> <span class="bp">→</span> <span class="n">a</span> <span class="bp">=</span> <span class="mi">1</span> <span class="bp">∨</span> <span class="n">b</span> <span class="bp">=</span> <span class="mi">1</span><span class="o">)</span>
     <span class="bp">↔</span> <span class="bp">∃</span> <span class="n">a</span> <span class="n">b</span> <span class="o">:</span> <span class="n">ℤ</span><span class="o">,</span> <span class="n">a</span> <span class="bp">*</span> <span class="n">b</span> <span class="bp">=</span> <span class="mi">1</span> <span class="bp">∧</span> <span class="n">a</span> <span class="bp">≠</span> <span class="mi">1</span> <span class="bp">∧</span> <span class="n">b</span> <span class="bp">≠</span> <span class="mi">1</span> <span class="o">:=</span>
   <span class="gr">sorry</span>
 </pre></div>
 </div>
 </li>
-<li><p>在脑中求出下面各否定的形式，然后用 Lean 输出检查你的结果。</p>
+<li><p>使用表 5.1 中的规则逐步证明：\(\lnot(\exists x:\mathbb{R},\forall y:\mathbb{R}, y \le x)\) 与 \(\forall x:\mathbb{R},\exists y:\mathbb{R}, y &gt; x\) 逻辑等价。</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">example</span> <span class="o">:</span> <span class="o">(</span><span class="bp">¬</span> <span class="bp">∃</span> <span class="n">x</span> <span class="o">:</span> <span class="n">ℝ</span><span class="o">,</span> <span class="bp">∀</span> <span class="n">y</span> <span class="o">:</span> <span class="n">ℝ</span><span class="o">,</span> <span class="n">y</span> <span class="bp">≤</span> <span class="n">x</span><span class="o">)</span> <span class="bp">↔</span> <span class="o">(</span><span class="bp">∀</span> <span class="n">x</span> <span class="o">:</span> <span class="n">ℝ</span><span class="o">,</span> <span class="bp">∃</span> <span class="n">y</span> <span class="o">:</span> <span class="n">ℝ</span><span class="o">,</span> <span class="n">y</span> <span class="bp">&gt;</span> <span class="n">x</span><span class="o">)</span> <span class="o">:=</span>
   <span class="gr">sorry</span>
 </pre></div>
 </div>
 </li>
-<li><p>本节末尾还有更多这种类型的练习。</p>
+<li><p>使用表 5.1 中的规则逐步证明：\(\lnot(\exists m:\mathbb{Z},\forall n:\mathbb{Z},m=n+5)\) 与 \(\forall m:\mathbb{Z},\exists n:\mathbb{Z},m\ne n+5\) 逻辑等价。</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">example</span> <span class="o">:</span> <span class="bp">¬</span> <span class="o">(</span><span class="bp">∃</span> <span class="n">m</span> <span class="o">:</span> <span class="n">ℤ</span><span class="o">,</span> <span class="bp">∀</span> <span class="n">n</span> <span class="o">:</span> <span class="n">ℤ</span><span class="o">,</span> <span class="n">m</span> <span class="bp">=</span> <span class="n">n</span> <span class="bp">+</span> <span class="mi">5</span><span class="o">)</span> <span class="bp">↔</span> <span class="bp">∀</span> <span class="n">m</span> <span class="o">:</span> <span class="n">ℤ</span><span class="o">,</span> <span class="bp">∃</span> <span class="n">n</span> <span class="o">:</span> <span class="n">ℤ</span><span class="o">,</span> <span class="n">m</span> <span class="bp">≠</span> <span class="n">n</span> <span class="bp">+</span> <span class="mi">5</span> <span class="o">:=</span>
   <span class="gr">sorry</span>
 </pre></div>
 </div>
 </li>
-<li><p>我们来说明向内推进否定的过程在普通证明中如何有用。回到例 4.5.4 的问题。</p>
+<li><p>在脑中求出下面各否定的形式，然后用 Lean 输出检查你的结果。</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="bp">#</span><span class="n">push_neg</span> <span class="bp">¬</span><span class="o">(</span><span class="bp">∀</span> <span class="n">n</span> <span class="o">:</span> <span class="n">ℕ</span><span class="o">,</span> <span class="n">n</span> <span class="bp">&gt;</span> <span class="mi">0</span> <span class="bp">→</span> <span class="bp">∃</span> <span class="n">k</span> <span class="n">l</span> <span class="o">:</span> <span class="n">ℕ</span><span class="o">,</span> <span class="n">k</span> <span class="bp">&lt;</span> <span class="n">n</span> <span class="bp">∧</span> <span class="n">l</span> <span class="bp">&lt;</span> <span class="n">n</span> <span class="bp">∧</span> <span class="n">k</span> <span class="bp">≠</span> <span class="n">l</span><span class="o">)</span>
 <span class="bp">#</span><span class="n">push_neg</span> <span class="bp">¬</span><span class="o">(</span><span class="bp">∀</span> <span class="n">m</span> <span class="o">:</span> <span class="n">ℤ</span><span class="o">,</span> <span class="n">m</span> <span class="bp">≠</span> <span class="mi">2</span> <span class="bp">→</span> <span class="bp">∃</span> <span class="n">n</span> <span class="o">:</span> <span class="n">ℤ</span><span class="o">,</span> <span class="n">n</span> <span class="bp">^</span> <span class="mi">2</span> <span class="bp">=</span> <span class="n">m</span><span class="o">)</span>
 <span class="bp">#</span><span class="n">push_neg</span> <span class="bp">¬</span><span class="o">(</span><span class="bp">∃</span> <span class="n">x</span> <span class="o">:</span> <span class="n">ℝ</span><span class="o">,</span> <span class="bp">∀</span> <span class="n">y</span> <span class="o">:</span> <span class="n">ℝ</span><span class="o">,</span> <span class="bp">∃</span> <span class="n">m</span> <span class="o">:</span> <span class="n">ℤ</span><span class="o">,</span> <span class="n">x</span> <span class="bp">&lt;</span> <span class="n">y</span> <span class="bp">*</span> <span class="n">m</span> <span class="bp">∧</span> <span class="n">y</span> <span class="bp">*</span> <span class="n">m</span> <span class="bp">&lt;</span> <span class="n">m</span><span class="o">)</span>
@@ -769,21 +769,21 @@ h2 : ¬ Superpowered 2
 </pre></div>
 </div>
 </li>
-<li><p>问题</p>
+<li><p>证明：并非对所有实数 \(x\)，都有 \(x^2\geq x\)。（我们已经在例 4.5.1 中解决过它；但这一次，请给出一个以 <code class="docutils literal notranslate"><span class="pre">push_neg</span></code> 开始的证明。）</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">example</span> <span class="o">:</span> <span class="bp">¬</span> <span class="o">(</span><span class="bp">∀</span> <span class="n">x</span> <span class="o">:</span> <span class="n">ℝ</span><span class="o">,</span> <span class="n">x</span> <span class="bp">^</span> <span class="mi">2</span> <span class="bp">≥</span> <span class="n">x</span><span class="o">)</span> <span class="o">:=</span> <span class="kd">by</span>
   <span class="n">push_neg</span>
   <span class="gr">sorry</span>
 </pre></div>
 </div>
 </li>
-<li><p>证明：不存在自然数 \(n\)，使得 \(n^2=2\)。</p>
+<li><p>证明：不存在实数 \(t\)，使得 \(t \le 4\) 且 \(t\geq 5\)。（我们已经在第 4.5 节的练习中解决过它；但这一次，请给出一个以 <code class="docutils literal notranslate"><span class="pre">push_neg</span></code> 开始的证明。）</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">example</span> <span class="o">:</span> <span class="bp">¬</span> <span class="o">(</span><span class="bp">∃</span> <span class="n">t</span> <span class="o">:</span> <span class="n">ℝ</span><span class="o">,</span> <span class="n">t</span> <span class="bp">≤</span> <span class="mi">4</span> <span class="bp">∧</span> <span class="n">t</span> <span class="bp">≥</span> <span class="mi">5</span><span class="o">)</span> <span class="o">:=</span> <span class="kd">by</span>
   <span class="n">push_neg</span>
   <span class="gr">sorry</span>
 </pre></div>
 </div>
 </li>
-<li><p>当时，我们观察到这个问题的解答似乎与例 2.3.2 的解答非常相似。</p>
+<li><p>证明 7 不是偶数。（我们已经在第 4.5 节的练习中解决过它；但这一次，请给出一个以 <code class="docutils literal notranslate"><span class="pre">push_neg</span></code> 开始的证明。）</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">example</span> <span class="o">:</span> <span class="bp">¬</span> <span class="n">Int.Even</span> <span class="mi">7</span> <span class="o">:=</span> <span class="kd">by</span>
   <span class="n">dsimp</span> <span class="o">[</span><span class="n">Int.Even</span><span class="o">]</span>
   <span class="n">push_neg</span>
@@ -791,7 +791,7 @@ h2 : ¬ Superpowered 2
 </pre></div>
 </div>
 </li>
-<li><p>问题</p>
+<li><p>设 \(p\) 和 \(k\) 为自然数，且 \(k\ne 1\)、\(k\ne p\)、\(k\mid p\)。证明 \(p\) 不是素数。（我们已经在例 4.5.7 中解决过它；但这一次，请给出一个以 <code class="docutils literal notranslate"><span class="pre">push_neg</span></code> 开始的证明。）</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">example</span> <span class="o">{</span><span class="n">p</span> <span class="o">:</span> <span class="n">ℕ</span><span class="o">}</span> <span class="o">(</span><span class="n">k</span> <span class="o">:</span> <span class="n">ℕ</span><span class="o">)</span> <span class="o">(</span><span class="n">hk1</span> <span class="o">:</span> <span class="n">k</span> <span class="bp">≠</span> <span class="mi">1</span><span class="o">)</span> <span class="o">(</span><span class="n">hkp</span> <span class="o">:</span> <span class="n">k</span> <span class="bp">≠</span> <span class="n">p</span><span class="o">)</span> <span class="o">(</span><span class="n">hk</span> <span class="o">:</span> <span class="n">k</span> <span class="bp">∣</span> <span class="n">p</span><span class="o">)</span> <span class="o">:</span> <span class="bp">¬</span> <span class="n">Prime</span> <span class="n">p</span> <span class="o">:=</span> <span class="kd">by</span>
   <span class="n">dsimp</span> <span class="o">[</span><span class="n">Prime</span><span class="o">]</span>
   <span class="n">push_neg</span>
@@ -799,13 +799,13 @@ h2 : ¬ Superpowered 2
 </pre></div>
 </div>
 </li>
-<li><p>设 \(n\) 为任意自然数。证明 \(n ^ 2 \ne 2\)。</p>
+<li><p>证明：不存在整数 \(a\)，使得对所有整数 \(n\)，都有 \(2a^3 ≥ na+7\)。建议结构：先把否定规范化。你可能会觉得，把这个事实与第 2.5 节第 8 题比较很有意思。这个陈述为假而那一个为真，怎么可能？</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">example</span> <span class="o">:</span> <span class="bp">¬</span> <span class="bp">∃</span> <span class="n">a</span> <span class="o">:</span> <span class="n">ℤ</span><span class="o">,</span> <span class="bp">∀</span> <span class="n">n</span> <span class="o">:</span> <span class="n">ℤ</span><span class="o">,</span> <span class="mi">2</span> <span class="bp">*</span> <span class="n">a</span> <span class="bp">^</span> <span class="mi">3</span> <span class="bp">≥</span> <span class="n">n</span> <span class="bp">*</span> <span class="n">a</span> <span class="bp">+</span> <span class="mi">7</span> <span class="o">:=</span> <span class="kd">by</span>
   <span class="gr">sorry</span>
 </pre></div>
 </div>
 </li>
-<li><p>现在我们可以理解原因：两个问题的陈述是逻辑等价的！两个解答中的数学思想相同，但例 2.3.2 的解答在概念上更简单，因为它不涉及矛盾。我们可以把例 4.5.4 重新表述为例 2.3.2 的形式，然后写出例 2.3.2 的解答，从而给出更易理解的解答。</p>
+<li><p>设 \(p \geq 2\) 为非素自然数。证明存在自然数 \(m\)，满足 \(2 \le m &lt; p\)，且 \(m\) 是 \(p\) 的因子。我们把这个引理记录下来，以便以后用名称 <code class="docutils literal notranslate"><span class="pre">exists_factor_of_not_prime</span></code> 调用。建议结构：先设置一个中间目标，即“并非任意满足 \(2 \le m &lt; p\) 的自然数 \(m\) 都不是 \(p\) 的因子”，并使用例 4.4.4 中的引理 <code class="docutils literal notranslate"><span class="pre">prime_test</span></code> 通过反证法证明它。然后把该结果的否定规范化。</p>
 <div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">example</span> <span class="o">{</span><span class="n">p</span> <span class="o">:</span> <span class="n">ℕ</span><span class="o">}</span> <span class="o">(</span><span class="n">hp</span> <span class="o">:</span> <span class="bp">¬</span> <span class="n">Prime</span> <span class="n">p</span><span class="o">)</span> <span class="o">(</span><span class="n">hp2</span> <span class="o">:</span> <span class="mi">2</span> <span class="bp">≤</span> <span class="n">p</span><span class="o">)</span> <span class="o">:</span> <span class="bp">∃</span> <span class="n">m</span><span class="o">,</span> <span class="mi">2</span> <span class="bp">≤</span> <span class="n">m</span> <span class="bp">∧</span> <span class="n">m</span> <span class="bp">&lt;</span> <span class="n">p</span> <span class="bp">∧</span> <span class="n">m</span> <span class="bp">∣</span> <span class="n">p</span> <span class="o">:=</span> <span class="kd">by</span>
   <span class="k">have</span> <span class="n">H</span> <span class="o">:</span> <span class="bp">¬</span> <span class="o">(</span><span class="bp">∀</span> <span class="o">(</span><span class="n">m</span> <span class="o">:</span> <span class="n">ℕ</span><span class="o">),</span> <span class="mi">2</span> <span class="bp">≤</span> <span class="n">m</span> <span class="bp">→</span> <span class="n">m</span> <span class="bp">&lt;</span> <span class="n">p</span> <span class="bp">→</span> <span class="bp">¬</span><span class="n">m</span> <span class="bp">∣</span> <span class="n">p</span><span class="o">)</span>
   <span class="bp">·</span> <span class="n">intro</span> <span class="n">H</span>
